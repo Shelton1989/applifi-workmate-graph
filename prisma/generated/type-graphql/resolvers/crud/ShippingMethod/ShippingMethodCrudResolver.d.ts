@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateShippingMethodArgs } from "./args/AggregateShippingMethodArgs";
+import { CreateManyShippingMethodArgs } from "./args/CreateManyShippingMethodArgs";
+import { CreateShippingMethodArgs } from "./args/CreateShippingMethodArgs";
+import { DeleteManyShippingMethodArgs } from "./args/DeleteManyShippingMethodArgs";
+import { DeleteShippingMethodArgs } from "./args/DeleteShippingMethodArgs";
+import { FindFirstShippingMethodArgs } from "./args/FindFirstShippingMethodArgs";
+import { FindManyShippingMethodArgs } from "./args/FindManyShippingMethodArgs";
+import { FindUniqueShippingMethodArgs } from "./args/FindUniqueShippingMethodArgs";
+import { GroupByShippingMethodArgs } from "./args/GroupByShippingMethodArgs";
+import { UpdateManyShippingMethodArgs } from "./args/UpdateManyShippingMethodArgs";
+import { UpdateShippingMethodArgs } from "./args/UpdateShippingMethodArgs";
+import { UpsertShippingMethodArgs } from "./args/UpsertShippingMethodArgs";
+import { ShippingMethod } from "../../../models/ShippingMethod";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateShippingMethod } from "../../outputs/AggregateShippingMethod";
+import { ShippingMethodGroupBy } from "../../outputs/ShippingMethodGroupBy";
+export declare class ShippingMethodCrudResolver {
+    shippingMethod(ctx: any, info: GraphQLResolveInfo, args: FindUniqueShippingMethodArgs): Promise<ShippingMethod | null>;
+    findFirstShippingMethod(ctx: any, info: GraphQLResolveInfo, args: FindFirstShippingMethodArgs): Promise<ShippingMethod | null>;
+    shippingMethods(ctx: any, info: GraphQLResolveInfo, args: FindManyShippingMethodArgs): Promise<ShippingMethod[]>;
+    createShippingMethod(ctx: any, info: GraphQLResolveInfo, args: CreateShippingMethodArgs): Promise<ShippingMethod>;
+    createManyShippingMethod(ctx: any, info: GraphQLResolveInfo, args: CreateManyShippingMethodArgs): Promise<AffectedRowsOutput>;
+    deleteShippingMethod(ctx: any, info: GraphQLResolveInfo, args: DeleteShippingMethodArgs): Promise<ShippingMethod | null>;
+    updateShippingMethod(ctx: any, info: GraphQLResolveInfo, args: UpdateShippingMethodArgs): Promise<ShippingMethod | null>;
+    deleteManyShippingMethod(ctx: any, info: GraphQLResolveInfo, args: DeleteManyShippingMethodArgs): Promise<AffectedRowsOutput>;
+    updateManyShippingMethod(ctx: any, info: GraphQLResolveInfo, args: UpdateManyShippingMethodArgs): Promise<AffectedRowsOutput>;
+    upsertShippingMethod(ctx: any, info: GraphQLResolveInfo, args: UpsertShippingMethodArgs): Promise<ShippingMethod>;
+    aggregateShippingMethod(ctx: any, info: GraphQLResolveInfo, args: AggregateShippingMethodArgs): Promise<AggregateShippingMethod>;
+    groupByShippingMethod(ctx: any, info: GraphQLResolveInfo, args: GroupByShippingMethodArgs): Promise<ShippingMethodGroupBy[]>;
+}

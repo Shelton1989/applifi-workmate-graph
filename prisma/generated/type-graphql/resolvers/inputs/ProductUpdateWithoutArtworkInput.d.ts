@@ -1,0 +1,34 @@
+import { BrandProductUpdateOneRequiredWithoutProductsInput } from "../inputs/BrandProductUpdateOneRequiredWithoutProductsInput";
+import { ColorUpdateManyWithoutProductsInput } from "../inputs/ColorUpdateManyWithoutProductsInput";
+import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
+import { IntFieldUpdateOperationsInput } from "../inputs/IntFieldUpdateOperationsInput";
+import { InventoryUpdateOneRequiredWithoutProductsInput } from "../inputs/InventoryUpdateOneRequiredWithoutProductsInput";
+import { OrderLineItemUpdateManyWithoutSelectedProductInput } from "../inputs/OrderLineItemUpdateManyWithoutSelectedProductInput";
+import { PriceUpdateOneRequiredWithoutProductsInput } from "../inputs/PriceUpdateOneRequiredWithoutProductsInput";
+import { ProductUpdateartworkIdsInput } from "../inputs/ProductUpdateartworkIdsInput";
+import { ProductUpdatecolorIdsInput } from "../inputs/ProductUpdatecolorIdsInput";
+import { ProductUpdategalleryInput } from "../inputs/ProductUpdategalleryInput";
+import { ProductUpdatelikedByIdsInput } from "../inputs/ProductUpdatelikedByIdsInput";
+import { ProductUpdatesizeIdsInput } from "../inputs/ProductUpdatesizeIdsInput";
+import { SizeUpdateManyWithoutProductsInput } from "../inputs/SizeUpdateManyWithoutProductsInput";
+import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
+import { UserUpdateManyWithoutLikedProductsInput } from "../inputs/UserUpdateManyWithoutLikedProductsInput";
+export declare class ProductUpdateWithoutArtworkInput {
+    description?: StringFieldUpdateOperationsInput | undefined;
+    price?: PriceUpdateOneRequiredWithoutProductsInput | undefined;
+    availableQuantity?: IntFieldUpdateOperationsInput | undefined;
+    photo?: StringFieldUpdateOperationsInput | undefined;
+    gallery?: ProductUpdategalleryInput | undefined;
+    BaseProduct?: BrandProductUpdateOneRequiredWithoutProductsInput | undefined;
+    artworkIds?: ProductUpdateartworkIdsInput | undefined;
+    Colors?: ColorUpdateManyWithoutProductsInput | undefined;
+    colorIds?: ProductUpdatecolorIdsInput | undefined;
+    Sizes?: SizeUpdateManyWithoutProductsInput | undefined;
+    sizeIds?: ProductUpdatesizeIdsInput | undefined;
+    OrderLineItems?: OrderLineItemUpdateManyWithoutSelectedProductInput | undefined;
+    LikedBy?: UserUpdateManyWithoutLikedProductsInput | undefined;
+    likedByIds?: ProductUpdatelikedByIdsInput | undefined;
+    Inventory?: InventoryUpdateOneRequiredWithoutProductsInput | undefined;
+    createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
+    updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
+}

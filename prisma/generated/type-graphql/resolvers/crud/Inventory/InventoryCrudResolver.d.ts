@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateInventoryArgs } from "./args/AggregateInventoryArgs";
+import { CreateInventoryArgs } from "./args/CreateInventoryArgs";
+import { CreateManyInventoryArgs } from "./args/CreateManyInventoryArgs";
+import { DeleteInventoryArgs } from "./args/DeleteInventoryArgs";
+import { DeleteManyInventoryArgs } from "./args/DeleteManyInventoryArgs";
+import { FindFirstInventoryArgs } from "./args/FindFirstInventoryArgs";
+import { FindManyInventoryArgs } from "./args/FindManyInventoryArgs";
+import { FindUniqueInventoryArgs } from "./args/FindUniqueInventoryArgs";
+import { GroupByInventoryArgs } from "./args/GroupByInventoryArgs";
+import { UpdateInventoryArgs } from "./args/UpdateInventoryArgs";
+import { UpdateManyInventoryArgs } from "./args/UpdateManyInventoryArgs";
+import { UpsertInventoryArgs } from "./args/UpsertInventoryArgs";
+import { Inventory } from "../../../models/Inventory";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateInventory } from "../../outputs/AggregateInventory";
+import { InventoryGroupBy } from "../../outputs/InventoryGroupBy";
+export declare class InventoryCrudResolver {
+    inventory(ctx: any, info: GraphQLResolveInfo, args: FindUniqueInventoryArgs): Promise<Inventory | null>;
+    findFirstInventory(ctx: any, info: GraphQLResolveInfo, args: FindFirstInventoryArgs): Promise<Inventory | null>;
+    inventories(ctx: any, info: GraphQLResolveInfo, args: FindManyInventoryArgs): Promise<Inventory[]>;
+    createInventory(ctx: any, info: GraphQLResolveInfo, args: CreateInventoryArgs): Promise<Inventory>;
+    createManyInventory(ctx: any, info: GraphQLResolveInfo, args: CreateManyInventoryArgs): Promise<AffectedRowsOutput>;
+    deleteInventory(ctx: any, info: GraphQLResolveInfo, args: DeleteInventoryArgs): Promise<Inventory | null>;
+    updateInventory(ctx: any, info: GraphQLResolveInfo, args: UpdateInventoryArgs): Promise<Inventory | null>;
+    deleteManyInventory(ctx: any, info: GraphQLResolveInfo, args: DeleteManyInventoryArgs): Promise<AffectedRowsOutput>;
+    updateManyInventory(ctx: any, info: GraphQLResolveInfo, args: UpdateManyInventoryArgs): Promise<AffectedRowsOutput>;
+    upsertInventory(ctx: any, info: GraphQLResolveInfo, args: UpsertInventoryArgs): Promise<Inventory>;
+    aggregateInventory(ctx: any, info: GraphQLResolveInfo, args: AggregateInventoryArgs): Promise<AggregateInventory>;
+    groupByInventory(ctx: any, info: GraphQLResolveInfo, args: GroupByInventoryArgs): Promise<InventoryGroupBy[]>;
+}

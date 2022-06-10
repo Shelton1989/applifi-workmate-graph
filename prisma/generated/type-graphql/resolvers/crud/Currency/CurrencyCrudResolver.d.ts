@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateCurrencyArgs } from "./args/AggregateCurrencyArgs";
+import { CreateCurrencyArgs } from "./args/CreateCurrencyArgs";
+import { CreateManyCurrencyArgs } from "./args/CreateManyCurrencyArgs";
+import { DeleteCurrencyArgs } from "./args/DeleteCurrencyArgs";
+import { DeleteManyCurrencyArgs } from "./args/DeleteManyCurrencyArgs";
+import { FindFirstCurrencyArgs } from "./args/FindFirstCurrencyArgs";
+import { FindManyCurrencyArgs } from "./args/FindManyCurrencyArgs";
+import { FindUniqueCurrencyArgs } from "./args/FindUniqueCurrencyArgs";
+import { GroupByCurrencyArgs } from "./args/GroupByCurrencyArgs";
+import { UpdateCurrencyArgs } from "./args/UpdateCurrencyArgs";
+import { UpdateManyCurrencyArgs } from "./args/UpdateManyCurrencyArgs";
+import { UpsertCurrencyArgs } from "./args/UpsertCurrencyArgs";
+import { Currency } from "../../../models/Currency";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateCurrency } from "../../outputs/AggregateCurrency";
+import { CurrencyGroupBy } from "../../outputs/CurrencyGroupBy";
+export declare class CurrencyCrudResolver {
+    currency(ctx: any, info: GraphQLResolveInfo, args: FindUniqueCurrencyArgs): Promise<Currency | null>;
+    findFirstCurrency(ctx: any, info: GraphQLResolveInfo, args: FindFirstCurrencyArgs): Promise<Currency | null>;
+    currencies(ctx: any, info: GraphQLResolveInfo, args: FindManyCurrencyArgs): Promise<Currency[]>;
+    createCurrency(ctx: any, info: GraphQLResolveInfo, args: CreateCurrencyArgs): Promise<Currency>;
+    createManyCurrency(ctx: any, info: GraphQLResolveInfo, args: CreateManyCurrencyArgs): Promise<AffectedRowsOutput>;
+    deleteCurrency(ctx: any, info: GraphQLResolveInfo, args: DeleteCurrencyArgs): Promise<Currency | null>;
+    updateCurrency(ctx: any, info: GraphQLResolveInfo, args: UpdateCurrencyArgs): Promise<Currency | null>;
+    deleteManyCurrency(ctx: any, info: GraphQLResolveInfo, args: DeleteManyCurrencyArgs): Promise<AffectedRowsOutput>;
+    updateManyCurrency(ctx: any, info: GraphQLResolveInfo, args: UpdateManyCurrencyArgs): Promise<AffectedRowsOutput>;
+    upsertCurrency(ctx: any, info: GraphQLResolveInfo, args: UpsertCurrencyArgs): Promise<Currency>;
+    aggregateCurrency(ctx: any, info: GraphQLResolveInfo, args: AggregateCurrencyArgs): Promise<AggregateCurrency>;
+    groupByCurrency(ctx: any, info: GraphQLResolveInfo, args: GroupByCurrencyArgs): Promise<CurrencyGroupBy[]>;
+}

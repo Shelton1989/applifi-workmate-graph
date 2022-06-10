@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateNotificationSettingsArgs } from "./args/AggregateNotificationSettingsArgs";
+import { CreateManyNotificationSettingsArgs } from "./args/CreateManyNotificationSettingsArgs";
+import { CreateNotificationSettingsArgs } from "./args/CreateNotificationSettingsArgs";
+import { DeleteManyNotificationSettingsArgs } from "./args/DeleteManyNotificationSettingsArgs";
+import { DeleteNotificationSettingsArgs } from "./args/DeleteNotificationSettingsArgs";
+import { FindFirstNotificationSettingsArgs } from "./args/FindFirstNotificationSettingsArgs";
+import { FindManyNotificationSettingsArgs } from "./args/FindManyNotificationSettingsArgs";
+import { FindUniqueNotificationSettingsArgs } from "./args/FindUniqueNotificationSettingsArgs";
+import { GroupByNotificationSettingsArgs } from "./args/GroupByNotificationSettingsArgs";
+import { UpdateManyNotificationSettingsArgs } from "./args/UpdateManyNotificationSettingsArgs";
+import { UpdateNotificationSettingsArgs } from "./args/UpdateNotificationSettingsArgs";
+import { UpsertNotificationSettingsArgs } from "./args/UpsertNotificationSettingsArgs";
+import { NotificationSettings } from "../../../models/NotificationSettings";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateNotificationSettings } from "../../outputs/AggregateNotificationSettings";
+import { NotificationSettingsGroupBy } from "../../outputs/NotificationSettingsGroupBy";
+export declare class NotificationSettingsCrudResolver {
+    findUniqueNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: FindUniqueNotificationSettingsArgs): Promise<NotificationSettings | null>;
+    findFirstNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: FindFirstNotificationSettingsArgs): Promise<NotificationSettings | null>;
+    findManyNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: FindManyNotificationSettingsArgs): Promise<NotificationSettings[]>;
+    createNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: CreateNotificationSettingsArgs): Promise<NotificationSettings>;
+    createManyNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: CreateManyNotificationSettingsArgs): Promise<AffectedRowsOutput>;
+    deleteNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: DeleteNotificationSettingsArgs): Promise<NotificationSettings | null>;
+    updateNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: UpdateNotificationSettingsArgs): Promise<NotificationSettings | null>;
+    deleteManyNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: DeleteManyNotificationSettingsArgs): Promise<AffectedRowsOutput>;
+    updateManyNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: UpdateManyNotificationSettingsArgs): Promise<AffectedRowsOutput>;
+    upsertNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: UpsertNotificationSettingsArgs): Promise<NotificationSettings>;
+    aggregateNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: AggregateNotificationSettingsArgs): Promise<AggregateNotificationSettings>;
+    groupByNotificationSettings(ctx: any, info: GraphQLResolveInfo, args: GroupByNotificationSettingsArgs): Promise<NotificationSettingsGroupBy[]>;
+}

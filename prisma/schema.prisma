@@ -1,0 +1,481 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator typegraphql {
+  provider           = "typegraphql-prisma"
+  output             = "../prisma/generated/type-graphql"
+  emitTranspiledCode = true
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+// Enums
+enum ROLE {
+  SUPER_ADMIN
+  ADMIN
+  ARTIST
+  BRAND_MANAGER
+  USER
+}
+
+enum ADDRESS_TYPE {
+  BILLING
+  DELIVERY
+  PHYSICAL
+  POSTAL
+}
+
+// Models
+model User {
+  // Mapping to authentication service
+  uid String @unique
+
+  id       String @id @default(uuid()) @map("_id")
+  username String @unique
+  email    String @unique
+
+  roles ROLE[]
+
+  firstName   String?
+  lastName    String?
+  avatar      String?
+  coverImage  String?
+  dateOfBirth DateTime
+
+  hasAcceptedTerms Boolean @default(false)
+  isFirstTimeUser  Boolean @default(true)
+
+  Addresses            Address[]
+  NotificationSettings NotificationSettings?
+
+  // Social
+  Following    User[]   @relation("UserFollows", fields: [followingIds], references: [id])
+  followingIds String[]
+  Followers    User[]   @relation("UserFollows", fields: [followerIds], references: [id])
+  followerIds  String[]
+
+  // Market
+  Order         Order?
+  LikedProducts Product[]  @relation(fields: [productIds], references: [id])
+  productIds    String[]
+  Inventory     Inventory?
+
+  Posts     Post[]
+  Comments  Comment[]
+  Replies   Reply[]
+  Reactions Reaction[]
+
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Inventory {
+  id String @id @default(uuid()) @map("_id")
+
+  Products Product[]
+  Artwork  Artwork[]
+
+  User   User   @relation(fields: [userId], references: [id])
+  userId String @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+
+
+}
+
+model Address {
+  id String @id @default(uuid()) @map("_id")
+
+  type      ADDRESS_TYPE
+  line1     String
+  line2     String
+  city      String
+  district  String
+  country   String
+  code      String
+  isDefault Boolean      @default(false)
+
+  User   User?   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId String?
+
+  Orders Order[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model NotificationSettings {
+  id String @id @default(uuid()) @map("_id")
+
+  newArrivals           Boolean @default(true)
+  orderUpdates          Boolean @default(true)
+  promotions            Boolean @default(true)
+  saleAlerts            Boolean @default(true)
+  postsByArtistsIFollow Boolean @default(true)
+  postsByBrandsIFollow  Boolean @default(true)
+
+  User   User?   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  userId String? @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+// Marketplace models
+enum PRODUCT_TYPE {
+  SNEAKER
+  TSHIRT
+  CREWNECK
+  JEANS
+  JOGGER
+  FITTED
+}
+
+enum PRODUCT_CATEGORY {
+  MEN
+  WOMEN
+  CHILDREN
+  ANY
+}
+
+enum SIZE_REGION {
+  US
+  UK
+  EU
+  UNIVERSAL
+}
+
+enum STATUS {
+  PENDING_APPROVAL
+  IN_REVIEW
+  APPROVED
+  NO_ACTION_TAKEN
+  REJECTED_WITH_REASON
+  DECLINED
+  BANNED
+  SOFT_BANNED
+}
+
+model Artwork {
+  id String @id @default(uuid()) @map("_id")
+
+  title       String
+  description String
+  caption     String
+  url         String
+
+  Products   Product[] @relation(fields: [productIds], references: [id])
+  productIds String[]
+
+  Inventory   Inventory @relation(fields: [inventoryId], references: [id])
+  inventoryId String
+
+  OrderLineItems OrderLineItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Color {
+  id String @id @default(uuid()) @map("_id")
+
+  name String
+  hex  String
+
+  Products   Product[] @relation(fields: [productIds], references: [id])
+  productIds String[]
+
+  OrderLineItems OrderLineItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Size {
+  id String @id @default(uuid()) @map("_id")
+
+  value  String
+  region SIZE_REGION
+
+  Products   Product[] @relation(fields: [productIds], references: [id])
+  productIds String[]
+
+  OrderLineItems OrderLineItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Brand {
+  id String @id @default(uuid()) @map("_id")
+
+  name        String
+  description String
+  tagline     String
+
+  BrandProducts BrandProduct[]
+
+  status STATUS
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model BrandProduct {
+  id String @id @default(uuid()) @map("_id")
+
+  name        String
+  releaseYear DateTime?
+  description String
+
+  type     PRODUCT_TYPE
+  category PRODUCT_CATEGORY
+  brand    Brand            @relation(fields: [brandId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  brandId  String
+
+  status STATUS
+
+  Products Product[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Product {
+  id String @id @default(uuid()) @map("_id")
+
+  description String
+  price       Price  @relation(fields: [priceId], references: [id])
+  priceId     String
+
+  availableQuantity Int
+  photo             String
+  gallery           String[]
+
+  BaseProduct   BrandProduct @relation(fields: [baseProductId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  baseProductId String
+
+  Artwork    Artwork[] @relation(fields: [artworkIds], references: [id])
+  artworkIds String[]
+  Colors     Color[]   @relation(fields: [colorIds], references: [id])
+  colorIds   String[]
+  Sizes      Size[]    @relation(fields: [sizeIds], references: [id])
+  sizeIds    String[]
+
+  OrderLineItems OrderLineItem[]
+
+  LikedBy    User[]   @relation(fields: [likedByIds], references: [id])
+  likedByIds String[]
+
+  Inventory   Inventory @relation(fields: [inventoryId], references: [id])
+  inventoryId String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Currency {
+  id String @id @default(uuid()) @map("_id")
+
+  name   String
+  symbol String
+  code   String
+
+  prices Price[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Price {
+  id String @id @default(uuid()) @map("_id")
+
+  priceInLowestDenomination Int
+  displayPrice              String
+  currency                  Currency @relation(fields: [currencyId], references: [id])
+  currencyId                String
+
+  ShippingMethods ShippingMethod[]
+  Products        Product[]
+  OrderLineItems  OrderLineItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+// Order models
+enum ORDER_STATUS {
+  OPEN
+  ORDERED
+  ORDERED_PENDING_PAYMENT
+  STARTED
+  IN_PROGRESS
+  CUSTOMISED
+  READY_FOR_COLLECTION
+  READY_FOR_DELIVERY
+  SHIPPED
+  IN_DELIVERY
+  DELIVERED
+  COMPLETE
+}
+
+model ShippingMethod {
+  id String @id @default(uuid()) @map("_id")
+
+  name                          String
+  description                   String
+  label                         String
+  arrivalTimeInBusinessDays     Int
+  arrivalTimeInBusinessDaysRang String
+  arrivalTimeDescription        String
+
+  price   Price  @relation(fields: [priceId], references: [id])
+  priceId String
+
+  Orders Order[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+// Social Models
+enum REACTION_TYPE {
+  LIKE
+  LOVE
+  DISLIKE
+}
+
+enum MEDIA_TYPE {
+  SHORT_VIDEO
+  IMAGE
+  CAROUSEL
+}
+
+model Post {
+  id String @id @default(uuid()) @map("_id")
+
+  type     MEDIA_TYPE
+  caption  String?
+  mediaUrl String[]
+
+  isCommentsEnabled Boolean @default(true)
+
+  Author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  authorId String
+
+  Comments  Comment[]
+  Reactions Reaction[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Comment {
+  id String @id @default(uuid()) @map("_id")
+
+  text     String
+  Post     Post   @relation(fields: [postId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  postId   String
+  Author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  authorId String
+
+  Replies   Reply[]
+  Reactions Reaction[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Reply {
+  id String @id @default(uuid()) @map("_id")
+
+  text      String
+  Comment   Comment @relation(fields: [commentId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  commentId String
+  Author    User    @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  authorId  String
+
+  Reactions Reaction[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Reaction {
+  id String @id @default(uuid()) @map("_id")
+
+  type REACTION_TYPE
+
+  Post      Post?    @relation(fields: [postId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  postId    String?
+  Comment   Comment? @relation(fields: [commentId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  commentId String?
+  Reply     Reply?   @relation(fields: [replyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  replyId   String?
+  Author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  authorId  String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+// Market models
+model OrderLineItem {
+  id String @id @default(uuid()) @map("_id")
+
+  lineItemPrice Price  @relation(fields: [priceId], references: [id])
+  priceId       String
+
+  SelectedProduct   Product @relation(fields: [selectedProductId], references: [id])
+  selectedProductId String
+  SelectedColor     Color   @relation(fields: [selectedColorId], references: [id])
+  selectedColorId   String
+  SelectedArtwork   Artwork @relation(fields: [selectedArtworkId], references: [id])
+  selectedArtworkId String
+  SelectedSize      Size    @relation(fields: [selectedSizeId], references: [id])
+  selectedSizeId    String
+
+  Order   Order  @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  orderId String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Order {
+  id String @id @default(uuid()) @map("_id")
+
+  status ORDER_STATUS
+
+  SelectedShippingAddress   Address?        @relation(fields: [selectedShippingAddressId], references: [id], onDelete: SetNull, onUpdate: SetNull)
+  selectedShippingAddressId String?
+  SelectedShippingMethod    ShippingMethod? @relation(fields: [selectedShippingMethodId], references: [id], onDelete: SetNull, onUpdate: SetNull)
+  selectedShippingMethodId  String?
+  SelectedPaymentType       String?
+
+  stripePaymentReference String?
+
+  User   User   @relation(fields: [userId], references: [id])
+  userId String @unique
+
+  Items OrderLineItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+// model Base {
+//   id        String @id @default(uuid()) @map("_id")
+
+//   createdAt        DateTime          @default(now())
+//   updatedAt        DateTime          @default(now()) @updatedAt
+// }

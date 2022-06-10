@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateColorArgs } from "./args/AggregateColorArgs";
+import { CreateColorArgs } from "./args/CreateColorArgs";
+import { CreateManyColorArgs } from "./args/CreateManyColorArgs";
+import { DeleteColorArgs } from "./args/DeleteColorArgs";
+import { DeleteManyColorArgs } from "./args/DeleteManyColorArgs";
+import { FindFirstColorArgs } from "./args/FindFirstColorArgs";
+import { FindManyColorArgs } from "./args/FindManyColorArgs";
+import { FindUniqueColorArgs } from "./args/FindUniqueColorArgs";
+import { GroupByColorArgs } from "./args/GroupByColorArgs";
+import { UpdateColorArgs } from "./args/UpdateColorArgs";
+import { UpdateManyColorArgs } from "./args/UpdateManyColorArgs";
+import { UpsertColorArgs } from "./args/UpsertColorArgs";
+import { Color } from "../../../models/Color";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateColor } from "../../outputs/AggregateColor";
+import { ColorGroupBy } from "../../outputs/ColorGroupBy";
+export declare class ColorCrudResolver {
+    color(ctx: any, info: GraphQLResolveInfo, args: FindUniqueColorArgs): Promise<Color | null>;
+    findFirstColor(ctx: any, info: GraphQLResolveInfo, args: FindFirstColorArgs): Promise<Color | null>;
+    colors(ctx: any, info: GraphQLResolveInfo, args: FindManyColorArgs): Promise<Color[]>;
+    createColor(ctx: any, info: GraphQLResolveInfo, args: CreateColorArgs): Promise<Color>;
+    createManyColor(ctx: any, info: GraphQLResolveInfo, args: CreateManyColorArgs): Promise<AffectedRowsOutput>;
+    deleteColor(ctx: any, info: GraphQLResolveInfo, args: DeleteColorArgs): Promise<Color | null>;
+    updateColor(ctx: any, info: GraphQLResolveInfo, args: UpdateColorArgs): Promise<Color | null>;
+    deleteManyColor(ctx: any, info: GraphQLResolveInfo, args: DeleteManyColorArgs): Promise<AffectedRowsOutput>;
+    updateManyColor(ctx: any, info: GraphQLResolveInfo, args: UpdateManyColorArgs): Promise<AffectedRowsOutput>;
+    upsertColor(ctx: any, info: GraphQLResolveInfo, args: UpsertColorArgs): Promise<Color>;
+    aggregateColor(ctx: any, info: GraphQLResolveInfo, args: AggregateColorArgs): Promise<AggregateColor>;
+    groupByColor(ctx: any, info: GraphQLResolveInfo, args: GroupByColorArgs): Promise<ColorGroupBy[]>;
+}

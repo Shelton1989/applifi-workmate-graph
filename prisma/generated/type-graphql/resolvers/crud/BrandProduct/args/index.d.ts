@@ -1,0 +1,12 @@
+export { AggregateBrandProductArgs } from "./AggregateBrandProductArgs";
+export { CreateBrandProductArgs } from "./CreateBrandProductArgs";
+export { CreateManyBrandProductArgs } from "./CreateManyBrandProductArgs";
+export { DeleteBrandProductArgs } from "./DeleteBrandProductArgs";
+export { DeleteManyBrandProductArgs } from "./DeleteManyBrandProductArgs";
+export { FindFirstBrandProductArgs } from "./FindFirstBrandProductArgs";
+export { FindManyBrandProductArgs } from "./FindManyBrandProductArgs";
+export { FindUniqueBrandProductArgs } from "./FindUniqueBrandProductArgs";
+export { GroupByBrandProductArgs } from "./GroupByBrandProductArgs";
+export { UpdateBrandProductArgs } from "./UpdateBrandProductArgs";
+export { UpdateManyBrandProductArgs } from "./UpdateManyBrandProductArgs";
+export { UpsertBrandProductArgs } from "./UpsertBrandProductArgs";

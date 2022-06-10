@@ -1,0 +1,12 @@
+export { AggregateShippingMethodArgs } from "./AggregateShippingMethodArgs";
+export { CreateManyShippingMethodArgs } from "./CreateManyShippingMethodArgs";
+export { CreateShippingMethodArgs } from "./CreateShippingMethodArgs";
+export { DeleteManyShippingMethodArgs } from "./DeleteManyShippingMethodArgs";
+export { DeleteShippingMethodArgs } from "./DeleteShippingMethodArgs";
+export { FindFirstShippingMethodArgs } from "./FindFirstShippingMethodArgs";
+export { FindManyShippingMethodArgs } from "./FindManyShippingMethodArgs";
+export { FindUniqueShippingMethodArgs } from "./FindUniqueShippingMethodArgs";
+export { GroupByShippingMethodArgs } from "./GroupByShippingMethodArgs";
+export { UpdateManyShippingMethodArgs } from "./UpdateManyShippingMethodArgs";
+export { UpdateShippingMethodArgs } from "./UpdateShippingMethodArgs";
+export { UpsertShippingMethodArgs } from "./UpsertShippingMethodArgs";

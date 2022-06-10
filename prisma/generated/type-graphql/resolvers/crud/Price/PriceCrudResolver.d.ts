@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregatePriceArgs } from "./args/AggregatePriceArgs";
+import { CreateManyPriceArgs } from "./args/CreateManyPriceArgs";
+import { CreatePriceArgs } from "./args/CreatePriceArgs";
+import { DeleteManyPriceArgs } from "./args/DeleteManyPriceArgs";
+import { DeletePriceArgs } from "./args/DeletePriceArgs";
+import { FindFirstPriceArgs } from "./args/FindFirstPriceArgs";
+import { FindManyPriceArgs } from "./args/FindManyPriceArgs";
+import { FindUniquePriceArgs } from "./args/FindUniquePriceArgs";
+import { GroupByPriceArgs } from "./args/GroupByPriceArgs";
+import { UpdateManyPriceArgs } from "./args/UpdateManyPriceArgs";
+import { UpdatePriceArgs } from "./args/UpdatePriceArgs";
+import { UpsertPriceArgs } from "./args/UpsertPriceArgs";
+import { Price } from "../../../models/Price";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregatePrice } from "../../outputs/AggregatePrice";
+import { PriceGroupBy } from "../../outputs/PriceGroupBy";
+export declare class PriceCrudResolver {
+    price(ctx: any, info: GraphQLResolveInfo, args: FindUniquePriceArgs): Promise<Price | null>;
+    findFirstPrice(ctx: any, info: GraphQLResolveInfo, args: FindFirstPriceArgs): Promise<Price | null>;
+    prices(ctx: any, info: GraphQLResolveInfo, args: FindManyPriceArgs): Promise<Price[]>;
+    createPrice(ctx: any, info: GraphQLResolveInfo, args: CreatePriceArgs): Promise<Price>;
+    createManyPrice(ctx: any, info: GraphQLResolveInfo, args: CreateManyPriceArgs): Promise<AffectedRowsOutput>;
+    deletePrice(ctx: any, info: GraphQLResolveInfo, args: DeletePriceArgs): Promise<Price | null>;
+    updatePrice(ctx: any, info: GraphQLResolveInfo, args: UpdatePriceArgs): Promise<Price | null>;
+    deleteManyPrice(ctx: any, info: GraphQLResolveInfo, args: DeleteManyPriceArgs): Promise<AffectedRowsOutput>;
+    updateManyPrice(ctx: any, info: GraphQLResolveInfo, args: UpdateManyPriceArgs): Promise<AffectedRowsOutput>;
+    upsertPrice(ctx: any, info: GraphQLResolveInfo, args: UpsertPriceArgs): Promise<Price>;
+    aggregatePrice(ctx: any, info: GraphQLResolveInfo, args: AggregatePriceArgs): Promise<AggregatePrice>;
+    groupByPrice(ctx: any, info: GraphQLResolveInfo, args: GroupByPriceArgs): Promise<PriceGroupBy[]>;
+}

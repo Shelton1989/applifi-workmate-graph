@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateAddressArgs } from "./args/AggregateAddressArgs";
+import { CreateAddressArgs } from "./args/CreateAddressArgs";
+import { CreateManyAddressArgs } from "./args/CreateManyAddressArgs";
+import { DeleteAddressArgs } from "./args/DeleteAddressArgs";
+import { DeleteManyAddressArgs } from "./args/DeleteManyAddressArgs";
+import { FindFirstAddressArgs } from "./args/FindFirstAddressArgs";
+import { FindManyAddressArgs } from "./args/FindManyAddressArgs";
+import { FindUniqueAddressArgs } from "./args/FindUniqueAddressArgs";
+import { GroupByAddressArgs } from "./args/GroupByAddressArgs";
+import { UpdateAddressArgs } from "./args/UpdateAddressArgs";
+import { UpdateManyAddressArgs } from "./args/UpdateManyAddressArgs";
+import { UpsertAddressArgs } from "./args/UpsertAddressArgs";
+import { Address } from "../../../models/Address";
+import { AddressGroupBy } from "../../outputs/AddressGroupBy";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateAddress } from "../../outputs/AggregateAddress";
+export declare class AddressCrudResolver {
+    address(ctx: any, info: GraphQLResolveInfo, args: FindUniqueAddressArgs): Promise<Address | null>;
+    findFirstAddress(ctx: any, info: GraphQLResolveInfo, args: FindFirstAddressArgs): Promise<Address | null>;
+    addresses(ctx: any, info: GraphQLResolveInfo, args: FindManyAddressArgs): Promise<Address[]>;
+    createAddress(ctx: any, info: GraphQLResolveInfo, args: CreateAddressArgs): Promise<Address>;
+    createManyAddress(ctx: any, info: GraphQLResolveInfo, args: CreateManyAddressArgs): Promise<AffectedRowsOutput>;
+    deleteAddress(ctx: any, info: GraphQLResolveInfo, args: DeleteAddressArgs): Promise<Address | null>;
+    updateAddress(ctx: any, info: GraphQLResolveInfo, args: UpdateAddressArgs): Promise<Address | null>;
+    deleteManyAddress(ctx: any, info: GraphQLResolveInfo, args: DeleteManyAddressArgs): Promise<AffectedRowsOutput>;
+    updateManyAddress(ctx: any, info: GraphQLResolveInfo, args: UpdateManyAddressArgs): Promise<AffectedRowsOutput>;
+    upsertAddress(ctx: any, info: GraphQLResolveInfo, args: UpsertAddressArgs): Promise<Address>;
+    aggregateAddress(ctx: any, info: GraphQLResolveInfo, args: AggregateAddressArgs): Promise<AggregateAddress>;
+    groupByAddress(ctx: any, info: GraphQLResolveInfo, args: GroupByAddressArgs): Promise<AddressGroupBy[]>;
+}

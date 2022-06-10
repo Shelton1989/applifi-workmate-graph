@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateArtworkArgs } from "./args/AggregateArtworkArgs";
+import { CreateArtworkArgs } from "./args/CreateArtworkArgs";
+import { CreateManyArtworkArgs } from "./args/CreateManyArtworkArgs";
+import { DeleteArtworkArgs } from "./args/DeleteArtworkArgs";
+import { DeleteManyArtworkArgs } from "./args/DeleteManyArtworkArgs";
+import { FindFirstArtworkArgs } from "./args/FindFirstArtworkArgs";
+import { FindManyArtworkArgs } from "./args/FindManyArtworkArgs";
+import { FindUniqueArtworkArgs } from "./args/FindUniqueArtworkArgs";
+import { GroupByArtworkArgs } from "./args/GroupByArtworkArgs";
+import { UpdateArtworkArgs } from "./args/UpdateArtworkArgs";
+import { UpdateManyArtworkArgs } from "./args/UpdateManyArtworkArgs";
+import { UpsertArtworkArgs } from "./args/UpsertArtworkArgs";
+import { Artwork } from "../../../models/Artwork";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateArtwork } from "../../outputs/AggregateArtwork";
+import { ArtworkGroupBy } from "../../outputs/ArtworkGroupBy";
+export declare class ArtworkCrudResolver {
+    artwork(ctx: any, info: GraphQLResolveInfo, args: FindUniqueArtworkArgs): Promise<Artwork | null>;
+    findFirstArtwork(ctx: any, info: GraphQLResolveInfo, args: FindFirstArtworkArgs): Promise<Artwork | null>;
+    artworks(ctx: any, info: GraphQLResolveInfo, args: FindManyArtworkArgs): Promise<Artwork[]>;
+    createArtwork(ctx: any, info: GraphQLResolveInfo, args: CreateArtworkArgs): Promise<Artwork>;
+    createManyArtwork(ctx: any, info: GraphQLResolveInfo, args: CreateManyArtworkArgs): Promise<AffectedRowsOutput>;
+    deleteArtwork(ctx: any, info: GraphQLResolveInfo, args: DeleteArtworkArgs): Promise<Artwork | null>;
+    updateArtwork(ctx: any, info: GraphQLResolveInfo, args: UpdateArtworkArgs): Promise<Artwork | null>;
+    deleteManyArtwork(ctx: any, info: GraphQLResolveInfo, args: DeleteManyArtworkArgs): Promise<AffectedRowsOutput>;
+    updateManyArtwork(ctx: any, info: GraphQLResolveInfo, args: UpdateManyArtworkArgs): Promise<AffectedRowsOutput>;
+    upsertArtwork(ctx: any, info: GraphQLResolveInfo, args: UpsertArtworkArgs): Promise<Artwork>;
+    aggregateArtwork(ctx: any, info: GraphQLResolveInfo, args: AggregateArtworkArgs): Promise<AggregateArtwork>;
+    groupByArtwork(ctx: any, info: GraphQLResolveInfo, args: GroupByArtworkArgs): Promise<ArtworkGroupBy[]>;
+}

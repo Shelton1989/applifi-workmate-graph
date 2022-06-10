@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateBrandArgs } from "./args/AggregateBrandArgs";
+import { CreateBrandArgs } from "./args/CreateBrandArgs";
+import { CreateManyBrandArgs } from "./args/CreateManyBrandArgs";
+import { DeleteBrandArgs } from "./args/DeleteBrandArgs";
+import { DeleteManyBrandArgs } from "./args/DeleteManyBrandArgs";
+import { FindFirstBrandArgs } from "./args/FindFirstBrandArgs";
+import { FindManyBrandArgs } from "./args/FindManyBrandArgs";
+import { FindUniqueBrandArgs } from "./args/FindUniqueBrandArgs";
+import { GroupByBrandArgs } from "./args/GroupByBrandArgs";
+import { UpdateBrandArgs } from "./args/UpdateBrandArgs";
+import { UpdateManyBrandArgs } from "./args/UpdateManyBrandArgs";
+import { UpsertBrandArgs } from "./args/UpsertBrandArgs";
+import { Brand } from "../../../models/Brand";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateBrand } from "../../outputs/AggregateBrand";
+import { BrandGroupBy } from "../../outputs/BrandGroupBy";
+export declare class BrandCrudResolver {
+    brand(ctx: any, info: GraphQLResolveInfo, args: FindUniqueBrandArgs): Promise<Brand | null>;
+    findFirstBrand(ctx: any, info: GraphQLResolveInfo, args: FindFirstBrandArgs): Promise<Brand | null>;
+    brands(ctx: any, info: GraphQLResolveInfo, args: FindManyBrandArgs): Promise<Brand[]>;
+    createBrand(ctx: any, info: GraphQLResolveInfo, args: CreateBrandArgs): Promise<Brand>;
+    createManyBrand(ctx: any, info: GraphQLResolveInfo, args: CreateManyBrandArgs): Promise<AffectedRowsOutput>;
+    deleteBrand(ctx: any, info: GraphQLResolveInfo, args: DeleteBrandArgs): Promise<Brand | null>;
+    updateBrand(ctx: any, info: GraphQLResolveInfo, args: UpdateBrandArgs): Promise<Brand | null>;
+    deleteManyBrand(ctx: any, info: GraphQLResolveInfo, args: DeleteManyBrandArgs): Promise<AffectedRowsOutput>;
+    updateManyBrand(ctx: any, info: GraphQLResolveInfo, args: UpdateManyBrandArgs): Promise<AffectedRowsOutput>;
+    upsertBrand(ctx: any, info: GraphQLResolveInfo, args: UpsertBrandArgs): Promise<Brand>;
+    aggregateBrand(ctx: any, info: GraphQLResolveInfo, args: AggregateBrandArgs): Promise<AggregateBrand>;
+    groupByBrand(ctx: any, info: GraphQLResolveInfo, args: GroupByBrandArgs): Promise<BrandGroupBy[]>;
+}

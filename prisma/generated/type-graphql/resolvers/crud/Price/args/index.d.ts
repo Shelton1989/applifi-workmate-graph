@@ -1,0 +1,12 @@
+export { AggregatePriceArgs } from "./AggregatePriceArgs";
+export { CreateManyPriceArgs } from "./CreateManyPriceArgs";
+export { CreatePriceArgs } from "./CreatePriceArgs";
+export { DeleteManyPriceArgs } from "./DeleteManyPriceArgs";
+export { DeletePriceArgs } from "./DeletePriceArgs";
+export { FindFirstPriceArgs } from "./FindFirstPriceArgs";
+export { FindManyPriceArgs } from "./FindManyPriceArgs";
+export { FindUniquePriceArgs } from "./FindUniquePriceArgs";
+export { GroupByPriceArgs } from "./GroupByPriceArgs";
+export { UpdateManyPriceArgs } from "./UpdateManyPriceArgs";
+export { UpdatePriceArgs } from "./UpdatePriceArgs";
+export { UpsertPriceArgs } from "./UpsertPriceArgs";

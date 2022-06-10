@@ -1,0 +1,32 @@
+import { ArtworkCreateNestedManyWithoutProductsInput } from "../inputs/ArtworkCreateNestedManyWithoutProductsInput";
+import { BrandProductCreateNestedOneWithoutProductsInput } from "../inputs/BrandProductCreateNestedOneWithoutProductsInput";
+import { InventoryCreateNestedOneWithoutProductsInput } from "../inputs/InventoryCreateNestedOneWithoutProductsInput";
+import { OrderLineItemCreateNestedManyWithoutSelectedProductInput } from "../inputs/OrderLineItemCreateNestedManyWithoutSelectedProductInput";
+import { PriceCreateNestedOneWithoutProductsInput } from "../inputs/PriceCreateNestedOneWithoutProductsInput";
+import { ProductCreateartworkIdsInput } from "../inputs/ProductCreateartworkIdsInput";
+import { ProductCreatecolorIdsInput } from "../inputs/ProductCreatecolorIdsInput";
+import { ProductCreategalleryInput } from "../inputs/ProductCreategalleryInput";
+import { ProductCreatelikedByIdsInput } from "../inputs/ProductCreatelikedByIdsInput";
+import { ProductCreatesizeIdsInput } from "../inputs/ProductCreatesizeIdsInput";
+import { SizeCreateNestedManyWithoutProductsInput } from "../inputs/SizeCreateNestedManyWithoutProductsInput";
+import { UserCreateNestedManyWithoutLikedProductsInput } from "../inputs/UserCreateNestedManyWithoutLikedProductsInput";
+export declare class ProductCreateWithoutColorsInput {
+    id?: string | undefined;
+    description: string;
+    price: PriceCreateNestedOneWithoutProductsInput;
+    availableQuantity: number;
+    photo: string;
+    gallery?: ProductCreategalleryInput | undefined;
+    BaseProduct: BrandProductCreateNestedOneWithoutProductsInput;
+    Artwork?: ArtworkCreateNestedManyWithoutProductsInput | undefined;
+    artworkIds?: ProductCreateartworkIdsInput | undefined;
+    colorIds?: ProductCreatecolorIdsInput | undefined;
+    Sizes?: SizeCreateNestedManyWithoutProductsInput | undefined;
+    sizeIds?: ProductCreatesizeIdsInput | undefined;
+    OrderLineItems?: OrderLineItemCreateNestedManyWithoutSelectedProductInput | undefined;
+    LikedBy?: UserCreateNestedManyWithoutLikedProductsInput | undefined;
+    likedByIds?: ProductCreatelikedByIdsInput | undefined;
+    Inventory: InventoryCreateNestedOneWithoutProductsInput;
+    createdAt?: Date | undefined;
+    updatedAt?: Date | undefined;
+}

@@ -1,0 +1,45 @@
+{
+  "name": "unparel-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --inspect=0.0.0.0:8000 --respawn --transpile-only --no-notify --prefer-ts --ignore-watch node_modules src/index.ts",
+    "prebuild": "npm run generate && echo '====COMPLETE==='",
+    "build": "del-cli ./build && tsc -p ./tsconfig.build.json",
+    "prestart": "npm run generate && echo '====COMPLETE==='",
+    "start": "node ./build/index.js",
+    "generate": "npx prisma generate",
+    "format": "npx prisma format",
+    "db:push": "npx prisma db push"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@apollo/rover": "^0.5.1",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.14.1",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.12.0",
+    "apollo-server": "^3.6.7",
+    "apollo-server-express": "^3.6.7",
+    "class-validator": "^0.13.2",
+    "cpy-cli": "^4.1.0",
+    "del-cli": "^4.0.1",
+    "express": "^4.17.3",
+    "graphql": "^15.8.0",
+    "graphql-fields": "^2.0.3",
+    "moment": "^2.29.3",
+    "nexus": "^1.3.0",
+    "prisma": "^3.12.0",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typegraphql-prisma": "^0.20.1"
+  }
+}

@@ -1,0 +1,26 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ReplyRelationFilter = void 0;
+const tslib_1 = require("tslib");
+const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const ReplyWhereInput_1 = require("../inputs/ReplyWhereInput");
+let ReplyRelationFilter = class ReplyRelationFilter {
+};
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ReplyWhereInput_1.ReplyWhereInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ReplyWhereInput_1.ReplyWhereInput)
+], ReplyRelationFilter.prototype, "is", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ReplyWhereInput_1.ReplyWhereInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ReplyWhereInput_1.ReplyWhereInput)
+], ReplyRelationFilter.prototype, "isNot", void 0);
+ReplyRelationFilter = tslib_1.__decorate([
+    TypeGraphQL.InputType("ReplyRelationFilter", {
+        isAbstract: true
+    })
+], ReplyRelationFilter);
+exports.ReplyRelationFilter = ReplyRelationFilter;
