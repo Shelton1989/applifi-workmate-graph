@@ -1,16 +1,16 @@
 import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperationsInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
+import { EnumROLEFieldUpdateOperationsInput } from "../inputs/EnumROLEFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 import { UserUpdatefollowerIdsInput } from "../inputs/UserUpdatefollowerIdsInput";
 import { UserUpdatefollowingIdsInput } from "../inputs/UserUpdatefollowingIdsInput";
 import { UserUpdateproductIdsInput } from "../inputs/UserUpdateproductIdsInput";
-import { UserUpdaterolesInput } from "../inputs/UserUpdaterolesInput";
 export declare class UserUpdateManyMutationInput {
     uid?: StringFieldUpdateOperationsInput | undefined;
     username?: StringFieldUpdateOperationsInput | undefined;
     email?: StringFieldUpdateOperationsInput | undefined;
-    roles?: UserUpdaterolesInput | undefined;
+    roles?: EnumROLEFieldUpdateOperationsInput | undefined;
     firstName?: NullableStringFieldUpdateOperationsInput | undefined;
     lastName?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;

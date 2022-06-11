@@ -32,10 +32,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], User.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => [ROLE_1.ROLE], {
+    TypeGraphQL.Field(_type => ROLE_1.ROLE, {
         nullable: false
     }),
-    tslib_1.__metadata("design:type", Array)
+    tslib_1.__metadata("design:type", String)
 ], User.prototype, "roles", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {

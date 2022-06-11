@@ -5,12 +5,12 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BoolFieldUpdateOperationsInput_1 = require("../inputs/BoolFieldUpdateOperationsInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
+const EnumROLEFieldUpdateOperationsInput_1 = require("../inputs/EnumROLEFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 const UserUpdatefollowerIdsInput_1 = require("../inputs/UserUpdatefollowerIdsInput");
 const UserUpdatefollowingIdsInput_1 = require("../inputs/UserUpdatefollowingIdsInput");
 const UserUpdateproductIdsInput_1 = require("../inputs/UserUpdateproductIdsInput");
-const UserUpdaterolesInput_1 = require("../inputs/UserUpdaterolesInput");
 let UserUpdateManyMutationInput = class UserUpdateManyMutationInput {
 };
 tslib_1.__decorate([
@@ -32,10 +32,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], UserUpdateManyMutationInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdaterolesInput_1.UserUpdaterolesInput, {
+    TypeGraphQL.Field(_type => EnumROLEFieldUpdateOperationsInput_1.EnumROLEFieldUpdateOperationsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserUpdaterolesInput_1.UserUpdaterolesInput)
+    tslib_1.__metadata("design:type", EnumROLEFieldUpdateOperationsInput_1.EnumROLEFieldUpdateOperationsInput)
 ], UserUpdateManyMutationInput.prototype, "roles", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {

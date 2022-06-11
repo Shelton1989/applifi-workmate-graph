@@ -7,6 +7,7 @@ const AddressUpdateManyWithoutUserInput_1 = require("../inputs/AddressUpdateMany
 const BoolFieldUpdateOperationsInput_1 = require("../inputs/BoolFieldUpdateOperationsInput");
 const CommentUpdateManyWithoutAuthorInput_1 = require("../inputs/CommentUpdateManyWithoutAuthorInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
+const EnumROLEFieldUpdateOperationsInput_1 = require("../inputs/EnumROLEFieldUpdateOperationsInput");
 const InventoryUpdateOneWithoutUserInput_1 = require("../inputs/InventoryUpdateOneWithoutUserInput");
 const NotificationSettingsUpdateOneWithoutUserInput_1 = require("../inputs/NotificationSettingsUpdateOneWithoutUserInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
@@ -20,7 +21,6 @@ const UserUpdateManyWithoutFollowingInput_1 = require("../inputs/UserUpdateManyW
 const UserUpdatefollowerIdsInput_1 = require("../inputs/UserUpdatefollowerIdsInput");
 const UserUpdatefollowingIdsInput_1 = require("../inputs/UserUpdatefollowingIdsInput");
 const UserUpdateproductIdsInput_1 = require("../inputs/UserUpdateproductIdsInput");
-const UserUpdaterolesInput_1 = require("../inputs/UserUpdaterolesInput");
 let UserUpdateWithoutFollowingInput = class UserUpdateWithoutFollowingInput {
 };
 tslib_1.__decorate([
@@ -42,10 +42,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], UserUpdateWithoutFollowingInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdaterolesInput_1.UserUpdaterolesInput, {
+    TypeGraphQL.Field(_type => EnumROLEFieldUpdateOperationsInput_1.EnumROLEFieldUpdateOperationsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserUpdaterolesInput_1.UserUpdaterolesInput)
+    tslib_1.__metadata("design:type", EnumROLEFieldUpdateOperationsInput_1.EnumROLEFieldUpdateOperationsInput)
 ], UserUpdateWithoutFollowingInput.prototype, "roles", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {

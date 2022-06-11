@@ -53,7 +53,7 @@ tslib_1.__decorate([
 ], BrandProductCreateWithoutProductsInput.prototype, "brand", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => STATUS_1.STATUS, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], BrandProductCreateWithoutProductsInput.prototype, "status", void 0);

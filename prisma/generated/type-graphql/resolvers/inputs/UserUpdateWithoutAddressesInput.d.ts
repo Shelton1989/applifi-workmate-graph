@@ -1,6 +1,7 @@
 import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperationsInput";
 import { CommentUpdateManyWithoutAuthorInput } from "../inputs/CommentUpdateManyWithoutAuthorInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
+import { EnumROLEFieldUpdateOperationsInput } from "../inputs/EnumROLEFieldUpdateOperationsInput";
 import { InventoryUpdateOneWithoutUserInput } from "../inputs/InventoryUpdateOneWithoutUserInput";
 import { NotificationSettingsUpdateOneWithoutUserInput } from "../inputs/NotificationSettingsUpdateOneWithoutUserInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
@@ -15,12 +16,11 @@ import { UserUpdateManyWithoutFollowingInput } from "../inputs/UserUpdateManyWit
 import { UserUpdatefollowerIdsInput } from "../inputs/UserUpdatefollowerIdsInput";
 import { UserUpdatefollowingIdsInput } from "../inputs/UserUpdatefollowingIdsInput";
 import { UserUpdateproductIdsInput } from "../inputs/UserUpdateproductIdsInput";
-import { UserUpdaterolesInput } from "../inputs/UserUpdaterolesInput";
 export declare class UserUpdateWithoutAddressesInput {
     uid?: StringFieldUpdateOperationsInput | undefined;
     username?: StringFieldUpdateOperationsInput | undefined;
     email?: StringFieldUpdateOperationsInput | undefined;
-    roles?: UserUpdaterolesInput | undefined;
+    roles?: EnumROLEFieldUpdateOperationsInput | undefined;
     firstName?: NullableStringFieldUpdateOperationsInput | undefined;
     lastName?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;

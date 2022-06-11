@@ -1,6 +1,6 @@
 import { BoolWithAggregatesFilter } from "../inputs/BoolWithAggregatesFilter";
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
-import { EnumROLENullableListFilter } from "../inputs/EnumROLENullableListFilter";
+import { EnumROLEWithAggregatesFilter } from "../inputs/EnumROLEWithAggregatesFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
 import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
 import { StringWithAggregatesFilter } from "../inputs/StringWithAggregatesFilter";
@@ -12,7 +12,7 @@ export declare class UserScalarWhereWithAggregatesInput {
     id?: StringWithAggregatesFilter | undefined;
     username?: StringWithAggregatesFilter | undefined;
     email?: StringWithAggregatesFilter | undefined;
-    roles?: EnumROLENullableListFilter | undefined;
+    roles?: EnumROLEWithAggregatesFilter | undefined;
     firstName?: StringNullableWithAggregatesFilter | undefined;
     lastName?: StringNullableWithAggregatesFilter | undefined;
     avatar?: StringNullableWithAggregatesFilter | undefined;

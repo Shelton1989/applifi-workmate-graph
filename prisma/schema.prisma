@@ -41,7 +41,7 @@ model User {
   username String @unique
   email    String @unique
 
-  roles ROLE[]
+  roles ROLE @default(USER)
 
   firstName   String?
   lastName    String?
@@ -224,7 +224,7 @@ model Brand {
 
   BrandProducts BrandProduct[]
 
-  status STATUS
+  status STATUS @default(PENDING_APPROVAL)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -242,7 +242,7 @@ model BrandProduct {
   brand    Brand            @relation(fields: [brandId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   brandId  String
 
-  status STATUS
+  status STATUS @default(PENDING_APPROVAL)
 
   Products Product[]
 
@@ -454,7 +454,7 @@ model OrderLineItem {
 model Order {
   id String @id @default(uuid()) @map("_id")
 
-  status ORDER_STATUS
+  status ORDER_STATUS @default(OPEN)
 
   SelectedShippingAddress   Address?        @relation(fields: [selectedShippingAddressId], references: [id], onDelete: SetNull, onUpdate: SetNull)
   selectedShippingAddressId String?

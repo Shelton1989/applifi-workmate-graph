@@ -13,7 +13,7 @@ export declare class User {
     id: string;
     username: string;
     email: string;
-    roles: Array<"SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER">;
+    roles: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER";
     firstName?: string | null;
     lastName?: string | null;
     avatar?: string | null;

@@ -1,13 +1,12 @@
 import { UserCreatefollowerIdsInput } from "../inputs/UserCreatefollowerIdsInput";
 import { UserCreatefollowingIdsInput } from "../inputs/UserCreatefollowingIdsInput";
 import { UserCreateproductIdsInput } from "../inputs/UserCreateproductIdsInput";
-import { UserCreaterolesInput } from "../inputs/UserCreaterolesInput";
 export declare class UserCreateManyInput {
     uid: string;
     id?: string | undefined;
     username: string;
     email: string;
-    roles?: UserCreaterolesInput | undefined;
+    roles?: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER" | undefined;
     firstName?: string | undefined;
     lastName?: string | undefined;
     avatar?: string | undefined;

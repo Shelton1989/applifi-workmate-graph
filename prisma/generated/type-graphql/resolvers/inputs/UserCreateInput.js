@@ -17,7 +17,7 @@ const UserCreateNestedManyWithoutFollowingInput_1 = require("../inputs/UserCreat
 const UserCreatefollowerIdsInput_1 = require("../inputs/UserCreatefollowerIdsInput");
 const UserCreatefollowingIdsInput_1 = require("../inputs/UserCreatefollowingIdsInput");
 const UserCreateproductIdsInput_1 = require("../inputs/UserCreateproductIdsInput");
-const UserCreaterolesInput_1 = require("../inputs/UserCreaterolesInput");
+const ROLE_1 = require("../../enums/ROLE");
 let UserCreateInput = class UserCreateInput {
 };
 tslib_1.__decorate([
@@ -45,10 +45,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], UserCreateInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserCreaterolesInput_1.UserCreaterolesInput, {
+    TypeGraphQL.Field(_type => ROLE_1.ROLE, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserCreaterolesInput_1.UserCreaterolesInput)
+    tslib_1.__metadata("design:type", String)
 ], UserCreateInput.prototype, "roles", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {

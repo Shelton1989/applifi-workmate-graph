@@ -3,7 +3,7 @@ import { ShippingMethodCreateNestedOneWithoutOrdersInput } from "../inputs/Shipp
 import { UserCreateNestedOneWithoutOrderInput } from "../inputs/UserCreateNestedOneWithoutOrderInput";
 export declare class OrderCreateWithoutItemsInput {
     id?: string | undefined;
-    status: "OPEN" | "ORDERED" | "ORDERED_PENDING_PAYMENT" | "STARTED" | "IN_PROGRESS" | "CUSTOMISED" | "READY_FOR_COLLECTION" | "READY_FOR_DELIVERY" | "SHIPPED" | "IN_DELIVERY" | "DELIVERED" | "COMPLETE";
+    status?: "OPEN" | "ORDERED" | "ORDERED_PENDING_PAYMENT" | "STARTED" | "IN_PROGRESS" | "CUSTOMISED" | "READY_FOR_COLLECTION" | "READY_FOR_DELIVERY" | "SHIPPED" | "IN_DELIVERY" | "DELIVERED" | "COMPLETE" | undefined;
     SelectedShippingAddress?: AddressCreateNestedOneWithoutOrdersInput | undefined;
     SelectedShippingMethod?: ShippingMethodCreateNestedOneWithoutOrdersInput | undefined;
     SelectedPaymentType?: string | undefined;

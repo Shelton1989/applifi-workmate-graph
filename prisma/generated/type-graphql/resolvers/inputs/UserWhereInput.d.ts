@@ -2,7 +2,7 @@ import { AddressListRelationFilter } from "../inputs/AddressListRelationFilter";
 import { BoolFilter } from "../inputs/BoolFilter";
 import { CommentListRelationFilter } from "../inputs/CommentListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
-import { EnumROLENullableListFilter } from "../inputs/EnumROLENullableListFilter";
+import { EnumROLEFilter } from "../inputs/EnumROLEFilter";
 import { InventoryRelationFilter } from "../inputs/InventoryRelationFilter";
 import { NotificationSettingsRelationFilter } from "../inputs/NotificationSettingsRelationFilter";
 import { OrderRelationFilter } from "../inputs/OrderRelationFilter";
@@ -22,7 +22,7 @@ export declare class UserWhereInput {
     id?: StringFilter | undefined;
     username?: StringFilter | undefined;
     email?: StringFilter | undefined;
-    roles?: EnumROLENullableListFilter | undefined;
+    roles?: EnumROLEFilter | undefined;
     firstName?: StringNullableFilter | undefined;
     lastName?: StringNullableFilter | undefined;
     avatar?: StringNullableFilter | undefined;

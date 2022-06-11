@@ -18,7 +18,7 @@ tslib_1.__decorate([
 ], OrderCreateInput.prototype, "id", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ORDER_STATUS_1.ORDER_STATUS, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], OrderCreateInput.prototype, "status", void 0);
