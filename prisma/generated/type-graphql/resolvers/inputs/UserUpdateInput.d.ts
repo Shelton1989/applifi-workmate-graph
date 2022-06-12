@@ -21,7 +21,7 @@ export declare class UserUpdateInput {
     uid?: StringFieldUpdateOperationsInput | undefined;
     username?: StringFieldUpdateOperationsInput | undefined;
     email?: StringFieldUpdateOperationsInput | undefined;
-    roles?: EnumROLEFieldUpdateOperationsInput | undefined;
+    role?: EnumROLEFieldUpdateOperationsInput | undefined;
     firstName?: NullableStringFieldUpdateOperationsInput | undefined;
     lastName?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;

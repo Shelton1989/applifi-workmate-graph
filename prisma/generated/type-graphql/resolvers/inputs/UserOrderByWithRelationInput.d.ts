@@ -13,7 +13,7 @@ export declare class UserOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
     username?: "asc" | "desc" | undefined;
     email?: "asc" | "desc" | undefined;
-    roles?: "asc" | "desc" | undefined;
+    role?: "asc" | "desc" | undefined;
     firstName?: "asc" | "desc" | undefined;
     lastName?: "asc" | "desc" | undefined;
     avatar?: "asc" | "desc" | undefined;

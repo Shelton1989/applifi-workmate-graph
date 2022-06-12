@@ -9,7 +9,7 @@ var UserScalarFieldEnum;
     UserScalarFieldEnum["id"] = "id";
     UserScalarFieldEnum["username"] = "username";
     UserScalarFieldEnum["email"] = "email";
-    UserScalarFieldEnum["roles"] = "roles";
+    UserScalarFieldEnum["role"] = "role";
     UserScalarFieldEnum["firstName"] = "firstName";
     UserScalarFieldEnum["lastName"] = "lastName";
     UserScalarFieldEnum["avatar"] = "avatar";

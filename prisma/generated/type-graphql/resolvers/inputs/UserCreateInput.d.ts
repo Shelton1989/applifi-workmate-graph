@@ -17,7 +17,7 @@ export declare class UserCreateInput {
     id?: string | undefined;
     username: string;
     email: string;
-    roles?: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER" | undefined;
+    role?: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER" | undefined;
     firstName?: string | undefined;
     lastName?: string | undefined;
     avatar?: string | undefined;

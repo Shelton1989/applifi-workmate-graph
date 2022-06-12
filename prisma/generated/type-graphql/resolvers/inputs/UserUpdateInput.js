@@ -47,7 +47,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", EnumROLEFieldUpdateOperationsInput_1.EnumROLEFieldUpdateOperationsInput)
-], UserUpdateInput.prototype, "roles", void 0);
+], UserUpdateInput.prototype, "role", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
         nullable: true

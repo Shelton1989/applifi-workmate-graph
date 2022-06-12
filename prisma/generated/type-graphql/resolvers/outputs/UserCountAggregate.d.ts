@@ -3,7 +3,7 @@ export declare class UserCountAggregate {
     id: number;
     username: number;
     email: number;
-    roles: number;
+    role: number;
     firstName: number;
     lastName: number;
     avatar: number;

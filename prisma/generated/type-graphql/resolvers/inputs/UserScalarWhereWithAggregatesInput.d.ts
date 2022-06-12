@@ -12,7 +12,7 @@ export declare class UserScalarWhereWithAggregatesInput {
     id?: StringWithAggregatesFilter | undefined;
     username?: StringWithAggregatesFilter | undefined;
     email?: StringWithAggregatesFilter | undefined;
-    roles?: EnumROLEWithAggregatesFilter | undefined;
+    role?: EnumROLEWithAggregatesFilter | undefined;
     firstName?: StringNullableWithAggregatesFilter | undefined;
     lastName?: StringNullableWithAggregatesFilter | undefined;
     avatar?: StringNullableWithAggregatesFilter | undefined;

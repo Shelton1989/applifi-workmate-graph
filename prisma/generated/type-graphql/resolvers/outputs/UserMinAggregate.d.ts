@@ -3,7 +3,7 @@ export declare class UserMinAggregate {
     id: string | null;
     username: string | null;
     email: string | null;
-    roles: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER" | null;
+    role: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER" | null;
     firstName: string | null;
     lastName: string | null;
     avatar: string | null;

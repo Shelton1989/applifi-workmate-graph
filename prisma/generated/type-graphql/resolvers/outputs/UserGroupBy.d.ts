@@ -6,7 +6,7 @@ export declare class UserGroupBy {
     id: string;
     username: string;
     email: string;
-    roles: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER";
+    role: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER";
     firstName: string | null;
     lastName: string | null;
     avatar: string | null;

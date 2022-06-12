@@ -12,7 +12,7 @@ export declare class UserScalarWhereInput {
     id?: StringFilter | undefined;
     username?: StringFilter | undefined;
     email?: StringFilter | undefined;
-    roles?: EnumROLEFilter | undefined;
+    role?: EnumROLEFilter | undefined;
     firstName?: StringNullableFilter | undefined;
     lastName?: StringNullableFilter | undefined;
     avatar?: StringNullableFilter | undefined;

@@ -59,7 +59,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", EnumROLEFilter_1.EnumROLEFilter)
-], UserScalarWhereInput.prototype, "roles", void 0);
+], UserScalarWhereInput.prototype, "role", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true

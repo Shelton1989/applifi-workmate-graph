@@ -41,7 +41,7 @@ model User {
   username String @unique
   email    String @unique
 
-  roles ROLE @default(USER)
+  role ROLE @default(USER)
 
   firstName   String?
   lastName    String?
