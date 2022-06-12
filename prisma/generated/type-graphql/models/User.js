@@ -33,7 +33,7 @@ tslib_1.__decorate([
 ], User.prototype, "email", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ROLE_1.ROLE, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], User.prototype, "role", void 0);

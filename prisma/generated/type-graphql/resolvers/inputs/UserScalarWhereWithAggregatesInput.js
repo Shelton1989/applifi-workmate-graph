@@ -6,7 +6,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BoolWithAggregatesFilter_1 = require("../inputs/BoolWithAggregatesFilter");
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
-const EnumROLEWithAggregatesFilter_1 = require("../inputs/EnumROLEWithAggregatesFilter");
+const EnumROLENullableWithAggregatesFilter_1 = require("../inputs/EnumROLENullableWithAggregatesFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
 const StringNullableWithAggregatesFilter_1 = require("../inputs/StringNullableWithAggregatesFilter");
 const StringWithAggregatesFilter_1 = require("../inputs/StringWithAggregatesFilter");
@@ -55,10 +55,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], UserScalarWhereWithAggregatesInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EnumROLEWithAggregatesFilter_1.EnumROLEWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => EnumROLENullableWithAggregatesFilter_1.EnumROLENullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", EnumROLEWithAggregatesFilter_1.EnumROLEWithAggregatesFilter)
+    tslib_1.__metadata("design:type", EnumROLENullableWithAggregatesFilter_1.EnumROLENullableWithAggregatesFilter)
 ], UserScalarWhereWithAggregatesInput.prototype, "role", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {

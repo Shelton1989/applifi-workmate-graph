@@ -1,9 +1,9 @@
 import { AddressUpdateManyWithoutUserInput } from "../inputs/AddressUpdateManyWithoutUserInput";
 import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperationsInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
-import { EnumROLEFieldUpdateOperationsInput } from "../inputs/EnumROLEFieldUpdateOperationsInput";
 import { InventoryUpdateOneWithoutUserInput } from "../inputs/InventoryUpdateOneWithoutUserInput";
 import { NotificationSettingsUpdateOneWithoutUserInput } from "../inputs/NotificationSettingsUpdateOneWithoutUserInput";
+import { NullableEnumROLEFieldUpdateOperationsInput } from "../inputs/NullableEnumROLEFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { OrderUpdateOneWithoutUserInput } from "../inputs/OrderUpdateOneWithoutUserInput";
 import { PostUpdateManyWithoutAuthorInput } from "../inputs/PostUpdateManyWithoutAuthorInput";
@@ -20,7 +20,7 @@ export declare class UserUpdateWithoutCommentsInput {
     uid?: StringFieldUpdateOperationsInput | undefined;
     username?: StringFieldUpdateOperationsInput | undefined;
     email?: StringFieldUpdateOperationsInput | undefined;
-    role?: EnumROLEFieldUpdateOperationsInput | undefined;
+    role?: NullableEnumROLEFieldUpdateOperationsInput | undefined;
     firstName?: NullableStringFieldUpdateOperationsInput | undefined;
     lastName?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;

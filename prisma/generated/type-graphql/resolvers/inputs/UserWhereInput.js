@@ -8,7 +8,7 @@ const AddressListRelationFilter_1 = require("../inputs/AddressListRelationFilter
 const BoolFilter_1 = require("../inputs/BoolFilter");
 const CommentListRelationFilter_1 = require("../inputs/CommentListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
-const EnumROLEFilter_1 = require("../inputs/EnumROLEFilter");
+const EnumROLENullableFilter_1 = require("../inputs/EnumROLENullableFilter");
 const InventoryRelationFilter_1 = require("../inputs/InventoryRelationFilter");
 const NotificationSettingsRelationFilter_1 = require("../inputs/NotificationSettingsRelationFilter");
 const OrderRelationFilter_1 = require("../inputs/OrderRelationFilter");
@@ -65,10 +65,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], UserWhereInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EnumROLEFilter_1.EnumROLEFilter, {
+    TypeGraphQL.Field(_type => EnumROLENullableFilter_1.EnumROLENullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", EnumROLEFilter_1.EnumROLEFilter)
+    tslib_1.__metadata("design:type", EnumROLENullableFilter_1.EnumROLENullableFilter)
 ], UserWhereInput.prototype, "role", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {

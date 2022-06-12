@@ -6,7 +6,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BoolFilter_1 = require("../inputs/BoolFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
-const EnumROLEFilter_1 = require("../inputs/EnumROLEFilter");
+const EnumROLENullableFilter_1 = require("../inputs/EnumROLENullableFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
@@ -55,10 +55,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], UserScalarWhereInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EnumROLEFilter_1.EnumROLEFilter, {
+    TypeGraphQL.Field(_type => EnumROLENullableFilter_1.EnumROLENullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", EnumROLEFilter_1.EnumROLEFilter)
+    tslib_1.__metadata("design:type", EnumROLENullableFilter_1.EnumROLENullableFilter)
 ], UserScalarWhereInput.prototype, "role", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {

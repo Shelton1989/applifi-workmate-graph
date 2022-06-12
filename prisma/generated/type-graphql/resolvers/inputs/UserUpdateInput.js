@@ -7,9 +7,9 @@ const AddressUpdateManyWithoutUserInput_1 = require("../inputs/AddressUpdateMany
 const BoolFieldUpdateOperationsInput_1 = require("../inputs/BoolFieldUpdateOperationsInput");
 const CommentUpdateManyWithoutAuthorInput_1 = require("../inputs/CommentUpdateManyWithoutAuthorInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
-const EnumROLEFieldUpdateOperationsInput_1 = require("../inputs/EnumROLEFieldUpdateOperationsInput");
 const InventoryUpdateOneWithoutUserInput_1 = require("../inputs/InventoryUpdateOneWithoutUserInput");
 const NotificationSettingsUpdateOneWithoutUserInput_1 = require("../inputs/NotificationSettingsUpdateOneWithoutUserInput");
+const NullableEnumROLEFieldUpdateOperationsInput_1 = require("../inputs/NullableEnumROLEFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const OrderUpdateOneWithoutUserInput_1 = require("../inputs/OrderUpdateOneWithoutUserInput");
 const PostUpdateManyWithoutAuthorInput_1 = require("../inputs/PostUpdateManyWithoutAuthorInput");
@@ -43,10 +43,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], UserUpdateInput.prototype, "email", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EnumROLEFieldUpdateOperationsInput_1.EnumROLEFieldUpdateOperationsInput, {
+    TypeGraphQL.Field(_type => NullableEnumROLEFieldUpdateOperationsInput_1.NullableEnumROLEFieldUpdateOperationsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", EnumROLEFieldUpdateOperationsInput_1.EnumROLEFieldUpdateOperationsInput)
+    tslib_1.__metadata("design:type", NullableEnumROLEFieldUpdateOperationsInput_1.NullableEnumROLEFieldUpdateOperationsInput)
 ], UserUpdateInput.prototype, "role", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {

@@ -1,6 +1,6 @@
 import { BoolFilter } from "../inputs/BoolFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
-import { EnumROLEFilter } from "../inputs/EnumROLEFilter";
+import { EnumROLENullableFilter } from "../inputs/EnumROLENullableFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
@@ -12,7 +12,7 @@ export declare class UserScalarWhereInput {
     id?: StringFilter | undefined;
     username?: StringFilter | undefined;
     email?: StringFilter | undefined;
-    role?: EnumROLEFilter | undefined;
+    role?: EnumROLENullableFilter | undefined;
     firstName?: StringNullableFilter | undefined;
     lastName?: StringNullableFilter | undefined;
     avatar?: StringNullableFilter | undefined;
