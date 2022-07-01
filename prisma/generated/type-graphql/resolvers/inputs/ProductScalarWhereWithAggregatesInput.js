@@ -5,8 +5,9 @@ exports.ProductScalarWhereWithAggregatesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
-const IntWithAggregatesFilter_1 = require("../inputs/IntWithAggregatesFilter");
+const IntNullableWithAggregatesFilter_1 = require("../inputs/IntNullableWithAggregatesFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
+const StringNullableWithAggregatesFilter_1 = require("../inputs/StringNullableWithAggregatesFilter");
 const StringWithAggregatesFilter_1 = require("../inputs/StringWithAggregatesFilter");
 let ProductScalarWhereWithAggregatesInput = ProductScalarWhereWithAggregatesInput_1 = class ProductScalarWhereWithAggregatesInput {
 };
@@ -35,28 +36,28 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], ProductScalarWhereWithAggregatesInput.prototype, "id", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], ProductScalarWhereWithAggregatesInput.prototype, "description", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], ProductScalarWhereWithAggregatesInput.prototype, "priceId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
+    tslib_1.__metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
 ], ProductScalarWhereWithAggregatesInput.prototype, "availableQuantity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], ProductScalarWhereWithAggregatesInput.prototype, "photo", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
@@ -65,10 +66,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
 ], ProductScalarWhereWithAggregatesInput.prototype, "gallery", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], ProductScalarWhereWithAggregatesInput.prototype, "baseProductId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {

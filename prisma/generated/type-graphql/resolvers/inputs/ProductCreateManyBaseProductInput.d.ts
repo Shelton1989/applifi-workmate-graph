@@ -5,10 +5,10 @@ import { ProductCreatelikedByIdsInput } from "../inputs/ProductCreatelikedByIdsI
 import { ProductCreatesizeIdsInput } from "../inputs/ProductCreatesizeIdsInput";
 export declare class ProductCreateManyBaseProductInput {
     id?: string | undefined;
-    description: string;
-    priceId: string;
-    availableQuantity: number;
-    photo: string;
+    description?: string | undefined;
+    priceId?: string | undefined;
+    availableQuantity?: number | undefined;
+    photo?: string | undefined;
     gallery?: ProductCreategalleryInput | undefined;
     artworkIds?: ProductCreateartworkIdsInput | undefined;
     colorIds?: ProductCreatecolorIdsInput | undefined;

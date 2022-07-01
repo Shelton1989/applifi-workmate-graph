@@ -18,25 +18,25 @@ tslib_1.__decorate([
 ], ProductCreateManyInput.prototype, "id", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductCreateManyInput.prototype, "description", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductCreateManyInput.prototype, "priceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
 ], ProductCreateManyInput.prototype, "availableQuantity", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductCreateManyInput.prototype, "photo", void 0);
@@ -48,7 +48,7 @@ tslib_1.__decorate([
 ], ProductCreateManyInput.prototype, "gallery", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductCreateManyInput.prototype, "baseProductId", void 0);

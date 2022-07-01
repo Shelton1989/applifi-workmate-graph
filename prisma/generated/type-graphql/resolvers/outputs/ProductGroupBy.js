@@ -18,25 +18,25 @@ tslib_1.__decorate([
 ], ProductGroupBy.prototype, "id", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductGroupBy.prototype, "description", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductGroupBy.prototype, "priceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
 ], ProductGroupBy.prototype, "availableQuantity", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductGroupBy.prototype, "photo", void 0);
@@ -48,7 +48,7 @@ tslib_1.__decorate([
 ], ProductGroupBy.prototype, "gallery", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductGroupBy.prototype, "baseProductId", void 0);

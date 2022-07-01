@@ -8,12 +8,13 @@ const ArtworkListRelationFilter_1 = require("../inputs/ArtworkListRelationFilter
 const BrandProductRelationFilter_1 = require("../inputs/BrandProductRelationFilter");
 const ColorListRelationFilter_1 = require("../inputs/ColorListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
-const IntFilter_1 = require("../inputs/IntFilter");
+const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const InventoryRelationFilter_1 = require("../inputs/InventoryRelationFilter");
 const OrderLineItemListRelationFilter_1 = require("../inputs/OrderLineItemListRelationFilter");
 const PriceRelationFilter_1 = require("../inputs/PriceRelationFilter");
 const SizeListRelationFilter_1 = require("../inputs/SizeListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
+const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
 const UserListRelationFilter_1 = require("../inputs/UserListRelationFilter");
 let ProductWhereInput = ProductWhereInput_1 = class ProductWhereInput {
@@ -43,10 +44,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], ProductWhereInput.prototype, "id", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProductWhereInput.prototype, "description", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PriceRelationFilter_1.PriceRelationFilter, {
@@ -55,22 +56,22 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", PriceRelationFilter_1.PriceRelationFilter)
 ], ProductWhereInput.prototype, "price", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProductWhereInput.prototype, "priceId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
+    tslib_1.__metadata("design:type", IntNullableFilter_1.IntNullableFilter)
 ], ProductWhereInput.prototype, "availableQuantity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProductWhereInput.prototype, "photo", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
@@ -85,10 +86,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", BrandProductRelationFilter_1.BrandProductRelationFilter)
 ], ProductWhereInput.prototype, "BaseProduct", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProductWhereInput.prototype, "baseProductId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ArtworkListRelationFilter_1.ArtworkListRelationFilter, {

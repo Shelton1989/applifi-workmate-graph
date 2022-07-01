@@ -3,10 +3,12 @@ import { BrandProductCreateWithoutProductsInput } from "../inputs/BrandProductCr
 import { BrandProductUpdateWithoutProductsInput } from "../inputs/BrandProductUpdateWithoutProductsInput";
 import { BrandProductUpsertWithoutProductsInput } from "../inputs/BrandProductUpsertWithoutProductsInput";
 import { BrandProductWhereUniqueInput } from "../inputs/BrandProductWhereUniqueInput";
-export declare class BrandProductUpdateOneRequiredWithoutProductsInput {
+export declare class BrandProductUpdateOneWithoutProductsInput {
     create?: BrandProductCreateWithoutProductsInput | undefined;
     connectOrCreate?: BrandProductCreateOrConnectWithoutProductsInput | undefined;
     upsert?: BrandProductUpsertWithoutProductsInput | undefined;
+    disconnect?: boolean | undefined;
+    delete?: boolean | undefined;
     connect?: BrandProductWhereUniqueInput | undefined;
     update?: BrandProductUpdateWithoutProductsInput | undefined;
 }

@@ -25,25 +25,25 @@ tslib_1.__decorate([
 ], ProductCreateWithoutArtworkInput.prototype, "id", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductCreateWithoutArtworkInput.prototype, "description", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PriceCreateNestedOneWithoutProductsInput_1.PriceCreateNestedOneWithoutProductsInput, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", PriceCreateNestedOneWithoutProductsInput_1.PriceCreateNestedOneWithoutProductsInput)
 ], ProductCreateWithoutArtworkInput.prototype, "price", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
 ], ProductCreateWithoutArtworkInput.prototype, "availableQuantity", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductCreateWithoutArtworkInput.prototype, "photo", void 0);
@@ -55,7 +55,7 @@ tslib_1.__decorate([
 ], ProductCreateWithoutArtworkInput.prototype, "gallery", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BrandProductCreateNestedOneWithoutProductsInput_1.BrandProductCreateNestedOneWithoutProductsInput, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", BrandProductCreateNestedOneWithoutProductsInput_1.BrandProductCreateNestedOneWithoutProductsInput)
 ], ProductCreateWithoutArtworkInput.prototype, "BaseProduct", void 0);

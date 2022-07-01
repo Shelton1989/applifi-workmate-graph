@@ -253,16 +253,16 @@ model BrandProduct {
 model Product {
   id String @id @default(uuid()) @map("_id")
 
-  description String
-  price       Price  @relation(fields: [priceId], references: [id])
-  priceId     String
+  description String?
+  price       Price?  @relation(fields: [priceId], references: [id])
+  priceId     String?
 
-  availableQuantity Int
-  photo             String
+  availableQuantity Int?
+  photo             String?
   gallery           String[]
 
-  BaseProduct   BrandProduct @relation(fields: [baseProductId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  baseProductId String
+  BaseProduct   BrandProduct? @relation(fields: [baseProductId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  baseProductId String?
 
   Artwork    Artwork[] @relation(fields: [artworkIds], references: [id])
   artworkIds String[]

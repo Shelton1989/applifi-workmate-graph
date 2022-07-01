@@ -78,7 +78,7 @@ let ProductRelationsResolver = class ProductRelationsResolver {
 };
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => Price_1.Price, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
     tslib_1.__param(1, TypeGraphQL.Ctx()),
@@ -88,7 +88,7 @@ tslib_1.__decorate([
 ], ProductRelationsResolver.prototype, "price", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => BrandProduct_1.BrandProduct, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
     tslib_1.__param(1, TypeGraphQL.Ctx()),

@@ -5,8 +5,9 @@ exports.ProductScalarWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
-const IntFilter_1 = require("../inputs/IntFilter");
+const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
+const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
 let ProductScalarWhereInput = ProductScalarWhereInput_1 = class ProductScalarWhereInput {
 };
@@ -35,28 +36,28 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], ProductScalarWhereInput.prototype, "id", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProductScalarWhereInput.prototype, "description", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProductScalarWhereInput.prototype, "priceId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
+    tslib_1.__metadata("design:type", IntNullableFilter_1.IntNullableFilter)
 ], ProductScalarWhereInput.prototype, "availableQuantity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProductScalarWhereInput.prototype, "photo", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
@@ -65,10 +66,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
 ], ProductScalarWhereInput.prototype, "gallery", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ProductScalarWhereInput.prototype, "baseProductId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {

@@ -5,12 +5,12 @@ import { ProductMinAggregate } from "../outputs/ProductMinAggregate";
 import { ProductSumAggregate } from "../outputs/ProductSumAggregate";
 export declare class ProductGroupBy {
     id: string;
-    description: string;
-    priceId: string;
-    availableQuantity: number;
-    photo: string;
+    description: string | null;
+    priceId: string | null;
+    availableQuantity: number | null;
+    photo: string | null;
     gallery: string[] | null;
-    baseProductId: string;
+    baseProductId: string | null;
     artworkIds: string[] | null;
     colorIds: string[] | null;
     sizeIds: string[] | null;

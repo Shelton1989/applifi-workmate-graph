@@ -12,10 +12,10 @@ import { SizeCreateNestedManyWithoutProductsInput } from "../inputs/SizeCreateNe
 import { UserCreateNestedManyWithoutLikedProductsInput } from "../inputs/UserCreateNestedManyWithoutLikedProductsInput";
 export declare class ProductCreateWithoutBaseProductInput {
     id?: string | undefined;
-    description: string;
-    price: PriceCreateNestedOneWithoutProductsInput;
-    availableQuantity: number;
-    photo: string;
+    description?: string | undefined;
+    price?: PriceCreateNestedOneWithoutProductsInput | undefined;
+    availableQuantity?: number | undefined;
+    photo?: string | undefined;
     gallery?: ProductCreategalleryInput | undefined;
     Artwork?: ArtworkCreateNestedManyWithoutProductsInput | undefined;
     artworkIds?: ProductCreateartworkIdsInput | undefined;

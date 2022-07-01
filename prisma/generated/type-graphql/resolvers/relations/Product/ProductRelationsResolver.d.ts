@@ -13,8 +13,8 @@ import { ProductLikedByArgs } from "./args/ProductLikedByArgs";
 import { ProductOrderLineItemsArgs } from "./args/ProductOrderLineItemsArgs";
 import { ProductSizesArgs } from "./args/ProductSizesArgs";
 export declare class ProductRelationsResolver {
-    price(product: Product, ctx: any): Promise<Price>;
-    BaseProduct(product: Product, ctx: any): Promise<BrandProduct>;
+    price(product: Product, ctx: any): Promise<Price | null>;
+    BaseProduct(product: Product, ctx: any): Promise<BrandProduct | null>;
     Artwork(product: Product, ctx: any, args: ProductArtworkArgs): Promise<Artwork[]>;
     Colors(product: Product, ctx: any, args: ProductColorsArgs): Promise<Color[]>;
     Sizes(product: Product, ctx: any, args: ProductSizesArgs): Promise<Size[]>;

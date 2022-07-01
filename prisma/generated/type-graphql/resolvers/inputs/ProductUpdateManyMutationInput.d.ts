@@ -1,15 +1,15 @@
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
-import { IntFieldUpdateOperationsInput } from "../inputs/IntFieldUpdateOperationsInput";
+import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
+import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { ProductUpdateartworkIdsInput } from "../inputs/ProductUpdateartworkIdsInput";
 import { ProductUpdatecolorIdsInput } from "../inputs/ProductUpdatecolorIdsInput";
 import { ProductUpdategalleryInput } from "../inputs/ProductUpdategalleryInput";
 import { ProductUpdatelikedByIdsInput } from "../inputs/ProductUpdatelikedByIdsInput";
 import { ProductUpdatesizeIdsInput } from "../inputs/ProductUpdatesizeIdsInput";
-import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class ProductUpdateManyMutationInput {
-    description?: StringFieldUpdateOperationsInput | undefined;
-    availableQuantity?: IntFieldUpdateOperationsInput | undefined;
-    photo?: StringFieldUpdateOperationsInput | undefined;
+    description?: NullableStringFieldUpdateOperationsInput | undefined;
+    availableQuantity?: NullableIntFieldUpdateOperationsInput | undefined;
+    photo?: NullableStringFieldUpdateOperationsInput | undefined;
     gallery?: ProductUpdategalleryInput | undefined;
     artworkIds?: ProductUpdateartworkIdsInput | undefined;
     colorIds?: ProductUpdatecolorIdsInput | undefined;
