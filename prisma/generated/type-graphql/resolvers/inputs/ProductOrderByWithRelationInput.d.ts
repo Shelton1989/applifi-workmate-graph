@@ -8,6 +8,7 @@ import { SizeOrderByRelationAggregateInput } from "../inputs/SizeOrderByRelation
 import { UserOrderByRelationAggregateInput } from "../inputs/UserOrderByRelationAggregateInput";
 export declare class ProductOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
+    publishStatus?: "asc" | "desc" | undefined;
     description?: "asc" | "desc" | undefined;
     price?: PriceOrderByWithRelationInput | undefined;
     priceId?: "asc" | "desc" | undefined;

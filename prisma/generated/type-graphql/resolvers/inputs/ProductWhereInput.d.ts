@@ -2,6 +2,7 @@ import { ArtworkListRelationFilter } from "../inputs/ArtworkListRelationFilter";
 import { BrandProductRelationFilter } from "../inputs/BrandProductRelationFilter";
 import { ColorListRelationFilter } from "../inputs/ColorListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
+import { EnumSTATUSFilter } from "../inputs/EnumSTATUSFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { InventoryRelationFilter } from "../inputs/InventoryRelationFilter";
 import { OrderLineItemListRelationFilter } from "../inputs/OrderLineItemListRelationFilter";
@@ -16,6 +17,7 @@ export declare class ProductWhereInput {
     OR?: ProductWhereInput[] | undefined;
     NOT?: ProductWhereInput[] | undefined;
     id?: StringFilter | undefined;
+    publishStatus?: EnumSTATUSFilter | undefined;
     description?: StringNullableFilter | undefined;
     price?: PriceRelationFilter | undefined;
     priceId?: StringNullableFilter | undefined;

@@ -8,6 +8,7 @@ const ProductCreatecolorIdsInput_1 = require("../inputs/ProductCreatecolorIdsInp
 const ProductCreategalleryInput_1 = require("../inputs/ProductCreategalleryInput");
 const ProductCreatelikedByIdsInput_1 = require("../inputs/ProductCreatelikedByIdsInput");
 const ProductCreatesizeIdsInput_1 = require("../inputs/ProductCreatesizeIdsInput");
+const STATUS_1 = require("../../enums/STATUS");
 let ProductCreateManyInventoryInput = class ProductCreateManyInventoryInput {
 };
 tslib_1.__decorate([
@@ -16,6 +17,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductCreateManyInventoryInput.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => STATUS_1.STATUS, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], ProductCreateManyInventoryInput.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

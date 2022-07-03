@@ -1,5 +1,6 @@
 export declare enum ProductScalarFieldEnum {
     id = "id",
+    publishStatus = "publishStatus",
     description = "description",
     priceId = "priceId",
     availableQuantity = "availableQuantity",

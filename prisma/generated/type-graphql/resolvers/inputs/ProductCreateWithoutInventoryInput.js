@@ -15,6 +15,7 @@ const ProductCreatelikedByIdsInput_1 = require("../inputs/ProductCreatelikedById
 const ProductCreatesizeIdsInput_1 = require("../inputs/ProductCreatesizeIdsInput");
 const SizeCreateNestedManyWithoutProductsInput_1 = require("../inputs/SizeCreateNestedManyWithoutProductsInput");
 const UserCreateNestedManyWithoutLikedProductsInput_1 = require("../inputs/UserCreateNestedManyWithoutLikedProductsInput");
+const STATUS_1 = require("../../enums/STATUS");
 let ProductCreateWithoutInventoryInput = class ProductCreateWithoutInventoryInput {
 };
 tslib_1.__decorate([
@@ -23,6 +24,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductCreateWithoutInventoryInput.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => STATUS_1.STATUS, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], ProductCreateWithoutInventoryInput.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

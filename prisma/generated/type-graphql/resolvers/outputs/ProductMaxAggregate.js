@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductMaxAggregate = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const STATUS_1 = require("../../enums/STATUS");
 let ProductMaxAggregate = class ProductMaxAggregate {
 };
 tslib_1.__decorate([
@@ -11,6 +12,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductMaxAggregate.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => STATUS_1.STATUS, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], ProductMaxAggregate.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

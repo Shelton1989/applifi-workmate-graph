@@ -4,6 +4,7 @@ exports.ProductUpdateManyMutationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
+const EnumSTATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumSTATUSFieldUpdateOperationsInput");
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const ProductUpdateartworkIdsInput_1 = require("../inputs/ProductUpdateartworkIdsInput");
@@ -13,6 +14,12 @@ const ProductUpdatelikedByIdsInput_1 = require("../inputs/ProductUpdatelikedById
 const ProductUpdatesizeIdsInput_1 = require("../inputs/ProductUpdatesizeIdsInput");
 let ProductUpdateManyMutationInput = class ProductUpdateManyMutationInput {
 };
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => EnumSTATUSFieldUpdateOperationsInput_1.EnumSTATUSFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", EnumSTATUSFieldUpdateOperationsInput_1.EnumSTATUSFieldUpdateOperationsInput)
+], ProductUpdateManyMutationInput.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
         nullable: true

@@ -6,7 +6,7 @@ export declare class BrandGroupBy {
     name: string;
     description: string;
     tagline: string;
-    status: "PENDING_APPROVAL" | "IN_REVIEW" | "APPROVED" | "NO_ACTION_TAKEN" | "REJECTED_WITH_REASON" | "DECLINED" | "BANNED" | "SOFT_BANNED";
+    status: "DRAFT" | "PUBLISHED" | "UNDER_REVIEW" | "PENDING_APPROVAL" | "IN_REVIEW" | "APPROVED" | "NO_ACTION_TAKEN" | "REJECTED_WITH_REASON" | "DECLINED" | "BANNED" | "SOFT_BANNED";
     createdAt: Date;
     updatedAt: Date;
     _count: BrandCountAggregate | null;

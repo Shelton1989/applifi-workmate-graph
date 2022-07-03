@@ -5,6 +5,7 @@ exports.ProductScalarWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
+const EnumSTATUSFilter_1 = require("../inputs/EnumSTATUSFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
@@ -35,6 +36,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], ProductScalarWhereInput.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => EnumSTATUSFilter_1.EnumSTATUSFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", EnumSTATUSFilter_1.EnumSTATUSFilter)
+], ProductScalarWhereInput.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true

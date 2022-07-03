@@ -2,6 +2,7 @@ import { ArtworkUpdateManyWithoutProductsInput } from "../inputs/ArtworkUpdateMa
 import { BrandProductUpdateOneWithoutProductsInput } from "../inputs/BrandProductUpdateOneWithoutProductsInput";
 import { ColorUpdateManyWithoutProductsInput } from "../inputs/ColorUpdateManyWithoutProductsInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
+import { EnumSTATUSFieldUpdateOperationsInput } from "../inputs/EnumSTATUSFieldUpdateOperationsInput";
 import { InventoryUpdateOneRequiredWithoutProductsInput } from "../inputs/InventoryUpdateOneRequiredWithoutProductsInput";
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
@@ -15,6 +16,7 @@ import { ProductUpdatesizeIdsInput } from "../inputs/ProductUpdatesizeIdsInput";
 import { SizeUpdateManyWithoutProductsInput } from "../inputs/SizeUpdateManyWithoutProductsInput";
 import { UserUpdateManyWithoutLikedProductsInput } from "../inputs/UserUpdateManyWithoutLikedProductsInput";
 export declare class ProductUpdateInput {
+    publishStatus?: EnumSTATUSFieldUpdateOperationsInput | undefined;
     description?: NullableStringFieldUpdateOperationsInput | undefined;
     price?: PriceUpdateOneWithoutProductsInput | undefined;
     availableQuantity?: NullableIntFieldUpdateOperationsInput | undefined;

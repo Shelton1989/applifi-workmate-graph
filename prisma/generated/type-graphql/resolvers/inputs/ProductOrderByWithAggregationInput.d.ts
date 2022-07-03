@@ -5,6 +5,7 @@ import { ProductMinOrderByAggregateInput } from "../inputs/ProductMinOrderByAggr
 import { ProductSumOrderByAggregateInput } from "../inputs/ProductSumOrderByAggregateInput";
 export declare class ProductOrderByWithAggregationInput {
     id?: "asc" | "desc" | undefined;
+    publishStatus?: "asc" | "desc" | undefined;
     description?: "asc" | "desc" | undefined;
     priceId?: "asc" | "desc" | undefined;
     availableQuantity?: "asc" | "desc" | undefined;

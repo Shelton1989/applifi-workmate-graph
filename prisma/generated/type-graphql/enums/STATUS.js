@@ -5,6 +5,9 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 var STATUS;
 (function (STATUS) {
+    STATUS["DRAFT"] = "DRAFT";
+    STATUS["PUBLISHED"] = "PUBLISHED";
+    STATUS["UNDER_REVIEW"] = "UNDER_REVIEW";
     STATUS["PENDING_APPROVAL"] = "PENDING_APPROVAL";
     STATUS["IN_REVIEW"] = "IN_REVIEW";
     STATUS["APPROVED"] = "APPROVED";

@@ -1,4 +1,5 @@
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
+import { EnumSTATUSFilter } from "../inputs/EnumSTATUSFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
@@ -8,6 +9,7 @@ export declare class ProductScalarWhereInput {
     OR?: ProductScalarWhereInput[] | undefined;
     NOT?: ProductScalarWhereInput[] | undefined;
     id?: StringFilter | undefined;
+    publishStatus?: EnumSTATUSFilter | undefined;
     description?: StringNullableFilter | undefined;
     priceId?: StringNullableFilter | undefined;
     availableQuantity?: IntNullableFilter | undefined;

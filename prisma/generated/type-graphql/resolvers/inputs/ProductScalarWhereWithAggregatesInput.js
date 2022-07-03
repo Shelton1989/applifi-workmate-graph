@@ -5,6 +5,7 @@ exports.ProductScalarWhereWithAggregatesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
+const EnumSTATUSWithAggregatesFilter_1 = require("../inputs/EnumSTATUSWithAggregatesFilter");
 const IntNullableWithAggregatesFilter_1 = require("../inputs/IntNullableWithAggregatesFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
 const StringNullableWithAggregatesFilter_1 = require("../inputs/StringNullableWithAggregatesFilter");
@@ -35,6 +36,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], ProductScalarWhereWithAggregatesInput.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => EnumSTATUSWithAggregatesFilter_1.EnumSTATUSWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", EnumSTATUSWithAggregatesFilter_1.EnumSTATUSWithAggregatesFilter)
+], ProductScalarWhereWithAggregatesInput.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
         nullable: true

@@ -1,4 +1,5 @@
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
+import { EnumSTATUSWithAggregatesFilter } from "../inputs/EnumSTATUSWithAggregatesFilter";
 import { IntNullableWithAggregatesFilter } from "../inputs/IntNullableWithAggregatesFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
 import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
@@ -8,6 +9,7 @@ export declare class ProductScalarWhereWithAggregatesInput {
     OR?: ProductScalarWhereWithAggregatesInput[] | undefined;
     NOT?: ProductScalarWhereWithAggregatesInput[] | undefined;
     id?: StringWithAggregatesFilter | undefined;
+    publishStatus?: EnumSTATUSWithAggregatesFilter | undefined;
     description?: StringNullableWithAggregatesFilter | undefined;
     priceId?: StringNullableWithAggregatesFilter | undefined;
     availableQuantity?: IntNullableWithAggregatesFilter | undefined;

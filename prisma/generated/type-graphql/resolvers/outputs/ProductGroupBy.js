@@ -8,6 +8,7 @@ const ProductCountAggregate_1 = require("../outputs/ProductCountAggregate");
 const ProductMaxAggregate_1 = require("../outputs/ProductMaxAggregate");
 const ProductMinAggregate_1 = require("../outputs/ProductMinAggregate");
 const ProductSumAggregate_1 = require("../outputs/ProductSumAggregate");
+const STATUS_1 = require("../../enums/STATUS");
 let ProductGroupBy = class ProductGroupBy {
 };
 tslib_1.__decorate([
@@ -16,6 +17,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductGroupBy.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => STATUS_1.STATUS, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], ProductGroupBy.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

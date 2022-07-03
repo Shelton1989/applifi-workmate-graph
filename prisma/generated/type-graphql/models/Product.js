@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Product = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const STATUS_1 = require("../enums/STATUS");
 const ProductCount_1 = require("../resolvers/outputs/ProductCount");
 let Product = class Product {
 };
@@ -12,6 +13,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], Product.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => STATUS_1.STATUS, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], Product.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

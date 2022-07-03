@@ -5,6 +5,7 @@ import { ProductMinAggregate } from "../outputs/ProductMinAggregate";
 import { ProductSumAggregate } from "../outputs/ProductSumAggregate";
 export declare class ProductGroupBy {
     id: string;
+    publishStatus: "DRAFT" | "PUBLISHED" | "UNDER_REVIEW" | "PENDING_APPROVAL" | "IN_REVIEW" | "APPROVED" | "NO_ACTION_TAKEN" | "REJECTED_WITH_REASON" | "DECLINED" | "BANNED" | "SOFT_BANNED";
     description: string | null;
     priceId: string | null;
     availableQuantity: number | null;

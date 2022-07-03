@@ -155,6 +155,9 @@ enum SIZE_REGION {
 }
 
 enum STATUS {
+  DRAFT
+  PUBLISHED
+  UNDER_REVIEW
   PENDING_APPROVAL
   IN_REVIEW
   APPROVED
@@ -252,6 +255,8 @@ model BrandProduct {
 
 model Product {
   id String @id @default(uuid()) @map("_id")
+
+  publishStatus STATUS @default(DRAFT)
 
   description String?
   price       Price?  @relation(fields: [priceId], references: [id])

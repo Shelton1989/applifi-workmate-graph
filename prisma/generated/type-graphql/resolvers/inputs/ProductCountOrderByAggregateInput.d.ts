@@ -1,5 +1,6 @@
 export declare class ProductCountOrderByAggregateInput {
     id?: "asc" | "desc" | undefined;
+    publishStatus?: "asc" | "desc" | undefined;
     description?: "asc" | "desc" | undefined;
     priceId?: "asc" | "desc" | undefined;
     availableQuantity?: "asc" | "desc" | undefined;

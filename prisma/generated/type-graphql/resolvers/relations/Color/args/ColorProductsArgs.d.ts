@@ -7,5 +7,5 @@ export declare class ColorProductsArgs {
     cursor?: ProductWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "description" | "priceId" | "availableQuantity" | "photo" | "gallery" | "baseProductId" | "artworkIds" | "colorIds" | "sizeIds" | "likedByIds" | "inventoryId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "publishStatus" | "description" | "priceId" | "availableQuantity" | "photo" | "gallery" | "baseProductId" | "artworkIds" | "colorIds" | "sizeIds" | "likedByIds" | "inventoryId" | "createdAt" | "updatedAt"> | undefined;
 }

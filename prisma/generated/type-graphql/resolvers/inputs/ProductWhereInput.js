@@ -8,6 +8,7 @@ const ArtworkListRelationFilter_1 = require("../inputs/ArtworkListRelationFilter
 const BrandProductRelationFilter_1 = require("../inputs/BrandProductRelationFilter");
 const ColorListRelationFilter_1 = require("../inputs/ColorListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
+const EnumSTATUSFilter_1 = require("../inputs/EnumSTATUSFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const InventoryRelationFilter_1 = require("../inputs/InventoryRelationFilter");
 const OrderLineItemListRelationFilter_1 = require("../inputs/OrderLineItemListRelationFilter");
@@ -43,6 +44,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], ProductWhereInput.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => EnumSTATUSFilter_1.EnumSTATUSFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", EnumSTATUSFilter_1.EnumSTATUSFilter)
+], ProductWhereInput.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true

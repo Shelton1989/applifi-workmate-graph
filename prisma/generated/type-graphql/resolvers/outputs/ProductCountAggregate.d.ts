@@ -1,5 +1,6 @@
 export declare class ProductCountAggregate {
     id: number;
+    publishStatus: number;
     description: number;
     priceId: number;
     availableQuantity: number;

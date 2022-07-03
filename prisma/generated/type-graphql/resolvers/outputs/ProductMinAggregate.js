@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ProductMinAggregate = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const STATUS_1 = require("../../enums/STATUS");
 let ProductMinAggregate = class ProductMinAggregate {
 };
 tslib_1.__decorate([
@@ -11,6 +12,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], ProductMinAggregate.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => STATUS_1.STATUS, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], ProductMinAggregate.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

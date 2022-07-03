@@ -12,6 +12,7 @@ import { SizeCreateNestedManyWithoutProductsInput } from "../inputs/SizeCreateNe
 import { UserCreateNestedManyWithoutLikedProductsInput } from "../inputs/UserCreateNestedManyWithoutLikedProductsInput";
 export declare class ProductCreateWithoutOrderLineItemsInput {
     id?: string | undefined;
+    publishStatus?: "DRAFT" | "PUBLISHED" | "UNDER_REVIEW" | "PENDING_APPROVAL" | "IN_REVIEW" | "APPROVED" | "NO_ACTION_TAKEN" | "REJECTED_WITH_REASON" | "DECLINED" | "BANNED" | "SOFT_BANNED" | undefined;
     description?: string | undefined;
     price?: PriceCreateNestedOneWithoutProductsInput | undefined;
     availableQuantity?: number | undefined;
