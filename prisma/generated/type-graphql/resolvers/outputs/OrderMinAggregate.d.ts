@@ -5,7 +5,8 @@ export declare class OrderMinAggregate {
     selectedShippingMethodId: string | null;
     SelectedPaymentType: string | null;
     stripePaymentReference: string | null;
-    userId: string | null;
+    buyerId: string | null;
+    sellerId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }

@@ -14,6 +14,7 @@ export { Price } from "./Price";
 export { Product } from "./Product";
 export { Reaction } from "./Reaction";
 export { Reply } from "./Reply";
+export { Request } from "./Request";
 export { ShippingMethod } from "./ShippingMethod";
 export { Size } from "./Size";
 export { User } from "./User";

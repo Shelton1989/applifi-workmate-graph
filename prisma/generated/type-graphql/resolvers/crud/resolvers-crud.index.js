@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserCrudResolver = exports.SizeCrudResolver = exports.ShippingMethodCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.ProductCrudResolver = exports.PriceCrudResolver = exports.PostCrudResolver = exports.OrderLineItemCrudResolver = exports.OrderCrudResolver = exports.NotificationSettingsCrudResolver = exports.InventoryCrudResolver = exports.CurrencyCrudResolver = exports.CommentCrudResolver = exports.ColorCrudResolver = exports.BrandProductCrudResolver = exports.BrandCrudResolver = exports.ArtworkCrudResolver = exports.AddressCrudResolver = void 0;
+exports.UserCrudResolver = exports.SizeCrudResolver = exports.ShippingMethodCrudResolver = exports.RequestCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.ProductCrudResolver = exports.PriceCrudResolver = exports.PostCrudResolver = exports.OrderLineItemCrudResolver = exports.OrderCrudResolver = exports.NotificationSettingsCrudResolver = exports.InventoryCrudResolver = exports.CurrencyCrudResolver = exports.CommentCrudResolver = exports.ColorCrudResolver = exports.BrandProductCrudResolver = exports.BrandCrudResolver = exports.ArtworkCrudResolver = exports.AddressCrudResolver = void 0;
 var AddressCrudResolver_1 = require("./Address/AddressCrudResolver");
 Object.defineProperty(exports, "AddressCrudResolver", { enumerable: true, get: function () { return AddressCrudResolver_1.AddressCrudResolver; } });
 var ArtworkCrudResolver_1 = require("./Artwork/ArtworkCrudResolver");
@@ -33,6 +33,8 @@ var ReactionCrudResolver_1 = require("./Reaction/ReactionCrudResolver");
 Object.defineProperty(exports, "ReactionCrudResolver", { enumerable: true, get: function () { return ReactionCrudResolver_1.ReactionCrudResolver; } });
 var ReplyCrudResolver_1 = require("./Reply/ReplyCrudResolver");
 Object.defineProperty(exports, "ReplyCrudResolver", { enumerable: true, get: function () { return ReplyCrudResolver_1.ReplyCrudResolver; } });
+var RequestCrudResolver_1 = require("./Request/RequestCrudResolver");
+Object.defineProperty(exports, "RequestCrudResolver", { enumerable: true, get: function () { return RequestCrudResolver_1.RequestCrudResolver; } });
 var ShippingMethodCrudResolver_1 = require("./ShippingMethod/ShippingMethodCrudResolver");
 Object.defineProperty(exports, "ShippingMethodCrudResolver", { enumerable: true, get: function () { return ShippingMethodCrudResolver_1.ShippingMethodCrudResolver; } });
 var SizeCrudResolver_1 = require("./Size/SizeCrudResolver");

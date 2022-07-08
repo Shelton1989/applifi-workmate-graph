@@ -6,10 +6,12 @@ import { InventoryUpdateOneWithoutUserInput } from "../inputs/InventoryUpdateOne
 import { NotificationSettingsUpdateOneWithoutUserInput } from "../inputs/NotificationSettingsUpdateOneWithoutUserInput";
 import { NullableEnumROLEFieldUpdateOperationsInput } from "../inputs/NullableEnumROLEFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { OrderUpdateOneWithoutUserInput } from "../inputs/OrderUpdateOneWithoutUserInput";
+import { OrderUpdateManyWithoutBuyerInput } from "../inputs/OrderUpdateManyWithoutBuyerInput";
+import { OrderUpdateManyWithoutSellerInput } from "../inputs/OrderUpdateManyWithoutSellerInput";
 import { PostUpdateManyWithoutAuthorInput } from "../inputs/PostUpdateManyWithoutAuthorInput";
 import { ReactionUpdateManyWithoutAuthorInput } from "../inputs/ReactionUpdateManyWithoutAuthorInput";
 import { ReplyUpdateManyWithoutAuthorInput } from "../inputs/ReplyUpdateManyWithoutAuthorInput";
+import { RequestUpdateManyWithoutReporterInput } from "../inputs/RequestUpdateManyWithoutReporterInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 import { UserUpdateManyWithoutFollowersInput } from "../inputs/UserUpdateManyWithoutFollowersInput";
 import { UserUpdateManyWithoutFollowingInput } from "../inputs/UserUpdateManyWithoutFollowingInput";
@@ -34,9 +36,11 @@ export declare class UserUpdateWithoutLikedProductsInput {
     followingIds?: UserUpdatefollowingIdsInput | undefined;
     Followers?: UserUpdateManyWithoutFollowingInput | undefined;
     followerIds?: UserUpdatefollowerIdsInput | undefined;
-    Order?: OrderUpdateOneWithoutUserInput | undefined;
     productIds?: UserUpdateproductIdsInput | undefined;
     Inventory?: InventoryUpdateOneWithoutUserInput | undefined;
+    MyOrders?: OrderUpdateManyWithoutBuyerInput | undefined;
+    PurchaseOrders?: OrderUpdateManyWithoutSellerInput | undefined;
+    Requests?: RequestUpdateManyWithoutReporterInput | undefined;
     Posts?: PostUpdateManyWithoutAuthorInput | undefined;
     Comments?: CommentUpdateManyWithoutAuthorInput | undefined;
     Replies?: ReplyUpdateManyWithoutAuthorInput | undefined;

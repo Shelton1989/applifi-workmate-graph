@@ -1,7 +1,8 @@
 import { AddressCreateNestedOneWithoutOrdersInput } from "../inputs/AddressCreateNestedOneWithoutOrdersInput";
 import { OrderLineItemCreateNestedManyWithoutOrderInput } from "../inputs/OrderLineItemCreateNestedManyWithoutOrderInput";
 import { ShippingMethodCreateNestedOneWithoutOrdersInput } from "../inputs/ShippingMethodCreateNestedOneWithoutOrdersInput";
-import { UserCreateNestedOneWithoutOrderInput } from "../inputs/UserCreateNestedOneWithoutOrderInput";
+import { UserCreateNestedOneWithoutMyOrdersInput } from "../inputs/UserCreateNestedOneWithoutMyOrdersInput";
+import { UserCreateNestedOneWithoutPurchaseOrdersInput } from "../inputs/UserCreateNestedOneWithoutPurchaseOrdersInput";
 export declare class OrderCreateInput {
     id?: string | undefined;
     status?: "OPEN" | "ORDERED" | "ORDERED_PENDING_PAYMENT" | "STARTED" | "IN_PROGRESS" | "CUSTOMISED" | "READY_FOR_COLLECTION" | "READY_FOR_DELIVERY" | "SHIPPED" | "IN_DELIVERY" | "DELIVERED" | "COMPLETE" | undefined;
@@ -9,7 +10,8 @@ export declare class OrderCreateInput {
     SelectedShippingMethod?: ShippingMethodCreateNestedOneWithoutOrdersInput | undefined;
     SelectedPaymentType?: string | undefined;
     stripePaymentReference?: string | undefined;
-    User: UserCreateNestedOneWithoutOrderInput;
+    Buyer: UserCreateNestedOneWithoutMyOrdersInput;
+    Seller: UserCreateNestedOneWithoutPurchaseOrdersInput;
     Items?: OrderLineItemCreateNestedManyWithoutOrderInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

@@ -8,7 +8,8 @@ export declare class OrderGroupBy {
     selectedShippingMethodId: string | null;
     SelectedPaymentType: string | null;
     stripePaymentReference: string | null;
-    userId: string;
+    buyerId: string;
+    sellerId: string;
     createdAt: Date;
     updatedAt: Date;
     _count: OrderCountAggregate | null;

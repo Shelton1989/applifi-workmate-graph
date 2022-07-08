@@ -5,7 +5,8 @@ export declare enum OrderScalarFieldEnum {
     selectedShippingMethodId = "selectedShippingMethodId",
     SelectedPaymentType = "SelectedPaymentType",
     stripePaymentReference = "stripePaymentReference",
-    userId = "userId",
+    buyerId = "buyerId",
+    sellerId = "sellerId",
     createdAt = "createdAt",
     updatedAt = "updatedAt"
 }

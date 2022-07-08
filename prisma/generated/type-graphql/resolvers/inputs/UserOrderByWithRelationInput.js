@@ -7,11 +7,12 @@ const AddressOrderByRelationAggregateInput_1 = require("../inputs/AddressOrderBy
 const CommentOrderByRelationAggregateInput_1 = require("../inputs/CommentOrderByRelationAggregateInput");
 const InventoryOrderByWithRelationInput_1 = require("../inputs/InventoryOrderByWithRelationInput");
 const NotificationSettingsOrderByWithRelationInput_1 = require("../inputs/NotificationSettingsOrderByWithRelationInput");
-const OrderOrderByWithRelationInput_1 = require("../inputs/OrderOrderByWithRelationInput");
+const OrderOrderByRelationAggregateInput_1 = require("../inputs/OrderOrderByRelationAggregateInput");
 const PostOrderByRelationAggregateInput_1 = require("../inputs/PostOrderByRelationAggregateInput");
 const ProductOrderByRelationAggregateInput_1 = require("../inputs/ProductOrderByRelationAggregateInput");
 const ReactionOrderByRelationAggregateInput_1 = require("../inputs/ReactionOrderByRelationAggregateInput");
 const ReplyOrderByRelationAggregateInput_1 = require("../inputs/ReplyOrderByRelationAggregateInput");
+const RequestOrderByRelationAggregateInput_1 = require("../inputs/RequestOrderByRelationAggregateInput");
 const UserOrderByRelationAggregateInput_1 = require("../inputs/UserOrderByRelationAggregateInput");
 const SortOrder_1 = require("../../enums/SortOrder");
 let UserOrderByWithRelationInput = class UserOrderByWithRelationInput {
@@ -125,12 +126,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], UserOrderByWithRelationInput.prototype, "followerIds", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderOrderByWithRelationInput_1.OrderOrderByWithRelationInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", OrderOrderByWithRelationInput_1.OrderOrderByWithRelationInput)
-], UserOrderByWithRelationInput.prototype, "Order", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => ProductOrderByRelationAggregateInput_1.ProductOrderByRelationAggregateInput, {
         nullable: true
     }),
@@ -148,6 +143,24 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", InventoryOrderByWithRelationInput_1.InventoryOrderByWithRelationInput)
 ], UserOrderByWithRelationInput.prototype, "Inventory", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => OrderOrderByRelationAggregateInput_1.OrderOrderByRelationAggregateInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", OrderOrderByRelationAggregateInput_1.OrderOrderByRelationAggregateInput)
+], UserOrderByWithRelationInput.prototype, "MyOrders", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => OrderOrderByRelationAggregateInput_1.OrderOrderByRelationAggregateInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", OrderOrderByRelationAggregateInput_1.OrderOrderByRelationAggregateInput)
+], UserOrderByWithRelationInput.prototype, "PurchaseOrders", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => RequestOrderByRelationAggregateInput_1.RequestOrderByRelationAggregateInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", RequestOrderByRelationAggregateInput_1.RequestOrderByRelationAggregateInput)
+], UserOrderByWithRelationInput.prototype, "Requests", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostOrderByRelationAggregateInput_1.PostOrderByRelationAggregateInput, {
         nullable: true

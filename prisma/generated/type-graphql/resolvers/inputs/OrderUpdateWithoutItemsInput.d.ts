@@ -3,14 +3,16 @@ import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdat
 import { EnumORDER_STATUSFieldUpdateOperationsInput } from "../inputs/EnumORDER_STATUSFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { ShippingMethodUpdateOneWithoutOrdersInput } from "../inputs/ShippingMethodUpdateOneWithoutOrdersInput";
-import { UserUpdateOneRequiredWithoutOrderInput } from "../inputs/UserUpdateOneRequiredWithoutOrderInput";
+import { UserUpdateOneRequiredWithoutMyOrdersInput } from "../inputs/UserUpdateOneRequiredWithoutMyOrdersInput";
+import { UserUpdateOneRequiredWithoutPurchaseOrdersInput } from "../inputs/UserUpdateOneRequiredWithoutPurchaseOrdersInput";
 export declare class OrderUpdateWithoutItemsInput {
     status?: EnumORDER_STATUSFieldUpdateOperationsInput | undefined;
     SelectedShippingAddress?: AddressUpdateOneWithoutOrdersInput | undefined;
     SelectedShippingMethod?: ShippingMethodUpdateOneWithoutOrdersInput | undefined;
     SelectedPaymentType?: NullableStringFieldUpdateOperationsInput | undefined;
     stripePaymentReference?: NullableStringFieldUpdateOperationsInput | undefined;
-    User?: UserUpdateOneRequiredWithoutOrderInput | undefined;
+    Buyer?: UserUpdateOneRequiredWithoutMyOrdersInput | undefined;
+    Seller?: UserUpdateOneRequiredWithoutPurchaseOrdersInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

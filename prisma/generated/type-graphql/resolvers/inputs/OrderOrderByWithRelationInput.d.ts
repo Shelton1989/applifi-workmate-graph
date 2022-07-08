@@ -11,8 +11,10 @@ export declare class OrderOrderByWithRelationInput {
     selectedShippingMethodId?: "asc" | "desc" | undefined;
     SelectedPaymentType?: "asc" | "desc" | undefined;
     stripePaymentReference?: "asc" | "desc" | undefined;
-    User?: UserOrderByWithRelationInput | undefined;
-    userId?: "asc" | "desc" | undefined;
+    Buyer?: UserOrderByWithRelationInput | undefined;
+    buyerId?: "asc" | "desc" | undefined;
+    Seller?: UserOrderByWithRelationInput | undefined;
+    sellerId?: "asc" | "desc" | undefined;
     Items?: OrderLineItemOrderByRelationAggregateInput | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

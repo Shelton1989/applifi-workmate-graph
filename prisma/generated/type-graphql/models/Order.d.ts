@@ -12,8 +12,10 @@ export declare class Order {
     selectedShippingMethodId?: string | null;
     SelectedPaymentType?: string | null;
     stripePaymentReference?: string | null;
-    User?: User;
-    userId: string;
+    Buyer?: User;
+    buyerId: string;
+    Seller?: User;
+    sellerId: string;
     Items?: OrderLineItem[];
     createdAt: Date;
     updatedAt: Date;

@@ -2,10 +2,12 @@ import { AddressCreateNestedManyWithoutUserInput } from "../inputs/AddressCreate
 import { CommentCreateNestedManyWithoutAuthorInput } from "../inputs/CommentCreateNestedManyWithoutAuthorInput";
 import { InventoryCreateNestedOneWithoutUserInput } from "../inputs/InventoryCreateNestedOneWithoutUserInput";
 import { NotificationSettingsCreateNestedOneWithoutUserInput } from "../inputs/NotificationSettingsCreateNestedOneWithoutUserInput";
-import { OrderCreateNestedOneWithoutUserInput } from "../inputs/OrderCreateNestedOneWithoutUserInput";
+import { OrderCreateNestedManyWithoutBuyerInput } from "../inputs/OrderCreateNestedManyWithoutBuyerInput";
+import { OrderCreateNestedManyWithoutSellerInput } from "../inputs/OrderCreateNestedManyWithoutSellerInput";
 import { PostCreateNestedManyWithoutAuthorInput } from "../inputs/PostCreateNestedManyWithoutAuthorInput";
 import { ReactionCreateNestedManyWithoutAuthorInput } from "../inputs/ReactionCreateNestedManyWithoutAuthorInput";
 import { ReplyCreateNestedManyWithoutAuthorInput } from "../inputs/ReplyCreateNestedManyWithoutAuthorInput";
+import { RequestCreateNestedManyWithoutReporterInput } from "../inputs/RequestCreateNestedManyWithoutReporterInput";
 import { UserCreateNestedManyWithoutFollowersInput } from "../inputs/UserCreateNestedManyWithoutFollowersInput";
 import { UserCreateNestedManyWithoutFollowingInput } from "../inputs/UserCreateNestedManyWithoutFollowingInput";
 import { UserCreatefollowerIdsInput } from "../inputs/UserCreatefollowerIdsInput";
@@ -30,9 +32,11 @@ export declare class UserCreateWithoutLikedProductsInput {
     followingIds?: UserCreatefollowingIdsInput | undefined;
     Followers?: UserCreateNestedManyWithoutFollowingInput | undefined;
     followerIds?: UserCreatefollowerIdsInput | undefined;
-    Order?: OrderCreateNestedOneWithoutUserInput | undefined;
     productIds?: UserCreateproductIdsInput | undefined;
     Inventory?: InventoryCreateNestedOneWithoutUserInput | undefined;
+    MyOrders?: OrderCreateNestedManyWithoutBuyerInput | undefined;
+    PurchaseOrders?: OrderCreateNestedManyWithoutSellerInput | undefined;
+    Requests?: RequestCreateNestedManyWithoutReporterInput | undefined;
     Posts?: PostCreateNestedManyWithoutAuthorInput | undefined;
     Comments?: CommentCreateNestedManyWithoutAuthorInput | undefined;
     Replies?: ReplyCreateNestedManyWithoutAuthorInput | undefined;

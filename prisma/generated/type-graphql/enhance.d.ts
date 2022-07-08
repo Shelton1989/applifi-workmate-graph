@@ -24,6 +24,7 @@ declare const crudResolversMap: {
     Reaction: typeof crudResolvers.ReactionCrudResolver;
     OrderLineItem: typeof crudResolvers.OrderLineItemCrudResolver;
     Order: typeof crudResolvers.OrderCrudResolver;
+    Request: typeof crudResolvers.RequestCrudResolver;
 };
 declare type ResolverModelNames = keyof typeof crudResolversMap;
 declare type ModelResolverActionNames<TModel extends ResolverModelNames> = keyof typeof crudResolversMap[TModel]["prototype"];
@@ -63,6 +64,7 @@ declare const relationResolversMap: {
     Reaction: typeof relationResolvers.ReactionRelationsResolver;
     OrderLineItem: typeof relationResolvers.OrderLineItemRelationsResolver;
     Order: typeof relationResolvers.OrderRelationsResolver;
+    Request: typeof relationResolvers.RequestRelationsResolver;
 };
 declare type RelationResolverModelNames = keyof typeof relationResolversMap;
 declare type RelationResolverActionNames<TModel extends RelationResolverModelNames> = keyof typeof relationResolversMap[TModel]["prototype"];

@@ -4,7 +4,8 @@ export declare class OrderCreateManySelectedShippingMethodInput {
     selectedShippingAddressId?: string | undefined;
     SelectedPaymentType?: string | undefined;
     stripePaymentReference?: string | undefined;
-    userId: string;
+    buyerId: string;
+    sellerId: string;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

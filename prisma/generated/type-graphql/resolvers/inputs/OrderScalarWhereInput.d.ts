@@ -12,7 +12,8 @@ export declare class OrderScalarWhereInput {
     selectedShippingMethodId?: StringNullableFilter | undefined;
     SelectedPaymentType?: StringNullableFilter | undefined;
     stripePaymentReference?: StringNullableFilter | undefined;
-    userId?: StringFilter | undefined;
+    buyerId?: StringFilter | undefined;
+    sellerId?: StringFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

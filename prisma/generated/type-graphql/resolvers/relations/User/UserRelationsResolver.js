@@ -12,15 +12,19 @@ const Post_1 = require("../../../models/Post");
 const Product_1 = require("../../../models/Product");
 const Reaction_1 = require("../../../models/Reaction");
 const Reply_1 = require("../../../models/Reply");
+const Request_1 = require("../../../models/Request");
 const User_1 = require("../../../models/User");
 const UserAddressesArgs_1 = require("./args/UserAddressesArgs");
 const UserCommentsArgs_1 = require("./args/UserCommentsArgs");
 const UserFollowersArgs_1 = require("./args/UserFollowersArgs");
 const UserFollowingArgs_1 = require("./args/UserFollowingArgs");
 const UserLikedProductsArgs_1 = require("./args/UserLikedProductsArgs");
+const UserMyOrdersArgs_1 = require("./args/UserMyOrdersArgs");
 const UserPostsArgs_1 = require("./args/UserPostsArgs");
+const UserPurchaseOrdersArgs_1 = require("./args/UserPurchaseOrdersArgs");
 const UserReactionsArgs_1 = require("./args/UserReactionsArgs");
 const UserRepliesArgs_1 = require("./args/UserRepliesArgs");
+const UserRequestsArgs_1 = require("./args/UserRequestsArgs");
 const helpers_1 = require("../../../helpers");
 let UserRelationsResolver = class UserRelationsResolver {
     async Addresses(user, ctx, args) {
@@ -51,13 +55,6 @@ let UserRelationsResolver = class UserRelationsResolver {
             },
         }).Followers(args);
     }
-    async Order(user, ctx) {
-        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
-            where: {
-                id: user.id,
-            },
-        }).Order({});
-    }
     async LikedProducts(user, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
             where: {
@@ -71,6 +68,27 @@ let UserRelationsResolver = class UserRelationsResolver {
                 id: user.id,
             },
         }).Inventory({});
+    }
+    async MyOrders(user, ctx, args) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
+            where: {
+                id: user.id,
+            },
+        }).MyOrders(args);
+    }
+    async PurchaseOrders(user, ctx, args) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
+            where: {
+                id: user.id,
+            },
+        }).PurchaseOrders(args);
+    }
+    async Requests(user, ctx, args) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
+            where: {
+                id: user.id,
+            },
+        }).Requests(args);
     }
     async Posts(user, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
@@ -145,16 +163,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:returntype", Promise)
 ], UserRelationsResolver.prototype, "Followers", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => Order_1.Order, {
-        nullable: true
-    }),
-    tslib_1.__param(0, TypeGraphQL.Root()),
-    tslib_1.__param(1, TypeGraphQL.Ctx()),
-    tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [User_1.User, Object]),
-    tslib_1.__metadata("design:returntype", Promise)
-], UserRelationsResolver.prototype, "Order", null);
-tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => [Product_1.Product], {
         nullable: false
     }),
@@ -175,6 +183,39 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", [User_1.User, Object]),
     tslib_1.__metadata("design:returntype", Promise)
 ], UserRelationsResolver.prototype, "Inventory", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => [Order_1.Order], {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__param(2, TypeGraphQL.Args()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserMyOrdersArgs_1.UserMyOrdersArgs]),
+    tslib_1.__metadata("design:returntype", Promise)
+], UserRelationsResolver.prototype, "MyOrders", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => [Order_1.Order], {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__param(2, TypeGraphQL.Args()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserPurchaseOrdersArgs_1.UserPurchaseOrdersArgs]),
+    tslib_1.__metadata("design:returntype", Promise)
+], UserRelationsResolver.prototype, "PurchaseOrders", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => [Request_1.Request], {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__param(2, TypeGraphQL.Args()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserRequestsArgs_1.UserRequestsArgs]),
+    tslib_1.__metadata("design:returntype", Promise)
+], UserRelationsResolver.prototype, "Requests", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => [Post_1.Post], {
         nullable: false

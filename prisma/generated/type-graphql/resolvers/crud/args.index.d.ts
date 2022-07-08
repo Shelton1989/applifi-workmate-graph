@@ -14,6 +14,7 @@ export * from "./Price/args";
 export * from "./Product/args";
 export * from "./Reaction/args";
 export * from "./Reply/args";
+export * from "./Request/args";
 export * from "./ShippingMethod/args";
 export * from "./Size/args";
 export * from "./User/args";

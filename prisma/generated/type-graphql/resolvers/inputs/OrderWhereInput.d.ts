@@ -18,8 +18,10 @@ export declare class OrderWhereInput {
     selectedShippingMethodId?: StringNullableFilter | undefined;
     SelectedPaymentType?: StringNullableFilter | undefined;
     stripePaymentReference?: StringNullableFilter | undefined;
-    User?: UserRelationFilter | undefined;
-    userId?: StringFilter | undefined;
+    Buyer?: UserRelationFilter | undefined;
+    buyerId?: StringFilter | undefined;
+    Seller?: UserRelationFilter | undefined;
+    sellerId?: StringFilter | undefined;
     Items?: OrderLineItemListRelationFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;

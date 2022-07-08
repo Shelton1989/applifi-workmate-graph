@@ -5,7 +5,8 @@ export declare class OrderCountAggregate {
     selectedShippingMethodId: number;
     SelectedPaymentType: number;
     stripePaymentReference: number;
-    userId: number;
+    buyerId: number;
+    sellerId: number;
     createdAt: number;
     updatedAt: number;
     _all: number;

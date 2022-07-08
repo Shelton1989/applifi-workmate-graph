@@ -85,13 +85,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", UserRelationFilter_1.UserRelationFilter)
-], OrderWhereInput.prototype, "User", void 0);
+], OrderWhereInput.prototype, "Buyer", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
-], OrderWhereInput.prototype, "userId", void 0);
+], OrderWhereInput.prototype, "buyerId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => UserRelationFilter_1.UserRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", UserRelationFilter_1.UserRelationFilter)
+], OrderWhereInput.prototype, "Seller", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+], OrderWhereInput.prototype, "sellerId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => OrderLineItemListRelationFilter_1.OrderLineItemListRelationFilter, {
         nullable: true

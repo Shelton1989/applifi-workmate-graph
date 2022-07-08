@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserRelationsResolver = exports.SizeRelationsResolver = exports.ShippingMethodRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.ProductRelationsResolver = exports.PriceRelationsResolver = exports.PostRelationsResolver = exports.OrderLineItemRelationsResolver = exports.OrderRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.InventoryRelationsResolver = exports.CurrencyRelationsResolver = exports.CommentRelationsResolver = exports.ColorRelationsResolver = exports.BrandProductRelationsResolver = exports.BrandRelationsResolver = exports.ArtworkRelationsResolver = exports.AddressRelationsResolver = void 0;
+exports.UserRelationsResolver = exports.SizeRelationsResolver = exports.ShippingMethodRelationsResolver = exports.RequestRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.ProductRelationsResolver = exports.PriceRelationsResolver = exports.PostRelationsResolver = exports.OrderLineItemRelationsResolver = exports.OrderRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.InventoryRelationsResolver = exports.CurrencyRelationsResolver = exports.CommentRelationsResolver = exports.ColorRelationsResolver = exports.BrandProductRelationsResolver = exports.BrandRelationsResolver = exports.ArtworkRelationsResolver = exports.AddressRelationsResolver = void 0;
 var AddressRelationsResolver_1 = require("./Address/AddressRelationsResolver");
 Object.defineProperty(exports, "AddressRelationsResolver", { enumerable: true, get: function () { return AddressRelationsResolver_1.AddressRelationsResolver; } });
 var ArtworkRelationsResolver_1 = require("./Artwork/ArtworkRelationsResolver");
@@ -33,6 +33,8 @@ var ReactionRelationsResolver_1 = require("./Reaction/ReactionRelationsResolver"
 Object.defineProperty(exports, "ReactionRelationsResolver", { enumerable: true, get: function () { return ReactionRelationsResolver_1.ReactionRelationsResolver; } });
 var ReplyRelationsResolver_1 = require("./Reply/ReplyRelationsResolver");
 Object.defineProperty(exports, "ReplyRelationsResolver", { enumerable: true, get: function () { return ReplyRelationsResolver_1.ReplyRelationsResolver; } });
+var RequestRelationsResolver_1 = require("./Request/RequestRelationsResolver");
+Object.defineProperty(exports, "RequestRelationsResolver", { enumerable: true, get: function () { return RequestRelationsResolver_1.RequestRelationsResolver; } });
 var ShippingMethodRelationsResolver_1 = require("./ShippingMethod/ShippingMethodRelationsResolver");
 Object.defineProperty(exports, "ShippingMethodRelationsResolver", { enumerable: true, get: function () { return ShippingMethodRelationsResolver_1.ShippingMethodRelationsResolver; } });
 var SizeRelationsResolver_1 = require("./Size/SizeRelationsResolver");

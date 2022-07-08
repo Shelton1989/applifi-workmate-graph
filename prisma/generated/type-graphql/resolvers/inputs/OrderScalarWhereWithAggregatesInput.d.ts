@@ -12,7 +12,8 @@ export declare class OrderScalarWhereWithAggregatesInput {
     selectedShippingMethodId?: StringNullableWithAggregatesFilter | undefined;
     SelectedPaymentType?: StringNullableWithAggregatesFilter | undefined;
     stripePaymentReference?: StringNullableWithAggregatesFilter | undefined;
-    userId?: StringWithAggregatesFilter | undefined;
+    buyerId?: StringWithAggregatesFilter | undefined;
+    sellerId?: StringWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

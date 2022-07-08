@@ -1,0 +1,6 @@
+export declare enum REQUEST_STATUS {
+    OPEN = "OPEN",
+    CLOSED = "CLOSED",
+    CLOSED_WITH_PREJUDICE = "CLOSED_WITH_PREJUDICE",
+    RESOLVED = "RESOLVED"
+}

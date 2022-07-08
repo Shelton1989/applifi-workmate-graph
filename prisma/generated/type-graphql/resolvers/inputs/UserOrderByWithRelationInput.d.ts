@@ -2,11 +2,12 @@ import { AddressOrderByRelationAggregateInput } from "../inputs/AddressOrderByRe
 import { CommentOrderByRelationAggregateInput } from "../inputs/CommentOrderByRelationAggregateInput";
 import { InventoryOrderByWithRelationInput } from "../inputs/InventoryOrderByWithRelationInput";
 import { NotificationSettingsOrderByWithRelationInput } from "../inputs/NotificationSettingsOrderByWithRelationInput";
-import { OrderOrderByWithRelationInput } from "../inputs/OrderOrderByWithRelationInput";
+import { OrderOrderByRelationAggregateInput } from "../inputs/OrderOrderByRelationAggregateInput";
 import { PostOrderByRelationAggregateInput } from "../inputs/PostOrderByRelationAggregateInput";
 import { ProductOrderByRelationAggregateInput } from "../inputs/ProductOrderByRelationAggregateInput";
 import { ReactionOrderByRelationAggregateInput } from "../inputs/ReactionOrderByRelationAggregateInput";
 import { ReplyOrderByRelationAggregateInput } from "../inputs/ReplyOrderByRelationAggregateInput";
+import { RequestOrderByRelationAggregateInput } from "../inputs/RequestOrderByRelationAggregateInput";
 import { UserOrderByRelationAggregateInput } from "../inputs/UserOrderByRelationAggregateInput";
 export declare class UserOrderByWithRelationInput {
     uid?: "asc" | "desc" | undefined;
@@ -27,10 +28,12 @@ export declare class UserOrderByWithRelationInput {
     followingIds?: "asc" | "desc" | undefined;
     Followers?: UserOrderByRelationAggregateInput | undefined;
     followerIds?: "asc" | "desc" | undefined;
-    Order?: OrderOrderByWithRelationInput | undefined;
     LikedProducts?: ProductOrderByRelationAggregateInput | undefined;
     productIds?: "asc" | "desc" | undefined;
     Inventory?: InventoryOrderByWithRelationInput | undefined;
+    MyOrders?: OrderOrderByRelationAggregateInput | undefined;
+    PurchaseOrders?: OrderOrderByRelationAggregateInput | undefined;
+    Requests?: RequestOrderByRelationAggregateInput | undefined;
     Posts?: PostOrderByRelationAggregateInput | undefined;
     Comments?: CommentOrderByRelationAggregateInput | undefined;
     Replies?: ReplyOrderByRelationAggregateInput | undefined;

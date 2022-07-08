@@ -14,6 +14,7 @@ export { PriceCrudResolver } from "./Price/PriceCrudResolver";
 export { ProductCrudResolver } from "./Product/ProductCrudResolver";
 export { ReactionCrudResolver } from "./Reaction/ReactionCrudResolver";
 export { ReplyCrudResolver } from "./Reply/ReplyCrudResolver";
+export { RequestCrudResolver } from "./Request/RequestCrudResolver";
 export { ShippingMethodCrudResolver } from "./ShippingMethod/ShippingMethodCrudResolver";
 export { SizeCrudResolver } from "./Size/SizeCrudResolver";
 export { UserCrudResolver } from "./User/UserCrudResolver";

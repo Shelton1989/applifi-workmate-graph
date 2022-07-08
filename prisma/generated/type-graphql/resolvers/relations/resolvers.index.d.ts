@@ -14,6 +14,7 @@ export { PriceRelationsResolver } from "./Price/PriceRelationsResolver";
 export { ProductRelationsResolver } from "./Product/ProductRelationsResolver";
 export { ReactionRelationsResolver } from "./Reaction/ReactionRelationsResolver";
 export { ReplyRelationsResolver } from "./Reply/ReplyRelationsResolver";
+export { RequestRelationsResolver } from "./Request/RequestRelationsResolver";
 export { ShippingMethodRelationsResolver } from "./ShippingMethod/ShippingMethodRelationsResolver";
 export { SizeRelationsResolver } from "./Size/SizeRelationsResolver";
 export { UserRelationsResolver } from "./User/UserRelationsResolver";

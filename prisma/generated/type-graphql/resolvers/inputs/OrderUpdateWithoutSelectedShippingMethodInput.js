@@ -8,7 +8,8 @@ const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpd
 const EnumORDER_STATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumORDER_STATUSFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const OrderLineItemUpdateManyWithoutOrderInput_1 = require("../inputs/OrderLineItemUpdateManyWithoutOrderInput");
-const UserUpdateOneRequiredWithoutOrderInput_1 = require("../inputs/UserUpdateOneRequiredWithoutOrderInput");
+const UserUpdateOneRequiredWithoutMyOrdersInput_1 = require("../inputs/UserUpdateOneRequiredWithoutMyOrdersInput");
+const UserUpdateOneRequiredWithoutPurchaseOrdersInput_1 = require("../inputs/UserUpdateOneRequiredWithoutPurchaseOrdersInput");
 let OrderUpdateWithoutSelectedShippingMethodInput = class OrderUpdateWithoutSelectedShippingMethodInput {
 };
 tslib_1.__decorate([
@@ -36,11 +37,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], OrderUpdateWithoutSelectedShippingMethodInput.prototype, "stripePaymentReference", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutOrderInput_1.UserUpdateOneRequiredWithoutOrderInput, {
+    TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutMyOrdersInput_1.UserUpdateOneRequiredWithoutMyOrdersInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserUpdateOneRequiredWithoutOrderInput_1.UserUpdateOneRequiredWithoutOrderInput)
-], OrderUpdateWithoutSelectedShippingMethodInput.prototype, "User", void 0);
+    tslib_1.__metadata("design:type", UserUpdateOneRequiredWithoutMyOrdersInput_1.UserUpdateOneRequiredWithoutMyOrdersInput)
+], OrderUpdateWithoutSelectedShippingMethodInput.prototype, "Buyer", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutPurchaseOrdersInput_1.UserUpdateOneRequiredWithoutPurchaseOrdersInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", UserUpdateOneRequiredWithoutPurchaseOrdersInput_1.UserUpdateOneRequiredWithoutPurchaseOrdersInput)
+], OrderUpdateWithoutSelectedShippingMethodInput.prototype, "Seller", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => OrderLineItemUpdateManyWithoutOrderInput_1.OrderLineItemUpdateManyWithoutOrderInput, {
         nullable: true

@@ -17,6 +17,7 @@ tslib_1.__exportStar(require("./Price/args"), exports);
 tslib_1.__exportStar(require("./Product/args"), exports);
 tslib_1.__exportStar(require("./Reaction/args"), exports);
 tslib_1.__exportStar(require("./Reply/args"), exports);
+tslib_1.__exportStar(require("./Request/args"), exports);
 tslib_1.__exportStar(require("./ShippingMethod/args"), exports);
 tslib_1.__exportStar(require("./Size/args"), exports);
 tslib_1.__exportStar(require("./User/args"), exports);

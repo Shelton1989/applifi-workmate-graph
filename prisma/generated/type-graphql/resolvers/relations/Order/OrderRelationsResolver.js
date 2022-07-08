@@ -25,12 +25,19 @@ let OrderRelationsResolver = class OrderRelationsResolver {
             },
         }).SelectedShippingMethod({});
     }
-    async User(order, ctx) {
+    async Buyer(order, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).order.findUnique({
             where: {
                 id: order.id,
             },
-        }).User({});
+        }).Buyer({});
+    }
+    async Seller(order, ctx) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).order.findUnique({
+            where: {
+                id: order.id,
+            },
+        }).Seller({});
     }
     async Items(order, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).order.findUnique({
@@ -69,7 +76,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Function),
     tslib_1.__metadata("design:paramtypes", [Order_1.Order, Object]),
     tslib_1.__metadata("design:returntype", Promise)
-], OrderRelationsResolver.prototype, "User", null);
+], OrderRelationsResolver.prototype, "Buyer", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => User_1.User, {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [Order_1.Order, Object]),
+    tslib_1.__metadata("design:returntype", Promise)
+], OrderRelationsResolver.prototype, "Seller", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => [OrderLineItem_1.OrderLineItem], {
         nullable: false

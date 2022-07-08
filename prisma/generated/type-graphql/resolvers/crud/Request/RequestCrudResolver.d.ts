@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateRequestArgs } from "./args/AggregateRequestArgs";
+import { CreateManyRequestArgs } from "./args/CreateManyRequestArgs";
+import { CreateRequestArgs } from "./args/CreateRequestArgs";
+import { DeleteManyRequestArgs } from "./args/DeleteManyRequestArgs";
+import { DeleteRequestArgs } from "./args/DeleteRequestArgs";
+import { FindFirstRequestArgs } from "./args/FindFirstRequestArgs";
+import { FindManyRequestArgs } from "./args/FindManyRequestArgs";
+import { FindUniqueRequestArgs } from "./args/FindUniqueRequestArgs";
+import { GroupByRequestArgs } from "./args/GroupByRequestArgs";
+import { UpdateManyRequestArgs } from "./args/UpdateManyRequestArgs";
+import { UpdateRequestArgs } from "./args/UpdateRequestArgs";
+import { UpsertRequestArgs } from "./args/UpsertRequestArgs";
+import { Request } from "../../../models/Request";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateRequest } from "../../outputs/AggregateRequest";
+import { RequestGroupBy } from "../../outputs/RequestGroupBy";
+export declare class RequestCrudResolver {
+    request(ctx: any, info: GraphQLResolveInfo, args: FindUniqueRequestArgs): Promise<Request | null>;
+    findFirstRequest(ctx: any, info: GraphQLResolveInfo, args: FindFirstRequestArgs): Promise<Request | null>;
+    requests(ctx: any, info: GraphQLResolveInfo, args: FindManyRequestArgs): Promise<Request[]>;
+    createRequest(ctx: any, info: GraphQLResolveInfo, args: CreateRequestArgs): Promise<Request>;
+    createManyRequest(ctx: any, info: GraphQLResolveInfo, args: CreateManyRequestArgs): Promise<AffectedRowsOutput>;
+    deleteRequest(ctx: any, info: GraphQLResolveInfo, args: DeleteRequestArgs): Promise<Request | null>;
+    updateRequest(ctx: any, info: GraphQLResolveInfo, args: UpdateRequestArgs): Promise<Request | null>;
+    deleteManyRequest(ctx: any, info: GraphQLResolveInfo, args: DeleteManyRequestArgs): Promise<AffectedRowsOutput>;
+    updateManyRequest(ctx: any, info: GraphQLResolveInfo, args: UpdateManyRequestArgs): Promise<AffectedRowsOutput>;
+    upsertRequest(ctx: any, info: GraphQLResolveInfo, args: UpsertRequestArgs): Promise<Request>;
+    aggregateRequest(ctx: any, info: GraphQLResolveInfo, args: AggregateRequestArgs): Promise<AggregateRequest>;
+    groupByRequest(ctx: any, info: GraphQLResolveInfo, args: GroupByRequestArgs): Promise<RequestGroupBy[]>;
+}

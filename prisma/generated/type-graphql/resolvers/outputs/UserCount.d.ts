@@ -3,6 +3,9 @@ export declare class UserCount {
     Following: number;
     Followers: number;
     LikedProducts: number;
+    MyOrders: number;
+    PurchaseOrders: number;
+    Requests: number;
     Posts: number;
     Comments: number;
     Replies: number;

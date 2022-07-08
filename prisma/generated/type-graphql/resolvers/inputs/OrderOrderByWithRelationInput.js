@@ -63,13 +63,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", UserOrderByWithRelationInput_1.UserOrderByWithRelationInput)
-], OrderOrderByWithRelationInput.prototype, "User", void 0);
+], OrderOrderByWithRelationInput.prototype, "Buyer", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], OrderOrderByWithRelationInput.prototype, "userId", void 0);
+], OrderOrderByWithRelationInput.prototype, "buyerId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => UserOrderByWithRelationInput_1.UserOrderByWithRelationInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", UserOrderByWithRelationInput_1.UserOrderByWithRelationInput)
+], OrderOrderByWithRelationInput.prototype, "Seller", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], OrderOrderByWithRelationInput.prototype, "sellerId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => OrderLineItemOrderByRelationAggregateInput_1.OrderLineItemOrderByRelationAggregateInput, {
         nullable: true

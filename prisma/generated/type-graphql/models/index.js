@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = exports.Size = exports.ShippingMethod = exports.Reply = exports.Reaction = exports.Product = exports.Price = exports.Post = exports.OrderLineItem = exports.Order = exports.NotificationSettings = exports.Inventory = exports.Currency = exports.Comment = exports.Color = exports.BrandProduct = exports.Brand = exports.Artwork = exports.Address = void 0;
+exports.User = exports.Size = exports.ShippingMethod = exports.Request = exports.Reply = exports.Reaction = exports.Product = exports.Price = exports.Post = exports.OrderLineItem = exports.Order = exports.NotificationSettings = exports.Inventory = exports.Currency = exports.Comment = exports.Color = exports.BrandProduct = exports.Brand = exports.Artwork = exports.Address = void 0;
 var Address_1 = require("./Address");
 Object.defineProperty(exports, "Address", { enumerable: true, get: function () { return Address_1.Address; } });
 var Artwork_1 = require("./Artwork");
@@ -33,6 +33,8 @@ var Reaction_1 = require("./Reaction");
 Object.defineProperty(exports, "Reaction", { enumerable: true, get: function () { return Reaction_1.Reaction; } });
 var Reply_1 = require("./Reply");
 Object.defineProperty(exports, "Reply", { enumerable: true, get: function () { return Reply_1.Reply; } });
+var Request_1 = require("./Request");
+Object.defineProperty(exports, "Request", { enumerable: true, get: function () { return Request_1.Request; } });
 var ShippingMethod_1 = require("./ShippingMethod");
 Object.defineProperty(exports, "ShippingMethod", { enumerable: true, get: function () { return ShippingMethod_1.ShippingMethod; } });
 var Size_1 = require("./Size");

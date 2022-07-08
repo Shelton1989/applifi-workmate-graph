@@ -47,7 +47,13 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)
-], OrderCreateManyInput.prototype, "userId", void 0);
+], OrderCreateManyInput.prototype, "buyerId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], OrderCreateManyInput.prototype, "sellerId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

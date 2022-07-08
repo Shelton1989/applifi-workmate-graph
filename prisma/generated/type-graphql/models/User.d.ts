@@ -7,6 +7,7 @@ import { Post } from "../models/Post";
 import { Product } from "../models/Product";
 import { Reaction } from "../models/Reaction";
 import { Reply } from "../models/Reply";
+import { Request } from "../models/Request";
 import { UserCount } from "../resolvers/outputs/UserCount";
 export declare class User {
     uid: string;
@@ -27,10 +28,12 @@ export declare class User {
     followingIds: string[];
     Followers?: User[];
     followerIds: string[];
-    Order?: Order | null;
     LikedProducts?: Product[];
     productIds: string[];
     Inventory?: Inventory | null;
+    MyOrders?: Order[];
+    PurchaseOrders?: Order[];
+    Requests?: Request[];
     Posts?: Post[];
     Comments?: Comment[];
     Replies?: Reply[];

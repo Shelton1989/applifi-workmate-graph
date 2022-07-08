@@ -6,7 +6,8 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AddressCreateNestedOneWithoutOrdersInput_1 = require("../inputs/AddressCreateNestedOneWithoutOrdersInput");
 const OrderLineItemCreateNestedManyWithoutOrderInput_1 = require("../inputs/OrderLineItemCreateNestedManyWithoutOrderInput");
 const ShippingMethodCreateNestedOneWithoutOrdersInput_1 = require("../inputs/ShippingMethodCreateNestedOneWithoutOrdersInput");
-const UserCreateNestedOneWithoutOrderInput_1 = require("../inputs/UserCreateNestedOneWithoutOrderInput");
+const UserCreateNestedOneWithoutMyOrdersInput_1 = require("../inputs/UserCreateNestedOneWithoutMyOrdersInput");
+const UserCreateNestedOneWithoutPurchaseOrdersInput_1 = require("../inputs/UserCreateNestedOneWithoutPurchaseOrdersInput");
 const ORDER_STATUS_1 = require("../../enums/ORDER_STATUS");
 let OrderCreateInput = class OrderCreateInput {
 };
@@ -47,11 +48,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], OrderCreateInput.prototype, "stripePaymentReference", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserCreateNestedOneWithoutOrderInput_1.UserCreateNestedOneWithoutOrderInput, {
+    TypeGraphQL.Field(_type => UserCreateNestedOneWithoutMyOrdersInput_1.UserCreateNestedOneWithoutMyOrdersInput, {
         nullable: false
     }),
-    tslib_1.__metadata("design:type", UserCreateNestedOneWithoutOrderInput_1.UserCreateNestedOneWithoutOrderInput)
-], OrderCreateInput.prototype, "User", void 0);
+    tslib_1.__metadata("design:type", UserCreateNestedOneWithoutMyOrdersInput_1.UserCreateNestedOneWithoutMyOrdersInput)
+], OrderCreateInput.prototype, "Buyer", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => UserCreateNestedOneWithoutPurchaseOrdersInput_1.UserCreateNestedOneWithoutPurchaseOrdersInput, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", UserCreateNestedOneWithoutPurchaseOrdersInput_1.UserCreateNestedOneWithoutPurchaseOrdersInput)
+], OrderCreateInput.prototype, "Seller", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => OrderLineItemCreateNestedManyWithoutOrderInput_1.OrderLineItemCreateNestedManyWithoutOrderInput, {
         nullable: true
