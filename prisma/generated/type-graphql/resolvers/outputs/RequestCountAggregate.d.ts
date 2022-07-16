@@ -1,5 +1,7 @@
 export declare class RequestCountAggregate {
     id: number;
+    reporterName: number;
+    reporterEmail: number;
     subject: number;
     message: number;
     type: number;

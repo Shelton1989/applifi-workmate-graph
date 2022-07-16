@@ -10,6 +10,8 @@ export declare class RequestWhereInput {
     OR?: RequestWhereInput[] | undefined;
     NOT?: RequestWhereInput[] | undefined;
     id?: StringFilter | undefined;
+    reporterName?: StringNullableFilter | undefined;
+    reporterEmail?: StringNullableFilter | undefined;
     subject?: StringNullableFilter | undefined;
     message?: StringNullableFilter | undefined;
     type?: EnumREQUEST_TYPEFilter | undefined;
@@ -17,7 +19,7 @@ export declare class RequestWhereInput {
     entityId?: StringNullableFilter | undefined;
     requestResolution?: EnumREQUEST_STATUSFilter | undefined;
     Reporter?: UserRelationFilter | undefined;
-    userId?: StringFilter | undefined;
+    userId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

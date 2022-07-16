@@ -1,6 +1,8 @@
 import { RequestCreatesocialLinksInput } from "../inputs/RequestCreatesocialLinksInput";
 export declare class RequestCreateManyReporterInput {
     id?: string | undefined;
+    reporterName?: string | undefined;
+    reporterEmail?: string | undefined;
     subject?: string | undefined;
     message?: string | undefined;
     type: "CASH_WITHDRAWAL" | "POST_REVIEW" | "COMMENT_REVIEW" | "PROFILE_REVIEW" | "ARTIST_ACCESS" | "HELP_REQUEST";

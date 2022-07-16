@@ -8,9 +8,21 @@ const EnumREQUEST_STATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumRE
 const EnumREQUEST_TYPEFieldUpdateOperationsInput_1 = require("../inputs/EnumREQUEST_TYPEFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const RequestUpdatesocialLinksInput_1 = require("../inputs/RequestUpdatesocialLinksInput");
-const UserUpdateOneRequiredWithoutRequestsInput_1 = require("../inputs/UserUpdateOneRequiredWithoutRequestsInput");
+const UserUpdateOneWithoutRequestsInput_1 = require("../inputs/UserUpdateOneWithoutRequestsInput");
 let RequestUpdateInput = class RequestUpdateInput {
 };
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
+], RequestUpdateInput.prototype, "reporterName", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
+], RequestUpdateInput.prototype, "reporterEmail", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
         nullable: true
@@ -48,10 +60,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", EnumREQUEST_STATUSFieldUpdateOperationsInput_1.EnumREQUEST_STATUSFieldUpdateOperationsInput)
 ], RequestUpdateInput.prototype, "requestResolution", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutRequestsInput_1.UserUpdateOneRequiredWithoutRequestsInput, {
+    TypeGraphQL.Field(_type => UserUpdateOneWithoutRequestsInput_1.UserUpdateOneWithoutRequestsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserUpdateOneRequiredWithoutRequestsInput_1.UserUpdateOneRequiredWithoutRequestsInput)
+    tslib_1.__metadata("design:type", UserUpdateOneWithoutRequestsInput_1.UserUpdateOneWithoutRequestsInput)
 ], RequestUpdateInput.prototype, "Reporter", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {

@@ -20,6 +20,18 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
+], RequestCreateInput.prototype, "reporterName", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], RequestCreateInput.prototype, "reporterEmail", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
 ], RequestCreateInput.prototype, "subject", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
@@ -53,7 +65,7 @@ tslib_1.__decorate([
 ], RequestCreateInput.prototype, "requestResolution", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserCreateNestedOneWithoutRequestsInput_1.UserCreateNestedOneWithoutRequestsInput, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", UserCreateNestedOneWithoutRequestsInput_1.UserCreateNestedOneWithoutRequestsInput)
 ], RequestCreateInput.prototype, "Reporter", void 0);

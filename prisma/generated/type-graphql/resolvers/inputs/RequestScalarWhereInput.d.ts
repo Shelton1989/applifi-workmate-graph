@@ -9,13 +9,15 @@ export declare class RequestScalarWhereInput {
     OR?: RequestScalarWhereInput[] | undefined;
     NOT?: RequestScalarWhereInput[] | undefined;
     id?: StringFilter | undefined;
+    reporterName?: StringNullableFilter | undefined;
+    reporterEmail?: StringNullableFilter | undefined;
     subject?: StringNullableFilter | undefined;
     message?: StringNullableFilter | undefined;
     type?: EnumREQUEST_TYPEFilter | undefined;
     socialLinks?: StringNullableListFilter | undefined;
     entityId?: StringNullableFilter | undefined;
     requestResolution?: EnumREQUEST_STATUSFilter | undefined;
-    userId?: StringFilter | undefined;
+    userId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

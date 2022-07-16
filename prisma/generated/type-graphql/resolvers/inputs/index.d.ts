@@ -943,9 +943,9 @@ export { UserUpdateOneRequiredWithoutPostsInput } from "./UserUpdateOneRequiredW
 export { UserUpdateOneRequiredWithoutPurchaseOrdersInput } from "./UserUpdateOneRequiredWithoutPurchaseOrdersInput";
 export { UserUpdateOneRequiredWithoutReactionsInput } from "./UserUpdateOneRequiredWithoutReactionsInput";
 export { UserUpdateOneRequiredWithoutRepliesInput } from "./UserUpdateOneRequiredWithoutRepliesInput";
-export { UserUpdateOneRequiredWithoutRequestsInput } from "./UserUpdateOneRequiredWithoutRequestsInput";
 export { UserUpdateOneWithoutAddressesInput } from "./UserUpdateOneWithoutAddressesInput";
 export { UserUpdateOneWithoutNotificationSettingsInput } from "./UserUpdateOneWithoutNotificationSettingsInput";
+export { UserUpdateOneWithoutRequestsInput } from "./UserUpdateOneWithoutRequestsInput";
 export { UserUpdateWithWhereUniqueWithoutFollowersInput } from "./UserUpdateWithWhereUniqueWithoutFollowersInput";
 export { UserUpdateWithWhereUniqueWithoutFollowingInput } from "./UserUpdateWithWhereUniqueWithoutFollowingInput";
 export { UserUpdateWithWhereUniqueWithoutLikedProductsInput } from "./UserUpdateWithWhereUniqueWithoutLikedProductsInput";

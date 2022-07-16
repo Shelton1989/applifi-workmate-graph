@@ -1,5 +1,7 @@
 export declare class RequestMaxAggregate {
     id: string | null;
+    reporterName: string | null;
+    reporterEmail: string | null;
     subject: string | null;
     message: string | null;
     type: "CASH_WITHDRAWAL" | "POST_REVIEW" | "COMMENT_REVIEW" | "PROFILE_REVIEW" | "ARTIST_ACCESS" | "HELP_REQUEST" | null;

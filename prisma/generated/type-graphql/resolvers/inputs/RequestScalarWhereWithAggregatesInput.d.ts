@@ -9,13 +9,15 @@ export declare class RequestScalarWhereWithAggregatesInput {
     OR?: RequestScalarWhereWithAggregatesInput[] | undefined;
     NOT?: RequestScalarWhereWithAggregatesInput[] | undefined;
     id?: StringWithAggregatesFilter | undefined;
+    reporterName?: StringNullableWithAggregatesFilter | undefined;
+    reporterEmail?: StringNullableWithAggregatesFilter | undefined;
     subject?: StringNullableWithAggregatesFilter | undefined;
     message?: StringNullableWithAggregatesFilter | undefined;
     type?: EnumREQUEST_TYPEWithAggregatesFilter | undefined;
     socialLinks?: StringNullableListFilter | undefined;
     entityId?: StringNullableWithAggregatesFilter | undefined;
     requestResolution?: EnumREQUEST_STATUSWithAggregatesFilter | undefined;
-    userId?: StringWithAggregatesFilter | undefined;
+    userId?: StringNullableWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

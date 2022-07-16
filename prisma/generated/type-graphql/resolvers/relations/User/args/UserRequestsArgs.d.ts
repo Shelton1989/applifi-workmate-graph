@@ -7,5 +7,5 @@ export declare class UserRequestsArgs {
     cursor?: RequestWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "subject" | "message" | "type" | "socialLinks" | "entityId" | "requestResolution" | "userId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "reporterName" | "reporterEmail" | "subject" | "message" | "type" | "socialLinks" | "entityId" | "requestResolution" | "userId" | "createdAt" | "updatedAt"> | undefined;
 }

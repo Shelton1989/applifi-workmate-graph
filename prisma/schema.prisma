@@ -502,9 +502,11 @@ enum REQUEST_TYPE {
 model Request {
   id String @id @default(uuid()) @map("_id")
 
-  subject String?
-  message String?
-  type    REQUEST_TYPE
+  reporterName  String?
+  reporterEmail String?
+  subject       String?
+  message       String?
+  type          REQUEST_TYPE
 
   // If Artist access request
   socialLinks String[]
@@ -514,8 +516,8 @@ model Request {
 
   requestResolution REQUEST_STATUS @default(OPEN)
 
-  Reporter User   @relation(fields: [userId], references: [id])
-  userId   String
+  Reporter User?   @relation(fields: [userId], references: [id])
+  userId   String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

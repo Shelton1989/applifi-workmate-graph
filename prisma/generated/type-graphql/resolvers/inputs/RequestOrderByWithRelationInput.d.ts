@@ -1,6 +1,8 @@
 import { UserOrderByWithRelationInput } from "../inputs/UserOrderByWithRelationInput";
 export declare class RequestOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
+    reporterName?: "asc" | "desc" | undefined;
+    reporterEmail?: "asc" | "desc" | undefined;
     subject?: "asc" | "desc" | undefined;
     message?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;

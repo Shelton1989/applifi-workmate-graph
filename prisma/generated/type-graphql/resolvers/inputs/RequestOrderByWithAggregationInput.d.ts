@@ -3,6 +3,8 @@ import { RequestMaxOrderByAggregateInput } from "../inputs/RequestMaxOrderByAggr
 import { RequestMinOrderByAggregateInput } from "../inputs/RequestMinOrderByAggregateInput";
 export declare class RequestOrderByWithAggregationInput {
     id?: "asc" | "desc" | undefined;
+    reporterName?: "asc" | "desc" | undefined;
+    reporterEmail?: "asc" | "desc" | undefined;
     subject?: "asc" | "desc" | undefined;
     message?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;

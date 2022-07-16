@@ -3,15 +3,17 @@ import { EnumREQUEST_STATUSFieldUpdateOperationsInput } from "../inputs/EnumREQU
 import { EnumREQUEST_TYPEFieldUpdateOperationsInput } from "../inputs/EnumREQUEST_TYPEFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { RequestUpdatesocialLinksInput } from "../inputs/RequestUpdatesocialLinksInput";
-import { UserUpdateOneRequiredWithoutRequestsInput } from "../inputs/UserUpdateOneRequiredWithoutRequestsInput";
+import { UserUpdateOneWithoutRequestsInput } from "../inputs/UserUpdateOneWithoutRequestsInput";
 export declare class RequestUpdateInput {
+    reporterName?: NullableStringFieldUpdateOperationsInput | undefined;
+    reporterEmail?: NullableStringFieldUpdateOperationsInput | undefined;
     subject?: NullableStringFieldUpdateOperationsInput | undefined;
     message?: NullableStringFieldUpdateOperationsInput | undefined;
     type?: EnumREQUEST_TYPEFieldUpdateOperationsInput | undefined;
     socialLinks?: RequestUpdatesocialLinksInput | undefined;
     entityId?: NullableStringFieldUpdateOperationsInput | undefined;
     requestResolution?: EnumREQUEST_STATUSFieldUpdateOperationsInput | undefined;
-    Reporter?: UserUpdateOneRequiredWithoutRequestsInput | undefined;
+    Reporter?: UserUpdateOneWithoutRequestsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

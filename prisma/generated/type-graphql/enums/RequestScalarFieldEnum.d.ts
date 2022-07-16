@@ -1,5 +1,7 @@
 export declare enum RequestScalarFieldEnum {
     id = "id",
+    reporterName = "reporterName",
+    reporterEmail = "reporterEmail",
     subject = "subject",
     message = "message",
     type = "type",
