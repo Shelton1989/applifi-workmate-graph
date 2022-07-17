@@ -6,12 +6,13 @@ COPY package*.json ./
 
 RUN npm install
 
-ENV PORT=80
+ENV PORT=8080
+ENV ENVIRONMENT=dev
 
 COPY . ./
 
 RUN npm run build
 
-EXPOSE 80
+EXPOSE 8080
 
 CMD [ "npm", "run", "start" ]

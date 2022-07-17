@@ -8,6 +8,25 @@ import { buildSchema } from "type-graphql";
 import express from 'express';
 import { createServer } from 'http';
 
+const port = process.env.PORT || 4000;
+const environment = process.env.ENVIRONMENT || "dev";
+
+// const getCorsConfig = () => { 
+//   if (environment === "prod") {
+//     return ({
+//       "origin": ["https://unparel.com", "http://unparel.com", "https://unparel-web-2zrkehk2uq-ew.a.run.app"],
+//       "methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+//       "optionsSuccessStatus": 204
+//     })
+//   }
+
+//   return ({
+//     "origin": "*",
+//     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+//     "optionsSuccessStatus": 204
+//   })
+// };
+
 (async () => {
   const schema = await buildSchema({
     resolvers,
@@ -29,11 +48,14 @@ import { createServer } from 'http';
   server.applyMiddleware({
     app: expressApp,
     path: '/',
+    cors: {
+      origin: ["https://unparel.com", "http://unparel.com", "https://unparel-web-2zrkehk2uq-ew.a.run.app"],
+      methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
+      optionsSuccessStatus: 204
+    }
   });
 
-  const port = process.env.PORT || 4000;
-
   httpServer.listen(port, () => {
-    console.log("Server running at: ", `http://localhost:${port}${server.graphqlPath}`)
+    console.log("Server running at: ", `http://localhost:${port}${server.graphqlPath}`, ` in ${environment} mode`)
   })
 })();

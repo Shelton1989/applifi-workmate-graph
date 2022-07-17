@@ -1,0 +1,10 @@
+{
+  "name": "graphql",
+  "options": {
+    "allow-unauthenticated": true,
+    "memory": "1Gi",
+    "cpu": "1",
+    "port": 8080,
+    "http2": false
+  }
+}
