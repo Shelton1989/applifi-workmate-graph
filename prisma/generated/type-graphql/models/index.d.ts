@@ -6,6 +6,7 @@ export { Color } from "./Color";
 export { Comment } from "./Comment";
 export { Currency } from "./Currency";
 export { Inventory } from "./Inventory";
+export { Notification } from "./Notification";
 export { NotificationSettings } from "./NotificationSettings";
 export { Order } from "./Order";
 export { OrderLineItem } from "./OrderLineItem";

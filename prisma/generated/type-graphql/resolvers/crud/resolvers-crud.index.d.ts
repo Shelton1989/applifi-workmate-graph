@@ -6,6 +6,7 @@ export { ColorCrudResolver } from "./Color/ColorCrudResolver";
 export { CommentCrudResolver } from "./Comment/CommentCrudResolver";
 export { CurrencyCrudResolver } from "./Currency/CurrencyCrudResolver";
 export { InventoryCrudResolver } from "./Inventory/InventoryCrudResolver";
+export { NotificationCrudResolver } from "./Notification/NotificationCrudResolver";
 export { NotificationSettingsCrudResolver } from "./NotificationSettings/NotificationSettingsCrudResolver";
 export { OrderCrudResolver } from "./Order/OrderCrudResolver";
 export { OrderLineItemCrudResolver } from "./OrderLineItem/OrderLineItemCrudResolver";

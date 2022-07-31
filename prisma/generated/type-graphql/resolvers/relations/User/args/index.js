@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserRequestsArgs = exports.UserRepliesArgs = exports.UserReactionsArgs = exports.UserPurchaseOrdersArgs = exports.UserPostsArgs = exports.UserMyOrdersArgs = exports.UserLikedProductsArgs = exports.UserFollowingArgs = exports.UserFollowersArgs = exports.UserCommentsArgs = exports.UserAddressesArgs = void 0;
+exports.UserRequestsArgs = exports.UserRepliesArgs = exports.UserReactionsArgs = exports.UserPurchaseOrdersArgs = exports.UserPostsArgs = exports.UserNotificationsArgs = exports.UserMyOrdersArgs = exports.UserLikedProductsArgs = exports.UserFollowingArgs = exports.UserFollowersArgs = exports.UserCommentsArgs = exports.UserAddressesArgs = exports.UserActivityArgs = void 0;
+var UserActivityArgs_1 = require("./UserActivityArgs");
+Object.defineProperty(exports, "UserActivityArgs", { enumerable: true, get: function () { return UserActivityArgs_1.UserActivityArgs; } });
 var UserAddressesArgs_1 = require("./UserAddressesArgs");
 Object.defineProperty(exports, "UserAddressesArgs", { enumerable: true, get: function () { return UserAddressesArgs_1.UserAddressesArgs; } });
 var UserCommentsArgs_1 = require("./UserCommentsArgs");
@@ -13,6 +15,8 @@ var UserLikedProductsArgs_1 = require("./UserLikedProductsArgs");
 Object.defineProperty(exports, "UserLikedProductsArgs", { enumerable: true, get: function () { return UserLikedProductsArgs_1.UserLikedProductsArgs; } });
 var UserMyOrdersArgs_1 = require("./UserMyOrdersArgs");
 Object.defineProperty(exports, "UserMyOrdersArgs", { enumerable: true, get: function () { return UserMyOrdersArgs_1.UserMyOrdersArgs; } });
+var UserNotificationsArgs_1 = require("./UserNotificationsArgs");
+Object.defineProperty(exports, "UserNotificationsArgs", { enumerable: true, get: function () { return UserNotificationsArgs_1.UserNotificationsArgs; } });
 var UserPostsArgs_1 = require("./UserPostsArgs");
 Object.defineProperty(exports, "UserPostsArgs", { enumerable: true, get: function () { return UserPostsArgs_1.UserPostsArgs; } });
 var UserPurchaseOrdersArgs_1 = require("./UserPurchaseOrdersArgs");

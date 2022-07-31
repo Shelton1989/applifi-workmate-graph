@@ -8,6 +8,7 @@ export { CommentScalarFieldEnum } from "./CommentScalarFieldEnum";
 export { CurrencyScalarFieldEnum } from "./CurrencyScalarFieldEnum";
 export { InventoryScalarFieldEnum } from "./InventoryScalarFieldEnum";
 export { MEDIA_TYPE } from "./MEDIA_TYPE";
+export { NotificationScalarFieldEnum } from "./NotificationScalarFieldEnum";
 export { NotificationSettingsScalarFieldEnum } from "./NotificationSettingsScalarFieldEnum";
 export { ORDER_STATUS } from "./ORDER_STATUS";
 export { OrderLineItemScalarFieldEnum } from "./OrderLineItemScalarFieldEnum";

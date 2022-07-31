@@ -9,6 +9,7 @@ tslib_1.__exportStar(require("./Color/args"), exports);
 tslib_1.__exportStar(require("./Comment/args"), exports);
 tslib_1.__exportStar(require("./Currency/args"), exports);
 tslib_1.__exportStar(require("./Inventory/args"), exports);
+tslib_1.__exportStar(require("./Notification/args"), exports);
 tslib_1.__exportStar(require("./NotificationSettings/args"), exports);
 tslib_1.__exportStar(require("./Order/args"), exports);
 tslib_1.__exportStar(require("./OrderLineItem/args"), exports);

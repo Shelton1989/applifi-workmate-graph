@@ -6,6 +6,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const Address_1 = require("../../../models/Address");
 const Comment_1 = require("../../../models/Comment");
 const Inventory_1 = require("../../../models/Inventory");
+const Notification_1 = require("../../../models/Notification");
 const NotificationSettings_1 = require("../../../models/NotificationSettings");
 const Order_1 = require("../../../models/Order");
 const Post_1 = require("../../../models/Post");
@@ -14,12 +15,14 @@ const Reaction_1 = require("../../../models/Reaction");
 const Reply_1 = require("../../../models/Reply");
 const Request_1 = require("../../../models/Request");
 const User_1 = require("../../../models/User");
+const UserActivityArgs_1 = require("./args/UserActivityArgs");
 const UserAddressesArgs_1 = require("./args/UserAddressesArgs");
 const UserCommentsArgs_1 = require("./args/UserCommentsArgs");
 const UserFollowersArgs_1 = require("./args/UserFollowersArgs");
 const UserFollowingArgs_1 = require("./args/UserFollowingArgs");
 const UserLikedProductsArgs_1 = require("./args/UserLikedProductsArgs");
 const UserMyOrdersArgs_1 = require("./args/UserMyOrdersArgs");
+const UserNotificationsArgs_1 = require("./args/UserNotificationsArgs");
 const UserPostsArgs_1 = require("./args/UserPostsArgs");
 const UserPurchaseOrdersArgs_1 = require("./args/UserPurchaseOrdersArgs");
 const UserReactionsArgs_1 = require("./args/UserReactionsArgs");
@@ -40,6 +43,20 @@ let UserRelationsResolver = class UserRelationsResolver {
                 id: user.id,
             },
         }).NotificationSettings({});
+    }
+    async Notifications(user, ctx, args) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
+            where: {
+                id: user.id,
+            },
+        }).Notifications(args);
+    }
+    async Activity(user, ctx, args) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
+            where: {
+                id: user.id,
+            },
+        }).Activity(args);
     }
     async Following(user, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
@@ -140,6 +157,28 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", [User_1.User, Object]),
     tslib_1.__metadata("design:returntype", Promise)
 ], UserRelationsResolver.prototype, "NotificationSettings", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => [Notification_1.Notification], {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__param(2, TypeGraphQL.Args()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserNotificationsArgs_1.UserNotificationsArgs]),
+    tslib_1.__metadata("design:returntype", Promise)
+], UserRelationsResolver.prototype, "Notifications", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => [Notification_1.Notification], {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__param(2, TypeGraphQL.Args()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserActivityArgs_1.UserActivityArgs]),
+    tslib_1.__metadata("design:returntype", Promise)
+], UserRelationsResolver.prototype, "Activity", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => [User_1.User], {
         nullable: false

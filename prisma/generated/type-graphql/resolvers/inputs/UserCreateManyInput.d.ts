@@ -12,6 +12,7 @@ export declare class UserCreateManyInput {
     avatar?: string | undefined;
     coverImage?: string | undefined;
     dateOfBirth: Date;
+    biography?: string | undefined;
     hasAcceptedTerms?: boolean | undefined;
     isFirstTimeUser?: boolean | undefined;
     followingIds?: UserCreatefollowingIdsInput | undefined;

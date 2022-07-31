@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserScalarFieldEnum = exports.SortOrder = exports.SizeScalarFieldEnum = exports.ShippingMethodScalarFieldEnum = exports.STATUS = exports.SIZE_REGION = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.ProductScalarFieldEnum = exports.PriceScalarFieldEnum = exports.PostScalarFieldEnum = exports.PRODUCT_TYPE = exports.PRODUCT_CATEGORY = exports.OrderScalarFieldEnum = exports.OrderLineItemScalarFieldEnum = exports.ORDER_STATUS = exports.NotificationSettingsScalarFieldEnum = exports.MEDIA_TYPE = exports.InventoryScalarFieldEnum = exports.CurrencyScalarFieldEnum = exports.CommentScalarFieldEnum = exports.ColorScalarFieldEnum = exports.BrandScalarFieldEnum = exports.BrandProductScalarFieldEnum = exports.ArtworkScalarFieldEnum = exports.AddressScalarFieldEnum = exports.ADDRESS_TYPE = void 0;
+exports.UserScalarFieldEnum = exports.SortOrder = exports.SizeScalarFieldEnum = exports.ShippingMethodScalarFieldEnum = exports.STATUS = exports.SIZE_REGION = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.ProductScalarFieldEnum = exports.PriceScalarFieldEnum = exports.PostScalarFieldEnum = exports.PRODUCT_TYPE = exports.PRODUCT_CATEGORY = exports.OrderScalarFieldEnum = exports.OrderLineItemScalarFieldEnum = exports.ORDER_STATUS = exports.NotificationSettingsScalarFieldEnum = exports.NotificationScalarFieldEnum = exports.MEDIA_TYPE = exports.InventoryScalarFieldEnum = exports.CurrencyScalarFieldEnum = exports.CommentScalarFieldEnum = exports.ColorScalarFieldEnum = exports.BrandScalarFieldEnum = exports.BrandProductScalarFieldEnum = exports.ArtworkScalarFieldEnum = exports.AddressScalarFieldEnum = exports.ADDRESS_TYPE = void 0;
 var ADDRESS_TYPE_1 = require("./ADDRESS_TYPE");
 Object.defineProperty(exports, "ADDRESS_TYPE", { enumerable: true, get: function () { return ADDRESS_TYPE_1.ADDRESS_TYPE; } });
 var AddressScalarFieldEnum_1 = require("./AddressScalarFieldEnum");
@@ -21,6 +21,8 @@ var InventoryScalarFieldEnum_1 = require("./InventoryScalarFieldEnum");
 Object.defineProperty(exports, "InventoryScalarFieldEnum", { enumerable: true, get: function () { return InventoryScalarFieldEnum_1.InventoryScalarFieldEnum; } });
 var MEDIA_TYPE_1 = require("./MEDIA_TYPE");
 Object.defineProperty(exports, "MEDIA_TYPE", { enumerable: true, get: function () { return MEDIA_TYPE_1.MEDIA_TYPE; } });
+var NotificationScalarFieldEnum_1 = require("./NotificationScalarFieldEnum");
+Object.defineProperty(exports, "NotificationScalarFieldEnum", { enumerable: true, get: function () { return NotificationScalarFieldEnum_1.NotificationScalarFieldEnum; } });
 var NotificationSettingsScalarFieldEnum_1 = require("./NotificationSettingsScalarFieldEnum");
 Object.defineProperty(exports, "NotificationSettingsScalarFieldEnum", { enumerable: true, get: function () { return NotificationSettingsScalarFieldEnum_1.NotificationSettingsScalarFieldEnum; } });
 var ORDER_STATUS_1 = require("./ORDER_STATUS");

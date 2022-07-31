@@ -6,6 +6,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AddressOrderByRelationAggregateInput_1 = require("../inputs/AddressOrderByRelationAggregateInput");
 const CommentOrderByRelationAggregateInput_1 = require("../inputs/CommentOrderByRelationAggregateInput");
 const InventoryOrderByWithRelationInput_1 = require("../inputs/InventoryOrderByWithRelationInput");
+const NotificationOrderByRelationAggregateInput_1 = require("../inputs/NotificationOrderByRelationAggregateInput");
 const NotificationSettingsOrderByWithRelationInput_1 = require("../inputs/NotificationSettingsOrderByWithRelationInput");
 const OrderOrderByRelationAggregateInput_1 = require("../inputs/OrderOrderByRelationAggregateInput");
 const PostOrderByRelationAggregateInput_1 = require("../inputs/PostOrderByRelationAggregateInput");
@@ -82,6 +83,12 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
+], UserOrderByWithRelationInput.prototype, "biography", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
 ], UserOrderByWithRelationInput.prototype, "hasAcceptedTerms", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
@@ -101,6 +108,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", NotificationSettingsOrderByWithRelationInput_1.NotificationSettingsOrderByWithRelationInput)
 ], UserOrderByWithRelationInput.prototype, "NotificationSettings", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NotificationOrderByRelationAggregateInput_1.NotificationOrderByRelationAggregateInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NotificationOrderByRelationAggregateInput_1.NotificationOrderByRelationAggregateInput)
+], UserOrderByWithRelationInput.prototype, "Notifications", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NotificationOrderByRelationAggregateInput_1.NotificationOrderByRelationAggregateInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NotificationOrderByRelationAggregateInput_1.NotificationOrderByRelationAggregateInput)
+], UserOrderByWithRelationInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserOrderByRelationAggregateInput_1.UserOrderByRelationAggregateInput, {
         nullable: true

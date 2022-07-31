@@ -9,6 +9,7 @@ export declare class UserCountAggregate {
     avatar: number;
     coverImage: number;
     dateOfBirth: number;
+    biography: number;
     hasAcceptedTerms: number;
     isFirstTimeUser: number;
     followingIds: number;

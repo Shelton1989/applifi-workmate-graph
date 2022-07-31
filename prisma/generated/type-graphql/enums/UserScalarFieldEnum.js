@@ -15,6 +15,7 @@ var UserScalarFieldEnum;
     UserScalarFieldEnum["avatar"] = "avatar";
     UserScalarFieldEnum["coverImage"] = "coverImage";
     UserScalarFieldEnum["dateOfBirth"] = "dateOfBirth";
+    UserScalarFieldEnum["biography"] = "biography";
     UserScalarFieldEnum["hasAcceptedTerms"] = "hasAcceptedTerms";
     UserScalarFieldEnum["isFirstTimeUser"] = "isFirstTimeUser";
     UserScalarFieldEnum["followingIds"] = "followingIds";

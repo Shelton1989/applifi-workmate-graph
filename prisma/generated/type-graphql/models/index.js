@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = exports.Size = exports.ShippingMethod = exports.Request = exports.Reply = exports.Reaction = exports.Product = exports.Price = exports.Post = exports.OrderLineItem = exports.Order = exports.NotificationSettings = exports.Inventory = exports.Currency = exports.Comment = exports.Color = exports.BrandProduct = exports.Brand = exports.Artwork = exports.Address = void 0;
+exports.User = exports.Size = exports.ShippingMethod = exports.Request = exports.Reply = exports.Reaction = exports.Product = exports.Price = exports.Post = exports.OrderLineItem = exports.Order = exports.NotificationSettings = exports.Notification = exports.Inventory = exports.Currency = exports.Comment = exports.Color = exports.BrandProduct = exports.Brand = exports.Artwork = exports.Address = void 0;
 var Address_1 = require("./Address");
 Object.defineProperty(exports, "Address", { enumerable: true, get: function () { return Address_1.Address; } });
 var Artwork_1 = require("./Artwork");
@@ -17,6 +17,8 @@ var Currency_1 = require("./Currency");
 Object.defineProperty(exports, "Currency", { enumerable: true, get: function () { return Currency_1.Currency; } });
 var Inventory_1 = require("./Inventory");
 Object.defineProperty(exports, "Inventory", { enumerable: true, get: function () { return Inventory_1.Inventory; } });
+var Notification_1 = require("./Notification");
+Object.defineProperty(exports, "Notification", { enumerable: true, get: function () { return Notification_1.Notification; } });
 var NotificationSettings_1 = require("./NotificationSettings");
 Object.defineProperty(exports, "NotificationSettings", { enumerable: true, get: function () { return NotificationSettings_1.NotificationSettings; } });
 var Order_1 = require("./Order");

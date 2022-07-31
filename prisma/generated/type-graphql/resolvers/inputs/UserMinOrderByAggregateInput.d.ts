@@ -9,6 +9,7 @@ export declare class UserMinOrderByAggregateInput {
     avatar?: "asc" | "desc" | undefined;
     coverImage?: "asc" | "desc" | undefined;
     dateOfBirth?: "asc" | "desc" | undefined;
+    biography?: "asc" | "desc" | undefined;
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;

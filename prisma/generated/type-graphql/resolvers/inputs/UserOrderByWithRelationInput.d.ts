@@ -1,6 +1,7 @@
 import { AddressOrderByRelationAggregateInput } from "../inputs/AddressOrderByRelationAggregateInput";
 import { CommentOrderByRelationAggregateInput } from "../inputs/CommentOrderByRelationAggregateInput";
 import { InventoryOrderByWithRelationInput } from "../inputs/InventoryOrderByWithRelationInput";
+import { NotificationOrderByRelationAggregateInput } from "../inputs/NotificationOrderByRelationAggregateInput";
 import { NotificationSettingsOrderByWithRelationInput } from "../inputs/NotificationSettingsOrderByWithRelationInput";
 import { OrderOrderByRelationAggregateInput } from "../inputs/OrderOrderByRelationAggregateInput";
 import { PostOrderByRelationAggregateInput } from "../inputs/PostOrderByRelationAggregateInput";
@@ -20,10 +21,13 @@ export declare class UserOrderByWithRelationInput {
     avatar?: "asc" | "desc" | undefined;
     coverImage?: "asc" | "desc" | undefined;
     dateOfBirth?: "asc" | "desc" | undefined;
+    biography?: "asc" | "desc" | undefined;
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
     Addresses?: AddressOrderByRelationAggregateInput | undefined;
     NotificationSettings?: NotificationSettingsOrderByWithRelationInput | undefined;
+    Notifications?: NotificationOrderByRelationAggregateInput | undefined;
+    Activity?: NotificationOrderByRelationAggregateInput | undefined;
     Following?: UserOrderByRelationAggregateInput | undefined;
     followingIds?: "asc" | "desc" | undefined;
     Followers?: UserOrderByRelationAggregateInput | undefined;

@@ -18,6 +18,7 @@ export declare class UserScalarWhereWithAggregatesInput {
     avatar?: StringNullableWithAggregatesFilter | undefined;
     coverImage?: StringNullableWithAggregatesFilter | undefined;
     dateOfBirth?: DateTimeWithAggregatesFilter | undefined;
+    biography?: StringNullableWithAggregatesFilter | undefined;
     hasAcceptedTerms?: BoolWithAggregatesFilter | undefined;
     isFirstTimeUser?: BoolWithAggregatesFilter | undefined;
     followingIds?: StringNullableListFilter | undefined;

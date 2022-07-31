@@ -12,6 +12,7 @@ export declare class UserGroupBy {
     avatar: string | null;
     coverImage: string | null;
     dateOfBirth: Date;
+    biography: string | null;
     hasAcceptedTerms: boolean;
     isFirstTimeUser: boolean;
     followingIds: string[] | null;

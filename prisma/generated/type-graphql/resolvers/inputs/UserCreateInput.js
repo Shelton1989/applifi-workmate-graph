@@ -6,6 +6,8 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AddressCreateNestedManyWithoutUserInput_1 = require("../inputs/AddressCreateNestedManyWithoutUserInput");
 const CommentCreateNestedManyWithoutAuthorInput_1 = require("../inputs/CommentCreateNestedManyWithoutAuthorInput");
 const InventoryCreateNestedOneWithoutUserInput_1 = require("../inputs/InventoryCreateNestedOneWithoutUserInput");
+const NotificationCreateNestedManyWithoutActorInput_1 = require("../inputs/NotificationCreateNestedManyWithoutActorInput");
+const NotificationCreateNestedManyWithoutUserInput_1 = require("../inputs/NotificationCreateNestedManyWithoutUserInput");
 const NotificationSettingsCreateNestedOneWithoutUserInput_1 = require("../inputs/NotificationSettingsCreateNestedOneWithoutUserInput");
 const OrderCreateNestedManyWithoutBuyerInput_1 = require("../inputs/OrderCreateNestedManyWithoutBuyerInput");
 const OrderCreateNestedManyWithoutSellerInput_1 = require("../inputs/OrderCreateNestedManyWithoutSellerInput");
@@ -83,6 +85,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Date)
 ], UserCreateInput.prototype, "dateOfBirth", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], UserCreateInput.prototype, "biography", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
@@ -106,6 +114,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", NotificationSettingsCreateNestedOneWithoutUserInput_1.NotificationSettingsCreateNestedOneWithoutUserInput)
 ], UserCreateInput.prototype, "NotificationSettings", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NotificationCreateNestedManyWithoutUserInput_1.NotificationCreateNestedManyWithoutUserInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NotificationCreateNestedManyWithoutUserInput_1.NotificationCreateNestedManyWithoutUserInput)
+], UserCreateInput.prototype, "Notifications", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NotificationCreateNestedManyWithoutActorInput_1.NotificationCreateNestedManyWithoutActorInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NotificationCreateNestedManyWithoutActorInput_1.NotificationCreateNestedManyWithoutActorInput)
+], UserCreateInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserCreateNestedManyWithoutFollowersInput_1.UserCreateNestedManyWithoutFollowersInput, {
         nullable: true

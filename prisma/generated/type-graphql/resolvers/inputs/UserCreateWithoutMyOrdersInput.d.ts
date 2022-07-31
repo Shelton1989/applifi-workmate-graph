@@ -1,6 +1,8 @@
 import { AddressCreateNestedManyWithoutUserInput } from "../inputs/AddressCreateNestedManyWithoutUserInput";
 import { CommentCreateNestedManyWithoutAuthorInput } from "../inputs/CommentCreateNestedManyWithoutAuthorInput";
 import { InventoryCreateNestedOneWithoutUserInput } from "../inputs/InventoryCreateNestedOneWithoutUserInput";
+import { NotificationCreateNestedManyWithoutActorInput } from "../inputs/NotificationCreateNestedManyWithoutActorInput";
+import { NotificationCreateNestedManyWithoutUserInput } from "../inputs/NotificationCreateNestedManyWithoutUserInput";
 import { NotificationSettingsCreateNestedOneWithoutUserInput } from "../inputs/NotificationSettingsCreateNestedOneWithoutUserInput";
 import { OrderCreateNestedManyWithoutSellerInput } from "../inputs/OrderCreateNestedManyWithoutSellerInput";
 import { PostCreateNestedManyWithoutAuthorInput } from "../inputs/PostCreateNestedManyWithoutAuthorInput";
@@ -24,10 +26,13 @@ export declare class UserCreateWithoutMyOrdersInput {
     avatar?: string | undefined;
     coverImage?: string | undefined;
     dateOfBirth: Date;
+    biography?: string | undefined;
     hasAcceptedTerms?: boolean | undefined;
     isFirstTimeUser?: boolean | undefined;
     Addresses?: AddressCreateNestedManyWithoutUserInput | undefined;
     NotificationSettings?: NotificationSettingsCreateNestedOneWithoutUserInput | undefined;
+    Notifications?: NotificationCreateNestedManyWithoutUserInput | undefined;
+    Activity?: NotificationCreateNestedManyWithoutActorInput | undefined;
     Following?: UserCreateNestedManyWithoutFollowersInput | undefined;
     followingIds?: UserCreatefollowingIdsInput | undefined;
     Followers?: UserCreateNestedManyWithoutFollowingInput | undefined;

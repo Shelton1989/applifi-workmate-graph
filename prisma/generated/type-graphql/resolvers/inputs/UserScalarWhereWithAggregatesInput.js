@@ -91,6 +91,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter)
 ], UserScalarWhereWithAggregatesInput.prototype, "dateOfBirth", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
+], UserScalarWhereWithAggregatesInput.prototype, "biography", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
         nullable: true
     }),

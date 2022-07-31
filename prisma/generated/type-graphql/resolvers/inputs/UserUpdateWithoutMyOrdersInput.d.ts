@@ -4,6 +4,8 @@ import { CommentUpdateManyWithoutAuthorInput } from "../inputs/CommentUpdateMany
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { InventoryUpdateOneWithoutUserInput } from "../inputs/InventoryUpdateOneWithoutUserInput";
 import { NotificationSettingsUpdateOneWithoutUserInput } from "../inputs/NotificationSettingsUpdateOneWithoutUserInput";
+import { NotificationUpdateManyWithoutActorInput } from "../inputs/NotificationUpdateManyWithoutActorInput";
+import { NotificationUpdateManyWithoutUserInput } from "../inputs/NotificationUpdateManyWithoutUserInput";
 import { NullableEnumROLEFieldUpdateOperationsInput } from "../inputs/NullableEnumROLEFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { OrderUpdateManyWithoutSellerInput } from "../inputs/OrderUpdateManyWithoutSellerInput";
@@ -28,10 +30,13 @@ export declare class UserUpdateWithoutMyOrdersInput {
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;
     coverImage?: NullableStringFieldUpdateOperationsInput | undefined;
     dateOfBirth?: DateTimeFieldUpdateOperationsInput | undefined;
+    biography?: NullableStringFieldUpdateOperationsInput | undefined;
     hasAcceptedTerms?: BoolFieldUpdateOperationsInput | undefined;
     isFirstTimeUser?: BoolFieldUpdateOperationsInput | undefined;
     Addresses?: AddressUpdateManyWithoutUserInput | undefined;
     NotificationSettings?: NotificationSettingsUpdateOneWithoutUserInput | undefined;
+    Notifications?: NotificationUpdateManyWithoutUserInput | undefined;
+    Activity?: NotificationUpdateManyWithoutActorInput | undefined;
     Following?: UserUpdateManyWithoutFollowersInput | undefined;
     followingIds?: UserUpdatefollowingIdsInput | undefined;
     Followers?: UserUpdateManyWithoutFollowingInput | undefined;

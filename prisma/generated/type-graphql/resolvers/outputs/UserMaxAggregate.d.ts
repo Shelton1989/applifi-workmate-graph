@@ -9,6 +9,7 @@ export declare class UserMaxAggregate {
     avatar: string | null;
     coverImage: string | null;
     dateOfBirth: Date | null;
+    biography: string | null;
     hasAcceptedTerms: boolean | null;
     isFirstTimeUser: boolean | null;
     createdAt: Date | null;

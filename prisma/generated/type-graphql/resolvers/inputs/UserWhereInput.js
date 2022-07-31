@@ -10,6 +10,7 @@ const CommentListRelationFilter_1 = require("../inputs/CommentListRelationFilter
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumROLENullableFilter_1 = require("../inputs/EnumROLENullableFilter");
 const InventoryRelationFilter_1 = require("../inputs/InventoryRelationFilter");
+const NotificationListRelationFilter_1 = require("../inputs/NotificationListRelationFilter");
 const NotificationSettingsRelationFilter_1 = require("../inputs/NotificationSettingsRelationFilter");
 const OrderListRelationFilter_1 = require("../inputs/OrderListRelationFilter");
 const PostListRelationFilter_1 = require("../inputs/PostListRelationFilter");
@@ -102,6 +103,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
 ], UserWhereInput.prototype, "dateOfBirth", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], UserWhereInput.prototype, "biography", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {
         nullable: true
     }),
@@ -125,6 +132,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", NotificationSettingsRelationFilter_1.NotificationSettingsRelationFilter)
 ], UserWhereInput.prototype, "NotificationSettings", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NotificationListRelationFilter_1.NotificationListRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NotificationListRelationFilter_1.NotificationListRelationFilter)
+], UserWhereInput.prototype, "Notifications", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NotificationListRelationFilter_1.NotificationListRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NotificationListRelationFilter_1.NotificationListRelationFilter)
+], UserWhereInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserListRelationFilter_1.UserListRelationFilter, {
         nullable: true

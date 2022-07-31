@@ -6,6 +6,7 @@ export { ColorRelationsResolver } from "./Color/ColorRelationsResolver";
 export { CommentRelationsResolver } from "./Comment/CommentRelationsResolver";
 export { CurrencyRelationsResolver } from "./Currency/CurrencyRelationsResolver";
 export { InventoryRelationsResolver } from "./Inventory/InventoryRelationsResolver";
+export { NotificationRelationsResolver } from "./Notification/NotificationRelationsResolver";
 export { NotificationSettingsRelationsResolver } from "./NotificationSettings/NotificationSettingsRelationsResolver";
 export { OrderRelationsResolver } from "./Order/OrderRelationsResolver";
 export { OrderLineItemRelationsResolver } from "./OrderLineItem/OrderLineItemRelationsResolver";

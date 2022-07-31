@@ -68,6 +68,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Date)
 ], User.prototype, "dateOfBirth", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], User.prototype, "biography", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: false
     }),

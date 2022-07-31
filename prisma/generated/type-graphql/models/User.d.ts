@@ -1,6 +1,7 @@
 import { Address } from "../models/Address";
 import { Comment } from "../models/Comment";
 import { Inventory } from "../models/Inventory";
+import { Notification } from "../models/Notification";
 import { NotificationSettings } from "../models/NotificationSettings";
 import { Order } from "../models/Order";
 import { Post } from "../models/Post";
@@ -20,10 +21,13 @@ export declare class User {
     avatar?: string | null;
     coverImage?: string | null;
     dateOfBirth: Date;
+    biography?: string | null;
     hasAcceptedTerms: boolean;
     isFirstTimeUser: boolean;
     Addresses?: Address[];
     NotificationSettings?: NotificationSettings | null;
+    Notifications?: Notification[];
+    Activity?: Notification[];
     Following?: User[];
     followingIds: string[];
     Followers?: User[];

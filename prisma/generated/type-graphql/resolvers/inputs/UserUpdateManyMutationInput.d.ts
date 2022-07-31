@@ -16,6 +16,7 @@ export declare class UserUpdateManyMutationInput {
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;
     coverImage?: NullableStringFieldUpdateOperationsInput | undefined;
     dateOfBirth?: DateTimeFieldUpdateOperationsInput | undefined;
+    biography?: NullableStringFieldUpdateOperationsInput | undefined;
     hasAcceptedTerms?: BoolFieldUpdateOperationsInput | undefined;
     isFirstTimeUser?: BoolFieldUpdateOperationsInput | undefined;
     followingIds?: UserUpdatefollowingIdsInput | undefined;

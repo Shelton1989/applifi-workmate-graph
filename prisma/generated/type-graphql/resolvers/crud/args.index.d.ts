@@ -6,6 +6,7 @@ export * from "./Color/args";
 export * from "./Comment/args";
 export * from "./Currency/args";
 export * from "./Inventory/args";
+export * from "./Notification/args";
 export * from "./NotificationSettings/args";
 export * from "./Order/args";
 export * from "./OrderLineItem/args";

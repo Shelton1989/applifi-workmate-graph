@@ -49,11 +49,16 @@ model User {
   coverImage  String?
   dateOfBirth DateTime
 
+  biography String?
+
   hasAcceptedTerms Boolean @default(false)
   isFirstTimeUser  Boolean @default(true)
 
   Addresses            Address[]
   NotificationSettings NotificationSettings?
+
+  Notifications Notification[] @relation("Subject")
+  Activity      Notification[] @relation("Actor")
 
   // Social
   Following    User[]   @relation("UserFollows", fields: [followingIds], references: [id])
@@ -518,6 +523,25 @@ model Request {
 
   Reporter User?   @relation(fields: [userId], references: [id])
   userId   String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Notification {
+  id String @id @default(uuid()) @map("_id")
+
+  description String
+
+  User   User?   @relation("Subject", fields: [userId], references: [id])
+  userId String?
+
+  Actor   User?   @relation("Actor", fields: [actorId], references: [id])
+  actorId String?
+
+  entityId String?
+
+  hasBeenViewedBySubject Boolean @default(false)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

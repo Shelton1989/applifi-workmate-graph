@@ -18,6 +18,7 @@ export declare class UserScalarWhereInput {
     avatar?: StringNullableFilter | undefined;
     coverImage?: StringNullableFilter | undefined;
     dateOfBirth?: DateTimeFilter | undefined;
+    biography?: StringNullableFilter | undefined;
     hasAcceptedTerms?: BoolFilter | undefined;
     isFirstTimeUser?: BoolFilter | undefined;
     followingIds?: StringNullableListFilter | undefined;
