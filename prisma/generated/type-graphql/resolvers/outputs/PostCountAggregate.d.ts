@@ -5,6 +5,7 @@ export declare class PostCountAggregate {
     mediaUrl: number;
     isCommentsEnabled: number;
     authorId: number;
+    productLink: number;
     createdAt: number;
     updatedAt: number;
     _all: number;

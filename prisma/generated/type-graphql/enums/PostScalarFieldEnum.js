@@ -11,6 +11,7 @@ var PostScalarFieldEnum;
     PostScalarFieldEnum["mediaUrl"] = "mediaUrl";
     PostScalarFieldEnum["isCommentsEnabled"] = "isCommentsEnabled";
     PostScalarFieldEnum["authorId"] = "authorId";
+    PostScalarFieldEnum["productLink"] = "productLink";
     PostScalarFieldEnum["createdAt"] = "createdAt";
     PostScalarFieldEnum["updatedAt"] = "updatedAt";
 })(PostScalarFieldEnum = exports.PostScalarFieldEnum || (exports.PostScalarFieldEnum = {}));

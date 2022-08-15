@@ -8,6 +8,7 @@ export declare class PostUpdateManyMutationInput {
     caption?: NullableStringFieldUpdateOperationsInput | undefined;
     mediaUrl?: PostUpdatemediaUrlInput | undefined;
     isCommentsEnabled?: BoolFieldUpdateOperationsInput | undefined;
+    productLink?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

@@ -8,6 +8,8 @@ export declare class NotificationUpdateWithoutUserInput {
     Actor?: UserUpdateOneWithoutActivityInput | undefined;
     entityId?: NullableStringFieldUpdateOperationsInput | undefined;
     hasBeenViewedBySubject?: BoolFieldUpdateOperationsInput | undefined;
+    link?: NullableStringFieldUpdateOperationsInput | undefined;
+    mediaLink?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

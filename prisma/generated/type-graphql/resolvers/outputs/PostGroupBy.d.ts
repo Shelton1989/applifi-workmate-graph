@@ -8,6 +8,7 @@ export declare class PostGroupBy {
     mediaUrl: string[] | null;
     isCommentsEnabled: boolean;
     authorId: string;
+    productLink: string | null;
     createdAt: Date;
     updatedAt: Date;
     _count: PostCountAggregate | null;

@@ -8,6 +8,7 @@ export declare class PostOrderByWithAggregationInput {
     mediaUrl?: "asc" | "desc" | undefined;
     isCommentsEnabled?: "asc" | "desc" | undefined;
     authorId?: "asc" | "desc" | undefined;
+    productLink?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
     _count?: PostCountOrderByAggregateInput | undefined;

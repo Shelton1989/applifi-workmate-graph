@@ -44,6 +44,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], PostCreateManyInput.prototype, "authorId", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], PostCreateManyInput.prototype, "productLink", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true
     }),

@@ -5,6 +5,7 @@ export declare class PostCreateManyAuthorInput {
     caption?: string | undefined;
     mediaUrl?: PostCreatemediaUrlInput | undefined;
     isCommentsEnabled?: boolean | undefined;
+    productLink?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

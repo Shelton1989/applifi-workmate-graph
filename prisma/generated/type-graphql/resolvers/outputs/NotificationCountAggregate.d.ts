@@ -5,6 +5,8 @@ export declare class NotificationCountAggregate {
     actorId: number;
     entityId: number;
     hasBeenViewedBySubject: number;
+    link: number;
+    mediaLink: number;
     createdAt: number;
     updatedAt: number;
     _all: number;

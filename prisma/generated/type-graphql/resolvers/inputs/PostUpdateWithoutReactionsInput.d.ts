@@ -12,6 +12,7 @@ export declare class PostUpdateWithoutReactionsInput {
     isCommentsEnabled?: BoolFieldUpdateOperationsInput | undefined;
     Author?: UserUpdateOneRequiredWithoutPostsInput | undefined;
     Comments?: CommentUpdateManyWithoutPostInput | undefined;
+    productLink?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

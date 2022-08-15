@@ -37,6 +37,18 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Boolean)
 ], NotificationCreateWithoutActorInput.prototype, "hasBeenViewedBySubject", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], NotificationCreateWithoutActorInput.prototype, "link", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], NotificationCreateWithoutActorInput.prototype, "mediaLink", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true
     }),

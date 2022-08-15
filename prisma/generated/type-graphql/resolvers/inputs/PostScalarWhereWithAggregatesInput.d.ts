@@ -14,6 +14,7 @@ export declare class PostScalarWhereWithAggregatesInput {
     mediaUrl?: StringNullableListFilter | undefined;
     isCommentsEnabled?: BoolWithAggregatesFilter | undefined;
     authorId?: StringWithAggregatesFilter | undefined;
+    productLink?: StringNullableWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

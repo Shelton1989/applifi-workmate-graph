@@ -12,6 +12,8 @@ export declare class NotificationScalarWhereWithAggregatesInput {
     actorId?: StringNullableWithAggregatesFilter | undefined;
     entityId?: StringNullableWithAggregatesFilter | undefined;
     hasBeenViewedBySubject?: BoolWithAggregatesFilter | undefined;
+    link?: StringNullableWithAggregatesFilter | undefined;
+    mediaLink?: StringNullableWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

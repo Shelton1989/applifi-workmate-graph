@@ -20,6 +20,7 @@ export declare class PostWhereInput {
     authorId?: StringFilter | undefined;
     Comments?: CommentListRelationFilter | undefined;
     Reactions?: ReactionListRelationFilter | undefined;
+    productLink?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

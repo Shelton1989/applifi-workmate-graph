@@ -5,6 +5,7 @@ export declare enum PostScalarFieldEnum {
     mediaUrl = "mediaUrl",
     isCommentsEnabled = "isCommentsEnabled",
     authorId = "authorId",
+    productLink = "productLink",
     createdAt = "createdAt",
     updatedAt = "updatedAt"
 }

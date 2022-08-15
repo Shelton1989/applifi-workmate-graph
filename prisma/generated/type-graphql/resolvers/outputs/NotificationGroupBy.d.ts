@@ -8,6 +8,8 @@ export declare class NotificationGroupBy {
     actorId: string | null;
     entityId: string | null;
     hasBeenViewedBySubject: boolean;
+    link: string | null;
+    mediaLink: string | null;
     createdAt: Date;
     updatedAt: Date;
     _count: NotificationCountAggregate | null;

@@ -5,6 +5,7 @@ export declare class PostCountOrderByAggregateInput {
     mediaUrl?: "asc" | "desc" | undefined;
     isCommentsEnabled?: "asc" | "desc" | undefined;
     authorId?: "asc" | "desc" | undefined;
+    productLink?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

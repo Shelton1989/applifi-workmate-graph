@@ -5,6 +5,8 @@ export declare enum NotificationScalarFieldEnum {
     actorId = "actorId",
     entityId = "entityId",
     hasBeenViewedBySubject = "hasBeenViewedBySubject",
+    link = "link",
+    mediaLink = "mediaLink",
     createdAt = "createdAt",
     updatedAt = "updatedAt"
 }

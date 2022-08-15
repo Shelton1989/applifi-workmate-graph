@@ -5,6 +5,8 @@ export declare class NotificationMaxOrderByAggregateInput {
     actorId?: "asc" | "desc" | undefined;
     entityId?: "asc" | "desc" | undefined;
     hasBeenViewedBySubject?: "asc" | "desc" | undefined;
+    link?: "asc" | "desc" | undefined;
+    mediaLink?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

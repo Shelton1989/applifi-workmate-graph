@@ -15,6 +15,8 @@ export declare class NotificationWhereInput {
     actorId?: StringNullableFilter | undefined;
     entityId?: StringNullableFilter | undefined;
     hasBeenViewedBySubject?: BoolFilter | undefined;
+    link?: StringNullableFilter | undefined;
+    mediaLink?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

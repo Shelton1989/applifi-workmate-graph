@@ -14,6 +14,7 @@ export declare class PostUpdateInput {
     Author?: UserUpdateOneRequiredWithoutPostsInput | undefined;
     Comments?: CommentUpdateManyWithoutPostInput | undefined;
     Reactions?: ReactionUpdateManyWithoutPostInput | undefined;
+    productLink?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

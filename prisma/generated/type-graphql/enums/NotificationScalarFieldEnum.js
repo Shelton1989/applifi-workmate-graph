@@ -11,6 +11,8 @@ var NotificationScalarFieldEnum;
     NotificationScalarFieldEnum["actorId"] = "actorId";
     NotificationScalarFieldEnum["entityId"] = "entityId";
     NotificationScalarFieldEnum["hasBeenViewedBySubject"] = "hasBeenViewedBySubject";
+    NotificationScalarFieldEnum["link"] = "link";
+    NotificationScalarFieldEnum["mediaLink"] = "mediaLink";
     NotificationScalarFieldEnum["createdAt"] = "createdAt";
     NotificationScalarFieldEnum["updatedAt"] = "updatedAt";
 })(NotificationScalarFieldEnum = exports.NotificationScalarFieldEnum || (exports.NotificationScalarFieldEnum = {}));

@@ -12,6 +12,7 @@ export declare class Post {
     authorId: string;
     Comments?: Comment[];
     Reactions?: Reaction[];
+    productLink?: string | null;
     createdAt: Date;
     updatedAt: Date;
     _count?: PostCount | null;

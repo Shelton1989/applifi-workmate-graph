@@ -9,6 +9,7 @@ export declare class PostCreateWithoutCommentsInput {
     isCommentsEnabled?: boolean | undefined;
     Author: UserCreateNestedOneWithoutPostsInput;
     Reactions?: ReactionCreateNestedManyWithoutPostInput | undefined;
+    productLink?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

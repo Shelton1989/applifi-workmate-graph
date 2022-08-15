@@ -11,6 +11,7 @@ export declare class PostCreateInput {
     Author: UserCreateNestedOneWithoutPostsInput;
     Comments?: CommentCreateNestedManyWithoutPostInput | undefined;
     Reactions?: ReactionCreateNestedManyWithoutPostInput | undefined;
+    productLink?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

@@ -7,5 +7,5 @@ export declare class UserActivityArgs {
     cursor?: NotificationWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "description" | "userId" | "actorId" | "entityId" | "hasBeenViewedBySubject" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "description" | "userId" | "actorId" | "entityId" | "hasBeenViewedBySubject" | "link" | "mediaLink" | "createdAt" | "updatedAt"> | undefined;
 }

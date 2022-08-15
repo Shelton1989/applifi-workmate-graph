@@ -4,6 +4,7 @@ export declare class PostMinAggregate {
     caption: string | null;
     isCommentsEnabled: boolean | null;
     authorId: string | null;
+    productLink: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }

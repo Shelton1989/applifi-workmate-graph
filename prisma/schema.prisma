@@ -164,6 +164,7 @@ enum SIZE_REGION {
 enum STATUS {
   DRAFT
   PUBLISHED
+  UNPUBLISHED
   UNDER_REVIEW
   PENDING_APPROVAL
   IN_REVIEW
@@ -387,6 +388,8 @@ model Post {
   Comments  Comment[]
   Reactions Reaction[]
 
+  productLink String?
+
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
 }
@@ -542,6 +545,9 @@ model Notification {
   entityId String?
 
   hasBeenViewedBySubject Boolean @default(false)
+
+  link      String?
+  mediaLink String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

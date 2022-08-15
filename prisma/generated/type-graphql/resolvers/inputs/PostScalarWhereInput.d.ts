@@ -14,6 +14,7 @@ export declare class PostScalarWhereInput {
     mediaUrl?: StringNullableListFilter | undefined;
     isCommentsEnabled?: BoolFilter | undefined;
     authorId?: StringFilter | undefined;
+    productLink?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

@@ -11,6 +11,7 @@ export declare class PostOrderByWithRelationInput {
     authorId?: "asc" | "desc" | undefined;
     Comments?: CommentOrderByRelationAggregateInput | undefined;
     Reactions?: ReactionOrderByRelationAggregateInput | undefined;
+    productLink?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }
