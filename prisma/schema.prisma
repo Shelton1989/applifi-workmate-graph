@@ -20,16 +20,8 @@ datasource db {
 enum ROLE {
   SUPER_ADMIN
   ADMIN
-  ARTIST
-  BRAND_MANAGER
+  CRITIC
   USER
-}
-
-enum ADDRESS_TYPE {
-  BILLING
-  DELIVERY
-  PHYSICAL
-  POSTAL
 }
 
 // Models
@@ -53,8 +45,8 @@ model User {
 
   hasAcceptedTerms Boolean @default(false)
   isFirstTimeUser  Boolean @default(true)
+  isVerified       Boolean @default(false)
 
-  Addresses            Address[]
   NotificationSettings NotificationSettings?
 
   Notifications Notification[] @relation("Subject")
@@ -66,55 +58,11 @@ model User {
   Followers    User[]   @relation("UserFollows", fields: [followerIds], references: [id])
   followerIds  String[]
 
-  // Market
-  LikedProducts Product[]  @relation(fields: [productIds], references: [id])
-  productIds    String[]
-  Inventory     Inventory?
-
-  MyOrders       Order[] @relation("buyerOrders")
-  PurchaseOrders Order[] @relation("sellerOrders")
-
-
   Requests  Request[]
   Posts     Post[]
   Comments  Comment[]
   Replies   Reply[]
   Reactions Reaction[]
-
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Inventory {
-  id String @id @default(uuid()) @map("_id")
-
-  Products Product[]
-  Artwork  Artwork[]
-
-  User   User   @relation(fields: [userId], references: [id])
-  userId String @unique
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Address {
-  id String @id @default(uuid()) @map("_id")
-
-  type      ADDRESS_TYPE
-  line1     String
-  line2     String
-  city      String
-  district  String
-  country   String
-  code      String
-  isDefault Boolean      @default(false)
-
-  User   User?   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  userId String?
-
-  Orders Order[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -123,238 +71,13 @@ model Address {
 model NotificationSettings {
   id String @id @default(uuid()) @map("_id")
 
-  newArrivals           Boolean @default(true)
-  orderUpdates          Boolean @default(true)
-  promotions            Boolean @default(true)
-  saleAlerts            Boolean @default(true)
-  postsByArtistsIFollow Boolean @default(true)
-  postsByBrandsIFollow  Boolean @default(true)
+  newContentILike     Boolean @default(true)
+  commentsOnMyReviews Boolean @default(true)
+  repliesToMyComments Boolean @default(true)
+  repliesToThreads    Boolean @default(true)
 
   User   User?   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   userId String? @unique
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-// Marketplace models
-enum PRODUCT_TYPE {
-  SNEAKER
-  TSHIRT
-  CREWNECK
-  JEANS
-  JOGGER
-  FITTED
-}
-
-enum PRODUCT_CATEGORY {
-  MEN
-  WOMEN
-  CHILDREN
-  ANY
-}
-
-enum SIZE_REGION {
-  US
-  UK
-  EU
-  UNIVERSAL
-}
-
-enum STATUS {
-  DRAFT
-  PUBLISHED
-  UNPUBLISHED
-  UNDER_REVIEW
-  PENDING_APPROVAL
-  IN_REVIEW
-  APPROVED
-  NO_ACTION_TAKEN
-  REJECTED_WITH_REASON
-  DECLINED
-  BANNED
-  SOFT_BANNED
-}
-
-model Artwork {
-  id String @id @default(uuid()) @map("_id")
-
-  title       String
-  description String
-  caption     String
-  url         String
-
-  Products   Product[] @relation(fields: [productIds], references: [id])
-  productIds String[]
-
-  Inventory   Inventory @relation(fields: [inventoryId], references: [id])
-  inventoryId String
-
-  OrderLineItems OrderLineItem[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Color {
-  id String @id @default(uuid()) @map("_id")
-
-  name String
-  hex  String
-
-  Products   Product[] @relation(fields: [productIds], references: [id])
-  productIds String[]
-
-  OrderLineItems OrderLineItem[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Size {
-  id String @id @default(uuid()) @map("_id")
-
-  value  String
-  region SIZE_REGION
-
-  Products   Product[] @relation(fields: [productIds], references: [id])
-  productIds String[]
-
-  OrderLineItems OrderLineItem[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Brand {
-  id String @id @default(uuid()) @map("_id")
-
-  name        String
-  description String
-  tagline     String
-
-  BrandProducts BrandProduct[]
-
-  status STATUS @default(PENDING_APPROVAL)
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model BrandProduct {
-  id String @id @default(uuid()) @map("_id")
-
-  name        String
-  releaseYear DateTime?
-  description String
-
-  type     PRODUCT_TYPE
-  category PRODUCT_CATEGORY
-  brand    Brand            @relation(fields: [brandId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  brandId  String
-
-  status STATUS @default(PENDING_APPROVAL)
-
-  Products Product[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Product {
-  id String @id @default(uuid()) @map("_id")
-
-  publishStatus STATUS @default(DRAFT)
-
-  description String?
-  price       Price?  @relation(fields: [priceId], references: [id])
-  priceId     String?
-
-  availableQuantity Int?
-  photo             String?
-  gallery           String[]
-
-  BaseProduct   BrandProduct? @relation(fields: [baseProductId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  baseProductId String?
-
-  Artwork    Artwork[] @relation(fields: [artworkIds], references: [id])
-  artworkIds String[]
-  Colors     Color[]   @relation(fields: [colorIds], references: [id])
-  colorIds   String[]
-  Sizes      Size[]    @relation(fields: [sizeIds], references: [id])
-  sizeIds    String[]
-
-  OrderLineItems OrderLineItem[]
-
-  LikedBy    User[]   @relation(fields: [likedByIds], references: [id])
-  likedByIds String[]
-
-  Inventory   Inventory @relation(fields: [inventoryId], references: [id])
-  inventoryId String
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Currency {
-  id String @id @default(uuid()) @map("_id")
-
-  name   String
-  symbol String
-  code   String
-
-  prices Price[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Price {
-  id String @id @default(uuid()) @map("_id")
-
-  priceInLowestDenomination Int
-  displayPrice              String
-  currency                  Currency @relation(fields: [currencyId], references: [id])
-  currencyId                String
-
-  ShippingMethods ShippingMethod[]
-  Products        Product[]
-  OrderLineItems  OrderLineItem[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-// Order models
-enum ORDER_STATUS {
-  OPEN
-  ORDERED
-  ORDERED_PENDING_PAYMENT
-  STARTED
-  IN_PROGRESS
-  CUSTOMISED
-  READY_FOR_COLLECTION
-  READY_FOR_DELIVERY
-  SHIPPED
-  IN_DELIVERY
-  DELIVERED
-  COMPLETE
-}
-
-model ShippingMethod {
-  id String @id @default(uuid()) @map("_id")
-
-  name                          String
-  description                   String
-  label                         String
-  arrivalTimeInBusinessDays     Int
-  arrivalTimeInBusinessDaysRang String
-  arrivalTimeDescription        String
-
-  price   Price  @relation(fields: [priceId], references: [id])
-  priceId String
-
-  Orders Order[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -368,9 +91,98 @@ enum REACTION_TYPE {
 }
 
 enum MEDIA_TYPE {
-  SHORT_VIDEO
-  IMAGE
-  CAROUSEL
+  TOPIC
+  SEASON_SERIES
+  EPISODE
+}
+
+enum TOPIC_TYPE {
+  MOVIE
+  SERIES
+  DOCUMENTARY
+  STREAMING_PLATFORM
+  OPINION_PIECE
+  NEWS_ENTITY
+  ARTICLE
+  PODCAST
+  BOOK
+}
+
+model Topic {
+  id String @id @default(uuid()) @map("_id")
+
+  title      String
+  year       String
+  poster     String
+  overview   String
+  trailer    String
+  coverImage String
+  tagline    String
+  genres     String[]
+  creators   String[]
+  authors    String[]
+  artists    String[]
+  producers  String[]
+  directors  String[]
+  publishers String[]
+  cast       String[]
+  type       String
+
+  Reactions    Reaction[]
+  SeasonSeries SeasonSeries[]
+  Posts        Post[]
+
+  topicType TOPIC_TYPE @default(MOVIE)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model SeasonSeries {
+  id String @id @default(uuid()) @map("_id")
+
+  seasonOrSeriesNumber Int
+
+  title      String
+  year       String
+  poster     String
+  overview   String
+  trailer    String
+  coverImage String
+  tagline    String
+
+  Topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  topicId String
+
+  Reactions Reaction[]
+  Episodes  Episode[]
+  Posts     Post[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Episode {
+  id String @id @default(uuid()) @map("_id")
+
+  episodeNumber Int
+
+  title      String
+  year       String
+  poster     String
+  overview   String
+  trailer    String
+  coverImage String
+  tagline    String
+
+  SeasonSeries   SeasonSeries @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  seasonSeriesId String
+
+  Reactions Reaction[]
+  Posts     Post[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
 }
 
 model Post {
@@ -380,7 +192,10 @@ model Post {
   caption  String?
   mediaUrl String[]
 
+  rating Int
+
   isCommentsEnabled Boolean @default(true)
+  canBeCounted      Boolean @default(true)
 
   Author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   authorId String
@@ -388,7 +203,14 @@ model Post {
   Comments  Comment[]
   Reactions Reaction[]
 
-  productLink String?
+  Topic          Topic?        @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  topicId        String?
+  SeasonSeries   SeasonSeries? @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  seasonSeriesId String?
+  Episode        Episode?      @relation(fields: [episodeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  episodeId      String?
+
+  postLink String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -439,52 +261,13 @@ model Reaction {
   Author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   authorId  String
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-// Market models
-model OrderLineItem {
-  id String @id @default(uuid()) @map("_id")
-
-  lineItemPrice Price  @relation(fields: [priceId], references: [id])
-  priceId       String
-
-  SelectedProduct   Product @relation(fields: [selectedProductId], references: [id])
-  selectedProductId String
-  SelectedColor     Color   @relation(fields: [selectedColorId], references: [id])
-  selectedColorId   String
-  SelectedArtwork   Artwork @relation(fields: [selectedArtworkId], references: [id])
-  selectedArtworkId String
-  SelectedSize      Size    @relation(fields: [selectedSizeId], references: [id])
-  selectedSizeId    String
-
-  Order   Order  @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  orderId String
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Order {
-  id String @id @default(uuid()) @map("_id")
-
-  status ORDER_STATUS @default(OPEN)
-
-  SelectedShippingAddress   Address?        @relation(fields: [selectedShippingAddressId], references: [id], onDelete: SetNull, onUpdate: SetNull)
-  selectedShippingAddressId String?
-  SelectedShippingMethod    ShippingMethod? @relation(fields: [selectedShippingMethodId], references: [id], onDelete: SetNull, onUpdate: SetNull)
-  selectedShippingMethodId  String?
-  SelectedPaymentType       String?
-
-  stripePaymentReference String?
-
-  Buyer    User   @relation("buyerOrders", fields: [buyerId], references: [id])
-  buyerId  String
-  Seller   User   @relation("sellerOrders", fields: [sellerId], references: [id])
-  sellerId String
-
-  Items OrderLineItem[]
+  // Entity
+  Topic          Topic?        @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  topicId        String?
+  SeasonSeries   SeasonSeries? @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  seasonSeriesId String?
+  Episode        Episode?      @relation(fields: [episodeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  episodeId      String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -499,7 +282,6 @@ enum REQUEST_STATUS {
 }
 
 enum REQUEST_TYPE {
-  CASH_WITHDRAWAL
   POST_REVIEW
   COMMENT_REVIEW
   PROFILE_REVIEW

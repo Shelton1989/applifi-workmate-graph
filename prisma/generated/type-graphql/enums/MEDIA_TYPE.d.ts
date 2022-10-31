@@ -1,5 +1,5 @@
 export declare enum MEDIA_TYPE {
-    SHORT_VIDEO = "SHORT_VIDEO",
-    IMAGE = "IMAGE",
-    CAROUSEL = "CAROUSEL"
+    TOPIC = "TOPIC",
+    SEASON_SERIES = "SEASON_SERIES",
+    EPISODE = "EPISODE"
 }

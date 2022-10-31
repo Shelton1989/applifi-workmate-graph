@@ -86,6 +86,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Boolean)
 ], User.prototype, "isFirstTimeUser", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], User.prototype, "isVerified", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => [String], {
         nullable: false
     }),
@@ -97,12 +103,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Array)
 ], User.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => [String], {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Array)
-], User.prototype, "productIds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: false

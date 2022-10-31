@@ -109,6 +109,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
 ], UserScalarWhereWithAggregatesInput.prototype, "isFirstTimeUser", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
+], UserScalarWhereWithAggregatesInput.prototype, "isVerified", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
         nullable: true
     }),
@@ -120,12 +126,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
 ], UserScalarWhereWithAggregatesInput.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
-], UserScalarWhereWithAggregatesInput.prototype, "productIds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter, {
         nullable: true

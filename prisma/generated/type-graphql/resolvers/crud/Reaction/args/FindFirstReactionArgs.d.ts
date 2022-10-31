@@ -7,5 +7,5 @@ export declare class FindFirstReactionArgs {
     cursor?: ReactionWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "type" | "postId" | "commentId" | "replyId" | "authorId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "type" | "postId" | "commentId" | "replyId" | "authorId" | "topicId" | "seasonSeriesId" | "episodeId" | "createdAt" | "updatedAt"> | undefined;
 }

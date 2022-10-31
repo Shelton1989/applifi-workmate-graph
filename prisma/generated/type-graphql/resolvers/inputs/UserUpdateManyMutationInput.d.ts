@@ -5,7 +5,6 @@ import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStri
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 import { UserUpdatefollowerIdsInput } from "../inputs/UserUpdatefollowerIdsInput";
 import { UserUpdatefollowingIdsInput } from "../inputs/UserUpdatefollowingIdsInput";
-import { UserUpdateproductIdsInput } from "../inputs/UserUpdateproductIdsInput";
 export declare class UserUpdateManyMutationInput {
     uid?: StringFieldUpdateOperationsInput | undefined;
     username?: StringFieldUpdateOperationsInput | undefined;
@@ -19,9 +18,9 @@ export declare class UserUpdateManyMutationInput {
     biography?: NullableStringFieldUpdateOperationsInput | undefined;
     hasAcceptedTerms?: BoolFieldUpdateOperationsInput | undefined;
     isFirstTimeUser?: BoolFieldUpdateOperationsInput | undefined;
+    isVerified?: BoolFieldUpdateOperationsInput | undefined;
     followingIds?: UserUpdatefollowingIdsInput | undefined;
     followerIds?: UserUpdatefollowerIdsInput | undefined;
-    productIds?: UserUpdateproductIdsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

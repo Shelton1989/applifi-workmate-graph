@@ -3,20 +3,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserUpdateWithoutRepliesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const AddressUpdateManyWithoutUserInput_1 = require("../inputs/AddressUpdateManyWithoutUserInput");
 const BoolFieldUpdateOperationsInput_1 = require("../inputs/BoolFieldUpdateOperationsInput");
 const CommentUpdateManyWithoutAuthorInput_1 = require("../inputs/CommentUpdateManyWithoutAuthorInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
-const InventoryUpdateOneWithoutUserInput_1 = require("../inputs/InventoryUpdateOneWithoutUserInput");
 const NotificationSettingsUpdateOneWithoutUserInput_1 = require("../inputs/NotificationSettingsUpdateOneWithoutUserInput");
 const NotificationUpdateManyWithoutActorInput_1 = require("../inputs/NotificationUpdateManyWithoutActorInput");
 const NotificationUpdateManyWithoutUserInput_1 = require("../inputs/NotificationUpdateManyWithoutUserInput");
 const NullableEnumROLEFieldUpdateOperationsInput_1 = require("../inputs/NullableEnumROLEFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const OrderUpdateManyWithoutBuyerInput_1 = require("../inputs/OrderUpdateManyWithoutBuyerInput");
-const OrderUpdateManyWithoutSellerInput_1 = require("../inputs/OrderUpdateManyWithoutSellerInput");
 const PostUpdateManyWithoutAuthorInput_1 = require("../inputs/PostUpdateManyWithoutAuthorInput");
-const ProductUpdateManyWithoutLikedByInput_1 = require("../inputs/ProductUpdateManyWithoutLikedByInput");
 const ReactionUpdateManyWithoutAuthorInput_1 = require("../inputs/ReactionUpdateManyWithoutAuthorInput");
 const RequestUpdateManyWithoutReporterInput_1 = require("../inputs/RequestUpdateManyWithoutReporterInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
@@ -24,7 +19,6 @@ const UserUpdateManyWithoutFollowersInput_1 = require("../inputs/UserUpdateManyW
 const UserUpdateManyWithoutFollowingInput_1 = require("../inputs/UserUpdateManyWithoutFollowingInput");
 const UserUpdatefollowerIdsInput_1 = require("../inputs/UserUpdatefollowerIdsInput");
 const UserUpdatefollowingIdsInput_1 = require("../inputs/UserUpdatefollowingIdsInput");
-const UserUpdateproductIdsInput_1 = require("../inputs/UserUpdateproductIdsInput");
 let UserUpdateWithoutRepliesInput = class UserUpdateWithoutRepliesInput {
 };
 tslib_1.__decorate([
@@ -100,11 +94,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
 ], UserUpdateWithoutRepliesInput.prototype, "isFirstTimeUser", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => AddressUpdateManyWithoutUserInput_1.AddressUpdateManyWithoutUserInput, {
+    TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", AddressUpdateManyWithoutUserInput_1.AddressUpdateManyWithoutUserInput)
-], UserUpdateWithoutRepliesInput.prototype, "Addresses", void 0);
+    tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
+], UserUpdateWithoutRepliesInput.prototype, "isVerified", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NotificationSettingsUpdateOneWithoutUserInput_1.NotificationSettingsUpdateOneWithoutUserInput, {
         nullable: true
@@ -147,36 +141,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", UserUpdatefollowerIdsInput_1.UserUpdatefollowerIdsInput)
 ], UserUpdateWithoutRepliesInput.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ProductUpdateManyWithoutLikedByInput_1.ProductUpdateManyWithoutLikedByInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", ProductUpdateManyWithoutLikedByInput_1.ProductUpdateManyWithoutLikedByInput)
-], UserUpdateWithoutRepliesInput.prototype, "LikedProducts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdateproductIdsInput_1.UserUpdateproductIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserUpdateproductIdsInput_1.UserUpdateproductIdsInput)
-], UserUpdateWithoutRepliesInput.prototype, "productIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => InventoryUpdateOneWithoutUserInput_1.InventoryUpdateOneWithoutUserInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", InventoryUpdateOneWithoutUserInput_1.InventoryUpdateOneWithoutUserInput)
-], UserUpdateWithoutRepliesInput.prototype, "Inventory", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderUpdateManyWithoutBuyerInput_1.OrderUpdateManyWithoutBuyerInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", OrderUpdateManyWithoutBuyerInput_1.OrderUpdateManyWithoutBuyerInput)
-], UserUpdateWithoutRepliesInput.prototype, "MyOrders", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderUpdateManyWithoutSellerInput_1.OrderUpdateManyWithoutSellerInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", OrderUpdateManyWithoutSellerInput_1.OrderUpdateManyWithoutSellerInput)
-], UserUpdateWithoutRepliesInput.prototype, "PurchaseOrders", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => RequestUpdateManyWithoutReporterInput_1.RequestUpdateManyWithoutReporterInput, {
         nullable: true

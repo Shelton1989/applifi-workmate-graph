@@ -5,7 +5,6 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 var REQUEST_TYPE;
 (function (REQUEST_TYPE) {
-    REQUEST_TYPE["CASH_WITHDRAWAL"] = "CASH_WITHDRAWAL";
     REQUEST_TYPE["POST_REVIEW"] = "POST_REVIEW";
     REQUEST_TYPE["COMMENT_REVIEW"] = "COMMENT_REVIEW";
     REQUEST_TYPE["PROFILE_REVIEW"] = "PROFILE_REVIEW";

@@ -3,14 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const AddressOrderByRelationAggregateInput_1 = require("../inputs/AddressOrderByRelationAggregateInput");
 const CommentOrderByRelationAggregateInput_1 = require("../inputs/CommentOrderByRelationAggregateInput");
-const InventoryOrderByWithRelationInput_1 = require("../inputs/InventoryOrderByWithRelationInput");
 const NotificationOrderByRelationAggregateInput_1 = require("../inputs/NotificationOrderByRelationAggregateInput");
 const NotificationSettingsOrderByWithRelationInput_1 = require("../inputs/NotificationSettingsOrderByWithRelationInput");
-const OrderOrderByRelationAggregateInput_1 = require("../inputs/OrderOrderByRelationAggregateInput");
 const PostOrderByRelationAggregateInput_1 = require("../inputs/PostOrderByRelationAggregateInput");
-const ProductOrderByRelationAggregateInput_1 = require("../inputs/ProductOrderByRelationAggregateInput");
 const ReactionOrderByRelationAggregateInput_1 = require("../inputs/ReactionOrderByRelationAggregateInput");
 const ReplyOrderByRelationAggregateInput_1 = require("../inputs/ReplyOrderByRelationAggregateInput");
 const RequestOrderByRelationAggregateInput_1 = require("../inputs/RequestOrderByRelationAggregateInput");
@@ -97,11 +93,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], UserOrderByWithRelationInput.prototype, "isFirstTimeUser", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => AddressOrderByRelationAggregateInput_1.AddressOrderByRelationAggregateInput, {
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", AddressOrderByRelationAggregateInput_1.AddressOrderByRelationAggregateInput)
-], UserOrderByWithRelationInput.prototype, "Addresses", void 0);
+    tslib_1.__metadata("design:type", String)
+], UserOrderByWithRelationInput.prototype, "isVerified", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NotificationSettingsOrderByWithRelationInput_1.NotificationSettingsOrderByWithRelationInput, {
         nullable: true
@@ -144,36 +140,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], UserOrderByWithRelationInput.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ProductOrderByRelationAggregateInput_1.ProductOrderByRelationAggregateInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", ProductOrderByRelationAggregateInput_1.ProductOrderByRelationAggregateInput)
-], UserOrderByWithRelationInput.prototype, "LikedProducts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], UserOrderByWithRelationInput.prototype, "productIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => InventoryOrderByWithRelationInput_1.InventoryOrderByWithRelationInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", InventoryOrderByWithRelationInput_1.InventoryOrderByWithRelationInput)
-], UserOrderByWithRelationInput.prototype, "Inventory", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderOrderByRelationAggregateInput_1.OrderOrderByRelationAggregateInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", OrderOrderByRelationAggregateInput_1.OrderOrderByRelationAggregateInput)
-], UserOrderByWithRelationInput.prototype, "MyOrders", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderOrderByRelationAggregateInput_1.OrderOrderByRelationAggregateInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", OrderOrderByRelationAggregateInput_1.OrderOrderByRelationAggregateInput)
-], UserOrderByWithRelationInput.prototype, "PurchaseOrders", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => RequestOrderByRelationAggregateInput_1.RequestOrderByRelationAggregateInput, {
         nullable: true

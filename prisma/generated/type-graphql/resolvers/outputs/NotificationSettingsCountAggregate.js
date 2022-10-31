@@ -16,37 +16,25 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], NotificationSettingsCountAggregate.prototype, "newArrivals", void 0);
+], NotificationSettingsCountAggregate.prototype, "newContentILike", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], NotificationSettingsCountAggregate.prototype, "orderUpdates", void 0);
+], NotificationSettingsCountAggregate.prototype, "commentsOnMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], NotificationSettingsCountAggregate.prototype, "promotions", void 0);
+], NotificationSettingsCountAggregate.prototype, "repliesToMyComments", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], NotificationSettingsCountAggregate.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
-], NotificationSettingsCountAggregate.prototype, "postsByArtistsIFollow", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
-], NotificationSettingsCountAggregate.prototype, "postsByBrandsIFollow", void 0);
+], NotificationSettingsCountAggregate.prototype, "repliesToThreads", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

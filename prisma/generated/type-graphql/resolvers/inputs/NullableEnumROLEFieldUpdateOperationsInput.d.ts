@@ -1,4 +1,4 @@
 export declare class NullableEnumROLEFieldUpdateOperationsInput {
-    set?: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER" | undefined;
+    set?: "SUPER_ADMIN" | "ADMIN" | "CRITIC" | "USER" | undefined;
     unset?: boolean | undefined;
 }

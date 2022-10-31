@@ -17,37 +17,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateInput.prototype, "newArrivals", void 0);
+], NotificationSettingsCreateInput.prototype, "newContentILike", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateInput.prototype, "orderUpdates", void 0);
+], NotificationSettingsCreateInput.prototype, "commentsOnMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateInput.prototype, "promotions", void 0);
+], NotificationSettingsCreateInput.prototype, "repliesToMyComments", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateInput.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateInput.prototype, "postsByArtistsIFollow", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateInput.prototype, "postsByBrandsIFollow", void 0);
+], NotificationSettingsCreateInput.prototype, "repliesToThreads", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserCreateNestedOneWithoutNotificationSettingsInput_1.UserCreateNestedOneWithoutNotificationSettingsInput, {
         nullable: true

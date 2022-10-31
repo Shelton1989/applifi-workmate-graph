@@ -21,9 +21,9 @@ export declare class UserScalarWhereWithAggregatesInput {
     biography?: StringNullableWithAggregatesFilter | undefined;
     hasAcceptedTerms?: BoolWithAggregatesFilter | undefined;
     isFirstTimeUser?: BoolWithAggregatesFilter | undefined;
+    isVerified?: BoolWithAggregatesFilter | undefined;
     followingIds?: StringNullableListFilter | undefined;
     followerIds?: StringNullableListFilter | undefined;
-    productIds?: StringNullableListFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

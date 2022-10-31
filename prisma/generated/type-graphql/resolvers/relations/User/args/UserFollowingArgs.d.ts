@@ -7,5 +7,5 @@ export declare class UserFollowingArgs {
     cursor?: UserWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"uid" | "id" | "username" | "email" | "role" | "firstName" | "lastName" | "avatar" | "coverImage" | "dateOfBirth" | "biography" | "hasAcceptedTerms" | "isFirstTimeUser" | "followingIds" | "followerIds" | "productIds" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"uid" | "id" | "username" | "email" | "role" | "firstName" | "lastName" | "avatar" | "coverImage" | "dateOfBirth" | "biography" | "hasAcceptedTerms" | "isFirstTimeUser" | "isVerified" | "followingIds" | "followerIds" | "createdAt" | "updatedAt"> | undefined;
 }

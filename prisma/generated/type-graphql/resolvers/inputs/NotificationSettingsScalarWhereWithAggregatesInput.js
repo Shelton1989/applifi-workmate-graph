@@ -39,37 +39,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
-], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "newArrivals", void 0);
+], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "newContentILike", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
-], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "orderUpdates", void 0);
+], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "commentsOnMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
-], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "promotions", void 0);
+], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "repliesToMyComments", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
-], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
-], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "postsByArtistsIFollow", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
-], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "postsByBrandsIFollow", void 0);
+], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "repliesToThreads", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
         nullable: true

@@ -1,14 +1,10 @@
-import { AddressListRelationFilter } from "../inputs/AddressListRelationFilter";
 import { BoolFilter } from "../inputs/BoolFilter";
 import { CommentListRelationFilter } from "../inputs/CommentListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumROLENullableFilter } from "../inputs/EnumROLENullableFilter";
-import { InventoryRelationFilter } from "../inputs/InventoryRelationFilter";
 import { NotificationListRelationFilter } from "../inputs/NotificationListRelationFilter";
 import { NotificationSettingsRelationFilter } from "../inputs/NotificationSettingsRelationFilter";
-import { OrderListRelationFilter } from "../inputs/OrderListRelationFilter";
 import { PostListRelationFilter } from "../inputs/PostListRelationFilter";
-import { ProductListRelationFilter } from "../inputs/ProductListRelationFilter";
 import { ReactionListRelationFilter } from "../inputs/ReactionListRelationFilter";
 import { ReplyListRelationFilter } from "../inputs/ReplyListRelationFilter";
 import { RequestListRelationFilter } from "../inputs/RequestListRelationFilter";
@@ -33,7 +29,7 @@ export declare class UserWhereInput {
     biography?: StringNullableFilter | undefined;
     hasAcceptedTerms?: BoolFilter | undefined;
     isFirstTimeUser?: BoolFilter | undefined;
-    Addresses?: AddressListRelationFilter | undefined;
+    isVerified?: BoolFilter | undefined;
     NotificationSettings?: NotificationSettingsRelationFilter | undefined;
     Notifications?: NotificationListRelationFilter | undefined;
     Activity?: NotificationListRelationFilter | undefined;
@@ -41,11 +37,6 @@ export declare class UserWhereInput {
     followingIds?: StringNullableListFilter | undefined;
     Followers?: UserListRelationFilter | undefined;
     followerIds?: StringNullableListFilter | undefined;
-    LikedProducts?: ProductListRelationFilter | undefined;
-    productIds?: StringNullableListFilter | undefined;
-    Inventory?: InventoryRelationFilter | undefined;
-    MyOrders?: OrderListRelationFilter | undefined;
-    PurchaseOrders?: OrderListRelationFilter | undefined;
     Requests?: RequestListRelationFilter | undefined;
     Posts?: PostListRelationFilter | undefined;
     Comments?: CommentListRelationFilter | undefined;

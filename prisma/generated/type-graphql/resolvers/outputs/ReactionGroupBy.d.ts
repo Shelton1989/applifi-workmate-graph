@@ -8,6 +8,9 @@ export declare class ReactionGroupBy {
     commentId: string | null;
     replyId: string | null;
     authorId: string;
+    topicId: string | null;
+    seasonSeriesId: string | null;
+    episodeId: string | null;
     createdAt: Date;
     updatedAt: Date;
     _count: ReactionCountAggregate | null;

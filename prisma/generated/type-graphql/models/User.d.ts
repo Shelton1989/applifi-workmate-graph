@@ -1,11 +1,7 @@
-import { Address } from "../models/Address";
 import { Comment } from "../models/Comment";
-import { Inventory } from "../models/Inventory";
 import { Notification } from "../models/Notification";
 import { NotificationSettings } from "../models/NotificationSettings";
-import { Order } from "../models/Order";
 import { Post } from "../models/Post";
-import { Product } from "../models/Product";
 import { Reaction } from "../models/Reaction";
 import { Reply } from "../models/Reply";
 import { Request } from "../models/Request";
@@ -15,7 +11,7 @@ export declare class User {
     id: string;
     username: string;
     email: string;
-    role?: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER" | null;
+    role?: "SUPER_ADMIN" | "ADMIN" | "CRITIC" | "USER" | null;
     firstName?: string | null;
     lastName?: string | null;
     avatar?: string | null;
@@ -24,7 +20,7 @@ export declare class User {
     biography?: string | null;
     hasAcceptedTerms: boolean;
     isFirstTimeUser: boolean;
-    Addresses?: Address[];
+    isVerified: boolean;
     NotificationSettings?: NotificationSettings | null;
     Notifications?: Notification[];
     Activity?: Notification[];
@@ -32,11 +28,6 @@ export declare class User {
     followingIds: string[];
     Followers?: User[];
     followerIds: string[];
-    LikedProducts?: Product[];
-    productIds: string[];
-    Inventory?: Inventory | null;
-    MyOrders?: Order[];
-    PurchaseOrders?: Order[];
     Requests?: Request[];
     Posts?: Post[];
     Comments?: Comment[];

@@ -1,0 +1,35 @@
+import { DateTimeFilter } from "../inputs/DateTimeFilter";
+import { EnumTOPIC_TYPEFilter } from "../inputs/EnumTOPIC_TYPEFilter";
+import { PostListRelationFilter } from "../inputs/PostListRelationFilter";
+import { ReactionListRelationFilter } from "../inputs/ReactionListRelationFilter";
+import { SeasonSeriesListRelationFilter } from "../inputs/SeasonSeriesListRelationFilter";
+import { StringFilter } from "../inputs/StringFilter";
+import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
+export declare class TopicWhereInput {
+    AND?: TopicWhereInput[] | undefined;
+    OR?: TopicWhereInput[] | undefined;
+    NOT?: TopicWhereInput[] | undefined;
+    id?: StringFilter | undefined;
+    title?: StringFilter | undefined;
+    year?: StringFilter | undefined;
+    poster?: StringFilter | undefined;
+    overview?: StringFilter | undefined;
+    trailer?: StringFilter | undefined;
+    coverImage?: StringFilter | undefined;
+    tagline?: StringFilter | undefined;
+    genres?: StringNullableListFilter | undefined;
+    creators?: StringNullableListFilter | undefined;
+    authors?: StringNullableListFilter | undefined;
+    artists?: StringNullableListFilter | undefined;
+    producers?: StringNullableListFilter | undefined;
+    directors?: StringNullableListFilter | undefined;
+    publishers?: StringNullableListFilter | undefined;
+    cast?: StringNullableListFilter | undefined;
+    type?: StringFilter | undefined;
+    Reactions?: ReactionListRelationFilter | undefined;
+    SeasonSeries?: SeasonSeriesListRelationFilter | undefined;
+    Posts?: PostListRelationFilter | undefined;
+    topicType?: EnumTOPIC_TYPEFilter | undefined;
+    createdAt?: DateTimeFilter | undefined;
+    updatedAt?: DateTimeFilter | undefined;
+}

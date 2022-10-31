@@ -7,9 +7,13 @@ const BoolFieldUpdateOperationsInput_1 = require("../inputs/BoolFieldUpdateOpera
 const CommentUpdateManyWithoutPostInput_1 = require("../inputs/CommentUpdateManyWithoutPostInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const EnumMEDIA_TYPEFieldUpdateOperationsInput_1 = require("../inputs/EnumMEDIA_TYPEFieldUpdateOperationsInput");
+const EpisodeUpdateOneWithoutPostsInput_1 = require("../inputs/EpisodeUpdateOneWithoutPostsInput");
+const IntFieldUpdateOperationsInput_1 = require("../inputs/IntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const PostUpdatemediaUrlInput_1 = require("../inputs/PostUpdatemediaUrlInput");
 const ReactionUpdateManyWithoutPostInput_1 = require("../inputs/ReactionUpdateManyWithoutPostInput");
+const SeasonSeriesUpdateOneWithoutPostsInput_1 = require("../inputs/SeasonSeriesUpdateOneWithoutPostsInput");
+const TopicUpdateOneWithoutPostsInput_1 = require("../inputs/TopicUpdateOneWithoutPostsInput");
 let PostUpdateWithoutAuthorInput = class PostUpdateWithoutAuthorInput {
 };
 tslib_1.__decorate([
@@ -31,11 +35,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", PostUpdatemediaUrlInput_1.PostUpdatemediaUrlInput)
 ], PostUpdateWithoutAuthorInput.prototype, "mediaUrl", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => IntFieldUpdateOperationsInput_1.IntFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", IntFieldUpdateOperationsInput_1.IntFieldUpdateOperationsInput)
+], PostUpdateWithoutAuthorInput.prototype, "rating", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
 ], PostUpdateWithoutAuthorInput.prototype, "isCommentsEnabled", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
+], PostUpdateWithoutAuthorInput.prototype, "canBeCounted", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => CommentUpdateManyWithoutPostInput_1.CommentUpdateManyWithoutPostInput, {
         nullable: true
@@ -49,11 +65,29 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", ReactionUpdateManyWithoutPostInput_1.ReactionUpdateManyWithoutPostInput)
 ], PostUpdateWithoutAuthorInput.prototype, "Reactions", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TopicUpdateOneWithoutPostsInput_1.TopicUpdateOneWithoutPostsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TopicUpdateOneWithoutPostsInput_1.TopicUpdateOneWithoutPostsInput)
+], PostUpdateWithoutAuthorInput.prototype, "Topic", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SeasonSeriesUpdateOneWithoutPostsInput_1.SeasonSeriesUpdateOneWithoutPostsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", SeasonSeriesUpdateOneWithoutPostsInput_1.SeasonSeriesUpdateOneWithoutPostsInput)
+], PostUpdateWithoutAuthorInput.prototype, "SeasonSeries", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => EpisodeUpdateOneWithoutPostsInput_1.EpisodeUpdateOneWithoutPostsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", EpisodeUpdateOneWithoutPostsInput_1.EpisodeUpdateOneWithoutPostsInput)
+], PostUpdateWithoutAuthorInput.prototype, "Episode", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
-], PostUpdateWithoutAuthorInput.prototype, "productLink", void 0);
+], PostUpdateWithoutAuthorInput.prototype, "postLink", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

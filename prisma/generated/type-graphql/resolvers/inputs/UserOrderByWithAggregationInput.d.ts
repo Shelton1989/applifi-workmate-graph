@@ -15,9 +15,9 @@ export declare class UserOrderByWithAggregationInput {
     biography?: "asc" | "desc" | undefined;
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
+    isVerified?: "asc" | "desc" | undefined;
     followingIds?: "asc" | "desc" | undefined;
     followerIds?: "asc" | "desc" | undefined;
-    productIds?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
     _count?: UserCountOrderByAggregateInput | undefined;

@@ -10,7 +10,6 @@ const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableSt
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 const UserUpdatefollowerIdsInput_1 = require("../inputs/UserUpdatefollowerIdsInput");
 const UserUpdatefollowingIdsInput_1 = require("../inputs/UserUpdatefollowingIdsInput");
-const UserUpdateproductIdsInput_1 = require("../inputs/UserUpdateproductIdsInput");
 let UserUpdateManyMutationInput = class UserUpdateManyMutationInput {
 };
 tslib_1.__decorate([
@@ -86,6 +85,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
 ], UserUpdateManyMutationInput.prototype, "isFirstTimeUser", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
+], UserUpdateManyMutationInput.prototype, "isVerified", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserUpdatefollowingIdsInput_1.UserUpdatefollowingIdsInput, {
         nullable: true
     }),
@@ -97,12 +102,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", UserUpdatefollowerIdsInput_1.UserUpdatefollowerIdsInput)
 ], UserUpdateManyMutationInput.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdateproductIdsInput_1.UserUpdateproductIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserUpdateproductIdsInput_1.UserUpdateproductIdsInput)
-], UserUpdateManyMutationInput.prototype, "productIds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

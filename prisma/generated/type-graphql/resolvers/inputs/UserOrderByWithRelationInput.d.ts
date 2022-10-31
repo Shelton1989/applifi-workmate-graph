@@ -1,11 +1,7 @@
-import { AddressOrderByRelationAggregateInput } from "../inputs/AddressOrderByRelationAggregateInput";
 import { CommentOrderByRelationAggregateInput } from "../inputs/CommentOrderByRelationAggregateInput";
-import { InventoryOrderByWithRelationInput } from "../inputs/InventoryOrderByWithRelationInput";
 import { NotificationOrderByRelationAggregateInput } from "../inputs/NotificationOrderByRelationAggregateInput";
 import { NotificationSettingsOrderByWithRelationInput } from "../inputs/NotificationSettingsOrderByWithRelationInput";
-import { OrderOrderByRelationAggregateInput } from "../inputs/OrderOrderByRelationAggregateInput";
 import { PostOrderByRelationAggregateInput } from "../inputs/PostOrderByRelationAggregateInput";
-import { ProductOrderByRelationAggregateInput } from "../inputs/ProductOrderByRelationAggregateInput";
 import { ReactionOrderByRelationAggregateInput } from "../inputs/ReactionOrderByRelationAggregateInput";
 import { ReplyOrderByRelationAggregateInput } from "../inputs/ReplyOrderByRelationAggregateInput";
 import { RequestOrderByRelationAggregateInput } from "../inputs/RequestOrderByRelationAggregateInput";
@@ -24,7 +20,7 @@ export declare class UserOrderByWithRelationInput {
     biography?: "asc" | "desc" | undefined;
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
-    Addresses?: AddressOrderByRelationAggregateInput | undefined;
+    isVerified?: "asc" | "desc" | undefined;
     NotificationSettings?: NotificationSettingsOrderByWithRelationInput | undefined;
     Notifications?: NotificationOrderByRelationAggregateInput | undefined;
     Activity?: NotificationOrderByRelationAggregateInput | undefined;
@@ -32,11 +28,6 @@ export declare class UserOrderByWithRelationInput {
     followingIds?: "asc" | "desc" | undefined;
     Followers?: UserOrderByRelationAggregateInput | undefined;
     followerIds?: "asc" | "desc" | undefined;
-    LikedProducts?: ProductOrderByRelationAggregateInput | undefined;
-    productIds?: "asc" | "desc" | undefined;
-    Inventory?: InventoryOrderByWithRelationInput | undefined;
-    MyOrders?: OrderOrderByRelationAggregateInput | undefined;
-    PurchaseOrders?: OrderOrderByRelationAggregateInput | undefined;
     Requests?: RequestOrderByRelationAggregateInput | undefined;
     Posts?: PostOrderByRelationAggregateInput | undefined;
     Comments?: CommentOrderByRelationAggregateInput | undefined;

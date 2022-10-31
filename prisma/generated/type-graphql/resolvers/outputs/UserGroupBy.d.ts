@@ -6,7 +6,7 @@ export declare class UserGroupBy {
     id: string;
     username: string;
     email: string;
-    role: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER" | null;
+    role: "SUPER_ADMIN" | "ADMIN" | "CRITIC" | "USER" | null;
     firstName: string | null;
     lastName: string | null;
     avatar: string | null;
@@ -15,9 +15,9 @@ export declare class UserGroupBy {
     biography: string | null;
     hasAcceptedTerms: boolean;
     isFirstTimeUser: boolean;
+    isVerified: boolean;
     followingIds: string[] | null;
     followerIds: string[] | null;
-    productIds: string[] | null;
     createdAt: Date;
     updatedAt: Date;
     _count: UserCountAggregate | null;

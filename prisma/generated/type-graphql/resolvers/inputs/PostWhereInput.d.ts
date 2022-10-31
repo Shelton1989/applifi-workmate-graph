@@ -2,10 +2,14 @@ import { BoolFilter } from "../inputs/BoolFilter";
 import { CommentListRelationFilter } from "../inputs/CommentListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumMEDIA_TYPEFilter } from "../inputs/EnumMEDIA_TYPEFilter";
+import { EpisodeRelationFilter } from "../inputs/EpisodeRelationFilter";
+import { IntFilter } from "../inputs/IntFilter";
 import { ReactionListRelationFilter } from "../inputs/ReactionListRelationFilter";
+import { SeasonSeriesRelationFilter } from "../inputs/SeasonSeriesRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
+import { TopicRelationFilter } from "../inputs/TopicRelationFilter";
 import { UserRelationFilter } from "../inputs/UserRelationFilter";
 export declare class PostWhereInput {
     AND?: PostWhereInput[] | undefined;
@@ -15,12 +19,20 @@ export declare class PostWhereInput {
     type?: EnumMEDIA_TYPEFilter | undefined;
     caption?: StringNullableFilter | undefined;
     mediaUrl?: StringNullableListFilter | undefined;
+    rating?: IntFilter | undefined;
     isCommentsEnabled?: BoolFilter | undefined;
+    canBeCounted?: BoolFilter | undefined;
     Author?: UserRelationFilter | undefined;
     authorId?: StringFilter | undefined;
     Comments?: CommentListRelationFilter | undefined;
     Reactions?: ReactionListRelationFilter | undefined;
-    productLink?: StringNullableFilter | undefined;
+    Topic?: TopicRelationFilter | undefined;
+    topicId?: StringNullableFilter | undefined;
+    SeasonSeries?: SeasonSeriesRelationFilter | undefined;
+    seasonSeriesId?: StringNullableFilter | undefined;
+    Episode?: EpisodeRelationFilter | undefined;
+    episodeId?: StringNullableFilter | undefined;
+    postLink?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

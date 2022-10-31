@@ -7,5 +7,5 @@ export declare class FindFirstPostArgs {
     cursor?: PostWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "type" | "caption" | "mediaUrl" | "isCommentsEnabled" | "authorId" | "productLink" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "type" | "caption" | "mediaUrl" | "rating" | "isCommentsEnabled" | "canBeCounted" | "authorId" | "topicId" | "seasonSeriesId" | "episodeId" | "postLink" | "createdAt" | "updatedAt"> | undefined;
 }

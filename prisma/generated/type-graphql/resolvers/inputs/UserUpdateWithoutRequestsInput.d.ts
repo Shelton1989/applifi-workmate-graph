@@ -1,17 +1,12 @@
-import { AddressUpdateManyWithoutUserInput } from "../inputs/AddressUpdateManyWithoutUserInput";
 import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperationsInput";
 import { CommentUpdateManyWithoutAuthorInput } from "../inputs/CommentUpdateManyWithoutAuthorInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
-import { InventoryUpdateOneWithoutUserInput } from "../inputs/InventoryUpdateOneWithoutUserInput";
 import { NotificationSettingsUpdateOneWithoutUserInput } from "../inputs/NotificationSettingsUpdateOneWithoutUserInput";
 import { NotificationUpdateManyWithoutActorInput } from "../inputs/NotificationUpdateManyWithoutActorInput";
 import { NotificationUpdateManyWithoutUserInput } from "../inputs/NotificationUpdateManyWithoutUserInput";
 import { NullableEnumROLEFieldUpdateOperationsInput } from "../inputs/NullableEnumROLEFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { OrderUpdateManyWithoutBuyerInput } from "../inputs/OrderUpdateManyWithoutBuyerInput";
-import { OrderUpdateManyWithoutSellerInput } from "../inputs/OrderUpdateManyWithoutSellerInput";
 import { PostUpdateManyWithoutAuthorInput } from "../inputs/PostUpdateManyWithoutAuthorInput";
-import { ProductUpdateManyWithoutLikedByInput } from "../inputs/ProductUpdateManyWithoutLikedByInput";
 import { ReactionUpdateManyWithoutAuthorInput } from "../inputs/ReactionUpdateManyWithoutAuthorInput";
 import { ReplyUpdateManyWithoutAuthorInput } from "../inputs/ReplyUpdateManyWithoutAuthorInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
@@ -19,7 +14,6 @@ import { UserUpdateManyWithoutFollowersInput } from "../inputs/UserUpdateManyWit
 import { UserUpdateManyWithoutFollowingInput } from "../inputs/UserUpdateManyWithoutFollowingInput";
 import { UserUpdatefollowerIdsInput } from "../inputs/UserUpdatefollowerIdsInput";
 import { UserUpdatefollowingIdsInput } from "../inputs/UserUpdatefollowingIdsInput";
-import { UserUpdateproductIdsInput } from "../inputs/UserUpdateproductIdsInput";
 export declare class UserUpdateWithoutRequestsInput {
     uid?: StringFieldUpdateOperationsInput | undefined;
     username?: StringFieldUpdateOperationsInput | undefined;
@@ -33,7 +27,7 @@ export declare class UserUpdateWithoutRequestsInput {
     biography?: NullableStringFieldUpdateOperationsInput | undefined;
     hasAcceptedTerms?: BoolFieldUpdateOperationsInput | undefined;
     isFirstTimeUser?: BoolFieldUpdateOperationsInput | undefined;
-    Addresses?: AddressUpdateManyWithoutUserInput | undefined;
+    isVerified?: BoolFieldUpdateOperationsInput | undefined;
     NotificationSettings?: NotificationSettingsUpdateOneWithoutUserInput | undefined;
     Notifications?: NotificationUpdateManyWithoutUserInput | undefined;
     Activity?: NotificationUpdateManyWithoutActorInput | undefined;
@@ -41,11 +35,6 @@ export declare class UserUpdateWithoutRequestsInput {
     followingIds?: UserUpdatefollowingIdsInput | undefined;
     Followers?: UserUpdateManyWithoutFollowingInput | undefined;
     followerIds?: UserUpdatefollowerIdsInput | undefined;
-    LikedProducts?: ProductUpdateManyWithoutLikedByInput | undefined;
-    productIds?: UserUpdateproductIdsInput | undefined;
-    Inventory?: InventoryUpdateOneWithoutUserInput | undefined;
-    MyOrders?: OrderUpdateManyWithoutBuyerInput | undefined;
-    PurchaseOrders?: OrderUpdateManyWithoutSellerInput | undefined;
     Posts?: PostUpdateManyWithoutAuthorInput | undefined;
     Comments?: CommentUpdateManyWithoutAuthorInput | undefined;
     Replies?: ReplyUpdateManyWithoutAuthorInput | undefined;

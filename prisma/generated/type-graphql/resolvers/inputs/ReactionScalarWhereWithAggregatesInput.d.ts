@@ -12,6 +12,9 @@ export declare class ReactionScalarWhereWithAggregatesInput {
     commentId?: StringNullableWithAggregatesFilter | undefined;
     replyId?: StringNullableWithAggregatesFilter | undefined;
     authorId?: StringWithAggregatesFilter | undefined;
+    topicId?: StringNullableWithAggregatesFilter | undefined;
+    seasonSeriesId?: StringNullableWithAggregatesFilter | undefined;
+    episodeId?: StringNullableWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

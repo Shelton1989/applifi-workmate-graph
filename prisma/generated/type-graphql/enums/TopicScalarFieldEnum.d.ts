@@ -1,0 +1,22 @@
+export declare enum TopicScalarFieldEnum {
+    id = "id",
+    title = "title",
+    year = "year",
+    poster = "poster",
+    overview = "overview",
+    trailer = "trailer",
+    coverImage = "coverImage",
+    tagline = "tagline",
+    genres = "genres",
+    creators = "creators",
+    authors = "authors",
+    artists = "artists",
+    producers = "producers",
+    directors = "directors",
+    publishers = "publishers",
+    cast = "cast",
+    type = "type",
+    topicType = "topicType",
+    createdAt = "createdAt",
+    updatedAt = "updatedAt"
+}

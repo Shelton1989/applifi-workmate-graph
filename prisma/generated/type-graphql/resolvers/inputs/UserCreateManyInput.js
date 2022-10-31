@@ -5,7 +5,6 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const UserCreatefollowerIdsInput_1 = require("../inputs/UserCreatefollowerIdsInput");
 const UserCreatefollowingIdsInput_1 = require("../inputs/UserCreatefollowingIdsInput");
-const UserCreateproductIdsInput_1 = require("../inputs/UserCreateproductIdsInput");
 const ROLE_1 = require("../../enums/ROLE");
 let UserCreateManyInput = class UserCreateManyInput {
 };
@@ -88,6 +87,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Boolean)
 ], UserCreateManyInput.prototype, "isFirstTimeUser", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], UserCreateManyInput.prototype, "isVerified", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserCreatefollowingIdsInput_1.UserCreatefollowingIdsInput, {
         nullable: true
     }),
@@ -99,12 +104,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", UserCreatefollowerIdsInput_1.UserCreatefollowerIdsInput)
 ], UserCreateManyInput.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserCreateproductIdsInput_1.UserCreateproductIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserCreateproductIdsInput_1.UserCreateproductIdsInput)
-], UserCreateManyInput.prototype, "productIds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

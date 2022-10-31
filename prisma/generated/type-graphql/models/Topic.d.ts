@@ -1,0 +1,30 @@
+import { Post } from "../models/Post";
+import { Reaction } from "../models/Reaction";
+import { SeasonSeries } from "../models/SeasonSeries";
+import { TopicCount } from "../resolvers/outputs/TopicCount";
+export declare class Topic {
+    id: string;
+    title: string;
+    year: string;
+    poster: string;
+    overview: string;
+    trailer: string;
+    coverImage: string;
+    tagline: string;
+    genres: string[];
+    creators: string[];
+    authors: string[];
+    artists: string[];
+    producers: string[];
+    directors: string[];
+    publishers: string[];
+    cast: string[];
+    type: string;
+    Reactions?: Reaction[];
+    SeasonSeries?: SeasonSeries[];
+    Posts?: Post[];
+    topicType: "MOVIE" | "SERIES" | "DOCUMENTARY" | "STREAMING_PLATFORM" | "OPINION_PIECE" | "NEWS_ENTITY" | "ARTICLE" | "PODCAST" | "BOOK";
+    createdAt: Date;
+    updatedAt: Date;
+    _count?: TopicCount | null;
+}

@@ -12,9 +12,9 @@ export declare class UserCountAggregate {
     biography: number;
     hasAcceptedTerms: number;
     isFirstTimeUser: number;
+    isVerified: number;
     followingIds: number;
     followerIds: number;
-    productIds: number;
     createdAt: number;
     updatedAt: number;
     _all: number;

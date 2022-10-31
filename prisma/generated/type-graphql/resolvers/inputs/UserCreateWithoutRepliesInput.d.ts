@@ -1,26 +1,20 @@
-import { AddressCreateNestedManyWithoutUserInput } from "../inputs/AddressCreateNestedManyWithoutUserInput";
 import { CommentCreateNestedManyWithoutAuthorInput } from "../inputs/CommentCreateNestedManyWithoutAuthorInput";
-import { InventoryCreateNestedOneWithoutUserInput } from "../inputs/InventoryCreateNestedOneWithoutUserInput";
 import { NotificationCreateNestedManyWithoutActorInput } from "../inputs/NotificationCreateNestedManyWithoutActorInput";
 import { NotificationCreateNestedManyWithoutUserInput } from "../inputs/NotificationCreateNestedManyWithoutUserInput";
 import { NotificationSettingsCreateNestedOneWithoutUserInput } from "../inputs/NotificationSettingsCreateNestedOneWithoutUserInput";
-import { OrderCreateNestedManyWithoutBuyerInput } from "../inputs/OrderCreateNestedManyWithoutBuyerInput";
-import { OrderCreateNestedManyWithoutSellerInput } from "../inputs/OrderCreateNestedManyWithoutSellerInput";
 import { PostCreateNestedManyWithoutAuthorInput } from "../inputs/PostCreateNestedManyWithoutAuthorInput";
-import { ProductCreateNestedManyWithoutLikedByInput } from "../inputs/ProductCreateNestedManyWithoutLikedByInput";
 import { ReactionCreateNestedManyWithoutAuthorInput } from "../inputs/ReactionCreateNestedManyWithoutAuthorInput";
 import { RequestCreateNestedManyWithoutReporterInput } from "../inputs/RequestCreateNestedManyWithoutReporterInput";
 import { UserCreateNestedManyWithoutFollowersInput } from "../inputs/UserCreateNestedManyWithoutFollowersInput";
 import { UserCreateNestedManyWithoutFollowingInput } from "../inputs/UserCreateNestedManyWithoutFollowingInput";
 import { UserCreatefollowerIdsInput } from "../inputs/UserCreatefollowerIdsInput";
 import { UserCreatefollowingIdsInput } from "../inputs/UserCreatefollowingIdsInput";
-import { UserCreateproductIdsInput } from "../inputs/UserCreateproductIdsInput";
 export declare class UserCreateWithoutRepliesInput {
     uid: string;
     id?: string | undefined;
     username: string;
     email: string;
-    role?: "SUPER_ADMIN" | "ADMIN" | "ARTIST" | "BRAND_MANAGER" | "USER" | undefined;
+    role?: "SUPER_ADMIN" | "ADMIN" | "CRITIC" | "USER" | undefined;
     firstName?: string | undefined;
     lastName?: string | undefined;
     avatar?: string | undefined;
@@ -29,7 +23,7 @@ export declare class UserCreateWithoutRepliesInput {
     biography?: string | undefined;
     hasAcceptedTerms?: boolean | undefined;
     isFirstTimeUser?: boolean | undefined;
-    Addresses?: AddressCreateNestedManyWithoutUserInput | undefined;
+    isVerified?: boolean | undefined;
     NotificationSettings?: NotificationSettingsCreateNestedOneWithoutUserInput | undefined;
     Notifications?: NotificationCreateNestedManyWithoutUserInput | undefined;
     Activity?: NotificationCreateNestedManyWithoutActorInput | undefined;
@@ -37,11 +31,6 @@ export declare class UserCreateWithoutRepliesInput {
     followingIds?: UserCreatefollowingIdsInput | undefined;
     Followers?: UserCreateNestedManyWithoutFollowingInput | undefined;
     followerIds?: UserCreatefollowerIdsInput | undefined;
-    LikedProducts?: ProductCreateNestedManyWithoutLikedByInput | undefined;
-    productIds?: UserCreateproductIdsInput | undefined;
-    Inventory?: InventoryCreateNestedOneWithoutUserInput | undefined;
-    MyOrders?: OrderCreateNestedManyWithoutBuyerInput | undefined;
-    PurchaseOrders?: OrderCreateNestedManyWithoutSellerInput | undefined;
     Requests?: RequestCreateNestedManyWithoutReporterInput | undefined;
     Posts?: PostCreateNestedManyWithoutAuthorInput | undefined;
     Comments?: CommentCreateNestedManyWithoutAuthorInput | undefined;
