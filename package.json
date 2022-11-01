@@ -1,5 +1,5 @@
 {
-  "name": "unparel-backend",
+  "name": "cinnaview-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --inspect=0.0.0.0:8000 --respawn --transpile-only --no-notify --prefer-ts --ignore-watch node_modules src/index.ts",
+    "dev": "GOOGLE_APPLICATION_CREDENTIALS=secrets.json ts-node-dev --inspect=0.0.0.0:8000 --respawn --transpile-only --no-notify --prefer-ts --ignore-watch node_modules src/index.ts",
     "prebuild": "npm run generate && echo '====COMPLETE==='",
     "build": "del-cli ./build && tsc -p ./tsconfig.build.json",
     "prestart": "npm run generate && echo '====COMPLETE==='",
@@ -34,6 +34,7 @@
     "cpy-cli": "^4.1.0",
     "del-cli": "^4.0.1",
     "express": "^4.17.3",
+    "firebase-admin": "^11.2.0",
     "graphql": "^15.8.0",
     "graphql-fields": "^2.0.3",
     "moment": "^2.29.3",

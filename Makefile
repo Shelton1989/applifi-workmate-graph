@@ -1,9 +1,9 @@
 set-project:
-	gcloud config set project graph-prod-356609 
+	gcloud config set project ar-auth-dev
 
 docker-build:
-	docker build -t eu.gcr.io/graph-prod-356609/unparel-graph .
+	docker build -t eu.gcr.io/ar-auth-dev/cinn-graph-dev .
 
 docker-push:
-	docker push eu.gcr.io/graph-prod-356609/unparel-graph
+	docker push eu.gcr.io/ar-auth-dev/cinn-graph-dev
 	
