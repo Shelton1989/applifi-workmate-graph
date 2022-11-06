@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.SeasonSeriesWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const AggregateRatingRelationFilter_1 = require("../inputs/AggregateRatingRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EpisodeListRelationFilter_1 = require("../inputs/EpisodeListRelationFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
@@ -86,6 +87,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], SeasonSeriesWhereInput.prototype, "tagline", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
+], SeasonSeriesWhereInput.prototype, "releaseDate", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => TopicRelationFilter_1.TopicRelationFilter, {
         nullable: true
     }),
@@ -97,6 +104,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], SeasonSeriesWhereInput.prototype, "topicId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => AggregateRatingRelationFilter_1.AggregateRatingRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", AggregateRatingRelationFilter_1.AggregateRatingRelationFilter)
+], SeasonSeriesWhereInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ReactionListRelationFilter_1.ReactionListRelationFilter, {
         nullable: true

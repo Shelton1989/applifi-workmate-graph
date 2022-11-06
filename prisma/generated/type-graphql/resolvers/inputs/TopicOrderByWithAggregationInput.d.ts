@@ -19,6 +19,7 @@ export declare class TopicOrderByWithAggregationInput {
     publishers?: "asc" | "desc" | undefined;
     cast?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
+    releaseDate?: "asc" | "desc" | undefined;
     topicType?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

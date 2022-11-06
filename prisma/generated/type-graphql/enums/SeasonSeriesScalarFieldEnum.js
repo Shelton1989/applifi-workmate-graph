@@ -14,6 +14,7 @@ var SeasonSeriesScalarFieldEnum;
     SeasonSeriesScalarFieldEnum["trailer"] = "trailer";
     SeasonSeriesScalarFieldEnum["coverImage"] = "coverImage";
     SeasonSeriesScalarFieldEnum["tagline"] = "tagline";
+    SeasonSeriesScalarFieldEnum["releaseDate"] = "releaseDate";
     SeasonSeriesScalarFieldEnum["topicId"] = "topicId";
     SeasonSeriesScalarFieldEnum["createdAt"] = "createdAt";
     SeasonSeriesScalarFieldEnum["updatedAt"] = "updatedAt";

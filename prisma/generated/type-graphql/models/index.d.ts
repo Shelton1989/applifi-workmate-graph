@@ -1,3 +1,4 @@
+export { AggregateRating } from "./AggregateRating";
 export { Comment } from "./Comment";
 export { Episode } from "./Episode";
 export { Notification } from "./Notification";

@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TopicWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const AggregateRatingRelationFilter_1 = require("../inputs/AggregateRatingRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumTOPIC_TYPEFilter_1 = require("../inputs/EnumTOPIC_TYPEFilter");
 const PostListRelationFilter_1 = require("../inputs/PostListRelationFilter");
@@ -133,6 +134,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], TopicWhereInput.prototype, "type", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
+], TopicWhereInput.prototype, "releaseDate", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => AggregateRatingRelationFilter_1.AggregateRatingRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", AggregateRatingRelationFilter_1.AggregateRatingRelationFilter)
+], TopicWhereInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ReactionListRelationFilter_1.ReactionListRelationFilter, {
         nullable: true

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.EpisodeCreateWithoutReactionsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const AggregateRatingCreateNestedOneWithoutEpisodeInput_1 = require("../inputs/AggregateRatingCreateNestedOneWithoutEpisodeInput");
 const PostCreateNestedManyWithoutEpisodeInput_1 = require("../inputs/PostCreateNestedManyWithoutEpisodeInput");
 const SeasonSeriesCreateNestedOneWithoutEpisodesInput_1 = require("../inputs/SeasonSeriesCreateNestedOneWithoutEpisodesInput");
 let EpisodeCreateWithoutReactionsInput = class EpisodeCreateWithoutReactionsInput {
@@ -62,11 +63,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], EpisodeCreateWithoutReactionsInput.prototype, "tagline", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Date)
+], EpisodeCreateWithoutReactionsInput.prototype, "releaseDate", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => SeasonSeriesCreateNestedOneWithoutEpisodesInput_1.SeasonSeriesCreateNestedOneWithoutEpisodesInput, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", SeasonSeriesCreateNestedOneWithoutEpisodesInput_1.SeasonSeriesCreateNestedOneWithoutEpisodesInput)
 ], EpisodeCreateWithoutReactionsInput.prototype, "SeasonSeries", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => AggregateRatingCreateNestedOneWithoutEpisodeInput_1.AggregateRatingCreateNestedOneWithoutEpisodeInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", AggregateRatingCreateNestedOneWithoutEpisodeInput_1.AggregateRatingCreateNestedOneWithoutEpisodeInput)
+], EpisodeCreateWithoutReactionsInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostCreateNestedManyWithoutEpisodeInput_1.PostCreateNestedManyWithoutEpisodeInput, {
         nullable: true

@@ -1,7 +1,7 @@
 import { BoolFilter } from "../inputs/BoolFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumMEDIA_TYPEFilter } from "../inputs/EnumMEDIA_TYPEFilter";
-import { IntFilter } from "../inputs/IntFilter";
+import { FloatFilter } from "../inputs/FloatFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
@@ -13,7 +13,7 @@ export declare class PostScalarWhereInput {
     type?: EnumMEDIA_TYPEFilter | undefined;
     caption?: StringNullableFilter | undefined;
     mediaUrl?: StringNullableListFilter | undefined;
-    rating?: IntFilter | undefined;
+    rating?: FloatFilter | undefined;
     isCommentsEnabled?: BoolFilter | undefined;
     canBeCounted?: BoolFilter | undefined;
     authorId?: StringFilter | undefined;

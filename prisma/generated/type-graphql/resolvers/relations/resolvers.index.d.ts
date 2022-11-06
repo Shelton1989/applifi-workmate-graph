@@ -1,3 +1,4 @@
+export { AggregateRatingRelationsResolver } from "./AggregateRating/AggregateRatingRelationsResolver";
 export { CommentRelationsResolver } from "./Comment/CommentRelationsResolver";
 export { EpisodeRelationsResolver } from "./Episode/EpisodeRelationsResolver";
 export { NotificationRelationsResolver } from "./Notification/NotificationRelationsResolver";

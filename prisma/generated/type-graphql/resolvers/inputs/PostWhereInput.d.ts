@@ -3,7 +3,7 @@ import { CommentListRelationFilter } from "../inputs/CommentListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumMEDIA_TYPEFilter } from "../inputs/EnumMEDIA_TYPEFilter";
 import { EpisodeRelationFilter } from "../inputs/EpisodeRelationFilter";
-import { IntFilter } from "../inputs/IntFilter";
+import { FloatFilter } from "../inputs/FloatFilter";
 import { ReactionListRelationFilter } from "../inputs/ReactionListRelationFilter";
 import { SeasonSeriesRelationFilter } from "../inputs/SeasonSeriesRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
@@ -19,7 +19,7 @@ export declare class PostWhereInput {
     type?: EnumMEDIA_TYPEFilter | undefined;
     caption?: StringNullableFilter | undefined;
     mediaUrl?: StringNullableListFilter | undefined;
-    rating?: IntFilter | undefined;
+    rating?: FloatFilter | undefined;
     isCommentsEnabled?: BoolFilter | undefined;
     canBeCounted?: BoolFilter | undefined;
     Author?: UserRelationFilter | undefined;

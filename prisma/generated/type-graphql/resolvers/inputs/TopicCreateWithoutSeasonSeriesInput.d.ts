@@ -1,3 +1,4 @@
+import { AggregateRatingCreateNestedOneWithoutTopicInput } from "../inputs/AggregateRatingCreateNestedOneWithoutTopicInput";
 import { PostCreateNestedManyWithoutTopicInput } from "../inputs/PostCreateNestedManyWithoutTopicInput";
 import { ReactionCreateNestedManyWithoutTopicInput } from "../inputs/ReactionCreateNestedManyWithoutTopicInput";
 import { TopicCreateartistsInput } from "../inputs/TopicCreateartistsInput";
@@ -26,6 +27,8 @@ export declare class TopicCreateWithoutSeasonSeriesInput {
     publishers?: TopicCreatepublishersInput | undefined;
     cast?: TopicCreatecastInput | undefined;
     type: string;
+    releaseDate: Date;
+    AggregateRating?: AggregateRatingCreateNestedOneWithoutTopicInput | undefined;
     Reactions?: ReactionCreateNestedManyWithoutTopicInput | undefined;
     Posts?: PostCreateNestedManyWithoutTopicInput | undefined;
     topicType?: "MOVIE" | "SERIES" | "DOCUMENTARY" | "STREAMING_PLATFORM" | "OPINION_PIECE" | "NEWS_ENTITY" | "ARTICLE" | "PODCAST" | "BOOK" | undefined;

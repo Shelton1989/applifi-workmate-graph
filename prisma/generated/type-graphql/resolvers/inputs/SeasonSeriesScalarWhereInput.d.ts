@@ -14,6 +14,7 @@ export declare class SeasonSeriesScalarWhereInput {
     trailer?: StringFilter | undefined;
     coverImage?: StringFilter | undefined;
     tagline?: StringFilter | undefined;
+    releaseDate?: DateTimeFilter | undefined;
     topicId?: StringFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;

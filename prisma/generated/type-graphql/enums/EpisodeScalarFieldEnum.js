@@ -14,6 +14,7 @@ var EpisodeScalarFieldEnum;
     EpisodeScalarFieldEnum["trailer"] = "trailer";
     EpisodeScalarFieldEnum["coverImage"] = "coverImage";
     EpisodeScalarFieldEnum["tagline"] = "tagline";
+    EpisodeScalarFieldEnum["releaseDate"] = "releaseDate";
     EpisodeScalarFieldEnum["seasonSeriesId"] = "seasonSeriesId";
     EpisodeScalarFieldEnum["createdAt"] = "createdAt";
     EpisodeScalarFieldEnum["updatedAt"] = "updatedAt";

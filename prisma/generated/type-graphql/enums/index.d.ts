@@ -1,3 +1,4 @@
+export { AggregateRatingScalarFieldEnum } from "./AggregateRatingScalarFieldEnum";
 export { CommentScalarFieldEnum } from "./CommentScalarFieldEnum";
 export { EpisodeScalarFieldEnum } from "./EpisodeScalarFieldEnum";
 export { MEDIA_TYPE } from "./MEDIA_TYPE";

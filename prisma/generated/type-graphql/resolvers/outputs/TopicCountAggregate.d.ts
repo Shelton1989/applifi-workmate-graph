@@ -16,6 +16,7 @@ export declare class TopicCountAggregate {
     publishers: number;
     cast: number;
     type: number;
+    releaseDate: number;
     topicType: number;
     createdAt: number;
     updatedAt: number;

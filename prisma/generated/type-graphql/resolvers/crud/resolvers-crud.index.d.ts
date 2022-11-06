@@ -1,3 +1,4 @@
+export { AggregateRatingCrudResolver } from "./AggregateRating/AggregateRatingCrudResolver";
 export { CommentCrudResolver } from "./Comment/CommentCrudResolver";
 export { EpisodeCrudResolver } from "./Episode/EpisodeCrudResolver";
 export { NotificationCrudResolver } from "./Notification/NotificationCrudResolver";

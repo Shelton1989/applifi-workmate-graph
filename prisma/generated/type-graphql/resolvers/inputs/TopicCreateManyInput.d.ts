@@ -24,6 +24,7 @@ export declare class TopicCreateManyInput {
     publishers?: TopicCreatepublishersInput | undefined;
     cast?: TopicCreatecastInput | undefined;
     type: string;
+    releaseDate: Date;
     topicType?: "MOVIE" | "SERIES" | "DOCUMENTARY" | "STREAMING_PLATFORM" | "OPINION_PIECE" | "NEWS_ENTITY" | "ARTICLE" | "PODCAST" | "BOOK" | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

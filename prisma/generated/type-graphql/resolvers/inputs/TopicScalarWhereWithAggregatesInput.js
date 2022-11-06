@@ -131,6 +131,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], TopicScalarWhereWithAggregatesInput.prototype, "type", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter)
+], TopicScalarWhereWithAggregatesInput.prototype, "releaseDate", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumTOPIC_TYPEWithAggregatesFilter_1.EnumTOPIC_TYPEWithAggregatesFilter, {
         nullable: true
     }),

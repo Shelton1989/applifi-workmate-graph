@@ -1,3 +1,15 @@
+export { FindUniqueAggregateRatingResolver } from "./AggregateRating/FindUniqueAggregateRatingResolver";
+export { FindFirstAggregateRatingResolver } from "./AggregateRating/FindFirstAggregateRatingResolver";
+export { FindManyAggregateRatingResolver } from "./AggregateRating/FindManyAggregateRatingResolver";
+export { CreateAggregateRatingResolver } from "./AggregateRating/CreateAggregateRatingResolver";
+export { CreateManyAggregateRatingResolver } from "./AggregateRating/CreateManyAggregateRatingResolver";
+export { DeleteAggregateRatingResolver } from "./AggregateRating/DeleteAggregateRatingResolver";
+export { UpdateAggregateRatingResolver } from "./AggregateRating/UpdateAggregateRatingResolver";
+export { DeleteManyAggregateRatingResolver } from "./AggregateRating/DeleteManyAggregateRatingResolver";
+export { UpdateManyAggregateRatingResolver } from "./AggregateRating/UpdateManyAggregateRatingResolver";
+export { UpsertAggregateRatingResolver } from "./AggregateRating/UpsertAggregateRatingResolver";
+export { AggregateAggregateRatingResolver } from "./AggregateRating/AggregateAggregateRatingResolver";
+export { GroupByAggregateRatingResolver } from "./AggregateRating/GroupByAggregateRatingResolver";
 export { FindUniqueCommentResolver } from "./Comment/FindUniqueCommentResolver";
 export { FindFirstCommentResolver } from "./Comment/FindFirstCommentResolver";
 export { FindManyCommentResolver } from "./Comment/FindManyCommentResolver";

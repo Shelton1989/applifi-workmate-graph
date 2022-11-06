@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TopicRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const AggregateRating_1 = require("../../../models/AggregateRating");
 const Post_1 = require("../../../models/Post");
 const Reaction_1 = require("../../../models/Reaction");
 const SeasonSeries_1 = require("../../../models/SeasonSeries");
@@ -12,6 +13,13 @@ const TopicReactionsArgs_1 = require("./args/TopicReactionsArgs");
 const TopicSeasonSeriesArgs_1 = require("./args/TopicSeasonSeriesArgs");
 const helpers_1 = require("../../../helpers");
 let TopicRelationsResolver = class TopicRelationsResolver {
+    async AggregateRating(topic, ctx) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).topic.findUnique({
+            where: {
+                id: topic.id,
+            },
+        }).AggregateRating({});
+    }
     async Reactions(topic, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).topic.findUnique({
             where: {
@@ -34,6 +42,16 @@ let TopicRelationsResolver = class TopicRelationsResolver {
         }).Posts(args);
     }
 };
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => AggregateRating_1.AggregateRating, {
+        nullable: true
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [Topic_1.Topic, Object]),
+    tslib_1.__metadata("design:returntype", Promise)
+], TopicRelationsResolver.prototype, "AggregateRating", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => [Reaction_1.Reaction], {
         nullable: false

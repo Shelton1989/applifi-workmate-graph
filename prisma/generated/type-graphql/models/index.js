@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = exports.Topic = exports.SeasonSeries = exports.Request = exports.Reply = exports.Reaction = exports.Post = exports.NotificationSettings = exports.Notification = exports.Episode = exports.Comment = void 0;
+exports.User = exports.Topic = exports.SeasonSeries = exports.Request = exports.Reply = exports.Reaction = exports.Post = exports.NotificationSettings = exports.Notification = exports.Episode = exports.Comment = exports.AggregateRating = void 0;
+var AggregateRating_1 = require("./AggregateRating");
+Object.defineProperty(exports, "AggregateRating", { enumerable: true, get: function () { return AggregateRating_1.AggregateRating; } });
 var Comment_1 = require("./Comment");
 Object.defineProperty(exports, "Comment", { enumerable: true, get: function () { return Comment_1.Comment; } });
 var Episode_1 = require("./Episode");

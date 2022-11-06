@@ -8,6 +8,7 @@ export declare class EpisodeCreateManyInput {
     trailer: string;
     coverImage: string;
     tagline: string;
+    releaseDate: Date;
     seasonSeriesId: string;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

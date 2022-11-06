@@ -1,0 +1,30 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateAggregateRatingArgs } from "./args/AggregateAggregateRatingArgs";
+import { CreateAggregateRatingArgs } from "./args/CreateAggregateRatingArgs";
+import { CreateManyAggregateRatingArgs } from "./args/CreateManyAggregateRatingArgs";
+import { DeleteAggregateRatingArgs } from "./args/DeleteAggregateRatingArgs";
+import { DeleteManyAggregateRatingArgs } from "./args/DeleteManyAggregateRatingArgs";
+import { FindFirstAggregateRatingArgs } from "./args/FindFirstAggregateRatingArgs";
+import { FindManyAggregateRatingArgs } from "./args/FindManyAggregateRatingArgs";
+import { FindUniqueAggregateRatingArgs } from "./args/FindUniqueAggregateRatingArgs";
+import { GroupByAggregateRatingArgs } from "./args/GroupByAggregateRatingArgs";
+import { UpdateAggregateRatingArgs } from "./args/UpdateAggregateRatingArgs";
+import { UpdateManyAggregateRatingArgs } from "./args/UpdateManyAggregateRatingArgs";
+import { UpsertAggregateRatingArgs } from "./args/UpsertAggregateRatingArgs";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateAggregateRating } from "../../outputs/AggregateAggregateRating";
+import { Aggregateundefined } from "../../outputs/Aggregateundefined";
+export declare class AggregateRatingCrudResolver {
+    aggregateRating(ctx: any, info: GraphQLResolveInfo, args: FindUniqueAggregateRatingArgs): Promise<Aggregateundefined | null>;
+    findFirstAggregateRating(ctx: any, info: GraphQLResolveInfo, args: FindFirstAggregateRatingArgs): Promise<Aggregateundefined | null>;
+    aggregateRatings(ctx: any, info: GraphQLResolveInfo, args: FindManyAggregateRatingArgs): Promise<Aggregateundefined[]>;
+    createAggregateRating(ctx: any, info: GraphQLResolveInfo, args: CreateAggregateRatingArgs): Promise<Aggregateundefined>;
+    createManyAggregateRating(ctx: any, info: GraphQLResolveInfo, args: CreateManyAggregateRatingArgs): Promise<AffectedRowsOutput>;
+    deleteAggregateRating(ctx: any, info: GraphQLResolveInfo, args: DeleteAggregateRatingArgs): Promise<Aggregateundefined | null>;
+    updateAggregateRating(ctx: any, info: GraphQLResolveInfo, args: UpdateAggregateRatingArgs): Promise<Aggregateundefined | null>;
+    deleteManyAggregateRating(ctx: any, info: GraphQLResolveInfo, args: DeleteManyAggregateRatingArgs): Promise<AffectedRowsOutput>;
+    updateManyAggregateRating(ctx: any, info: GraphQLResolveInfo, args: UpdateManyAggregateRatingArgs): Promise<AffectedRowsOutput>;
+    upsertAggregateRating(ctx: any, info: GraphQLResolveInfo, args: UpsertAggregateRatingArgs): Promise<Aggregateundefined>;
+    aggregateAggregateRating(ctx: any, info: GraphQLResolveInfo, args: AggregateAggregateRatingArgs): Promise<AggregateAggregateRating>;
+    groupByAggregateRating(ctx: any, info: GraphQLResolveInfo, args: GroupByAggregateRatingArgs): Promise<Aggregateundefined[]>;
+}

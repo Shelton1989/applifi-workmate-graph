@@ -1,7 +1,7 @@
 import { BoolWithAggregatesFilter } from "../inputs/BoolWithAggregatesFilter";
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
 import { EnumMEDIA_TYPEWithAggregatesFilter } from "../inputs/EnumMEDIA_TYPEWithAggregatesFilter";
-import { IntWithAggregatesFilter } from "../inputs/IntWithAggregatesFilter";
+import { FloatWithAggregatesFilter } from "../inputs/FloatWithAggregatesFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
 import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
 import { StringWithAggregatesFilter } from "../inputs/StringWithAggregatesFilter";
@@ -13,7 +13,7 @@ export declare class PostScalarWhereWithAggregatesInput {
     type?: EnumMEDIA_TYPEWithAggregatesFilter | undefined;
     caption?: StringNullableWithAggregatesFilter | undefined;
     mediaUrl?: StringNullableListFilter | undefined;
-    rating?: IntWithAggregatesFilter | undefined;
+    rating?: FloatWithAggregatesFilter | undefined;
     isCommentsEnabled?: BoolWithAggregatesFilter | undefined;
     canBeCounted?: BoolWithAggregatesFilter | undefined;
     authorId?: StringWithAggregatesFilter | undefined;

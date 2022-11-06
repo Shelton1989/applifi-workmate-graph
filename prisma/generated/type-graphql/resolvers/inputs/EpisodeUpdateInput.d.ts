@@ -1,3 +1,4 @@
+import { AggregateRatingUpdateOneWithoutEpisodeInput } from "../inputs/AggregateRatingUpdateOneWithoutEpisodeInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { IntFieldUpdateOperationsInput } from "../inputs/IntFieldUpdateOperationsInput";
 import { PostUpdateManyWithoutEpisodeInput } from "../inputs/PostUpdateManyWithoutEpisodeInput";
@@ -13,7 +14,9 @@ export declare class EpisodeUpdateInput {
     trailer?: StringFieldUpdateOperationsInput | undefined;
     coverImage?: StringFieldUpdateOperationsInput | undefined;
     tagline?: StringFieldUpdateOperationsInput | undefined;
+    releaseDate?: DateTimeFieldUpdateOperationsInput | undefined;
     SeasonSeries?: SeasonSeriesUpdateOneRequiredWithoutEpisodesInput | undefined;
+    AggregateRating?: AggregateRatingUpdateOneWithoutEpisodeInput | undefined;
     Reactions?: ReactionUpdateManyWithoutEpisodeInput | undefined;
     Posts?: PostUpdateManyWithoutEpisodeInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;

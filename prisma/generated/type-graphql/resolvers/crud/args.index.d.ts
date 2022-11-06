@@ -1,3 +1,4 @@
+export * from "./AggregateRating/args";
 export * from "./Comment/args";
 export * from "./Episode/args";
 export * from "./Notification/args";

@@ -7,5 +7,5 @@ export declare class FindFirstTopicArgs {
     cursor?: TopicWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "title" | "year" | "poster" | "overview" | "trailer" | "coverImage" | "tagline" | "genres" | "creators" | "authors" | "artists" | "producers" | "directors" | "publishers" | "cast" | "type" | "topicType" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "title" | "year" | "poster" | "overview" | "trailer" | "coverImage" | "tagline" | "genres" | "creators" | "authors" | "artists" | "producers" | "directors" | "publishers" | "cast" | "type" | "releaseDate" | "topicType" | "createdAt" | "updatedAt"> | undefined;
 }

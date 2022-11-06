@@ -82,6 +82,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], SeasonSeriesScalarWhereInput.prototype, "tagline", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
+], SeasonSeriesScalarWhereInput.prototype, "releaseDate", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
         nullable: true
     }),

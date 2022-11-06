@@ -9,7 +9,7 @@ const CommentListRelationFilter_1 = require("../inputs/CommentListRelationFilter
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumMEDIA_TYPEFilter_1 = require("../inputs/EnumMEDIA_TYPEFilter");
 const EpisodeRelationFilter_1 = require("../inputs/EpisodeRelationFilter");
-const IntFilter_1 = require("../inputs/IntFilter");
+const FloatFilter_1 = require("../inputs/FloatFilter");
 const ReactionListRelationFilter_1 = require("../inputs/ReactionListRelationFilter");
 const SeasonSeriesRelationFilter_1 = require("../inputs/SeasonSeriesRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
@@ -62,10 +62,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
 ], PostWhereInput.prototype, "mediaUrl", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+    TypeGraphQL.Field(_type => FloatFilter_1.FloatFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
+    tslib_1.__metadata("design:type", FloatFilter_1.FloatFilter)
 ], PostWhereInput.prototype, "rating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {

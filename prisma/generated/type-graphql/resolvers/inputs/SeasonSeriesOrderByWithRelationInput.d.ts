@@ -1,3 +1,4 @@
+import { AggregateRatingOrderByWithRelationInput } from "../inputs/AggregateRatingOrderByWithRelationInput";
 import { EpisodeOrderByRelationAggregateInput } from "../inputs/EpisodeOrderByRelationAggregateInput";
 import { PostOrderByRelationAggregateInput } from "../inputs/PostOrderByRelationAggregateInput";
 import { ReactionOrderByRelationAggregateInput } from "../inputs/ReactionOrderByRelationAggregateInput";
@@ -12,8 +13,10 @@ export declare class SeasonSeriesOrderByWithRelationInput {
     trailer?: "asc" | "desc" | undefined;
     coverImage?: "asc" | "desc" | undefined;
     tagline?: "asc" | "desc" | undefined;
+    releaseDate?: "asc" | "desc" | undefined;
     Topic?: TopicOrderByWithRelationInput | undefined;
     topicId?: "asc" | "desc" | undefined;
+    AggregateRating?: AggregateRatingOrderByWithRelationInput | undefined;
     Reactions?: ReactionOrderByRelationAggregateInput | undefined;
     Episodes?: EpisodeOrderByRelationAggregateInput | undefined;
     Posts?: PostOrderByRelationAggregateInput | undefined;

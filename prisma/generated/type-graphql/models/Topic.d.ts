@@ -1,3 +1,4 @@
+import { AggregateRating } from "../models/AggregateRating";
 import { Post } from "../models/Post";
 import { Reaction } from "../models/Reaction";
 import { SeasonSeries } from "../models/SeasonSeries";
@@ -20,6 +21,8 @@ export declare class Topic {
     publishers: string[];
     cast: string[];
     type: string;
+    releaseDate: Date;
+    AggregateRating?: AggregateRating | null;
     Reactions?: Reaction[];
     SeasonSeries?: SeasonSeries[];
     Posts?: Post[];

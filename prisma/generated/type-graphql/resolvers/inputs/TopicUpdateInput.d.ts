@@ -1,3 +1,4 @@
+import { AggregateRatingUpdateOneWithoutTopicInput } from "../inputs/AggregateRatingUpdateOneWithoutTopicInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { EnumTOPIC_TYPEFieldUpdateOperationsInput } from "../inputs/EnumTOPIC_TYPEFieldUpdateOperationsInput";
 import { PostUpdateManyWithoutTopicInput } from "../inputs/PostUpdateManyWithoutTopicInput";
@@ -29,6 +30,8 @@ export declare class TopicUpdateInput {
     publishers?: TopicUpdatepublishersInput | undefined;
     cast?: TopicUpdatecastInput | undefined;
     type?: StringFieldUpdateOperationsInput | undefined;
+    releaseDate?: DateTimeFieldUpdateOperationsInput | undefined;
+    AggregateRating?: AggregateRatingUpdateOneWithoutTopicInput | undefined;
     Reactions?: ReactionUpdateManyWithoutTopicInput | undefined;
     SeasonSeries?: SeasonSeriesUpdateManyWithoutTopicInput | undefined;
     Posts?: PostUpdateManyWithoutTopicInput | undefined;

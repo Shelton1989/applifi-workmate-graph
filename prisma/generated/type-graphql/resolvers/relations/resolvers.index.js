@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserRelationsResolver = exports.TopicRelationsResolver = exports.SeasonSeriesRelationsResolver = exports.RequestRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.PostRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.NotificationRelationsResolver = exports.EpisodeRelationsResolver = exports.CommentRelationsResolver = void 0;
+exports.UserRelationsResolver = exports.TopicRelationsResolver = exports.SeasonSeriesRelationsResolver = exports.RequestRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.PostRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.NotificationRelationsResolver = exports.EpisodeRelationsResolver = exports.CommentRelationsResolver = exports.AggregateRatingRelationsResolver = void 0;
+var AggregateRatingRelationsResolver_1 = require("./AggregateRating/AggregateRatingRelationsResolver");
+Object.defineProperty(exports, "AggregateRatingRelationsResolver", { enumerable: true, get: function () { return AggregateRatingRelationsResolver_1.AggregateRatingRelationsResolver; } });
 var CommentRelationsResolver_1 = require("./Comment/CommentRelationsResolver");
 Object.defineProperty(exports, "CommentRelationsResolver", { enumerable: true, get: function () { return CommentRelationsResolver_1.CommentRelationsResolver; } });
 var EpisodeRelationsResolver_1 = require("./Episode/EpisodeRelationsResolver");

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.SeasonSeriesCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const AggregateRatingCreateNestedOneWithoutSeasonSeriesInput_1 = require("../inputs/AggregateRatingCreateNestedOneWithoutSeasonSeriesInput");
 const EpisodeCreateNestedManyWithoutSeasonSeriesInput_1 = require("../inputs/EpisodeCreateNestedManyWithoutSeasonSeriesInput");
 const PostCreateNestedManyWithoutSeasonSeriesInput_1 = require("../inputs/PostCreateNestedManyWithoutSeasonSeriesInput");
 const ReactionCreateNestedManyWithoutSeasonSeriesInput_1 = require("../inputs/ReactionCreateNestedManyWithoutSeasonSeriesInput");
@@ -64,11 +65,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], SeasonSeriesCreateInput.prototype, "tagline", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Date)
+], SeasonSeriesCreateInput.prototype, "releaseDate", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => TopicCreateNestedOneWithoutSeasonSeriesInput_1.TopicCreateNestedOneWithoutSeasonSeriesInput, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", TopicCreateNestedOneWithoutSeasonSeriesInput_1.TopicCreateNestedOneWithoutSeasonSeriesInput)
 ], SeasonSeriesCreateInput.prototype, "Topic", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => AggregateRatingCreateNestedOneWithoutSeasonSeriesInput_1.AggregateRatingCreateNestedOneWithoutSeasonSeriesInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", AggregateRatingCreateNestedOneWithoutSeasonSeriesInput_1.AggregateRatingCreateNestedOneWithoutSeasonSeriesInput)
+], SeasonSeriesCreateInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ReactionCreateNestedManyWithoutSeasonSeriesInput_1.ReactionCreateNestedManyWithoutSeasonSeriesInput, {
         nullable: true

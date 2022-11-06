@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserScalarFieldEnum = exports.TopicScalarFieldEnum = exports.TOPIC_TYPE = exports.SortOrder = exports.SeasonSeriesScalarFieldEnum = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.PostScalarFieldEnum = exports.NotificationSettingsScalarFieldEnum = exports.NotificationScalarFieldEnum = exports.MEDIA_TYPE = exports.EpisodeScalarFieldEnum = exports.CommentScalarFieldEnum = void 0;
+exports.UserScalarFieldEnum = exports.TopicScalarFieldEnum = exports.TOPIC_TYPE = exports.SortOrder = exports.SeasonSeriesScalarFieldEnum = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.PostScalarFieldEnum = exports.NotificationSettingsScalarFieldEnum = exports.NotificationScalarFieldEnum = exports.MEDIA_TYPE = exports.EpisodeScalarFieldEnum = exports.CommentScalarFieldEnum = exports.AggregateRatingScalarFieldEnum = void 0;
+var AggregateRatingScalarFieldEnum_1 = require("./AggregateRatingScalarFieldEnum");
+Object.defineProperty(exports, "AggregateRatingScalarFieldEnum", { enumerable: true, get: function () { return AggregateRatingScalarFieldEnum_1.AggregateRatingScalarFieldEnum; } });
 var CommentScalarFieldEnum_1 = require("./CommentScalarFieldEnum");
 Object.defineProperty(exports, "CommentScalarFieldEnum", { enumerable: true, get: function () { return CommentScalarFieldEnum_1.CommentScalarFieldEnum; } });
 var EpisodeScalarFieldEnum_1 = require("./EpisodeScalarFieldEnum");

@@ -8,6 +8,7 @@ export declare class EpisodeCountAggregate {
     trailer: number;
     coverImage: number;
     tagline: number;
+    releaseDate: number;
     seasonSeriesId: number;
     createdAt: number;
     updatedAt: number;

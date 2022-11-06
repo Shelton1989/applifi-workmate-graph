@@ -8,6 +8,7 @@ export declare class TopicMaxOrderByAggregateInput {
     coverImage?: "asc" | "desc" | undefined;
     tagline?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
+    releaseDate?: "asc" | "desc" | undefined;
     topicType?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

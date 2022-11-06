@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.EpisodeUpdateWithoutSeasonSeriesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const AggregateRatingUpdateOneWithoutEpisodeInput_1 = require("../inputs/AggregateRatingUpdateOneWithoutEpisodeInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const IntFieldUpdateOperationsInput_1 = require("../inputs/IntFieldUpdateOperationsInput");
 const PostUpdateManyWithoutEpisodeInput_1 = require("../inputs/PostUpdateManyWithoutEpisodeInput");
@@ -58,6 +59,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], EpisodeUpdateWithoutSeasonSeriesInput.prototype, "tagline", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput)
+], EpisodeUpdateWithoutSeasonSeriesInput.prototype, "releaseDate", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => AggregateRatingUpdateOneWithoutEpisodeInput_1.AggregateRatingUpdateOneWithoutEpisodeInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", AggregateRatingUpdateOneWithoutEpisodeInput_1.AggregateRatingUpdateOneWithoutEpisodeInput)
+], EpisodeUpdateWithoutSeasonSeriesInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ReactionUpdateManyWithoutEpisodeInput_1.ReactionUpdateManyWithoutEpisodeInput, {
         nullable: true

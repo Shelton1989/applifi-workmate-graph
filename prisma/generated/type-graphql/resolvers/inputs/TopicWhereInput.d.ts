@@ -1,3 +1,4 @@
+import { AggregateRatingRelationFilter } from "../inputs/AggregateRatingRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumTOPIC_TYPEFilter } from "../inputs/EnumTOPIC_TYPEFilter";
 import { PostListRelationFilter } from "../inputs/PostListRelationFilter";
@@ -26,6 +27,8 @@ export declare class TopicWhereInput {
     publishers?: StringNullableListFilter | undefined;
     cast?: StringNullableListFilter | undefined;
     type?: StringFilter | undefined;
+    releaseDate?: DateTimeFilter | undefined;
+    AggregateRating?: AggregateRatingRelationFilter | undefined;
     Reactions?: ReactionListRelationFilter | undefined;
     SeasonSeries?: SeasonSeriesListRelationFilter | undefined;
     Posts?: PostListRelationFilter | undefined;

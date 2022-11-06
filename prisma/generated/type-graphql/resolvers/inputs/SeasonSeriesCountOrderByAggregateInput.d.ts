@@ -8,6 +8,7 @@ export declare class SeasonSeriesCountOrderByAggregateInput {
     trailer?: "asc" | "desc" | undefined;
     coverImage?: "asc" | "desc" | undefined;
     tagline?: "asc" | "desc" | undefined;
+    releaseDate?: "asc" | "desc" | undefined;
     topicId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

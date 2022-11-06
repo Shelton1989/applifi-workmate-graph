@@ -8,6 +8,7 @@ export declare class SeasonSeriesMinAggregate {
     trailer: string | null;
     coverImage: string | null;
     tagline: string | null;
+    releaseDate: Date | null;
     topicId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;

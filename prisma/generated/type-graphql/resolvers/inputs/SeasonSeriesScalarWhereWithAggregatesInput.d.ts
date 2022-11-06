@@ -14,6 +14,7 @@ export declare class SeasonSeriesScalarWhereWithAggregatesInput {
     trailer?: StringWithAggregatesFilter | undefined;
     coverImage?: StringWithAggregatesFilter | undefined;
     tagline?: StringWithAggregatesFilter | undefined;
+    releaseDate?: DateTimeWithAggregatesFilter | undefined;
     topicId?: StringWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;

@@ -2,7 +2,7 @@ import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperati
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { EnumMEDIA_TYPEFieldUpdateOperationsInput } from "../inputs/EnumMEDIA_TYPEFieldUpdateOperationsInput";
 import { EpisodeUpdateOneWithoutPostsInput } from "../inputs/EpisodeUpdateOneWithoutPostsInput";
-import { IntFieldUpdateOperationsInput } from "../inputs/IntFieldUpdateOperationsInput";
+import { FloatFieldUpdateOperationsInput } from "../inputs/FloatFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { PostUpdatemediaUrlInput } from "../inputs/PostUpdatemediaUrlInput";
 import { ReactionUpdateManyWithoutPostInput } from "../inputs/ReactionUpdateManyWithoutPostInput";
@@ -13,7 +13,7 @@ export declare class PostUpdateWithoutCommentsInput {
     type?: EnumMEDIA_TYPEFieldUpdateOperationsInput | undefined;
     caption?: NullableStringFieldUpdateOperationsInput | undefined;
     mediaUrl?: PostUpdatemediaUrlInput | undefined;
-    rating?: IntFieldUpdateOperationsInput | undefined;
+    rating?: FloatFieldUpdateOperationsInput | undefined;
     isCommentsEnabled?: BoolFieldUpdateOperationsInput | undefined;
     canBeCounted?: BoolFieldUpdateOperationsInput | undefined;
     Author?: UserUpdateOneRequiredWithoutPostsInput | undefined;

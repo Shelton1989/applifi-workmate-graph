@@ -1,3 +1,4 @@
+import { AggregateRatingCreateNestedOneWithoutEpisodeInput } from "../inputs/AggregateRatingCreateNestedOneWithoutEpisodeInput";
 import { PostCreateNestedManyWithoutEpisodeInput } from "../inputs/PostCreateNestedManyWithoutEpisodeInput";
 import { ReactionCreateNestedManyWithoutEpisodeInput } from "../inputs/ReactionCreateNestedManyWithoutEpisodeInput";
 import { SeasonSeriesCreateNestedOneWithoutEpisodesInput } from "../inputs/SeasonSeriesCreateNestedOneWithoutEpisodesInput";
@@ -11,7 +12,9 @@ export declare class EpisodeCreateInput {
     trailer: string;
     coverImage: string;
     tagline: string;
+    releaseDate: Date;
     SeasonSeries: SeasonSeriesCreateNestedOneWithoutEpisodesInput;
+    AggregateRating?: AggregateRatingCreateNestedOneWithoutEpisodeInput | undefined;
     Reactions?: ReactionCreateNestedManyWithoutEpisodeInput | undefined;
     Posts?: PostCreateNestedManyWithoutEpisodeInput | undefined;
     createdAt?: Date | undefined;

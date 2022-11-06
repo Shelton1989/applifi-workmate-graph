@@ -8,6 +8,7 @@ export declare enum SeasonSeriesScalarFieldEnum {
     trailer = "trailer",
     coverImage = "coverImage",
     tagline = "tagline",
+    releaseDate = "releaseDate",
     topicId = "topicId",
     createdAt = "createdAt",
     updatedAt = "updatedAt"

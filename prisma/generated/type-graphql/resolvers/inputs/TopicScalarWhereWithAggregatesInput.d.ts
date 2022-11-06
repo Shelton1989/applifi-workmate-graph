@@ -23,6 +23,7 @@ export declare class TopicScalarWhereWithAggregatesInput {
     publishers?: StringNullableListFilter | undefined;
     cast?: StringNullableListFilter | undefined;
     type?: StringWithAggregatesFilter | undefined;
+    releaseDate?: DateTimeWithAggregatesFilter | undefined;
     topicType?: EnumTOPIC_TYPEWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;

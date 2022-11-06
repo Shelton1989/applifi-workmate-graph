@@ -1,3 +1,4 @@
+import { AggregateRatingRelationFilter } from "../inputs/AggregateRatingRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EpisodeListRelationFilter } from "../inputs/EpisodeListRelationFilter";
 import { IntFilter } from "../inputs/IntFilter";
@@ -18,8 +19,10 @@ export declare class SeasonSeriesWhereInput {
     trailer?: StringFilter | undefined;
     coverImage?: StringFilter | undefined;
     tagline?: StringFilter | undefined;
+    releaseDate?: DateTimeFilter | undefined;
     Topic?: TopicRelationFilter | undefined;
     topicId?: StringFilter | undefined;
+    AggregateRating?: AggregateRatingRelationFilter | undefined;
     Reactions?: ReactionListRelationFilter | undefined;
     Episodes?: EpisodeListRelationFilter | undefined;
     Posts?: PostListRelationFilter | undefined;

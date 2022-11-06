@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserCrudResolver = exports.TopicCrudResolver = exports.SeasonSeriesCrudResolver = exports.RequestCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.PostCrudResolver = exports.NotificationSettingsCrudResolver = exports.NotificationCrudResolver = exports.EpisodeCrudResolver = exports.CommentCrudResolver = void 0;
+exports.UserCrudResolver = exports.TopicCrudResolver = exports.SeasonSeriesCrudResolver = exports.RequestCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.PostCrudResolver = exports.NotificationSettingsCrudResolver = exports.NotificationCrudResolver = exports.EpisodeCrudResolver = exports.CommentCrudResolver = exports.AggregateRatingCrudResolver = void 0;
+var AggregateRatingCrudResolver_1 = require("./AggregateRating/AggregateRatingCrudResolver");
+Object.defineProperty(exports, "AggregateRatingCrudResolver", { enumerable: true, get: function () { return AggregateRatingCrudResolver_1.AggregateRatingCrudResolver; } });
 var CommentCrudResolver_1 = require("./Comment/CommentCrudResolver");
 Object.defineProperty(exports, "CommentCrudResolver", { enumerable: true, get: function () { return CommentCrudResolver_1.CommentCrudResolver; } });
 var EpisodeCrudResolver_1 = require("./Episode/EpisodeCrudResolver");

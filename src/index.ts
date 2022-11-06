@@ -12,6 +12,27 @@ import { applicationDefault, initializeApp } from "firebase-admin/app"
 import { getAuth } from "firebase-admin/auth";
 import { Allow, Max, Min } from "class-validator";
 
+// Custom resolvers
+import { PostResolver } from './resolvers/posts.resolvers';
+
+const userCreateOrUpdateOperations = [
+  "createPostReview",
+  "createComment",
+  "updateComment",
+  "createReply",
+]
+
+const userDeleteOperations = [
+  "deleteComment",
+  "deletePost",
+  "deleteReply",
+]
+
+const userAccountOperations = [
+  "updateUser",
+  "deleteUser",
+]
+
 const firebaseApp = initializeApp({
   credential: applicationDefault(),
 })
@@ -45,7 +66,7 @@ applyInputTypesEnhanceMap({
       _all: [Allow()],
       rating: [Min(0), Max(10)],
     }
-  }
+  },
 })
 
 applyResolversEnhanceMap({
@@ -80,6 +101,7 @@ applyResolversEnhanceMap({
     deleteManyEpisode: [Authorized(ROLE.ADMIN)],
   },
   Post: {
+    posts: [Authorized()],
     createPost: [Authorized()],
     updatePost: [Authorized()],
     createManyPost: [Authorized(ROLE.ADMIN)],
@@ -120,10 +142,11 @@ applyResolversEnhanceMap({
     updateManyNotification: [Authorized(ROLE.ADMIN)],
     deleteNotification: [Authorized()],
     deleteManyNotification: [Authorized(ROLE.ADMIN)],
-  }
+  },
 })
 
-const authChecker: AuthChecker<Context> = async ({ context }, roles) => {
+const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles) => {
+  // return true
   const requestToken = (context.authHeader || '').replace('Bearer ', '');
 
   try {
@@ -136,10 +159,27 @@ const authChecker: AuthChecker<Context> = async ({ context }, roles) => {
       }
     });
 
+    if (!user) {
+      throw new Error("User not found");
+    }
+
+    if (userCreateOrUpdateOperations.includes(info.fieldName) && user?.id !== args.data.Author.connect.id) {
+      throw new Error("user/invalid");
+    }
+
     if (roles.length === 0 || (user?.role && roles.includes(user?.role))) {
       return true;
     }
+
+
   } catch (err) { 
+    if (err?.code === "auth/id-token-expired") {
+      throw new Error("Token expired");
+    }
+
+    if (err?.message === "user/invalid") {
+      throw new Error("Unauthorized: You can only perform this operation on your own content");
+    }
     console.log(err)
   }
 
@@ -149,7 +189,7 @@ const authChecker: AuthChecker<Context> = async ({ context }, roles) => {
 (async () => {
   const schema = await buildSchema({
     authChecker,
-    resolvers,
+    resolvers: [PostResolver, ...resolvers],
     validate: false,
   });
 

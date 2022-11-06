@@ -8,6 +8,7 @@ export declare class SeasonSeriesCountAggregate {
     trailer: number;
     coverImage: number;
     tagline: number;
+    releaseDate: number;
     topicId: number;
     createdAt: number;
     updatedAt: number;

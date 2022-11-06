@@ -10,6 +10,7 @@ export declare class SeasonSeriesUpdateManyMutationInput {
     trailer?: StringFieldUpdateOperationsInput | undefined;
     coverImage?: StringFieldUpdateOperationsInput | undefined;
     tagline?: StringFieldUpdateOperationsInput | undefined;
+    releaseDate?: DateTimeFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

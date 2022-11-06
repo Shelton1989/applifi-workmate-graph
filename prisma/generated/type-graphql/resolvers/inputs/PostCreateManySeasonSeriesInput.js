@@ -32,7 +32,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", PostCreatemediaUrlInput_1.PostCreatemediaUrlInput)
 ], PostCreateManySeasonSeriesInput.prototype, "mediaUrl", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)

@@ -1,3 +1,4 @@
+import { AggregateRating } from "../models/AggregateRating";
 import { Episode } from "../models/Episode";
 import { Post } from "../models/Post";
 import { Reaction } from "../models/Reaction";
@@ -13,8 +14,10 @@ export declare class SeasonSeries {
     trailer: string;
     coverImage: string;
     tagline: string;
+    releaseDate: Date;
     Topic?: Topic;
     topicId: string;
+    AggregateRating?: AggregateRating | null;
     Reactions?: Reaction[];
     Episodes?: Episode[];
     Posts?: Post[];

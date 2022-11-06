@@ -7,7 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BoolFilter_1 = require("../inputs/BoolFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumMEDIA_TYPEFilter_1 = require("../inputs/EnumMEDIA_TYPEFilter");
-const IntFilter_1 = require("../inputs/IntFilter");
+const FloatFilter_1 = require("../inputs/FloatFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
@@ -56,10 +56,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
 ], PostScalarWhereInput.prototype, "mediaUrl", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+    TypeGraphQL.Field(_type => FloatFilter_1.FloatFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
+    tslib_1.__metadata("design:type", FloatFilter_1.FloatFilter)
 ], PostScalarWhereInput.prototype, "rating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {

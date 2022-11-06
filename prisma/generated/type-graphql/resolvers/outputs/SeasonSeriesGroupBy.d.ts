@@ -13,6 +13,7 @@ export declare class SeasonSeriesGroupBy {
     trailer: string;
     coverImage: string;
     tagline: string;
+    releaseDate: Date;
     topicId: string;
     createdAt: Date;
     updatedAt: Date;

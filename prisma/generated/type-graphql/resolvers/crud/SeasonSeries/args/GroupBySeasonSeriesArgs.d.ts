@@ -4,7 +4,7 @@ import { SeasonSeriesWhereInput } from "../../../inputs/SeasonSeriesWhereInput";
 export declare class GroupBySeasonSeriesArgs {
     where?: SeasonSeriesWhereInput | undefined;
     orderBy?: SeasonSeriesOrderByWithAggregationInput[] | undefined;
-    by: Array<"id" | "seasonOrSeriesNumber" | "title" | "year" | "poster" | "overview" | "trailer" | "coverImage" | "tagline" | "topicId" | "createdAt" | "updatedAt">;
+    by: Array<"id" | "seasonOrSeriesNumber" | "title" | "year" | "poster" | "overview" | "trailer" | "coverImage" | "tagline" | "releaseDate" | "topicId" | "createdAt" | "updatedAt">;
     having?: SeasonSeriesScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

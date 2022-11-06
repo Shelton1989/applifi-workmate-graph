@@ -1,4 +1,5 @@
 export { AffectedRowsOutput } from "./AffectedRowsOutput";
+export { AggregateAggregateRating } from "./AggregateAggregateRating";
 export { AggregateComment } from "./AggregateComment";
 export { AggregateEpisode } from "./AggregateEpisode";
 export { AggregateNotification } from "./AggregateNotification";
@@ -10,6 +11,12 @@ export { AggregateRequest } from "./AggregateRequest";
 export { AggregateSeasonSeries } from "./AggregateSeasonSeries";
 export { AggregateTopic } from "./AggregateTopic";
 export { AggregateUser } from "./AggregateUser";
+export { Aggregateundefined } from "./Aggregateundefined";
+export { Aggregateundefined } from "./Aggregateundefined";
+export { Aggregateundefined } from "./Aggregateundefined";
+export { Aggregateundefined } from "./Aggregateundefined";
+export { Aggregateundefined } from "./Aggregateundefined";
+export { Aggregateundefined } from "./Aggregateundefined";
 export { CommentCount } from "./CommentCount";
 export { CommentCountAggregate } from "./CommentCountAggregate";
 export { CommentGroupBy } from "./CommentGroupBy";

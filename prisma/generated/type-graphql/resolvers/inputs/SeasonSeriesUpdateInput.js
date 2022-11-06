@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.SeasonSeriesUpdateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const AggregateRatingUpdateOneWithoutSeasonSeriesInput_1 = require("../inputs/AggregateRatingUpdateOneWithoutSeasonSeriesInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const EpisodeUpdateManyWithoutSeasonSeriesInput_1 = require("../inputs/EpisodeUpdateManyWithoutSeasonSeriesInput");
 const IntFieldUpdateOperationsInput_1 = require("../inputs/IntFieldUpdateOperationsInput");
@@ -61,11 +62,23 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], SeasonSeriesUpdateInput.prototype, "tagline", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput)
+], SeasonSeriesUpdateInput.prototype, "releaseDate", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => TopicUpdateOneRequiredWithoutSeasonSeriesInput_1.TopicUpdateOneRequiredWithoutSeasonSeriesInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", TopicUpdateOneRequiredWithoutSeasonSeriesInput_1.TopicUpdateOneRequiredWithoutSeasonSeriesInput)
 ], SeasonSeriesUpdateInput.prototype, "Topic", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => AggregateRatingUpdateOneWithoutSeasonSeriesInput_1.AggregateRatingUpdateOneWithoutSeasonSeriesInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", AggregateRatingUpdateOneWithoutSeasonSeriesInput_1.AggregateRatingUpdateOneWithoutSeasonSeriesInput)
+], SeasonSeriesUpdateInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ReactionUpdateManyWithoutSeasonSeriesInput_1.ReactionUpdateManyWithoutSeasonSeriesInput, {
         nullable: true

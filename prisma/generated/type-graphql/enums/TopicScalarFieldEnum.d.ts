@@ -16,6 +16,7 @@ export declare enum TopicScalarFieldEnum {
     publishers = "publishers",
     cast = "cast",
     type = "type",
+    releaseDate = "releaseDate",
     topicType = "topicType",
     createdAt = "createdAt",
     updatedAt = "updatedAt"

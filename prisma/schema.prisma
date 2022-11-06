@@ -2,7 +2,8 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["interactiveTransactions"]
 }
 
 generator typegraphql {
@@ -108,6 +109,27 @@ enum TOPIC_TYPE {
   BOOK
 }
 
+model AggregateRating {
+  id String @id @default(uuid()) @map("_id")
+
+  ratingValue Float
+
+  countedPosts Int? @default(0)
+  allPosts     Int? @default(0)
+  ratingCount  Int? @default(0)
+
+  Topic          Topic?        @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  topicId        String?       @unique
+  SeasonSeries   SeasonSeries? @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  seasonSeriesId String?       @unique
+  Episode        Episode?      @relation(fields: [episodeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  episodeId      String?       @unique
+
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
 model Topic {
   id String @id @default(uuid()) @map("_id")
 
@@ -127,6 +149,10 @@ model Topic {
   publishers String[]
   cast       String[]
   type       String
+
+  releaseDate DateTime
+
+  AggregateRating AggregateRating?
 
   Reactions    Reaction[]
   SeasonSeries SeasonSeries[]
@@ -151,8 +177,12 @@ model SeasonSeries {
   coverImage String
   tagline    String
 
+  releaseDate DateTime
+
   Topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   topicId String
+
+  AggregateRating AggregateRating?
 
   Reactions Reaction[]
   Episodes  Episode[]
@@ -175,8 +205,12 @@ model Episode {
   coverImage String
   tagline    String
 
+  releaseDate DateTime
+
   SeasonSeries   SeasonSeries @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   seasonSeriesId String
+
+  AggregateRating AggregateRating?
 
   Reactions Reaction[]
   Posts     Post[]
@@ -192,7 +226,7 @@ model Post {
   caption  String?
   mediaUrl String[]
 
-  rating Int
+  rating Float
 
   isCommentsEnabled Boolean @default(true)
   canBeCounted      Boolean @default(true)
