@@ -159,6 +159,14 @@ const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles)
       }
     });
 
+    if (!uid || !user) { 
+      return false;
+    }
+
+    if (uid && info.fieldName === "createUser") {
+      return true;
+    }
+
     if (!user) {
       throw new Error("User not found");
     }
