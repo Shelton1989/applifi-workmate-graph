@@ -158,14 +158,15 @@ const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles)
         id: uid
       }
     });
-
-    if (!uid || !user) { 
-      return false;
-    }
-
-    if (uid && info.fieldName === "createUser") {
+    
+    if ((uid && info.fieldName === "createUser") || (uid && info.fieldName === "upsertUser")) {
       return true;
     }
+
+    if (!uid) { 
+      throw new Error("Firebase user not found");
+    }
+
 
     if (!user) {
       throw new Error("User not found");
