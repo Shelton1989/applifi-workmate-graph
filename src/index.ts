@@ -71,7 +71,12 @@ applyInputTypesEnhanceMap({
 
 applyResolversEnhanceMap({
   User: {
-    _all: [Authorized()],
+    upsertUser: [Authorized()],
+    createUser: [Authorized()],
+    updateUser: [Authorized()],
+    users: [Authorized()],
+    deleteUser: [Authorized()],
+    deleteManyUser: [Authorized()],
   },
   NotificationSettings: {
     _all: [Authorized()]
@@ -163,6 +168,10 @@ const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles)
       return true;
     }
 
+    if (roles.length === 0 || (user?.role && roles.includes(user?.role))) {
+      return true;
+    }
+
     if (!uid) { 
       throw new Error("Firebase user not found");
     }
@@ -174,10 +183,6 @@ const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles)
 
     if (userCreateOrUpdateOperations.includes(info.fieldName) && user?.id !== args.data.Author.connect.id) {
       throw new Error("user/invalid");
-    }
-
-    if (roles.length === 0 || (user?.role && roles.includes(user?.role))) {
-      return true;
     }
 
 
