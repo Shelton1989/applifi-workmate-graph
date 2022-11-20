@@ -7,6 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
 const EnumTOPIC_TYPEWithAggregatesFilter_1 = require("../inputs/EnumTOPIC_TYPEWithAggregatesFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
+const StringNullableWithAggregatesFilter_1 = require("../inputs/StringNullableWithAggregatesFilter");
 const StringWithAggregatesFilter_1 = require("../inputs/StringWithAggregatesFilter");
 let TopicScalarWhereWithAggregatesInput = TopicScalarWhereWithAggregatesInput_1 = class TopicScalarWhereWithAggregatesInput {
 };
@@ -136,6 +137,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter)
 ], TopicScalarWhereWithAggregatesInput.prototype, "releaseDate", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
+], TopicScalarWhereWithAggregatesInput.prototype, "aggregateRatingId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumTOPIC_TYPEWithAggregatesFilter_1.EnumTOPIC_TYPEWithAggregatesFilter, {
         nullable: true

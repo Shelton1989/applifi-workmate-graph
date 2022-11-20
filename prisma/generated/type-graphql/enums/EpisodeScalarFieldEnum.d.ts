@@ -10,6 +10,7 @@ export declare enum EpisodeScalarFieldEnum {
     tagline = "tagline",
     releaseDate = "releaseDate",
     seasonSeriesId = "seasonSeriesId",
+    aggregateRatingId = "aggregateRatingId",
     createdAt = "createdAt",
     updatedAt = "updatedAt"
 }

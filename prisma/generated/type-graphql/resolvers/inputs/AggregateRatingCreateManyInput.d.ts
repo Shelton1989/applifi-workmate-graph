@@ -4,9 +4,6 @@ export declare class AggregateRatingCreateManyInput {
     countedPosts?: number | undefined;
     allPosts?: number | undefined;
     ratingCount?: number | undefined;
-    topicId?: string | undefined;
-    seasonSeriesId?: string | undefined;
-    episodeId?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

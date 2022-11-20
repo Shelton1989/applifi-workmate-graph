@@ -10,6 +10,7 @@ export declare class SeasonSeriesMinAggregate {
     tagline: string | null;
     releaseDate: Date | null;
     topicId: string | null;
+    aggregateRatingId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }

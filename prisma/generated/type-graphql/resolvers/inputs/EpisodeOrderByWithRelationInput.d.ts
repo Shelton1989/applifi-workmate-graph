@@ -16,6 +16,7 @@ export declare class EpisodeOrderByWithRelationInput {
     SeasonSeries?: SeasonSeriesOrderByWithRelationInput | undefined;
     seasonSeriesId?: "asc" | "desc" | undefined;
     AggregateRating?: AggregateRatingOrderByWithRelationInput | undefined;
+    aggregateRatingId?: "asc" | "desc" | undefined;
     Reactions?: ReactionOrderByRelationAggregateInput | undefined;
     Posts?: PostOrderByRelationAggregateInput | undefined;
     createdAt?: "asc" | "desc" | undefined;

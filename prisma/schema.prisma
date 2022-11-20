@@ -118,12 +118,9 @@ model AggregateRating {
   allPosts     Int? @default(0)
   ratingCount  Int? @default(0)
 
-  Topic          Topic?        @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  topicId        String?       @unique
-  SeasonSeries   SeasonSeries? @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  seasonSeriesId String?       @unique
-  Episode        Episode?      @relation(fields: [episodeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  episodeId      String?       @unique
+  Topic          Topic?        
+  SeasonSeries   SeasonSeries? 
+  Episode        Episode?      
 
 
   createdAt DateTime @default(now())
@@ -152,7 +149,8 @@ model Topic {
 
   releaseDate DateTime
 
-  AggregateRating AggregateRating?
+  AggregateRating AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  aggregateRatingId String? @unique @default(uuid())
 
   Reactions    Reaction[]
   SeasonSeries SeasonSeries[]
@@ -182,7 +180,8 @@ model SeasonSeries {
   Topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   topicId String
 
-  AggregateRating AggregateRating?
+  AggregateRating AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  aggregateRatingId String? @unique @default(uuid())
 
   Reactions Reaction[]
   Episodes  Episode[]
@@ -210,7 +209,8 @@ model Episode {
   SeasonSeries   SeasonSeries @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   seasonSeriesId String
 
-  AggregateRating AggregateRating?
+  AggregateRating AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  aggregateRatingId String? @unique @default(uuid())
 
   Reactions Reaction[]
   Posts     Post[]

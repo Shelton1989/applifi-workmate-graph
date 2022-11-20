@@ -89,6 +89,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", AggregateRatingOrderByWithRelationInput_1.AggregateRatingOrderByWithRelationInput)
 ], EpisodeOrderByWithRelationInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], EpisodeOrderByWithRelationInput.prototype, "aggregateRatingId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => ReactionOrderByRelationAggregateInput_1.ReactionOrderByRelationAggregateInput, {
         nullable: true
     }),

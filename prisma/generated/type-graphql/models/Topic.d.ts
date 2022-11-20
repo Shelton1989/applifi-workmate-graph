@@ -23,6 +23,7 @@ export declare class Topic {
     type: string;
     releaseDate: Date;
     AggregateRating?: AggregateRating | null;
+    aggregateRatingId?: string | null;
     Reactions?: Reaction[];
     SeasonSeries?: SeasonSeries[];
     Posts?: Post[];

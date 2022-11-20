@@ -15,6 +15,7 @@ export declare class EpisodeGroupBy {
     tagline: string;
     releaseDate: Date;
     seasonSeriesId: string;
+    aggregateRatingId: string | null;
     createdAt: Date;
     updatedAt: Date;
     _count: EpisodeCountAggregate | null;

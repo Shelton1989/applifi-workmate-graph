@@ -116,6 +116,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Date)
 ], Topic.prototype, "releaseDate", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], Topic.prototype, "aggregateRatingId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => TOPIC_TYPE_1.TOPIC_TYPE, {
         nullable: false
     }),

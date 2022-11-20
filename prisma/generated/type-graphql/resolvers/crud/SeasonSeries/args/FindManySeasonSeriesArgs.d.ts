@@ -7,5 +7,5 @@ export declare class FindManySeasonSeriesArgs {
     cursor?: SeasonSeriesWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "seasonOrSeriesNumber" | "title" | "year" | "poster" | "overview" | "trailer" | "coverImage" | "tagline" | "releaseDate" | "topicId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "seasonOrSeriesNumber" | "title" | "year" | "poster" | "overview" | "trailer" | "coverImage" | "tagline" | "releaseDate" | "topicId" | "aggregateRatingId" | "createdAt" | "updatedAt"> | undefined;
 }

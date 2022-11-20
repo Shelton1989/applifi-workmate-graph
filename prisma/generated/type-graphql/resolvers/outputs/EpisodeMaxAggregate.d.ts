@@ -10,6 +10,7 @@ export declare class EpisodeMaxAggregate {
     tagline: string | null;
     releaseDate: Date | null;
     seasonSeriesId: string | null;
+    aggregateRatingId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }

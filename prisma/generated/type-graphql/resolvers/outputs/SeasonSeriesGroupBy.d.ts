@@ -15,6 +15,7 @@ export declare class SeasonSeriesGroupBy {
     tagline: string;
     releaseDate: Date;
     topicId: string;
+    aggregateRatingId: string | null;
     createdAt: Date;
     updatedAt: Date;
     _count: SeasonSeriesCountAggregate | null;

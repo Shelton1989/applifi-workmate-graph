@@ -7,7 +7,6 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
 const FloatWithAggregatesFilter_1 = require("../inputs/FloatWithAggregatesFilter");
 const IntNullableWithAggregatesFilter_1 = require("../inputs/IntNullableWithAggregatesFilter");
-const StringNullableWithAggregatesFilter_1 = require("../inputs/StringNullableWithAggregatesFilter");
 const StringWithAggregatesFilter_1 = require("../inputs/StringWithAggregatesFilter");
 let AggregateRatingScalarWhereWithAggregatesInput = AggregateRatingScalarWhereWithAggregatesInput_1 = class AggregateRatingScalarWhereWithAggregatesInput {
 };
@@ -59,24 +58,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
 ], AggregateRatingScalarWhereWithAggregatesInput.prototype, "ratingCount", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], AggregateRatingScalarWhereWithAggregatesInput.prototype, "topicId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], AggregateRatingScalarWhereWithAggregatesInput.prototype, "seasonSeriesId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], AggregateRatingScalarWhereWithAggregatesInput.prototype, "episodeId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter, {
         nullable: true

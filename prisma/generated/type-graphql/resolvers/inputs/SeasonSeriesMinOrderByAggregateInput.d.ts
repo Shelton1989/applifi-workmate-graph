@@ -10,6 +10,7 @@ export declare class SeasonSeriesMinOrderByAggregateInput {
     tagline?: "asc" | "desc" | undefined;
     releaseDate?: "asc" | "desc" | undefined;
     topicId?: "asc" | "desc" | undefined;
+    aggregateRatingId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

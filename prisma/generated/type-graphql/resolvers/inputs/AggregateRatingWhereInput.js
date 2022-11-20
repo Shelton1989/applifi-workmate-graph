@@ -10,7 +10,6 @@ const FloatFilter_1 = require("../inputs/FloatFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const SeasonSeriesRelationFilter_1 = require("../inputs/SeasonSeriesRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
-const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const TopicRelationFilter_1 = require("../inputs/TopicRelationFilter");
 let AggregateRatingWhereInput = AggregateRatingWhereInput_1 = class AggregateRatingWhereInput {
 };
@@ -69,35 +68,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", TopicRelationFilter_1.TopicRelationFilter)
 ], AggregateRatingWhereInput.prototype, "Topic", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], AggregateRatingWhereInput.prototype, "topicId", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => SeasonSeriesRelationFilter_1.SeasonSeriesRelationFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", SeasonSeriesRelationFilter_1.SeasonSeriesRelationFilter)
 ], AggregateRatingWhereInput.prototype, "SeasonSeries", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], AggregateRatingWhereInput.prototype, "seasonSeriesId", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => EpisodeRelationFilter_1.EpisodeRelationFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", EpisodeRelationFilter_1.EpisodeRelationFilter)
 ], AggregateRatingWhereInput.prototype, "Episode", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], AggregateRatingWhereInput.prototype, "episodeId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

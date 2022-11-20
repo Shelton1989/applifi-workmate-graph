@@ -18,6 +18,7 @@ export declare class SeasonSeries {
     Topic?: Topic;
     topicId: string;
     AggregateRating?: AggregateRating | null;
+    aggregateRatingId?: string | null;
     Reactions?: Reaction[];
     Episodes?: Episode[];
     Posts?: Post[];

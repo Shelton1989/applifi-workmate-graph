@@ -7,6 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
+const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let EpisodeScalarWhereInput = EpisodeScalarWhereInput_1 = class EpisodeScalarWhereInput {
 };
 tslib_1.__decorate([
@@ -93,6 +94,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], EpisodeScalarWhereInput.prototype, "seasonSeriesId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], EpisodeScalarWhereInput.prototype, "aggregateRatingId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

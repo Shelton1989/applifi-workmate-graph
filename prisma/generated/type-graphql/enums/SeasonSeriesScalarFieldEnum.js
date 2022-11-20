@@ -16,6 +16,7 @@ var SeasonSeriesScalarFieldEnum;
     SeasonSeriesScalarFieldEnum["tagline"] = "tagline";
     SeasonSeriesScalarFieldEnum["releaseDate"] = "releaseDate";
     SeasonSeriesScalarFieldEnum["topicId"] = "topicId";
+    SeasonSeriesScalarFieldEnum["aggregateRatingId"] = "aggregateRatingId";
     SeasonSeriesScalarFieldEnum["createdAt"] = "createdAt";
     SeasonSeriesScalarFieldEnum["updatedAt"] = "updatedAt";
 })(SeasonSeriesScalarFieldEnum = exports.SeasonSeriesScalarFieldEnum || (exports.SeasonSeriesScalarFieldEnum = {}));

@@ -11,6 +11,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], SeasonSeriesWhereUniqueInput.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], SeasonSeriesWhereUniqueInput.prototype, "aggregateRatingId", void 0);
 SeasonSeriesWhereUniqueInput = tslib_1.__decorate([
     TypeGraphQL.InputType("SeasonSeriesWhereUniqueInput", {
         isAbstract: true

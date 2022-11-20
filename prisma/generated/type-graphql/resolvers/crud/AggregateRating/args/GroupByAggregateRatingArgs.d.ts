@@ -4,7 +4,7 @@ import { AggregateRatingWhereInput } from "../../../inputs/AggregateRatingWhereI
 export declare class GroupByAggregateRatingArgs {
     where?: AggregateRatingWhereInput | undefined;
     orderBy?: AggregateRatingOrderByWithAggregationInput[] | undefined;
-    by: Array<"id" | "ratingValue" | "countedPosts" | "allPosts" | "ratingCount" | "topicId" | "seasonSeriesId" | "episodeId" | "createdAt" | "updatedAt">;
+    by: Array<"id" | "ratingValue" | "countedPosts" | "allPosts" | "ratingCount" | "createdAt" | "updatedAt">;
     having?: AggregateRatingScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

@@ -15,6 +15,7 @@ export declare class SeasonSeriesOrderByWithAggregationInput {
     tagline?: "asc" | "desc" | undefined;
     releaseDate?: "asc" | "desc" | undefined;
     topicId?: "asc" | "desc" | undefined;
+    aggregateRatingId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
     _count?: SeasonSeriesCountOrderByAggregateInput | undefined;

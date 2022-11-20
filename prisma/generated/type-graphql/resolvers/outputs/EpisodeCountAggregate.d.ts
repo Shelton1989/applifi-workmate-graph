@@ -10,6 +10,7 @@ export declare class EpisodeCountAggregate {
     tagline: number;
     releaseDate: number;
     seasonSeriesId: number;
+    aggregateRatingId: number;
     createdAt: number;
     updatedAt: number;
     _all: number;

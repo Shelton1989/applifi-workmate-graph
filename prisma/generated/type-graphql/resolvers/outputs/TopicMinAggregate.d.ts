@@ -9,6 +9,7 @@ export declare class TopicMinAggregate {
     tagline: string | null;
     type: string | null;
     releaseDate: Date | null;
+    aggregateRatingId: string | null;
     topicType: "MOVIE" | "SERIES" | "DOCUMENTARY" | "STREAMING_PLATFORM" | "OPINION_PIECE" | "NEWS_ENTITY" | "ARTICLE" | "PODCAST" | "BOOK" | null;
     createdAt: Date | null;
     updatedAt: Date | null;

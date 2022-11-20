@@ -17,6 +17,7 @@ export declare class TopicCountAggregate {
     cast: number;
     type: number;
     releaseDate: number;
+    aggregateRatingId: number;
     topicType: number;
     createdAt: number;
     updatedAt: number;

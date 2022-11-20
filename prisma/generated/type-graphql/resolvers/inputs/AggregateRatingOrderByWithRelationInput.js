@@ -46,35 +46,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", TopicOrderByWithRelationInput_1.TopicOrderByWithRelationInput)
 ], AggregateRatingOrderByWithRelationInput.prototype, "Topic", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], AggregateRatingOrderByWithRelationInput.prototype, "topicId", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => SeasonSeriesOrderByWithRelationInput_1.SeasonSeriesOrderByWithRelationInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", SeasonSeriesOrderByWithRelationInput_1.SeasonSeriesOrderByWithRelationInput)
 ], AggregateRatingOrderByWithRelationInput.prototype, "SeasonSeries", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], AggregateRatingOrderByWithRelationInput.prototype, "seasonSeriesId", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => EpisodeOrderByWithRelationInput_1.EpisodeOrderByWithRelationInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", EpisodeOrderByWithRelationInput_1.EpisodeOrderByWithRelationInput)
 ], AggregateRatingOrderByWithRelationInput.prototype, "Episode", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], AggregateRatingOrderByWithRelationInput.prototype, "episodeId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true

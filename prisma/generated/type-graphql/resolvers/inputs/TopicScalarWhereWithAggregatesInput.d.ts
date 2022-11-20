@@ -1,6 +1,7 @@
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
 import { EnumTOPIC_TYPEWithAggregatesFilter } from "../inputs/EnumTOPIC_TYPEWithAggregatesFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
+import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
 import { StringWithAggregatesFilter } from "../inputs/StringWithAggregatesFilter";
 export declare class TopicScalarWhereWithAggregatesInput {
     AND?: TopicScalarWhereWithAggregatesInput[] | undefined;
@@ -24,6 +25,7 @@ export declare class TopicScalarWhereWithAggregatesInput {
     cast?: StringNullableListFilter | undefined;
     type?: StringWithAggregatesFilter | undefined;
     releaseDate?: DateTimeWithAggregatesFilter | undefined;
+    aggregateRatingId?: StringNullableWithAggregatesFilter | undefined;
     topicType?: EnumTOPIC_TYPEWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;

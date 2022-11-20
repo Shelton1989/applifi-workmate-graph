@@ -11,6 +11,7 @@ const PostListRelationFilter_1 = require("../inputs/PostListRelationFilter");
 const ReactionListRelationFilter_1 = require("../inputs/ReactionListRelationFilter");
 const SeasonSeriesRelationFilter_1 = require("../inputs/SeasonSeriesRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
+const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let EpisodeWhereInput = EpisodeWhereInput_1 = class EpisodeWhereInput {
 };
 tslib_1.__decorate([
@@ -109,6 +110,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", AggregateRatingRelationFilter_1.AggregateRatingRelationFilter)
 ], EpisodeWhereInput.prototype, "AggregateRating", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], EpisodeWhereInput.prototype, "aggregateRatingId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ReactionListRelationFilter_1.ReactionListRelationFilter, {
         nullable: true

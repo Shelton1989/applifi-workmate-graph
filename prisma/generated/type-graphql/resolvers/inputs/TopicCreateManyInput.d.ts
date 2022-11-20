@@ -25,6 +25,7 @@ export declare class TopicCreateManyInput {
     cast?: TopicCreatecastInput | undefined;
     type: string;
     releaseDate: Date;
+    aggregateRatingId?: string | undefined;
     topicType?: "MOVIE" | "SERIES" | "DOCUMENTARY" | "STREAMING_PLATFORM" | "OPINION_PIECE" | "NEWS_ENTITY" | "ARTICLE" | "PODCAST" | "BOOK" | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

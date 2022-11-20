@@ -62,7 +62,7 @@ export class PostResolver {
           id: entityId
         },
         update: {
-          ratingValue,
+          ratingValue: ratingValue || 0,
           countedPosts,
           ratingCount: {
             increment: 1
@@ -73,7 +73,7 @@ export class PostResolver {
         },
         create: {
           id: entityId,
-          ratingValue,
+          ratingValue: ratingValue || 0,
           countedPosts,
           ratingCount: 1,
           allPosts: 1,
@@ -82,13 +82,13 @@ export class PostResolver {
 
       switch (type) {
         case "TOPIC":
-          await tx.topic.update({ where: { id: entityId }, data: { AggregateRating: { connect: { id: aggregateRating.id } } } });
+          await tx.topic.update({ where: { id: entityId }, data: { aggregateRatingId: aggregateRating.id  } });
           break;
         case "SEASON_SERIES":
-          await tx.seasonSeries.update({ where: { id: entityId }, data: { AggregateRating: { connect: { id: aggregateRating.id } } } });
+          await tx.seasonSeries.update({ where: { id: entityId }, data: { aggregateRatingId: aggregateRating.id  } });
           break;
         case "EPISODE":
-          await tx.episode.update({ where: { id: entityId}, data: { AggregateRating: { connect: { id: aggregateRating.id } } } });
+          await tx.episode.update({ where: { id: entityId}, data: { aggregateRatingId: aggregateRating.id  } });
           break;
         default:
           throw new Error("Invalid type")

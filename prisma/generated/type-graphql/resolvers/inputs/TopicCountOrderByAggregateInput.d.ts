@@ -17,6 +17,7 @@ export declare class TopicCountOrderByAggregateInput {
     cast?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
     releaseDate?: "asc" | "desc" | undefined;
+    aggregateRatingId?: "asc" | "desc" | undefined;
     topicType?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

@@ -5,6 +5,7 @@ import { PostListRelationFilter } from "../inputs/PostListRelationFilter";
 import { ReactionListRelationFilter } from "../inputs/ReactionListRelationFilter";
 import { SeasonSeriesRelationFilter } from "../inputs/SeasonSeriesRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
+import { StringNullableFilter } from "../inputs/StringNullableFilter";
 export declare class EpisodeWhereInput {
     AND?: EpisodeWhereInput[] | undefined;
     OR?: EpisodeWhereInput[] | undefined;
@@ -22,6 +23,7 @@ export declare class EpisodeWhereInput {
     SeasonSeries?: SeasonSeriesRelationFilter | undefined;
     seasonSeriesId?: StringFilter | undefined;
     AggregateRating?: AggregateRatingRelationFilter | undefined;
+    aggregateRatingId?: StringNullableFilter | undefined;
     Reactions?: ReactionListRelationFilter | undefined;
     Posts?: PostListRelationFilter | undefined;
     createdAt?: DateTimeFilter | undefined;

@@ -9,6 +9,7 @@ export declare class EpisodeCreateManySeasonSeriesInput {
     coverImage: string;
     tagline: string;
     releaseDate: Date;
+    aggregateRatingId?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

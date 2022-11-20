@@ -36,24 +36,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Number)
 ], AggregateRating.prototype, "ratingCount", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], AggregateRating.prototype, "topicId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], AggregateRating.prototype, "seasonSeriesId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], AggregateRating.prototype, "episodeId", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: false
     }),

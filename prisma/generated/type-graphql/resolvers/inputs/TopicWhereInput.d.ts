@@ -5,6 +5,7 @@ import { PostListRelationFilter } from "../inputs/PostListRelationFilter";
 import { ReactionListRelationFilter } from "../inputs/ReactionListRelationFilter";
 import { SeasonSeriesListRelationFilter } from "../inputs/SeasonSeriesListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
+import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
 export declare class TopicWhereInput {
     AND?: TopicWhereInput[] | undefined;
@@ -29,6 +30,7 @@ export declare class TopicWhereInput {
     type?: StringFilter | undefined;
     releaseDate?: DateTimeFilter | undefined;
     AggregateRating?: AggregateRatingRelationFilter | undefined;
+    aggregateRatingId?: StringNullableFilter | undefined;
     Reactions?: ReactionListRelationFilter | undefined;
     SeasonSeries?: SeasonSeriesListRelationFilter | undefined;
     Posts?: PostListRelationFilter | undefined;

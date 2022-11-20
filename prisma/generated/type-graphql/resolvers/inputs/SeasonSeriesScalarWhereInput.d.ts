@@ -1,6 +1,7 @@
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { IntFilter } from "../inputs/IntFilter";
 import { StringFilter } from "../inputs/StringFilter";
+import { StringNullableFilter } from "../inputs/StringNullableFilter";
 export declare class SeasonSeriesScalarWhereInput {
     AND?: SeasonSeriesScalarWhereInput[] | undefined;
     OR?: SeasonSeriesScalarWhereInput[] | undefined;
@@ -16,6 +17,7 @@ export declare class SeasonSeriesScalarWhereInput {
     tagline?: StringFilter | undefined;
     releaseDate?: DateTimeFilter | undefined;
     topicId?: StringFilter | undefined;
+    aggregateRatingId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

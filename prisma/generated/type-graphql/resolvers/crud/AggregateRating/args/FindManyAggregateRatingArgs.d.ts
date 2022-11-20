@@ -7,5 +7,5 @@ export declare class FindManyAggregateRatingArgs {
     cursor?: AggregateRatingWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "ratingValue" | "countedPosts" | "allPosts" | "ratingCount" | "topicId" | "seasonSeriesId" | "episodeId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "ratingValue" | "countedPosts" | "allPosts" | "ratingCount" | "createdAt" | "updatedAt"> | undefined;
 }

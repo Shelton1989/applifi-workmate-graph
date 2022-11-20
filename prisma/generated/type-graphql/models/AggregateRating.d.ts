@@ -8,11 +8,8 @@ export declare class AggregateRating {
     allPosts?: number | null;
     ratingCount?: number | null;
     Topic?: Topic | null;
-    topicId?: string | null;
     SeasonSeries?: SeasonSeries | null;
-    seasonSeriesId?: string | null;
     Episode?: Episode | null;
-    episodeId?: string | null;
     createdAt: Date;
     updatedAt: Date;
 }

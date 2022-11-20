@@ -8,11 +8,8 @@ export declare class AggregateRatingOrderByWithRelationInput {
     allPosts?: "asc" | "desc" | undefined;
     ratingCount?: "asc" | "desc" | undefined;
     Topic?: TopicOrderByWithRelationInput | undefined;
-    topicId?: "asc" | "desc" | undefined;
     SeasonSeries?: SeasonSeriesOrderByWithRelationInput | undefined;
-    seasonSeriesId?: "asc" | "desc" | undefined;
     Episode?: EpisodeOrderByWithRelationInput | undefined;
-    episodeId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

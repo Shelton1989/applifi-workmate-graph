@@ -23,6 +23,7 @@ var TopicScalarFieldEnum;
     TopicScalarFieldEnum["cast"] = "cast";
     TopicScalarFieldEnum["type"] = "type";
     TopicScalarFieldEnum["releaseDate"] = "releaseDate";
+    TopicScalarFieldEnum["aggregateRatingId"] = "aggregateRatingId";
     TopicScalarFieldEnum["topicType"] = "topicType";
     TopicScalarFieldEnum["createdAt"] = "createdAt";
     TopicScalarFieldEnum["updatedAt"] = "updatedAt";

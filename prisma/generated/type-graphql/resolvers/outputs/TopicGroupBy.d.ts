@@ -20,6 +20,7 @@ export declare class TopicGroupBy {
     cast: string[] | null;
     type: string;
     releaseDate: Date;
+    aggregateRatingId: string | null;
     topicType: "MOVIE" | "SERIES" | "DOCUMENTARY" | "STREAMING_PLATFORM" | "OPINION_PIECE" | "NEWS_ENTITY" | "ARTICLE" | "PODCAST" | "BOOK";
     createdAt: Date;
     updatedAt: Date;

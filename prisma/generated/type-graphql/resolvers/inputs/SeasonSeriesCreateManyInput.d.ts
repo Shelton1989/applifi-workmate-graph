@@ -10,6 +10,7 @@ export declare class SeasonSeriesCreateManyInput {
     tagline: string;
     releaseDate: Date;
     topicId: string;
+    aggregateRatingId?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

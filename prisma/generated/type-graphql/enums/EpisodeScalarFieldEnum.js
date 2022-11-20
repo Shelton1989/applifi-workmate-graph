@@ -16,6 +16,7 @@ var EpisodeScalarFieldEnum;
     EpisodeScalarFieldEnum["tagline"] = "tagline";
     EpisodeScalarFieldEnum["releaseDate"] = "releaseDate";
     EpisodeScalarFieldEnum["seasonSeriesId"] = "seasonSeriesId";
+    EpisodeScalarFieldEnum["aggregateRatingId"] = "aggregateRatingId";
     EpisodeScalarFieldEnum["createdAt"] = "createdAt";
     EpisodeScalarFieldEnum["updatedAt"] = "updatedAt";
 })(EpisodeScalarFieldEnum = exports.EpisodeScalarFieldEnum || (exports.EpisodeScalarFieldEnum = {}));
