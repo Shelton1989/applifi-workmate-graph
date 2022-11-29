@@ -20,6 +20,7 @@ export declare class TopicOrderByWithRelationInput {
     publishers?: "asc" | "desc" | undefined;
     cast?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
+    tmdbId?: "asc" | "desc" | undefined;
     releaseDate?: "asc" | "desc" | undefined;
     AggregateRating?: AggregateRatingOrderByWithRelationInput | undefined;
     aggregateRatingId?: "asc" | "desc" | undefined;

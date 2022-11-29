@@ -1,5 +1,6 @@
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
 import { EnumTOPIC_TYPEWithAggregatesFilter } from "../inputs/EnumTOPIC_TYPEWithAggregatesFilter";
+import { IntNullableWithAggregatesFilter } from "../inputs/IntNullableWithAggregatesFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
 import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
 import { StringWithAggregatesFilter } from "../inputs/StringWithAggregatesFilter";
@@ -24,6 +25,7 @@ export declare class TopicScalarWhereWithAggregatesInput {
     publishers?: StringNullableListFilter | undefined;
     cast?: StringNullableListFilter | undefined;
     type?: StringWithAggregatesFilter | undefined;
+    tmdbId?: IntNullableWithAggregatesFilter | undefined;
     releaseDate?: DateTimeWithAggregatesFilter | undefined;
     aggregateRatingId?: StringNullableWithAggregatesFilter | undefined;
     topicType?: EnumTOPIC_TYPEWithAggregatesFilter | undefined;

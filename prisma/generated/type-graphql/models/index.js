@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = exports.Topic = exports.SeasonSeries = exports.Request = exports.Reply = exports.Reaction = exports.Post = exports.NotificationSettings = exports.Notification = exports.Episode = exports.Comment = exports.AggregateRating = void 0;
+exports.User = exports.TopicLists = exports.Topic = exports.SeasonSeries = exports.Request = exports.Reply = exports.Reaction = exports.Post = exports.NotificationSettings = exports.Notification = exports.Episode = exports.Comment = exports.AggregateRating = void 0;
 var AggregateRating_1 = require("./AggregateRating");
 Object.defineProperty(exports, "AggregateRating", { enumerable: true, get: function () { return AggregateRating_1.AggregateRating; } });
 var Comment_1 = require("./Comment");
@@ -23,5 +23,7 @@ var SeasonSeries_1 = require("./SeasonSeries");
 Object.defineProperty(exports, "SeasonSeries", { enumerable: true, get: function () { return SeasonSeries_1.SeasonSeries; } });
 var Topic_1 = require("./Topic");
 Object.defineProperty(exports, "Topic", { enumerable: true, get: function () { return Topic_1.Topic; } });
+var TopicLists_1 = require("./TopicLists");
+Object.defineProperty(exports, "TopicLists", { enumerable: true, get: function () { return TopicLists_1.TopicLists; } });
 var User_1 = require("./User");
 Object.defineProperty(exports, "User", { enumerable: true, get: function () { return User_1.User; } });

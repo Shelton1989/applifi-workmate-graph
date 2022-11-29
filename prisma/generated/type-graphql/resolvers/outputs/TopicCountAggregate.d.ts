@@ -16,6 +16,7 @@ export declare class TopicCountAggregate {
     publishers: number;
     cast: number;
     type: number;
+    tmdbId: number;
     releaseDate: number;
     aggregateRatingId: number;
     topicType: number;

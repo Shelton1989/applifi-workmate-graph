@@ -3,9 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TopicGroupBy = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const TopicAvgAggregate_1 = require("../outputs/TopicAvgAggregate");
 const TopicCountAggregate_1 = require("../outputs/TopicCountAggregate");
 const TopicMaxAggregate_1 = require("../outputs/TopicMaxAggregate");
 const TopicMinAggregate_1 = require("../outputs/TopicMinAggregate");
+const TopicSumAggregate_1 = require("../outputs/TopicSumAggregate");
 const TOPIC_TYPE_1 = require("../../enums/TOPIC_TYPE");
 let TopicGroupBy = class TopicGroupBy {
 };
@@ -112,6 +114,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], TopicGroupBy.prototype, "type", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Number)
+], TopicGroupBy.prototype, "tmdbId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: false
     }),
@@ -147,6 +155,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", TopicCountAggregate_1.TopicCountAggregate)
 ], TopicGroupBy.prototype, "_count", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TopicAvgAggregate_1.TopicAvgAggregate, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TopicAvgAggregate_1.TopicAvgAggregate)
+], TopicGroupBy.prototype, "_avg", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TopicSumAggregate_1.TopicSumAggregate, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TopicSumAggregate_1.TopicSumAggregate)
+], TopicGroupBy.prototype, "_sum", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TopicMinAggregate_1.TopicMinAggregate, {
         nullable: true

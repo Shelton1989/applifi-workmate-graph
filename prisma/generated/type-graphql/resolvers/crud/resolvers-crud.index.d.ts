@@ -9,4 +9,5 @@ export { ReplyCrudResolver } from "./Reply/ReplyCrudResolver";
 export { RequestCrudResolver } from "./Request/RequestCrudResolver";
 export { SeasonSeriesCrudResolver } from "./SeasonSeries/SeasonSeriesCrudResolver";
 export { TopicCrudResolver } from "./Topic/TopicCrudResolver";
+export { TopicListsCrudResolver } from "./TopicLists/TopicListsCrudResolver";
 export { UserCrudResolver } from "./User/UserCrudResolver";

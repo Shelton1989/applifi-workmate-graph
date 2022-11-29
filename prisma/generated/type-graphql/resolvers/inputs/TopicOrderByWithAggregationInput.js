@@ -3,9 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TopicOrderByWithAggregationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const TopicAvgOrderByAggregateInput_1 = require("../inputs/TopicAvgOrderByAggregateInput");
 const TopicCountOrderByAggregateInput_1 = require("../inputs/TopicCountOrderByAggregateInput");
 const TopicMaxOrderByAggregateInput_1 = require("../inputs/TopicMaxOrderByAggregateInput");
 const TopicMinOrderByAggregateInput_1 = require("../inputs/TopicMinOrderByAggregateInput");
+const TopicSumOrderByAggregateInput_1 = require("../inputs/TopicSumOrderByAggregateInput");
 const SortOrder_1 = require("../../enums/SortOrder");
 let TopicOrderByWithAggregationInput = class TopicOrderByWithAggregationInput {
 };
@@ -116,6 +118,12 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
+], TopicOrderByWithAggregationInput.prototype, "tmdbId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
 ], TopicOrderByWithAggregationInput.prototype, "releaseDate", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
@@ -148,6 +156,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", TopicCountOrderByAggregateInput_1.TopicCountOrderByAggregateInput)
 ], TopicOrderByWithAggregationInput.prototype, "_count", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TopicAvgOrderByAggregateInput_1.TopicAvgOrderByAggregateInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TopicAvgOrderByAggregateInput_1.TopicAvgOrderByAggregateInput)
+], TopicOrderByWithAggregationInput.prototype, "_avg", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => TopicMaxOrderByAggregateInput_1.TopicMaxOrderByAggregateInput, {
         nullable: true
     }),
@@ -159,6 +173,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", TopicMinOrderByAggregateInput_1.TopicMinOrderByAggregateInput)
 ], TopicOrderByWithAggregationInput.prototype, "_min", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TopicSumOrderByAggregateInput_1.TopicSumOrderByAggregateInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TopicSumOrderByAggregateInput_1.TopicSumOrderByAggregateInput)
+], TopicOrderByWithAggregationInput.prototype, "_sum", void 0);
 TopicOrderByWithAggregationInput = tslib_1.__decorate([
     TypeGraphQL.InputType("TopicOrderByWithAggregationInput", {
         isAbstract: true

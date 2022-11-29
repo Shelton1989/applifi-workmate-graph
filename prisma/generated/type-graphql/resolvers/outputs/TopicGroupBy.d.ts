@@ -1,6 +1,8 @@
+import { TopicAvgAggregate } from "../outputs/TopicAvgAggregate";
 import { TopicCountAggregate } from "../outputs/TopicCountAggregate";
 import { TopicMaxAggregate } from "../outputs/TopicMaxAggregate";
 import { TopicMinAggregate } from "../outputs/TopicMinAggregate";
+import { TopicSumAggregate } from "../outputs/TopicSumAggregate";
 export declare class TopicGroupBy {
     id: string;
     title: string;
@@ -19,12 +21,15 @@ export declare class TopicGroupBy {
     publishers: string[] | null;
     cast: string[] | null;
     type: string;
+    tmdbId: number | null;
     releaseDate: Date;
     aggregateRatingId: string | null;
     topicType: "MOVIE" | "SERIES" | "DOCUMENTARY" | "STREAMING_PLATFORM" | "OPINION_PIECE" | "NEWS_ENTITY" | "ARTICLE" | "PODCAST" | "BOOK";
     createdAt: Date;
     updatedAt: Date;
     _count: TopicCountAggregate | null;
+    _avg: TopicAvgAggregate | null;
+    _sum: TopicSumAggregate | null;
     _min: TopicMinAggregate | null;
     _max: TopicMaxAggregate | null;
 }

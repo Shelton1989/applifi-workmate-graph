@@ -17,6 +17,7 @@ declare const crudResolversMap: {
     Reaction: typeof crudResolvers.ReactionCrudResolver;
     Request: typeof crudResolvers.RequestCrudResolver;
     Notification: typeof crudResolvers.NotificationCrudResolver;
+    TopicLists: typeof crudResolvers.TopicListsCrudResolver;
 };
 declare type ResolverModelNames = keyof typeof crudResolversMap;
 declare type ModelResolverActionNames<TModel extends ResolverModelNames> = keyof typeof crudResolversMap[TModel]["prototype"];

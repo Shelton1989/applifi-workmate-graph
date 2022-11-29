@@ -9,4 +9,5 @@ export * from "./Reply/args";
 export * from "./Request/args";
 export * from "./SeasonSeries/args";
 export * from "./Topic/args";
+export * from "./TopicLists/args";
 export * from "./User/args";

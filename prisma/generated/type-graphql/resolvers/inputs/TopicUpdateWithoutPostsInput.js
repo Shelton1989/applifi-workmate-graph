@@ -6,6 +6,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AggregateRatingUpdateOneWithoutTopicInput_1 = require("../inputs/AggregateRatingUpdateOneWithoutTopicInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const EnumTOPIC_TYPEFieldUpdateOperationsInput_1 = require("../inputs/EnumTOPIC_TYPEFieldUpdateOperationsInput");
+const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const ReactionUpdateManyWithoutTopicInput_1 = require("../inputs/ReactionUpdateManyWithoutTopicInput");
 const SeasonSeriesUpdateManyWithoutTopicInput_1 = require("../inputs/SeasonSeriesUpdateManyWithoutTopicInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
@@ -115,6 +116,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], TopicUpdateWithoutPostsInput.prototype, "type", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput)
+], TopicUpdateWithoutPostsInput.prototype, "tmdbId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

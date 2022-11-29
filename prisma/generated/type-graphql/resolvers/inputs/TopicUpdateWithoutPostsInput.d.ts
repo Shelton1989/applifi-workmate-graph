@@ -1,6 +1,7 @@
 import { AggregateRatingUpdateOneWithoutTopicInput } from "../inputs/AggregateRatingUpdateOneWithoutTopicInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { EnumTOPIC_TYPEFieldUpdateOperationsInput } from "../inputs/EnumTOPIC_TYPEFieldUpdateOperationsInput";
+import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { ReactionUpdateManyWithoutTopicInput } from "../inputs/ReactionUpdateManyWithoutTopicInput";
 import { SeasonSeriesUpdateManyWithoutTopicInput } from "../inputs/SeasonSeriesUpdateManyWithoutTopicInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
@@ -29,6 +30,7 @@ export declare class TopicUpdateWithoutPostsInput {
     publishers?: TopicUpdatepublishersInput | undefined;
     cast?: TopicUpdatecastInput | undefined;
     type?: StringFieldUpdateOperationsInput | undefined;
+    tmdbId?: NullableIntFieldUpdateOperationsInput | undefined;
     releaseDate?: DateTimeFieldUpdateOperationsInput | undefined;
     AggregateRating?: AggregateRatingUpdateOneWithoutTopicInput | undefined;
     Reactions?: ReactionUpdateManyWithoutTopicInput | undefined;

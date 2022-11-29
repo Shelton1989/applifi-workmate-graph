@@ -21,6 +21,7 @@ export declare class Topic {
     publishers: string[];
     cast: string[];
     type: string;
+    tmdbId?: number | null;
     releaseDate: Date;
     AggregateRating?: AggregateRating | null;
     aggregateRatingId?: string | null;

@@ -6,6 +6,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
 const EnumTOPIC_TYPEWithAggregatesFilter_1 = require("../inputs/EnumTOPIC_TYPEWithAggregatesFilter");
+const IntNullableWithAggregatesFilter_1 = require("../inputs/IntNullableWithAggregatesFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
 const StringNullableWithAggregatesFilter_1 = require("../inputs/StringNullableWithAggregatesFilter");
 const StringWithAggregatesFilter_1 = require("../inputs/StringWithAggregatesFilter");
@@ -131,6 +132,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], TopicScalarWhereWithAggregatesInput.prototype, "type", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
+], TopicScalarWhereWithAggregatesInput.prototype, "tmdbId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter, {
         nullable: true

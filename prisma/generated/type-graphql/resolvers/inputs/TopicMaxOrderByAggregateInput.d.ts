@@ -8,6 +8,7 @@ export declare class TopicMaxOrderByAggregateInput {
     coverImage?: "asc" | "desc" | undefined;
     tagline?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
+    tmdbId?: "asc" | "desc" | undefined;
     releaseDate?: "asc" | "desc" | undefined;
     aggregateRatingId?: "asc" | "desc" | undefined;
     topicType?: "asc" | "desc" | undefined;

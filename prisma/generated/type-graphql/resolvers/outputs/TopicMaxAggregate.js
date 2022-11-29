@@ -61,6 +61,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], TopicMaxAggregate.prototype, "type", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Number)
+], TopicMaxAggregate.prototype, "tmdbId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true
     }),

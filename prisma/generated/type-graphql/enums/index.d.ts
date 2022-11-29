@@ -1,6 +1,7 @@
 export { AggregateRatingScalarFieldEnum } from "./AggregateRatingScalarFieldEnum";
 export { CommentScalarFieldEnum } from "./CommentScalarFieldEnum";
 export { EpisodeScalarFieldEnum } from "./EpisodeScalarFieldEnum";
+export { LIST_TYPE } from "./LIST_TYPE";
 export { MEDIA_TYPE } from "./MEDIA_TYPE";
 export { NotificationScalarFieldEnum } from "./NotificationScalarFieldEnum";
 export { NotificationSettingsScalarFieldEnum } from "./NotificationSettingsScalarFieldEnum";
@@ -16,5 +17,6 @@ export { RequestScalarFieldEnum } from "./RequestScalarFieldEnum";
 export { SeasonSeriesScalarFieldEnum } from "./SeasonSeriesScalarFieldEnum";
 export { SortOrder } from "./SortOrder";
 export { TOPIC_TYPE } from "./TOPIC_TYPE";
+export { TopicListsScalarFieldEnum } from "./TopicListsScalarFieldEnum";
 export { TopicScalarFieldEnum } from "./TopicScalarFieldEnum";
 export { UserScalarFieldEnum } from "./UserScalarFieldEnum";

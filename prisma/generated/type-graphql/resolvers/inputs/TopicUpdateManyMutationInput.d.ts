@@ -1,5 +1,6 @@
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { EnumTOPIC_TYPEFieldUpdateOperationsInput } from "../inputs/EnumTOPIC_TYPEFieldUpdateOperationsInput";
+import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 import { TopicUpdateartistsInput } from "../inputs/TopicUpdateartistsInput";
 import { TopicUpdateauthorsInput } from "../inputs/TopicUpdateauthorsInput";
@@ -26,6 +27,7 @@ export declare class TopicUpdateManyMutationInput {
     publishers?: TopicUpdatepublishersInput | undefined;
     cast?: TopicUpdatecastInput | undefined;
     type?: StringFieldUpdateOperationsInput | undefined;
+    tmdbId?: NullableIntFieldUpdateOperationsInput | undefined;
     releaseDate?: DateTimeFieldUpdateOperationsInput | undefined;
     topicType?: EnumTOPIC_TYPEFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;

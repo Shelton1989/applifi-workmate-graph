@@ -22,6 +22,7 @@ var TopicScalarFieldEnum;
     TopicScalarFieldEnum["publishers"] = "publishers";
     TopicScalarFieldEnum["cast"] = "cast";
     TopicScalarFieldEnum["type"] = "type";
+    TopicScalarFieldEnum["tmdbId"] = "tmdbId";
     TopicScalarFieldEnum["releaseDate"] = "releaseDate";
     TopicScalarFieldEnum["aggregateRatingId"] = "aggregateRatingId";
     TopicScalarFieldEnum["topicType"] = "topicType";

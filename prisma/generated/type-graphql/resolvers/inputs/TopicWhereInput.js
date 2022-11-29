@@ -7,6 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AggregateRatingRelationFilter_1 = require("../inputs/AggregateRatingRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumTOPIC_TYPEFilter_1 = require("../inputs/EnumTOPIC_TYPEFilter");
+const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const PostListRelationFilter_1 = require("../inputs/PostListRelationFilter");
 const ReactionListRelationFilter_1 = require("../inputs/ReactionListRelationFilter");
 const SeasonSeriesListRelationFilter_1 = require("../inputs/SeasonSeriesListRelationFilter");
@@ -135,6 +136,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], TopicWhereInput.prototype, "type", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", IntNullableFilter_1.IntNullableFilter)
+], TopicWhereInput.prototype, "tmdbId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

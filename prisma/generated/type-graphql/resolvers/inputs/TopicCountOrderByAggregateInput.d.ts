@@ -16,6 +16,7 @@ export declare class TopicCountOrderByAggregateInput {
     publishers?: "asc" | "desc" | undefined;
     cast?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
+    tmdbId?: "asc" | "desc" | undefined;
     releaseDate?: "asc" | "desc" | undefined;
     aggregateRatingId?: "asc" | "desc" | undefined;
     topicType?: "asc" | "desc" | undefined;

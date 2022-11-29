@@ -12,4 +12,5 @@ tslib_1.__exportStar(require("./Reply/args"), exports);
 tslib_1.__exportStar(require("./Request/args"), exports);
 tslib_1.__exportStar(require("./SeasonSeries/args"), exports);
 tslib_1.__exportStar(require("./Topic/args"), exports);
+tslib_1.__exportStar(require("./TopicLists/args"), exports);
 tslib_1.__exportStar(require("./User/args"), exports);

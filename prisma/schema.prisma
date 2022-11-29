@@ -118,9 +118,9 @@ model AggregateRating {
   allPosts     Int? @default(0)
   ratingCount  Int? @default(0)
 
-  Topic          Topic?        
-  SeasonSeries   SeasonSeries? 
-  Episode        Episode?      
+  Topic        Topic?
+  SeasonSeries SeasonSeries?
+  Episode      Episode?
 
 
   createdAt DateTime @default(now())
@@ -146,11 +146,12 @@ model Topic {
   publishers String[]
   cast       String[]
   type       String
+  tmdbId     Int?
 
   releaseDate DateTime
 
-  AggregateRating AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  aggregateRatingId String? @unique @default(uuid())
+  AggregateRating   AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  aggregateRatingId String?          @unique @default(uuid())
 
   Reactions    Reaction[]
   SeasonSeries SeasonSeries[]
@@ -180,8 +181,8 @@ model SeasonSeries {
   Topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   topicId String
 
-  AggregateRating AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  aggregateRatingId String? @unique @default(uuid())
+  AggregateRating   AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  aggregateRatingId String?          @unique @default(uuid())
 
   Reactions Reaction[]
   Episodes  Episode[]
@@ -209,8 +210,8 @@ model Episode {
   SeasonSeries   SeasonSeries @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   seasonSeriesId String
 
-  AggregateRating AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  aggregateRatingId String? @unique @default(uuid())
+  AggregateRating   AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  aggregateRatingId String?          @unique @default(uuid())
 
   Reactions Reaction[]
   Posts     Post[]
@@ -375,3 +376,20 @@ model Notification {
 //   createdAt        DateTime          @default(now())
 //   updatedAt        DateTime          @default(now()) @updatedAt
 // }
+
+enum LIST_TYPE {
+  TRENDING
+  LATEST
+  POPULAR
+}
+
+model TopicLists {
+  id String @id @default(uuid()) @map("_id")
+
+  type  LIST_TYPE
+  title String
+  lists Int[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}

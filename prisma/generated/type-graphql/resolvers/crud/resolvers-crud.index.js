@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserCrudResolver = exports.TopicCrudResolver = exports.SeasonSeriesCrudResolver = exports.RequestCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.PostCrudResolver = exports.NotificationSettingsCrudResolver = exports.NotificationCrudResolver = exports.EpisodeCrudResolver = exports.CommentCrudResolver = exports.AggregateRatingCrudResolver = void 0;
+exports.UserCrudResolver = exports.TopicListsCrudResolver = exports.TopicCrudResolver = exports.SeasonSeriesCrudResolver = exports.RequestCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.PostCrudResolver = exports.NotificationSettingsCrudResolver = exports.NotificationCrudResolver = exports.EpisodeCrudResolver = exports.CommentCrudResolver = exports.AggregateRatingCrudResolver = void 0;
 var AggregateRatingCrudResolver_1 = require("./AggregateRating/AggregateRatingCrudResolver");
 Object.defineProperty(exports, "AggregateRatingCrudResolver", { enumerable: true, get: function () { return AggregateRatingCrudResolver_1.AggregateRatingCrudResolver; } });
 var CommentCrudResolver_1 = require("./Comment/CommentCrudResolver");
@@ -23,5 +23,7 @@ var SeasonSeriesCrudResolver_1 = require("./SeasonSeries/SeasonSeriesCrudResolve
 Object.defineProperty(exports, "SeasonSeriesCrudResolver", { enumerable: true, get: function () { return SeasonSeriesCrudResolver_1.SeasonSeriesCrudResolver; } });
 var TopicCrudResolver_1 = require("./Topic/TopicCrudResolver");
 Object.defineProperty(exports, "TopicCrudResolver", { enumerable: true, get: function () { return TopicCrudResolver_1.TopicCrudResolver; } });
+var TopicListsCrudResolver_1 = require("./TopicLists/TopicListsCrudResolver");
+Object.defineProperty(exports, "TopicListsCrudResolver", { enumerable: true, get: function () { return TopicListsCrudResolver_1.TopicListsCrudResolver; } });
 var UserCrudResolver_1 = require("./User/UserCrudResolver");
 Object.defineProperty(exports, "UserCrudResolver", { enumerable: true, get: function () { return UserCrudResolver_1.UserCrudResolver; } });

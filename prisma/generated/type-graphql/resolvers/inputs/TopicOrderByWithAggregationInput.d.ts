@@ -1,6 +1,8 @@
+import { TopicAvgOrderByAggregateInput } from "../inputs/TopicAvgOrderByAggregateInput";
 import { TopicCountOrderByAggregateInput } from "../inputs/TopicCountOrderByAggregateInput";
 import { TopicMaxOrderByAggregateInput } from "../inputs/TopicMaxOrderByAggregateInput";
 import { TopicMinOrderByAggregateInput } from "../inputs/TopicMinOrderByAggregateInput";
+import { TopicSumOrderByAggregateInput } from "../inputs/TopicSumOrderByAggregateInput";
 export declare class TopicOrderByWithAggregationInput {
     id?: "asc" | "desc" | undefined;
     title?: "asc" | "desc" | undefined;
@@ -19,12 +21,15 @@ export declare class TopicOrderByWithAggregationInput {
     publishers?: "asc" | "desc" | undefined;
     cast?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
+    tmdbId?: "asc" | "desc" | undefined;
     releaseDate?: "asc" | "desc" | undefined;
     aggregateRatingId?: "asc" | "desc" | undefined;
     topicType?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
     _count?: TopicCountOrderByAggregateInput | undefined;
+    _avg?: TopicAvgOrderByAggregateInput | undefined;
     _max?: TopicMaxOrderByAggregateInput | undefined;
     _min?: TopicMinOrderByAggregateInput | undefined;
+    _sum?: TopicSumOrderByAggregateInput | undefined;
 }

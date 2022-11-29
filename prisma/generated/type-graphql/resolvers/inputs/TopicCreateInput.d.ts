@@ -28,6 +28,7 @@ export declare class TopicCreateInput {
     publishers?: TopicCreatepublishersInput | undefined;
     cast?: TopicCreatecastInput | undefined;
     type: string;
+    tmdbId?: number | undefined;
     releaseDate: Date;
     AggregateRating?: AggregateRatingCreateNestedOneWithoutTopicInput | undefined;
     Reactions?: ReactionCreateNestedManyWithoutTopicInput | undefined;

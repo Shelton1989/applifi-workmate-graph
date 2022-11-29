@@ -9,4 +9,5 @@ export { Reply } from "./Reply";
 export { Request } from "./Request";
 export { SeasonSeries } from "./SeasonSeries";
 export { Topic } from "./Topic";
+export { TopicLists } from "./TopicLists";
 export { User } from "./User";

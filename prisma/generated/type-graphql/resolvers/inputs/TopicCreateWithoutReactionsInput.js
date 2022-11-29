@@ -120,6 +120,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], TopicCreateWithoutReactionsInput.prototype, "type", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Number)
+], TopicCreateWithoutReactionsInput.prototype, "tmdbId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: false
     }),
