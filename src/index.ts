@@ -14,6 +14,7 @@ import { Allow, Max, Min } from "class-validator";
 
 // Custom resolvers
 import { PostResolver } from './resolvers/posts.resolvers';
+import { TopicResolver } from "./resolvers/search.resolvers";
 
 const userCreateOrUpdateOperations = [
   "createPostReview",
@@ -203,7 +204,7 @@ const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles)
 (async () => {
   const schema = await buildSchema({
     authChecker,
-    resolvers: [PostResolver, ...resolvers],
+    resolvers: [PostResolver, TopicResolver, ...resolvers],
     validate: false,
   });
 
