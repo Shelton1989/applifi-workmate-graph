@@ -107,7 +107,6 @@ applyResolversEnhanceMap({
     deleteManyEpisode: [Authorized(ROLE.ADMIN)],
   },
   Post: {
-    posts: [Authorized()],
     createPost: [Authorized()],
     updatePost: [Authorized()],
     createManyPost: [Authorized(ROLE.ADMIN)],
