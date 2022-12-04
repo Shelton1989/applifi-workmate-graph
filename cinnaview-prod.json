@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cinnaview-prod",
+  "private_key_id": "3ebedbc930130916b28fd94eed21b319cd56e1be",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC//n4fiZAOxR82\nqQI/UitjnJfjDxlmo2wVXGBsuSXeAj7wynJsgmqjdMjR7cOSYTNXUIRlu23xHIDr\nw5ISXGJWkqKcowQsSNVmNyfdbuYBTIne+OZ4BtVvjGM/KB7FlEz8hBSYOAoKJuf/\ndjkAlnJUtd4a1ecyTLbHKa1Wc8KgV9wnHhR8b2xIA9MZQvJs/j82P8Zjj9Km2GVr\n5ZZGk7GtPMGLAkRBYl8qfbwOb3gZrlK64DtfEWC9vsY59LnDY/jDYpgRYt5QboCp\nHJBoiYlOWgOedYqvkf5aPcbmzPpm8B99B2Yd06lsstrXgj8FbH7Ow07lQy2gJ0Ma\nJ/rZjuhpAgMBAAECggEAAncRuSMCtNL8LlzgzotmFG8piIOfy4vlQp8YVtmaJ3kw\naJ+QPgtafPMlBjsBVAMRRN4fwQ/sDGrxBdFa1pmVtO9/jMmq5ify0TPpcxZb5Zbf\ndHKgdzP8sBHcfMnJDMoHtOEFH2Nb9DZYB0wz1RdHIwY7e7ZeBghqxDnN32p4ujk4\n3IbbQM3WBbwLPmMFGo+A0VO1NUD7LNpNwgweT3588ugVpZbkfChzt42Hq0024guU\nKaX8wfTY5PLTxbipzBH2mcvuOM7VWqRFXgy6PRCxsQK46Sujym9NaXgdOfICo1Xu\nKyJqYpz7bDA4A1XK/9hae2YbXXwI4/ps9ckG4MEVLQKBgQDuZOZlkhy8tZDQBW/o\nQS1eSR8aE2mLE8QuC4l7rLcjIAakRUEgAXF7LWCFojYQJDTmZLvhNVEduYOQYGSq\nc/rtdYm87gnYCZtjSo83/nogtxge6TxRYlpnrSjyDxVW1s4MvepyKSW+wd9t+pMP\n/EMryasKOyZulyruij40Ias8dQKBgQDOLFmKqbY7tByje54VpzQgtB6yIHrP9toC\nWuN8mvzVZ4fklsmgZ4KfeE6dgr1+vaB5tTkZ47lgA2R23VS1ES5RpM3orgy1/SQP\nLelSAGdXH0Zv8r0sobBqRgENG30t6mz01gkH2jrXTr3v+G2yVbs2Y4riGSeYZ5Tg\ntI4p68MNpQKBgEx39SeTjMBDhWYUuGbJsWHTFrTokSxZdM5ISRtwtXYA6eB7jn5T\nuDEIxzNWav0WgBl/Knz8+z4LqdX/9YpvlYfh8gK2YFX6Duv0mKgfatFfqc8QhZad\nc95Zvw6WJAQs9v9DVBa2eDMOQTsn61BvXKSJFeI8QwGqX80Qbw+N1T2ZAoGAErI0\n4H0pWFqp6i1QlZgXAwwyaGbHnEo/VM1XKbqISPXdfd4qpJAeaUWoo2HyuyaJAeBs\nMCvVaJ6GIr1JbC4FrEOspHf8ERjGh1XbfaMpu93LLmWtv/ldnRWCDOU8QcirXrx2\nDy87/MBYOwWlNPHPS0xVkNFFJO3ns0TMS4Lkqj0CgYEAoYogWTZoJZ4bY1H4hAEB\nZnagw6nlVCp1doh50W8StKqQgZM/sUIa3i1r6FV4MtVTCsCLwK68v8rWH+ZP7nsv\no8VAlkvwnCqGHSSv4nFOB8t4j5/sTdMPnkPCcsV5z5nEO+PZ4AicXAHA48FRbpee\nJHa54qcrjX8Feo7VLnhDEjc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-za7qz@cinnaview-prod.iam.gserviceaccount.com",
+  "client_id": "105175422042587673913",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-za7qz%40cinnaview-prod.iam.gserviceaccount.com"
+}
