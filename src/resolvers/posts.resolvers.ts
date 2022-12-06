@@ -22,7 +22,7 @@ export class PostResolver {
     // TODO: set can be counted after NLP analysis
     let canBeCounted = true;
 
-    if (caption && caption?.split(".").length < 3) { 
+    if (caption && caption?.split(/[!?.]/g).length <= 2) { 
       canBeCounted = false;
     }
 
