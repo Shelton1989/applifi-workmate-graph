@@ -21,32 +21,38 @@ datasource db {
 enum ROLE {
   SUPER_ADMIN
   ADMIN
-  CRITIC
   USER
+  WORKSPACE_OWNER
+  WORKSPACE_ADMIN
+  WORKSPACE_USER
 }
 
 // Models
 model User {
+  Tenant   Tenant? @relation(fields: [tenantId], references: [id], onDelete: SetNull, onUpdate: Cascade)
+  tenantId String? @unique
   // Mapping to authentication service
-  uid String @unique
+  uid      String  @unique
+  // used to authenticate tenant user creation
+  uuid     String  @unique
 
   id       String @id @default(uuid()) @map("_id")
   username String @unique
   email    String @unique
 
-  role ROLE? @default(USER)
+  roles ROLE[]
 
   firstName   String?
   lastName    String?
   avatar      String?
   coverImage  String?
-  dateOfBirth DateTime
+  dateOfBirth DateTime?
 
   biography String?
 
-  hasAcceptedTerms Boolean @default(false)
-  isFirstTimeUser  Boolean @default(true)
-  isVerified       Boolean @default(false)
+  hasAcceptedTerms Boolean? @default(false)
+  isFirstTimeUser  Boolean? @default(true)
+  isVerified       Boolean? @default(false)
 
   NotificationSettings NotificationSettings?
 
@@ -59,11 +65,17 @@ model User {
   Followers    User[]   @relation("UserFollows", fields: [followerIds], references: [id])
   followerIds  String[]
 
+  // Market
+  LikedExperiences Experience[] @relation(fields: [experienceIds], references: [id])
+  experienceIds    String[]
+
   Requests  Request[]
   Posts     Post[]
   Comments  Comment[]
   Replies   Reply[]
   Reactions Reaction[]
+
+  Bookings BookingOrder[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -72,13 +84,38 @@ model User {
 model NotificationSettings {
   id String @id @default(uuid()) @map("_id")
 
-  newContentILike     Boolean @default(true)
-  commentsOnMyReviews Boolean @default(true)
-  repliesToMyComments Boolean @default(true)
-  repliesToThreads    Boolean @default(true)
+  newArrivals           Boolean @default(true)
+  bookingOrOrderUpdates Boolean @default(true)
+  promotions            Boolean @default(true)
+  saleAlerts            Boolean @default(true)
+  newContentILike       Boolean @default(true)
+  commentsOnMyReviews   Boolean @default(true)
+  repliesToMyComments   Boolean @default(true)
+  repliesToThreads      Boolean @default(true)
 
   User   User?   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   userId String? @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Tenant {
+  id String @id @default(uuid()) @map("_id")
+
+  name String
+  slug String @unique
+
+  avatar           String?
+  coverImage       String?
+  experienceImages String[]
+
+  Users       User[]
+  Experiences Experience[]
+
+  BookingOrders BookingOrder[]
+
+  Locations Location[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -92,21 +129,9 @@ enum REACTION_TYPE {
 }
 
 enum MEDIA_TYPE {
-  TOPIC
-  SEASON_SERIES
-  EPISODE
-}
-
-enum TOPIC_TYPE {
-  MOVIE
-  SERIES
-  DOCUMENTARY
-  STREAMING_PLATFORM
-  OPINION_PIECE
-  NEWS_ENTITY
-  ARTICLE
-  PODCAST
-  BOOK
+  IMAGE
+  CAROUSEL
+  VIDEO
 }
 
 model AggregateRating {
@@ -118,103 +143,8 @@ model AggregateRating {
   allPosts     Int? @default(0)
   ratingCount  Int? @default(0)
 
-  Topic        Topic?
-  SeasonSeries SeasonSeries?
-  Episode      Episode?
-
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Topic {
-  id String @id @default(uuid()) @map("_id")
-
-  title      String
-  year       String
-  poster     String
-  overview   String
-  trailer    String
-  coverImage String
-  tagline    String
-  genres     String[]
-  creators   String[]
-  authors    String[]
-  artists    String[]
-  producers  String[]
-  directors  String[]
-  publishers String[]
-  cast       String[]
-  type       String
-  tmdbId     Int?
-
-  releaseDate DateTime
-
-  AggregateRating   AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  aggregateRatingId String?          @unique @default(uuid())
-
-  Reactions    Reaction[]
-  SeasonSeries SeasonSeries[]
-  Posts        Post[]
-
-  topicType TOPIC_TYPE @default(MOVIE)
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model SeasonSeries {
-  id String @id @default(uuid()) @map("_id")
-
-  seasonOrSeriesNumber Int
-
-  title      String
-  year       String
-  poster     String
-  overview   String
-  trailer    String
-  coverImage String
-  tagline    String
-
-  releaseDate DateTime
-
-  Topic   Topic  @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  topicId String
-
-  AggregateRating   AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  aggregateRatingId String?          @unique @default(uuid())
-
-  Reactions Reaction[]
-  Episodes  Episode[]
-  Posts     Post[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Episode {
-  id String @id @default(uuid()) @map("_id")
-
-  episodeNumber Int
-
-  title      String
-  year       String
-  poster     String
-  overview   String
-  trailer    String
-  coverImage String
-  tagline    String
-
-  releaseDate DateTime
-
-  SeasonSeries   SeasonSeries @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  seasonSeriesId String
-
-  AggregateRating   AggregateRating? @relation(fields: [aggregateRatingId], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  aggregateRatingId String?          @unique @default(uuid())
-
-  Reactions Reaction[]
-  Posts     Post[]
+  Experience   Experience? @relation(fields: [experienceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  experienceId String?     @unique
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -223,7 +153,7 @@ model Episode {
 model Post {
   id String @id @default(uuid()) @map("_id")
 
-  type     MEDIA_TYPE
+  type     MEDIA_TYPE @default(IMAGE)
   caption  String?
   mediaUrl String[]
 
@@ -235,15 +165,11 @@ model Post {
   Author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   authorId String
 
+  Experience   Experience? @relation(fields: [experienceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  experienceId String?
+
   Comments  Comment[]
   Reactions Reaction[]
-
-  Topic          Topic?        @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  topicId        String?
-  SeasonSeries   SeasonSeries? @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  seasonSeriesId String?
-  Episode        Episode?      @relation(fields: [episodeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  episodeId      String?
 
   postLink String?
 
@@ -295,14 +221,6 @@ model Reaction {
   replyId   String?
   Author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   authorId  String
-
-  // Entity
-  Topic          Topic?        @relation(fields: [topicId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  topicId        String?
-  SeasonSeries   SeasonSeries? @relation(fields: [seasonSeriesId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  seasonSeriesId String?
-  Episode        Episode?      @relation(fields: [episodeId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  episodeId      String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -370,6 +288,123 @@ model Notification {
   updatedAt DateTime @default(now()) @updatedAt
 }
 
+// Experience Models
+enum EXPERIENCE_CATEGORY {
+  CAMPING
+}
+
+enum PUBLISH_STATUS {
+  DRAFT
+  PUBLISHED
+  UNPUBLISHED
+  UNDER_REVIEW
+  PENDING_APPROVAL
+  IN_REVIEW
+  APPROVED
+  NO_ACTION_TAKEN
+  REJECTED_WITH_REASON
+  DECLINED
+  BANNED
+  SOFT_BANNED
+}
+
+model Experience {
+  id String @id @default(uuid()) @map("_id")
+
+  Tenant          Tenant  @relation(fields: [tenantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  tenantId        String
+  productLink     String?
+  stripeProductId String?
+
+  title       String
+  description String
+  category    EXPERIENCE_CATEGORY
+
+  Availability ExperienceAvailability[]
+  photo        String?
+  gallery      String[]
+
+  location String
+  duration Int
+
+  AggregatedRating AggregateRating?
+
+  publishStatus PUBLISH_STATUS @default(DRAFT)
+
+  LikedBy    User[]   @relation(fields: [likedByIds], references: [id])
+  likedByIds String[]
+
+  Locations Location[]
+  Price     Price[]
+
+  Posts Post[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+enum AVAILABILITY_TYPE {
+  WEEKEND
+  DAILY
+  HOURLY
+  HALF_HOURLY
+}
+
+model ExperienceAvailability {
+  id String @id @default(uuid()) @map("_id")
+
+  Experience   Experience @relation(fields: [experienceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  experienceId String
+
+  startDate DateTime
+  endDate   DateTime
+
+  availabilityType AVAILABILITY_TYPE @default(DAILY)
+
+  weekendSpacesAvailable    Int
+  dailySpacesAvailable      Int
+  hourlySpacesAvailable     Int
+  halfHourlySpacesAvailable Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+// Utilities models
+model Currency {
+  id String @id @default(uuid()) @map("_id")
+
+  name   String
+  symbol String
+  code   String
+
+  prices Price[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Price {
+  id String @id @default(uuid()) @map("_id")
+
+  priceInLowestDenomination Int
+  displayPrice              String
+  currency                  Currency @relation(fields: [currencyId], references: [id])
+  currencyId                String
+
+  details String
+
+  Experience   Experience @relation(fields: [experienceId], references: [id])
+  experienceId String
+
+  BookingLineItems BookingOrderLineItem[]
+
+  isBasePrice Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
 // model Base {
 //   id        String @id @default(uuid()) @map("_id")
 
@@ -381,6 +416,7 @@ enum LIST_TYPE {
   TRENDING
   LATEST
   POPULAR
+  FEATURED
 }
 
 model TopicLists {
@@ -389,6 +425,81 @@ model TopicLists {
   type  LIST_TYPE
   title String
   lists Int[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+enum BOOKING_ORDER_STATUS {
+  OPEN
+  BOOKED
+  BOOKED_PENDING_PAYMENT
+  READY_FOR_CHECK_IN
+  CHECKED_IN
+  READY_FOR_CHECK_OUT
+  COMPLETE
+  CANCELLED
+}
+
+model BookingOrderLineItem {
+  id String @id @default(uuid()) @map("_id")
+
+  LineItemPrice Price  @relation(fields: [priceId], references: [id])
+  priceId       String
+
+  Booking   BookingOrder @relation(fields: [bookingId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  bookingId String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model BookingOrder {
+  id String @id @default(uuid()) @map("_id")
+
+  status              BOOKING_ORDER_STATUS @default(OPEN)
+  SelectedPaymentType String?
+
+  stripePaymentReference String?
+
+  Buyer    User   @relation(fields: [buyerId], references: [id])
+  buyerId  String
+  Tenant   Tenant @relation(fields: [tenantId], references: [id])
+  tenantId String
+
+  Items BookingOrderLineItem[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+enum ADDRESS_TYPE {
+  PHYSICAL
+  POSTAL
+}
+
+model Location {
+  id String @id @default(uuid()) @map("_id")
+
+  longitude Float
+  latitude  Float
+
+  googleMapsUrl  String
+  googlePlacesId String
+
+  type      ADDRESS_TYPE
+  line1     String
+  line2     String
+  city      String
+  district  String
+  country   String
+  code      String
+  isDefault Boolean      @default(false)
+
+  Experience   Experience? @relation(fields: [experienceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  experienceId String?
+  Tenant       Tenant?     @relation(fields: [tenantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  tenantId     String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

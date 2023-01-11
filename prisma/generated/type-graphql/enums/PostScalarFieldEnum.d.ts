@@ -7,9 +7,7 @@ export declare enum PostScalarFieldEnum {
     isCommentsEnabled = "isCommentsEnabled",
     canBeCounted = "canBeCounted",
     authorId = "authorId",
-    topicId = "topicId",
-    seasonSeriesId = "seasonSeriesId",
-    episodeId = "episodeId",
+    experienceId = "experienceId",
     postLink = "postLink",
     createdAt = "createdAt",
     updatedAt = "updatedAt"

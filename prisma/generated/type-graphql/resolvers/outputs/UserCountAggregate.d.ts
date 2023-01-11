@@ -1,9 +1,11 @@
 export declare class UserCountAggregate {
+    tenantId: number;
     uid: number;
+    uuid: number;
     id: number;
     username: number;
     email: number;
-    role: number;
+    roles: number;
     firstName: number;
     lastName: number;
     avatar: number;
@@ -15,6 +17,7 @@ export declare class UserCountAggregate {
     isVerified: number;
     followingIds: number;
     followerIds: number;
+    experienceIds: number;
     createdAt: number;
     updatedAt: number;
     _all: number;

@@ -3,9 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AggregateRatingOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const EpisodeOrderByWithRelationInput_1 = require("../inputs/EpisodeOrderByWithRelationInput");
-const SeasonSeriesOrderByWithRelationInput_1 = require("../inputs/SeasonSeriesOrderByWithRelationInput");
-const TopicOrderByWithRelationInput_1 = require("../inputs/TopicOrderByWithRelationInput");
+const ExperienceOrderByWithRelationInput_1 = require("../inputs/ExperienceOrderByWithRelationInput");
 const SortOrder_1 = require("../../enums/SortOrder");
 let AggregateRatingOrderByWithRelationInput = class AggregateRatingOrderByWithRelationInput {
 };
@@ -40,23 +38,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], AggregateRatingOrderByWithRelationInput.prototype, "ratingCount", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TopicOrderByWithRelationInput_1.TopicOrderByWithRelationInput, {
+    TypeGraphQL.Field(_type => ExperienceOrderByWithRelationInput_1.ExperienceOrderByWithRelationInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", TopicOrderByWithRelationInput_1.TopicOrderByWithRelationInput)
-], AggregateRatingOrderByWithRelationInput.prototype, "Topic", void 0);
+    tslib_1.__metadata("design:type", ExperienceOrderByWithRelationInput_1.ExperienceOrderByWithRelationInput)
+], AggregateRatingOrderByWithRelationInput.prototype, "Experience", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SeasonSeriesOrderByWithRelationInput_1.SeasonSeriesOrderByWithRelationInput, {
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", SeasonSeriesOrderByWithRelationInput_1.SeasonSeriesOrderByWithRelationInput)
-], AggregateRatingOrderByWithRelationInput.prototype, "SeasonSeries", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EpisodeOrderByWithRelationInput_1.EpisodeOrderByWithRelationInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", EpisodeOrderByWithRelationInput_1.EpisodeOrderByWithRelationInput)
-], AggregateRatingOrderByWithRelationInput.prototype, "Episode", void 0);
+    tslib_1.__metadata("design:type", String)
+], AggregateRatingOrderByWithRelationInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true

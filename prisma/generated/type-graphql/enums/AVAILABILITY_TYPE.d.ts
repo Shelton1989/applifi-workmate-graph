@@ -1,0 +1,6 @@
+export declare enum AVAILABILITY_TYPE {
+    WEEKEND = "WEEKEND",
+    DAILY = "DAILY",
+    HOURLY = "HOURLY",
+    HALF_HOURLY = "HALF_HOURLY"
+}

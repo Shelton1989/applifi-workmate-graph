@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateTenantArgs } from "./args/AggregateTenantArgs";
+import { CreateManyTenantArgs } from "./args/CreateManyTenantArgs";
+import { CreateTenantArgs } from "./args/CreateTenantArgs";
+import { DeleteManyTenantArgs } from "./args/DeleteManyTenantArgs";
+import { DeleteTenantArgs } from "./args/DeleteTenantArgs";
+import { FindFirstTenantArgs } from "./args/FindFirstTenantArgs";
+import { FindManyTenantArgs } from "./args/FindManyTenantArgs";
+import { FindUniqueTenantArgs } from "./args/FindUniqueTenantArgs";
+import { GroupByTenantArgs } from "./args/GroupByTenantArgs";
+import { UpdateManyTenantArgs } from "./args/UpdateManyTenantArgs";
+import { UpdateTenantArgs } from "./args/UpdateTenantArgs";
+import { UpsertTenantArgs } from "./args/UpsertTenantArgs";
+import { Tenant } from "../../../models/Tenant";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateTenant } from "../../outputs/AggregateTenant";
+import { TenantGroupBy } from "../../outputs/TenantGroupBy";
+export declare class TenantCrudResolver {
+    tenant(ctx: any, info: GraphQLResolveInfo, args: FindUniqueTenantArgs): Promise<Tenant | null>;
+    findFirstTenant(ctx: any, info: GraphQLResolveInfo, args: FindFirstTenantArgs): Promise<Tenant | null>;
+    tenants(ctx: any, info: GraphQLResolveInfo, args: FindManyTenantArgs): Promise<Tenant[]>;
+    createTenant(ctx: any, info: GraphQLResolveInfo, args: CreateTenantArgs): Promise<Tenant>;
+    createManyTenant(ctx: any, info: GraphQLResolveInfo, args: CreateManyTenantArgs): Promise<AffectedRowsOutput>;
+    deleteTenant(ctx: any, info: GraphQLResolveInfo, args: DeleteTenantArgs): Promise<Tenant | null>;
+    updateTenant(ctx: any, info: GraphQLResolveInfo, args: UpdateTenantArgs): Promise<Tenant | null>;
+    deleteManyTenant(ctx: any, info: GraphQLResolveInfo, args: DeleteManyTenantArgs): Promise<AffectedRowsOutput>;
+    updateManyTenant(ctx: any, info: GraphQLResolveInfo, args: UpdateManyTenantArgs): Promise<AffectedRowsOutput>;
+    upsertTenant(ctx: any, info: GraphQLResolveInfo, args: UpsertTenantArgs): Promise<Tenant>;
+    aggregateTenant(ctx: any, info: GraphQLResolveInfo, args: AggregateTenantArgs): Promise<AggregateTenant>;
+    groupByTenant(ctx: any, info: GraphQLResolveInfo, args: GroupByTenantArgs): Promise<TenantGroupBy[]>;
+}

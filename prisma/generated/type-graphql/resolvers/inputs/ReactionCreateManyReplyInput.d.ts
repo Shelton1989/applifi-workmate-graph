@@ -4,9 +4,6 @@ export declare class ReactionCreateManyReplyInput {
     postId?: string | undefined;
     commentId?: string | undefined;
     authorId: string;
-    topicId?: string | undefined;
-    seasonSeriesId?: string | undefined;
-    episodeId?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

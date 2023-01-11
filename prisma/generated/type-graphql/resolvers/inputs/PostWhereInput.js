@@ -8,14 +8,12 @@ const BoolFilter_1 = require("../inputs/BoolFilter");
 const CommentListRelationFilter_1 = require("../inputs/CommentListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumMEDIA_TYPEFilter_1 = require("../inputs/EnumMEDIA_TYPEFilter");
-const EpisodeRelationFilter_1 = require("../inputs/EpisodeRelationFilter");
+const ExperienceRelationFilter_1 = require("../inputs/ExperienceRelationFilter");
 const FloatFilter_1 = require("../inputs/FloatFilter");
 const ReactionListRelationFilter_1 = require("../inputs/ReactionListRelationFilter");
-const SeasonSeriesRelationFilter_1 = require("../inputs/SeasonSeriesRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
-const TopicRelationFilter_1 = require("../inputs/TopicRelationFilter");
 const UserRelationFilter_1 = require("../inputs/UserRelationFilter");
 let PostWhereInput = PostWhereInput_1 = class PostWhereInput {
 };
@@ -92,6 +90,18 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], PostWhereInput.prototype, "authorId", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ExperienceRelationFilter_1.ExperienceRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ExperienceRelationFilter_1.ExperienceRelationFilter)
+], PostWhereInput.prototype, "Experience", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], PostWhereInput.prototype, "experienceId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => CommentListRelationFilter_1.CommentListRelationFilter, {
         nullable: true
     }),
@@ -103,42 +113,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", ReactionListRelationFilter_1.ReactionListRelationFilter)
 ], PostWhereInput.prototype, "Reactions", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TopicRelationFilter_1.TopicRelationFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", TopicRelationFilter_1.TopicRelationFilter)
-], PostWhereInput.prototype, "Topic", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], PostWhereInput.prototype, "topicId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SeasonSeriesRelationFilter_1.SeasonSeriesRelationFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", SeasonSeriesRelationFilter_1.SeasonSeriesRelationFilter)
-], PostWhereInput.prototype, "SeasonSeries", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], PostWhereInput.prototype, "seasonSeriesId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EpisodeRelationFilter_1.EpisodeRelationFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", EpisodeRelationFilter_1.EpisodeRelationFilter)
-], PostWhereInput.prototype, "Episode", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], PostWhereInput.prototype, "episodeId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true

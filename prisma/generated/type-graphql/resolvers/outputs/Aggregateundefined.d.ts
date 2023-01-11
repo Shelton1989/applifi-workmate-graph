@@ -4,6 +4,7 @@ export declare class Aggregateundefined {
     countedPosts: number | null;
     allPosts: number | null;
     ratingCount: number | null;
+    experienceId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }

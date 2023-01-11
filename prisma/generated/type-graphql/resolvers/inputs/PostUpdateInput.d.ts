@@ -2,13 +2,11 @@ import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperati
 import { CommentUpdateManyWithoutPostInput } from "../inputs/CommentUpdateManyWithoutPostInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { EnumMEDIA_TYPEFieldUpdateOperationsInput } from "../inputs/EnumMEDIA_TYPEFieldUpdateOperationsInput";
-import { EpisodeUpdateOneWithoutPostsInput } from "../inputs/EpisodeUpdateOneWithoutPostsInput";
+import { ExperienceUpdateOneWithoutPostsInput } from "../inputs/ExperienceUpdateOneWithoutPostsInput";
 import { FloatFieldUpdateOperationsInput } from "../inputs/FloatFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { PostUpdatemediaUrlInput } from "../inputs/PostUpdatemediaUrlInput";
 import { ReactionUpdateManyWithoutPostInput } from "../inputs/ReactionUpdateManyWithoutPostInput";
-import { SeasonSeriesUpdateOneWithoutPostsInput } from "../inputs/SeasonSeriesUpdateOneWithoutPostsInput";
-import { TopicUpdateOneWithoutPostsInput } from "../inputs/TopicUpdateOneWithoutPostsInput";
 import { UserUpdateOneRequiredWithoutPostsInput } from "../inputs/UserUpdateOneRequiredWithoutPostsInput";
 export declare class PostUpdateInput {
     type?: EnumMEDIA_TYPEFieldUpdateOperationsInput | undefined;
@@ -18,11 +16,9 @@ export declare class PostUpdateInput {
     isCommentsEnabled?: BoolFieldUpdateOperationsInput | undefined;
     canBeCounted?: BoolFieldUpdateOperationsInput | undefined;
     Author?: UserUpdateOneRequiredWithoutPostsInput | undefined;
+    Experience?: ExperienceUpdateOneWithoutPostsInput | undefined;
     Comments?: CommentUpdateManyWithoutPostInput | undefined;
     Reactions?: ReactionUpdateManyWithoutPostInput | undefined;
-    Topic?: TopicUpdateOneWithoutPostsInput | undefined;
-    SeasonSeries?: SeasonSeriesUpdateOneWithoutPostsInput | undefined;
-    Episode?: EpisodeUpdateOneWithoutPostsInput | undefined;
     postLink?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;

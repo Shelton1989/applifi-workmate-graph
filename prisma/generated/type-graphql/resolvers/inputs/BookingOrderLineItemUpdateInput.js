@@ -1,0 +1,40 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.BookingOrderLineItemUpdateInput = void 0;
+const tslib_1 = require("tslib");
+const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const BookingOrderUpdateOneRequiredWithoutItemsInput_1 = require("../inputs/BookingOrderUpdateOneRequiredWithoutItemsInput");
+const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
+const PriceUpdateOneRequiredWithoutBookingLineItemsInput_1 = require("../inputs/PriceUpdateOneRequiredWithoutBookingLineItemsInput");
+let BookingOrderLineItemUpdateInput = class BookingOrderLineItemUpdateInput {
+};
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => PriceUpdateOneRequiredWithoutBookingLineItemsInput_1.PriceUpdateOneRequiredWithoutBookingLineItemsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", PriceUpdateOneRequiredWithoutBookingLineItemsInput_1.PriceUpdateOneRequiredWithoutBookingLineItemsInput)
+], BookingOrderLineItemUpdateInput.prototype, "LineItemPrice", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BookingOrderUpdateOneRequiredWithoutItemsInput_1.BookingOrderUpdateOneRequiredWithoutItemsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BookingOrderUpdateOneRequiredWithoutItemsInput_1.BookingOrderUpdateOneRequiredWithoutItemsInput)
+], BookingOrderLineItemUpdateInput.prototype, "Booking", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput)
+], BookingOrderLineItemUpdateInput.prototype, "createdAt", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput)
+], BookingOrderLineItemUpdateInput.prototype, "updatedAt", void 0);
+BookingOrderLineItemUpdateInput = tslib_1.__decorate([
+    TypeGraphQL.InputType("BookingOrderLineItemUpdateInput", {
+        isAbstract: true
+    })
+], BookingOrderLineItemUpdateInput);
+exports.BookingOrderLineItemUpdateInput = BookingOrderLineItemUpdateInput;

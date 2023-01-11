@@ -2,6 +2,10 @@ import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperati
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { UserUpdateOneWithoutNotificationSettingsInput } from "../inputs/UserUpdateOneWithoutNotificationSettingsInput";
 export declare class NotificationSettingsUpdateInput {
+    newArrivals?: BoolFieldUpdateOperationsInput | undefined;
+    bookingOrOrderUpdates?: BoolFieldUpdateOperationsInput | undefined;
+    promotions?: BoolFieldUpdateOperationsInput | undefined;
+    saleAlerts?: BoolFieldUpdateOperationsInput | undefined;
     newContentILike?: BoolFieldUpdateOperationsInput | undefined;
     commentsOnMyReviews?: BoolFieldUpdateOperationsInput | undefined;
     repliesToMyComments?: BoolFieldUpdateOperationsInput | undefined;

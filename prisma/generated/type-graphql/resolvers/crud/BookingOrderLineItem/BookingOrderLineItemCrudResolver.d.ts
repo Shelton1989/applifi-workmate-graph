@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateBookingOrderLineItemArgs } from "./args/AggregateBookingOrderLineItemArgs";
+import { CreateBookingOrderLineItemArgs } from "./args/CreateBookingOrderLineItemArgs";
+import { CreateManyBookingOrderLineItemArgs } from "./args/CreateManyBookingOrderLineItemArgs";
+import { DeleteBookingOrderLineItemArgs } from "./args/DeleteBookingOrderLineItemArgs";
+import { DeleteManyBookingOrderLineItemArgs } from "./args/DeleteManyBookingOrderLineItemArgs";
+import { FindFirstBookingOrderLineItemArgs } from "./args/FindFirstBookingOrderLineItemArgs";
+import { FindManyBookingOrderLineItemArgs } from "./args/FindManyBookingOrderLineItemArgs";
+import { FindUniqueBookingOrderLineItemArgs } from "./args/FindUniqueBookingOrderLineItemArgs";
+import { GroupByBookingOrderLineItemArgs } from "./args/GroupByBookingOrderLineItemArgs";
+import { UpdateBookingOrderLineItemArgs } from "./args/UpdateBookingOrderLineItemArgs";
+import { UpdateManyBookingOrderLineItemArgs } from "./args/UpdateManyBookingOrderLineItemArgs";
+import { UpsertBookingOrderLineItemArgs } from "./args/UpsertBookingOrderLineItemArgs";
+import { BookingOrderLineItem } from "../../../models/BookingOrderLineItem";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateBookingOrderLineItem } from "../../outputs/AggregateBookingOrderLineItem";
+import { BookingOrderLineItemGroupBy } from "../../outputs/BookingOrderLineItemGroupBy";
+export declare class BookingOrderLineItemCrudResolver {
+    bookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: FindUniqueBookingOrderLineItemArgs): Promise<BookingOrderLineItem | null>;
+    findFirstBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: FindFirstBookingOrderLineItemArgs): Promise<BookingOrderLineItem | null>;
+    bookingOrderLineItems(ctx: any, info: GraphQLResolveInfo, args: FindManyBookingOrderLineItemArgs): Promise<BookingOrderLineItem[]>;
+    createBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: CreateBookingOrderLineItemArgs): Promise<BookingOrderLineItem>;
+    createManyBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: CreateManyBookingOrderLineItemArgs): Promise<AffectedRowsOutput>;
+    deleteBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: DeleteBookingOrderLineItemArgs): Promise<BookingOrderLineItem | null>;
+    updateBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: UpdateBookingOrderLineItemArgs): Promise<BookingOrderLineItem | null>;
+    deleteManyBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: DeleteManyBookingOrderLineItemArgs): Promise<AffectedRowsOutput>;
+    updateManyBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: UpdateManyBookingOrderLineItemArgs): Promise<AffectedRowsOutput>;
+    upsertBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: UpsertBookingOrderLineItemArgs): Promise<BookingOrderLineItem>;
+    aggregateBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: AggregateBookingOrderLineItemArgs): Promise<AggregateBookingOrderLineItem>;
+    groupByBookingOrderLineItem(ctx: any, info: GraphQLResolveInfo, args: GroupByBookingOrderLineItemArgs): Promise<BookingOrderLineItemGroupBy[]>;
+}

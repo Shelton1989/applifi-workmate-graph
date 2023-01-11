@@ -8,6 +8,7 @@ var LIST_TYPE;
     LIST_TYPE["TRENDING"] = "TRENDING";
     LIST_TYPE["LATEST"] = "LATEST";
     LIST_TYPE["POPULAR"] = "POPULAR";
+    LIST_TYPE["FEATURED"] = "FEATURED";
 })(LIST_TYPE = exports.LIST_TYPE || (exports.LIST_TYPE = {}));
 TypeGraphQL.registerEnumType(LIST_TYPE, {
     name: "LIST_TYPE",

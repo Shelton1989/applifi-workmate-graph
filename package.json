@@ -1,5 +1,5 @@
 {
-  "name": "cinnaview-backend",
+  "name": "trottar-backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "GOOGLE_APPLICATION_CREDENTIALS=secrets.json dotenv -e .env.development -- ts-node-dev --inspect=0.0.0.0:8000 --respawn --transpile-only --no-notify --prefer-ts --ignore-watch node_modules src/index.ts",
+    "dev": "GOOGLE_APPLICATION_CREDENTIALS=trottar-dev.json dotenv -e .env.development -- ts-node-dev --inspect=0.0.0.0:8000 --respawn --transpile-only --no-notify --prefer-ts --ignore-watch node_modules src/index.ts",
     "prebuild": "npm run generate:prod && echo '====COMPLETE==='",
     "build": "dotenv -e .env.prod -- del-cli ./build && tsc -p ./tsconfig.build.json",
     "start": "dotenv -e .env.prod -- node ./build/index.js",

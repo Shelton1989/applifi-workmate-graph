@@ -1,9 +1,11 @@
 export declare class UserCountOrderByAggregateInput {
+    tenantId?: "asc" | "desc" | undefined;
     uid?: "asc" | "desc" | undefined;
+    uuid?: "asc" | "desc" | undefined;
     id?: "asc" | "desc" | undefined;
     username?: "asc" | "desc" | undefined;
     email?: "asc" | "desc" | undefined;
-    role?: "asc" | "desc" | undefined;
+    roles?: "asc" | "desc" | undefined;
     firstName?: "asc" | "desc" | undefined;
     lastName?: "asc" | "desc" | undefined;
     avatar?: "asc" | "desc" | undefined;
@@ -15,6 +17,7 @@ export declare class UserCountOrderByAggregateInput {
     isVerified?: "asc" | "desc" | undefined;
     followingIds?: "asc" | "desc" | undefined;
     followerIds?: "asc" | "desc" | undefined;
+    experienceIds?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

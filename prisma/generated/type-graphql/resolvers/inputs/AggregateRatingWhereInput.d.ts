@@ -1,10 +1,9 @@
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
-import { EpisodeRelationFilter } from "../inputs/EpisodeRelationFilter";
+import { ExperienceRelationFilter } from "../inputs/ExperienceRelationFilter";
 import { FloatFilter } from "../inputs/FloatFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
-import { SeasonSeriesRelationFilter } from "../inputs/SeasonSeriesRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
-import { TopicRelationFilter } from "../inputs/TopicRelationFilter";
+import { StringNullableFilter } from "../inputs/StringNullableFilter";
 export declare class AggregateRatingWhereInput {
     AND?: AggregateRatingWhereInput[] | undefined;
     OR?: AggregateRatingWhereInput[] | undefined;
@@ -14,9 +13,8 @@ export declare class AggregateRatingWhereInput {
     countedPosts?: IntNullableFilter | undefined;
     allPosts?: IntNullableFilter | undefined;
     ratingCount?: IntNullableFilter | undefined;
-    Topic?: TopicRelationFilter | undefined;
-    SeasonSeries?: SeasonSeriesRelationFilter | undefined;
-    Episode?: EpisodeRelationFilter | undefined;
+    Experience?: ExperienceRelationFilter | undefined;
+    experienceId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

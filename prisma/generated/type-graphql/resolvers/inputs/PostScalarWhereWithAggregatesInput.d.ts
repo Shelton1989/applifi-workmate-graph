@@ -17,9 +17,7 @@ export declare class PostScalarWhereWithAggregatesInput {
     isCommentsEnabled?: BoolWithAggregatesFilter | undefined;
     canBeCounted?: BoolWithAggregatesFilter | undefined;
     authorId?: StringWithAggregatesFilter | undefined;
-    topicId?: StringNullableWithAggregatesFilter | undefined;
-    seasonSeriesId?: StringNullableWithAggregatesFilter | undefined;
-    episodeId?: StringNullableWithAggregatesFilter | undefined;
+    experienceId?: StringNullableWithAggregatesFilter | undefined;
     postLink?: StringNullableWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;

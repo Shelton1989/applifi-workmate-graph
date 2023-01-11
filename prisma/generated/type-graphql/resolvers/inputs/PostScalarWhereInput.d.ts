@@ -17,9 +17,7 @@ export declare class PostScalarWhereInput {
     isCommentsEnabled?: BoolFilter | undefined;
     canBeCounted?: BoolFilter | undefined;
     authorId?: StringFilter | undefined;
-    topicId?: StringNullableFilter | undefined;
-    seasonSeriesId?: StringNullableFilter | undefined;
-    episodeId?: StringNullableFilter | undefined;
+    experienceId?: StringNullableFilter | undefined;
     postLink?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;

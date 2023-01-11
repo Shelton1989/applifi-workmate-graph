@@ -1,9 +1,10 @@
 export declare class UserMaxAggregate {
+    tenantId: string | null;
     uid: string | null;
+    uuid: string | null;
     id: string | null;
     username: string | null;
     email: string | null;
-    role: "SUPER_ADMIN" | "ADMIN" | "CRITIC" | "USER" | null;
     firstName: string | null;
     lastName: string | null;
     avatar: string | null;

@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateExperienceAvailabilityArgs } from "./args/AggregateExperienceAvailabilityArgs";
+import { CreateExperienceAvailabilityArgs } from "./args/CreateExperienceAvailabilityArgs";
+import { CreateManyExperienceAvailabilityArgs } from "./args/CreateManyExperienceAvailabilityArgs";
+import { DeleteExperienceAvailabilityArgs } from "./args/DeleteExperienceAvailabilityArgs";
+import { DeleteManyExperienceAvailabilityArgs } from "./args/DeleteManyExperienceAvailabilityArgs";
+import { FindFirstExperienceAvailabilityArgs } from "./args/FindFirstExperienceAvailabilityArgs";
+import { FindManyExperienceAvailabilityArgs } from "./args/FindManyExperienceAvailabilityArgs";
+import { FindUniqueExperienceAvailabilityArgs } from "./args/FindUniqueExperienceAvailabilityArgs";
+import { GroupByExperienceAvailabilityArgs } from "./args/GroupByExperienceAvailabilityArgs";
+import { UpdateExperienceAvailabilityArgs } from "./args/UpdateExperienceAvailabilityArgs";
+import { UpdateManyExperienceAvailabilityArgs } from "./args/UpdateManyExperienceAvailabilityArgs";
+import { UpsertExperienceAvailabilityArgs } from "./args/UpsertExperienceAvailabilityArgs";
+import { ExperienceAvailability } from "../../../models/ExperienceAvailability";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateExperienceAvailability } from "../../outputs/AggregateExperienceAvailability";
+import { ExperienceAvailabilityGroupBy } from "../../outputs/ExperienceAvailabilityGroupBy";
+export declare class ExperienceAvailabilityCrudResolver {
+    experienceAvailability(ctx: any, info: GraphQLResolveInfo, args: FindUniqueExperienceAvailabilityArgs): Promise<ExperienceAvailability | null>;
+    findFirstExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: FindFirstExperienceAvailabilityArgs): Promise<ExperienceAvailability | null>;
+    experienceAvailabilities(ctx: any, info: GraphQLResolveInfo, args: FindManyExperienceAvailabilityArgs): Promise<ExperienceAvailability[]>;
+    createExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: CreateExperienceAvailabilityArgs): Promise<ExperienceAvailability>;
+    createManyExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: CreateManyExperienceAvailabilityArgs): Promise<AffectedRowsOutput>;
+    deleteExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: DeleteExperienceAvailabilityArgs): Promise<ExperienceAvailability | null>;
+    updateExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: UpdateExperienceAvailabilityArgs): Promise<ExperienceAvailability | null>;
+    deleteManyExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: DeleteManyExperienceAvailabilityArgs): Promise<AffectedRowsOutput>;
+    updateManyExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: UpdateManyExperienceAvailabilityArgs): Promise<AffectedRowsOutput>;
+    upsertExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: UpsertExperienceAvailabilityArgs): Promise<ExperienceAvailability>;
+    aggregateExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: AggregateExperienceAvailabilityArgs): Promise<AggregateExperienceAvailability>;
+    groupByExperienceAvailability(ctx: any, info: GraphQLResolveInfo, args: GroupByExperienceAvailabilityArgs): Promise<ExperienceAvailabilityGroupBy[]>;
+}

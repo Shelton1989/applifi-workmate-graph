@@ -1,13 +1,10 @@
 import { CommentRelationFilter } from "../inputs/CommentRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumREACTION_TYPEFilter } from "../inputs/EnumREACTION_TYPEFilter";
-import { EpisodeRelationFilter } from "../inputs/EpisodeRelationFilter";
 import { PostRelationFilter } from "../inputs/PostRelationFilter";
 import { ReplyRelationFilter } from "../inputs/ReplyRelationFilter";
-import { SeasonSeriesRelationFilter } from "../inputs/SeasonSeriesRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
-import { TopicRelationFilter } from "../inputs/TopicRelationFilter";
 import { UserRelationFilter } from "../inputs/UserRelationFilter";
 export declare class ReactionWhereInput {
     AND?: ReactionWhereInput[] | undefined;
@@ -23,12 +20,6 @@ export declare class ReactionWhereInput {
     replyId?: StringNullableFilter | undefined;
     Author?: UserRelationFilter | undefined;
     authorId?: StringFilter | undefined;
-    Topic?: TopicRelationFilter | undefined;
-    topicId?: StringNullableFilter | undefined;
-    SeasonSeries?: SeasonSeriesRelationFilter | undefined;
-    seasonSeriesId?: StringNullableFilter | undefined;
-    Episode?: EpisodeRelationFilter | undefined;
-    episodeId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

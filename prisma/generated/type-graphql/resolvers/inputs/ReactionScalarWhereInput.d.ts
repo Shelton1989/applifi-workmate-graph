@@ -12,9 +12,6 @@ export declare class ReactionScalarWhereInput {
     commentId?: StringNullableFilter | undefined;
     replyId?: StringNullableFilter | undefined;
     authorId?: StringFilter | undefined;
-    topicId?: StringNullableFilter | undefined;
-    seasonSeriesId?: StringNullableFilter | undefined;
-    episodeId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

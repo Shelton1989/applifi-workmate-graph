@@ -1,6 +1,7 @@
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
 import { FloatWithAggregatesFilter } from "../inputs/FloatWithAggregatesFilter";
 import { IntNullableWithAggregatesFilter } from "../inputs/IntNullableWithAggregatesFilter";
+import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
 import { StringWithAggregatesFilter } from "../inputs/StringWithAggregatesFilter";
 export declare class AggregateRatingScalarWhereWithAggregatesInput {
     AND?: AggregateRatingScalarWhereWithAggregatesInput[] | undefined;
@@ -11,6 +12,7 @@ export declare class AggregateRatingScalarWhereWithAggregatesInput {
     countedPosts?: IntNullableWithAggregatesFilter | undefined;
     allPosts?: IntNullableWithAggregatesFilter | undefined;
     ratingCount?: IntNullableWithAggregatesFilter | undefined;
+    experienceId?: StringNullableWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

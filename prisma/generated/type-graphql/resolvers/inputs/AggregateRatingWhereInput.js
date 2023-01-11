@@ -5,12 +5,11 @@ exports.AggregateRatingWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
-const EpisodeRelationFilter_1 = require("../inputs/EpisodeRelationFilter");
+const ExperienceRelationFilter_1 = require("../inputs/ExperienceRelationFilter");
 const FloatFilter_1 = require("../inputs/FloatFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
-const SeasonSeriesRelationFilter_1 = require("../inputs/SeasonSeriesRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
-const TopicRelationFilter_1 = require("../inputs/TopicRelationFilter");
+const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let AggregateRatingWhereInput = AggregateRatingWhereInput_1 = class AggregateRatingWhereInput {
 };
 tslib_1.__decorate([
@@ -62,23 +61,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", IntNullableFilter_1.IntNullableFilter)
 ], AggregateRatingWhereInput.prototype, "ratingCount", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TopicRelationFilter_1.TopicRelationFilter, {
+    TypeGraphQL.Field(_type => ExperienceRelationFilter_1.ExperienceRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", TopicRelationFilter_1.TopicRelationFilter)
-], AggregateRatingWhereInput.prototype, "Topic", void 0);
+    tslib_1.__metadata("design:type", ExperienceRelationFilter_1.ExperienceRelationFilter)
+], AggregateRatingWhereInput.prototype, "Experience", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SeasonSeriesRelationFilter_1.SeasonSeriesRelationFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", SeasonSeriesRelationFilter_1.SeasonSeriesRelationFilter)
-], AggregateRatingWhereInput.prototype, "SeasonSeries", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EpisodeRelationFilter_1.EpisodeRelationFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", EpisodeRelationFilter_1.EpisodeRelationFilter)
-], AggregateRatingWhereInput.prototype, "Episode", void 0);
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], AggregateRatingWhereInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

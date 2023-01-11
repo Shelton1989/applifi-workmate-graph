@@ -5,9 +5,9 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 var MEDIA_TYPE;
 (function (MEDIA_TYPE) {
-    MEDIA_TYPE["TOPIC"] = "TOPIC";
-    MEDIA_TYPE["SEASON_SERIES"] = "SEASON_SERIES";
-    MEDIA_TYPE["EPISODE"] = "EPISODE";
+    MEDIA_TYPE["IMAGE"] = "IMAGE";
+    MEDIA_TYPE["CAROUSEL"] = "CAROUSEL";
+    MEDIA_TYPE["VIDEO"] = "VIDEO";
 })(MEDIA_TYPE = exports.MEDIA_TYPE || (exports.MEDIA_TYPE = {}));
 TypeGraphQL.registerEnumType(MEDIA_TYPE, {
     name: "MEDIA_TYPE",

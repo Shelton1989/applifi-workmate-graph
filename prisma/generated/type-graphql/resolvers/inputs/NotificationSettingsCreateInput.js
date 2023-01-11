@@ -17,6 +17,30 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
+], NotificationSettingsCreateInput.prototype, "newArrivals", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], NotificationSettingsCreateInput.prototype, "bookingOrOrderUpdates", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], NotificationSettingsCreateInput.prototype, "promotions", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], NotificationSettingsCreateInput.prototype, "saleAlerts", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Boolean)
 ], NotificationSettingsCreateInput.prototype, "newContentILike", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {

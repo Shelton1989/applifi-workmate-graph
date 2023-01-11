@@ -6,6 +6,10 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 var NotificationSettingsScalarFieldEnum;
 (function (NotificationSettingsScalarFieldEnum) {
     NotificationSettingsScalarFieldEnum["id"] = "id";
+    NotificationSettingsScalarFieldEnum["newArrivals"] = "newArrivals";
+    NotificationSettingsScalarFieldEnum["bookingOrOrderUpdates"] = "bookingOrOrderUpdates";
+    NotificationSettingsScalarFieldEnum["promotions"] = "promotions";
+    NotificationSettingsScalarFieldEnum["saleAlerts"] = "saleAlerts";
     NotificationSettingsScalarFieldEnum["newContentILike"] = "newContentILike";
     NotificationSettingsScalarFieldEnum["commentsOnMyReviews"] = "commentsOnMyReviews";
     NotificationSettingsScalarFieldEnum["repliesToMyComments"] = "repliesToMyComments";

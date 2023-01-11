@@ -1,26 +1,30 @@
-import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperationsInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
-import { NullableEnumROLEFieldUpdateOperationsInput } from "../inputs/NullableEnumROLEFieldUpdateOperationsInput";
+import { NullableBoolFieldUpdateOperationsInput } from "../inputs/NullableBoolFieldUpdateOperationsInput";
+import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
+import { UserUpdateexperienceIdsInput } from "../inputs/UserUpdateexperienceIdsInput";
 import { UserUpdatefollowerIdsInput } from "../inputs/UserUpdatefollowerIdsInput";
 import { UserUpdatefollowingIdsInput } from "../inputs/UserUpdatefollowingIdsInput";
+import { UserUpdaterolesInput } from "../inputs/UserUpdaterolesInput";
 export declare class UserUpdateManyMutationInput {
     uid?: StringFieldUpdateOperationsInput | undefined;
+    uuid?: StringFieldUpdateOperationsInput | undefined;
     username?: StringFieldUpdateOperationsInput | undefined;
     email?: StringFieldUpdateOperationsInput | undefined;
-    role?: NullableEnumROLEFieldUpdateOperationsInput | undefined;
+    roles?: UserUpdaterolesInput | undefined;
     firstName?: NullableStringFieldUpdateOperationsInput | undefined;
     lastName?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;
     coverImage?: NullableStringFieldUpdateOperationsInput | undefined;
-    dateOfBirth?: DateTimeFieldUpdateOperationsInput | undefined;
+    dateOfBirth?: NullableDateTimeFieldUpdateOperationsInput | undefined;
     biography?: NullableStringFieldUpdateOperationsInput | undefined;
-    hasAcceptedTerms?: BoolFieldUpdateOperationsInput | undefined;
-    isFirstTimeUser?: BoolFieldUpdateOperationsInput | undefined;
-    isVerified?: BoolFieldUpdateOperationsInput | undefined;
+    hasAcceptedTerms?: NullableBoolFieldUpdateOperationsInput | undefined;
+    isFirstTimeUser?: NullableBoolFieldUpdateOperationsInput | undefined;
+    isVerified?: NullableBoolFieldUpdateOperationsInput | undefined;
     followingIds?: UserUpdatefollowingIdsInput | undefined;
     followerIds?: UserUpdatefollowerIdsInput | undefined;
+    experienceIds?: UserUpdateexperienceIdsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

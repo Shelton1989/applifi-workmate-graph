@@ -1,9 +1,10 @@
 export declare class UserMaxOrderByAggregateInput {
+    tenantId?: "asc" | "desc" | undefined;
     uid?: "asc" | "desc" | undefined;
+    uuid?: "asc" | "desc" | undefined;
     id?: "asc" | "desc" | undefined;
     username?: "asc" | "desc" | undefined;
     email?: "asc" | "desc" | undefined;
-    role?: "asc" | "desc" | undefined;
     firstName?: "asc" | "desc" | undefined;
     lastName?: "asc" | "desc" | undefined;
     avatar?: "asc" | "desc" | undefined;

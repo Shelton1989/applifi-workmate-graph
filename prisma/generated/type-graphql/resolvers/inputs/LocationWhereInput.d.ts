@@ -1,0 +1,32 @@
+import { BoolFilter } from "../inputs/BoolFilter";
+import { DateTimeFilter } from "../inputs/DateTimeFilter";
+import { EnumADDRESS_TYPEFilter } from "../inputs/EnumADDRESS_TYPEFilter";
+import { ExperienceRelationFilter } from "../inputs/ExperienceRelationFilter";
+import { FloatFilter } from "../inputs/FloatFilter";
+import { StringFilter } from "../inputs/StringFilter";
+import { StringNullableFilter } from "../inputs/StringNullableFilter";
+import { TenantRelationFilter } from "../inputs/TenantRelationFilter";
+export declare class LocationWhereInput {
+    AND?: LocationWhereInput[] | undefined;
+    OR?: LocationWhereInput[] | undefined;
+    NOT?: LocationWhereInput[] | undefined;
+    id?: StringFilter | undefined;
+    longitude?: FloatFilter | undefined;
+    latitude?: FloatFilter | undefined;
+    googleMapsUrl?: StringFilter | undefined;
+    googlePlacesId?: StringFilter | undefined;
+    type?: EnumADDRESS_TYPEFilter | undefined;
+    line1?: StringFilter | undefined;
+    line2?: StringFilter | undefined;
+    city?: StringFilter | undefined;
+    district?: StringFilter | undefined;
+    country?: StringFilter | undefined;
+    code?: StringFilter | undefined;
+    isDefault?: BoolFilter | undefined;
+    Experience?: ExperienceRelationFilter | undefined;
+    experienceId?: StringNullableFilter | undefined;
+    Tenant?: TenantRelationFilter | undefined;
+    tenantId?: StringNullableFilter | undefined;
+    createdAt?: DateTimeFilter | undefined;
+    updatedAt?: DateTimeFilter | undefined;
+}

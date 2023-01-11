@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserMaxAggregate = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const ROLE_1 = require("../../enums/ROLE");
 let UserMaxAggregate = class UserMaxAggregate {
 };
 tslib_1.__decorate([
@@ -11,7 +10,19 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
+], UserMaxAggregate.prototype, "tenantId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
 ], UserMaxAggregate.prototype, "uid", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], UserMaxAggregate.prototype, "uuid", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true
@@ -30,12 +41,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], UserMaxAggregate.prototype, "email", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ROLE_1.ROLE, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], UserMaxAggregate.prototype, "role", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

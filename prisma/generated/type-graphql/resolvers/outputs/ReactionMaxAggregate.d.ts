@@ -5,9 +5,6 @@ export declare class ReactionMaxAggregate {
     commentId: string | null;
     replyId: string | null;
     authorId: string | null;
-    topicId: string | null;
-    seasonSeriesId: string | null;
-    episodeId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }

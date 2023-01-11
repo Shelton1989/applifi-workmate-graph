@@ -1,0 +1,12 @@
+export { AggregateTenantArgs } from "./AggregateTenantArgs";
+export { CreateManyTenantArgs } from "./CreateManyTenantArgs";
+export { CreateTenantArgs } from "./CreateTenantArgs";
+export { DeleteManyTenantArgs } from "./DeleteManyTenantArgs";
+export { DeleteTenantArgs } from "./DeleteTenantArgs";
+export { FindFirstTenantArgs } from "./FindFirstTenantArgs";
+export { FindManyTenantArgs } from "./FindManyTenantArgs";
+export { FindUniqueTenantArgs } from "./FindUniqueTenantArgs";
+export { GroupByTenantArgs } from "./GroupByTenantArgs";
+export { UpdateManyTenantArgs } from "./UpdateManyTenantArgs";
+export { UpdateTenantArgs } from "./UpdateTenantArgs";
+export { UpsertTenantArgs } from "./UpsertTenantArgs";

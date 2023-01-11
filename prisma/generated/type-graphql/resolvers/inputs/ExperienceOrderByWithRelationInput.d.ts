@@ -1,0 +1,31 @@
+import { AggregateRatingOrderByWithRelationInput } from "../inputs/AggregateRatingOrderByWithRelationInput";
+import { ExperienceAvailabilityOrderByRelationAggregateInput } from "../inputs/ExperienceAvailabilityOrderByRelationAggregateInput";
+import { LocationOrderByRelationAggregateInput } from "../inputs/LocationOrderByRelationAggregateInput";
+import { PostOrderByRelationAggregateInput } from "../inputs/PostOrderByRelationAggregateInput";
+import { PriceOrderByRelationAggregateInput } from "../inputs/PriceOrderByRelationAggregateInput";
+import { TenantOrderByWithRelationInput } from "../inputs/TenantOrderByWithRelationInput";
+import { UserOrderByRelationAggregateInput } from "../inputs/UserOrderByRelationAggregateInput";
+export declare class ExperienceOrderByWithRelationInput {
+    id?: "asc" | "desc" | undefined;
+    Tenant?: TenantOrderByWithRelationInput | undefined;
+    tenantId?: "asc" | "desc" | undefined;
+    productLink?: "asc" | "desc" | undefined;
+    stripeProductId?: "asc" | "desc" | undefined;
+    title?: "asc" | "desc" | undefined;
+    description?: "asc" | "desc" | undefined;
+    category?: "asc" | "desc" | undefined;
+    Availability?: ExperienceAvailabilityOrderByRelationAggregateInput | undefined;
+    photo?: "asc" | "desc" | undefined;
+    gallery?: "asc" | "desc" | undefined;
+    location?: "asc" | "desc" | undefined;
+    duration?: "asc" | "desc" | undefined;
+    AggregatedRating?: AggregateRatingOrderByWithRelationInput | undefined;
+    publishStatus?: "asc" | "desc" | undefined;
+    LikedBy?: UserOrderByRelationAggregateInput | undefined;
+    likedByIds?: "asc" | "desc" | undefined;
+    Locations?: LocationOrderByRelationAggregateInput | undefined;
+    Price?: PriceOrderByRelationAggregateInput | undefined;
+    Posts?: PostOrderByRelationAggregateInput | undefined;
+    createdAt?: "asc" | "desc" | undefined;
+    updatedAt?: "asc" | "desc" | undefined;
+}

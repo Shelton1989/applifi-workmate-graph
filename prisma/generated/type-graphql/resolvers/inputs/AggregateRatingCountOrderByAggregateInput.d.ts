@@ -4,6 +4,7 @@ export declare class AggregateRatingCountOrderByAggregateInput {
     countedPosts?: "asc" | "desc" | undefined;
     allPosts?: "asc" | "desc" | undefined;
     ratingCount?: "asc" | "desc" | undefined;
+    experienceId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

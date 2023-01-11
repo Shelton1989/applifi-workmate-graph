@@ -46,24 +46,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], ReactionGroupBy.prototype, "authorId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], ReactionGroupBy.prototype, "topicId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], ReactionGroupBy.prototype, "seasonSeriesId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], ReactionGroupBy.prototype, "episodeId", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: false
     }),

@@ -5,7 +5,7 @@ import { TopicListsMinAggregate } from "../outputs/TopicListsMinAggregate";
 import { TopicListsSumAggregate } from "../outputs/TopicListsSumAggregate";
 export declare class TopicListsGroupBy {
     id: string;
-    type: "TRENDING" | "LATEST" | "POPULAR";
+    type: "TRENDING" | "LATEST" | "POPULAR" | "FEATURED";
     title: string;
     lists: number[] | null;
     createdAt: Date;

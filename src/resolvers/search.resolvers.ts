@@ -1,18 +1,18 @@
 import { Context } from "../context";
-import { Topic, TopicOrderByWithRelationInput, FindManyTopicResolver, ReactionWhereInput } from "../../prisma/generated/type-graphql";
+import { Experience, ExperienceOrderByWithRelationInput } from "../../prisma/generated/type-graphql";
 import { Arg, Ctx, Query, Resolver } from "type-graphql";
 import moment from "moment";
 
-@Resolver(of => Topic)
+@Resolver(of => Experience)
 export class TopicResolver {
 
-  @Query(() => [Topic])
+  @Query(() => [Experience])
   async searchTopics(
     @Ctx() { prisma }: Context,
     @Arg("search") search: string,
     @Arg("take", { defaultValue: 20, nullable: true }) take: number,
     @Arg("skip", { defaultValue: 0, nullable: true }) skip: number,
-    @Arg("orderBy", { nullable: true, defaultValue: {} }) orderBy: TopicOrderByWithRelationInput,
+    @Arg("orderBy", { nullable: true, defaultValue: {} }) orderBy: ExperienceOrderByWithRelationInput,
   ) {
     const should = [
       {
@@ -63,7 +63,7 @@ export class TopicResolver {
       }}})
     }
 
-    const results = await prisma.topic.aggregateRaw({
+    const results = await prisma.experience.aggregateRaw({
       pipeline: [
         {
           $search: {
@@ -84,7 +84,7 @@ export class TopicResolver {
 
     const ids = results as unknown as any[] || []
 
-    return await prisma.topic.findMany({
+    return await prisma.experience.findMany({
       where: {
         id: {
           in: ids.map((id: any) => id._id)

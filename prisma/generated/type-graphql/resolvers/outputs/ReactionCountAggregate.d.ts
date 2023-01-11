@@ -5,9 +5,6 @@ export declare class ReactionCountAggregate {
     commentId: number;
     replyId: number;
     authorId: number;
-    topicId: number;
-    seasonSeriesId: number;
-    episodeId: number;
     createdAt: number;
     updatedAt: number;
     _all: number;

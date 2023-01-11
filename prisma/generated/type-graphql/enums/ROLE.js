@@ -7,8 +7,10 @@ var ROLE;
 (function (ROLE) {
     ROLE["SUPER_ADMIN"] = "SUPER_ADMIN";
     ROLE["ADMIN"] = "ADMIN";
-    ROLE["CRITIC"] = "CRITIC";
     ROLE["USER"] = "USER";
+    ROLE["WORKSPACE_OWNER"] = "WORKSPACE_OWNER";
+    ROLE["WORKSPACE_ADMIN"] = "WORKSPACE_ADMIN";
+    ROLE["WORKSPACE_USER"] = "WORKSPACE_USER";
 })(ROLE = exports.ROLE || (exports.ROLE = {}));
 TypeGraphQL.registerEnumType(ROLE, {
     name: "ROLE",

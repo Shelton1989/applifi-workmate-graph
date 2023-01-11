@@ -10,6 +10,7 @@ var AggregateRatingScalarFieldEnum;
     AggregateRatingScalarFieldEnum["countedPosts"] = "countedPosts";
     AggregateRatingScalarFieldEnum["allPosts"] = "allPosts";
     AggregateRatingScalarFieldEnum["ratingCount"] = "ratingCount";
+    AggregateRatingScalarFieldEnum["experienceId"] = "experienceId";
     AggregateRatingScalarFieldEnum["createdAt"] = "createdAt";
     AggregateRatingScalarFieldEnum["updatedAt"] = "updatedAt";
 })(AggregateRatingScalarFieldEnum = exports.AggregateRatingScalarFieldEnum || (exports.AggregateRatingScalarFieldEnum = {}));

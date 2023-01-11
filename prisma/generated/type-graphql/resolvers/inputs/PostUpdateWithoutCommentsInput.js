@@ -6,13 +6,11 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BoolFieldUpdateOperationsInput_1 = require("../inputs/BoolFieldUpdateOperationsInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const EnumMEDIA_TYPEFieldUpdateOperationsInput_1 = require("../inputs/EnumMEDIA_TYPEFieldUpdateOperationsInput");
-const EpisodeUpdateOneWithoutPostsInput_1 = require("../inputs/EpisodeUpdateOneWithoutPostsInput");
+const ExperienceUpdateOneWithoutPostsInput_1 = require("../inputs/ExperienceUpdateOneWithoutPostsInput");
 const FloatFieldUpdateOperationsInput_1 = require("../inputs/FloatFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const PostUpdatemediaUrlInput_1 = require("../inputs/PostUpdatemediaUrlInput");
 const ReactionUpdateManyWithoutPostInput_1 = require("../inputs/ReactionUpdateManyWithoutPostInput");
-const SeasonSeriesUpdateOneWithoutPostsInput_1 = require("../inputs/SeasonSeriesUpdateOneWithoutPostsInput");
-const TopicUpdateOneWithoutPostsInput_1 = require("../inputs/TopicUpdateOneWithoutPostsInput");
 const UserUpdateOneRequiredWithoutPostsInput_1 = require("../inputs/UserUpdateOneRequiredWithoutPostsInput");
 let PostUpdateWithoutCommentsInput = class PostUpdateWithoutCommentsInput {
 };
@@ -59,29 +57,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", UserUpdateOneRequiredWithoutPostsInput_1.UserUpdateOneRequiredWithoutPostsInput)
 ], PostUpdateWithoutCommentsInput.prototype, "Author", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ExperienceUpdateOneWithoutPostsInput_1.ExperienceUpdateOneWithoutPostsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ExperienceUpdateOneWithoutPostsInput_1.ExperienceUpdateOneWithoutPostsInput)
+], PostUpdateWithoutCommentsInput.prototype, "Experience", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => ReactionUpdateManyWithoutPostInput_1.ReactionUpdateManyWithoutPostInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", ReactionUpdateManyWithoutPostInput_1.ReactionUpdateManyWithoutPostInput)
 ], PostUpdateWithoutCommentsInput.prototype, "Reactions", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TopicUpdateOneWithoutPostsInput_1.TopicUpdateOneWithoutPostsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", TopicUpdateOneWithoutPostsInput_1.TopicUpdateOneWithoutPostsInput)
-], PostUpdateWithoutCommentsInput.prototype, "Topic", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SeasonSeriesUpdateOneWithoutPostsInput_1.SeasonSeriesUpdateOneWithoutPostsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", SeasonSeriesUpdateOneWithoutPostsInput_1.SeasonSeriesUpdateOneWithoutPostsInput)
-], PostUpdateWithoutCommentsInput.prototype, "SeasonSeries", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EpisodeUpdateOneWithoutPostsInput_1.EpisodeUpdateOneWithoutPostsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", EpisodeUpdateOneWithoutPostsInput_1.EpisodeUpdateOneWithoutPostsInput)
-], PostUpdateWithoutCommentsInput.prototype, "Episode", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
         nullable: true

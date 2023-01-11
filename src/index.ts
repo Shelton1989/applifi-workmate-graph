@@ -14,7 +14,7 @@ import { Allow, Max, Min } from "class-validator";
 
 // Custom resolvers
 import { PostResolver } from './resolvers/posts.resolvers';
-import { TopicResolver } from "./resolvers/search.resolvers";
+// import { TopicResolver } from "./resolvers/search.resolvers";
 
 const userCreateOrUpdateOperations = [
   "createPostReview",
@@ -46,7 +46,7 @@ const environment = process.env.ENVIRONMENT || "dev";
 const getCorsConfig = () => { 
   if (environment === "prod") {
     return ({
-      "origin": [/cinnaview\.com/, /a\.run\.app/],
+      "origin": [/trottar\.com/, /a\.run\.app/],
       "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
       "preflightContinue": false,
       "optionsSuccessStatus": 204
@@ -79,32 +79,42 @@ applyResolversEnhanceMap({
     deleteUser: [Authorized()],
     deleteManyUser: [Authorized()],
   },
+  Currency: {
+    _all: [Authorized(ROLE.ADMIN)]
+  },
+  AggregateRating: {
+    _all: [Authorized(ROLE.ADMIN)]
+  },
+  Tenant: {
+    createTenant: [Authorized()],
+    updateTenant: [Authorized(ROLE.SUPER_ADMIN, ROLE.ADMIN, ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
+    deleteTenant: [Authorized(ROLE.SUPER_ADMIN, ROLE.ADMIN, ROLE.WORKSPACE_OWNER)],
+    createManyTenant: [Authorized(ROLE.SUPER_ADMIN, ROLE.ADMIN)],
+    updateManyTenant: [Authorized(ROLE.SUPER_ADMIN, ROLE.ADMIN)],
+    deleteManyTenant: [Authorized(ROLE.SUPER_ADMIN, ROLE.ADMIN)],
+  },
   NotificationSettings: {
     _all: [Authorized()]
   },
-  Topic: {
-    createTopic: [Authorized(ROLE.ADMIN)],
-    updateTopic: [Authorized(ROLE.ADMIN)],
-    createManyTopic: [Authorized(ROLE.ADMIN)],
-    updateManyTopic: [Authorized(ROLE.ADMIN)],
-    deleteTopic: [Authorized(ROLE.ADMIN)],
-    deleteManyTopic: [Authorized(ROLE.ADMIN)],
+  BookingOrder: {
+    createBookingOrder: [Authorized()],
+    updateBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
+    deleteBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
+    createManyBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
+    updateManyBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
+    deleteManyBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
   },
-  SeasonSeries: {
-    createSeasonSeries: [Authorized(ROLE.ADMIN)],
-    updateSeasonSeries: [Authorized(ROLE.ADMIN)],
-    createManySeasonSeries: [Authorized(ROLE.ADMIN)],
-    updateManySeasonSeries: [Authorized(ROLE.ADMIN)],
-    deleteSeasonSeries: [Authorized(ROLE.ADMIN)],
-    deleteManySeasonSeries: [Authorized(ROLE.ADMIN)],
+  BookingOrderLineItem: {
+    _all: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
   },
-  Episode: {
-    createEpisode: [Authorized(ROLE.ADMIN)],
-    updateEpisode: [Authorized(ROLE.ADMIN)],
-    createManyEpisode: [Authorized(ROLE.ADMIN)],
-    updateManyEpisode: [Authorized(ROLE.ADMIN)],
-    deleteEpisode: [Authorized(ROLE.ADMIN)],
-    deleteManyEpisode: [Authorized(ROLE.ADMIN)],
+  Experience: {
+    createExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
+    updateExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
+    deleteExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
+    createManyExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
+    updateManyExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
+    deleteManyExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
+    upsertExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
   },
   Post: {
     createPost: [Authorized()],
@@ -168,7 +178,7 @@ const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles)
       return true;
     }
 
-    if (roles.length === 0 || (user?.role && roles.includes(user?.role))) {
+    if (roles.length === 0 || (user?.roles.length && roles.some(r => user?.roles.map(i => i.toString()).includes(r)))) {
       return true;
     }
 
@@ -203,7 +213,7 @@ const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles)
 (async () => {
   const schema = await buildSchema({
     authChecker,
-    resolvers: [PostResolver, TopicResolver, ...resolvers],
+    resolvers: [PostResolver, ...resolvers],
     validate: false,
   });
 

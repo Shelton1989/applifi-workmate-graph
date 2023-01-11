@@ -1,17 +1,23 @@
+import { BookingOrderOrderByRelationAggregateInput } from "../inputs/BookingOrderOrderByRelationAggregateInput";
 import { CommentOrderByRelationAggregateInput } from "../inputs/CommentOrderByRelationAggregateInput";
+import { ExperienceOrderByRelationAggregateInput } from "../inputs/ExperienceOrderByRelationAggregateInput";
 import { NotificationOrderByRelationAggregateInput } from "../inputs/NotificationOrderByRelationAggregateInput";
 import { NotificationSettingsOrderByWithRelationInput } from "../inputs/NotificationSettingsOrderByWithRelationInput";
 import { PostOrderByRelationAggregateInput } from "../inputs/PostOrderByRelationAggregateInput";
 import { ReactionOrderByRelationAggregateInput } from "../inputs/ReactionOrderByRelationAggregateInput";
 import { ReplyOrderByRelationAggregateInput } from "../inputs/ReplyOrderByRelationAggregateInput";
 import { RequestOrderByRelationAggregateInput } from "../inputs/RequestOrderByRelationAggregateInput";
+import { TenantOrderByWithRelationInput } from "../inputs/TenantOrderByWithRelationInput";
 import { UserOrderByRelationAggregateInput } from "../inputs/UserOrderByRelationAggregateInput";
 export declare class UserOrderByWithRelationInput {
+    Tenant?: TenantOrderByWithRelationInput | undefined;
+    tenantId?: "asc" | "desc" | undefined;
     uid?: "asc" | "desc" | undefined;
+    uuid?: "asc" | "desc" | undefined;
     id?: "asc" | "desc" | undefined;
     username?: "asc" | "desc" | undefined;
     email?: "asc" | "desc" | undefined;
-    role?: "asc" | "desc" | undefined;
+    roles?: "asc" | "desc" | undefined;
     firstName?: "asc" | "desc" | undefined;
     lastName?: "asc" | "desc" | undefined;
     avatar?: "asc" | "desc" | undefined;
@@ -28,11 +34,14 @@ export declare class UserOrderByWithRelationInput {
     followingIds?: "asc" | "desc" | undefined;
     Followers?: UserOrderByRelationAggregateInput | undefined;
     followerIds?: "asc" | "desc" | undefined;
+    LikedExperiences?: ExperienceOrderByRelationAggregateInput | undefined;
+    experienceIds?: "asc" | "desc" | undefined;
     Requests?: RequestOrderByRelationAggregateInput | undefined;
     Posts?: PostOrderByRelationAggregateInput | undefined;
     Comments?: CommentOrderByRelationAggregateInput | undefined;
     Replies?: ReplyOrderByRelationAggregateInput | undefined;
     Reactions?: ReactionOrderByRelationAggregateInput | undefined;
+    Bookings?: BookingOrderOrderByRelationAggregateInput | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

@@ -1,24 +1,20 @@
 import { CommentCreateNestedManyWithoutPostInput } from "../inputs/CommentCreateNestedManyWithoutPostInput";
-import { EpisodeCreateNestedOneWithoutPostsInput } from "../inputs/EpisodeCreateNestedOneWithoutPostsInput";
+import { ExperienceCreateNestedOneWithoutPostsInput } from "../inputs/ExperienceCreateNestedOneWithoutPostsInput";
 import { PostCreatemediaUrlInput } from "../inputs/PostCreatemediaUrlInput";
 import { ReactionCreateNestedManyWithoutPostInput } from "../inputs/ReactionCreateNestedManyWithoutPostInput";
-import { SeasonSeriesCreateNestedOneWithoutPostsInput } from "../inputs/SeasonSeriesCreateNestedOneWithoutPostsInput";
-import { TopicCreateNestedOneWithoutPostsInput } from "../inputs/TopicCreateNestedOneWithoutPostsInput";
 import { UserCreateNestedOneWithoutPostsInput } from "../inputs/UserCreateNestedOneWithoutPostsInput";
 export declare class PostCreateInput {
     id?: string | undefined;
-    type: "TOPIC" | "SEASON_SERIES" | "EPISODE";
+    type?: "IMAGE" | "CAROUSEL" | "VIDEO" | undefined;
     caption?: string | undefined;
     mediaUrl?: PostCreatemediaUrlInput | undefined;
     rating: number;
     isCommentsEnabled?: boolean | undefined;
     canBeCounted?: boolean | undefined;
     Author: UserCreateNestedOneWithoutPostsInput;
+    Experience?: ExperienceCreateNestedOneWithoutPostsInput | undefined;
     Comments?: CommentCreateNestedManyWithoutPostInput | undefined;
     Reactions?: ReactionCreateNestedManyWithoutPostInput | undefined;
-    Topic?: TopicCreateNestedOneWithoutPostsInput | undefined;
-    SeasonSeries?: SeasonSeriesCreateNestedOneWithoutPostsInput | undefined;
-    Episode?: EpisodeCreateNestedOneWithoutPostsInput | undefined;
     postLink?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

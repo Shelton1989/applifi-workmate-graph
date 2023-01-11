@@ -1,8 +1,7 @@
-import { Episode, MEDIA_TYPE, Post, PostCreateInput, PostUpdateInput, PostWhereUniqueInput, SeasonSeries, Topic } from "../../prisma/generated/type-graphql";
+import { Experience, Post, PostCreateInput } from "../../prisma/generated/type-graphql";
 import { Context } from "../context";
 import { Arg, Authorized, Ctx, Mutation, Resolver } from "type-graphql";
 import { prisma as prismaClient } from "../context";
-import moment from "moment";
 
 @Resolver(of => Post)
 export class PostResolver {
@@ -22,33 +21,17 @@ export class PostResolver {
     // TODO: set can be counted after NLP analysis
     let canBeCounted = true;
 
-    if (caption && caption?.split(/[!?.]/g).length <= 2) { 
+    if (caption && caption?.split(/[!?.]/g).length < 2) { 
       canBeCounted = false;
     }
 
-    let entityId: string = data.Topic?.connect?.id || data.SeasonSeries?.connect?.id || data.Episode?.connect?.id || "";
+    let entityId: string = data.Experience?.connect?.id || "";
 
     await prismaClient.$transaction(async (tx) => {
 
-      let entity: ((Topic | SeasonSeries | Episode) & { Posts: Post[]; }) | null;
+      let entity: ((Experience) & { Posts: Post[]; }) | null;
 
-      switch (type) {
-        case "TOPIC":
-          entity = await tx.topic.findUnique({ where: { id: entityId }, include: { Posts: true } } );
-          break;
-        case "SEASON_SERIES":
-          entity = await tx.seasonSeries.findUnique({ where: { id: entityId }, include: { Posts: true } });
-          break;
-        case "EPISODE":
-          entity = await tx.episode.findUnique({ where: { id: entityId }, include: { Posts: true } });
-          break;
-        default:
-          throw new Error("Invalid type")
-      }
-
-      if (moment(entity?.releaseDate).isAfter(moment())) {
-        canBeCounted = false;
-      }
+      entity = await tx.experience.findUnique({ where: { id: entityId }, include: { Posts: true } } )
 
       const posts = entity?.Posts || [];
 
@@ -80,19 +63,7 @@ export class PostResolver {
         }
       })
 
-      switch (type) {
-        case "TOPIC":
-          await tx.topic.update({ where: { id: entityId }, data: { aggregateRatingId: aggregateRating.id  } });
-          break;
-        case "SEASON_SERIES":
-          await tx.seasonSeries.update({ where: { id: entityId }, data: { aggregateRatingId: aggregateRating.id  } });
-          break;
-        case "EPISODE":
-          await tx.episode.update({ where: { id: entityId}, data: { aggregateRatingId: aggregateRating.id  } });
-          break;
-        default:
-          throw new Error("Invalid type")
-      }
+      await tx.experience.update({ where: { id: entityId }, data: { AggregatedRating: { connect: { id: aggregateRating.id } }  } })
   
     })
 

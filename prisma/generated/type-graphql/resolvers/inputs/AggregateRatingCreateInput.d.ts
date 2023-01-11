@@ -1,15 +1,11 @@
-import { EpisodeCreateNestedOneWithoutAggregateRatingInput } from "../inputs/EpisodeCreateNestedOneWithoutAggregateRatingInput";
-import { SeasonSeriesCreateNestedOneWithoutAggregateRatingInput } from "../inputs/SeasonSeriesCreateNestedOneWithoutAggregateRatingInput";
-import { TopicCreateNestedOneWithoutAggregateRatingInput } from "../inputs/TopicCreateNestedOneWithoutAggregateRatingInput";
+import { ExperienceCreateNestedOneWithoutAggregatedRatingInput } from "../inputs/ExperienceCreateNestedOneWithoutAggregatedRatingInput";
 export declare class AggregateRatingCreateInput {
     id?: string | undefined;
     ratingValue: number;
     countedPosts?: number | undefined;
     allPosts?: number | undefined;
     ratingCount?: number | undefined;
-    Topic?: TopicCreateNestedOneWithoutAggregateRatingInput | undefined;
-    SeasonSeries?: SeasonSeriesCreateNestedOneWithoutAggregateRatingInput | undefined;
-    Episode?: EpisodeCreateNestedOneWithoutAggregateRatingInput | undefined;
+    Experience?: ExperienceCreateNestedOneWithoutAggregatedRatingInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

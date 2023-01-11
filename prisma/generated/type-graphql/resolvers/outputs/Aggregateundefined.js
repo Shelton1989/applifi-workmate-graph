@@ -36,6 +36,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Number)
 ], Aggregateundefined.prototype, "ratingCount", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], Aggregateundefined.prototype, "experienceId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true
     }),

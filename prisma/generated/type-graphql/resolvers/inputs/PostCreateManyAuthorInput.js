@@ -15,7 +15,7 @@ tslib_1.__decorate([
 ], PostCreateManyAuthorInput.prototype, "id", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => MEDIA_TYPE_1.MEDIA_TYPE, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], PostCreateManyAuthorInput.prototype, "type", void 0);
@@ -54,19 +54,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], PostCreateManyAuthorInput.prototype, "topicId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], PostCreateManyAuthorInput.prototype, "seasonSeriesId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], PostCreateManyAuthorInput.prototype, "episodeId", void 0);
+], PostCreateManyAuthorInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true
