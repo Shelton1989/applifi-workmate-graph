@@ -17,9 +17,8 @@ export declare class ExperienceOrderByWithRelationInput {
     Availability?: ExperienceAvailabilityOrderByRelationAggregateInput | undefined;
     photo?: "asc" | "desc" | undefined;
     gallery?: "asc" | "desc" | undefined;
-    location?: "asc" | "desc" | undefined;
     duration?: "asc" | "desc" | undefined;
-    AggregatedRating?: AggregateRatingOrderByWithRelationInput | undefined;
+    AggregateRating?: AggregateRatingOrderByWithRelationInput | undefined;
     publishStatus?: "asc" | "desc" | undefined;
     LikedBy?: UserOrderByRelationAggregateInput | undefined;
     likedByIds?: "asc" | "desc" | undefined;

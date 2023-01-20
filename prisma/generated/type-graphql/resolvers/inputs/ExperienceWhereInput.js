@@ -6,10 +6,10 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AggregateRatingRelationFilter_1 = require("../inputs/AggregateRatingRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
-const EnumEXPERIENCE_CATEGORYFilter_1 = require("../inputs/EnumEXPERIENCE_CATEGORYFilter");
+const EnumEXPERIENCE_CATEGORYNullableFilter_1 = require("../inputs/EnumEXPERIENCE_CATEGORYNullableFilter");
 const EnumPUBLISH_STATUSFilter_1 = require("../inputs/EnumPUBLISH_STATUSFilter");
 const ExperienceAvailabilityListRelationFilter_1 = require("../inputs/ExperienceAvailabilityListRelationFilter");
-const IntFilter_1 = require("../inputs/IntFilter");
+const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const LocationListRelationFilter_1 = require("../inputs/LocationListRelationFilter");
 const PostListRelationFilter_1 = require("../inputs/PostListRelationFilter");
 const PriceListRelationFilter_1 = require("../inputs/PriceListRelationFilter");
@@ -69,22 +69,22 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ExperienceWhereInput.prototype, "stripeProductId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ExperienceWhereInput.prototype, "title", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ExperienceWhereInput.prototype, "description", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EnumEXPERIENCE_CATEGORYFilter_1.EnumEXPERIENCE_CATEGORYFilter, {
+    TypeGraphQL.Field(_type => EnumEXPERIENCE_CATEGORYNullableFilter_1.EnumEXPERIENCE_CATEGORYNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", EnumEXPERIENCE_CATEGORYFilter_1.EnumEXPERIENCE_CATEGORYFilter)
+    tslib_1.__metadata("design:type", EnumEXPERIENCE_CATEGORYNullableFilter_1.EnumEXPERIENCE_CATEGORYNullableFilter)
 ], ExperienceWhereInput.prototype, "category", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ExperienceAvailabilityListRelationFilter_1.ExperienceAvailabilityListRelationFilter, {
@@ -105,23 +105,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
 ], ExperienceWhereInput.prototype, "gallery", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
-], ExperienceWhereInput.prototype, "location", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
+    tslib_1.__metadata("design:type", IntNullableFilter_1.IntNullableFilter)
 ], ExperienceWhereInput.prototype, "duration", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => AggregateRatingRelationFilter_1.AggregateRatingRelationFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", AggregateRatingRelationFilter_1.AggregateRatingRelationFilter)
-], ExperienceWhereInput.prototype, "AggregatedRating", void 0);
+], ExperienceWhereInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumPUBLISH_STATUSFilter_1.EnumPUBLISH_STATUSFilter, {
         nullable: true

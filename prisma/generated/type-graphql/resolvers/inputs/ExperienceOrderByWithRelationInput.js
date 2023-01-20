@@ -84,19 +84,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], ExperienceOrderByWithRelationInput.prototype, "location", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
 ], ExperienceOrderByWithRelationInput.prototype, "duration", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => AggregateRatingOrderByWithRelationInput_1.AggregateRatingOrderByWithRelationInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", AggregateRatingOrderByWithRelationInput_1.AggregateRatingOrderByWithRelationInput)
-], ExperienceOrderByWithRelationInput.prototype, "AggregatedRating", void 0);
+], ExperienceOrderByWithRelationInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true

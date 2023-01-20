@@ -7,7 +7,6 @@ export declare class ExperienceMaxOrderByAggregateInput {
     description?: "asc" | "desc" | undefined;
     category?: "asc" | "desc" | undefined;
     photo?: "asc" | "desc" | undefined;
-    location?: "asc" | "desc" | undefined;
     duration?: "asc" | "desc" | undefined;
     publishStatus?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;

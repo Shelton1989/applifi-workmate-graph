@@ -316,18 +316,17 @@ model Experience {
   productLink     String?
   stripeProductId String?
 
-  title       String
-  description String
-  category    EXPERIENCE_CATEGORY
+  title       String?
+  description String?
+  category    EXPERIENCE_CATEGORY?
 
   Availability ExperienceAvailability[]
   photo        String?
   gallery      String[]
 
-  location String
-  duration Int
+  duration Int?
 
-  AggregatedRating AggregateRating?
+  AggregateRating AggregateRating?
 
   publishStatus PUBLISH_STATUS @default(DRAFT)
 

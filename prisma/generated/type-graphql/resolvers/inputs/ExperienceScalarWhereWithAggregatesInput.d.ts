@@ -1,7 +1,7 @@
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
-import { EnumEXPERIENCE_CATEGORYWithAggregatesFilter } from "../inputs/EnumEXPERIENCE_CATEGORYWithAggregatesFilter";
+import { EnumEXPERIENCE_CATEGORYNullableWithAggregatesFilter } from "../inputs/EnumEXPERIENCE_CATEGORYNullableWithAggregatesFilter";
 import { EnumPUBLISH_STATUSWithAggregatesFilter } from "../inputs/EnumPUBLISH_STATUSWithAggregatesFilter";
-import { IntWithAggregatesFilter } from "../inputs/IntWithAggregatesFilter";
+import { IntNullableWithAggregatesFilter } from "../inputs/IntNullableWithAggregatesFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
 import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
 import { StringWithAggregatesFilter } from "../inputs/StringWithAggregatesFilter";
@@ -13,13 +13,12 @@ export declare class ExperienceScalarWhereWithAggregatesInput {
     tenantId?: StringWithAggregatesFilter | undefined;
     productLink?: StringNullableWithAggregatesFilter | undefined;
     stripeProductId?: StringNullableWithAggregatesFilter | undefined;
-    title?: StringWithAggregatesFilter | undefined;
-    description?: StringWithAggregatesFilter | undefined;
-    category?: EnumEXPERIENCE_CATEGORYWithAggregatesFilter | undefined;
+    title?: StringNullableWithAggregatesFilter | undefined;
+    description?: StringNullableWithAggregatesFilter | undefined;
+    category?: EnumEXPERIENCE_CATEGORYNullableWithAggregatesFilter | undefined;
     photo?: StringNullableWithAggregatesFilter | undefined;
     gallery?: StringNullableListFilter | undefined;
-    location?: StringWithAggregatesFilter | undefined;
-    duration?: IntWithAggregatesFilter | undefined;
+    duration?: IntNullableWithAggregatesFilter | undefined;
     publishStatus?: EnumPUBLISH_STATUSWithAggregatesFilter | undefined;
     likedByIds?: StringNullableListFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;

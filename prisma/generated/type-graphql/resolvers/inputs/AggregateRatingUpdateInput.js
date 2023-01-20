@@ -4,7 +4,7 @@ exports.AggregateRatingUpdateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
-const ExperienceUpdateOneWithoutAggregatedRatingInput_1 = require("../inputs/ExperienceUpdateOneWithoutAggregatedRatingInput");
+const ExperienceUpdateOneWithoutAggregateRatingInput_1 = require("../inputs/ExperienceUpdateOneWithoutAggregateRatingInput");
 const FloatFieldUpdateOperationsInput_1 = require("../inputs/FloatFieldUpdateOperationsInput");
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 let AggregateRatingUpdateInput = class AggregateRatingUpdateInput {
@@ -34,10 +34,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NullableIntFieldUpdateOperationsInput_1.NullableIntFieldUpdateOperationsInput)
 ], AggregateRatingUpdateInput.prototype, "ratingCount", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceUpdateOneWithoutAggregatedRatingInput_1.ExperienceUpdateOneWithoutAggregatedRatingInput, {
+    TypeGraphQL.Field(_type => ExperienceUpdateOneWithoutAggregateRatingInput_1.ExperienceUpdateOneWithoutAggregateRatingInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ExperienceUpdateOneWithoutAggregatedRatingInput_1.ExperienceUpdateOneWithoutAggregatedRatingInput)
+    tslib_1.__metadata("design:type", ExperienceUpdateOneWithoutAggregateRatingInput_1.ExperienceUpdateOneWithoutAggregateRatingInput)
 ], AggregateRatingUpdateInput.prototype, "Experience", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {

@@ -63,7 +63,7 @@ export class PostResolver {
         }
       })
 
-      await tx.experience.update({ where: { id: entityId }, data: { AggregatedRating: { connect: { id: aggregateRating.id } }  } })
+      await tx.experience.update({ where: { id: entityId }, data: { AggregateRating: { connect: { id: aggregateRating.id } }  } })
   
     })
 

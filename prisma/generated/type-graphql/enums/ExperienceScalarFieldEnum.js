@@ -14,7 +14,6 @@ var ExperienceScalarFieldEnum;
     ExperienceScalarFieldEnum["category"] = "category";
     ExperienceScalarFieldEnum["photo"] = "photo";
     ExperienceScalarFieldEnum["gallery"] = "gallery";
-    ExperienceScalarFieldEnum["location"] = "location";
     ExperienceScalarFieldEnum["duration"] = "duration";
     ExperienceScalarFieldEnum["publishStatus"] = "publishStatus";
     ExperienceScalarFieldEnum["likedByIds"] = "likedByIds";

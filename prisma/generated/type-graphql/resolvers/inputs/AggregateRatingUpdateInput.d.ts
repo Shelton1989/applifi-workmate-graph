@@ -1,5 +1,5 @@
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
-import { ExperienceUpdateOneWithoutAggregatedRatingInput } from "../inputs/ExperienceUpdateOneWithoutAggregatedRatingInput";
+import { ExperienceUpdateOneWithoutAggregateRatingInput } from "../inputs/ExperienceUpdateOneWithoutAggregateRatingInput";
 import { FloatFieldUpdateOperationsInput } from "../inputs/FloatFieldUpdateOperationsInput";
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 export declare class AggregateRatingUpdateInput {
@@ -7,7 +7,7 @@ export declare class AggregateRatingUpdateInput {
     countedPosts?: NullableIntFieldUpdateOperationsInput | undefined;
     allPosts?: NullableIntFieldUpdateOperationsInput | undefined;
     ratingCount?: NullableIntFieldUpdateOperationsInput | undefined;
-    Experience?: ExperienceUpdateOneWithoutAggregatedRatingInput | undefined;
+    Experience?: ExperienceUpdateOneWithoutAggregateRatingInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

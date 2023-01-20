@@ -8,7 +8,6 @@ export declare enum ExperienceScalarFieldEnum {
     category = "category",
     photo = "photo",
     gallery = "gallery",
-    location = "location",
     duration = "duration",
     publishStatus = "publishStatus",
     likedByIds = "likedByIds",

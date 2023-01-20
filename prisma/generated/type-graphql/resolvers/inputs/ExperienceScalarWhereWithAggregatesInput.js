@@ -5,9 +5,9 @@ exports.ExperienceScalarWhereWithAggregatesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
-const EnumEXPERIENCE_CATEGORYWithAggregatesFilter_1 = require("../inputs/EnumEXPERIENCE_CATEGORYWithAggregatesFilter");
+const EnumEXPERIENCE_CATEGORYNullableWithAggregatesFilter_1 = require("../inputs/EnumEXPERIENCE_CATEGORYNullableWithAggregatesFilter");
 const EnumPUBLISH_STATUSWithAggregatesFilter_1 = require("../inputs/EnumPUBLISH_STATUSWithAggregatesFilter");
-const IntWithAggregatesFilter_1 = require("../inputs/IntWithAggregatesFilter");
+const IntNullableWithAggregatesFilter_1 = require("../inputs/IntNullableWithAggregatesFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
 const StringNullableWithAggregatesFilter_1 = require("../inputs/StringNullableWithAggregatesFilter");
 const StringWithAggregatesFilter_1 = require("../inputs/StringWithAggregatesFilter");
@@ -56,22 +56,22 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], ExperienceScalarWhereWithAggregatesInput.prototype, "stripeProductId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], ExperienceScalarWhereWithAggregatesInput.prototype, "title", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], ExperienceScalarWhereWithAggregatesInput.prototype, "description", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => EnumEXPERIENCE_CATEGORYWithAggregatesFilter_1.EnumEXPERIENCE_CATEGORYWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => EnumEXPERIENCE_CATEGORYNullableWithAggregatesFilter_1.EnumEXPERIENCE_CATEGORYNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", EnumEXPERIENCE_CATEGORYWithAggregatesFilter_1.EnumEXPERIENCE_CATEGORYWithAggregatesFilter)
+    tslib_1.__metadata("design:type", EnumEXPERIENCE_CATEGORYNullableWithAggregatesFilter_1.EnumEXPERIENCE_CATEGORYNullableWithAggregatesFilter)
 ], ExperienceScalarWhereWithAggregatesInput.prototype, "category", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
@@ -86,16 +86,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
 ], ExperienceScalarWhereWithAggregatesInput.prototype, "gallery", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
-], ExperienceScalarWhereWithAggregatesInput.prototype, "location", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
+    tslib_1.__metadata("design:type", IntNullableWithAggregatesFilter_1.IntNullableWithAggregatesFilter)
 ], ExperienceScalarWhereWithAggregatesInput.prototype, "duration", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumPUBLISH_STATUSWithAggregatesFilter_1.EnumPUBLISH_STATUSWithAggregatesFilter, {

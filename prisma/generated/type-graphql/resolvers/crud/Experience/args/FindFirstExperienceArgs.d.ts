@@ -7,5 +7,5 @@ export declare class FindFirstExperienceArgs {
     cursor?: ExperienceWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "tenantId" | "productLink" | "stripeProductId" | "title" | "description" | "category" | "photo" | "gallery" | "location" | "duration" | "publishStatus" | "likedByIds" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "tenantId" | "productLink" | "stripeProductId" | "title" | "description" | "category" | "photo" | "gallery" | "duration" | "publishStatus" | "likedByIds" | "createdAt" | "updatedAt"> | undefined;
 }

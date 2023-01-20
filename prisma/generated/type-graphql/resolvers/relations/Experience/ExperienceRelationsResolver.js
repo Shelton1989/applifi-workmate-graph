@@ -32,12 +32,12 @@ let ExperienceRelationsResolver = class ExperienceRelationsResolver {
             },
         }).Availability(args);
     }
-    async AggregatedRating(experience, ctx) {
+    async AggregateRating(experience, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).experience.findUnique({
             where: {
                 id: experience.id,
             },
-        }).AggregatedRating({});
+        }).AggregateRating({});
     }
     async LikedBy(experience, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).experience.findUnique({
@@ -98,7 +98,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Function),
     tslib_1.__metadata("design:paramtypes", [Experience_1.Experience, Object]),
     tslib_1.__metadata("design:returntype", Promise)
-], ExperienceRelationsResolver.prototype, "AggregatedRating", null);
+], ExperienceRelationsResolver.prototype, "AggregateRating", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => [User_1.User], {
         nullable: false

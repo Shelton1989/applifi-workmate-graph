@@ -13,7 +13,6 @@ export declare class ExperienceOrderByWithAggregationInput {
     category?: "asc" | "desc" | undefined;
     photo?: "asc" | "desc" | undefined;
     gallery?: "asc" | "desc" | undefined;
-    location?: "asc" | "desc" | undefined;
     duration?: "asc" | "desc" | undefined;
     publishStatus?: "asc" | "desc" | undefined;
     likedByIds?: "asc" | "desc" | undefined;

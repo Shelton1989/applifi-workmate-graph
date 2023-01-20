@@ -56,12 +56,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], ExperienceMinAggregate.prototype, "photo", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], ExperienceMinAggregate.prototype, "location", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),

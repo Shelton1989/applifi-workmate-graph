@@ -8,7 +8,6 @@ export declare class ExperienceCountAggregate {
     category: number;
     photo: number;
     gallery: number;
-    location: number;
     duration: number;
     publishStatus: number;
     likedByIds: number;

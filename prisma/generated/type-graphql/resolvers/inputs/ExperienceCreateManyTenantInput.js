@@ -29,19 +29,19 @@ tslib_1.__decorate([
 ], ExperienceCreateManyTenantInput.prototype, "stripeProductId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ExperienceCreateManyTenantInput.prototype, "title", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ExperienceCreateManyTenantInput.prototype, "description", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EXPERIENCE_CATEGORY_1.EXPERIENCE_CATEGORY, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ExperienceCreateManyTenantInput.prototype, "category", void 0);
@@ -58,14 +58,8 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", ExperienceCreategalleryInput_1.ExperienceCreategalleryInput)
 ], ExperienceCreateManyTenantInput.prototype, "gallery", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", String)
-], ExperienceCreateManyTenantInput.prototype, "location", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
 ], ExperienceCreateManyTenantInput.prototype, "duration", void 0);

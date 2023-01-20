@@ -8,13 +8,12 @@ export declare class ExperienceGroupBy {
     tenantId: string;
     productLink: string | null;
     stripeProductId: string | null;
-    title: string;
-    description: string;
-    category: "CAMPING";
+    title: string | null;
+    description: string | null;
+    category: "CAMPING" | null;
     photo: string | null;
     gallery: string[] | null;
-    location: string;
-    duration: number;
+    duration: number | null;
     publishStatus: "DRAFT" | "PUBLISHED" | "UNPUBLISHED" | "UNDER_REVIEW" | "PENDING_APPROVAL" | "IN_REVIEW" | "APPROVED" | "NO_ACTION_TAKEN" | "REJECTED_WITH_REASON" | "DECLINED" | "BANNED" | "SOFT_BANNED";
     likedByIds: string[] | null;
     createdAt: Date;

@@ -41,19 +41,19 @@ tslib_1.__decorate([
 ], ExperienceCreateWithoutPostsInput.prototype, "stripeProductId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ExperienceCreateWithoutPostsInput.prototype, "title", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ExperienceCreateWithoutPostsInput.prototype, "description", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EXPERIENCE_CATEGORY_1.EXPERIENCE_CATEGORY, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], ExperienceCreateWithoutPostsInput.prototype, "category", void 0);
@@ -76,14 +76,8 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", ExperienceCreategalleryInput_1.ExperienceCreategalleryInput)
 ], ExperienceCreateWithoutPostsInput.prototype, "gallery", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", String)
-], ExperienceCreateWithoutPostsInput.prototype, "location", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
 ], ExperienceCreateWithoutPostsInput.prototype, "duration", void 0);
@@ -92,7 +86,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", AggregateRatingCreateNestedOneWithoutExperienceInput_1.AggregateRatingCreateNestedOneWithoutExperienceInput)
-], ExperienceCreateWithoutPostsInput.prototype, "AggregatedRating", void 0);
+], ExperienceCreateWithoutPostsInput.prototype, "AggregateRating", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PUBLISH_STATUS_1.PUBLISH_STATUS, {
         nullable: true
