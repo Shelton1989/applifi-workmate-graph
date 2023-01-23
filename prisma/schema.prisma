@@ -106,6 +106,8 @@ model Tenant {
   name String
   slug String @unique
 
+  description String?
+
   avatar           String?
   coverImage       String?
   experienceImages String[]
@@ -338,6 +340,21 @@ model Experience {
 
   Posts Post[]
 
+  Features Features[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Features {
+  id String @id @default(uuid()) @map("_id")
+
+  Experience Experience @relation(fields: [experienceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  experienceId String
+
+  title       String
+  shortDescription String
+
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
 }
@@ -479,6 +496,8 @@ enum ADDRESS_TYPE {
 
 model Location {
   id String @id @default(uuid()) @map("_id")
+
+  description String
 
   longitude Float
   latitude  Float
