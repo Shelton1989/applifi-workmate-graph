@@ -2,6 +2,7 @@ import { Experience } from "../models/Experience";
 import { Tenant } from "../models/Tenant";
 export declare class Location {
     id: string;
+    description: string;
     longitude: number;
     latitude: number;
     googleMapsUrl: string;

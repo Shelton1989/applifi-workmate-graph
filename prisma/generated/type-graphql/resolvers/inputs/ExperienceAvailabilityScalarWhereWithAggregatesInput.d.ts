@@ -1,3 +1,5 @@
+import { BoolWithAggregatesFilter } from "../inputs/BoolWithAggregatesFilter";
+import { DateTimeNullableWithAggregatesFilter } from "../inputs/DateTimeNullableWithAggregatesFilter";
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
 import { EnumAVAILABILITY_TYPEWithAggregatesFilter } from "../inputs/EnumAVAILABILITY_TYPEWithAggregatesFilter";
 import { IntWithAggregatesFilter } from "../inputs/IntWithAggregatesFilter";
@@ -8,13 +10,12 @@ export declare class ExperienceAvailabilityScalarWhereWithAggregatesInput {
     NOT?: ExperienceAvailabilityScalarWhereWithAggregatesInput[] | undefined;
     id?: StringWithAggregatesFilter | undefined;
     experienceId?: StringWithAggregatesFilter | undefined;
-    startDate?: DateTimeWithAggregatesFilter | undefined;
-    endDate?: DateTimeWithAggregatesFilter | undefined;
+    startDate?: DateTimeNullableWithAggregatesFilter | undefined;
+    endDate?: DateTimeNullableWithAggregatesFilter | undefined;
     availabilityType?: EnumAVAILABILITY_TYPEWithAggregatesFilter | undefined;
-    weekendSpacesAvailable?: IntWithAggregatesFilter | undefined;
-    dailySpacesAvailable?: IntWithAggregatesFilter | undefined;
-    hourlySpacesAvailable?: IntWithAggregatesFilter | undefined;
-    halfHourlySpacesAvailable?: IntWithAggregatesFilter | undefined;
+    spacesAvailable?: IntWithAggregatesFilter | undefined;
+    spacesBooked?: IntWithAggregatesFilter | undefined;
+    datesAreFlexible?: BoolWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

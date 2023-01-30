@@ -8,6 +8,7 @@ import { UserUpdateManyWithoutTenantInput } from "../inputs/UserUpdateManyWithou
 export declare class TenantUpdateWithoutLocationsInput {
     name?: StringFieldUpdateOperationsInput | undefined;
     slug?: StringFieldUpdateOperationsInput | undefined;
+    description?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;
     coverImage?: NullableStringFieldUpdateOperationsInput | undefined;
     experienceImages?: TenantUpdateexperienceImagesInput | undefined;

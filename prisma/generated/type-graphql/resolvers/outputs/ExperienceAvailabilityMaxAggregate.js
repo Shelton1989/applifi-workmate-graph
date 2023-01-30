@@ -41,25 +41,19 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityMaxAggregate.prototype, "weekendSpacesAvailable", void 0);
+], ExperienceAvailabilityMaxAggregate.prototype, "spacesAvailable", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityMaxAggregate.prototype, "dailySpacesAvailable", void 0);
+], ExperienceAvailabilityMaxAggregate.prototype, "spacesBooked", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+    TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityMaxAggregate.prototype, "hourlySpacesAvailable", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityMaxAggregate.prototype, "halfHourlySpacesAvailable", void 0);
+    tslib_1.__metadata("design:type", Boolean)
+], ExperienceAvailabilityMaxAggregate.prototype, "datesAreFlexible", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

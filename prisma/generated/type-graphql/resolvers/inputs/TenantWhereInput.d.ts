@@ -13,6 +13,7 @@ export declare class TenantWhereInput {
     id?: StringFilter | undefined;
     name?: StringFilter | undefined;
     slug?: StringFilter | undefined;
+    description?: StringNullableFilter | undefined;
     avatar?: StringNullableFilter | undefined;
     coverImage?: StringNullableFilter | undefined;
     experienceImages?: StringNullableListFilter | undefined;

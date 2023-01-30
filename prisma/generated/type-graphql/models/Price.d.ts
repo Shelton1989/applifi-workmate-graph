@@ -6,9 +6,9 @@ export declare class Price {
     id: string;
     priceInLowestDenomination: number;
     displayPrice: string;
-    currency?: Currency;
-    currencyId: string;
-    details: string;
+    currency?: Currency | null;
+    currencyId?: string | null;
+    details?: string | null;
     Experience?: Experience;
     experienceId: string;
     BookingLineItems?: BookingOrderLineItem[];

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserScalarFieldEnum = exports.TopicListsScalarFieldEnum = exports.TenantScalarFieldEnum = exports.SortOrder = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.PriceScalarFieldEnum = exports.PostScalarFieldEnum = exports.PUBLISH_STATUS = exports.NotificationSettingsScalarFieldEnum = exports.NotificationScalarFieldEnum = exports.MEDIA_TYPE = exports.LocationScalarFieldEnum = exports.LIST_TYPE = exports.ExperienceScalarFieldEnum = exports.ExperienceAvailabilityScalarFieldEnum = exports.EXPERIENCE_CATEGORY = exports.CurrencyScalarFieldEnum = exports.CommentScalarFieldEnum = exports.BookingOrderScalarFieldEnum = exports.BookingOrderLineItemScalarFieldEnum = exports.BOOKING_ORDER_STATUS = exports.AggregateRatingScalarFieldEnum = exports.AVAILABILITY_TYPE = exports.ADDRESS_TYPE = void 0;
+exports.UserScalarFieldEnum = exports.TopicListsScalarFieldEnum = exports.TenantScalarFieldEnum = exports.SortOrder = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.PriceScalarFieldEnum = exports.PostScalarFieldEnum = exports.PUBLISH_STATUS = exports.NotificationSettingsScalarFieldEnum = exports.NotificationScalarFieldEnum = exports.MEDIA_TYPE = exports.LocationScalarFieldEnum = exports.LIST_TYPE = exports.FeaturesScalarFieldEnum = exports.ExperienceScalarFieldEnum = exports.ExperienceAvailabilityScalarFieldEnum = exports.EXPERIENCE_CATEGORY = exports.CurrencyScalarFieldEnum = exports.CommentScalarFieldEnum = exports.BookingOrderScalarFieldEnum = exports.BookingOrderLineItemScalarFieldEnum = exports.BOOKING_ORDER_STATUS = exports.AggregateRatingScalarFieldEnum = exports.AVAILABILITY_TYPE = exports.ADDRESS_TYPE = void 0;
 var ADDRESS_TYPE_1 = require("./ADDRESS_TYPE");
 Object.defineProperty(exports, "ADDRESS_TYPE", { enumerable: true, get: function () { return ADDRESS_TYPE_1.ADDRESS_TYPE; } });
 var AVAILABILITY_TYPE_1 = require("./AVAILABILITY_TYPE");
@@ -23,6 +23,8 @@ var ExperienceAvailabilityScalarFieldEnum_1 = require("./ExperienceAvailabilityS
 Object.defineProperty(exports, "ExperienceAvailabilityScalarFieldEnum", { enumerable: true, get: function () { return ExperienceAvailabilityScalarFieldEnum_1.ExperienceAvailabilityScalarFieldEnum; } });
 var ExperienceScalarFieldEnum_1 = require("./ExperienceScalarFieldEnum");
 Object.defineProperty(exports, "ExperienceScalarFieldEnum", { enumerable: true, get: function () { return ExperienceScalarFieldEnum_1.ExperienceScalarFieldEnum; } });
+var FeaturesScalarFieldEnum_1 = require("./FeaturesScalarFieldEnum");
+Object.defineProperty(exports, "FeaturesScalarFieldEnum", { enumerable: true, get: function () { return FeaturesScalarFieldEnum_1.FeaturesScalarFieldEnum; } });
 var LIST_TYPE_1 = require("./LIST_TYPE");
 Object.defineProperty(exports, "LIST_TYPE", { enumerable: true, get: function () { return LIST_TYPE_1.LIST_TYPE; } });
 var LocationScalarFieldEnum_1 = require("./LocationScalarFieldEnum");

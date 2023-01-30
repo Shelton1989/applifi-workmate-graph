@@ -8,6 +8,7 @@ import { TenantUpdateexperienceImagesInput } from "../inputs/TenantUpdateexperie
 export declare class TenantUpdateWithoutUsersInput {
     name?: StringFieldUpdateOperationsInput | undefined;
     slug?: StringFieldUpdateOperationsInput | undefined;
+    description?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;
     coverImage?: NullableStringFieldUpdateOperationsInput | undefined;
     experienceImages?: TenantUpdateexperienceImagesInput | undefined;

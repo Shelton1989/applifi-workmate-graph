@@ -2,6 +2,7 @@ import { ExperienceOrderByWithRelationInput } from "../inputs/ExperienceOrderByW
 import { TenantOrderByWithRelationInput } from "../inputs/TenantOrderByWithRelationInput";
 export declare class LocationOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
+    description?: "asc" | "desc" | undefined;
     longitude?: "asc" | "desc" | undefined;
     latitude?: "asc" | "desc" | undefined;
     googleMapsUrl?: "asc" | "desc" | undefined;

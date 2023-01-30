@@ -1,5 +1,6 @@
 export declare enum LocationScalarFieldEnum {
     id = "id",
+    description = "description",
     longitude = "longitude",
     latitude = "latitude",
     googleMapsUrl = "googleMapsUrl",

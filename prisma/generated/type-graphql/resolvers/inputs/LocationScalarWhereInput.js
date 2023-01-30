@@ -37,6 +37,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], LocationScalarWhereInput.prototype, "id", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+], LocationScalarWhereInput.prototype, "description", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => FloatFilter_1.FloatFilter, {
         nullable: true
     }),

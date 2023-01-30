@@ -34,7 +34,7 @@ let PriceRelationsResolver = class PriceRelationsResolver {
 };
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => Currency_1.Currency, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
     tslib_1.__param(1, TypeGraphQL.Ctx()),

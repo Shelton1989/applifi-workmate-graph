@@ -3,10 +3,11 @@ import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumEXPERIENCE_CATEGORYNullableFilter } from "../inputs/EnumEXPERIENCE_CATEGORYNullableFilter";
 import { EnumPUBLISH_STATUSFilter } from "../inputs/EnumPUBLISH_STATUSFilter";
 import { ExperienceAvailabilityListRelationFilter } from "../inputs/ExperienceAvailabilityListRelationFilter";
+import { FeaturesListRelationFilter } from "../inputs/FeaturesListRelationFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { LocationListRelationFilter } from "../inputs/LocationListRelationFilter";
 import { PostListRelationFilter } from "../inputs/PostListRelationFilter";
-import { PriceListRelationFilter } from "../inputs/PriceListRelationFilter";
+import { PriceRelationFilter } from "../inputs/PriceRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
@@ -33,8 +34,9 @@ export declare class ExperienceWhereInput {
     LikedBy?: UserListRelationFilter | undefined;
     likedByIds?: StringNullableListFilter | undefined;
     Locations?: LocationListRelationFilter | undefined;
-    Price?: PriceListRelationFilter | undefined;
+    Price?: PriceRelationFilter | undefined;
     Posts?: PostListRelationFilter | undefined;
+    Features?: FeaturesListRelationFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

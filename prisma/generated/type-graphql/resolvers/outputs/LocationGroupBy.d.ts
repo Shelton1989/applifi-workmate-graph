@@ -5,6 +5,7 @@ import { LocationMinAggregate } from "../outputs/LocationMinAggregate";
 import { LocationSumAggregate } from "../outputs/LocationSumAggregate";
 export declare class LocationGroupBy {
     id: string;
+    description: string;
     longitude: number;
     latitude: number;
     googleMapsUrl: string;

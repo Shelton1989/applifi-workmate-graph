@@ -26,13 +26,13 @@ tslib_1.__decorate([
 ], Price.prototype, "displayPrice", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], Price.prototype, "currencyId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], Price.prototype, "details", void 0);

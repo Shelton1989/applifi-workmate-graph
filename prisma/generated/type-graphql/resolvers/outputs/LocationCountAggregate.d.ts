@@ -1,5 +1,6 @@
 export declare class LocationCountAggregate {
     id: number;
+    description: number;
     longitude: number;
     latitude: number;
     googleMapsUrl: number;

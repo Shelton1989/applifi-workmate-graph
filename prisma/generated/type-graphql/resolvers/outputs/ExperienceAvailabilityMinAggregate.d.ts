@@ -4,10 +4,9 @@ export declare class ExperienceAvailabilityMinAggregate {
     startDate: Date | null;
     endDate: Date | null;
     availabilityType: "WEEKEND" | "DAILY" | "HOURLY" | "HALF_HOURLY" | null;
-    weekendSpacesAvailable: number | null;
-    dailySpacesAvailable: number | null;
-    hourlySpacesAvailable: number | null;
-    halfHourlySpacesAvailable: number | null;
+    spacesAvailable: number | null;
+    spacesBooked: number | null;
+    datesAreFlexible: boolean | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }

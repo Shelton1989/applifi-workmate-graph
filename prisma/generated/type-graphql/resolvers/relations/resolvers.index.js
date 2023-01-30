@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserRelationsResolver = exports.TenantRelationsResolver = exports.RequestRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.PriceRelationsResolver = exports.PostRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.NotificationRelationsResolver = exports.LocationRelationsResolver = exports.ExperienceAvailabilityRelationsResolver = exports.ExperienceRelationsResolver = exports.CurrencyRelationsResolver = exports.CommentRelationsResolver = exports.BookingOrderLineItemRelationsResolver = exports.BookingOrderRelationsResolver = exports.AggregateRatingRelationsResolver = void 0;
+exports.UserRelationsResolver = exports.TenantRelationsResolver = exports.RequestRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.PriceRelationsResolver = exports.PostRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.NotificationRelationsResolver = exports.LocationRelationsResolver = exports.FeaturesRelationsResolver = exports.ExperienceAvailabilityRelationsResolver = exports.ExperienceRelationsResolver = exports.CurrencyRelationsResolver = exports.CommentRelationsResolver = exports.BookingOrderLineItemRelationsResolver = exports.BookingOrderRelationsResolver = exports.AggregateRatingRelationsResolver = void 0;
 var AggregateRatingRelationsResolver_1 = require("./AggregateRating/AggregateRatingRelationsResolver");
 Object.defineProperty(exports, "AggregateRatingRelationsResolver", { enumerable: true, get: function () { return AggregateRatingRelationsResolver_1.AggregateRatingRelationsResolver; } });
 var BookingOrderRelationsResolver_1 = require("./BookingOrder/BookingOrderRelationsResolver");
@@ -15,6 +15,8 @@ var ExperienceRelationsResolver_1 = require("./Experience/ExperienceRelationsRes
 Object.defineProperty(exports, "ExperienceRelationsResolver", { enumerable: true, get: function () { return ExperienceRelationsResolver_1.ExperienceRelationsResolver; } });
 var ExperienceAvailabilityRelationsResolver_1 = require("./ExperienceAvailability/ExperienceAvailabilityRelationsResolver");
 Object.defineProperty(exports, "ExperienceAvailabilityRelationsResolver", { enumerable: true, get: function () { return ExperienceAvailabilityRelationsResolver_1.ExperienceAvailabilityRelationsResolver; } });
+var FeaturesRelationsResolver_1 = require("./Features/FeaturesRelationsResolver");
+Object.defineProperty(exports, "FeaturesRelationsResolver", { enumerable: true, get: function () { return FeaturesRelationsResolver_1.FeaturesRelationsResolver; } });
 var LocationRelationsResolver_1 = require("./Location/LocationRelationsResolver");
 Object.defineProperty(exports, "LocationRelationsResolver", { enumerable: true, get: function () { return LocationRelationsResolver_1.LocationRelationsResolver; } });
 var NotificationRelationsResolver_1 = require("./Notification/NotificationRelationsResolver");

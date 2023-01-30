@@ -9,6 +9,7 @@ export declare class LocationScalarWhereInput {
     OR?: LocationScalarWhereInput[] | undefined;
     NOT?: LocationScalarWhereInput[] | undefined;
     id?: StringFilter | undefined;
+    description?: StringFilter | undefined;
     longitude?: FloatFilter | undefined;
     latitude?: FloatFilter | undefined;
     googleMapsUrl?: StringFilter | undefined;

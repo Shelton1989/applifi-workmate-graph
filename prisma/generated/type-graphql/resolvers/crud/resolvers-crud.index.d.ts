@@ -5,6 +5,7 @@ export { CommentCrudResolver } from "./Comment/CommentCrudResolver";
 export { CurrencyCrudResolver } from "./Currency/CurrencyCrudResolver";
 export { ExperienceCrudResolver } from "./Experience/ExperienceCrudResolver";
 export { ExperienceAvailabilityCrudResolver } from "./ExperienceAvailability/ExperienceAvailabilityCrudResolver";
+export { FeaturesCrudResolver } from "./Features/FeaturesCrudResolver";
 export { LocationCrudResolver } from "./Location/LocationCrudResolver";
 export { NotificationCrudResolver } from "./Notification/NotificationCrudResolver";
 export { NotificationSettingsCrudResolver } from "./NotificationSettings/NotificationSettingsCrudResolver";

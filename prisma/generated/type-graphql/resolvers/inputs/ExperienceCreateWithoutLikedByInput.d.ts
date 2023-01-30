@@ -2,9 +2,10 @@ import { AggregateRatingCreateNestedOneWithoutExperienceInput } from "../inputs/
 import { ExperienceAvailabilityCreateNestedManyWithoutExperienceInput } from "../inputs/ExperienceAvailabilityCreateNestedManyWithoutExperienceInput";
 import { ExperienceCreategalleryInput } from "../inputs/ExperienceCreategalleryInput";
 import { ExperienceCreatelikedByIdsInput } from "../inputs/ExperienceCreatelikedByIdsInput";
+import { FeaturesCreateNestedManyWithoutExperienceInput } from "../inputs/FeaturesCreateNestedManyWithoutExperienceInput";
 import { LocationCreateNestedManyWithoutExperienceInput } from "../inputs/LocationCreateNestedManyWithoutExperienceInput";
 import { PostCreateNestedManyWithoutExperienceInput } from "../inputs/PostCreateNestedManyWithoutExperienceInput";
-import { PriceCreateNestedManyWithoutExperienceInput } from "../inputs/PriceCreateNestedManyWithoutExperienceInput";
+import { PriceCreateNestedOneWithoutExperienceInput } from "../inputs/PriceCreateNestedOneWithoutExperienceInput";
 import { TenantCreateNestedOneWithoutExperiencesInput } from "../inputs/TenantCreateNestedOneWithoutExperiencesInput";
 export declare class ExperienceCreateWithoutLikedByInput {
     id?: string | undefined;
@@ -22,8 +23,9 @@ export declare class ExperienceCreateWithoutLikedByInput {
     publishStatus?: "DRAFT" | "PUBLISHED" | "UNPUBLISHED" | "UNDER_REVIEW" | "PENDING_APPROVAL" | "IN_REVIEW" | "APPROVED" | "NO_ACTION_TAKEN" | "REJECTED_WITH_REASON" | "DECLINED" | "BANNED" | "SOFT_BANNED" | undefined;
     likedByIds?: ExperienceCreatelikedByIdsInput | undefined;
     Locations?: LocationCreateNestedManyWithoutExperienceInput | undefined;
-    Price?: PriceCreateNestedManyWithoutExperienceInput | undefined;
+    Price?: PriceCreateNestedOneWithoutExperienceInput | undefined;
     Posts?: PostCreateNestedManyWithoutExperienceInput | undefined;
+    Features?: FeaturesCreateNestedManyWithoutExperienceInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

@@ -10,25 +10,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityAvgAggregate.prototype, "weekendSpacesAvailable", void 0);
+], ExperienceAvailabilityAvgAggregate.prototype, "spacesAvailable", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Float, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityAvgAggregate.prototype, "dailySpacesAvailable", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityAvgAggregate.prototype, "hourlySpacesAvailable", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Float, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityAvgAggregate.prototype, "halfHourlySpacesAvailable", void 0);
+], ExperienceAvailabilityAvgAggregate.prototype, "spacesBooked", void 0);
 ExperienceAvailabilityAvgAggregate = tslib_1.__decorate([
     TypeGraphQL.ObjectType("ExperienceAvailabilityAvgAggregate", {
         isAbstract: true

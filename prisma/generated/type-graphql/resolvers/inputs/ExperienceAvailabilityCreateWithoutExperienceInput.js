@@ -14,13 +14,13 @@ tslib_1.__decorate([
 ], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "id", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Date)
 ], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "startDate", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Date)
 ], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "endDate", void 0);
@@ -35,25 +35,19 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "weekendSpacesAvailable", void 0);
+], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "spacesAvailable", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "dailySpacesAvailable", void 0);
+], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "spacesBooked", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
     }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "hourlySpacesAvailable", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "halfHourlySpacesAvailable", void 0);
+    tslib_1.__metadata("design:type", Boolean)
+], ExperienceAvailabilityCreateWithoutExperienceInput.prototype, "datesAreFlexible", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

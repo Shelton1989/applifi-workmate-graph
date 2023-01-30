@@ -1,5 +1,6 @@
 import { AggregateRating } from "../models/AggregateRating";
 import { ExperienceAvailability } from "../models/ExperienceAvailability";
+import { Features } from "../models/Features";
 import { Location } from "../models/Location";
 import { Post } from "../models/Post";
 import { Price } from "../models/Price";
@@ -24,8 +25,9 @@ export declare class Experience {
     LikedBy?: User[];
     likedByIds: string[];
     Locations?: Location[];
-    Price?: Price[];
+    Price?: Price | null;
     Posts?: Post[];
+    Features?: Features[];
     createdAt: Date;
     updatedAt: Date;
     _count?: ExperienceCount | null;

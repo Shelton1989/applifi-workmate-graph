@@ -16,6 +16,7 @@ declare const crudResolversMap: {
     Request: typeof crudResolvers.RequestCrudResolver;
     Notification: typeof crudResolvers.NotificationCrudResolver;
     Experience: typeof crudResolvers.ExperienceCrudResolver;
+    Features: typeof crudResolvers.FeaturesCrudResolver;
     ExperienceAvailability: typeof crudResolvers.ExperienceAvailabilityCrudResolver;
     Currency: typeof crudResolvers.CurrencyCrudResolver;
     Price: typeof crudResolvers.PriceCrudResolver;
@@ -54,6 +55,7 @@ declare const relationResolversMap: {
     Request: typeof relationResolvers.RequestRelationsResolver;
     Notification: typeof relationResolvers.NotificationRelationsResolver;
     Experience: typeof relationResolvers.ExperienceRelationsResolver;
+    Features: typeof relationResolvers.FeaturesRelationsResolver;
     ExperienceAvailability: typeof relationResolvers.ExperienceAvailabilityRelationsResolver;
     Currency: typeof relationResolvers.CurrencyRelationsResolver;
     Price: typeof relationResolvers.PriceRelationsResolver;

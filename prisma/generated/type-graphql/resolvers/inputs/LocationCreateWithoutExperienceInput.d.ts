@@ -1,6 +1,7 @@
 import { TenantCreateNestedOneWithoutLocationsInput } from "../inputs/TenantCreateNestedOneWithoutLocationsInput";
 export declare class LocationCreateWithoutExperienceInput {
     id?: string | undefined;
+    description: string;
     longitude: number;
     latitude: number;
     googleMapsUrl: string;

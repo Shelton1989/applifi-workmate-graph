@@ -2,13 +2,12 @@ import { ExperienceCreateNestedOneWithoutAvailabilityInput } from "../inputs/Exp
 export declare class ExperienceAvailabilityCreateInput {
     id?: string | undefined;
     Experience: ExperienceCreateNestedOneWithoutAvailabilityInput;
-    startDate: Date;
-    endDate: Date;
+    startDate?: Date | undefined;
+    endDate?: Date | undefined;
     availabilityType?: "WEEKEND" | "DAILY" | "HOURLY" | "HALF_HOURLY" | undefined;
-    weekendSpacesAvailable: number;
-    dailySpacesAvailable: number;
-    hourlySpacesAvailable: number;
-    halfHourlySpacesAvailable: number;
+    spacesAvailable: number;
+    spacesBooked: number;
+    datesAreFlexible?: boolean | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

@@ -5,6 +5,7 @@ export { Comment } from "./Comment";
 export { Currency } from "./Currency";
 export { Experience } from "./Experience";
 export { ExperienceAvailability } from "./ExperienceAvailability";
+export { Features } from "./Features";
 export { Location } from "./Location";
 export { Notification } from "./Notification";
 export { NotificationSettings } from "./NotificationSettings";

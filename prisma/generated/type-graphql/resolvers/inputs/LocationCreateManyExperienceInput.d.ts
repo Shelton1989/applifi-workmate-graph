@@ -1,5 +1,6 @@
 export declare class LocationCreateManyExperienceInput {
     id?: string | undefined;
+    description: string;
     longitude: number;
     latitude: number;
     googleMapsUrl: string;

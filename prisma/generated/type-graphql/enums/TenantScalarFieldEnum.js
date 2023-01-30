@@ -8,6 +8,7 @@ var TenantScalarFieldEnum;
     TenantScalarFieldEnum["id"] = "id";
     TenantScalarFieldEnum["name"] = "name";
     TenantScalarFieldEnum["slug"] = "slug";
+    TenantScalarFieldEnum["description"] = "description";
     TenantScalarFieldEnum["avatar"] = "avatar";
     TenantScalarFieldEnum["coverImage"] = "coverImage";
     TenantScalarFieldEnum["experienceImages"] = "experienceImages";

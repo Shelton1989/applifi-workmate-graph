@@ -8,6 +8,7 @@ tslib_1.__exportStar(require("./Comment/args"), exports);
 tslib_1.__exportStar(require("./Currency/args"), exports);
 tslib_1.__exportStar(require("./Experience/args"), exports);
 tslib_1.__exportStar(require("./ExperienceAvailability/args"), exports);
+tslib_1.__exportStar(require("./Features/args"), exports);
 tslib_1.__exportStar(require("./Location/args"), exports);
 tslib_1.__exportStar(require("./Notification/args"), exports);
 tslib_1.__exportStar(require("./NotificationSettings/args"), exports);

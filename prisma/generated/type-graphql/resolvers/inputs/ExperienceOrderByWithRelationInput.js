@@ -5,9 +5,10 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AggregateRatingOrderByWithRelationInput_1 = require("../inputs/AggregateRatingOrderByWithRelationInput");
 const ExperienceAvailabilityOrderByRelationAggregateInput_1 = require("../inputs/ExperienceAvailabilityOrderByRelationAggregateInput");
+const FeaturesOrderByRelationAggregateInput_1 = require("../inputs/FeaturesOrderByRelationAggregateInput");
 const LocationOrderByRelationAggregateInput_1 = require("../inputs/LocationOrderByRelationAggregateInput");
 const PostOrderByRelationAggregateInput_1 = require("../inputs/PostOrderByRelationAggregateInput");
-const PriceOrderByRelationAggregateInput_1 = require("../inputs/PriceOrderByRelationAggregateInput");
+const PriceOrderByWithRelationInput_1 = require("../inputs/PriceOrderByWithRelationInput");
 const TenantOrderByWithRelationInput_1 = require("../inputs/TenantOrderByWithRelationInput");
 const UserOrderByRelationAggregateInput_1 = require("../inputs/UserOrderByRelationAggregateInput");
 const SortOrder_1 = require("../../enums/SortOrder");
@@ -116,10 +117,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", LocationOrderByRelationAggregateInput_1.LocationOrderByRelationAggregateInput)
 ], ExperienceOrderByWithRelationInput.prototype, "Locations", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PriceOrderByRelationAggregateInput_1.PriceOrderByRelationAggregateInput, {
+    TypeGraphQL.Field(_type => PriceOrderByWithRelationInput_1.PriceOrderByWithRelationInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", PriceOrderByRelationAggregateInput_1.PriceOrderByRelationAggregateInput)
+    tslib_1.__metadata("design:type", PriceOrderByWithRelationInput_1.PriceOrderByWithRelationInput)
 ], ExperienceOrderByWithRelationInput.prototype, "Price", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostOrderByRelationAggregateInput_1.PostOrderByRelationAggregateInput, {
@@ -127,6 +128,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", PostOrderByRelationAggregateInput_1.PostOrderByRelationAggregateInput)
 ], ExperienceOrderByWithRelationInput.prototype, "Posts", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => FeaturesOrderByRelationAggregateInput_1.FeaturesOrderByRelationAggregateInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", FeaturesOrderByRelationAggregateInput_1.FeaturesOrderByRelationAggregateInput)
+], ExperienceOrderByWithRelationInput.prototype, "Features", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true

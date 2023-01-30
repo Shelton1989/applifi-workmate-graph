@@ -12,6 +12,12 @@ const TenantUpdateOneWithoutLocationsInput_1 = require("../inputs/TenantUpdateOn
 let LocationUpdateWithoutExperienceInput = class LocationUpdateWithoutExperienceInput {
 };
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
+], LocationUpdateWithoutExperienceInput.prototype, "description", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => FloatFieldUpdateOperationsInput_1.FloatFieldUpdateOperationsInput, {
         nullable: true
     }),

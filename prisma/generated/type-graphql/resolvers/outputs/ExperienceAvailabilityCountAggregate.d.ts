@@ -4,10 +4,9 @@ export declare class ExperienceAvailabilityCountAggregate {
     startDate: number;
     endDate: number;
     availabilityType: number;
-    weekendSpacesAvailable: number;
-    dailySpacesAvailable: number;
-    hourlySpacesAvailable: number;
-    halfHourlySpacesAvailable: number;
+    spacesAvailable: number;
+    spacesBooked: number;
+    datesAreFlexible: number;
     createdAt: number;
     updatedAt: number;
     _all: number;

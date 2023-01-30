@@ -1,9 +1,10 @@
 import { ExperienceAvailabilityCreateNestedManyWithoutExperienceInput } from "../inputs/ExperienceAvailabilityCreateNestedManyWithoutExperienceInput";
 import { ExperienceCreategalleryInput } from "../inputs/ExperienceCreategalleryInput";
 import { ExperienceCreatelikedByIdsInput } from "../inputs/ExperienceCreatelikedByIdsInput";
+import { FeaturesCreateNestedManyWithoutExperienceInput } from "../inputs/FeaturesCreateNestedManyWithoutExperienceInput";
 import { LocationCreateNestedManyWithoutExperienceInput } from "../inputs/LocationCreateNestedManyWithoutExperienceInput";
 import { PostCreateNestedManyWithoutExperienceInput } from "../inputs/PostCreateNestedManyWithoutExperienceInput";
-import { PriceCreateNestedManyWithoutExperienceInput } from "../inputs/PriceCreateNestedManyWithoutExperienceInput";
+import { PriceCreateNestedOneWithoutExperienceInput } from "../inputs/PriceCreateNestedOneWithoutExperienceInput";
 import { TenantCreateNestedOneWithoutExperiencesInput } from "../inputs/TenantCreateNestedOneWithoutExperiencesInput";
 import { UserCreateNestedManyWithoutLikedExperiencesInput } from "../inputs/UserCreateNestedManyWithoutLikedExperiencesInput";
 export declare class ExperienceCreateWithoutAggregateRatingInput {
@@ -22,8 +23,9 @@ export declare class ExperienceCreateWithoutAggregateRatingInput {
     LikedBy?: UserCreateNestedManyWithoutLikedExperiencesInput | undefined;
     likedByIds?: ExperienceCreatelikedByIdsInput | undefined;
     Locations?: LocationCreateNestedManyWithoutExperienceInput | undefined;
-    Price?: PriceCreateNestedManyWithoutExperienceInput | undefined;
+    Price?: PriceCreateNestedOneWithoutExperienceInput | undefined;
     Posts?: PostCreateNestedManyWithoutExperienceInput | undefined;
+    Features?: FeaturesCreateNestedManyWithoutExperienceInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

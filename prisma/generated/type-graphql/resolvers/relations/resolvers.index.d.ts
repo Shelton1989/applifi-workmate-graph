@@ -5,6 +5,7 @@ export { CommentRelationsResolver } from "./Comment/CommentRelationsResolver";
 export { CurrencyRelationsResolver } from "./Currency/CurrencyRelationsResolver";
 export { ExperienceRelationsResolver } from "./Experience/ExperienceRelationsResolver";
 export { ExperienceAvailabilityRelationsResolver } from "./ExperienceAvailability/ExperienceAvailabilityRelationsResolver";
+export { FeaturesRelationsResolver } from "./Features/FeaturesRelationsResolver";
 export { LocationRelationsResolver } from "./Location/LocationRelationsResolver";
 export { NotificationRelationsResolver } from "./Notification/NotificationRelationsResolver";
 export { NotificationSettingsRelationsResolver } from "./NotificationSettings/NotificationSettingsRelationsResolver";

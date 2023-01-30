@@ -11,6 +11,7 @@ export declare class LocationWhereInput {
     OR?: LocationWhereInput[] | undefined;
     NOT?: LocationWhereInput[] | undefined;
     id?: StringFilter | undefined;
+    description?: StringFilter | undefined;
     longitude?: FloatFilter | undefined;
     latitude?: FloatFilter | undefined;
     googleMapsUrl?: StringFilter | undefined;

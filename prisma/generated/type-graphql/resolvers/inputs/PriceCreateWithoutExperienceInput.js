@@ -27,13 +27,13 @@ tslib_1.__decorate([
 ], PriceCreateWithoutExperienceInput.prototype, "displayPrice", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => CurrencyCreateNestedOneWithoutPricesInput_1.CurrencyCreateNestedOneWithoutPricesInput, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", CurrencyCreateNestedOneWithoutPricesInput_1.CurrencyCreateNestedOneWithoutPricesInput)
 ], PriceCreateWithoutExperienceInput.prototype, "currency", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], PriceCreateWithoutExperienceInput.prototype, "details", void 0);

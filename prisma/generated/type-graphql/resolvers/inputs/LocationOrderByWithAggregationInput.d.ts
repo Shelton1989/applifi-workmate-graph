@@ -5,6 +5,7 @@ import { LocationMinOrderByAggregateInput } from "../inputs/LocationMinOrderByAg
 import { LocationSumOrderByAggregateInput } from "../inputs/LocationSumOrderByAggregateInput";
 export declare class LocationOrderByWithAggregationInput {
     id?: "asc" | "desc" | undefined;
+    description?: "asc" | "desc" | undefined;
     longitude?: "asc" | "desc" | undefined;
     latitude?: "asc" | "desc" | undefined;
     googleMapsUrl?: "asc" | "desc" | undefined;

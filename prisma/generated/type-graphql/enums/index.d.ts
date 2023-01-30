@@ -9,6 +9,7 @@ export { CurrencyScalarFieldEnum } from "./CurrencyScalarFieldEnum";
 export { EXPERIENCE_CATEGORY } from "./EXPERIENCE_CATEGORY";
 export { ExperienceAvailabilityScalarFieldEnum } from "./ExperienceAvailabilityScalarFieldEnum";
 export { ExperienceScalarFieldEnum } from "./ExperienceScalarFieldEnum";
+export { FeaturesScalarFieldEnum } from "./FeaturesScalarFieldEnum";
 export { LIST_TYPE } from "./LIST_TYPE";
 export { LocationScalarFieldEnum } from "./LocationScalarFieldEnum";
 export { MEDIA_TYPE } from "./MEDIA_TYPE";

@@ -4,6 +4,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ExperienceAvailabilityScalarWhereWithAggregatesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const BoolWithAggregatesFilter_1 = require("../inputs/BoolWithAggregatesFilter");
+const DateTimeNullableWithAggregatesFilter_1 = require("../inputs/DateTimeNullableWithAggregatesFilter");
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
 const EnumAVAILABILITY_TYPEWithAggregatesFilter_1 = require("../inputs/EnumAVAILABILITY_TYPEWithAggregatesFilter");
 const IntWithAggregatesFilter_1 = require("../inputs/IntWithAggregatesFilter");
@@ -41,16 +43,16 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter)
+    tslib_1.__metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
 ], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "startDate", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter)
+    tslib_1.__metadata("design:type", DateTimeNullableWithAggregatesFilter_1.DateTimeNullableWithAggregatesFilter)
 ], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "endDate", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumAVAILABILITY_TYPEWithAggregatesFilter_1.EnumAVAILABILITY_TYPEWithAggregatesFilter, {
@@ -63,25 +65,19 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
-], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "weekendSpacesAvailable", void 0);
+], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "spacesAvailable", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
-], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "dailySpacesAvailable", void 0);
+], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "spacesBooked", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
+    TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
-], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "hourlySpacesAvailable", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntWithAggregatesFilter_1.IntWithAggregatesFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", IntWithAggregatesFilter_1.IntWithAggregatesFilter)
-], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "halfHourlySpacesAvailable", void 0);
+    tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
+], ExperienceAvailabilityScalarWhereWithAggregatesInput.prototype, "datesAreFlexible", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter, {
         nullable: true

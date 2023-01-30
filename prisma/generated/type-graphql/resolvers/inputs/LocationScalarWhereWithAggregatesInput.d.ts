@@ -9,6 +9,7 @@ export declare class LocationScalarWhereWithAggregatesInput {
     OR?: LocationScalarWhereWithAggregatesInput[] | undefined;
     NOT?: LocationScalarWhereWithAggregatesInput[] | undefined;
     id?: StringWithAggregatesFilter | undefined;
+    description?: StringWithAggregatesFilter | undefined;
     longitude?: FloatWithAggregatesFilter | undefined;
     latitude?: FloatWithAggregatesFilter | undefined;
     googleMapsUrl?: StringWithAggregatesFilter | undefined;

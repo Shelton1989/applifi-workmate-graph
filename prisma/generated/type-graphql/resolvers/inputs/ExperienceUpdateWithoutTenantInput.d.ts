@@ -4,12 +4,13 @@ import { EnumPUBLISH_STATUSFieldUpdateOperationsInput } from "../inputs/EnumPUBL
 import { ExperienceAvailabilityUpdateManyWithoutExperienceInput } from "../inputs/ExperienceAvailabilityUpdateManyWithoutExperienceInput";
 import { ExperienceUpdategalleryInput } from "../inputs/ExperienceUpdategalleryInput";
 import { ExperienceUpdatelikedByIdsInput } from "../inputs/ExperienceUpdatelikedByIdsInput";
+import { FeaturesUpdateManyWithoutExperienceInput } from "../inputs/FeaturesUpdateManyWithoutExperienceInput";
 import { LocationUpdateManyWithoutExperienceInput } from "../inputs/LocationUpdateManyWithoutExperienceInput";
 import { NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput } from "../inputs/NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput";
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { PostUpdateManyWithoutExperienceInput } from "../inputs/PostUpdateManyWithoutExperienceInput";
-import { PriceUpdateManyWithoutExperienceInput } from "../inputs/PriceUpdateManyWithoutExperienceInput";
+import { PriceUpdateOneWithoutExperienceInput } from "../inputs/PriceUpdateOneWithoutExperienceInput";
 import { UserUpdateManyWithoutLikedExperiencesInput } from "../inputs/UserUpdateManyWithoutLikedExperiencesInput";
 export declare class ExperienceUpdateWithoutTenantInput {
     productLink?: NullableStringFieldUpdateOperationsInput | undefined;
@@ -26,8 +27,9 @@ export declare class ExperienceUpdateWithoutTenantInput {
     LikedBy?: UserUpdateManyWithoutLikedExperiencesInput | undefined;
     likedByIds?: ExperienceUpdatelikedByIdsInput | undefined;
     Locations?: LocationUpdateManyWithoutExperienceInput | undefined;
-    Price?: PriceUpdateManyWithoutExperienceInput | undefined;
+    Price?: PriceUpdateOneWithoutExperienceInput | undefined;
     Posts?: PostUpdateManyWithoutExperienceInput | undefined;
+    Features?: FeaturesUpdateManyWithoutExperienceInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

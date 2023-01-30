@@ -5,6 +5,7 @@ export * from "./Comment/args";
 export * from "./Currency/args";
 export * from "./Experience/args";
 export * from "./ExperienceAvailability/args";
+export * from "./Features/args";
 export * from "./Location/args";
 export * from "./Notification/args";
 export * from "./NotificationSettings/args";

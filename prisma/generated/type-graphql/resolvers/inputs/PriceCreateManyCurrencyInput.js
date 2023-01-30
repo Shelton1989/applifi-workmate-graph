@@ -25,7 +25,7 @@ tslib_1.__decorate([
 ], PriceCreateManyCurrencyInput.prototype, "displayPrice", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], PriceCreateManyCurrencyInput.prototype, "details", void 0);

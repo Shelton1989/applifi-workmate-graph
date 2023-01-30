@@ -9,6 +9,7 @@ export declare class TenantScalarWhereWithAggregatesInput {
     id?: StringWithAggregatesFilter | undefined;
     name?: StringWithAggregatesFilter | undefined;
     slug?: StringWithAggregatesFilter | undefined;
+    description?: StringNullableWithAggregatesFilter | undefined;
     avatar?: StringNullableWithAggregatesFilter | undefined;
     coverImage?: StringNullableWithAggregatesFilter | undefined;
     experienceImages?: StringNullableListFilter | undefined;

@@ -5,6 +5,7 @@ import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { ExperienceRelationFilter } from "../inputs/ExperienceRelationFilter";
 import { IntFilter } from "../inputs/IntFilter";
 import { StringFilter } from "../inputs/StringFilter";
+import { StringNullableFilter } from "../inputs/StringNullableFilter";
 export declare class PriceWhereInput {
     AND?: PriceWhereInput[] | undefined;
     OR?: PriceWhereInput[] | undefined;
@@ -13,8 +14,8 @@ export declare class PriceWhereInput {
     priceInLowestDenomination?: IntFilter | undefined;
     displayPrice?: StringFilter | undefined;
     currency?: CurrencyRelationFilter | undefined;
-    currencyId?: StringFilter | undefined;
-    details?: StringFilter | undefined;
+    currencyId?: StringNullableFilter | undefined;
+    details?: StringNullableFilter | undefined;
     Experience?: ExperienceRelationFilter | undefined;
     experienceId?: StringFilter | undefined;
     BookingLineItems?: BookingOrderLineItemListRelationFilter | undefined;

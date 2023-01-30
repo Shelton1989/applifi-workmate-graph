@@ -5,6 +5,7 @@ import { FloatFieldUpdateOperationsInput } from "../inputs/FloatFieldUpdateOpera
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 import { TenantUpdateOneWithoutLocationsInput } from "../inputs/TenantUpdateOneWithoutLocationsInput";
 export declare class LocationUpdateWithoutExperienceInput {
+    description?: StringFieldUpdateOperationsInput | undefined;
     longitude?: FloatFieldUpdateOperationsInput | undefined;
     latitude?: FloatFieldUpdateOperationsInput | undefined;
     googleMapsUrl?: StringFieldUpdateOperationsInput | undefined;

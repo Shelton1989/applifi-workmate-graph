@@ -6,6 +6,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 var LocationScalarFieldEnum;
 (function (LocationScalarFieldEnum) {
     LocationScalarFieldEnum["id"] = "id";
+    LocationScalarFieldEnum["description"] = "description";
     LocationScalarFieldEnum["longitude"] = "longitude";
     LocationScalarFieldEnum["latitude"] = "latitude";
     LocationScalarFieldEnum["googleMapsUrl"] = "googleMapsUrl";

@@ -6,6 +6,7 @@ export declare class TenantCreateWithoutExperiencesInput {
     id?: string | undefined;
     name: string;
     slug: string;
+    description?: string | undefined;
     avatar?: string | undefined;
     coverImage?: string | undefined;
     experienceImages?: TenantCreateexperienceImagesInput | undefined;

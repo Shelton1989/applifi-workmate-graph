@@ -4,7 +4,7 @@ import { ExperienceAvailabilityWhereInput } from "../../../inputs/ExperienceAvai
 export declare class GroupByExperienceAvailabilityArgs {
     where?: ExperienceAvailabilityWhereInput | undefined;
     orderBy?: ExperienceAvailabilityOrderByWithAggregationInput[] | undefined;
-    by: Array<"id" | "experienceId" | "startDate" | "endDate" | "availabilityType" | "weekendSpacesAvailable" | "dailySpacesAvailable" | "hourlySpacesAvailable" | "halfHourlySpacesAvailable" | "createdAt" | "updatedAt">;
+    by: Array<"id" | "experienceId" | "startDate" | "endDate" | "availabilityType" | "spacesAvailable" | "spacesBooked" | "datesAreFlexible" | "createdAt" | "updatedAt">;
     having?: ExperienceAvailabilityScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

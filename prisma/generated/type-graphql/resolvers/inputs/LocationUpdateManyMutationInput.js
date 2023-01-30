@@ -11,6 +11,12 @@ const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateO
 let LocationUpdateManyMutationInput = class LocationUpdateManyMutationInput {
 };
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
+], LocationUpdateManyMutationInput.prototype, "description", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => FloatFieldUpdateOperationsInput_1.FloatFieldUpdateOperationsInput, {
         nullable: true
     }),

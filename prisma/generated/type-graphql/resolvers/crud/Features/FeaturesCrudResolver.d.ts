@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateFeaturesArgs } from "./args/AggregateFeaturesArgs";
+import { CreateFeaturesArgs } from "./args/CreateFeaturesArgs";
+import { CreateManyFeaturesArgs } from "./args/CreateManyFeaturesArgs";
+import { DeleteFeaturesArgs } from "./args/DeleteFeaturesArgs";
+import { DeleteManyFeaturesArgs } from "./args/DeleteManyFeaturesArgs";
+import { FindFirstFeaturesArgs } from "./args/FindFirstFeaturesArgs";
+import { FindManyFeaturesArgs } from "./args/FindManyFeaturesArgs";
+import { FindUniqueFeaturesArgs } from "./args/FindUniqueFeaturesArgs";
+import { GroupByFeaturesArgs } from "./args/GroupByFeaturesArgs";
+import { UpdateFeaturesArgs } from "./args/UpdateFeaturesArgs";
+import { UpdateManyFeaturesArgs } from "./args/UpdateManyFeaturesArgs";
+import { UpsertFeaturesArgs } from "./args/UpsertFeaturesArgs";
+import { Features } from "../../../models/Features";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateFeatures } from "../../outputs/AggregateFeatures";
+import { FeaturesGroupBy } from "../../outputs/FeaturesGroupBy";
+export declare class FeaturesCrudResolver {
+    findUniqueFeatures(ctx: any, info: GraphQLResolveInfo, args: FindUniqueFeaturesArgs): Promise<Features | null>;
+    findFirstFeatures(ctx: any, info: GraphQLResolveInfo, args: FindFirstFeaturesArgs): Promise<Features | null>;
+    findManyFeatures(ctx: any, info: GraphQLResolveInfo, args: FindManyFeaturesArgs): Promise<Features[]>;
+    createFeatures(ctx: any, info: GraphQLResolveInfo, args: CreateFeaturesArgs): Promise<Features>;
+    createManyFeatures(ctx: any, info: GraphQLResolveInfo, args: CreateManyFeaturesArgs): Promise<AffectedRowsOutput>;
+    deleteFeatures(ctx: any, info: GraphQLResolveInfo, args: DeleteFeaturesArgs): Promise<Features | null>;
+    updateFeatures(ctx: any, info: GraphQLResolveInfo, args: UpdateFeaturesArgs): Promise<Features | null>;
+    deleteManyFeatures(ctx: any, info: GraphQLResolveInfo, args: DeleteManyFeaturesArgs): Promise<AffectedRowsOutput>;
+    updateManyFeatures(ctx: any, info: GraphQLResolveInfo, args: UpdateManyFeaturesArgs): Promise<AffectedRowsOutput>;
+    upsertFeatures(ctx: any, info: GraphQLResolveInfo, args: UpsertFeaturesArgs): Promise<Features>;
+    aggregateFeatures(ctx: any, info: GraphQLResolveInfo, args: AggregateFeaturesArgs): Promise<AggregateFeatures>;
+    groupByFeatures(ctx: any, info: GraphQLResolveInfo, args: GroupByFeaturesArgs): Promise<FeaturesGroupBy[]>;
+}

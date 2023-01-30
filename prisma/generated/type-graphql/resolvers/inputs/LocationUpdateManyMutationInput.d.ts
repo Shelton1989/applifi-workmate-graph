@@ -4,6 +4,7 @@ import { EnumADDRESS_TYPEFieldUpdateOperationsInput } from "../inputs/EnumADDRES
 import { FloatFieldUpdateOperationsInput } from "../inputs/FloatFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class LocationUpdateManyMutationInput {
+    description?: StringFieldUpdateOperationsInput | undefined;
     longitude?: FloatFieldUpdateOperationsInput | undefined;
     latitude?: FloatFieldUpdateOperationsInput | undefined;
     googleMapsUrl?: StringFieldUpdateOperationsInput | undefined;

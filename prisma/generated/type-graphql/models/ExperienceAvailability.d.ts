@@ -3,13 +3,12 @@ export declare class ExperienceAvailability {
     id: string;
     Experience?: Experience;
     experienceId: string;
-    startDate: Date;
-    endDate: Date;
+    startDate?: Date | null;
+    endDate?: Date | null;
     availabilityType: "WEEKEND" | "DAILY" | "HOURLY" | "HALF_HOURLY";
-    weekendSpacesAvailable: number;
-    dailySpacesAvailable: number;
-    hourlySpacesAvailable: number;
-    halfHourlySpacesAvailable: number;
+    spacesAvailable: number;
+    spacesBooked: number;
+    datesAreFlexible: boolean;
     createdAt: Date;
     updatedAt: Date;
 }

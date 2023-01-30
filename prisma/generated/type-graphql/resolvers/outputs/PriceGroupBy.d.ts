@@ -7,8 +7,8 @@ export declare class PriceGroupBy {
     id: string;
     priceInLowestDenomination: number;
     displayPrice: string;
-    currencyId: string;
-    details: string;
+    currencyId: string | null;
+    details: string | null;
     experienceId: string;
     isBasePrice: boolean;
     createdAt: Date;

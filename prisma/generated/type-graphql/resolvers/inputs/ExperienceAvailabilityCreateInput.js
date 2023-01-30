@@ -21,13 +21,13 @@ tslib_1.__decorate([
 ], ExperienceAvailabilityCreateInput.prototype, "Experience", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Date)
 ], ExperienceAvailabilityCreateInput.prototype, "startDate", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Date)
 ], ExperienceAvailabilityCreateInput.prototype, "endDate", void 0);
@@ -42,25 +42,19 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateInput.prototype, "weekendSpacesAvailable", void 0);
+], ExperienceAvailabilityCreateInput.prototype, "spacesAvailable", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateInput.prototype, "dailySpacesAvailable", void 0);
+], ExperienceAvailabilityCreateInput.prototype, "spacesBooked", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
     }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateInput.prototype, "hourlySpacesAvailable", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateInput.prototype, "halfHourlySpacesAvailable", void 0);
+    tslib_1.__metadata("design:type", Boolean)
+], ExperienceAvailabilityCreateInput.prototype, "datesAreFlexible", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

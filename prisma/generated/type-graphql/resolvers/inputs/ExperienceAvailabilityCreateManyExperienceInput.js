@@ -14,13 +14,13 @@ tslib_1.__decorate([
 ], ExperienceAvailabilityCreateManyExperienceInput.prototype, "id", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Date)
 ], ExperienceAvailabilityCreateManyExperienceInput.prototype, "startDate", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", Date)
 ], ExperienceAvailabilityCreateManyExperienceInput.prototype, "endDate", void 0);
@@ -35,25 +35,19 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateManyExperienceInput.prototype, "weekendSpacesAvailable", void 0);
+], ExperienceAvailabilityCreateManyExperienceInput.prototype, "spacesAvailable", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateManyExperienceInput.prototype, "dailySpacesAvailable", void 0);
+], ExperienceAvailabilityCreateManyExperienceInput.prototype, "spacesBooked", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
     }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateManyExperienceInput.prototype, "hourlySpacesAvailable", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
-], ExperienceAvailabilityCreateManyExperienceInput.prototype, "halfHourlySpacesAvailable", void 0);
+    tslib_1.__metadata("design:type", Boolean)
+], ExperienceAvailabilityCreateManyExperienceInput.prototype, "datesAreFlexible", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

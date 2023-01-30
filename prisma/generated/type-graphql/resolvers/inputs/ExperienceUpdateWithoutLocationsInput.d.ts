@@ -4,11 +4,12 @@ import { EnumPUBLISH_STATUSFieldUpdateOperationsInput } from "../inputs/EnumPUBL
 import { ExperienceAvailabilityUpdateManyWithoutExperienceInput } from "../inputs/ExperienceAvailabilityUpdateManyWithoutExperienceInput";
 import { ExperienceUpdategalleryInput } from "../inputs/ExperienceUpdategalleryInput";
 import { ExperienceUpdatelikedByIdsInput } from "../inputs/ExperienceUpdatelikedByIdsInput";
+import { FeaturesUpdateManyWithoutExperienceInput } from "../inputs/FeaturesUpdateManyWithoutExperienceInput";
 import { NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput } from "../inputs/NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput";
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { PostUpdateManyWithoutExperienceInput } from "../inputs/PostUpdateManyWithoutExperienceInput";
-import { PriceUpdateManyWithoutExperienceInput } from "../inputs/PriceUpdateManyWithoutExperienceInput";
+import { PriceUpdateOneWithoutExperienceInput } from "../inputs/PriceUpdateOneWithoutExperienceInput";
 import { TenantUpdateOneRequiredWithoutExperiencesInput } from "../inputs/TenantUpdateOneRequiredWithoutExperiencesInput";
 import { UserUpdateManyWithoutLikedExperiencesInput } from "../inputs/UserUpdateManyWithoutLikedExperiencesInput";
 export declare class ExperienceUpdateWithoutLocationsInput {
@@ -26,8 +27,9 @@ export declare class ExperienceUpdateWithoutLocationsInput {
     publishStatus?: EnumPUBLISH_STATUSFieldUpdateOperationsInput | undefined;
     LikedBy?: UserUpdateManyWithoutLikedExperiencesInput | undefined;
     likedByIds?: ExperienceUpdatelikedByIdsInput | undefined;
-    Price?: PriceUpdateManyWithoutExperienceInput | undefined;
+    Price?: PriceUpdateOneWithoutExperienceInput | undefined;
     Posts?: PostUpdateManyWithoutExperienceInput | undefined;
+    Features?: FeaturesUpdateManyWithoutExperienceInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

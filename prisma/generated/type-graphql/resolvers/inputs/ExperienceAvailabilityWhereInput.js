@@ -4,7 +4,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ExperienceAvailabilityWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const BoolFilter_1 = require("../inputs/BoolFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
+const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const EnumAVAILABILITY_TYPEFilter_1 = require("../inputs/EnumAVAILABILITY_TYPEFilter");
 const ExperienceRelationFilter_1 = require("../inputs/ExperienceRelationFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
@@ -48,16 +50,16 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], ExperienceAvailabilityWhereInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
+    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
+    tslib_1.__metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
 ], ExperienceAvailabilityWhereInput.prototype, "startDate", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
+    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
+    tslib_1.__metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
 ], ExperienceAvailabilityWhereInput.prototype, "endDate", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumAVAILABILITY_TYPEFilter_1.EnumAVAILABILITY_TYPEFilter, {
@@ -70,25 +72,19 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
-], ExperienceAvailabilityWhereInput.prototype, "weekendSpacesAvailable", void 0);
+], ExperienceAvailabilityWhereInput.prototype, "spacesAvailable", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
-], ExperienceAvailabilityWhereInput.prototype, "dailySpacesAvailable", void 0);
+], ExperienceAvailabilityWhereInput.prototype, "spacesBooked", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
+    TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
-], ExperienceAvailabilityWhereInput.prototype, "hourlySpacesAvailable", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => IntFilter_1.IntFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", IntFilter_1.IntFilter)
-], ExperienceAvailabilityWhereInput.prototype, "halfHourlySpacesAvailable", void 0);
+    tslib_1.__metadata("design:type", BoolFilter_1.BoolFilter)
+], ExperienceAvailabilityWhereInput.prototype, "datesAreFlexible", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

@@ -9,10 +9,11 @@ const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumEXPERIENCE_CATEGORYNullableFilter_1 = require("../inputs/EnumEXPERIENCE_CATEGORYNullableFilter");
 const EnumPUBLISH_STATUSFilter_1 = require("../inputs/EnumPUBLISH_STATUSFilter");
 const ExperienceAvailabilityListRelationFilter_1 = require("../inputs/ExperienceAvailabilityListRelationFilter");
+const FeaturesListRelationFilter_1 = require("../inputs/FeaturesListRelationFilter");
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const LocationListRelationFilter_1 = require("../inputs/LocationListRelationFilter");
 const PostListRelationFilter_1 = require("../inputs/PostListRelationFilter");
-const PriceListRelationFilter_1 = require("../inputs/PriceListRelationFilter");
+const PriceRelationFilter_1 = require("../inputs/PriceRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
@@ -141,10 +142,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", LocationListRelationFilter_1.LocationListRelationFilter)
 ], ExperienceWhereInput.prototype, "Locations", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PriceListRelationFilter_1.PriceListRelationFilter, {
+    TypeGraphQL.Field(_type => PriceRelationFilter_1.PriceRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", PriceListRelationFilter_1.PriceListRelationFilter)
+    tslib_1.__metadata("design:type", PriceRelationFilter_1.PriceRelationFilter)
 ], ExperienceWhereInput.prototype, "Price", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostListRelationFilter_1.PostListRelationFilter, {
@@ -152,6 +153,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", PostListRelationFilter_1.PostListRelationFilter)
 ], ExperienceWhereInput.prototype, "Posts", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => FeaturesListRelationFilter_1.FeaturesListRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", FeaturesListRelationFilter_1.FeaturesListRelationFilter)
+], ExperienceWhereInput.prototype, "Features", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

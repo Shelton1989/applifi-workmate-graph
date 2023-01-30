@@ -4,10 +4,9 @@ export declare enum ExperienceAvailabilityScalarFieldEnum {
     startDate = "startDate",
     endDate = "endDate",
     availabilityType = "availabilityType",
-    weekendSpacesAvailable = "weekendSpacesAvailable",
-    dailySpacesAvailable = "dailySpacesAvailable",
-    hourlySpacesAvailable = "hourlySpacesAvailable",
-    halfHourlySpacesAvailable = "halfHourlySpacesAvailable",
+    spacesAvailable = "spacesAvailable",
+    spacesBooked = "spacesBooked",
+    datesAreFlexible = "datesAreFlexible",
     createdAt = "createdAt",
     updatedAt = "updatedAt"
 }

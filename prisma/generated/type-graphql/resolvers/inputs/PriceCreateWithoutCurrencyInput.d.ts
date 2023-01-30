@@ -4,7 +4,7 @@ export declare class PriceCreateWithoutCurrencyInput {
     id?: string | undefined;
     priceInLowestDenomination: number;
     displayPrice: string;
-    details: string;
+    details?: string | undefined;
     Experience: ExperienceCreateNestedOneWithoutPriceInput;
     BookingLineItems?: BookingOrderLineItemCreateNestedManyWithoutLineItemPriceInput | undefined;
     isBasePrice?: boolean | undefined;

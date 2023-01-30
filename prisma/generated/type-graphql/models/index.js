@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = exports.TopicLists = exports.Tenant = exports.Request = exports.Reply = exports.Reaction = exports.Price = exports.Post = exports.NotificationSettings = exports.Notification = exports.Location = exports.ExperienceAvailability = exports.Experience = exports.Currency = exports.Comment = exports.BookingOrderLineItem = exports.BookingOrder = exports.AggregateRating = void 0;
+exports.User = exports.TopicLists = exports.Tenant = exports.Request = exports.Reply = exports.Reaction = exports.Price = exports.Post = exports.NotificationSettings = exports.Notification = exports.Location = exports.Features = exports.ExperienceAvailability = exports.Experience = exports.Currency = exports.Comment = exports.BookingOrderLineItem = exports.BookingOrder = exports.AggregateRating = void 0;
 var AggregateRating_1 = require("./AggregateRating");
 Object.defineProperty(exports, "AggregateRating", { enumerable: true, get: function () { return AggregateRating_1.AggregateRating; } });
 var BookingOrder_1 = require("./BookingOrder");
@@ -15,6 +15,8 @@ var Experience_1 = require("./Experience");
 Object.defineProperty(exports, "Experience", { enumerable: true, get: function () { return Experience_1.Experience; } });
 var ExperienceAvailability_1 = require("./ExperienceAvailability");
 Object.defineProperty(exports, "ExperienceAvailability", { enumerable: true, get: function () { return ExperienceAvailability_1.ExperienceAvailability; } });
+var Features_1 = require("./Features");
+Object.defineProperty(exports, "Features", { enumerable: true, get: function () { return Features_1.Features; } });
 var Location_1 = require("./Location");
 Object.defineProperty(exports, "Location", { enumerable: true, get: function () { return Location_1.Location; } });
 var Notification_1 = require("./Notification");

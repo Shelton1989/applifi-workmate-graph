@@ -1,5 +1,6 @@
 export declare class LocationMaxAggregate {
     id: string | null;
+    description: string | null;
     longitude: number | null;
     latitude: number | null;
     googleMapsUrl: string | null;

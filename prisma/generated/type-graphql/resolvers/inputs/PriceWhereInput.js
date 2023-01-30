@@ -11,6 +11,7 @@ const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const ExperienceRelationFilter_1 = require("../inputs/ExperienceRelationFilter");
 const IntFilter_1 = require("../inputs/IntFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
+const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let PriceWhereInput = PriceWhereInput_1 = class PriceWhereInput {
 };
 tslib_1.__decorate([
@@ -56,16 +57,16 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", CurrencyRelationFilter_1.CurrencyRelationFilter)
 ], PriceWhereInput.prototype, "currency", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], PriceWhereInput.prototype, "currencyId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], PriceWhereInput.prototype, "details", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ExperienceRelationFilter_1.ExperienceRelationFilter, {

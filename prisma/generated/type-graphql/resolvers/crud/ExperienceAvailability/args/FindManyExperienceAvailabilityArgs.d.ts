@@ -7,5 +7,5 @@ export declare class FindManyExperienceAvailabilityArgs {
     cursor?: ExperienceAvailabilityWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "experienceId" | "startDate" | "endDate" | "availabilityType" | "weekendSpacesAvailable" | "dailySpacesAvailable" | "hourlySpacesAvailable" | "halfHourlySpacesAvailable" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "experienceId" | "startDate" | "endDate" | "availabilityType" | "spacesAvailable" | "spacesBooked" | "datesAreFlexible" | "createdAt" | "updatedAt"> | undefined;
 }
