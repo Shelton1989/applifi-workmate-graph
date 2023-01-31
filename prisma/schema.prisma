@@ -323,6 +323,7 @@ model Experience {
   category    EXPERIENCE_CATEGORY?
 
   Availability ExperienceAvailability[]
+  Bookings     BookingOrder[]
   photo        String?
   gallery      String[]
 
@@ -460,6 +461,9 @@ enum BOOKING_ORDER_STATUS {
 model BookingOrderLineItem {
   id String @id @default(uuid()) @map("_id")
 
+  details String?
+  comments String?
+
   LineItemPrice Price  @relation(fields: [priceId], references: [id])
   priceId       String
 
@@ -472,6 +476,9 @@ model BookingOrderLineItem {
 
 model BookingOrder {
   id String @id @default(uuid()) @map("_id")
+
+  Experience   Experience @relation(fields: [experienceId], references: [id])
+  experienceId String
 
   status              BOOKING_ORDER_STATUS @default(OPEN)
   SelectedPaymentType String?
