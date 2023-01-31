@@ -108,6 +108,7 @@ model Tenant {
 
   description String?
 
+  logoImage String?
   avatar           String?
   coverImage       String?
   experienceImages String[]
@@ -337,7 +338,7 @@ model Experience {
   likedByIds String[]
 
   Locations Location[]
-  Price     Price?
+  Price     Price[]
 
   Posts Post[]
 
@@ -412,7 +413,7 @@ model Price {
   details String?
 
   Experience   Experience @relation(fields: [experienceId], references: [id])
-  experienceId String @unique
+  experienceId String
 
   BookingLineItems BookingOrderLineItem[]
 
@@ -463,6 +464,10 @@ model BookingOrderLineItem {
 
   details String?
   comments String?
+
+  selectedQuantity Int?
+  selectedStartDate DateTime?
+  selectedEndDate   DateTime?
 
   LineItemPrice Price  @relation(fields: [priceId], references: [id])
   priceId       String
