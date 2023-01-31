@@ -8,6 +8,7 @@ export declare class Tenant {
     name: string;
     slug: string;
     description?: string | null;
+    logoImage?: string | null;
     avatar?: string | null;
     coverImage?: string | null;
     experienceImages: string[];

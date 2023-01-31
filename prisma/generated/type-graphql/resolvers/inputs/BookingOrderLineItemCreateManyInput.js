@@ -24,6 +24,24 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], BookingOrderLineItemCreateManyInput.prototype, "comments", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Number)
+], BookingOrderLineItemCreateManyInput.prototype, "selectedQuantity", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Date)
+], BookingOrderLineItemCreateManyInput.prototype, "selectedStartDate", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Date, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Date)
+], BookingOrderLineItemCreateManyInput.prototype, "selectedEndDate", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: false
     }),

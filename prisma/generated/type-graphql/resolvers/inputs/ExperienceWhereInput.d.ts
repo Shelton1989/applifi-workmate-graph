@@ -8,7 +8,7 @@ import { FeaturesListRelationFilter } from "../inputs/FeaturesListRelationFilter
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { LocationListRelationFilter } from "../inputs/LocationListRelationFilter";
 import { PostListRelationFilter } from "../inputs/PostListRelationFilter";
-import { PriceRelationFilter } from "../inputs/PriceRelationFilter";
+import { PriceListRelationFilter } from "../inputs/PriceListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
@@ -36,7 +36,7 @@ export declare class ExperienceWhereInput {
     LikedBy?: UserListRelationFilter | undefined;
     likedByIds?: StringNullableListFilter | undefined;
     Locations?: LocationListRelationFilter | undefined;
-    Price?: PriceRelationFilter | undefined;
+    Price?: PriceListRelationFilter | undefined;
     Posts?: PostListRelationFilter | undefined;
     Features?: FeaturesListRelationFilter | undefined;
     createdAt?: DateTimeFilter | undefined;

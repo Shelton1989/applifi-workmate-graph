@@ -11,7 +11,7 @@ import { NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput } from "../in
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { PostUpdateManyWithoutExperienceInput } from "../inputs/PostUpdateManyWithoutExperienceInput";
-import { PriceUpdateOneWithoutExperienceInput } from "../inputs/PriceUpdateOneWithoutExperienceInput";
+import { PriceUpdateManyWithoutExperienceInput } from "../inputs/PriceUpdateManyWithoutExperienceInput";
 import { TenantUpdateOneRequiredWithoutExperiencesInput } from "../inputs/TenantUpdateOneRequiredWithoutExperiencesInput";
 export declare class ExperienceUpdateWithoutLikedByInput {
     Tenant?: TenantUpdateOneRequiredWithoutExperiencesInput | undefined;
@@ -29,7 +29,7 @@ export declare class ExperienceUpdateWithoutLikedByInput {
     publishStatus?: EnumPUBLISH_STATUSFieldUpdateOperationsInput | undefined;
     likedByIds?: ExperienceUpdatelikedByIdsInput | undefined;
     Locations?: LocationUpdateManyWithoutExperienceInput | undefined;
-    Price?: PriceUpdateOneWithoutExperienceInput | undefined;
+    Price?: PriceUpdateManyWithoutExperienceInput | undefined;
     Posts?: PostUpdateManyWithoutExperienceInput | undefined;
     Features?: FeaturesUpdateManyWithoutExperienceInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;

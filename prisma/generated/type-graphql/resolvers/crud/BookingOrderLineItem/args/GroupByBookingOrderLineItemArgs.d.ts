@@ -4,7 +4,7 @@ import { BookingOrderLineItemWhereInput } from "../../../inputs/BookingOrderLine
 export declare class GroupByBookingOrderLineItemArgs {
     where?: BookingOrderLineItemWhereInput | undefined;
     orderBy?: BookingOrderLineItemOrderByWithAggregationInput[] | undefined;
-    by: Array<"id" | "details" | "comments" | "priceId" | "bookingId" | "createdAt" | "updatedAt">;
+    by: Array<"id" | "details" | "comments" | "selectedQuantity" | "selectedStartDate" | "selectedEndDate" | "priceId" | "bookingId" | "createdAt" | "updatedAt">;
     having?: BookingOrderLineItemScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

@@ -27,7 +27,7 @@ export declare class Experience {
     LikedBy?: User[];
     likedByIds: string[];
     Locations?: Location[];
-    Price?: Price | null;
+    Price?: Price[];
     Posts?: Post[];
     Features?: Features[];
     createdAt: Date;

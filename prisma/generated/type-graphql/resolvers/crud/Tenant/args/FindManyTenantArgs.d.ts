@@ -7,5 +7,5 @@ export declare class FindManyTenantArgs {
     cursor?: TenantWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "name" | "slug" | "description" | "avatar" | "coverImage" | "experienceImages" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "name" | "slug" | "description" | "logoImage" | "avatar" | "coverImage" | "experienceImages" | "createdAt" | "updatedAt"> | undefined;
 }

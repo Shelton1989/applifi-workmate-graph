@@ -10,7 +10,7 @@ const ExperienceCreategalleryInput_1 = require("../inputs/ExperienceCreategaller
 const ExperienceCreatelikedByIdsInput_1 = require("../inputs/ExperienceCreatelikedByIdsInput");
 const LocationCreateNestedManyWithoutExperienceInput_1 = require("../inputs/LocationCreateNestedManyWithoutExperienceInput");
 const PostCreateNestedManyWithoutExperienceInput_1 = require("../inputs/PostCreateNestedManyWithoutExperienceInput");
-const PriceCreateNestedOneWithoutExperienceInput_1 = require("../inputs/PriceCreateNestedOneWithoutExperienceInput");
+const PriceCreateNestedManyWithoutExperienceInput_1 = require("../inputs/PriceCreateNestedManyWithoutExperienceInput");
 const TenantCreateNestedOneWithoutExperiencesInput_1 = require("../inputs/TenantCreateNestedOneWithoutExperiencesInput");
 const UserCreateNestedManyWithoutLikedExperiencesInput_1 = require("../inputs/UserCreateNestedManyWithoutLikedExperiencesInput");
 const EXPERIENCE_CATEGORY_1 = require("../../enums/EXPERIENCE_CATEGORY");
@@ -120,10 +120,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", LocationCreateNestedManyWithoutExperienceInput_1.LocationCreateNestedManyWithoutExperienceInput)
 ], ExperienceCreateWithoutFeaturesInput.prototype, "Locations", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PriceCreateNestedOneWithoutExperienceInput_1.PriceCreateNestedOneWithoutExperienceInput, {
+    TypeGraphQL.Field(_type => PriceCreateNestedManyWithoutExperienceInput_1.PriceCreateNestedManyWithoutExperienceInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", PriceCreateNestedOneWithoutExperienceInput_1.PriceCreateNestedOneWithoutExperienceInput)
+    tslib_1.__metadata("design:type", PriceCreateNestedManyWithoutExperienceInput_1.PriceCreateNestedManyWithoutExperienceInput)
 ], ExperienceCreateWithoutFeaturesInput.prototype, "Price", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostCreateNestedManyWithoutExperienceInput_1.PostCreateNestedManyWithoutExperienceInput, {

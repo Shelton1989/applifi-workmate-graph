@@ -1,6 +1,8 @@
 import { PriceCreateWithoutExperienceInput } from "../inputs/PriceCreateWithoutExperienceInput";
 import { PriceUpdateWithoutExperienceInput } from "../inputs/PriceUpdateWithoutExperienceInput";
-export declare class PriceUpsertWithoutExperienceInput {
+import { PriceWhereUniqueInput } from "../inputs/PriceWhereUniqueInput";
+export declare class PriceUpsertWithWhereUniqueWithoutExperienceInput {
+    where: PriceWhereUniqueInput;
     update: PriceUpdateWithoutExperienceInput;
     create: PriceCreateWithoutExperienceInput;
 }

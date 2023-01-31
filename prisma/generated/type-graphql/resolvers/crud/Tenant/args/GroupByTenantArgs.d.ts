@@ -4,7 +4,7 @@ import { TenantWhereInput } from "../../../inputs/TenantWhereInput";
 export declare class GroupByTenantArgs {
     where?: TenantWhereInput | undefined;
     orderBy?: TenantOrderByWithAggregationInput[] | undefined;
-    by: Array<"id" | "name" | "slug" | "description" | "avatar" | "coverImage" | "experienceImages" | "createdAt" | "updatedAt">;
+    by: Array<"id" | "name" | "slug" | "description" | "logoImage" | "avatar" | "coverImage" | "experienceImages" | "createdAt" | "updatedAt">;
     having?: TenantScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

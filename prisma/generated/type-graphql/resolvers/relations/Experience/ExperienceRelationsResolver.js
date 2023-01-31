@@ -19,6 +19,7 @@ const ExperienceFeaturesArgs_1 = require("./args/ExperienceFeaturesArgs");
 const ExperienceLikedByArgs_1 = require("./args/ExperienceLikedByArgs");
 const ExperienceLocationsArgs_1 = require("./args/ExperienceLocationsArgs");
 const ExperiencePostsArgs_1 = require("./args/ExperiencePostsArgs");
+const ExperiencePriceArgs_1 = require("./args/ExperiencePriceArgs");
 const helpers_1 = require("../../../helpers");
 let ExperienceRelationsResolver = class ExperienceRelationsResolver {
     async Tenant(experience, ctx) {
@@ -63,12 +64,12 @@ let ExperienceRelationsResolver = class ExperienceRelationsResolver {
             },
         }).Locations(args);
     }
-    async Price(experience, ctx) {
+    async Price(experience, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).experience.findUnique({
             where: {
                 id: experience.id,
             },
-        }).Price({});
+        }).Price(args);
     }
     async Posts(experience, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).experience.findUnique({
@@ -150,13 +151,14 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:returntype", Promise)
 ], ExperienceRelationsResolver.prototype, "Locations", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => Price_1.Price, {
-        nullable: true
+    TypeGraphQL.FieldResolver(_type => [Price_1.Price], {
+        nullable: false
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
     tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__param(2, TypeGraphQL.Args()),
     tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [Experience_1.Experience, Object]),
+    tslib_1.__metadata("design:paramtypes", [Experience_1.Experience, Object, ExperiencePriceArgs_1.ExperiencePriceArgs]),
     tslib_1.__metadata("design:returntype", Promise)
 ], ExperienceRelationsResolver.prototype, "Price", null);
 tslib_1.__decorate([

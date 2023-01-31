@@ -15,7 +15,7 @@ const LocationUpdateManyWithoutExperienceInput_1 = require("../inputs/LocationUp
 const NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput_1 = require("../inputs/NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput");
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const PriceUpdateOneWithoutExperienceInput_1 = require("../inputs/PriceUpdateOneWithoutExperienceInput");
+const PriceUpdateManyWithoutExperienceInput_1 = require("../inputs/PriceUpdateManyWithoutExperienceInput");
 const TenantUpdateOneRequiredWithoutExperiencesInput_1 = require("../inputs/TenantUpdateOneRequiredWithoutExperiencesInput");
 const UserUpdateManyWithoutLikedExperiencesInput_1 = require("../inputs/UserUpdateManyWithoutLikedExperiencesInput");
 let ExperienceUpdateWithoutPostsInput = class ExperienceUpdateWithoutPostsInput {
@@ -117,10 +117,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", LocationUpdateManyWithoutExperienceInput_1.LocationUpdateManyWithoutExperienceInput)
 ], ExperienceUpdateWithoutPostsInput.prototype, "Locations", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PriceUpdateOneWithoutExperienceInput_1.PriceUpdateOneWithoutExperienceInput, {
+    TypeGraphQL.Field(_type => PriceUpdateManyWithoutExperienceInput_1.PriceUpdateManyWithoutExperienceInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", PriceUpdateOneWithoutExperienceInput_1.PriceUpdateOneWithoutExperienceInput)
+    tslib_1.__metadata("design:type", PriceUpdateManyWithoutExperienceInput_1.PriceUpdateManyWithoutExperienceInput)
 ], ExperienceUpdateWithoutPostsInput.prototype, "Price", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => FeaturesUpdateManyWithoutExperienceInput_1.FeaturesUpdateManyWithoutExperienceInput, {

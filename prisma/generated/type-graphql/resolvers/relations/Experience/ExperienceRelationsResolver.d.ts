@@ -14,6 +14,7 @@ import { ExperienceFeaturesArgs } from "./args/ExperienceFeaturesArgs";
 import { ExperienceLikedByArgs } from "./args/ExperienceLikedByArgs";
 import { ExperienceLocationsArgs } from "./args/ExperienceLocationsArgs";
 import { ExperiencePostsArgs } from "./args/ExperiencePostsArgs";
+import { ExperiencePriceArgs } from "./args/ExperiencePriceArgs";
 export declare class ExperienceRelationsResolver {
     Tenant(experience: Experience, ctx: any): Promise<Tenant>;
     Availability(experience: Experience, ctx: any, args: ExperienceAvailabilityArgs): Promise<ExperienceAvailability[]>;
@@ -21,7 +22,7 @@ export declare class ExperienceRelationsResolver {
     AggregateRating(experience: Experience, ctx: any): Promise<AggregateRating | null>;
     LikedBy(experience: Experience, ctx: any, args: ExperienceLikedByArgs): Promise<User[]>;
     Locations(experience: Experience, ctx: any, args: ExperienceLocationsArgs): Promise<Location[]>;
-    Price(experience: Experience, ctx: any): Promise<Price | null>;
+    Price(experience: Experience, ctx: any, args: ExperiencePriceArgs): Promise<Price[]>;
     Posts(experience: Experience, ctx: any, args: ExperiencePostsArgs): Promise<Post[]>;
     Features(experience: Experience, ctx: any, args: ExperienceFeaturesArgs): Promise<Features[]>;
 }

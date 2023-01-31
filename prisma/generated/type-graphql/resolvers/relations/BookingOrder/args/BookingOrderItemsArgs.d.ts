@@ -7,5 +7,5 @@ export declare class BookingOrderItemsArgs {
     cursor?: BookingOrderLineItemWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "details" | "comments" | "priceId" | "bookingId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "details" | "comments" | "selectedQuantity" | "selectedStartDate" | "selectedEndDate" | "priceId" | "bookingId" | "createdAt" | "updatedAt"> | undefined;
 }

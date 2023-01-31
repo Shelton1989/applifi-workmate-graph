@@ -4,6 +4,7 @@ export declare class TenantCreateManyInput {
     name: string;
     slug: string;
     description?: string | undefined;
+    logoImage?: string | undefined;
     avatar?: string | undefined;
     coverImage?: string | undefined;
     experienceImages?: TenantCreateexperienceImagesInput | undefined;

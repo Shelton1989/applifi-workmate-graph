@@ -6,6 +6,7 @@ export declare class TenantGroupBy {
     name: string;
     slug: string;
     description: string | null;
+    logoImage: string | null;
     avatar: string | null;
     coverImage: string | null;
     experienceImages: string[] | null;

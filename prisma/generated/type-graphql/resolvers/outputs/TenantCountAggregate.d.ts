@@ -3,6 +3,7 @@ export declare class TenantCountAggregate {
     name: number;
     slug: number;
     description: number;
+    logoImage: number;
     avatar: number;
     coverImage: number;
     experienceImages: number;

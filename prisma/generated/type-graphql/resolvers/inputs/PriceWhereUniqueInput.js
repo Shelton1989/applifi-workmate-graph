@@ -11,12 +11,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], PriceWhereUniqueInput.prototype, "id", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], PriceWhereUniqueInput.prototype, "experienceId", void 0);
 PriceWhereUniqueInput = tslib_1.__decorate([
     TypeGraphQL.InputType("PriceWhereUniqueInput", {
         isAbstract: true

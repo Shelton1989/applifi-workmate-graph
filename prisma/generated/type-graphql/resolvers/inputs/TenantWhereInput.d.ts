@@ -14,6 +14,7 @@ export declare class TenantWhereInput {
     name?: StringFilter | undefined;
     slug?: StringFilter | undefined;
     description?: StringNullableFilter | undefined;
+    logoImage?: StringNullableFilter | undefined;
     avatar?: StringNullableFilter | undefined;
     coverImage?: StringNullableFilter | undefined;
     experienceImages?: StringNullableListFilter | undefined;

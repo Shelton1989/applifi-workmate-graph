@@ -10,7 +10,7 @@ import { LocationUpdateManyWithoutExperienceInput } from "../inputs/LocationUpda
 import { NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput } from "../inputs/NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput";
 import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { PriceUpdateOneWithoutExperienceInput } from "../inputs/PriceUpdateOneWithoutExperienceInput";
+import { PriceUpdateManyWithoutExperienceInput } from "../inputs/PriceUpdateManyWithoutExperienceInput";
 import { TenantUpdateOneRequiredWithoutExperiencesInput } from "../inputs/TenantUpdateOneRequiredWithoutExperiencesInput";
 import { UserUpdateManyWithoutLikedExperiencesInput } from "../inputs/UserUpdateManyWithoutLikedExperiencesInput";
 export declare class ExperienceUpdateWithoutPostsInput {
@@ -30,7 +30,7 @@ export declare class ExperienceUpdateWithoutPostsInput {
     LikedBy?: UserUpdateManyWithoutLikedExperiencesInput | undefined;
     likedByIds?: ExperienceUpdatelikedByIdsInput | undefined;
     Locations?: LocationUpdateManyWithoutExperienceInput | undefined;
-    Price?: PriceUpdateOneWithoutExperienceInput | undefined;
+    Price?: PriceUpdateManyWithoutExperienceInput | undefined;
     Features?: FeaturesUpdateManyWithoutExperienceInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;

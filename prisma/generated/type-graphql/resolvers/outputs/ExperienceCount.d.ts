@@ -3,6 +3,7 @@ export declare class ExperienceCount {
     Bookings: number;
     LikedBy: number;
     Locations: number;
+    Price: number;
     Posts: number;
     Features: number;
 }

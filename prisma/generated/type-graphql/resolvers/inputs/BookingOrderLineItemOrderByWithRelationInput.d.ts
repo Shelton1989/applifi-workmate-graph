@@ -4,6 +4,9 @@ export declare class BookingOrderLineItemOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
     details?: "asc" | "desc" | undefined;
     comments?: "asc" | "desc" | undefined;
+    selectedQuantity?: "asc" | "desc" | undefined;
+    selectedStartDate?: "asc" | "desc" | undefined;
+    selectedEndDate?: "asc" | "desc" | undefined;
     LineItemPrice?: PriceOrderByWithRelationInput | undefined;
     priceId?: "asc" | "desc" | undefined;
     Booking?: BookingOrderOrderByWithRelationInput | undefined;

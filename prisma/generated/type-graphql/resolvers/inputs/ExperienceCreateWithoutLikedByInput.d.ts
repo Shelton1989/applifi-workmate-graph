@@ -6,7 +6,7 @@ import { ExperienceCreatelikedByIdsInput } from "../inputs/ExperienceCreateliked
 import { FeaturesCreateNestedManyWithoutExperienceInput } from "../inputs/FeaturesCreateNestedManyWithoutExperienceInput";
 import { LocationCreateNestedManyWithoutExperienceInput } from "../inputs/LocationCreateNestedManyWithoutExperienceInput";
 import { PostCreateNestedManyWithoutExperienceInput } from "../inputs/PostCreateNestedManyWithoutExperienceInput";
-import { PriceCreateNestedOneWithoutExperienceInput } from "../inputs/PriceCreateNestedOneWithoutExperienceInput";
+import { PriceCreateNestedManyWithoutExperienceInput } from "../inputs/PriceCreateNestedManyWithoutExperienceInput";
 import { TenantCreateNestedOneWithoutExperiencesInput } from "../inputs/TenantCreateNestedOneWithoutExperiencesInput";
 export declare class ExperienceCreateWithoutLikedByInput {
     id?: string | undefined;
@@ -25,7 +25,7 @@ export declare class ExperienceCreateWithoutLikedByInput {
     publishStatus?: "DRAFT" | "PUBLISHED" | "UNPUBLISHED" | "UNDER_REVIEW" | "PENDING_APPROVAL" | "IN_REVIEW" | "APPROVED" | "NO_ACTION_TAKEN" | "REJECTED_WITH_REASON" | "DECLINED" | "BANNED" | "SOFT_BANNED" | undefined;
     likedByIds?: ExperienceCreatelikedByIdsInput | undefined;
     Locations?: LocationCreateNestedManyWithoutExperienceInput | undefined;
-    Price?: PriceCreateNestedOneWithoutExperienceInput | undefined;
+    Price?: PriceCreateNestedManyWithoutExperienceInput | undefined;
     Posts?: PostCreateNestedManyWithoutExperienceInput | undefined;
     Features?: FeaturesCreateNestedManyWithoutExperienceInput | undefined;
     createdAt?: Date | undefined;

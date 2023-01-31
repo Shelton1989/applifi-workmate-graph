@@ -4,6 +4,9 @@ export declare class BookingOrderLineItemCreateInput {
     id?: string | undefined;
     details?: string | undefined;
     comments?: string | undefined;
+    selectedQuantity?: number | undefined;
+    selectedStartDate?: Date | undefined;
+    selectedEndDate?: Date | undefined;
     LineItemPrice: PriceCreateNestedOneWithoutBookingLineItemsInput;
     Booking: BookingOrderCreateNestedOneWithoutItemsInput;
     createdAt?: Date | undefined;

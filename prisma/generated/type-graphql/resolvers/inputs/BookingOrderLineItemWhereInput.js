@@ -6,6 +6,8 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BookingOrderRelationFilter_1 = require("../inputs/BookingOrderRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
+const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
+const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const PriceRelationFilter_1 = require("../inputs/PriceRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
@@ -47,6 +49,24 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], BookingOrderLineItemWhereInput.prototype, "comments", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => IntNullableFilter_1.IntNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", IntNullableFilter_1.IntNullableFilter)
+], BookingOrderLineItemWhereInput.prototype, "selectedQuantity", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
+], BookingOrderLineItemWhereInput.prototype, "selectedStartDate", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
+], BookingOrderLineItemWhereInput.prototype, "selectedEndDate", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PriceRelationFilter_1.PriceRelationFilter, {
         nullable: true

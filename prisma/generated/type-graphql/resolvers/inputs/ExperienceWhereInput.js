@@ -14,7 +14,7 @@ const FeaturesListRelationFilter_1 = require("../inputs/FeaturesListRelationFilt
 const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const LocationListRelationFilter_1 = require("../inputs/LocationListRelationFilter");
 const PostListRelationFilter_1 = require("../inputs/PostListRelationFilter");
-const PriceRelationFilter_1 = require("../inputs/PriceRelationFilter");
+const PriceListRelationFilter_1 = require("../inputs/PriceListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
@@ -149,10 +149,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", LocationListRelationFilter_1.LocationListRelationFilter)
 ], ExperienceWhereInput.prototype, "Locations", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PriceRelationFilter_1.PriceRelationFilter, {
+    TypeGraphQL.Field(_type => PriceListRelationFilter_1.PriceListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", PriceRelationFilter_1.PriceRelationFilter)
+    tslib_1.__metadata("design:type", PriceListRelationFilter_1.PriceListRelationFilter)
 ], ExperienceWhereInput.prototype, "Price", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostListRelationFilter_1.PostListRelationFilter, {
