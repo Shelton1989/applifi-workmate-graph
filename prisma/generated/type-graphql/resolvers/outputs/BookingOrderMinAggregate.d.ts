@@ -1,5 +1,6 @@
 export declare class BookingOrderMinAggregate {
     id: string | null;
+    experienceId: string | null;
     status: "OPEN" | "BOOKED" | "BOOKED_PENDING_PAYMENT" | "READY_FOR_CHECK_IN" | "CHECKED_IN" | "READY_FOR_CHECK_OUT" | "COMPLETE" | "CANCELLED" | null;
     SelectedPaymentType: string | null;
     stripePaymentReference: string | null;

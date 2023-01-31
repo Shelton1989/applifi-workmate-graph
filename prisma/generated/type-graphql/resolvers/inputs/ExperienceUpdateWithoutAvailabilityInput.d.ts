@@ -1,4 +1,5 @@
 import { AggregateRatingUpdateOneWithoutExperienceInput } from "../inputs/AggregateRatingUpdateOneWithoutExperienceInput";
+import { BookingOrderUpdateManyWithoutExperienceInput } from "../inputs/BookingOrderUpdateManyWithoutExperienceInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { EnumPUBLISH_STATUSFieldUpdateOperationsInput } from "../inputs/EnumPUBLISH_STATUSFieldUpdateOperationsInput";
 import { ExperienceUpdategalleryInput } from "../inputs/ExperienceUpdategalleryInput";
@@ -19,6 +20,7 @@ export declare class ExperienceUpdateWithoutAvailabilityInput {
     title?: NullableStringFieldUpdateOperationsInput | undefined;
     description?: NullableStringFieldUpdateOperationsInput | undefined;
     category?: NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput | undefined;
+    Bookings?: BookingOrderUpdateManyWithoutExperienceInput | undefined;
     photo?: NullableStringFieldUpdateOperationsInput | undefined;
     gallery?: ExperienceUpdategalleryInput | undefined;
     duration?: NullableIntFieldUpdateOperationsInput | undefined;

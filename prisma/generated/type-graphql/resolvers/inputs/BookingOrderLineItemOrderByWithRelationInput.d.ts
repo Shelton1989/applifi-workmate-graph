@@ -2,6 +2,8 @@ import { BookingOrderOrderByWithRelationInput } from "../inputs/BookingOrderOrde
 import { PriceOrderByWithRelationInput } from "../inputs/PriceOrderByWithRelationInput";
 export declare class BookingOrderLineItemOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
+    details?: "asc" | "desc" | undefined;
+    comments?: "asc" | "desc" | undefined;
     LineItemPrice?: PriceOrderByWithRelationInput | undefined;
     priceId?: "asc" | "desc" | undefined;
     Booking?: BookingOrderOrderByWithRelationInput | undefined;

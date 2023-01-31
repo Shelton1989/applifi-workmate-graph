@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.BookingOrderCreateWithoutItemsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const ExperienceCreateNestedOneWithoutBookingsInput_1 = require("../inputs/ExperienceCreateNestedOneWithoutBookingsInput");
 const TenantCreateNestedOneWithoutBookingOrdersInput_1 = require("../inputs/TenantCreateNestedOneWithoutBookingOrdersInput");
 const UserCreateNestedOneWithoutBookingsInput_1 = require("../inputs/UserCreateNestedOneWithoutBookingsInput");
 const BOOKING_ORDER_STATUS_1 = require("../../enums/BOOKING_ORDER_STATUS");
@@ -14,6 +15,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], BookingOrderCreateWithoutItemsInput.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ExperienceCreateNestedOneWithoutBookingsInput_1.ExperienceCreateNestedOneWithoutBookingsInput, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", ExperienceCreateNestedOneWithoutBookingsInput_1.ExperienceCreateNestedOneWithoutBookingsInput)
+], BookingOrderCreateWithoutItemsInput.prototype, "Experience", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BOOKING_ORDER_STATUS_1.BOOKING_ORDER_STATUS, {
         nullable: true

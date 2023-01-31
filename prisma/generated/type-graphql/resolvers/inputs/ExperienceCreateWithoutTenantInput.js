@@ -4,6 +4,7 @@ exports.ExperienceCreateWithoutTenantInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AggregateRatingCreateNestedOneWithoutExperienceInput_1 = require("../inputs/AggregateRatingCreateNestedOneWithoutExperienceInput");
+const BookingOrderCreateNestedManyWithoutExperienceInput_1 = require("../inputs/BookingOrderCreateNestedManyWithoutExperienceInput");
 const ExperienceAvailabilityCreateNestedManyWithoutExperienceInput_1 = require("../inputs/ExperienceAvailabilityCreateNestedManyWithoutExperienceInput");
 const ExperienceCreategalleryInput_1 = require("../inputs/ExperienceCreategalleryInput");
 const ExperienceCreatelikedByIdsInput_1 = require("../inputs/ExperienceCreatelikedByIdsInput");
@@ -58,6 +59,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", ExperienceAvailabilityCreateNestedManyWithoutExperienceInput_1.ExperienceAvailabilityCreateNestedManyWithoutExperienceInput)
 ], ExperienceCreateWithoutTenantInput.prototype, "Availability", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BookingOrderCreateNestedManyWithoutExperienceInput_1.BookingOrderCreateNestedManyWithoutExperienceInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BookingOrderCreateNestedManyWithoutExperienceInput_1.BookingOrderCreateNestedManyWithoutExperienceInput)
+], ExperienceCreateWithoutTenantInput.prototype, "Bookings", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

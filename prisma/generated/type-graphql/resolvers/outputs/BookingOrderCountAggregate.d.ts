@@ -1,5 +1,6 @@
 export declare class BookingOrderCountAggregate {
     id: number;
+    experienceId: number;
     status: number;
     SelectedPaymentType: number;
     stripePaymentReference: number;

@@ -35,6 +35,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
 ], BookingOrderScalarWhereWithAggregatesInput.prototype, "id", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringWithAggregatesFilter_1.StringWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
+], BookingOrderScalarWhereWithAggregatesInput.prototype, "experienceId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumBOOKING_ORDER_STATUSWithAggregatesFilter_1.EnumBOOKING_ORDER_STATUSWithAggregatesFilter, {
         nullable: true
     }),

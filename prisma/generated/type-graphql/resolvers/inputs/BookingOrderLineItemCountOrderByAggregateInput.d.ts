@@ -1,5 +1,7 @@
 export declare class BookingOrderLineItemCountOrderByAggregateInput {
     id?: "asc" | "desc" | undefined;
+    details?: "asc" | "desc" | undefined;
+    comments?: "asc" | "desc" | undefined;
     priceId?: "asc" | "desc" | undefined;
     bookingId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;

@@ -3,6 +3,8 @@ import { BookingOrderLineItemMaxAggregate } from "../outputs/BookingOrderLineIte
 import { BookingOrderLineItemMinAggregate } from "../outputs/BookingOrderLineItemMinAggregate";
 export declare class BookingOrderLineItemGroupBy {
     id: string;
+    details: string | null;
+    comments: string | null;
     priceId: string;
     bookingId: string;
     createdAt: Date;

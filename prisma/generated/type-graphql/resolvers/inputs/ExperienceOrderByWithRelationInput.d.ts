@@ -1,4 +1,5 @@
 import { AggregateRatingOrderByWithRelationInput } from "../inputs/AggregateRatingOrderByWithRelationInput";
+import { BookingOrderOrderByRelationAggregateInput } from "../inputs/BookingOrderOrderByRelationAggregateInput";
 import { ExperienceAvailabilityOrderByRelationAggregateInput } from "../inputs/ExperienceAvailabilityOrderByRelationAggregateInput";
 import { FeaturesOrderByRelationAggregateInput } from "../inputs/FeaturesOrderByRelationAggregateInput";
 import { LocationOrderByRelationAggregateInput } from "../inputs/LocationOrderByRelationAggregateInput";
@@ -16,6 +17,7 @@ export declare class ExperienceOrderByWithRelationInput {
     description?: "asc" | "desc" | undefined;
     category?: "asc" | "desc" | undefined;
     Availability?: ExperienceAvailabilityOrderByRelationAggregateInput | undefined;
+    Bookings?: BookingOrderOrderByRelationAggregateInput | undefined;
     photo?: "asc" | "desc" | undefined;
     gallery?: "asc" | "desc" | undefined;
     duration?: "asc" | "desc" | undefined;

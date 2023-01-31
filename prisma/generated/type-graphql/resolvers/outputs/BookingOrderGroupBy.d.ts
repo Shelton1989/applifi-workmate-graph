@@ -3,6 +3,7 @@ import { BookingOrderMaxAggregate } from "../outputs/BookingOrderMaxAggregate";
 import { BookingOrderMinAggregate } from "../outputs/BookingOrderMinAggregate";
 export declare class BookingOrderGroupBy {
     id: string;
+    experienceId: string;
     status: "OPEN" | "BOOKED" | "BOOKED_PENDING_PAYMENT" | "READY_FOR_CHECK_IN" | "CHECKED_IN" | "READY_FOR_CHECK_OUT" | "COMPLETE" | "CANCELLED";
     SelectedPaymentType: string | null;
     stripePaymentReference: string | null;

@@ -1,6 +1,7 @@
 import { BookingOrderLineItemListRelationFilter } from "../inputs/BookingOrderLineItemListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumBOOKING_ORDER_STATUSFilter } from "../inputs/EnumBOOKING_ORDER_STATUSFilter";
+import { ExperienceRelationFilter } from "../inputs/ExperienceRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { TenantRelationFilter } from "../inputs/TenantRelationFilter";
@@ -10,6 +11,8 @@ export declare class BookingOrderWhereInput {
     OR?: BookingOrderWhereInput[] | undefined;
     NOT?: BookingOrderWhereInput[] | undefined;
     id?: StringFilter | undefined;
+    Experience?: ExperienceRelationFilter | undefined;
+    experienceId?: StringFilter | undefined;
     status?: EnumBOOKING_ORDER_STATUSFilter | undefined;
     SelectedPaymentType?: StringNullableFilter | undefined;
     stripePaymentReference?: StringNullableFilter | undefined;

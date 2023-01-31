@@ -5,9 +5,22 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BookingOrderUpdateOneRequiredWithoutItemsInput_1 = require("../inputs/BookingOrderUpdateOneRequiredWithoutItemsInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
+const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const PriceUpdateOneRequiredWithoutBookingLineItemsInput_1 = require("../inputs/PriceUpdateOneRequiredWithoutBookingLineItemsInput");
 let BookingOrderLineItemUpdateInput = class BookingOrderLineItemUpdateInput {
 };
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
+], BookingOrderLineItemUpdateInput.prototype, "details", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
+], BookingOrderLineItemUpdateInput.prototype, "comments", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PriceUpdateOneRequiredWithoutBookingLineItemsInput_1.PriceUpdateOneRequiredWithoutBookingLineItemsInput, {
         nullable: true

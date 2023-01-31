@@ -6,6 +6,8 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 var BookingOrderLineItemScalarFieldEnum;
 (function (BookingOrderLineItemScalarFieldEnum) {
     BookingOrderLineItemScalarFieldEnum["id"] = "id";
+    BookingOrderLineItemScalarFieldEnum["details"] = "details";
+    BookingOrderLineItemScalarFieldEnum["comments"] = "comments";
     BookingOrderLineItemScalarFieldEnum["priceId"] = "priceId";
     BookingOrderLineItemScalarFieldEnum["bookingId"] = "bookingId";
     BookingOrderLineItemScalarFieldEnum["createdAt"] = "createdAt";

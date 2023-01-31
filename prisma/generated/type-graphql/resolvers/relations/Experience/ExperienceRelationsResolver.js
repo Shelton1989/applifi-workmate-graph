@@ -4,6 +4,7 @@ exports.ExperienceRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AggregateRating_1 = require("../../../models/AggregateRating");
+const BookingOrder_1 = require("../../../models/BookingOrder");
 const Experience_1 = require("../../../models/Experience");
 const ExperienceAvailability_1 = require("../../../models/ExperienceAvailability");
 const Features_1 = require("../../../models/Features");
@@ -13,6 +14,7 @@ const Price_1 = require("../../../models/Price");
 const Tenant_1 = require("../../../models/Tenant");
 const User_1 = require("../../../models/User");
 const ExperienceAvailabilityArgs_1 = require("./args/ExperienceAvailabilityArgs");
+const ExperienceBookingsArgs_1 = require("./args/ExperienceBookingsArgs");
 const ExperienceFeaturesArgs_1 = require("./args/ExperienceFeaturesArgs");
 const ExperienceLikedByArgs_1 = require("./args/ExperienceLikedByArgs");
 const ExperienceLocationsArgs_1 = require("./args/ExperienceLocationsArgs");
@@ -32,6 +34,13 @@ let ExperienceRelationsResolver = class ExperienceRelationsResolver {
                 id: experience.id,
             },
         }).Availability(args);
+    }
+    async Bookings(experience, ctx, args) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).experience.findUnique({
+            where: {
+                id: experience.id,
+            },
+        }).Bookings(args);
     }
     async AggregateRating(experience, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).experience.findUnique({
@@ -97,6 +106,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", [Experience_1.Experience, Object, ExperienceAvailabilityArgs_1.ExperienceAvailabilityArgs]),
     tslib_1.__metadata("design:returntype", Promise)
 ], ExperienceRelationsResolver.prototype, "Availability", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => [BookingOrder_1.BookingOrder], {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__param(2, TypeGraphQL.Args()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [Experience_1.Experience, Object, ExperienceBookingsArgs_1.ExperienceBookingsArgs]),
+    tslib_1.__metadata("design:returntype", Promise)
+], ExperienceRelationsResolver.prototype, "Bookings", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => AggregateRating_1.AggregateRating, {
         nullable: true

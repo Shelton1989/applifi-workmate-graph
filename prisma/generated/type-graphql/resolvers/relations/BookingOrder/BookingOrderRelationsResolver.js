@@ -5,11 +5,19 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BookingOrder_1 = require("../../../models/BookingOrder");
 const BookingOrderLineItem_1 = require("../../../models/BookingOrderLineItem");
+const Experience_1 = require("../../../models/Experience");
 const Tenant_1 = require("../../../models/Tenant");
 const User_1 = require("../../../models/User");
 const BookingOrderItemsArgs_1 = require("./args/BookingOrderItemsArgs");
 const helpers_1 = require("../../../helpers");
 let BookingOrderRelationsResolver = class BookingOrderRelationsResolver {
+    async Experience(bookingOrder, ctx) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).bookingOrder.findUnique({
+            where: {
+                id: bookingOrder.id,
+            },
+        }).Experience({});
+    }
     async Buyer(bookingOrder, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).bookingOrder.findUnique({
             where: {
@@ -32,6 +40,16 @@ let BookingOrderRelationsResolver = class BookingOrderRelationsResolver {
         }).Items(args);
     }
 };
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => Experience_1.Experience, {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [BookingOrder_1.BookingOrder, Object]),
+    tslib_1.__metadata("design:returntype", Promise)
+], BookingOrderRelationsResolver.prototype, "Experience", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => User_1.User, {
         nullable: false

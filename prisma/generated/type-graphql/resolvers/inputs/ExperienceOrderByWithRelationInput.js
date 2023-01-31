@@ -4,6 +4,7 @@ exports.ExperienceOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AggregateRatingOrderByWithRelationInput_1 = require("../inputs/AggregateRatingOrderByWithRelationInput");
+const BookingOrderOrderByRelationAggregateInput_1 = require("../inputs/BookingOrderOrderByRelationAggregateInput");
 const ExperienceAvailabilityOrderByRelationAggregateInput_1 = require("../inputs/ExperienceAvailabilityOrderByRelationAggregateInput");
 const FeaturesOrderByRelationAggregateInput_1 = require("../inputs/FeaturesOrderByRelationAggregateInput");
 const LocationOrderByRelationAggregateInput_1 = require("../inputs/LocationOrderByRelationAggregateInput");
@@ -68,6 +69,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", ExperienceAvailabilityOrderByRelationAggregateInput_1.ExperienceAvailabilityOrderByRelationAggregateInput)
 ], ExperienceOrderByWithRelationInput.prototype, "Availability", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BookingOrderOrderByRelationAggregateInput_1.BookingOrderOrderByRelationAggregateInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BookingOrderOrderByRelationAggregateInput_1.BookingOrderOrderByRelationAggregateInput)
+], ExperienceOrderByWithRelationInput.prototype, "Bookings", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true

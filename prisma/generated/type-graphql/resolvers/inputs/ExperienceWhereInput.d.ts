@@ -1,4 +1,5 @@
 import { AggregateRatingRelationFilter } from "../inputs/AggregateRatingRelationFilter";
+import { BookingOrderListRelationFilter } from "../inputs/BookingOrderListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumEXPERIENCE_CATEGORYNullableFilter } from "../inputs/EnumEXPERIENCE_CATEGORYNullableFilter";
 import { EnumPUBLISH_STATUSFilter } from "../inputs/EnumPUBLISH_STATUSFilter";
@@ -26,6 +27,7 @@ export declare class ExperienceWhereInput {
     description?: StringNullableFilter | undefined;
     category?: EnumEXPERIENCE_CATEGORYNullableFilter | undefined;
     Availability?: ExperienceAvailabilityListRelationFilter | undefined;
+    Bookings?: BookingOrderListRelationFilter | undefined;
     photo?: StringNullableFilter | undefined;
     gallery?: StringNullableListFilter | undefined;
     duration?: IntNullableFilter | undefined;

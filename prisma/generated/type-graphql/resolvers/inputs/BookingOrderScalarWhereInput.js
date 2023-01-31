@@ -35,6 +35,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], BookingOrderScalarWhereInput.prototype, "id", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+], BookingOrderScalarWhereInput.prototype, "experienceId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumBOOKING_ORDER_STATUSFilter_1.EnumBOOKING_ORDER_STATUSFilter, {
         nullable: true
     }),

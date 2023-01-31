@@ -8,6 +8,7 @@ const BookingOrderRelationFilter_1 = require("../inputs/BookingOrderRelationFilt
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const PriceRelationFilter_1 = require("../inputs/PriceRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
+const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 let BookingOrderLineItemWhereInput = BookingOrderLineItemWhereInput_1 = class BookingOrderLineItemWhereInput {
 };
 tslib_1.__decorate([
@@ -34,6 +35,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], BookingOrderLineItemWhereInput.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], BookingOrderLineItemWhereInput.prototype, "details", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], BookingOrderLineItemWhereInput.prototype, "comments", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PriceRelationFilter_1.PriceRelationFilter, {
         nullable: true

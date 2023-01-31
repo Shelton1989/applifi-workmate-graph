@@ -1,4 +1,5 @@
 import { AggregateRating } from "../models/AggregateRating";
+import { BookingOrder } from "../models/BookingOrder";
 import { ExperienceAvailability } from "../models/ExperienceAvailability";
 import { Features } from "../models/Features";
 import { Location } from "../models/Location";
@@ -17,6 +18,7 @@ export declare class Experience {
     description?: string | null;
     category?: "CAMPING" | null;
     Availability?: ExperienceAvailability[];
+    Bookings?: BookingOrder[];
     photo?: string | null;
     gallery: string[];
     duration?: number | null;

@@ -1,5 +1,6 @@
 export declare class BookingOrderCountOrderByAggregateInput {
     id?: "asc" | "desc" | undefined;
+    experienceId?: "asc" | "desc" | undefined;
     status?: "asc" | "desc" | undefined;
     SelectedPaymentType?: "asc" | "desc" | undefined;
     stripePaymentReference?: "asc" | "desc" | undefined;

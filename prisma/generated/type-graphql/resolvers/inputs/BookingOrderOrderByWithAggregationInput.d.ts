@@ -3,6 +3,7 @@ import { BookingOrderMaxOrderByAggregateInput } from "../inputs/BookingOrderMaxO
 import { BookingOrderMinOrderByAggregateInput } from "../inputs/BookingOrderMinOrderByAggregateInput";
 export declare class BookingOrderOrderByWithAggregationInput {
     id?: "asc" | "desc" | undefined;
+    experienceId?: "asc" | "desc" | undefined;
     status?: "asc" | "desc" | undefined;
     SelectedPaymentType?: "asc" | "desc" | undefined;
     stripePaymentReference?: "asc" | "desc" | undefined;

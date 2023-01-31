@@ -2,6 +2,8 @@ import { BookingOrderCreateNestedOneWithoutItemsInput } from "../inputs/BookingO
 import { PriceCreateNestedOneWithoutBookingLineItemsInput } from "../inputs/PriceCreateNestedOneWithoutBookingLineItemsInput";
 export declare class BookingOrderLineItemCreateInput {
     id?: string | undefined;
+    details?: string | undefined;
+    comments?: string | undefined;
     LineItemPrice: PriceCreateNestedOneWithoutBookingLineItemsInput;
     Booking: BookingOrderCreateNestedOneWithoutItemsInput;
     createdAt?: Date | undefined;

@@ -7,6 +7,7 @@ export declare class BookingOrderScalarWhereInput {
     OR?: BookingOrderScalarWhereInput[] | undefined;
     NOT?: BookingOrderScalarWhereInput[] | undefined;
     id?: StringFilter | undefined;
+    experienceId?: StringFilter | undefined;
     status?: EnumBOOKING_ORDER_STATUSFilter | undefined;
     SelectedPaymentType?: StringNullableFilter | undefined;
     stripePaymentReference?: StringNullableFilter | undefined;

@@ -4,6 +4,7 @@ exports.ExperienceUpdateWithoutAvailabilityInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AggregateRatingUpdateOneWithoutExperienceInput_1 = require("../inputs/AggregateRatingUpdateOneWithoutExperienceInput");
+const BookingOrderUpdateManyWithoutExperienceInput_1 = require("../inputs/BookingOrderUpdateManyWithoutExperienceInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const EnumPUBLISH_STATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumPUBLISH_STATUSFieldUpdateOperationsInput");
 const ExperienceUpdategalleryInput_1 = require("../inputs/ExperienceUpdategalleryInput");
@@ -55,6 +56,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput_1.NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput)
 ], ExperienceUpdateWithoutAvailabilityInput.prototype, "category", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BookingOrderUpdateManyWithoutExperienceInput_1.BookingOrderUpdateManyWithoutExperienceInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BookingOrderUpdateManyWithoutExperienceInput_1.BookingOrderUpdateManyWithoutExperienceInput)
+], ExperienceUpdateWithoutAvailabilityInput.prototype, "Bookings", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
         nullable: true

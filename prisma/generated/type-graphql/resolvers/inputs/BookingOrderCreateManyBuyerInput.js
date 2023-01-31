@@ -13,6 +13,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], BookingOrderCreateManyBuyerInput.prototype, "id", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], BookingOrderCreateManyBuyerInput.prototype, "experienceId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => BOOKING_ORDER_STATUS_1.BOOKING_ORDER_STATUS, {
         nullable: true
     }),

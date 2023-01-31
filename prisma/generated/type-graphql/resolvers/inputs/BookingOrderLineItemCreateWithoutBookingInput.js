@@ -13,6 +13,18 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], BookingOrderLineItemCreateWithoutBookingInput.prototype, "id", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], BookingOrderLineItemCreateWithoutBookingInput.prototype, "details", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], BookingOrderLineItemCreateWithoutBookingInput.prototype, "comments", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => PriceCreateNestedOneWithoutBookingLineItemsInput_1.PriceCreateNestedOneWithoutBookingLineItemsInput, {
         nullable: false
     }),

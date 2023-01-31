@@ -1,4 +1,5 @@
 import { AggregateRatingCreateNestedOneWithoutExperienceInput } from "../inputs/AggregateRatingCreateNestedOneWithoutExperienceInput";
+import { BookingOrderCreateNestedManyWithoutExperienceInput } from "../inputs/BookingOrderCreateNestedManyWithoutExperienceInput";
 import { ExperienceAvailabilityCreateNestedManyWithoutExperienceInput } from "../inputs/ExperienceAvailabilityCreateNestedManyWithoutExperienceInput";
 import { ExperienceCreategalleryInput } from "../inputs/ExperienceCreategalleryInput";
 import { ExperienceCreatelikedByIdsInput } from "../inputs/ExperienceCreatelikedByIdsInput";
@@ -15,6 +16,7 @@ export declare class ExperienceCreateWithoutTenantInput {
     description?: string | undefined;
     category?: "CAMPING" | undefined;
     Availability?: ExperienceAvailabilityCreateNestedManyWithoutExperienceInput | undefined;
+    Bookings?: BookingOrderCreateNestedManyWithoutExperienceInput | undefined;
     photo?: string | undefined;
     gallery?: ExperienceCreategalleryInput | undefined;
     duration?: number | undefined;

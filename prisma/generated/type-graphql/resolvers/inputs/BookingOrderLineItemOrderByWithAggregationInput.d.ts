@@ -3,6 +3,8 @@ import { BookingOrderLineItemMaxOrderByAggregateInput } from "../inputs/BookingO
 import { BookingOrderLineItemMinOrderByAggregateInput } from "../inputs/BookingOrderLineItemMinOrderByAggregateInput";
 export declare class BookingOrderLineItemOrderByWithAggregationInput {
     id?: "asc" | "desc" | undefined;
+    details?: "asc" | "desc" | undefined;
+    comments?: "asc" | "desc" | undefined;
     priceId?: "asc" | "desc" | undefined;
     bookingId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;

@@ -7,6 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BookingOrderLineItemListRelationFilter_1 = require("../inputs/BookingOrderLineItemListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumBOOKING_ORDER_STATUSFilter_1 = require("../inputs/EnumBOOKING_ORDER_STATUSFilter");
+const ExperienceRelationFilter_1 = require("../inputs/ExperienceRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const TenantRelationFilter_1 = require("../inputs/TenantRelationFilter");
@@ -37,6 +38,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], BookingOrderWhereInput.prototype, "id", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ExperienceRelationFilter_1.ExperienceRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ExperienceRelationFilter_1.ExperienceRelationFilter)
+], BookingOrderWhereInput.prototype, "Experience", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+], BookingOrderWhereInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumBOOKING_ORDER_STATUSFilter_1.EnumBOOKING_ORDER_STATUSFilter, {
         nullable: true

@@ -1,5 +1,6 @@
 export declare enum BookingOrderScalarFieldEnum {
     id = "id",
+    experienceId = "experienceId",
     status = "status",
     SelectedPaymentType = "SelectedPaymentType",
     stripePaymentReference = "stripePaymentReference",

@@ -7,6 +7,7 @@ export declare class BookingOrderScalarWhereWithAggregatesInput {
     OR?: BookingOrderScalarWhereWithAggregatesInput[] | undefined;
     NOT?: BookingOrderScalarWhereWithAggregatesInput[] | undefined;
     id?: StringWithAggregatesFilter | undefined;
+    experienceId?: StringWithAggregatesFilter | undefined;
     status?: EnumBOOKING_ORDER_STATUSWithAggregatesFilter | undefined;
     SelectedPaymentType?: StringNullableWithAggregatesFilter | undefined;
     stripePaymentReference?: StringNullableWithAggregatesFilter | undefined;

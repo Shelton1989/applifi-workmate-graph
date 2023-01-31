@@ -1,5 +1,6 @@
 export declare class BookingOrderCreateManyBuyerInput {
     id?: string | undefined;
+    experienceId: string;
     status?: "OPEN" | "BOOKED" | "BOOKED_PENDING_PAYMENT" | "READY_FOR_CHECK_IN" | "CHECKED_IN" | "READY_FOR_CHECK_OUT" | "COMPLETE" | "CANCELLED" | undefined;
     SelectedPaymentType?: string | undefined;
     stripePaymentReference?: string | undefined;

@@ -1,8 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ExperiencePostsArgs = exports.ExperienceLocationsArgs = exports.ExperienceLikedByArgs = exports.ExperienceFeaturesArgs = exports.ExperienceAvailabilityArgs = void 0;
+exports.ExperiencePostsArgs = exports.ExperienceLocationsArgs = exports.ExperienceLikedByArgs = exports.ExperienceFeaturesArgs = exports.ExperienceBookingsArgs = exports.ExperienceAvailabilityArgs = void 0;
 var ExperienceAvailabilityArgs_1 = require("./ExperienceAvailabilityArgs");
 Object.defineProperty(exports, "ExperienceAvailabilityArgs", { enumerable: true, get: function () { return ExperienceAvailabilityArgs_1.ExperienceAvailabilityArgs; } });
+var ExperienceBookingsArgs_1 = require("./ExperienceBookingsArgs");
+Object.defineProperty(exports, "ExperienceBookingsArgs", { enumerable: true, get: function () { return ExperienceBookingsArgs_1.ExperienceBookingsArgs; } });
 var ExperienceFeaturesArgs_1 = require("./ExperienceFeaturesArgs");
 Object.defineProperty(exports, "ExperienceFeaturesArgs", { enumerable: true, get: function () { return ExperienceFeaturesArgs_1.ExperienceFeaturesArgs; } });
 var ExperienceLikedByArgs_1 = require("./ExperienceLikedByArgs");
