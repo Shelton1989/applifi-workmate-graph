@@ -9,6 +9,7 @@ import { IntNullableFilter } from "../inputs/IntNullableFilter";
 import { LocationListRelationFilter } from "../inputs/LocationListRelationFilter";
 import { PostListRelationFilter } from "../inputs/PostListRelationFilter";
 import { PriceListRelationFilter } from "../inputs/PriceListRelationFilter";
+import { ReactionListRelationFilter } from "../inputs/ReactionListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
@@ -39,6 +40,7 @@ export declare class ExperienceWhereInput {
     Price?: PriceListRelationFilter | undefined;
     Posts?: PostListRelationFilter | undefined;
     Features?: FeaturesListRelationFilter | undefined;
+    Reactions?: ReactionListRelationFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

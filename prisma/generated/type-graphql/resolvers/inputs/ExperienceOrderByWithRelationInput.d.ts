@@ -5,6 +5,7 @@ import { FeaturesOrderByRelationAggregateInput } from "../inputs/FeaturesOrderBy
 import { LocationOrderByRelationAggregateInput } from "../inputs/LocationOrderByRelationAggregateInput";
 import { PostOrderByRelationAggregateInput } from "../inputs/PostOrderByRelationAggregateInput";
 import { PriceOrderByRelationAggregateInput } from "../inputs/PriceOrderByRelationAggregateInput";
+import { ReactionOrderByRelationAggregateInput } from "../inputs/ReactionOrderByRelationAggregateInput";
 import { TenantOrderByWithRelationInput } from "../inputs/TenantOrderByWithRelationInput";
 import { UserOrderByRelationAggregateInput } from "../inputs/UserOrderByRelationAggregateInput";
 export declare class ExperienceOrderByWithRelationInput {
@@ -29,6 +30,7 @@ export declare class ExperienceOrderByWithRelationInput {
     Price?: PriceOrderByRelationAggregateInput | undefined;
     Posts?: PostOrderByRelationAggregateInput | undefined;
     Features?: FeaturesOrderByRelationAggregateInput | undefined;
+    Reactions?: ReactionOrderByRelationAggregateInput | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

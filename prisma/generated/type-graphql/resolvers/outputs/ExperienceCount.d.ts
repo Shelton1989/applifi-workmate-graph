@@ -6,4 +6,5 @@ export declare class ExperienceCount {
     Price: number;
     Posts: number;
     Features: number;
+    Reactions: number;
 }

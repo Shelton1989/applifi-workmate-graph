@@ -6,6 +6,7 @@ import { ExperienceCreatelikedByIdsInput } from "../inputs/ExperienceCreateliked
 import { FeaturesCreateNestedManyWithoutExperienceInput } from "../inputs/FeaturesCreateNestedManyWithoutExperienceInput";
 import { PostCreateNestedManyWithoutExperienceInput } from "../inputs/PostCreateNestedManyWithoutExperienceInput";
 import { PriceCreateNestedManyWithoutExperienceInput } from "../inputs/PriceCreateNestedManyWithoutExperienceInput";
+import { ReactionCreateNestedManyWithoutExperienceInput } from "../inputs/ReactionCreateNestedManyWithoutExperienceInput";
 import { TenantCreateNestedOneWithoutExperiencesInput } from "../inputs/TenantCreateNestedOneWithoutExperiencesInput";
 import { UserCreateNestedManyWithoutLikedExperiencesInput } from "../inputs/UserCreateNestedManyWithoutLikedExperiencesInput";
 export declare class ExperienceCreateWithoutLocationsInput {
@@ -28,6 +29,7 @@ export declare class ExperienceCreateWithoutLocationsInput {
     Price?: PriceCreateNestedManyWithoutExperienceInput | undefined;
     Posts?: PostCreateNestedManyWithoutExperienceInput | undefined;
     Features?: FeaturesCreateNestedManyWithoutExperienceInput | undefined;
+    Reactions?: ReactionCreateNestedManyWithoutExperienceInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

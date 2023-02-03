@@ -11,6 +11,7 @@ import { NullableIntFieldUpdateOperationsInput } from "../inputs/NullableIntFiel
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { PostUpdateManyWithoutExperienceInput } from "../inputs/PostUpdateManyWithoutExperienceInput";
 import { PriceUpdateManyWithoutExperienceInput } from "../inputs/PriceUpdateManyWithoutExperienceInput";
+import { ReactionUpdateManyWithoutExperienceInput } from "../inputs/ReactionUpdateManyWithoutExperienceInput";
 import { TenantUpdateOneRequiredWithoutExperiencesInput } from "../inputs/TenantUpdateOneRequiredWithoutExperiencesInput";
 import { UserUpdateManyWithoutLikedExperiencesInput } from "../inputs/UserUpdateManyWithoutLikedExperiencesInput";
 export declare class ExperienceUpdateWithoutFeaturesInput {
@@ -32,6 +33,7 @@ export declare class ExperienceUpdateWithoutFeaturesInput {
     Locations?: LocationUpdateManyWithoutExperienceInput | undefined;
     Price?: PriceUpdateManyWithoutExperienceInput | undefined;
     Posts?: PostUpdateManyWithoutExperienceInput | undefined;
+    Reactions?: ReactionUpdateManyWithoutExperienceInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

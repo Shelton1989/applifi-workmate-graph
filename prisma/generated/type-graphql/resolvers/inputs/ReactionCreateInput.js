@@ -4,6 +4,7 @@ exports.ReactionCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentCreateNestedOneWithoutReactionsInput_1 = require("../inputs/CommentCreateNestedOneWithoutReactionsInput");
+const ExperienceCreateNestedOneWithoutReactionsInput_1 = require("../inputs/ExperienceCreateNestedOneWithoutReactionsInput");
 const PostCreateNestedOneWithoutReactionsInput_1 = require("../inputs/PostCreateNestedOneWithoutReactionsInput");
 const ReplyCreateNestedOneWithoutReactionsInput_1 = require("../inputs/ReplyCreateNestedOneWithoutReactionsInput");
 const UserCreateNestedOneWithoutReactionsInput_1 = require("../inputs/UserCreateNestedOneWithoutReactionsInput");
@@ -22,6 +23,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], ReactionCreateInput.prototype, "type", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ExperienceCreateNestedOneWithoutReactionsInput_1.ExperienceCreateNestedOneWithoutReactionsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ExperienceCreateNestedOneWithoutReactionsInput_1.ExperienceCreateNestedOneWithoutReactionsInput)
+], ReactionCreateInput.prototype, "Experience", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostCreateNestedOneWithoutReactionsInput_1.PostCreateNestedOneWithoutReactionsInput, {
         nullable: true

@@ -4,6 +4,7 @@ exports.ReactionOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentOrderByWithRelationInput_1 = require("../inputs/CommentOrderByWithRelationInput");
+const ExperienceOrderByWithRelationInput_1 = require("../inputs/ExperienceOrderByWithRelationInput");
 const PostOrderByWithRelationInput_1 = require("../inputs/PostOrderByWithRelationInput");
 const ReplyOrderByWithRelationInput_1 = require("../inputs/ReplyOrderByWithRelationInput");
 const UserOrderByWithRelationInput_1 = require("../inputs/UserOrderByWithRelationInput");
@@ -22,6 +23,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], ReactionOrderByWithRelationInput.prototype, "type", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ExperienceOrderByWithRelationInput_1.ExperienceOrderByWithRelationInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ExperienceOrderByWithRelationInput_1.ExperienceOrderByWithRelationInput)
+], ReactionOrderByWithRelationInput.prototype, "Experience", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], ReactionOrderByWithRelationInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostOrderByWithRelationInput_1.PostOrderByWithRelationInput, {
         nullable: true

@@ -16,6 +16,7 @@ const NullableEnumEXPERIENCE_CATEGORYFieldUpdateOperationsInput_1 = require("../
 const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const PriceUpdateManyWithoutExperienceInput_1 = require("../inputs/PriceUpdateManyWithoutExperienceInput");
+const ReactionUpdateManyWithoutExperienceInput_1 = require("../inputs/ReactionUpdateManyWithoutExperienceInput");
 const TenantUpdateOneRequiredWithoutExperiencesInput_1 = require("../inputs/TenantUpdateOneRequiredWithoutExperiencesInput");
 const UserUpdateManyWithoutLikedExperiencesInput_1 = require("../inputs/UserUpdateManyWithoutLikedExperiencesInput");
 let ExperienceUpdateWithoutPostsInput = class ExperienceUpdateWithoutPostsInput {
@@ -128,6 +129,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", FeaturesUpdateManyWithoutExperienceInput_1.FeaturesUpdateManyWithoutExperienceInput)
 ], ExperienceUpdateWithoutPostsInput.prototype, "Features", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ReactionUpdateManyWithoutExperienceInput_1.ReactionUpdateManyWithoutExperienceInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ReactionUpdateManyWithoutExperienceInput_1.ReactionUpdateManyWithoutExperienceInput)
+], ExperienceUpdateWithoutPostsInput.prototype, "Reactions", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

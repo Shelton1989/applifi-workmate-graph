@@ -15,6 +15,7 @@ const IntNullableFilter_1 = require("../inputs/IntNullableFilter");
 const LocationListRelationFilter_1 = require("../inputs/LocationListRelationFilter");
 const PostListRelationFilter_1 = require("../inputs/PostListRelationFilter");
 const PriceListRelationFilter_1 = require("../inputs/PriceListRelationFilter");
+const ReactionListRelationFilter_1 = require("../inputs/ReactionListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
@@ -166,6 +167,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", FeaturesListRelationFilter_1.FeaturesListRelationFilter)
 ], ExperienceWhereInput.prototype, "Features", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ReactionListRelationFilter_1.ReactionListRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ReactionListRelationFilter_1.ReactionListRelationFilter)
+], ExperienceWhereInput.prototype, "Reactions", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

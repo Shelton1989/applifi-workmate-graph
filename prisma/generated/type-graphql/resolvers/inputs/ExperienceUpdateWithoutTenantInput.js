@@ -17,6 +17,7 @@ const NullableIntFieldUpdateOperationsInput_1 = require("../inputs/NullableIntFi
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const PostUpdateManyWithoutExperienceInput_1 = require("../inputs/PostUpdateManyWithoutExperienceInput");
 const PriceUpdateManyWithoutExperienceInput_1 = require("../inputs/PriceUpdateManyWithoutExperienceInput");
+const ReactionUpdateManyWithoutExperienceInput_1 = require("../inputs/ReactionUpdateManyWithoutExperienceInput");
 const UserUpdateManyWithoutLikedExperiencesInput_1 = require("../inputs/UserUpdateManyWithoutLikedExperiencesInput");
 let ExperienceUpdateWithoutTenantInput = class ExperienceUpdateWithoutTenantInput {
 };
@@ -128,6 +129,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", FeaturesUpdateManyWithoutExperienceInput_1.FeaturesUpdateManyWithoutExperienceInput)
 ], ExperienceUpdateWithoutTenantInput.prototype, "Features", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ReactionUpdateManyWithoutExperienceInput_1.ReactionUpdateManyWithoutExperienceInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ReactionUpdateManyWithoutExperienceInput_1.ReactionUpdateManyWithoutExperienceInput)
+], ExperienceUpdateWithoutTenantInput.prototype, "Reactions", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

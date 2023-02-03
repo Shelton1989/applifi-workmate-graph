@@ -1,6 +1,7 @@
 export declare class ReactionMaxOrderByAggregateInput {
     id?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
+    experienceId?: "asc" | "desc" | undefined;
     postId?: "asc" | "desc" | undefined;
     commentId?: "asc" | "desc" | undefined;
     replyId?: "asc" | "desc" | undefined;

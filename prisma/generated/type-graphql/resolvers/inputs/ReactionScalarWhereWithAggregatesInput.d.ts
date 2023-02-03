@@ -8,6 +8,7 @@ export declare class ReactionScalarWhereWithAggregatesInput {
     NOT?: ReactionScalarWhereWithAggregatesInput[] | undefined;
     id?: StringWithAggregatesFilter | undefined;
     type?: EnumREACTION_TYPEWithAggregatesFilter | undefined;
+    experienceId?: StringNullableWithAggregatesFilter | undefined;
     postId?: StringNullableWithAggregatesFilter | undefined;
     commentId?: StringNullableWithAggregatesFilter | undefined;
     replyId?: StringNullableWithAggregatesFilter | undefined;

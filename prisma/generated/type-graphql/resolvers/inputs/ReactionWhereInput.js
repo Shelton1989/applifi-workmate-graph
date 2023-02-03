@@ -7,6 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentRelationFilter_1 = require("../inputs/CommentRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumREACTION_TYPEFilter_1 = require("../inputs/EnumREACTION_TYPEFilter");
+const ExperienceRelationFilter_1 = require("../inputs/ExperienceRelationFilter");
 const PostRelationFilter_1 = require("../inputs/PostRelationFilter");
 const ReplyRelationFilter_1 = require("../inputs/ReplyRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
@@ -44,6 +45,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", EnumREACTION_TYPEFilter_1.EnumREACTION_TYPEFilter)
 ], ReactionWhereInput.prototype, "type", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ExperienceRelationFilter_1.ExperienceRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ExperienceRelationFilter_1.ExperienceRelationFilter)
+], ReactionWhereInput.prototype, "Experience", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], ReactionWhereInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostRelationFilter_1.PostRelationFilter, {
         nullable: true

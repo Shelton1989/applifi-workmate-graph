@@ -8,6 +8,7 @@ export declare class ReactionScalarWhereInput {
     NOT?: ReactionScalarWhereInput[] | undefined;
     id?: StringFilter | undefined;
     type?: EnumREACTION_TYPEFilter | undefined;
+    experienceId?: StringNullableFilter | undefined;
     postId?: StringNullableFilter | undefined;
     commentId?: StringNullableFilter | undefined;
     replyId?: StringNullableFilter | undefined;

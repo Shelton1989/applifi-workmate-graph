@@ -5,6 +5,7 @@ import { Features } from "../models/Features";
 import { Location } from "../models/Location";
 import { Post } from "../models/Post";
 import { Price } from "../models/Price";
+import { Reaction } from "../models/Reaction";
 import { Tenant } from "../models/Tenant";
 import { User } from "../models/User";
 import { ExperienceCount } from "../resolvers/outputs/ExperienceCount";
@@ -30,6 +31,7 @@ export declare class Experience {
     Price?: Price[];
     Posts?: Post[];
     Features?: Features[];
+    Reactions?: Reaction[];
     createdAt: Date;
     updatedAt: Date;
     _count?: ExperienceCount | null;
