@@ -30,7 +30,7 @@ enum ROLE {
 // Models
 model User {
   Tenant   Tenant? @relation(fields: [tenantId], references: [id], onDelete: SetNull, onUpdate: Cascade)
-  tenantId String? @unique
+  tenantId String?
   // Mapping to authentication service
   uid      String  @unique
   // used to authenticate tenant user creation
@@ -108,7 +108,7 @@ model Tenant {
 
   description String?
 
-  logoImage String?
+  logoImage        String?
   avatar           String?
   coverImage       String?
   experienceImages String[]
@@ -218,14 +218,14 @@ model Reaction {
 
   Experience   Experience? @relation(fields: [experienceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   experienceId String?
-  Post      Post?    @relation(fields: [postId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  postId    String?
-  Comment   Comment? @relation(fields: [commentId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  commentId String?
-  Reply     Reply?   @relation(fields: [replyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  replyId   String?
-  Author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  authorId  String
+  Post         Post?       @relation(fields: [postId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  postId       String?
+  Comment      Comment?    @relation(fields: [commentId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  commentId    String?
+  Reply        Reply?      @relation(fields: [replyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  replyId      String?
+  Author       User        @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  authorId     String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -355,10 +355,10 @@ model Experience {
 model Features {
   id String @id @default(uuid()) @map("_id")
 
-  Experience Experience @relation(fields: [experienceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  Experience   Experience @relation(fields: [experienceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   experienceId String
 
-  title       String
+  title            String
   shortDescription String
 
   createdAt DateTime @default(now())
@@ -383,10 +383,10 @@ model ExperienceAvailability {
 
   availabilityType AVAILABILITY_TYPE @default(DAILY)
 
-  spacesAvailable    Int
-  spacesBooked       Int
+  spacesAvailable Int
+  spacesBooked    Int
 
-  datesAreFlexible   Boolean @default(false)
+  datesAreFlexible Boolean @default(false)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -466,10 +466,10 @@ enum BOOKING_ORDER_STATUS {
 model BookingOrderLineItem {
   id String @id @default(uuid()) @map("_id")
 
-  details String?
+  details  String?
   comments String?
 
-  selectedQuantity Int?
+  selectedQuantity  Int?
   selectedStartDate DateTime?
   selectedEndDate   DateTime?
 
@@ -528,7 +528,7 @@ model Location {
   district  String?
   country   String?
   code      String?
-  isDefault Boolean      @default(false)
+  isDefault Boolean       @default(false)
 
   Experience   Experience? @relation(fields: [experienceId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   experienceId String?

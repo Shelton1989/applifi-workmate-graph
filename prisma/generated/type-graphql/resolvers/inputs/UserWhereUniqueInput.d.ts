@@ -1,5 +1,4 @@
 export declare class UserWhereUniqueInput {
-    tenantId?: string | undefined;
     uid?: string | undefined;
     uuid?: string | undefined;
     id?: string | undefined;
