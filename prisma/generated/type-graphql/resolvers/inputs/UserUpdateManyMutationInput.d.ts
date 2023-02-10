@@ -9,7 +9,7 @@ import { UserUpdatefollowingIdsInput } from "../inputs/UserUpdatefollowingIdsInp
 import { UserUpdaterolesInput } from "../inputs/UserUpdaterolesInput";
 export declare class UserUpdateManyMutationInput {
     uid?: StringFieldUpdateOperationsInput | undefined;
-    uuid?: StringFieldUpdateOperationsInput | undefined;
+    uuid?: NullableStringFieldUpdateOperationsInput | undefined;
     username?: StringFieldUpdateOperationsInput | undefined;
     email?: StringFieldUpdateOperationsInput | undefined;
     roles?: UserUpdaterolesInput | undefined;

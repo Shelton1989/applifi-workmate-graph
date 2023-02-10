@@ -23,7 +23,7 @@ export declare class UserWhereInput {
     Tenant?: TenantRelationFilter | undefined;
     tenantId?: StringNullableFilter | undefined;
     uid?: StringFilter | undefined;
-    uuid?: StringFilter | undefined;
+    uuid?: StringNullableFilter | undefined;
     id?: StringFilter | undefined;
     username?: StringFilter | undefined;
     email?: StringFilter | undefined;

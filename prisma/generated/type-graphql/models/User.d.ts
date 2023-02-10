@@ -13,7 +13,7 @@ export declare class User {
     Tenant?: Tenant | null;
     tenantId?: string | null;
     uid: string;
-    uuid: string;
+    uuid?: string | null;
     id: string;
     username: string;
     email: string;

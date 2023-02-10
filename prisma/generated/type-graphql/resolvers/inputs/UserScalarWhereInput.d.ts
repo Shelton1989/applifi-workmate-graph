@@ -11,7 +11,7 @@ export declare class UserScalarWhereInput {
     NOT?: UserScalarWhereInput[] | undefined;
     tenantId?: StringNullableFilter | undefined;
     uid?: StringFilter | undefined;
-    uuid?: StringFilter | undefined;
+    uuid?: StringNullableFilter | undefined;
     id?: StringFilter | undefined;
     username?: StringFilter | undefined;
     email?: StringFilter | undefined;

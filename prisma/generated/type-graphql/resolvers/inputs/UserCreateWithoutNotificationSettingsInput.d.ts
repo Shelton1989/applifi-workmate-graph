@@ -17,7 +17,7 @@ import { UserCreaterolesInput } from "../inputs/UserCreaterolesInput";
 export declare class UserCreateWithoutNotificationSettingsInput {
     Tenant?: TenantCreateNestedOneWithoutUsersInput | undefined;
     uid: string;
-    uuid: string;
+    uuid?: string | undefined;
     id?: string | undefined;
     username: string;
     email: string;

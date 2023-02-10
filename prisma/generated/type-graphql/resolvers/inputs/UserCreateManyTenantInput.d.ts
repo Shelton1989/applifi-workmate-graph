@@ -4,7 +4,7 @@ import { UserCreatefollowingIdsInput } from "../inputs/UserCreatefollowingIdsInp
 import { UserCreaterolesInput } from "../inputs/UserCreaterolesInput";
 export declare class UserCreateManyTenantInput {
     uid: string;
-    uuid: string;
+    uuid?: string | undefined;
     id?: string | undefined;
     username: string;
     email: string;

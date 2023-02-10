@@ -23,7 +23,7 @@ tslib_1.__decorate([
 ], UserCreateManyInput.prototype, "uid", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], UserCreateManyInput.prototype, "uuid", void 0);

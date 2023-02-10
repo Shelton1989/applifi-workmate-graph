@@ -22,7 +22,7 @@ import { UserUpdaterolesInput } from "../inputs/UserUpdaterolesInput";
 export declare class UserUpdateWithoutPostsInput {
     Tenant?: TenantUpdateOneWithoutUsersInput | undefined;
     uid?: StringFieldUpdateOperationsInput | undefined;
-    uuid?: StringFieldUpdateOperationsInput | undefined;
+    uuid?: NullableStringFieldUpdateOperationsInput | undefined;
     username?: StringFieldUpdateOperationsInput | undefined;
     email?: StringFieldUpdateOperationsInput | undefined;
     roles?: UserUpdaterolesInput | undefined;

@@ -4,7 +4,7 @@ import { UserMinAggregate } from "../outputs/UserMinAggregate";
 export declare class UserGroupBy {
     tenantId: string | null;
     uid: string;
-    uuid: string;
+    uuid: string | null;
     id: string;
     username: string;
     email: string;

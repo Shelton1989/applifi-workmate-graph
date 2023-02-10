@@ -11,7 +11,7 @@ export declare class UserScalarWhereWithAggregatesInput {
     NOT?: UserScalarWhereWithAggregatesInput[] | undefined;
     tenantId?: StringNullableWithAggregatesFilter | undefined;
     uid?: StringWithAggregatesFilter | undefined;
-    uuid?: StringWithAggregatesFilter | undefined;
+    uuid?: StringNullableWithAggregatesFilter | undefined;
     id?: StringWithAggregatesFilter | undefined;
     username?: StringWithAggregatesFilter | undefined;
     email?: StringWithAggregatesFilter | undefined;
