@@ -34,7 +34,7 @@ model User {
   // Mapping to authentication service
   uid      String  @unique
   // used to authenticate tenant user creation
-  uuid     String?  @unique
+  uuid     String? 
 
   id       String @id @default(uuid()) @map("_id")
   username String @unique
