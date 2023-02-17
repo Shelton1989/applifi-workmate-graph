@@ -4,6 +4,7 @@ exports.CurrencyCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const PriceCreateNestedManyWithoutCurrencyInput_1 = require("../inputs/PriceCreateNestedManyWithoutCurrencyInput");
+const TransactionCreateNestedManyWithoutCurrencyInput_1 = require("../inputs/TransactionCreateNestedManyWithoutCurrencyInput");
 let CurrencyCreateInput = class CurrencyCreateInput {
 };
 tslib_1.__decorate([
@@ -36,6 +37,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", PriceCreateNestedManyWithoutCurrencyInput_1.PriceCreateNestedManyWithoutCurrencyInput)
 ], CurrencyCreateInput.prototype, "prices", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TransactionCreateNestedManyWithoutCurrencyInput_1.TransactionCreateNestedManyWithoutCurrencyInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TransactionCreateNestedManyWithoutCurrencyInput_1.TransactionCreateNestedManyWithoutCurrencyInput)
+], CurrencyCreateInput.prototype, "Transactions", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

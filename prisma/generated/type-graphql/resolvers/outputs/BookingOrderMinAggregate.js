@@ -4,6 +4,7 @@ exports.BookingOrderMinAggregate = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BOOKING_ORDER_STATUS_1 = require("../../enums/BOOKING_ORDER_STATUS");
+const PAYMENT_STATUS_1 = require("../../enums/PAYMENT_STATUS");
 let BookingOrderMinAggregate = class BookingOrderMinAggregate {
 };
 tslib_1.__decorate([
@@ -29,18 +30,6 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], BookingOrderMinAggregate.prototype, "SelectedPaymentType", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], BookingOrderMinAggregate.prototype, "stripePaymentReference", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
 ], BookingOrderMinAggregate.prototype, "buyerId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
@@ -48,6 +37,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], BookingOrderMinAggregate.prototype, "tenantId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => PAYMENT_STATUS_1.PAYMENT_STATUS, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], BookingOrderMinAggregate.prototype, "PaymentStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

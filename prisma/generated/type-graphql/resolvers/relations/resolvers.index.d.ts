@@ -15,4 +15,5 @@ export { ReactionRelationsResolver } from "./Reaction/ReactionRelationsResolver"
 export { ReplyRelationsResolver } from "./Reply/ReplyRelationsResolver";
 export { RequestRelationsResolver } from "./Request/RequestRelationsResolver";
 export { TenantRelationsResolver } from "./Tenant/TenantRelationsResolver";
+export { TransactionRelationsResolver } from "./Transaction/TransactionRelationsResolver";
 export { UserRelationsResolver } from "./User/UserRelationsResolver";

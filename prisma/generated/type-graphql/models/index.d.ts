@@ -16,4 +16,5 @@ export { Reply } from "./Reply";
 export { Request } from "./Request";
 export { Tenant } from "./Tenant";
 export { TopicLists } from "./TopicLists";
+export { Transaction } from "./Transaction";
 export { User } from "./User";

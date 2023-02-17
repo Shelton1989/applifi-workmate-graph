@@ -16,4 +16,5 @@ export { ReplyCrudResolver } from "./Reply/ReplyCrudResolver";
 export { RequestCrudResolver } from "./Request/RequestCrudResolver";
 export { TenantCrudResolver } from "./Tenant/TenantCrudResolver";
 export { TopicListsCrudResolver } from "./TopicLists/TopicListsCrudResolver";
+export { TransactionCrudResolver } from "./Transaction/TransactionCrudResolver";
 export { UserCrudResolver } from "./User/UserCrudResolver";

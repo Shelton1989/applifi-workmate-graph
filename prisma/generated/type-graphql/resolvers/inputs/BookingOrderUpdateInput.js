@@ -6,9 +6,10 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BookingOrderLineItemUpdateManyWithoutBookingInput_1 = require("../inputs/BookingOrderLineItemUpdateManyWithoutBookingInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const EnumBOOKING_ORDER_STATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumBOOKING_ORDER_STATUSFieldUpdateOperationsInput");
+const EnumPAYMENT_STATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumPAYMENT_STATUSFieldUpdateOperationsInput");
 const ExperienceUpdateOneRequiredWithoutBookingsInput_1 = require("../inputs/ExperienceUpdateOneRequiredWithoutBookingsInput");
-const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const TenantUpdateOneRequiredWithoutBookingOrdersInput_1 = require("../inputs/TenantUpdateOneRequiredWithoutBookingOrdersInput");
+const TransactionUpdateManyWithoutBookingOrderInput_1 = require("../inputs/TransactionUpdateManyWithoutBookingOrderInput");
 const UserUpdateOneRequiredWithoutBookingsInput_1 = require("../inputs/UserUpdateOneRequiredWithoutBookingsInput");
 let BookingOrderUpdateInput = class BookingOrderUpdateInput {
 };
@@ -24,18 +25,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", EnumBOOKING_ORDER_STATUSFieldUpdateOperationsInput_1.EnumBOOKING_ORDER_STATUSFieldUpdateOperationsInput)
 ], BookingOrderUpdateInput.prototype, "status", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
-], BookingOrderUpdateInput.prototype, "SelectedPaymentType", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
-], BookingOrderUpdateInput.prototype, "stripePaymentReference", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutBookingsInput_1.UserUpdateOneRequiredWithoutBookingsInput, {
         nullable: true
@@ -54,6 +43,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", BookingOrderLineItemUpdateManyWithoutBookingInput_1.BookingOrderLineItemUpdateManyWithoutBookingInput)
 ], BookingOrderUpdateInput.prototype, "Items", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TransactionUpdateManyWithoutBookingOrderInput_1.TransactionUpdateManyWithoutBookingOrderInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TransactionUpdateManyWithoutBookingOrderInput_1.TransactionUpdateManyWithoutBookingOrderInput)
+], BookingOrderUpdateInput.prototype, "Transactions", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => EnumPAYMENT_STATUSFieldUpdateOperationsInput_1.EnumPAYMENT_STATUSFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", EnumPAYMENT_STATUSFieldUpdateOperationsInput_1.EnumPAYMENT_STATUSFieldUpdateOperationsInput)
+], BookingOrderUpdateInput.prototype, "PaymentStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

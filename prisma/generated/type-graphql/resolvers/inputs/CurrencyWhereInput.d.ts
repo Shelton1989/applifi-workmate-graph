@@ -1,6 +1,7 @@
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { PriceListRelationFilter } from "../inputs/PriceListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
+import { TransactionListRelationFilter } from "../inputs/TransactionListRelationFilter";
 export declare class CurrencyWhereInput {
     AND?: CurrencyWhereInput[] | undefined;
     OR?: CurrencyWhereInput[] | undefined;
@@ -10,6 +11,7 @@ export declare class CurrencyWhereInput {
     symbol?: StringFilter | undefined;
     code?: StringFilter | undefined;
     prices?: PriceListRelationFilter | undefined;
+    Transactions?: TransactionListRelationFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

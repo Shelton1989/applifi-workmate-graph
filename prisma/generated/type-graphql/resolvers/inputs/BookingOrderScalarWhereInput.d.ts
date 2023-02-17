@@ -1,7 +1,7 @@
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumBOOKING_ORDER_STATUSFilter } from "../inputs/EnumBOOKING_ORDER_STATUSFilter";
+import { EnumPAYMENT_STATUSFilter } from "../inputs/EnumPAYMENT_STATUSFilter";
 import { StringFilter } from "../inputs/StringFilter";
-import { StringNullableFilter } from "../inputs/StringNullableFilter";
 export declare class BookingOrderScalarWhereInput {
     AND?: BookingOrderScalarWhereInput[] | undefined;
     OR?: BookingOrderScalarWhereInput[] | undefined;
@@ -9,10 +9,9 @@ export declare class BookingOrderScalarWhereInput {
     id?: StringFilter | undefined;
     experienceId?: StringFilter | undefined;
     status?: EnumBOOKING_ORDER_STATUSFilter | undefined;
-    SelectedPaymentType?: StringNullableFilter | undefined;
-    stripePaymentReference?: StringNullableFilter | undefined;
     buyerId?: StringFilter | undefined;
     tenantId?: StringFilter | undefined;
+    PaymentStatus?: EnumPAYMENT_STATUSFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

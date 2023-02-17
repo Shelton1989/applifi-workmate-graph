@@ -16,4 +16,5 @@ export * from "./Reply/args";
 export * from "./Request/args";
 export * from "./Tenant/args";
 export * from "./TopicLists/args";
+export * from "./Transaction/args";
 export * from "./User/args";

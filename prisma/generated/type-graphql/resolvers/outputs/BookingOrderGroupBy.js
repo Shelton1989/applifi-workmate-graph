@@ -7,6 +7,7 @@ const BookingOrderCountAggregate_1 = require("../outputs/BookingOrderCountAggreg
 const BookingOrderMaxAggregate_1 = require("../outputs/BookingOrderMaxAggregate");
 const BookingOrderMinAggregate_1 = require("../outputs/BookingOrderMinAggregate");
 const BOOKING_ORDER_STATUS_1 = require("../../enums/BOOKING_ORDER_STATUS");
+const PAYMENT_STATUS_1 = require("../../enums/PAYMENT_STATUS");
 let BookingOrderGroupBy = class BookingOrderGroupBy {
 };
 tslib_1.__decorate([
@@ -29,18 +30,6 @@ tslib_1.__decorate([
 ], BookingOrderGroupBy.prototype, "status", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], BookingOrderGroupBy.prototype, "SelectedPaymentType", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], BookingOrderGroupBy.prototype, "stripePaymentReference", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)
@@ -51,6 +40,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], BookingOrderGroupBy.prototype, "tenantId", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => PAYMENT_STATUS_1.PAYMENT_STATUS, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], BookingOrderGroupBy.prototype, "PaymentStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: false

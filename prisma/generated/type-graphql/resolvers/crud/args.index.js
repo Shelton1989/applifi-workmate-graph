@@ -19,4 +19,5 @@ tslib_1.__exportStar(require("./Reply/args"), exports);
 tslib_1.__exportStar(require("./Request/args"), exports);
 tslib_1.__exportStar(require("./Tenant/args"), exports);
 tslib_1.__exportStar(require("./TopicLists/args"), exports);
+tslib_1.__exportStar(require("./Transaction/args"), exports);
 tslib_1.__exportStar(require("./User/args"), exports);

@@ -6,8 +6,10 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BookingOrderLineItemCreateNestedManyWithoutBookingInput_1 = require("../inputs/BookingOrderLineItemCreateNestedManyWithoutBookingInput");
 const ExperienceCreateNestedOneWithoutBookingsInput_1 = require("../inputs/ExperienceCreateNestedOneWithoutBookingsInput");
 const TenantCreateNestedOneWithoutBookingOrdersInput_1 = require("../inputs/TenantCreateNestedOneWithoutBookingOrdersInput");
+const TransactionCreateNestedManyWithoutBookingOrderInput_1 = require("../inputs/TransactionCreateNestedManyWithoutBookingOrderInput");
 const UserCreateNestedOneWithoutBookingsInput_1 = require("../inputs/UserCreateNestedOneWithoutBookingsInput");
 const BOOKING_ORDER_STATUS_1 = require("../../enums/BOOKING_ORDER_STATUS");
+const PAYMENT_STATUS_1 = require("../../enums/PAYMENT_STATUS");
 let BookingOrderCreateInput = class BookingOrderCreateInput {
 };
 tslib_1.__decorate([
@@ -29,18 +31,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], BookingOrderCreateInput.prototype, "status", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], BookingOrderCreateInput.prototype, "SelectedPaymentType", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], BookingOrderCreateInput.prototype, "stripePaymentReference", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserCreateNestedOneWithoutBookingsInput_1.UserCreateNestedOneWithoutBookingsInput, {
         nullable: false
     }),
@@ -58,6 +48,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", BookingOrderLineItemCreateNestedManyWithoutBookingInput_1.BookingOrderLineItemCreateNestedManyWithoutBookingInput)
 ], BookingOrderCreateInput.prototype, "Items", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TransactionCreateNestedManyWithoutBookingOrderInput_1.TransactionCreateNestedManyWithoutBookingOrderInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TransactionCreateNestedManyWithoutBookingOrderInput_1.TransactionCreateNestedManyWithoutBookingOrderInput)
+], BookingOrderCreateInput.prototype, "Transactions", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => PAYMENT_STATUS_1.PAYMENT_STATUS, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], BookingOrderCreateInput.prototype, "PaymentStatus", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

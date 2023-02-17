@@ -402,6 +402,8 @@ model Currency {
 
   prices Price[]
 
+  Transactions Transaction[]
+
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
 }
@@ -454,8 +456,10 @@ model TopicLists {
 
 enum BOOKING_ORDER_STATUS {
   OPEN
-  BOOKED
   BOOKED_PENDING_PAYMENT
+  BOOKED_DEPOSIT_PAID
+  BOOKED_PENDING_FINAL_PAYMENT
+  BOOKED
   READY_FOR_CHECK_IN
   CHECKED_IN
   READY_FOR_CHECK_OUT
@@ -483,6 +487,15 @@ model BookingOrderLineItem {
   updatedAt DateTime @default(now()) @updatedAt
 }
 
+enum PAYMENT_STATUS {
+  PENDING
+  PAID
+  REFUNDED
+  FAILED
+  CANCELLED
+  OTHER
+}
+
 model BookingOrder {
   id String @id @default(uuid()) @map("_id")
 
@@ -490,9 +503,6 @@ model BookingOrder {
   experienceId String
 
   status              BOOKING_ORDER_STATUS @default(OPEN)
-  SelectedPaymentType String?
-
-  stripePaymentReference String?
 
   Buyer    User   @relation(fields: [buyerId], references: [id])
   buyerId  String
@@ -500,6 +510,46 @@ model BookingOrder {
   tenantId String
 
   Items BookingOrderLineItem[]
+
+  Transactions Transaction[]
+
+  PaymentStatus PAYMENT_STATUS @default(PENDING)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+enum PAYMENT_METHOD {
+  STRIPE
+  PAYPAL
+  CASH
+  BANK_TRANSFER
+  OTHER
+}
+
+enum PAYMENT_TYPE {
+  OTHER
+  FULL
+  DEPOSIT
+  SECONDARY
+  FINAL
+}
+
+model Transaction {
+  id String @id @default(uuid()) @map("_id")
+
+  BookingOrder   BookingOrder @relation(fields: [bookingOrderId], references: [id])
+  bookingOrderId String
+
+  amountInLowestDenomination Int
+  currency                   Currency? @relation(fields: [currencyId], references: [id])
+  currencyId                 String?
+
+  SelectedPaymentType String?
+  stripePaymentReference String?
+
+  paymentMethod PAYMENT_METHOD @default(OTHER)
+  paymentType   PAYMENT_TYPE   @default(OTHER)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

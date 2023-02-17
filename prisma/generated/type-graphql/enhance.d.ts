@@ -23,6 +23,7 @@ declare const crudResolversMap: {
     TopicLists: typeof crudResolvers.TopicListsCrudResolver;
     BookingOrderLineItem: typeof crudResolvers.BookingOrderLineItemCrudResolver;
     BookingOrder: typeof crudResolvers.BookingOrderCrudResolver;
+    Transaction: typeof crudResolvers.TransactionCrudResolver;
     Location: typeof crudResolvers.LocationCrudResolver;
 };
 declare type ResolverModelNames = keyof typeof crudResolversMap;
@@ -61,6 +62,7 @@ declare const relationResolversMap: {
     Price: typeof relationResolvers.PriceRelationsResolver;
     BookingOrderLineItem: typeof relationResolvers.BookingOrderLineItemRelationsResolver;
     BookingOrder: typeof relationResolvers.BookingOrderRelationsResolver;
+    Transaction: typeof relationResolvers.TransactionRelationsResolver;
     Location: typeof relationResolvers.LocationRelationsResolver;
 };
 declare type RelationResolverModelNames = keyof typeof relationResolversMap;

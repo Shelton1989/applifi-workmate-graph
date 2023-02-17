@@ -6,6 +6,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const PriceUpdateManyWithoutCurrencyInput_1 = require("../inputs/PriceUpdateManyWithoutCurrencyInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
+const TransactionUpdateManyWithoutCurrencyInput_1 = require("../inputs/TransactionUpdateManyWithoutCurrencyInput");
 let CurrencyUpdateInput = class CurrencyUpdateInput {
 };
 tslib_1.__decorate([
@@ -32,6 +33,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", PriceUpdateManyWithoutCurrencyInput_1.PriceUpdateManyWithoutCurrencyInput)
 ], CurrencyUpdateInput.prototype, "prices", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TransactionUpdateManyWithoutCurrencyInput_1.TransactionUpdateManyWithoutCurrencyInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TransactionUpdateManyWithoutCurrencyInput_1.TransactionUpdateManyWithoutCurrencyInput)
+], CurrencyUpdateInput.prototype, "Transactions", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

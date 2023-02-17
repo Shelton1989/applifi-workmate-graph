@@ -1,6 +1,6 @@
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
 import { EnumBOOKING_ORDER_STATUSWithAggregatesFilter } from "../inputs/EnumBOOKING_ORDER_STATUSWithAggregatesFilter";
-import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
+import { EnumPAYMENT_STATUSWithAggregatesFilter } from "../inputs/EnumPAYMENT_STATUSWithAggregatesFilter";
 import { StringWithAggregatesFilter } from "../inputs/StringWithAggregatesFilter";
 export declare class BookingOrderScalarWhereWithAggregatesInput {
     AND?: BookingOrderScalarWhereWithAggregatesInput[] | undefined;
@@ -9,10 +9,9 @@ export declare class BookingOrderScalarWhereWithAggregatesInput {
     id?: StringWithAggregatesFilter | undefined;
     experienceId?: StringWithAggregatesFilter | undefined;
     status?: EnumBOOKING_ORDER_STATUSWithAggregatesFilter | undefined;
-    SelectedPaymentType?: StringNullableWithAggregatesFilter | undefined;
-    stripePaymentReference?: StringNullableWithAggregatesFilter | undefined;
     buyerId?: StringWithAggregatesFilter | undefined;
     tenantId?: StringWithAggregatesFilter | undefined;
+    PaymentStatus?: EnumPAYMENT_STATUSWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

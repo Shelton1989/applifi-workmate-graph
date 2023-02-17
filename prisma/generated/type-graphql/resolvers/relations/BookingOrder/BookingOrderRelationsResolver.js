@@ -7,8 +7,10 @@ const BookingOrder_1 = require("../../../models/BookingOrder");
 const BookingOrderLineItem_1 = require("../../../models/BookingOrderLineItem");
 const Experience_1 = require("../../../models/Experience");
 const Tenant_1 = require("../../../models/Tenant");
+const Transaction_1 = require("../../../models/Transaction");
 const User_1 = require("../../../models/User");
 const BookingOrderItemsArgs_1 = require("./args/BookingOrderItemsArgs");
+const BookingOrderTransactionsArgs_1 = require("./args/BookingOrderTransactionsArgs");
 const helpers_1 = require("../../../helpers");
 let BookingOrderRelationsResolver = class BookingOrderRelationsResolver {
     async Experience(bookingOrder, ctx) {
@@ -38,6 +40,13 @@ let BookingOrderRelationsResolver = class BookingOrderRelationsResolver {
                 id: bookingOrder.id,
             },
         }).Items(args);
+    }
+    async Transactions(bookingOrder, ctx, args) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).bookingOrder.findUnique({
+            where: {
+                id: bookingOrder.id,
+            },
+        }).Transactions(args);
     }
 };
 tslib_1.__decorate([
@@ -81,6 +90,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", [BookingOrder_1.BookingOrder, Object, BookingOrderItemsArgs_1.BookingOrderItemsArgs]),
     tslib_1.__metadata("design:returntype", Promise)
 ], BookingOrderRelationsResolver.prototype, "Items", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => [Transaction_1.Transaction], {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__param(2, TypeGraphQL.Args()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [BookingOrder_1.BookingOrder, Object, BookingOrderTransactionsArgs_1.BookingOrderTransactionsArgs]),
+    tslib_1.__metadata("design:returntype", Promise)
+], BookingOrderRelationsResolver.prototype, "Transactions", null);
 BookingOrderRelationsResolver = tslib_1.__decorate([
     TypeGraphQL.Resolver(_of => BookingOrder_1.BookingOrder)
 ], BookingOrderRelationsResolver);

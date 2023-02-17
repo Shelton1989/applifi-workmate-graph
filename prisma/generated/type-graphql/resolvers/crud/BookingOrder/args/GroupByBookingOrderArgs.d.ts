@@ -4,7 +4,7 @@ import { BookingOrderWhereInput } from "../../../inputs/BookingOrderWhereInput";
 export declare class GroupByBookingOrderArgs {
     where?: BookingOrderWhereInput | undefined;
     orderBy?: BookingOrderOrderByWithAggregationInput[] | undefined;
-    by: Array<"id" | "experienceId" | "status" | "SelectedPaymentType" | "stripePaymentReference" | "buyerId" | "tenantId" | "createdAt" | "updatedAt">;
+    by: Array<"id" | "experienceId" | "status" | "buyerId" | "tenantId" | "PaymentStatus" | "createdAt" | "updatedAt">;
     having?: BookingOrderScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserCrudResolver = exports.TopicListsCrudResolver = exports.TenantCrudResolver = exports.RequestCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.PriceCrudResolver = exports.PostCrudResolver = exports.NotificationSettingsCrudResolver = exports.NotificationCrudResolver = exports.LocationCrudResolver = exports.FeaturesCrudResolver = exports.ExperienceAvailabilityCrudResolver = exports.ExperienceCrudResolver = exports.CurrencyCrudResolver = exports.CommentCrudResolver = exports.BookingOrderLineItemCrudResolver = exports.BookingOrderCrudResolver = exports.AggregateRatingCrudResolver = void 0;
+exports.UserCrudResolver = exports.TransactionCrudResolver = exports.TopicListsCrudResolver = exports.TenantCrudResolver = exports.RequestCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.PriceCrudResolver = exports.PostCrudResolver = exports.NotificationSettingsCrudResolver = exports.NotificationCrudResolver = exports.LocationCrudResolver = exports.FeaturesCrudResolver = exports.ExperienceAvailabilityCrudResolver = exports.ExperienceCrudResolver = exports.CurrencyCrudResolver = exports.CommentCrudResolver = exports.BookingOrderLineItemCrudResolver = exports.BookingOrderCrudResolver = exports.AggregateRatingCrudResolver = void 0;
 var AggregateRatingCrudResolver_1 = require("./AggregateRating/AggregateRatingCrudResolver");
 Object.defineProperty(exports, "AggregateRatingCrudResolver", { enumerable: true, get: function () { return AggregateRatingCrudResolver_1.AggregateRatingCrudResolver; } });
 var BookingOrderCrudResolver_1 = require("./BookingOrder/BookingOrderCrudResolver");
@@ -37,5 +37,7 @@ var TenantCrudResolver_1 = require("./Tenant/TenantCrudResolver");
 Object.defineProperty(exports, "TenantCrudResolver", { enumerable: true, get: function () { return TenantCrudResolver_1.TenantCrudResolver; } });
 var TopicListsCrudResolver_1 = require("./TopicLists/TopicListsCrudResolver");
 Object.defineProperty(exports, "TopicListsCrudResolver", { enumerable: true, get: function () { return TopicListsCrudResolver_1.TopicListsCrudResolver; } });
+var TransactionCrudResolver_1 = require("./Transaction/TransactionCrudResolver");
+Object.defineProperty(exports, "TransactionCrudResolver", { enumerable: true, get: function () { return TransactionCrudResolver_1.TransactionCrudResolver; } });
 var UserCrudResolver_1 = require("./User/UserCrudResolver");
 Object.defineProperty(exports, "UserCrudResolver", { enumerable: true, get: function () { return UserCrudResolver_1.UserCrudResolver; } });

@@ -7,5 +7,5 @@ export declare class TenantBookingOrdersArgs {
     cursor?: BookingOrderWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "experienceId" | "status" | "SelectedPaymentType" | "stripePaymentReference" | "buyerId" | "tenantId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "experienceId" | "status" | "buyerId" | "tenantId" | "PaymentStatus" | "createdAt" | "updatedAt"> | undefined;
 }

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = exports.TopicLists = exports.Tenant = exports.Request = exports.Reply = exports.Reaction = exports.Price = exports.Post = exports.NotificationSettings = exports.Notification = exports.Location = exports.Features = exports.ExperienceAvailability = exports.Experience = exports.Currency = exports.Comment = exports.BookingOrderLineItem = exports.BookingOrder = exports.AggregateRating = void 0;
+exports.User = exports.Transaction = exports.TopicLists = exports.Tenant = exports.Request = exports.Reply = exports.Reaction = exports.Price = exports.Post = exports.NotificationSettings = exports.Notification = exports.Location = exports.Features = exports.ExperienceAvailability = exports.Experience = exports.Currency = exports.Comment = exports.BookingOrderLineItem = exports.BookingOrder = exports.AggregateRating = void 0;
 var AggregateRating_1 = require("./AggregateRating");
 Object.defineProperty(exports, "AggregateRating", { enumerable: true, get: function () { return AggregateRating_1.AggregateRating; } });
 var BookingOrder_1 = require("./BookingOrder");
@@ -37,5 +37,7 @@ var Tenant_1 = require("./Tenant");
 Object.defineProperty(exports, "Tenant", { enumerable: true, get: function () { return Tenant_1.Tenant; } });
 var TopicLists_1 = require("./TopicLists");
 Object.defineProperty(exports, "TopicLists", { enumerable: true, get: function () { return TopicLists_1.TopicLists; } });
+var Transaction_1 = require("./Transaction");
+Object.defineProperty(exports, "Transaction", { enumerable: true, get: function () { return Transaction_1.Transaction; } });
 var User_1 = require("./User");
 Object.defineProperty(exports, "User", { enumerable: true, get: function () { return User_1.User; } });

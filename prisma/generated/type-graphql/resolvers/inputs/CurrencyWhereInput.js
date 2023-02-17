@@ -7,6 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const PriceListRelationFilter_1 = require("../inputs/PriceListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
+const TransactionListRelationFilter_1 = require("../inputs/TransactionListRelationFilter");
 let CurrencyWhereInput = CurrencyWhereInput_1 = class CurrencyWhereInput {
 };
 tslib_1.__decorate([
@@ -57,6 +58,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", PriceListRelationFilter_1.PriceListRelationFilter)
 ], CurrencyWhereInput.prototype, "prices", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TransactionListRelationFilter_1.TransactionListRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TransactionListRelationFilter_1.TransactionListRelationFilter)
+], CurrencyWhereInput.prototype, "Transactions", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true
