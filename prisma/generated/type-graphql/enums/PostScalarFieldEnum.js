@@ -13,7 +13,7 @@ var PostScalarFieldEnum;
     PostScalarFieldEnum["isCommentsEnabled"] = "isCommentsEnabled";
     PostScalarFieldEnum["canBeCounted"] = "canBeCounted";
     PostScalarFieldEnum["authorId"] = "authorId";
-    PostScalarFieldEnum["experienceId"] = "experienceId";
+    PostScalarFieldEnum["mealId"] = "mealId";
     PostScalarFieldEnum["postLink"] = "postLink";
     PostScalarFieldEnum["createdAt"] = "createdAt";
     PostScalarFieldEnum["updatedAt"] = "updatedAt";

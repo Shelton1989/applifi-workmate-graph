@@ -4,7 +4,7 @@ import { LocationWhereInput } from "../../../inputs/LocationWhereInput";
 export declare class GroupByLocationArgs {
     where?: LocationWhereInput | undefined;
     orderBy?: LocationOrderByWithAggregationInput[] | undefined;
-    by: Array<"id" | "description" | "longitude" | "latitude" | "googleMapsUrl" | "googlePlacesId" | "type" | "line1" | "line2" | "city" | "district" | "country" | "code" | "isDefault" | "experienceId" | "tenantId" | "createdAt" | "updatedAt">;
+    by: Array<"id" | "description" | "longitude" | "latitude" | "googleMapsUrl" | "googlePlacesId" | "type" | "line1" | "line2" | "city" | "district" | "country" | "code" | "isDefault" | "tenantId" | "createdAt" | "updatedAt">;
     having?: LocationScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

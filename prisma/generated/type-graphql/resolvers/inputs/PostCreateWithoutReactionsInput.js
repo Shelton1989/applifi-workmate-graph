@@ -4,7 +4,7 @@ exports.PostCreateWithoutReactionsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentCreateNestedManyWithoutPostInput_1 = require("../inputs/CommentCreateNestedManyWithoutPostInput");
-const ExperienceCreateNestedOneWithoutPostsInput_1 = require("../inputs/ExperienceCreateNestedOneWithoutPostsInput");
+const MealCreateNestedOneWithoutPostsInput_1 = require("../inputs/MealCreateNestedOneWithoutPostsInput");
 const PostCreatemediaUrlInput_1 = require("../inputs/PostCreatemediaUrlInput");
 const UserCreateNestedOneWithoutPostsInput_1 = require("../inputs/UserCreateNestedOneWithoutPostsInput");
 const MEDIA_TYPE_1 = require("../../enums/MEDIA_TYPE");
@@ -59,11 +59,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", UserCreateNestedOneWithoutPostsInput_1.UserCreateNestedOneWithoutPostsInput)
 ], PostCreateWithoutReactionsInput.prototype, "Author", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceCreateNestedOneWithoutPostsInput_1.ExperienceCreateNestedOneWithoutPostsInput, {
+    TypeGraphQL.Field(_type => MealCreateNestedOneWithoutPostsInput_1.MealCreateNestedOneWithoutPostsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ExperienceCreateNestedOneWithoutPostsInput_1.ExperienceCreateNestedOneWithoutPostsInput)
-], PostCreateWithoutReactionsInput.prototype, "Experience", void 0);
+    tslib_1.__metadata("design:type", MealCreateNestedOneWithoutPostsInput_1.MealCreateNestedOneWithoutPostsInput)
+], PostCreateWithoutReactionsInput.prototype, "Meal", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => CommentCreateNestedManyWithoutPostInput_1.CommentCreateNestedManyWithoutPostInput, {
         nullable: true

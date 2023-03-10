@@ -4,15 +4,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const BookingOrderListRelationFilter_1 = require("../inputs/BookingOrderListRelationFilter");
 const BoolNullableFilter_1 = require("../inputs/BoolNullableFilter");
 const CommentListRelationFilter_1 = require("../inputs/CommentListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const EnumROLENullableListFilter_1 = require("../inputs/EnumROLENullableListFilter");
-const ExperienceListRelationFilter_1 = require("../inputs/ExperienceListRelationFilter");
+const MealListRelationFilter_1 = require("../inputs/MealListRelationFilter");
 const NotificationListRelationFilter_1 = require("../inputs/NotificationListRelationFilter");
 const NotificationSettingsRelationFilter_1 = require("../inputs/NotificationSettingsRelationFilter");
+const OrderListRelationFilter_1 = require("../inputs/OrderListRelationFilter");
+const PatientProfileRelationFilter_1 = require("../inputs/PatientProfileRelationFilter");
 const PostListRelationFilter_1 = require("../inputs/PostListRelationFilter");
 const ReactionListRelationFilter_1 = require("../inputs/ReactionListRelationFilter");
 const ReplyListRelationFilter_1 = require("../inputs/ReplyListRelationFilter");
@@ -21,7 +22,7 @@ const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
 const TenantRelationFilter_1 = require("../inputs/TenantRelationFilter");
-const UserListRelationFilter_1 = require("../inputs/UserListRelationFilter");
+const WardRelationFilter_1 = require("../inputs/WardRelationFilter");
 let UserWhereInput = UserWhereInput_1 = class UserWhereInput {
 };
 tslib_1.__decorate([
@@ -151,6 +152,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationSettingsRelationFilter_1.NotificationSettingsRelationFilter)
 ], UserWhereInput.prototype, "NotificationSettings", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => PatientProfileRelationFilter_1.PatientProfileRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", PatientProfileRelationFilter_1.PatientProfileRelationFilter)
+], UserWhereInput.prototype, "PatientProfile", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => NotificationListRelationFilter_1.NotificationListRelationFilter, {
         nullable: true
     }),
@@ -163,41 +170,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationListRelationFilter_1.NotificationListRelationFilter)
 ], UserWhereInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserListRelationFilter_1.UserListRelationFilter, {
+    TypeGraphQL.Field(_type => MealListRelationFilter_1.MealListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserListRelationFilter_1.UserListRelationFilter)
-], UserWhereInput.prototype, "Following", void 0);
+    tslib_1.__metadata("design:type", MealListRelationFilter_1.MealListRelationFilter)
+], UserWhereInput.prototype, "LikedMeals", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
-], UserWhereInput.prototype, "followingIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserListRelationFilter_1.UserListRelationFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserListRelationFilter_1.UserListRelationFilter)
-], UserWhereInput.prototype, "Followers", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
-], UserWhereInput.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceListRelationFilter_1.ExperienceListRelationFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", ExperienceListRelationFilter_1.ExperienceListRelationFilter)
-], UserWhereInput.prototype, "LikedExperiences", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
-], UserWhereInput.prototype, "experienceIds", void 0);
+], UserWhereInput.prototype, "mealIds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => RequestListRelationFilter_1.RequestListRelationFilter, {
         nullable: true
@@ -229,10 +212,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", ReactionListRelationFilter_1.ReactionListRelationFilter)
 ], UserWhereInput.prototype, "Reactions", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BookingOrderListRelationFilter_1.BookingOrderListRelationFilter, {
+    TypeGraphQL.Field(_type => OrderListRelationFilter_1.OrderListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", BookingOrderListRelationFilter_1.BookingOrderListRelationFilter)
+    tslib_1.__metadata("design:type", OrderListRelationFilter_1.OrderListRelationFilter)
 ], UserWhereInput.prototype, "Bookings", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
@@ -246,6 +229,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
 ], UserWhereInput.prototype, "updatedAt", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => WardRelationFilter_1.WardRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", WardRelationFilter_1.WardRelationFilter)
+], UserWhereInput.prototype, "Ward", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], UserWhereInput.prototype, "wardId", void 0);
 UserWhereInput = UserWhereInput_1 = tslib_1.__decorate([
     TypeGraphQL.InputType("UserWhereInput", {
         isAbstract: true

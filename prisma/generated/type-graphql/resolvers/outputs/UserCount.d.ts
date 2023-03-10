@@ -1,9 +1,7 @@
 export declare class UserCount {
     Notifications: number;
     Activity: number;
-    Following: number;
-    Followers: number;
-    LikedExperiences: number;
+    LikedMeals: number;
     Requests: number;
     Posts: number;
     Comments: number;

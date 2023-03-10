@@ -7,5 +7,5 @@ export declare class FindManyFeaturesArgs {
     cursor?: FeaturesWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "experienceId" | "title" | "shortDescription" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "mealId" | "title" | "shortDescription" | "createdAt" | "updatedAt"> | undefined;
 }

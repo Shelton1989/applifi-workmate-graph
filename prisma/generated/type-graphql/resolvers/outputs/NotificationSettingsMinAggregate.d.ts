@@ -1,13 +1,11 @@
 export declare class NotificationSettingsMinAggregate {
     id: string | null;
-    newArrivals: boolean | null;
-    bookingOrOrderUpdates: boolean | null;
-    promotions: boolean | null;
-    saleAlerts: boolean | null;
-    newContentILike: boolean | null;
+    newMenuItems: boolean | null;
+    orderUpdates: boolean | null;
+    newRequests: boolean | null;
+    requestUpdates: boolean | null;
     commentsOnMyReviews: boolean | null;
-    repliesToMyComments: boolean | null;
-    repliesToThreads: boolean | null;
+    repliesToMyReviews: boolean | null;
     userId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;

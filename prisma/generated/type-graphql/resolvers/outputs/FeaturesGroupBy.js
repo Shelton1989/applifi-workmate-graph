@@ -19,7 +19,7 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)
-], FeaturesGroupBy.prototype, "experienceId", void 0);
+], FeaturesGroupBy.prototype, "mealId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: false

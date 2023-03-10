@@ -1,0 +1,12 @@
+export { AggregateWardArgs } from "./AggregateWardArgs";
+export { CreateManyWardArgs } from "./CreateManyWardArgs";
+export { CreateWardArgs } from "./CreateWardArgs";
+export { DeleteManyWardArgs } from "./DeleteManyWardArgs";
+export { DeleteWardArgs } from "./DeleteWardArgs";
+export { FindFirstWardArgs } from "./FindFirstWardArgs";
+export { FindManyWardArgs } from "./FindManyWardArgs";
+export { FindUniqueWardArgs } from "./FindUniqueWardArgs";
+export { GroupByWardArgs } from "./GroupByWardArgs";
+export { UpdateManyWardArgs } from "./UpdateManyWardArgs";
+export { UpdateWardArgs } from "./UpdateWardArgs";
+export { UpsertWardArgs } from "./UpsertWardArgs";

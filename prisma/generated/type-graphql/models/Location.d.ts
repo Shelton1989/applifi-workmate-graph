@@ -1,4 +1,3 @@
-import { Experience } from "../models/Experience";
 import { Tenant } from "../models/Tenant";
 export declare class Location {
     id: string;
@@ -15,8 +14,6 @@ export declare class Location {
     country?: string | null;
     code?: string | null;
     isDefault: boolean;
-    Experience?: Experience | null;
-    experienceId?: string | null;
     Tenant?: Tenant | null;
     tenantId?: string | null;
     createdAt: Date;

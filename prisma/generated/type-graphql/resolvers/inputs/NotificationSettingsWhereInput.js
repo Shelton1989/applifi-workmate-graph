@@ -40,31 +40,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFilter_1.BoolFilter)
-], NotificationSettingsWhereInput.prototype, "newArrivals", void 0);
+], NotificationSettingsWhereInput.prototype, "newMenuItems", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFilter_1.BoolFilter)
-], NotificationSettingsWhereInput.prototype, "bookingOrOrderUpdates", void 0);
+], NotificationSettingsWhereInput.prototype, "orderUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFilter_1.BoolFilter)
-], NotificationSettingsWhereInput.prototype, "promotions", void 0);
+], NotificationSettingsWhereInput.prototype, "newRequests", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFilter_1.BoolFilter)
-], NotificationSettingsWhereInput.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", BoolFilter_1.BoolFilter)
-], NotificationSettingsWhereInput.prototype, "newContentILike", void 0);
+], NotificationSettingsWhereInput.prototype, "requestUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {
         nullable: true
@@ -76,13 +70,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFilter_1.BoolFilter)
-], NotificationSettingsWhereInput.prototype, "repliesToMyComments", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BoolFilter_1.BoolFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", BoolFilter_1.BoolFilter)
-], NotificationSettingsWhereInput.prototype, "repliesToThreads", void 0);
+], NotificationSettingsWhereInput.prototype, "repliesToMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserRelationFilter_1.UserRelationFilter, {
         nullable: true

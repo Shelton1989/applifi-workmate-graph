@@ -4,7 +4,7 @@ exports.PostOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentOrderByRelationAggregateInput_1 = require("../inputs/CommentOrderByRelationAggregateInput");
-const ExperienceOrderByWithRelationInput_1 = require("../inputs/ExperienceOrderByWithRelationInput");
+const MealOrderByWithRelationInput_1 = require("../inputs/MealOrderByWithRelationInput");
 const ReactionOrderByRelationAggregateInput_1 = require("../inputs/ReactionOrderByRelationAggregateInput");
 const UserOrderByWithRelationInput_1 = require("../inputs/UserOrderByWithRelationInput");
 const SortOrder_1 = require("../../enums/SortOrder");
@@ -65,17 +65,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], PostOrderByWithRelationInput.prototype, "authorId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceOrderByWithRelationInput_1.ExperienceOrderByWithRelationInput, {
+    TypeGraphQL.Field(_type => MealOrderByWithRelationInput_1.MealOrderByWithRelationInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ExperienceOrderByWithRelationInput_1.ExperienceOrderByWithRelationInput)
-], PostOrderByWithRelationInput.prototype, "Experience", void 0);
+    tslib_1.__metadata("design:type", MealOrderByWithRelationInput_1.MealOrderByWithRelationInput)
+], PostOrderByWithRelationInput.prototype, "Meal", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], PostOrderByWithRelationInput.prototype, "experienceId", void 0);
+], PostOrderByWithRelationInput.prototype, "mealId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => CommentOrderByRelationAggregateInput_1.CommentOrderByRelationAggregateInput, {
         nullable: true

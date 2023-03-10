@@ -16,7 +16,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], AggregateRatingWhereUniqueInput.prototype, "experienceId", void 0);
+], AggregateRatingWhereUniqueInput.prototype, "mealId", void 0);
 AggregateRatingWhereUniqueInput = tslib_1.__decorate([
     TypeGraphQL.InputType("AggregateRatingWhereUniqueInput", {
         isAbstract: true

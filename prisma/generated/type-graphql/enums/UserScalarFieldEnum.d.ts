@@ -15,9 +15,8 @@ export declare enum UserScalarFieldEnum {
     hasAcceptedTerms = "hasAcceptedTerms",
     isFirstTimeUser = "isFirstTimeUser",
     isVerified = "isVerified",
-    followingIds = "followingIds",
-    followerIds = "followerIds",
-    experienceIds = "experienceIds",
+    mealIds = "mealIds",
     createdAt = "createdAt",
-    updatedAt = "updatedAt"
+    updatedAt = "updatedAt",
+    wardId = "wardId"
 }

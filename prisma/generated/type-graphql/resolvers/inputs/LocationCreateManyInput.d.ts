@@ -13,7 +13,6 @@ export declare class LocationCreateManyInput {
     country?: string | undefined;
     code?: string | undefined;
     isDefault?: boolean | undefined;
-    experienceId?: string | undefined;
     tenantId?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

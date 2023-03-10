@@ -1,6 +1,6 @@
 export declare class FeaturesCountAggregate {
     id: number;
-    experienceId: number;
+    mealId: number;
     title: number;
     shortDescription: number;
     createdAt: number;

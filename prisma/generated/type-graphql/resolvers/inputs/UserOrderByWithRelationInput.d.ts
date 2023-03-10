@@ -1,14 +1,15 @@
-import { BookingOrderOrderByRelationAggregateInput } from "../inputs/BookingOrderOrderByRelationAggregateInput";
 import { CommentOrderByRelationAggregateInput } from "../inputs/CommentOrderByRelationAggregateInput";
-import { ExperienceOrderByRelationAggregateInput } from "../inputs/ExperienceOrderByRelationAggregateInput";
+import { MealOrderByRelationAggregateInput } from "../inputs/MealOrderByRelationAggregateInput";
 import { NotificationOrderByRelationAggregateInput } from "../inputs/NotificationOrderByRelationAggregateInput";
 import { NotificationSettingsOrderByWithRelationInput } from "../inputs/NotificationSettingsOrderByWithRelationInput";
+import { OrderOrderByRelationAggregateInput } from "../inputs/OrderOrderByRelationAggregateInput";
+import { PatientProfileOrderByWithRelationInput } from "../inputs/PatientProfileOrderByWithRelationInput";
 import { PostOrderByRelationAggregateInput } from "../inputs/PostOrderByRelationAggregateInput";
 import { ReactionOrderByRelationAggregateInput } from "../inputs/ReactionOrderByRelationAggregateInput";
 import { ReplyOrderByRelationAggregateInput } from "../inputs/ReplyOrderByRelationAggregateInput";
 import { RequestOrderByRelationAggregateInput } from "../inputs/RequestOrderByRelationAggregateInput";
 import { TenantOrderByWithRelationInput } from "../inputs/TenantOrderByWithRelationInput";
-import { UserOrderByRelationAggregateInput } from "../inputs/UserOrderByRelationAggregateInput";
+import { WardOrderByWithRelationInput } from "../inputs/WardOrderByWithRelationInput";
 export declare class UserOrderByWithRelationInput {
     Tenant?: TenantOrderByWithRelationInput | undefined;
     tenantId?: "asc" | "desc" | undefined;
@@ -28,20 +29,19 @@ export declare class UserOrderByWithRelationInput {
     isFirstTimeUser?: "asc" | "desc" | undefined;
     isVerified?: "asc" | "desc" | undefined;
     NotificationSettings?: NotificationSettingsOrderByWithRelationInput | undefined;
+    PatientProfile?: PatientProfileOrderByWithRelationInput | undefined;
     Notifications?: NotificationOrderByRelationAggregateInput | undefined;
     Activity?: NotificationOrderByRelationAggregateInput | undefined;
-    Following?: UserOrderByRelationAggregateInput | undefined;
-    followingIds?: "asc" | "desc" | undefined;
-    Followers?: UserOrderByRelationAggregateInput | undefined;
-    followerIds?: "asc" | "desc" | undefined;
-    LikedExperiences?: ExperienceOrderByRelationAggregateInput | undefined;
-    experienceIds?: "asc" | "desc" | undefined;
+    LikedMeals?: MealOrderByRelationAggregateInput | undefined;
+    mealIds?: "asc" | "desc" | undefined;
     Requests?: RequestOrderByRelationAggregateInput | undefined;
     Posts?: PostOrderByRelationAggregateInput | undefined;
     Comments?: CommentOrderByRelationAggregateInput | undefined;
     Replies?: ReplyOrderByRelationAggregateInput | undefined;
     Reactions?: ReactionOrderByRelationAggregateInput | undefined;
-    Bookings?: BookingOrderOrderByRelationAggregateInput | undefined;
+    Bookings?: OrderOrderByRelationAggregateInput | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
+    Ward?: WardOrderByWithRelationInput | undefined;
+    wardId?: "asc" | "desc" | undefined;
 }

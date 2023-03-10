@@ -4,16 +4,16 @@ exports.FeaturesUpdateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
-const ExperienceUpdateOneRequiredWithoutFeaturesInput_1 = require("../inputs/ExperienceUpdateOneRequiredWithoutFeaturesInput");
+const MealUpdateOneRequiredWithoutFeaturesInput_1 = require("../inputs/MealUpdateOneRequiredWithoutFeaturesInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 let FeaturesUpdateInput = class FeaturesUpdateInput {
 };
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceUpdateOneRequiredWithoutFeaturesInput_1.ExperienceUpdateOneRequiredWithoutFeaturesInput, {
+    TypeGraphQL.Field(_type => MealUpdateOneRequiredWithoutFeaturesInput_1.MealUpdateOneRequiredWithoutFeaturesInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ExperienceUpdateOneRequiredWithoutFeaturesInput_1.ExperienceUpdateOneRequiredWithoutFeaturesInput)
-], FeaturesUpdateInput.prototype, "Experience", void 0);
+    tslib_1.__metadata("design:type", MealUpdateOneRequiredWithoutFeaturesInput_1.MealUpdateOneRequiredWithoutFeaturesInput)
+], FeaturesUpdateInput.prototype, "Meal", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput, {
         nullable: true

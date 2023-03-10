@@ -16,31 +16,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateManyInput.prototype, "newArrivals", void 0);
+], NotificationSettingsCreateManyInput.prototype, "newMenuItems", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateManyInput.prototype, "bookingOrOrderUpdates", void 0);
+], NotificationSettingsCreateManyInput.prototype, "orderUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateManyInput.prototype, "promotions", void 0);
+], NotificationSettingsCreateManyInput.prototype, "newRequests", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateManyInput.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateManyInput.prototype, "newContentILike", void 0);
+], NotificationSettingsCreateManyInput.prototype, "requestUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
@@ -52,13 +46,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateManyInput.prototype, "repliesToMyComments", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateManyInput.prototype, "repliesToThreads", void 0);
+], NotificationSettingsCreateManyInput.prototype, "repliesToMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

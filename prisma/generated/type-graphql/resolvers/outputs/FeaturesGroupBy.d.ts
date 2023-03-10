@@ -3,7 +3,7 @@ import { FeaturesMaxAggregate } from "../outputs/FeaturesMaxAggregate";
 import { FeaturesMinAggregate } from "../outputs/FeaturesMinAggregate";
 export declare class FeaturesGroupBy {
     id: string;
-    experienceId: string;
+    mealId: string;
     title: string;
     shortDescription: string;
     createdAt: Date;

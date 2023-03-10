@@ -1,6 +1,4 @@
-import { UserCreateexperienceIdsInput } from "../inputs/UserCreateexperienceIdsInput";
-import { UserCreatefollowerIdsInput } from "../inputs/UserCreatefollowerIdsInput";
-import { UserCreatefollowingIdsInput } from "../inputs/UserCreatefollowingIdsInput";
+import { UserCreatemealIdsInput } from "../inputs/UserCreatemealIdsInput";
 import { UserCreaterolesInput } from "../inputs/UserCreaterolesInput";
 export declare class UserCreateManyTenantInput {
     uid: string;
@@ -18,9 +16,8 @@ export declare class UserCreateManyTenantInput {
     hasAcceptedTerms?: boolean | undefined;
     isFirstTimeUser?: boolean | undefined;
     isVerified?: boolean | undefined;
-    followingIds?: UserCreatefollowingIdsInput | undefined;
-    followerIds?: UserCreatefollowerIdsInput | undefined;
-    experienceIds?: UserCreateexperienceIdsInput | undefined;
+    mealIds?: UserCreatemealIdsInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
+    wardId?: string | undefined;
 }

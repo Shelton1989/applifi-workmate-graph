@@ -19,7 +19,6 @@ var LocationScalarFieldEnum;
     LocationScalarFieldEnum["country"] = "country";
     LocationScalarFieldEnum["code"] = "code";
     LocationScalarFieldEnum["isDefault"] = "isDefault";
-    LocationScalarFieldEnum["experienceId"] = "experienceId";
     LocationScalarFieldEnum["tenantId"] = "tenantId";
     LocationScalarFieldEnum["createdAt"] = "createdAt";
     LocationScalarFieldEnum["updatedAt"] = "updatedAt";

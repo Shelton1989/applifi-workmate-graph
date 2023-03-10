@@ -18,7 +18,6 @@ export declare class LocationGroupBy {
     country: string | null;
     code: string | null;
     isDefault: boolean;
-    experienceId: string | null;
     tenantId: string | null;
     createdAt: Date;
     updatedAt: Date;

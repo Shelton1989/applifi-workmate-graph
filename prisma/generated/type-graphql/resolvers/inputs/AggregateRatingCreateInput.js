@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AggregateRatingCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const ExperienceCreateNestedOneWithoutAggregateRatingInput_1 = require("../inputs/ExperienceCreateNestedOneWithoutAggregateRatingInput");
+const MealCreateNestedOneWithoutAggregateRatingInput_1 = require("../inputs/MealCreateNestedOneWithoutAggregateRatingInput");
 let AggregateRatingCreateInput = class AggregateRatingCreateInput {
 };
 tslib_1.__decorate([
@@ -37,11 +37,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Number)
 ], AggregateRatingCreateInput.prototype, "ratingCount", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceCreateNestedOneWithoutAggregateRatingInput_1.ExperienceCreateNestedOneWithoutAggregateRatingInput, {
+    TypeGraphQL.Field(_type => MealCreateNestedOneWithoutAggregateRatingInput_1.MealCreateNestedOneWithoutAggregateRatingInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ExperienceCreateNestedOneWithoutAggregateRatingInput_1.ExperienceCreateNestedOneWithoutAggregateRatingInput)
-], AggregateRatingCreateInput.prototype, "Experience", void 0);
+    tslib_1.__metadata("design:type", MealCreateNestedOneWithoutAggregateRatingInput_1.MealCreateNestedOneWithoutAggregateRatingInput)
+], AggregateRatingCreateInput.prototype, "Meal", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

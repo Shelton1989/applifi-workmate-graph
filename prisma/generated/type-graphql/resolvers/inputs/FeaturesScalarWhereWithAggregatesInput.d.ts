@@ -5,7 +5,7 @@ export declare class FeaturesScalarWhereWithAggregatesInput {
     OR?: FeaturesScalarWhereWithAggregatesInput[] | undefined;
     NOT?: FeaturesScalarWhereWithAggregatesInput[] | undefined;
     id?: StringWithAggregatesFilter | undefined;
-    experienceId?: StringWithAggregatesFilter | undefined;
+    mealId?: StringWithAggregatesFilter | undefined;
     title?: StringWithAggregatesFilter | undefined;
     shortDescription?: StringWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;

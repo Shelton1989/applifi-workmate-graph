@@ -1,7 +1,7 @@
 export declare class ReactionCountAggregate {
     id: number;
     type: number;
-    experienceId: number;
+    mealId: number;
     postId: number;
     commentId: number;
     replyId: number;

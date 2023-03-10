@@ -8,7 +8,7 @@ export declare class UserGroupBy {
     id: string;
     username: string;
     email: string;
-    roles: Array<"SUPER_ADMIN" | "ADMIN" | "USER" | "WORKSPACE_OWNER" | "WORKSPACE_ADMIN" | "WORKSPACE_USER"> | null;
+    roles: Array<"SUPER_ADMIN" | "ADMIN" | "USER" | "WORKSPACE_OWNER" | "WORKSPACE_ADMIN" | "WORKSPACE_USER" | "WARD_ADMIN" | "WARD_HOST_OR_HOSTESS" | "WARD_USER"> | null;
     firstName: string | null;
     lastName: string | null;
     avatar: string | null;
@@ -18,11 +18,10 @@ export declare class UserGroupBy {
     hasAcceptedTerms: boolean | null;
     isFirstTimeUser: boolean | null;
     isVerified: boolean | null;
-    followingIds: string[] | null;
-    followerIds: string[] | null;
-    experienceIds: string[] | null;
+    mealIds: string[] | null;
     createdAt: Date;
     updatedAt: Date;
+    wardId: string | null;
     _count: UserCountAggregate | null;
     _min: UserMinAggregate | null;
     _max: UserMaxAggregate | null;

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "life-health-app-staging",
+  "private_key_id": "d952dc2c6ebbcbeec260bfb12fbdde021f6cb69f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCoW1FKBcPk1kQn\nuXJddJbkhlNqqp024jvP+2wb/1ab2U9qiOmEm0+Dx3b+18SKXPGbRgoPvUoq7Yzz\nUenoKBv/F25Inbge547GpUeE9j9AzyjBmXveBR14ljkqFdV7HN7DeGTMBvaUnVP9\nz9eXXDfuErMCAvWHi/1PSk9EUw8o1MKH+Y11OdcmEcHE7IdTh3n5GkD9SfZ3WRnF\n7w02aDWDgKr9HLxqMhmUW92WbXXZptbRBaC6yAiXvw9OM8liL4218e9uFn3/ThZ8\n7l3Lwn90UTWwoCtq4gCA/5YUyiFZcft7K1eiSi7PLJgGFvDqUlTb8qw8SdIW3xhY\npj0PVUKpAgMBAAECggEAD2p1MhL/Eggwq3aGq1oOqxRFtSG0TZ8/nNbH2nRyCMlI\nRVgOEe9qw4VTNxiozYafNPmf2Dsb/HxOCMW6ZmCt15jcp1eR0Xqgjz35I4qs1hFi\nCQA14GmVfkI7L8haCPDm0P1INYp5r7gMRdRvSFPQZ0NdEtUUiHngEw+Z3IbCf5l9\nu3T1anpWUcHsokvXezKGlMFSfAdWM/aJtbBgtcnxh5hrXS3nKftX5/aK4L/E1dkF\n1usuXdOiUDileGOMCPWNup2KsUGYeB5ETPmYdp+AHmnsmuhpa2mmHtppNTDdoHsv\nFCN4cAY8LPujBuoGNmyv3f/guMPVoAor2u7zac/nlQKBgQDZRgJfMFp9q+TQOeti\nYItOo+B787NivaoFmQ+qrcnEd2ZzjoX4hUVUoRXpy+3m28SJpOOJAcnaA58LL9dt\nxq7kfQHRIaCHKnYPXRDzQLjJ5QaU2RBL6vxgu67gXDKpEnw/QWDISdSLaMlzte4+\n+5M5KbAUJKMAkCwKI0bpMhVazwKBgQDGXUfl5llzJ32ubhqJSGOgzittBAzRyD3q\nvkCsoE9LZgfq1SGQlGeXSp7yadjHBSRk+prDrtcDtkEiEGkNZBANl9gLlGpJhJHg\nrYquPAiyR1KwrQeavWi8oT7KTMmwGo8zUUXzD/6x5Rgab20dlg/D1L1sQOwfpCSp\nkfOuyCmJBwKBgAf/F59BPFNbvDQdrZgVTYs7ZMurEHMV3+gM1hLGCqL8cfzWxf97\niC2xMAlGxB62/+jA9M7aDf/EGlpjDF6x7UXjg+mafzn6ShYOqs0JGMP1deSMiJkC\nsP8uaSVAv2yRjZkWYuV8MiJfXOqxS29t+uEjs6NKJeWjaLuGyNlUSozpAoGBAK4Y\nipTFIfbGTzE7Y0Df7sjgig6JAnNQKr+PMRYRMOb86q/5VRcemPiYvn4F1gN+iN2z\ncQeTuRSB7hJmkrz0+H3lqfEn1k0l9B5cUZ3wBLXrkTCM/GKcIIOFhaVp1Y4hEVO5\n3gmhHSmm5wu0hfD0lmuKmKGdLV/r4V2OQnBBLusbAoGBAK0m/edTEzpBIZe3nABJ\nutPoVdIFJrsQBYyegk3Nh0OVSwxmOoK9wqAdKGVZz8hvOdA4XirL/+Ixu+DK3yYX\nq+uMlTbgN8KnYnt1O10gEuIzg56W896D5wd2dnlq4K25sN/jrSTCF37y6mp/hzh5\n+hLi9knFWI1tRM4wWv2VzfN0\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-sg2he@life-health-app-staging.iam.gserviceaccount.com",
+  "client_id": "110306561934513898947",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-sg2he%40life-health-app-staging.iam.gserviceaccount.com"
+}

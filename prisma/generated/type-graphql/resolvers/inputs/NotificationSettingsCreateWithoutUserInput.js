@@ -16,31 +16,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateWithoutUserInput.prototype, "newArrivals", void 0);
+], NotificationSettingsCreateWithoutUserInput.prototype, "newMenuItems", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateWithoutUserInput.prototype, "bookingOrOrderUpdates", void 0);
+], NotificationSettingsCreateWithoutUserInput.prototype, "orderUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateWithoutUserInput.prototype, "promotions", void 0);
+], NotificationSettingsCreateWithoutUserInput.prototype, "newRequests", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateWithoutUserInput.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateWithoutUserInput.prototype, "newContentILike", void 0);
+], NotificationSettingsCreateWithoutUserInput.prototype, "requestUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
@@ -52,13 +46,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateWithoutUserInput.prototype, "repliesToMyComments", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateWithoutUserInput.prototype, "repliesToThreads", void 0);
+], NotificationSettingsCreateWithoutUserInput.prototype, "repliesToMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

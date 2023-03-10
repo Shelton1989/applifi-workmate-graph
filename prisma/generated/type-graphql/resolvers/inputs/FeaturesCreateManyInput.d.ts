@@ -1,6 +1,6 @@
 export declare class FeaturesCreateManyInput {
     id?: string | undefined;
-    experienceId: string;
+    mealId: string;
     title: string;
     shortDescription: string;
     createdAt?: Date | undefined;

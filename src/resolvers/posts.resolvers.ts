@@ -1,4 +1,4 @@
-import { Experience, Post, PostCreateInput } from "../../prisma/generated/type-graphql";
+import { Meal, Post, PostCreateInput } from "../../prisma/generated/type-graphql";
 import { Context } from "../context";
 import { Arg, Authorized, Ctx, Mutation, Resolver } from "type-graphql";
 import { prisma as prismaClient } from "../context";
@@ -25,13 +25,13 @@ export class PostResolver {
       canBeCounted = false;
     }
 
-    let entityId: string = data.Experience?.connect?.id || "";
+    let entityId: string = data.Meal?.connect?.id || "";
 
     await prismaClient.$transaction(async (tx) => {
 
-      let entity: ((Experience) & { Posts: Post[]; }) | null;
+      let entity: ((Meal) & { Posts: Post[]; }) | null;
 
-      entity = await tx.experience.findUnique({ where: { id: entityId }, include: { Posts: true } } )
+      entity = await tx.meal.findUnique({ where: { id: entityId }, include: { Posts: true } } )
 
       const posts = entity?.Posts || [];
 
@@ -63,7 +63,7 @@ export class PostResolver {
         }
       })
 
-      await tx.experience.update({ where: { id: entityId }, data: { AggregateRating: { connect: { id: aggregateRating.id } }  } })
+      await tx.meal.update({ where: { id: entityId }, data: { AggregateRating: { connect: { id: aggregateRating.id } }  } })
   
     })
 

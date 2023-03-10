@@ -12,31 +12,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
-], NotificationSettingsUpdateWithoutUserInput.prototype, "newArrivals", void 0);
+], NotificationSettingsUpdateWithoutUserInput.prototype, "newMenuItems", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
-], NotificationSettingsUpdateWithoutUserInput.prototype, "bookingOrOrderUpdates", void 0);
+], NotificationSettingsUpdateWithoutUserInput.prototype, "orderUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
-], NotificationSettingsUpdateWithoutUserInput.prototype, "promotions", void 0);
+], NotificationSettingsUpdateWithoutUserInput.prototype, "newRequests", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
-], NotificationSettingsUpdateWithoutUserInput.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
-], NotificationSettingsUpdateWithoutUserInput.prototype, "newContentILike", void 0);
+], NotificationSettingsUpdateWithoutUserInput.prototype, "requestUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
         nullable: true
@@ -48,13 +42,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
-], NotificationSettingsUpdateWithoutUserInput.prototype, "repliesToMyComments", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
-], NotificationSettingsUpdateWithoutUserInput.prototype, "repliesToThreads", void 0);
+], NotificationSettingsUpdateWithoutUserInput.prototype, "repliesToMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

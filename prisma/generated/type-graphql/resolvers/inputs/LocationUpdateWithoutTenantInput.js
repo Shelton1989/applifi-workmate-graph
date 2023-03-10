@@ -5,7 +5,6 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BoolFieldUpdateOperationsInput_1 = require("../inputs/BoolFieldUpdateOperationsInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
-const ExperienceUpdateOneWithoutLocationsInput_1 = require("../inputs/ExperienceUpdateOneWithoutLocationsInput");
 const NullableEnumADDRESS_TYPEFieldUpdateOperationsInput_1 = require("../inputs/NullableEnumADDRESS_TYPEFieldUpdateOperationsInput");
 const NullableFloatFieldUpdateOperationsInput_1 = require("../inputs/NullableFloatFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
@@ -89,12 +88,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
 ], LocationUpdateWithoutTenantInput.prototype, "isDefault", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceUpdateOneWithoutLocationsInput_1.ExperienceUpdateOneWithoutLocationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", ExperienceUpdateOneWithoutLocationsInput_1.ExperienceUpdateOneWithoutLocationsInput)
-], LocationUpdateWithoutTenantInput.prototype, "Experience", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

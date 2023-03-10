@@ -3,28 +3,26 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserUpdateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const BookingOrderUpdateManyWithoutBuyerInput_1 = require("../inputs/BookingOrderUpdateManyWithoutBuyerInput");
 const CommentUpdateManyWithoutAuthorInput_1 = require("../inputs/CommentUpdateManyWithoutAuthorInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
-const ExperienceUpdateManyWithoutLikedByInput_1 = require("../inputs/ExperienceUpdateManyWithoutLikedByInput");
+const MealUpdateManyWithoutLikedByInput_1 = require("../inputs/MealUpdateManyWithoutLikedByInput");
 const NotificationSettingsUpdateOneWithoutUserInput_1 = require("../inputs/NotificationSettingsUpdateOneWithoutUserInput");
 const NotificationUpdateManyWithoutActorInput_1 = require("../inputs/NotificationUpdateManyWithoutActorInput");
 const NotificationUpdateManyWithoutUserInput_1 = require("../inputs/NotificationUpdateManyWithoutUserInput");
 const NullableBoolFieldUpdateOperationsInput_1 = require("../inputs/NullableBoolFieldUpdateOperationsInput");
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
+const OrderUpdateManyWithoutPatientInput_1 = require("../inputs/OrderUpdateManyWithoutPatientInput");
+const PatientProfileUpdateOneWithoutUserInput_1 = require("../inputs/PatientProfileUpdateOneWithoutUserInput");
 const PostUpdateManyWithoutAuthorInput_1 = require("../inputs/PostUpdateManyWithoutAuthorInput");
 const ReactionUpdateManyWithoutAuthorInput_1 = require("../inputs/ReactionUpdateManyWithoutAuthorInput");
 const ReplyUpdateManyWithoutAuthorInput_1 = require("../inputs/ReplyUpdateManyWithoutAuthorInput");
 const RequestUpdateManyWithoutReporterInput_1 = require("../inputs/RequestUpdateManyWithoutReporterInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 const TenantUpdateOneWithoutUsersInput_1 = require("../inputs/TenantUpdateOneWithoutUsersInput");
-const UserUpdateManyWithoutFollowersInput_1 = require("../inputs/UserUpdateManyWithoutFollowersInput");
-const UserUpdateManyWithoutFollowingInput_1 = require("../inputs/UserUpdateManyWithoutFollowingInput");
-const UserUpdateexperienceIdsInput_1 = require("../inputs/UserUpdateexperienceIdsInput");
-const UserUpdatefollowerIdsInput_1 = require("../inputs/UserUpdatefollowerIdsInput");
-const UserUpdatefollowingIdsInput_1 = require("../inputs/UserUpdatefollowingIdsInput");
+const UserUpdatemealIdsInput_1 = require("../inputs/UserUpdatemealIdsInput");
 const UserUpdaterolesInput_1 = require("../inputs/UserUpdaterolesInput");
+const WardUpdateOneWithoutUsersInput_1 = require("../inputs/WardUpdateOneWithoutUsersInput");
 let UserUpdateInput = class UserUpdateInput {
 };
 tslib_1.__decorate([
@@ -124,6 +122,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationSettingsUpdateOneWithoutUserInput_1.NotificationSettingsUpdateOneWithoutUserInput)
 ], UserUpdateInput.prototype, "NotificationSettings", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => PatientProfileUpdateOneWithoutUserInput_1.PatientProfileUpdateOneWithoutUserInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", PatientProfileUpdateOneWithoutUserInput_1.PatientProfileUpdateOneWithoutUserInput)
+], UserUpdateInput.prototype, "PatientProfile", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => NotificationUpdateManyWithoutUserInput_1.NotificationUpdateManyWithoutUserInput, {
         nullable: true
     }),
@@ -136,41 +140,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationUpdateManyWithoutActorInput_1.NotificationUpdateManyWithoutActorInput)
 ], UserUpdateInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdateManyWithoutFollowersInput_1.UserUpdateManyWithoutFollowersInput, {
+    TypeGraphQL.Field(_type => MealUpdateManyWithoutLikedByInput_1.MealUpdateManyWithoutLikedByInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserUpdateManyWithoutFollowersInput_1.UserUpdateManyWithoutFollowersInput)
-], UserUpdateInput.prototype, "Following", void 0);
+    tslib_1.__metadata("design:type", MealUpdateManyWithoutLikedByInput_1.MealUpdateManyWithoutLikedByInput)
+], UserUpdateInput.prototype, "LikedMeals", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdatefollowingIdsInput_1.UserUpdatefollowingIdsInput, {
+    TypeGraphQL.Field(_type => UserUpdatemealIdsInput_1.UserUpdatemealIdsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserUpdatefollowingIdsInput_1.UserUpdatefollowingIdsInput)
-], UserUpdateInput.prototype, "followingIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdateManyWithoutFollowingInput_1.UserUpdateManyWithoutFollowingInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserUpdateManyWithoutFollowingInput_1.UserUpdateManyWithoutFollowingInput)
-], UserUpdateInput.prototype, "Followers", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdatefollowerIdsInput_1.UserUpdatefollowerIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserUpdatefollowerIdsInput_1.UserUpdatefollowerIdsInput)
-], UserUpdateInput.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceUpdateManyWithoutLikedByInput_1.ExperienceUpdateManyWithoutLikedByInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", ExperienceUpdateManyWithoutLikedByInput_1.ExperienceUpdateManyWithoutLikedByInput)
-], UserUpdateInput.prototype, "LikedExperiences", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdateexperienceIdsInput_1.UserUpdateexperienceIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserUpdateexperienceIdsInput_1.UserUpdateexperienceIdsInput)
-], UserUpdateInput.prototype, "experienceIds", void 0);
+    tslib_1.__metadata("design:type", UserUpdatemealIdsInput_1.UserUpdatemealIdsInput)
+], UserUpdateInput.prototype, "mealIds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => RequestUpdateManyWithoutReporterInput_1.RequestUpdateManyWithoutReporterInput, {
         nullable: true
@@ -202,10 +182,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", ReactionUpdateManyWithoutAuthorInput_1.ReactionUpdateManyWithoutAuthorInput)
 ], UserUpdateInput.prototype, "Reactions", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BookingOrderUpdateManyWithoutBuyerInput_1.BookingOrderUpdateManyWithoutBuyerInput, {
+    TypeGraphQL.Field(_type => OrderUpdateManyWithoutPatientInput_1.OrderUpdateManyWithoutPatientInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", BookingOrderUpdateManyWithoutBuyerInput_1.BookingOrderUpdateManyWithoutBuyerInput)
+    tslib_1.__metadata("design:type", OrderUpdateManyWithoutPatientInput_1.OrderUpdateManyWithoutPatientInput)
 ], UserUpdateInput.prototype, "Bookings", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
@@ -219,6 +199,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput)
 ], UserUpdateInput.prototype, "updatedAt", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => WardUpdateOneWithoutUsersInput_1.WardUpdateOneWithoutUsersInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", WardUpdateOneWithoutUsersInput_1.WardUpdateOneWithoutUsersInput)
+], UserUpdateInput.prototype, "Ward", void 0);
 UserUpdateInput = tslib_1.__decorate([
     TypeGraphQL.InputType("UserUpdateInput", {
         isAbstract: true

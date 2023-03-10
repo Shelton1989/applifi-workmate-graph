@@ -5,7 +5,7 @@ export declare class FeaturesScalarWhereInput {
     OR?: FeaturesScalarWhereInput[] | undefined;
     NOT?: FeaturesScalarWhereInput[] | undefined;
     id?: StringFilter | undefined;
-    experienceId?: StringFilter | undefined;
+    mealId?: StringFilter | undefined;
     title?: StringFilter | undefined;
     shortDescription?: StringFilter | undefined;
     createdAt?: DateTimeFilter | undefined;

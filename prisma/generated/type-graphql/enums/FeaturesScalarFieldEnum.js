@@ -6,7 +6,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 var FeaturesScalarFieldEnum;
 (function (FeaturesScalarFieldEnum) {
     FeaturesScalarFieldEnum["id"] = "id";
-    FeaturesScalarFieldEnum["experienceId"] = "experienceId";
+    FeaturesScalarFieldEnum["mealId"] = "mealId";
     FeaturesScalarFieldEnum["title"] = "title";
     FeaturesScalarFieldEnum["shortDescription"] = "shortDescription";
     FeaturesScalarFieldEnum["createdAt"] = "createdAt";

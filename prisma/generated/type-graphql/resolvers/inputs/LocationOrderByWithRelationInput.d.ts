@@ -1,4 +1,3 @@
-import { ExperienceOrderByWithRelationInput } from "../inputs/ExperienceOrderByWithRelationInput";
 import { TenantOrderByWithRelationInput } from "../inputs/TenantOrderByWithRelationInput";
 export declare class LocationOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
@@ -15,8 +14,6 @@ export declare class LocationOrderByWithRelationInput {
     country?: "asc" | "desc" | undefined;
     code?: "asc" | "desc" | undefined;
     isDefault?: "asc" | "desc" | undefined;
-    Experience?: ExperienceOrderByWithRelationInput | undefined;
-    experienceId?: "asc" | "desc" | undefined;
     Tenant?: TenantOrderByWithRelationInput | undefined;
     tenantId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;

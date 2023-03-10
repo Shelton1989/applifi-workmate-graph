@@ -5,7 +5,7 @@ export declare class RequestCreateManyInput {
     reporterEmail?: string | undefined;
     subject?: string | undefined;
     message?: string | undefined;
-    type: "POST_REVIEW" | "COMMENT_REVIEW" | "PROFILE_REVIEW" | "ARTIST_ACCESS" | "HELP_REQUEST";
+    type: "POST_REVIEW" | "COMMENT_REVIEW" | "PROFILE_REVIEW" | "HIGHER_ACCESS" | "HELP_REQUEST";
     socialLinks?: RequestCreatesocialLinksInput | undefined;
     entityId?: string | undefined;
     requestResolution?: "OPEN" | "CLOSED" | "CLOSED_WITH_PREJUDICE" | "RESOLVED" | undefined;

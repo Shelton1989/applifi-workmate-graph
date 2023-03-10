@@ -79,9 +79,6 @@ applyResolversEnhanceMap({
     deleteUser: [Authorized()],
     deleteManyUser: [Authorized()],
   },
-  Currency: {
-    _all: [Authorized(ROLE.ADMIN)]
-  },
   AggregateRating: {
     _all: [Authorized(ROLE.ADMIN)]
   },
@@ -95,26 +92,6 @@ applyResolversEnhanceMap({
   },
   NotificationSettings: {
     _all: [Authorized()]
-  },
-  BookingOrder: {
-    createBookingOrder: [Authorized()],
-    updateBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
-    deleteBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
-    createManyBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
-    updateManyBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
-    deleteManyBookingOrder: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
-  },
-  BookingOrderLineItem: {
-    _all: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN, ROLE.WORKSPACE_USER)],
-  },
-  Experience: {
-    createExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
-    updateExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
-    deleteExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
-    createManyExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
-    updateManyExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
-    deleteManyExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
-    upsertExperience: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.WORKSPACE_ADMIN)],
   },
   Post: {
     createPost: [Authorized()],

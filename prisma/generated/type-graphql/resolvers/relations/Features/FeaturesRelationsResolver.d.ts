@@ -1,5 +1,5 @@
-import { Experience } from "../../../models/Experience";
 import { Features } from "../../../models/Features";
+import { Meal } from "../../../models/Meal";
 export declare class FeaturesRelationsResolver {
-    Experience(features: Features, ctx: any): Promise<Experience>;
+    Meal(features: Features, ctx: any): Promise<Meal>;
 }

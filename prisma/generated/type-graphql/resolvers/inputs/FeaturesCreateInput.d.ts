@@ -1,7 +1,7 @@
-import { ExperienceCreateNestedOneWithoutFeaturesInput } from "../inputs/ExperienceCreateNestedOneWithoutFeaturesInput";
+import { MealCreateNestedOneWithoutFeaturesInput } from "../inputs/MealCreateNestedOneWithoutFeaturesInput";
 export declare class FeaturesCreateInput {
     id?: string | undefined;
-    Experience: ExperienceCreateNestedOneWithoutFeaturesInput;
+    Meal: MealCreateNestedOneWithoutFeaturesInput;
     title: string;
     shortDescription: string;
     createdAt?: Date | undefined;

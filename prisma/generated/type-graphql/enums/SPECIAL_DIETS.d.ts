@@ -1,0 +1,5 @@
+export declare enum SPECIAL_DIETS {
+    MIXED_FLUID = "MIXED_FLUID",
+    CLEAR_FLUID = "CLEAR_FLUID",
+    PUREED = "PUREED"
+}

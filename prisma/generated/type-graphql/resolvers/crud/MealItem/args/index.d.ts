@@ -1,0 +1,12 @@
+export { AggregateMealItemArgs } from "./AggregateMealItemArgs";
+export { CreateManyMealItemArgs } from "./CreateManyMealItemArgs";
+export { CreateMealItemArgs } from "./CreateMealItemArgs";
+export { DeleteManyMealItemArgs } from "./DeleteManyMealItemArgs";
+export { DeleteMealItemArgs } from "./DeleteMealItemArgs";
+export { FindFirstMealItemArgs } from "./FindFirstMealItemArgs";
+export { FindManyMealItemArgs } from "./FindManyMealItemArgs";
+export { FindUniqueMealItemArgs } from "./FindUniqueMealItemArgs";
+export { GroupByMealItemArgs } from "./GroupByMealItemArgs";
+export { UpdateManyMealItemArgs } from "./UpdateManyMealItemArgs";
+export { UpdateMealItemArgs } from "./UpdateMealItemArgs";
+export { UpsertMealItemArgs } from "./UpsertMealItemArgs";

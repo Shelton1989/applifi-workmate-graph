@@ -16,4 +16,5 @@ export declare class UserMaxAggregate {
     isVerified: boolean | null;
     createdAt: Date | null;
     updatedAt: Date | null;
+    wardId: string | null;
 }

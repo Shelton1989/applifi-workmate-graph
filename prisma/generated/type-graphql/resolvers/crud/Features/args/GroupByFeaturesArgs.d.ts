@@ -4,7 +4,7 @@ import { FeaturesWhereInput } from "../../../inputs/FeaturesWhereInput";
 export declare class GroupByFeaturesArgs {
     where?: FeaturesWhereInput | undefined;
     orderBy?: FeaturesOrderByWithAggregationInput[] | undefined;
-    by: Array<"id" | "experienceId" | "title" | "shortDescription" | "createdAt" | "updatedAt">;
+    by: Array<"id" | "mealId" | "title" | "shortDescription" | "createdAt" | "updatedAt">;
     having?: FeaturesScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

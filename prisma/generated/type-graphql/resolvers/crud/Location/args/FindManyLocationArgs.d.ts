@@ -7,5 +7,5 @@ export declare class FindManyLocationArgs {
     cursor?: LocationWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "description" | "longitude" | "latitude" | "googleMapsUrl" | "googlePlacesId" | "type" | "line1" | "line2" | "city" | "district" | "country" | "code" | "isDefault" | "experienceId" | "tenantId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "description" | "longitude" | "latitude" | "googleMapsUrl" | "googlePlacesId" | "type" | "line1" | "line2" | "city" | "district" | "country" | "code" | "isDefault" | "tenantId" | "createdAt" | "updatedAt"> | undefined;
 }

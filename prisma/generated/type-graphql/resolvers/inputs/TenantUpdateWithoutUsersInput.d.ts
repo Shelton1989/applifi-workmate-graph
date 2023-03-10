@@ -1,10 +1,11 @@
-import { BookingOrderUpdateManyWithoutTenantInput } from "../inputs/BookingOrderUpdateManyWithoutTenantInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
-import { ExperienceUpdateManyWithoutTenantInput } from "../inputs/ExperienceUpdateManyWithoutTenantInput";
 import { LocationUpdateManyWithoutTenantInput } from "../inputs/LocationUpdateManyWithoutTenantInput";
+import { MealUpdateManyWithoutTenantInput } from "../inputs/MealUpdateManyWithoutTenantInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
+import { OrderUpdateManyWithoutTenantInput } from "../inputs/OrderUpdateManyWithoutTenantInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
-import { TenantUpdateexperienceImagesInput } from "../inputs/TenantUpdateexperienceImagesInput";
+import { TenantUpdateMealImagesInput } from "../inputs/TenantUpdateMealImagesInput";
+import { TenantUpdateacceptedUserEmailDomainsInput } from "../inputs/TenantUpdateacceptedUserEmailDomainsInput";
 export declare class TenantUpdateWithoutUsersInput {
     name?: StringFieldUpdateOperationsInput | undefined;
     slug?: StringFieldUpdateOperationsInput | undefined;
@@ -12,10 +13,11 @@ export declare class TenantUpdateWithoutUsersInput {
     logoImage?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;
     coverImage?: NullableStringFieldUpdateOperationsInput | undefined;
-    experienceImages?: TenantUpdateexperienceImagesInput | undefined;
-    Experiences?: ExperienceUpdateManyWithoutTenantInput | undefined;
-    BookingOrders?: BookingOrderUpdateManyWithoutTenantInput | undefined;
+    MealImages?: TenantUpdateMealImagesInput | undefined;
+    Meals?: MealUpdateManyWithoutTenantInput | undefined;
+    Orders?: OrderUpdateManyWithoutTenantInput | undefined;
     Locations?: LocationUpdateManyWithoutTenantInput | undefined;
+    acceptedUserEmailDomains?: TenantUpdateacceptedUserEmailDomainsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

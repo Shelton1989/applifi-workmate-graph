@@ -1,4 +1,3 @@
-import { ExperienceCreateNestedOneWithoutLocationsInput } from "../inputs/ExperienceCreateNestedOneWithoutLocationsInput";
 import { TenantCreateNestedOneWithoutLocationsInput } from "../inputs/TenantCreateNestedOneWithoutLocationsInput";
 export declare class LocationCreateInput {
     id?: string | undefined;
@@ -15,7 +14,6 @@ export declare class LocationCreateInput {
     country?: string | undefined;
     code?: string | undefined;
     isDefault?: boolean | undefined;
-    Experience?: ExperienceCreateNestedOneWithoutLocationsInput | undefined;
     Tenant?: TenantCreateNestedOneWithoutLocationsInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

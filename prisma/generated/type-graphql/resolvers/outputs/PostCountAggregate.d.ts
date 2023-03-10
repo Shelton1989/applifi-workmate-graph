@@ -7,7 +7,7 @@ export declare class PostCountAggregate {
     isCommentsEnabled: number;
     canBeCounted: number;
     authorId: number;
-    experienceId: number;
+    mealId: number;
     postLink: number;
     createdAt: number;
     updatedAt: number;

@@ -3,22 +3,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserCreateWithoutRepliesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const BookingOrderCreateNestedManyWithoutBuyerInput_1 = require("../inputs/BookingOrderCreateNestedManyWithoutBuyerInput");
 const CommentCreateNestedManyWithoutAuthorInput_1 = require("../inputs/CommentCreateNestedManyWithoutAuthorInput");
-const ExperienceCreateNestedManyWithoutLikedByInput_1 = require("../inputs/ExperienceCreateNestedManyWithoutLikedByInput");
+const MealCreateNestedManyWithoutLikedByInput_1 = require("../inputs/MealCreateNestedManyWithoutLikedByInput");
 const NotificationCreateNestedManyWithoutActorInput_1 = require("../inputs/NotificationCreateNestedManyWithoutActorInput");
 const NotificationCreateNestedManyWithoutUserInput_1 = require("../inputs/NotificationCreateNestedManyWithoutUserInput");
 const NotificationSettingsCreateNestedOneWithoutUserInput_1 = require("../inputs/NotificationSettingsCreateNestedOneWithoutUserInput");
+const OrderCreateNestedManyWithoutPatientInput_1 = require("../inputs/OrderCreateNestedManyWithoutPatientInput");
+const PatientProfileCreateNestedOneWithoutUserInput_1 = require("../inputs/PatientProfileCreateNestedOneWithoutUserInput");
 const PostCreateNestedManyWithoutAuthorInput_1 = require("../inputs/PostCreateNestedManyWithoutAuthorInput");
 const ReactionCreateNestedManyWithoutAuthorInput_1 = require("../inputs/ReactionCreateNestedManyWithoutAuthorInput");
 const RequestCreateNestedManyWithoutReporterInput_1 = require("../inputs/RequestCreateNestedManyWithoutReporterInput");
 const TenantCreateNestedOneWithoutUsersInput_1 = require("../inputs/TenantCreateNestedOneWithoutUsersInput");
-const UserCreateNestedManyWithoutFollowersInput_1 = require("../inputs/UserCreateNestedManyWithoutFollowersInput");
-const UserCreateNestedManyWithoutFollowingInput_1 = require("../inputs/UserCreateNestedManyWithoutFollowingInput");
-const UserCreateexperienceIdsInput_1 = require("../inputs/UserCreateexperienceIdsInput");
-const UserCreatefollowerIdsInput_1 = require("../inputs/UserCreatefollowerIdsInput");
-const UserCreatefollowingIdsInput_1 = require("../inputs/UserCreatefollowingIdsInput");
+const UserCreatemealIdsInput_1 = require("../inputs/UserCreatemealIdsInput");
 const UserCreaterolesInput_1 = require("../inputs/UserCreaterolesInput");
+const WardCreateNestedOneWithoutUsersInput_1 = require("../inputs/WardCreateNestedOneWithoutUsersInput");
 let UserCreateWithoutRepliesInput = class UserCreateWithoutRepliesInput {
 };
 tslib_1.__decorate([
@@ -124,6 +122,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationSettingsCreateNestedOneWithoutUserInput_1.NotificationSettingsCreateNestedOneWithoutUserInput)
 ], UserCreateWithoutRepliesInput.prototype, "NotificationSettings", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => PatientProfileCreateNestedOneWithoutUserInput_1.PatientProfileCreateNestedOneWithoutUserInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", PatientProfileCreateNestedOneWithoutUserInput_1.PatientProfileCreateNestedOneWithoutUserInput)
+], UserCreateWithoutRepliesInput.prototype, "PatientProfile", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => NotificationCreateNestedManyWithoutUserInput_1.NotificationCreateNestedManyWithoutUserInput, {
         nullable: true
     }),
@@ -136,41 +140,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationCreateNestedManyWithoutActorInput_1.NotificationCreateNestedManyWithoutActorInput)
 ], UserCreateWithoutRepliesInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserCreateNestedManyWithoutFollowersInput_1.UserCreateNestedManyWithoutFollowersInput, {
+    TypeGraphQL.Field(_type => MealCreateNestedManyWithoutLikedByInput_1.MealCreateNestedManyWithoutLikedByInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserCreateNestedManyWithoutFollowersInput_1.UserCreateNestedManyWithoutFollowersInput)
-], UserCreateWithoutRepliesInput.prototype, "Following", void 0);
+    tslib_1.__metadata("design:type", MealCreateNestedManyWithoutLikedByInput_1.MealCreateNestedManyWithoutLikedByInput)
+], UserCreateWithoutRepliesInput.prototype, "LikedMeals", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserCreatefollowingIdsInput_1.UserCreatefollowingIdsInput, {
+    TypeGraphQL.Field(_type => UserCreatemealIdsInput_1.UserCreatemealIdsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserCreatefollowingIdsInput_1.UserCreatefollowingIdsInput)
-], UserCreateWithoutRepliesInput.prototype, "followingIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserCreateNestedManyWithoutFollowingInput_1.UserCreateNestedManyWithoutFollowingInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserCreateNestedManyWithoutFollowingInput_1.UserCreateNestedManyWithoutFollowingInput)
-], UserCreateWithoutRepliesInput.prototype, "Followers", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserCreatefollowerIdsInput_1.UserCreatefollowerIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserCreatefollowerIdsInput_1.UserCreatefollowerIdsInput)
-], UserCreateWithoutRepliesInput.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceCreateNestedManyWithoutLikedByInput_1.ExperienceCreateNestedManyWithoutLikedByInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", ExperienceCreateNestedManyWithoutLikedByInput_1.ExperienceCreateNestedManyWithoutLikedByInput)
-], UserCreateWithoutRepliesInput.prototype, "LikedExperiences", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserCreateexperienceIdsInput_1.UserCreateexperienceIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserCreateexperienceIdsInput_1.UserCreateexperienceIdsInput)
-], UserCreateWithoutRepliesInput.prototype, "experienceIds", void 0);
+    tslib_1.__metadata("design:type", UserCreatemealIdsInput_1.UserCreatemealIdsInput)
+], UserCreateWithoutRepliesInput.prototype, "mealIds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => RequestCreateNestedManyWithoutReporterInput_1.RequestCreateNestedManyWithoutReporterInput, {
         nullable: true
@@ -196,10 +176,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", ReactionCreateNestedManyWithoutAuthorInput_1.ReactionCreateNestedManyWithoutAuthorInput)
 ], UserCreateWithoutRepliesInput.prototype, "Reactions", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BookingOrderCreateNestedManyWithoutBuyerInput_1.BookingOrderCreateNestedManyWithoutBuyerInput, {
+    TypeGraphQL.Field(_type => OrderCreateNestedManyWithoutPatientInput_1.OrderCreateNestedManyWithoutPatientInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", BookingOrderCreateNestedManyWithoutBuyerInput_1.BookingOrderCreateNestedManyWithoutBuyerInput)
+    tslib_1.__metadata("design:type", OrderCreateNestedManyWithoutPatientInput_1.OrderCreateNestedManyWithoutPatientInput)
 ], UserCreateWithoutRepliesInput.prototype, "Bookings", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
@@ -213,6 +193,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Date)
 ], UserCreateWithoutRepliesInput.prototype, "updatedAt", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => WardCreateNestedOneWithoutUsersInput_1.WardCreateNestedOneWithoutUsersInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", WardCreateNestedOneWithoutUsersInput_1.WardCreateNestedOneWithoutUsersInput)
+], UserCreateWithoutRepliesInput.prototype, "Ward", void 0);
 UserCreateWithoutRepliesInput = tslib_1.__decorate([
     TypeGraphQL.InputType("UserCreateWithoutRepliesInput", {
         isAbstract: true

@@ -7,7 +7,6 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BoolFilter_1 = require("../inputs/BoolFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumADDRESS_TYPENullableFilter_1 = require("../inputs/EnumADDRESS_TYPENullableFilter");
-const ExperienceRelationFilter_1 = require("../inputs/ExperienceRelationFilter");
 const FloatNullableFilter_1 = require("../inputs/FloatNullableFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
@@ -116,18 +115,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", BoolFilter_1.BoolFilter)
 ], LocationWhereInput.prototype, "isDefault", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceRelationFilter_1.ExperienceRelationFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", ExperienceRelationFilter_1.ExperienceRelationFilter)
-], LocationWhereInput.prototype, "Experience", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], LocationWhereInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TenantRelationFilter_1.TenantRelationFilter, {
         nullable: true

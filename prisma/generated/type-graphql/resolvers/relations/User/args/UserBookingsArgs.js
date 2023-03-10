@@ -3,29 +3,29 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserBookingsArgs = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const BookingOrderOrderByWithRelationInput_1 = require("../../../inputs/BookingOrderOrderByWithRelationInput");
-const BookingOrderWhereInput_1 = require("../../../inputs/BookingOrderWhereInput");
-const BookingOrderWhereUniqueInput_1 = require("../../../inputs/BookingOrderWhereUniqueInput");
-const BookingOrderScalarFieldEnum_1 = require("../../../../enums/BookingOrderScalarFieldEnum");
+const OrderOrderByWithRelationInput_1 = require("../../../inputs/OrderOrderByWithRelationInput");
+const OrderWhereInput_1 = require("../../../inputs/OrderWhereInput");
+const OrderWhereUniqueInput_1 = require("../../../inputs/OrderWhereUniqueInput");
+const OrderScalarFieldEnum_1 = require("../../../../enums/OrderScalarFieldEnum");
 let UserBookingsArgs = class UserBookingsArgs {
 };
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BookingOrderWhereInput_1.BookingOrderWhereInput, {
+    TypeGraphQL.Field(_type => OrderWhereInput_1.OrderWhereInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", BookingOrderWhereInput_1.BookingOrderWhereInput)
+    tslib_1.__metadata("design:type", OrderWhereInput_1.OrderWhereInput)
 ], UserBookingsArgs.prototype, "where", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => [BookingOrderOrderByWithRelationInput_1.BookingOrderOrderByWithRelationInput], {
+    TypeGraphQL.Field(_type => [OrderOrderByWithRelationInput_1.OrderOrderByWithRelationInput], {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Array)
 ], UserBookingsArgs.prototype, "orderBy", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => BookingOrderWhereUniqueInput_1.BookingOrderWhereUniqueInput, {
+    TypeGraphQL.Field(_type => OrderWhereUniqueInput_1.OrderWhereUniqueInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", BookingOrderWhereUniqueInput_1.BookingOrderWhereUniqueInput)
+    tslib_1.__metadata("design:type", OrderWhereUniqueInput_1.OrderWhereUniqueInput)
 ], UserBookingsArgs.prototype, "cursor", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
@@ -40,7 +40,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Number)
 ], UserBookingsArgs.prototype, "skip", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => [BookingOrderScalarFieldEnum_1.BookingOrderScalarFieldEnum], {
+    TypeGraphQL.Field(_type => [OrderScalarFieldEnum_1.OrderScalarFieldEnum], {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Array)

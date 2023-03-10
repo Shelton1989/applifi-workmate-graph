@@ -5,7 +5,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const EnumREACTION_TYPEFieldUpdateOperationsInput_1 = require("../inputs/EnumREACTION_TYPEFieldUpdateOperationsInput");
-const ExperienceUpdateOneWithoutReactionsInput_1 = require("../inputs/ExperienceUpdateOneWithoutReactionsInput");
+const MealUpdateOneWithoutReactionsInput_1 = require("../inputs/MealUpdateOneWithoutReactionsInput");
 const PostUpdateOneWithoutReactionsInput_1 = require("../inputs/PostUpdateOneWithoutReactionsInput");
 const ReplyUpdateOneWithoutReactionsInput_1 = require("../inputs/ReplyUpdateOneWithoutReactionsInput");
 const UserUpdateOneRequiredWithoutReactionsInput_1 = require("../inputs/UserUpdateOneRequiredWithoutReactionsInput");
@@ -18,11 +18,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", EnumREACTION_TYPEFieldUpdateOperationsInput_1.EnumREACTION_TYPEFieldUpdateOperationsInput)
 ], ReactionUpdateWithoutCommentInput.prototype, "type", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceUpdateOneWithoutReactionsInput_1.ExperienceUpdateOneWithoutReactionsInput, {
+    TypeGraphQL.Field(_type => MealUpdateOneWithoutReactionsInput_1.MealUpdateOneWithoutReactionsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ExperienceUpdateOneWithoutReactionsInput_1.ExperienceUpdateOneWithoutReactionsInput)
-], ReactionUpdateWithoutCommentInput.prototype, "Experience", void 0);
+    tslib_1.__metadata("design:type", MealUpdateOneWithoutReactionsInput_1.MealUpdateOneWithoutReactionsInput)
+], ReactionUpdateWithoutCommentInput.prototype, "Meal", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PostUpdateOneWithoutReactionsInput_1.PostUpdateOneWithoutReactionsInput, {
         nullable: true

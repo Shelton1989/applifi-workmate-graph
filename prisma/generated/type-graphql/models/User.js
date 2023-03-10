@@ -108,19 +108,7 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Array)
-], User.prototype, "followingIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => [String], {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Array)
-], User.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => [String], {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Array)
-], User.prototype, "experienceIds", void 0);
+], User.prototype, "mealIds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: false
@@ -133,6 +121,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Date)
 ], User.prototype, "updatedAt", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], User.prototype, "wardId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserCount_1.UserCount, {
         nullable: true

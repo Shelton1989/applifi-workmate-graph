@@ -75,7 +75,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
-], TenantScalarWhereWithAggregatesInput.prototype, "experienceImages", void 0);
+], TenantScalarWhereWithAggregatesInput.prototype, "MealImages", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
+], TenantScalarWhereWithAggregatesInput.prototype, "acceptedUserEmailDomains", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter, {
         nullable: true

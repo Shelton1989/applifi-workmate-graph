@@ -1,0 +1,14 @@
+export declare enum DIETARY_RESTRICTIONS {
+    NONE = "NONE",
+    VEGETARIAN = "VEGETARIAN",
+    VEGAN = "VEGAN",
+    GLUTEN_FREE = "GLUTEN_FREE",
+    DAIRY_FREE = "DAIRY_FREE",
+    NUT_FREE = "NUT_FREE",
+    EGG_FREE = "EGG_FREE",
+    PORK_FREE = "PORK_FREE",
+    HALAL = "HALAL",
+    KOSHER = "KOSHER",
+    PALEO = "PALEO",
+    OTHER = "OTHER"
+}

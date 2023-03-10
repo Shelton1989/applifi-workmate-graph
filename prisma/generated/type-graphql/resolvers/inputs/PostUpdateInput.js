@@ -7,8 +7,8 @@ const BoolFieldUpdateOperationsInput_1 = require("../inputs/BoolFieldUpdateOpera
 const CommentUpdateManyWithoutPostInput_1 = require("../inputs/CommentUpdateManyWithoutPostInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const EnumMEDIA_TYPEFieldUpdateOperationsInput_1 = require("../inputs/EnumMEDIA_TYPEFieldUpdateOperationsInput");
-const ExperienceUpdateOneWithoutPostsInput_1 = require("../inputs/ExperienceUpdateOneWithoutPostsInput");
 const FloatFieldUpdateOperationsInput_1 = require("../inputs/FloatFieldUpdateOperationsInput");
+const MealUpdateOneWithoutPostsInput_1 = require("../inputs/MealUpdateOneWithoutPostsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const PostUpdatemediaUrlInput_1 = require("../inputs/PostUpdatemediaUrlInput");
 const ReactionUpdateManyWithoutPostInput_1 = require("../inputs/ReactionUpdateManyWithoutPostInput");
@@ -58,11 +58,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", UserUpdateOneRequiredWithoutPostsInput_1.UserUpdateOneRequiredWithoutPostsInput)
 ], PostUpdateInput.prototype, "Author", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceUpdateOneWithoutPostsInput_1.ExperienceUpdateOneWithoutPostsInput, {
+    TypeGraphQL.Field(_type => MealUpdateOneWithoutPostsInput_1.MealUpdateOneWithoutPostsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ExperienceUpdateOneWithoutPostsInput_1.ExperienceUpdateOneWithoutPostsInput)
-], PostUpdateInput.prototype, "Experience", void 0);
+    tslib_1.__metadata("design:type", MealUpdateOneWithoutPostsInput_1.MealUpdateOneWithoutPostsInput)
+], PostUpdateInput.prototype, "Meal", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => CommentUpdateManyWithoutPostInput_1.CommentUpdateManyWithoutPostInput, {
         nullable: true

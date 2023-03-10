@@ -13,7 +13,6 @@ export declare class LocationMaxAggregate {
     country: string | null;
     code: string | null;
     isDefault: boolean | null;
-    experienceId: string | null;
     tenantId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;

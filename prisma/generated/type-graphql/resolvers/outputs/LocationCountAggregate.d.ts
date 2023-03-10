@@ -13,7 +13,6 @@ export declare class LocationCountAggregate {
     country: number;
     code: number;
     isDefault: number;
-    experienceId: number;
     tenantId: number;
     createdAt: number;
     updatedAt: number;

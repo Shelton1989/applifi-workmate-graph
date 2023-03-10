@@ -8,7 +8,7 @@ export declare class PostCreateManyInput {
     isCommentsEnabled?: boolean | undefined;
     canBeCounted?: boolean | undefined;
     authorId: string;
-    experienceId?: string | undefined;
+    mealId?: string | undefined;
     postLink?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

@@ -16,4 +16,5 @@ export declare class UserMinAggregate {
     isVerified: boolean | null;
     createdAt: Date | null;
     updatedAt: Date | null;
+    wardId: string | null;
 }

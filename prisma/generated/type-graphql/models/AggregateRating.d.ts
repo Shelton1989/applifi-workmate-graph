@@ -1,12 +1,12 @@
-import { Experience } from "../models/Experience";
+import { Meal } from "../models/Meal";
 export declare class AggregateRating {
     id: string;
     ratingValue: number;
     countedPosts?: number | null;
     allPosts?: number | null;
     ratingCount?: number | null;
-    Experience?: Experience | null;
-    experienceId?: string | null;
+    Meal?: Meal | null;
+    mealId?: string | null;
     createdAt: Date;
     updatedAt: Date;
 }

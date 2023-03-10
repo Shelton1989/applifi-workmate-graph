@@ -1,7 +1,7 @@
 export declare class ReactionCreateManyInput {
     id?: string | undefined;
     type: "LIKE" | "LOVE" | "DISLIKE";
-    experienceId?: string | undefined;
+    mealId?: string | undefined;
     postId?: string | undefined;
     commentId?: string | undefined;
     replyId?: string | undefined;

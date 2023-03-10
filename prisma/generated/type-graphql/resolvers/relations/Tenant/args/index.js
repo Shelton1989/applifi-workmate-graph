@@ -1,11 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TenantUsersArgs = exports.TenantLocationsArgs = exports.TenantExperiencesArgs = exports.TenantBookingOrdersArgs = void 0;
-var TenantBookingOrdersArgs_1 = require("./TenantBookingOrdersArgs");
-Object.defineProperty(exports, "TenantBookingOrdersArgs", { enumerable: true, get: function () { return TenantBookingOrdersArgs_1.TenantBookingOrdersArgs; } });
-var TenantExperiencesArgs_1 = require("./TenantExperiencesArgs");
-Object.defineProperty(exports, "TenantExperiencesArgs", { enumerable: true, get: function () { return TenantExperiencesArgs_1.TenantExperiencesArgs; } });
+exports.TenantUsersArgs = exports.TenantOrdersArgs = exports.TenantMealsArgs = exports.TenantLocationsArgs = void 0;
 var TenantLocationsArgs_1 = require("./TenantLocationsArgs");
 Object.defineProperty(exports, "TenantLocationsArgs", { enumerable: true, get: function () { return TenantLocationsArgs_1.TenantLocationsArgs; } });
+var TenantMealsArgs_1 = require("./TenantMealsArgs");
+Object.defineProperty(exports, "TenantMealsArgs", { enumerable: true, get: function () { return TenantMealsArgs_1.TenantMealsArgs; } });
+var TenantOrdersArgs_1 = require("./TenantOrdersArgs");
+Object.defineProperty(exports, "TenantOrdersArgs", { enumerable: true, get: function () { return TenantOrdersArgs_1.TenantOrdersArgs; } });
 var TenantUsersArgs_1 = require("./TenantUsersArgs");
 Object.defineProperty(exports, "TenantUsersArgs", { enumerable: true, get: function () { return TenantUsersArgs_1.TenantUsersArgs; } });

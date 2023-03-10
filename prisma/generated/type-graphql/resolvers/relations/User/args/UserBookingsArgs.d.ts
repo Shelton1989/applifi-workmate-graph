@@ -1,11 +1,11 @@
-import { BookingOrderOrderByWithRelationInput } from "../../../inputs/BookingOrderOrderByWithRelationInput";
-import { BookingOrderWhereInput } from "../../../inputs/BookingOrderWhereInput";
-import { BookingOrderWhereUniqueInput } from "../../../inputs/BookingOrderWhereUniqueInput";
+import { OrderOrderByWithRelationInput } from "../../../inputs/OrderOrderByWithRelationInput";
+import { OrderWhereInput } from "../../../inputs/OrderWhereInput";
+import { OrderWhereUniqueInput } from "../../../inputs/OrderWhereUniqueInput";
 export declare class UserBookingsArgs {
-    where?: BookingOrderWhereInput | undefined;
-    orderBy?: BookingOrderOrderByWithRelationInput[] | undefined;
-    cursor?: BookingOrderWhereUniqueInput | undefined;
+    where?: OrderWhereInput | undefined;
+    orderBy?: OrderOrderByWithRelationInput[] | undefined;
+    cursor?: OrderWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "experienceId" | "status" | "buyerId" | "tenantId" | "PaymentStatus" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "mealId" | "status" | "patientId" | "tenantId" | "createdAt" | "updatedAt"> | undefined;
 }

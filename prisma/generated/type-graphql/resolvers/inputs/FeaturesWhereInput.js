@@ -5,7 +5,7 @@ exports.FeaturesWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
-const ExperienceRelationFilter_1 = require("../inputs/ExperienceRelationFilter");
+const MealRelationFilter_1 = require("../inputs/MealRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 let FeaturesWhereInput = FeaturesWhereInput_1 = class FeaturesWhereInput {
 };
@@ -34,17 +34,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], FeaturesWhereInput.prototype, "id", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceRelationFilter_1.ExperienceRelationFilter, {
+    TypeGraphQL.Field(_type => MealRelationFilter_1.MealRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ExperienceRelationFilter_1.ExperienceRelationFilter)
-], FeaturesWhereInput.prototype, "Experience", void 0);
+    tslib_1.__metadata("design:type", MealRelationFilter_1.MealRelationFilter)
+], FeaturesWhereInput.prototype, "Meal", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
-], FeaturesWhereInput.prototype, "experienceId", void 0);
+], FeaturesWhereInput.prototype, "mealId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
         nullable: true

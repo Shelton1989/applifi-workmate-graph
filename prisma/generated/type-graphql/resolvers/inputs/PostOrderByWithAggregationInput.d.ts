@@ -12,7 +12,7 @@ export declare class PostOrderByWithAggregationInput {
     isCommentsEnabled?: "asc" | "desc" | undefined;
     canBeCounted?: "asc" | "desc" | undefined;
     authorId?: "asc" | "desc" | undefined;
-    experienceId?: "asc" | "desc" | undefined;
+    mealId?: "asc" | "desc" | undefined;
     postLink?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

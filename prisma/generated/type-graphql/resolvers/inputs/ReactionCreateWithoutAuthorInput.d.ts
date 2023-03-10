@@ -1,11 +1,11 @@
 import { CommentCreateNestedOneWithoutReactionsInput } from "../inputs/CommentCreateNestedOneWithoutReactionsInput";
-import { ExperienceCreateNestedOneWithoutReactionsInput } from "../inputs/ExperienceCreateNestedOneWithoutReactionsInput";
+import { MealCreateNestedOneWithoutReactionsInput } from "../inputs/MealCreateNestedOneWithoutReactionsInput";
 import { PostCreateNestedOneWithoutReactionsInput } from "../inputs/PostCreateNestedOneWithoutReactionsInput";
 import { ReplyCreateNestedOneWithoutReactionsInput } from "../inputs/ReplyCreateNestedOneWithoutReactionsInput";
 export declare class ReactionCreateWithoutAuthorInput {
     id?: string | undefined;
     type: "LIKE" | "LOVE" | "DISLIKE";
-    Experience?: ExperienceCreateNestedOneWithoutReactionsInput | undefined;
+    Meal?: MealCreateNestedOneWithoutReactionsInput | undefined;
     Post?: PostCreateNestedOneWithoutReactionsInput | undefined;
     Comment?: CommentCreateNestedOneWithoutReactionsInput | undefined;
     Reply?: ReplyCreateNestedOneWithoutReactionsInput | undefined;

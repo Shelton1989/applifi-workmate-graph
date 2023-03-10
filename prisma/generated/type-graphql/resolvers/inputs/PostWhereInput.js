@@ -8,8 +8,8 @@ const BoolFilter_1 = require("../inputs/BoolFilter");
 const CommentListRelationFilter_1 = require("../inputs/CommentListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumMEDIA_TYPEFilter_1 = require("../inputs/EnumMEDIA_TYPEFilter");
-const ExperienceRelationFilter_1 = require("../inputs/ExperienceRelationFilter");
 const FloatFilter_1 = require("../inputs/FloatFilter");
+const MealRelationFilter_1 = require("../inputs/MealRelationFilter");
 const ReactionListRelationFilter_1 = require("../inputs/ReactionListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
@@ -90,17 +90,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], PostWhereInput.prototype, "authorId", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceRelationFilter_1.ExperienceRelationFilter, {
+    TypeGraphQL.Field(_type => MealRelationFilter_1.MealRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", ExperienceRelationFilter_1.ExperienceRelationFilter)
-], PostWhereInput.prototype, "Experience", void 0);
+    tslib_1.__metadata("design:type", MealRelationFilter_1.MealRelationFilter)
+], PostWhereInput.prototype, "Meal", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], PostWhereInput.prototype, "experienceId", void 0);
+], PostWhereInput.prototype, "mealId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => CommentListRelationFilter_1.CommentListRelationFilter, {
         nullable: true

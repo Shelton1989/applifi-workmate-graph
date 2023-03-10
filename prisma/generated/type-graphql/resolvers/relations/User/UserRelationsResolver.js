@@ -3,23 +3,23 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const BookingOrder_1 = require("../../../models/BookingOrder");
 const Comment_1 = require("../../../models/Comment");
-const Experience_1 = require("../../../models/Experience");
+const Meal_1 = require("../../../models/Meal");
 const Notification_1 = require("../../../models/Notification");
 const NotificationSettings_1 = require("../../../models/NotificationSettings");
+const Order_1 = require("../../../models/Order");
+const PatientProfile_1 = require("../../../models/PatientProfile");
 const Post_1 = require("../../../models/Post");
 const Reaction_1 = require("../../../models/Reaction");
 const Reply_1 = require("../../../models/Reply");
 const Request_1 = require("../../../models/Request");
 const Tenant_1 = require("../../../models/Tenant");
 const User_1 = require("../../../models/User");
+const Ward_1 = require("../../../models/Ward");
 const UserActivityArgs_1 = require("./args/UserActivityArgs");
 const UserBookingsArgs_1 = require("./args/UserBookingsArgs");
 const UserCommentsArgs_1 = require("./args/UserCommentsArgs");
-const UserFollowersArgs_1 = require("./args/UserFollowersArgs");
-const UserFollowingArgs_1 = require("./args/UserFollowingArgs");
-const UserLikedExperiencesArgs_1 = require("./args/UserLikedExperiencesArgs");
+const UserLikedMealsArgs_1 = require("./args/UserLikedMealsArgs");
 const UserNotificationsArgs_1 = require("./args/UserNotificationsArgs");
 const UserPostsArgs_1 = require("./args/UserPostsArgs");
 const UserReactionsArgs_1 = require("./args/UserReactionsArgs");
@@ -41,6 +41,13 @@ let UserRelationsResolver = class UserRelationsResolver {
             },
         }).NotificationSettings({});
     }
+    async PatientProfile(user, ctx) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
+            where: {
+                id: user.id,
+            },
+        }).PatientProfile({});
+    }
     async Notifications(user, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
             where: {
@@ -55,26 +62,12 @@ let UserRelationsResolver = class UserRelationsResolver {
             },
         }).Activity(args);
     }
-    async Following(user, ctx, args) {
+    async LikedMeals(user, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
             where: {
                 id: user.id,
             },
-        }).Following(args);
-    }
-    async Followers(user, ctx, args) {
-        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
-            where: {
-                id: user.id,
-            },
-        }).Followers(args);
-    }
-    async LikedExperiences(user, ctx, args) {
-        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
-            where: {
-                id: user.id,
-            },
-        }).LikedExperiences(args);
+        }).LikedMeals(args);
     }
     async Requests(user, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
@@ -118,6 +111,13 @@ let UserRelationsResolver = class UserRelationsResolver {
             },
         }).Bookings(args);
     }
+    async Ward(user, ctx) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
+            where: {
+                id: user.id,
+            },
+        }).Ward({});
+    }
 };
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => Tenant_1.Tenant, {
@@ -139,6 +139,16 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", [User_1.User, Object]),
     tslib_1.__metadata("design:returntype", Promise)
 ], UserRelationsResolver.prototype, "NotificationSettings", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => PatientProfile_1.PatientProfile, {
+        nullable: true
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [User_1.User, Object]),
+    tslib_1.__metadata("design:returntype", Promise)
+], UserRelationsResolver.prototype, "PatientProfile", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => [Notification_1.Notification], {
         nullable: false
@@ -162,38 +172,16 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:returntype", Promise)
 ], UserRelationsResolver.prototype, "Activity", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [User_1.User], {
+    TypeGraphQL.FieldResolver(_type => [Meal_1.Meal], {
         nullable: false
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
     tslib_1.__param(1, TypeGraphQL.Ctx()),
     tslib_1.__param(2, TypeGraphQL.Args()),
     tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserFollowingArgs_1.UserFollowingArgs]),
+    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserLikedMealsArgs_1.UserLikedMealsArgs]),
     tslib_1.__metadata("design:returntype", Promise)
-], UserRelationsResolver.prototype, "Following", null);
-tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [User_1.User], {
-        nullable: false
-    }),
-    tslib_1.__param(0, TypeGraphQL.Root()),
-    tslib_1.__param(1, TypeGraphQL.Ctx()),
-    tslib_1.__param(2, TypeGraphQL.Args()),
-    tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserFollowersArgs_1.UserFollowersArgs]),
-    tslib_1.__metadata("design:returntype", Promise)
-], UserRelationsResolver.prototype, "Followers", null);
-tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [Experience_1.Experience], {
-        nullable: false
-    }),
-    tslib_1.__param(0, TypeGraphQL.Root()),
-    tslib_1.__param(1, TypeGraphQL.Ctx()),
-    tslib_1.__param(2, TypeGraphQL.Args()),
-    tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserLikedExperiencesArgs_1.UserLikedExperiencesArgs]),
-    tslib_1.__metadata("design:returntype", Promise)
-], UserRelationsResolver.prototype, "LikedExperiences", null);
+], UserRelationsResolver.prototype, "LikedMeals", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => [Request_1.Request], {
         nullable: false
@@ -250,7 +238,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:returntype", Promise)
 ], UserRelationsResolver.prototype, "Reactions", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [BookingOrder_1.BookingOrder], {
+    TypeGraphQL.FieldResolver(_type => [Order_1.Order], {
         nullable: false
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
@@ -260,6 +248,16 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserBookingsArgs_1.UserBookingsArgs]),
     tslib_1.__metadata("design:returntype", Promise)
 ], UserRelationsResolver.prototype, "Bookings", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => Ward_1.Ward, {
+        nullable: true
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [User_1.User, Object]),
+    tslib_1.__metadata("design:returntype", Promise)
+], UserRelationsResolver.prototype, "Ward", null);
 UserRelationsResolver = tslib_1.__decorate([
     TypeGraphQL.Resolver(_of => User_1.User)
 ], UserRelationsResolver);

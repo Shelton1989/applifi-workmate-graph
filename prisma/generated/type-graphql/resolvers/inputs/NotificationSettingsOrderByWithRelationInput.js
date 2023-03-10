@@ -18,31 +18,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsOrderByWithRelationInput.prototype, "newArrivals", void 0);
+], NotificationSettingsOrderByWithRelationInput.prototype, "newMenuItems", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsOrderByWithRelationInput.prototype, "bookingOrOrderUpdates", void 0);
+], NotificationSettingsOrderByWithRelationInput.prototype, "orderUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsOrderByWithRelationInput.prototype, "promotions", void 0);
+], NotificationSettingsOrderByWithRelationInput.prototype, "newRequests", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsOrderByWithRelationInput.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], NotificationSettingsOrderByWithRelationInput.prototype, "newContentILike", void 0);
+], NotificationSettingsOrderByWithRelationInput.prototype, "requestUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
@@ -54,13 +48,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsOrderByWithRelationInput.prototype, "repliesToMyComments", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], NotificationSettingsOrderByWithRelationInput.prototype, "repliesToThreads", void 0);
+], NotificationSettingsOrderByWithRelationInput.prototype, "repliesToMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserOrderByWithRelationInput_1.UserOrderByWithRelationInput, {
         nullable: true

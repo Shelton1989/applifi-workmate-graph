@@ -12,7 +12,7 @@ export declare class PostGroupBy {
     isCommentsEnabled: boolean;
     canBeCounted: boolean;
     authorId: string;
-    experienceId: string | null;
+    mealId: string | null;
     postLink: string | null;
     createdAt: Date;
     updatedAt: Date;

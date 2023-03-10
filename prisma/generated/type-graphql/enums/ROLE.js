@@ -11,6 +11,9 @@ var ROLE;
     ROLE["WORKSPACE_OWNER"] = "WORKSPACE_OWNER";
     ROLE["WORKSPACE_ADMIN"] = "WORKSPACE_ADMIN";
     ROLE["WORKSPACE_USER"] = "WORKSPACE_USER";
+    ROLE["WARD_ADMIN"] = "WARD_ADMIN";
+    ROLE["WARD_HOST_OR_HOSTESS"] = "WARD_HOST_OR_HOSTESS";
+    ROLE["WARD_USER"] = "WARD_USER";
 })(ROLE = exports.ROLE || (exports.ROLE = {}));
 TypeGraphQL.registerEnumType(ROLE, {
     name: "ROLE",

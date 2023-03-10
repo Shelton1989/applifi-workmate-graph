@@ -13,7 +13,6 @@ export declare enum LocationScalarFieldEnum {
     country = "country",
     code = "code",
     isDefault = "isDefault",
-    experienceId = "experienceId",
     tenantId = "tenantId",
     createdAt = "createdAt",
     updatedAt = "updatedAt"

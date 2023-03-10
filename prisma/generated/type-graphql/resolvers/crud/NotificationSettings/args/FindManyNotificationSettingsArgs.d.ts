@@ -7,5 +7,5 @@ export declare class FindManyNotificationSettingsArgs {
     cursor?: NotificationSettingsWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "newArrivals" | "bookingOrOrderUpdates" | "promotions" | "saleAlerts" | "newContentILike" | "commentsOnMyReviews" | "repliesToMyComments" | "repliesToThreads" | "userId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "newMenuItems" | "orderUpdates" | "newRequests" | "requestUpdates" | "commentsOnMyReviews" | "repliesToMyReviews" | "userId" | "createdAt" | "updatedAt"> | undefined;
 }

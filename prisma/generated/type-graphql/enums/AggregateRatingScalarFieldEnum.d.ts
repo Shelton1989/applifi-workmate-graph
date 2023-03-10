@@ -4,7 +4,7 @@ export declare enum AggregateRatingScalarFieldEnum {
     countedPosts = "countedPosts",
     allPosts = "allPosts",
     ratingCount = "ratingCount",
-    experienceId = "experienceId",
+    mealId = "mealId",
     createdAt = "createdAt",
     updatedAt = "updatedAt"
 }

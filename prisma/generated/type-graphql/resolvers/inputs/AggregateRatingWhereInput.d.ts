@@ -1,7 +1,7 @@
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
-import { ExperienceRelationFilter } from "../inputs/ExperienceRelationFilter";
 import { FloatFilter } from "../inputs/FloatFilter";
 import { IntNullableFilter } from "../inputs/IntNullableFilter";
+import { MealRelationFilter } from "../inputs/MealRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 export declare class AggregateRatingWhereInput {
@@ -13,8 +13,8 @@ export declare class AggregateRatingWhereInput {
     countedPosts?: IntNullableFilter | undefined;
     allPosts?: IntNullableFilter | undefined;
     ratingCount?: IntNullableFilter | undefined;
-    Experience?: ExperienceRelationFilter | undefined;
-    experienceId?: StringNullableFilter | undefined;
+    Meal?: MealRelationFilter | undefined;
+    mealId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

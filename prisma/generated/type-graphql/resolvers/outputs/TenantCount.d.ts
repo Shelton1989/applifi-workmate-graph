@@ -1,6 +1,6 @@
 export declare class TenantCount {
     Users: number;
-    Experiences: number;
-    BookingOrders: number;
+    Meals: number;
+    Orders: number;
     Locations: number;
 }

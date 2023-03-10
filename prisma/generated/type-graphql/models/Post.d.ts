@@ -1,5 +1,5 @@
 import { Comment } from "../models/Comment";
-import { Experience } from "../models/Experience";
+import { Meal } from "../models/Meal";
 import { Reaction } from "../models/Reaction";
 import { User } from "../models/User";
 import { PostCount } from "../resolvers/outputs/PostCount";
@@ -13,8 +13,8 @@ export declare class Post {
     canBeCounted: boolean;
     Author?: User;
     authorId: string;
-    Experience?: Experience | null;
-    experienceId?: string | null;
+    Meal?: Meal | null;
+    mealId?: string | null;
     Comments?: Comment[];
     Reactions?: Reaction[];
     postLink?: string | null;

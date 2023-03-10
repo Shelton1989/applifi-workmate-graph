@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.LocationOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const ExperienceOrderByWithRelationInput_1 = require("../inputs/ExperienceOrderByWithRelationInput");
 const TenantOrderByWithRelationInput_1 = require("../inputs/TenantOrderByWithRelationInput");
 const SortOrder_1 = require("../../enums/SortOrder");
 let LocationOrderByWithRelationInput = class LocationOrderByWithRelationInput {
@@ -92,18 +91,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], LocationOrderByWithRelationInput.prototype, "isDefault", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceOrderByWithRelationInput_1.ExperienceOrderByWithRelationInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", ExperienceOrderByWithRelationInput_1.ExperienceOrderByWithRelationInput)
-], LocationOrderByWithRelationInput.prototype, "Experience", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], LocationOrderByWithRelationInput.prototype, "experienceId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TenantOrderByWithRelationInput_1.TenantOrderByWithRelationInput, {
         nullable: true

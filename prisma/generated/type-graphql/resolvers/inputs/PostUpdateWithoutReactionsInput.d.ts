@@ -2,8 +2,8 @@ import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperati
 import { CommentUpdateManyWithoutPostInput } from "../inputs/CommentUpdateManyWithoutPostInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { EnumMEDIA_TYPEFieldUpdateOperationsInput } from "../inputs/EnumMEDIA_TYPEFieldUpdateOperationsInput";
-import { ExperienceUpdateOneWithoutPostsInput } from "../inputs/ExperienceUpdateOneWithoutPostsInput";
 import { FloatFieldUpdateOperationsInput } from "../inputs/FloatFieldUpdateOperationsInput";
+import { MealUpdateOneWithoutPostsInput } from "../inputs/MealUpdateOneWithoutPostsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { PostUpdatemediaUrlInput } from "../inputs/PostUpdatemediaUrlInput";
 import { UserUpdateOneRequiredWithoutPostsInput } from "../inputs/UserUpdateOneRequiredWithoutPostsInput";
@@ -15,7 +15,7 @@ export declare class PostUpdateWithoutReactionsInput {
     isCommentsEnabled?: BoolFieldUpdateOperationsInput | undefined;
     canBeCounted?: BoolFieldUpdateOperationsInput | undefined;
     Author?: UserUpdateOneRequiredWithoutPostsInput | undefined;
-    Experience?: ExperienceUpdateOneWithoutPostsInput | undefined;
+    Meal?: MealUpdateOneWithoutPostsInput | undefined;
     Comments?: CommentUpdateManyWithoutPostInput | undefined;
     postLink?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;

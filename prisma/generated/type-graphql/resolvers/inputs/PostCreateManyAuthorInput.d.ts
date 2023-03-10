@@ -7,7 +7,7 @@ export declare class PostCreateManyAuthorInput {
     rating: number;
     isCommentsEnabled?: boolean | undefined;
     canBeCounted?: boolean | undefined;
-    experienceId?: string | undefined;
+    mealId?: string | undefined;
     postLink?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

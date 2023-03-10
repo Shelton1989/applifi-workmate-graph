@@ -1,5 +1,5 @@
 import { CommentCreateNestedManyWithoutPostInput } from "../inputs/CommentCreateNestedManyWithoutPostInput";
-import { ExperienceCreateNestedOneWithoutPostsInput } from "../inputs/ExperienceCreateNestedOneWithoutPostsInput";
+import { MealCreateNestedOneWithoutPostsInput } from "../inputs/MealCreateNestedOneWithoutPostsInput";
 import { PostCreatemediaUrlInput } from "../inputs/PostCreatemediaUrlInput";
 import { ReactionCreateNestedManyWithoutPostInput } from "../inputs/ReactionCreateNestedManyWithoutPostInput";
 export declare class PostCreateWithoutAuthorInput {
@@ -10,7 +10,7 @@ export declare class PostCreateWithoutAuthorInput {
     rating: number;
     isCommentsEnabled?: boolean | undefined;
     canBeCounted?: boolean | undefined;
-    Experience?: ExperienceCreateNestedOneWithoutPostsInput | undefined;
+    Meal?: MealCreateNestedOneWithoutPostsInput | undefined;
     Comments?: CommentCreateNestedManyWithoutPostInput | undefined;
     Reactions?: ReactionCreateNestedManyWithoutPostInput | undefined;
     postLink?: string | undefined;

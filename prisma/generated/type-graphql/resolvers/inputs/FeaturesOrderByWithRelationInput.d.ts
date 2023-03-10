@@ -1,8 +1,8 @@
-import { ExperienceOrderByWithRelationInput } from "../inputs/ExperienceOrderByWithRelationInput";
+import { MealOrderByWithRelationInput } from "../inputs/MealOrderByWithRelationInput";
 export declare class FeaturesOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
-    Experience?: ExperienceOrderByWithRelationInput | undefined;
-    experienceId?: "asc" | "desc" | undefined;
+    Meal?: MealOrderByWithRelationInput | undefined;
+    mealId?: "asc" | "desc" | undefined;
     title?: "asc" | "desc" | undefined;
     shortDescription?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;

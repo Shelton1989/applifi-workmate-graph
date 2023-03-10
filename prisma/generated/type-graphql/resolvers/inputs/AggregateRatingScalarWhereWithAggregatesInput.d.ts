@@ -12,7 +12,7 @@ export declare class AggregateRatingScalarWhereWithAggregatesInput {
     countedPosts?: IntNullableWithAggregatesFilter | undefined;
     allPosts?: IntNullableWithAggregatesFilter | undefined;
     ratingCount?: IntNullableWithAggregatesFilter | undefined;
-    experienceId?: StringNullableWithAggregatesFilter | undefined;
+    mealId?: StringNullableWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
 }

@@ -16,4 +16,5 @@ export declare class UserMinOrderByAggregateInput {
     isVerified?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
+    wardId?: "asc" | "desc" | undefined;
 }

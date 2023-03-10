@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.LocationCreateWithoutTenantInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const ExperienceCreateNestedOneWithoutLocationsInput_1 = require("../inputs/ExperienceCreateNestedOneWithoutLocationsInput");
 const ADDRESS_TYPE_1 = require("../../enums/ADDRESS_TYPE");
 let LocationCreateWithoutTenantInput = class LocationCreateWithoutTenantInput {
 };
@@ -91,12 +90,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Boolean)
 ], LocationCreateWithoutTenantInput.prototype, "isDefault", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceCreateNestedOneWithoutLocationsInput_1.ExperienceCreateNestedOneWithoutLocationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", ExperienceCreateNestedOneWithoutLocationsInput_1.ExperienceCreateNestedOneWithoutLocationsInput)
-], LocationCreateWithoutTenantInput.prototype, "Experience", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

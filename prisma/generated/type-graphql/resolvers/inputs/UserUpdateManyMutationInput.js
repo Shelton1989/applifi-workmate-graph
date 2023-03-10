@@ -8,9 +8,7 @@ const NullableBoolFieldUpdateOperationsInput_1 = require("../inputs/NullableBool
 const NullableDateTimeFieldUpdateOperationsInput_1 = require("../inputs/NullableDateTimeFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
-const UserUpdateexperienceIdsInput_1 = require("../inputs/UserUpdateexperienceIdsInput");
-const UserUpdatefollowerIdsInput_1 = require("../inputs/UserUpdatefollowerIdsInput");
-const UserUpdatefollowingIdsInput_1 = require("../inputs/UserUpdatefollowingIdsInput");
+const UserUpdatemealIdsInput_1 = require("../inputs/UserUpdatemealIdsInput");
 const UserUpdaterolesInput_1 = require("../inputs/UserUpdaterolesInput");
 let UserUpdateManyMutationInput = class UserUpdateManyMutationInput {
 };
@@ -99,23 +97,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
 ], UserUpdateManyMutationInput.prototype, "isVerified", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdatefollowingIdsInput_1.UserUpdatefollowingIdsInput, {
+    TypeGraphQL.Field(_type => UserUpdatemealIdsInput_1.UserUpdatemealIdsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", UserUpdatefollowingIdsInput_1.UserUpdatefollowingIdsInput)
-], UserUpdateManyMutationInput.prototype, "followingIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdatefollowerIdsInput_1.UserUpdatefollowerIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserUpdatefollowerIdsInput_1.UserUpdatefollowerIdsInput)
-], UserUpdateManyMutationInput.prototype, "followerIds", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserUpdateexperienceIdsInput_1.UserUpdateexperienceIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserUpdateexperienceIdsInput_1.UserUpdateexperienceIdsInput)
-], UserUpdateManyMutationInput.prototype, "experienceIds", void 0);
+    tslib_1.__metadata("design:type", UserUpdatemealIdsInput_1.UserUpdatemealIdsInput)
+], UserUpdateManyMutationInput.prototype, "mealIds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

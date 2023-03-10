@@ -1,4 +1,4 @@
-import { ExperienceCreateNestedOneWithoutPostsInput } from "../inputs/ExperienceCreateNestedOneWithoutPostsInput";
+import { MealCreateNestedOneWithoutPostsInput } from "../inputs/MealCreateNestedOneWithoutPostsInput";
 import { PostCreatemediaUrlInput } from "../inputs/PostCreatemediaUrlInput";
 import { ReactionCreateNestedManyWithoutPostInput } from "../inputs/ReactionCreateNestedManyWithoutPostInput";
 import { UserCreateNestedOneWithoutPostsInput } from "../inputs/UserCreateNestedOneWithoutPostsInput";
@@ -11,7 +11,7 @@ export declare class PostCreateWithoutCommentsInput {
     isCommentsEnabled?: boolean | undefined;
     canBeCounted?: boolean | undefined;
     Author: UserCreateNestedOneWithoutPostsInput;
-    Experience?: ExperienceCreateNestedOneWithoutPostsInput | undefined;
+    Meal?: MealCreateNestedOneWithoutPostsInput | undefined;
     Reactions?: ReactionCreateNestedManyWithoutPostInput | undefined;
     postLink?: string | undefined;
     createdAt?: Date | undefined;

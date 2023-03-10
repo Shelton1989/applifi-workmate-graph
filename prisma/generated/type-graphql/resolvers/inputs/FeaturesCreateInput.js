@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.FeaturesCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const ExperienceCreateNestedOneWithoutFeaturesInput_1 = require("../inputs/ExperienceCreateNestedOneWithoutFeaturesInput");
+const MealCreateNestedOneWithoutFeaturesInput_1 = require("../inputs/MealCreateNestedOneWithoutFeaturesInput");
 let FeaturesCreateInput = class FeaturesCreateInput {
 };
 tslib_1.__decorate([
@@ -13,11 +13,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], FeaturesCreateInput.prototype, "id", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => ExperienceCreateNestedOneWithoutFeaturesInput_1.ExperienceCreateNestedOneWithoutFeaturesInput, {
+    TypeGraphQL.Field(_type => MealCreateNestedOneWithoutFeaturesInput_1.MealCreateNestedOneWithoutFeaturesInput, {
         nullable: false
     }),
-    tslib_1.__metadata("design:type", ExperienceCreateNestedOneWithoutFeaturesInput_1.ExperienceCreateNestedOneWithoutFeaturesInput)
-], FeaturesCreateInput.prototype, "Experience", void 0);
+    tslib_1.__metadata("design:type", MealCreateNestedOneWithoutFeaturesInput_1.MealCreateNestedOneWithoutFeaturesInput)
+], FeaturesCreateInput.prototype, "Meal", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: false

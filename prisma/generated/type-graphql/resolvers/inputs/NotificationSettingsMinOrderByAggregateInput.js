@@ -17,31 +17,25 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsMinOrderByAggregateInput.prototype, "newArrivals", void 0);
+], NotificationSettingsMinOrderByAggregateInput.prototype, "newMenuItems", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsMinOrderByAggregateInput.prototype, "bookingOrOrderUpdates", void 0);
+], NotificationSettingsMinOrderByAggregateInput.prototype, "orderUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsMinOrderByAggregateInput.prototype, "promotions", void 0);
+], NotificationSettingsMinOrderByAggregateInput.prototype, "newRequests", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsMinOrderByAggregateInput.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], NotificationSettingsMinOrderByAggregateInput.prototype, "newContentILike", void 0);
+], NotificationSettingsMinOrderByAggregateInput.prototype, "requestUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
@@ -53,13 +47,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsMinOrderByAggregateInput.prototype, "repliesToMyComments", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], NotificationSettingsMinOrderByAggregateInput.prototype, "repliesToThreads", void 0);
+], NotificationSettingsMinOrderByAggregateInput.prototype, "repliesToMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true

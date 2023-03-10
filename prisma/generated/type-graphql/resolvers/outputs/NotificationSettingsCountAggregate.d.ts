@@ -1,13 +1,11 @@
 export declare class NotificationSettingsCountAggregate {
     id: number;
-    newArrivals: number;
-    bookingOrOrderUpdates: number;
-    promotions: number;
-    saleAlerts: number;
-    newContentILike: number;
+    newMenuItems: number;
+    orderUpdates: number;
+    newRequests: number;
+    requestUpdates: number;
     commentsOnMyReviews: number;
-    repliesToMyComments: number;
-    repliesToThreads: number;
+    repliesToMyReviews: number;
     userId: number;
     createdAt: number;
     updatedAt: number;

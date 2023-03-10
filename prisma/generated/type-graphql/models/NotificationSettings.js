@@ -16,31 +16,25 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettings.prototype, "newArrivals", void 0);
+], NotificationSettings.prototype, "newMenuItems", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettings.prototype, "bookingOrOrderUpdates", void 0);
+], NotificationSettings.prototype, "orderUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettings.prototype, "promotions", void 0);
+], NotificationSettings.prototype, "newRequests", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettings.prototype, "saleAlerts", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Boolean)
-], NotificationSettings.prototype, "newContentILike", void 0);
+], NotificationSettings.prototype, "requestUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: false
@@ -52,13 +46,7 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettings.prototype, "repliesToMyComments", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Boolean, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Boolean)
-], NotificationSettings.prototype, "repliesToThreads", void 0);
+], NotificationSettings.prototype, "repliesToMyReviews", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

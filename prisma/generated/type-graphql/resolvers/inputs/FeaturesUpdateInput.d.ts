@@ -1,8 +1,8 @@
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
-import { ExperienceUpdateOneRequiredWithoutFeaturesInput } from "../inputs/ExperienceUpdateOneRequiredWithoutFeaturesInput";
+import { MealUpdateOneRequiredWithoutFeaturesInput } from "../inputs/MealUpdateOneRequiredWithoutFeaturesInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 export declare class FeaturesUpdateInput {
-    Experience?: ExperienceUpdateOneRequiredWithoutFeaturesInput | undefined;
+    Meal?: MealUpdateOneRequiredWithoutFeaturesInput | undefined;
     title?: StringFieldUpdateOperationsInput | undefined;
     shortDescription?: StringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;

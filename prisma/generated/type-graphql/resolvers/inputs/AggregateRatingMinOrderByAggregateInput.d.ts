@@ -4,7 +4,7 @@ export declare class AggregateRatingMinOrderByAggregateInput {
     countedPosts?: "asc" | "desc" | undefined;
     allPosts?: "asc" | "desc" | undefined;
     ratingCount?: "asc" | "desc" | undefined;
-    experienceId?: "asc" | "desc" | undefined;
+    mealId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

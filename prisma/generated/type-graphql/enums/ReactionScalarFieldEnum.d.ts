@@ -1,7 +1,7 @@
 export declare enum ReactionScalarFieldEnum {
     id = "id",
     type = "type",
-    experienceId = "experienceId",
+    mealId = "mealId",
     postId = "postId",
     commentId = "commentId",
     replyId = "replyId",

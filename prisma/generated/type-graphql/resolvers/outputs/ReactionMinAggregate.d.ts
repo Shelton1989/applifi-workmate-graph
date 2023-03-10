@@ -1,7 +1,7 @@
 export declare class ReactionMinAggregate {
     id: string | null;
     type: "LIKE" | "LOVE" | "DISLIKE" | null;
-    experienceId: string | null;
+    mealId: string | null;
     postId: string | null;
     commentId: string | null;
     replyId: string | null;

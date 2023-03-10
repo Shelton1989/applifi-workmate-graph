@@ -3,9 +3,7 @@ import { NullableBoolFieldUpdateOperationsInput } from "../inputs/NullableBoolFi
 import { NullableDateTimeFieldUpdateOperationsInput } from "../inputs/NullableDateTimeFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
-import { UserUpdateexperienceIdsInput } from "../inputs/UserUpdateexperienceIdsInput";
-import { UserUpdatefollowerIdsInput } from "../inputs/UserUpdatefollowerIdsInput";
-import { UserUpdatefollowingIdsInput } from "../inputs/UserUpdatefollowingIdsInput";
+import { UserUpdatemealIdsInput } from "../inputs/UserUpdatemealIdsInput";
 import { UserUpdaterolesInput } from "../inputs/UserUpdaterolesInput";
 export declare class UserUpdateManyMutationInput {
     uid?: StringFieldUpdateOperationsInput | undefined;
@@ -22,9 +20,7 @@ export declare class UserUpdateManyMutationInput {
     hasAcceptedTerms?: NullableBoolFieldUpdateOperationsInput | undefined;
     isFirstTimeUser?: NullableBoolFieldUpdateOperationsInput | undefined;
     isVerified?: NullableBoolFieldUpdateOperationsInput | undefined;
-    followingIds?: UserUpdatefollowingIdsInput | undefined;
-    followerIds?: UserUpdatefollowerIdsInput | undefined;
-    experienceIds?: UserUpdateexperienceIdsInput | undefined;
+    mealIds?: UserUpdatemealIdsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

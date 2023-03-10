@@ -9,7 +9,8 @@ export declare class TenantGroupBy {
     logoImage: string | null;
     avatar: string | null;
     coverImage: string | null;
-    experienceImages: string[] | null;
+    MealImages: string[] | null;
+    acceptedUserEmailDomains: string[] | null;
     createdAt: Date;
     updatedAt: Date;
     _count: TenantCountAggregate | null;

@@ -1,7 +1,6 @@
 import { BoolFilter } from "../inputs/BoolFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumADDRESS_TYPENullableFilter } from "../inputs/EnumADDRESS_TYPENullableFilter";
-import { ExperienceRelationFilter } from "../inputs/ExperienceRelationFilter";
 import { FloatNullableFilter } from "../inputs/FloatNullableFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
@@ -24,8 +23,6 @@ export declare class LocationWhereInput {
     country?: StringNullableFilter | undefined;
     code?: StringNullableFilter | undefined;
     isDefault?: BoolFilter | undefined;
-    Experience?: ExperienceRelationFilter | undefined;
-    experienceId?: StringNullableFilter | undefined;
     Tenant?: TenantRelationFilter | undefined;
     tenantId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;

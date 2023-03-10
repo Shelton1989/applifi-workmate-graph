@@ -18,11 +18,10 @@ export declare class UserOrderByWithAggregationInput {
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
     isVerified?: "asc" | "desc" | undefined;
-    followingIds?: "asc" | "desc" | undefined;
-    followerIds?: "asc" | "desc" | undefined;
-    experienceIds?: "asc" | "desc" | undefined;
+    mealIds?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
+    wardId?: "asc" | "desc" | undefined;
     _count?: UserCountOrderByAggregateInput | undefined;
     _max?: UserMaxOrderByAggregateInput | undefined;
     _min?: UserMinOrderByAggregateInput | undefined;

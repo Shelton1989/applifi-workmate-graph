@@ -7,7 +7,7 @@ var ReactionScalarFieldEnum;
 (function (ReactionScalarFieldEnum) {
     ReactionScalarFieldEnum["id"] = "id";
     ReactionScalarFieldEnum["type"] = "type";
-    ReactionScalarFieldEnum["experienceId"] = "experienceId";
+    ReactionScalarFieldEnum["mealId"] = "mealId";
     ReactionScalarFieldEnum["postId"] = "postId";
     ReactionScalarFieldEnum["commentId"] = "commentId";
     ReactionScalarFieldEnum["replyId"] = "replyId";

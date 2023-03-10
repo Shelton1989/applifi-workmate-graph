@@ -107,6 +107,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Date)
 ], UserMaxAggregate.prototype, "updatedAt", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], UserMaxAggregate.prototype, "wardId", void 0);
 UserMaxAggregate = tslib_1.__decorate([
     TypeGraphQL.ObjectType("UserMaxAggregate", {
         isAbstract: true

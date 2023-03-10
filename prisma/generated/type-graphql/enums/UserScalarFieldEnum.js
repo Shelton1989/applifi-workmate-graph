@@ -21,11 +21,10 @@ var UserScalarFieldEnum;
     UserScalarFieldEnum["hasAcceptedTerms"] = "hasAcceptedTerms";
     UserScalarFieldEnum["isFirstTimeUser"] = "isFirstTimeUser";
     UserScalarFieldEnum["isVerified"] = "isVerified";
-    UserScalarFieldEnum["followingIds"] = "followingIds";
-    UserScalarFieldEnum["followerIds"] = "followerIds";
-    UserScalarFieldEnum["experienceIds"] = "experienceIds";
+    UserScalarFieldEnum["mealIds"] = "mealIds";
     UserScalarFieldEnum["createdAt"] = "createdAt";
     UserScalarFieldEnum["updatedAt"] = "updatedAt";
+    UserScalarFieldEnum["wardId"] = "wardId";
 })(UserScalarFieldEnum = exports.UserScalarFieldEnum || (exports.UserScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(UserScalarFieldEnum, {
     name: "UserScalarFieldEnum",

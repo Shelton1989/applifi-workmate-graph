@@ -9,7 +9,8 @@ export declare class TenantOrderByWithAggregationInput {
     logoImage?: "asc" | "desc" | undefined;
     avatar?: "asc" | "desc" | undefined;
     coverImage?: "asc" | "desc" | undefined;
-    experienceImages?: "asc" | "desc" | undefined;
+    MealImages?: "asc" | "desc" | undefined;
+    acceptedUserEmailDomains?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
     _count?: TenantCountOrderByAggregateInput | undefined;

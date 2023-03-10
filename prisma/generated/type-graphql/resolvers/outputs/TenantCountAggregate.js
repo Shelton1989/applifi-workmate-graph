@@ -52,7 +52,13 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], TenantCountAggregate.prototype, "experienceImages", void 0);
+], TenantCountAggregate.prototype, "MealImages", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", Number)
+], TenantCountAggregate.prototype, "acceptedUserEmailDomains", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

@@ -22,7 +22,6 @@ export declare class LocationScalarWhereWithAggregatesInput {
     country?: StringNullableWithAggregatesFilter | undefined;
     code?: StringNullableWithAggregatesFilter | undefined;
     isDefault?: BoolWithAggregatesFilter | undefined;
-    experienceId?: StringNullableWithAggregatesFilter | undefined;
     tenantId?: StringNullableWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;

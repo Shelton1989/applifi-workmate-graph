@@ -4,7 +4,7 @@ exports.PostRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const Comment_1 = require("../../../models/Comment");
-const Experience_1 = require("../../../models/Experience");
+const Meal_1 = require("../../../models/Meal");
 const Post_1 = require("../../../models/Post");
 const Reaction_1 = require("../../../models/Reaction");
 const User_1 = require("../../../models/User");
@@ -19,12 +19,12 @@ let PostRelationsResolver = class PostRelationsResolver {
             },
         }).Author({});
     }
-    async Experience(post, ctx) {
+    async Meal(post, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).post.findUnique({
             where: {
                 id: post.id,
             },
-        }).Experience({});
+        }).Meal({});
     }
     async Comments(post, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).post.findUnique({
@@ -52,7 +52,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:returntype", Promise)
 ], PostRelationsResolver.prototype, "Author", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => Experience_1.Experience, {
+    TypeGraphQL.FieldResolver(_type => Meal_1.Meal, {
         nullable: true
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
@@ -60,7 +60,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Function),
     tslib_1.__metadata("design:paramtypes", [Post_1.Post, Object]),
     tslib_1.__metadata("design:returntype", Promise)
-], PostRelationsResolver.prototype, "Experience", null);
+], PostRelationsResolver.prototype, "Meal", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => [Comment_1.Comment], {
         nullable: false

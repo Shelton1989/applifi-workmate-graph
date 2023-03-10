@@ -22,7 +22,6 @@ export declare class LocationScalarWhereInput {
     country?: StringNullableFilter | undefined;
     code?: StringNullableFilter | undefined;
     isDefault?: BoolFilter | undefined;
-    experienceId?: StringNullableFilter | undefined;
     tenantId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;

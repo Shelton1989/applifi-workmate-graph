@@ -1,6 +1,7 @@
-import { BookingOrderCreateNestedManyWithoutTenantInput } from "../inputs/BookingOrderCreateNestedManyWithoutTenantInput";
-import { ExperienceCreateNestedManyWithoutTenantInput } from "../inputs/ExperienceCreateNestedManyWithoutTenantInput";
-import { TenantCreateexperienceImagesInput } from "../inputs/TenantCreateexperienceImagesInput";
+import { MealCreateNestedManyWithoutTenantInput } from "../inputs/MealCreateNestedManyWithoutTenantInput";
+import { OrderCreateNestedManyWithoutTenantInput } from "../inputs/OrderCreateNestedManyWithoutTenantInput";
+import { TenantCreateMealImagesInput } from "../inputs/TenantCreateMealImagesInput";
+import { TenantCreateacceptedUserEmailDomainsInput } from "../inputs/TenantCreateacceptedUserEmailDomainsInput";
 import { UserCreateNestedManyWithoutTenantInput } from "../inputs/UserCreateNestedManyWithoutTenantInput";
 export declare class TenantCreateWithoutLocationsInput {
     id?: string | undefined;
@@ -10,10 +11,11 @@ export declare class TenantCreateWithoutLocationsInput {
     logoImage?: string | undefined;
     avatar?: string | undefined;
     coverImage?: string | undefined;
-    experienceImages?: TenantCreateexperienceImagesInput | undefined;
+    MealImages?: TenantCreateMealImagesInput | undefined;
     Users?: UserCreateNestedManyWithoutTenantInput | undefined;
-    Experiences?: ExperienceCreateNestedManyWithoutTenantInput | undefined;
-    BookingOrders?: BookingOrderCreateNestedManyWithoutTenantInput | undefined;
+    Meals?: MealCreateNestedManyWithoutTenantInput | undefined;
+    Orders?: OrderCreateNestedManyWithoutTenantInput | undefined;
+    acceptedUserEmailDomains?: TenantCreateacceptedUserEmailDomainsInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

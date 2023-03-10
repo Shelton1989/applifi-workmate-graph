@@ -1,11 +1,11 @@
 import { Comment } from "../../../models/Comment";
-import { Experience } from "../../../models/Experience";
+import { Meal } from "../../../models/Meal";
 import { Post } from "../../../models/Post";
 import { Reaction } from "../../../models/Reaction";
 import { Reply } from "../../../models/Reply";
 import { User } from "../../../models/User";
 export declare class ReactionRelationsResolver {
-    Experience(reaction: Reaction, ctx: any): Promise<Experience | null>;
+    Meal(reaction: Reaction, ctx: any): Promise<Meal | null>;
     Post(reaction: Reaction, ctx: any): Promise<Post | null>;
     Comment(reaction: Reaction, ctx: any): Promise<Comment | null>;
     Reply(reaction: Reaction, ctx: any): Promise<Reply | null>;

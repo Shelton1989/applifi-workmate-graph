@@ -25,9 +25,8 @@ export declare class UserScalarWhereWithAggregatesInput {
     hasAcceptedTerms?: BoolNullableWithAggregatesFilter | undefined;
     isFirstTimeUser?: BoolNullableWithAggregatesFilter | undefined;
     isVerified?: BoolNullableWithAggregatesFilter | undefined;
-    followingIds?: StringNullableListFilter | undefined;
-    followerIds?: StringNullableListFilter | undefined;
-    experienceIds?: StringNullableListFilter | undefined;
+    mealIds?: StringNullableListFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
+    wardId?: StringNullableWithAggregatesFilter | undefined;
 }

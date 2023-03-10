@@ -1,5 +1,5 @@
 import { AggregateRating } from "../../../models/AggregateRating";
-import { Experience } from "../../../models/Experience";
+import { Meal } from "../../../models/Meal";
 export declare class AggregateRatingRelationsResolver {
-    Experience(aggregateRating: AggregateRating, ctx: any): Promise<Experience | null>;
+    Meal(aggregateRating: AggregateRating, ctx: any): Promise<Meal | null>;
 }

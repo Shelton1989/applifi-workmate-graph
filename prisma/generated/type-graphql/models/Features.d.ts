@@ -1,8 +1,8 @@
-import { Experience } from "../models/Experience";
+import { Meal } from "../models/Meal";
 export declare class Features {
     id: string;
-    Experience?: Experience;
-    experienceId: string;
+    Meal?: Meal;
+    mealId: string;
     title: string;
     shortDescription: string;
     createdAt: Date;

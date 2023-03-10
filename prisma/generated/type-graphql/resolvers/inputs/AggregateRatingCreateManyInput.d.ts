@@ -4,7 +4,7 @@ export declare class AggregateRatingCreateManyInput {
     countedPosts?: number | undefined;
     allPosts?: number | undefined;
     ratingCount?: number | undefined;
-    experienceId?: string | undefined;
+    mealId?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

@@ -13,7 +13,6 @@ export declare class LocationMinOrderByAggregateInput {
     country?: "asc" | "desc" | undefined;
     code?: "asc" | "desc" | undefined;
     isDefault?: "asc" | "desc" | undefined;
-    experienceId?: "asc" | "desc" | undefined;
     tenantId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

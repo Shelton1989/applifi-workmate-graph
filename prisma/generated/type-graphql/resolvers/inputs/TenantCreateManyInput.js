@@ -3,7 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TenantCreateManyInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const TenantCreateexperienceImagesInput_1 = require("../inputs/TenantCreateexperienceImagesInput");
+const TenantCreateMealImagesInput_1 = require("../inputs/TenantCreateMealImagesInput");
+const TenantCreateacceptedUserEmailDomainsInput_1 = require("../inputs/TenantCreateacceptedUserEmailDomainsInput");
 let TenantCreateManyInput = class TenantCreateManyInput {
 };
 tslib_1.__decorate([
@@ -49,11 +50,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], TenantCreateManyInput.prototype, "coverImage", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TenantCreateexperienceImagesInput_1.TenantCreateexperienceImagesInput, {
+    TypeGraphQL.Field(_type => TenantCreateMealImagesInput_1.TenantCreateMealImagesInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", TenantCreateexperienceImagesInput_1.TenantCreateexperienceImagesInput)
-], TenantCreateManyInput.prototype, "experienceImages", void 0);
+    tslib_1.__metadata("design:type", TenantCreateMealImagesInput_1.TenantCreateMealImagesInput)
+], TenantCreateManyInput.prototype, "MealImages", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => TenantCreateacceptedUserEmailDomainsInput_1.TenantCreateacceptedUserEmailDomainsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", TenantCreateacceptedUserEmailDomainsInput_1.TenantCreateacceptedUserEmailDomainsInput)
+], TenantCreateManyInput.prototype, "acceptedUserEmailDomains", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

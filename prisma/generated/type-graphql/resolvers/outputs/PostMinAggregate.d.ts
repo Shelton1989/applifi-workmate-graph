@@ -6,7 +6,7 @@ export declare class PostMinAggregate {
     isCommentsEnabled: boolean | null;
     canBeCounted: boolean | null;
     authorId: string | null;
-    experienceId: string | null;
+    mealId: string | null;
     postLink: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;

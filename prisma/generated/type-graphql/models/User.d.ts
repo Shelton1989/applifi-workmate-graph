@@ -1,13 +1,15 @@
-import { BookingOrder } from "../models/BookingOrder";
 import { Comment } from "../models/Comment";
-import { Experience } from "../models/Experience";
+import { Meal } from "../models/Meal";
 import { Notification } from "../models/Notification";
 import { NotificationSettings } from "../models/NotificationSettings";
+import { Order } from "../models/Order";
+import { PatientProfile } from "../models/PatientProfile";
 import { Post } from "../models/Post";
 import { Reaction } from "../models/Reaction";
 import { Reply } from "../models/Reply";
 import { Request } from "../models/Request";
 import { Tenant } from "../models/Tenant";
+import { Ward } from "../models/Ward";
 import { UserCount } from "../resolvers/outputs/UserCount";
 export declare class User {
     Tenant?: Tenant | null;
@@ -17,7 +19,7 @@ export declare class User {
     id: string;
     username: string;
     email: string;
-    roles: Array<"SUPER_ADMIN" | "ADMIN" | "USER" | "WORKSPACE_OWNER" | "WORKSPACE_ADMIN" | "WORKSPACE_USER">;
+    roles: Array<"SUPER_ADMIN" | "ADMIN" | "USER" | "WORKSPACE_OWNER" | "WORKSPACE_ADMIN" | "WORKSPACE_USER" | "WARD_ADMIN" | "WARD_HOST_OR_HOSTESS" | "WARD_USER">;
     firstName?: string | null;
     lastName?: string | null;
     avatar?: string | null;
@@ -28,21 +30,20 @@ export declare class User {
     isFirstTimeUser?: boolean | null;
     isVerified?: boolean | null;
     NotificationSettings?: NotificationSettings | null;
+    PatientProfile?: PatientProfile | null;
     Notifications?: Notification[];
     Activity?: Notification[];
-    Following?: User[];
-    followingIds: string[];
-    Followers?: User[];
-    followerIds: string[];
-    LikedExperiences?: Experience[];
-    experienceIds: string[];
+    LikedMeals?: Meal[];
+    mealIds: string[];
     Requests?: Request[];
     Posts?: Post[];
     Comments?: Comment[];
     Replies?: Reply[];
     Reactions?: Reaction[];
-    Bookings?: BookingOrder[];
+    Bookings?: Order[];
     createdAt: Date;
     updatedAt: Date;
+    Ward?: Ward | null;
+    wardId?: string | null;
     _count?: UserCount | null;
 }
