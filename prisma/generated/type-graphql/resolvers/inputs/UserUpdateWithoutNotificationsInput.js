@@ -115,6 +115,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
 ], UserUpdateWithoutNotificationsInput.prototype, "isVerified", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], UserUpdateWithoutNotificationsInput.prototype, "isActive", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => NotificationSettingsUpdateOneWithoutUserInput_1.NotificationSettingsUpdateOneWithoutUserInput, {
         nullable: true
     }),

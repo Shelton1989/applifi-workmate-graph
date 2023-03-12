@@ -116,6 +116,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Boolean)
 ], UserCreateWithoutNotificationSettingsInput.prototype, "isVerified", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], UserCreateWithoutNotificationSettingsInput.prototype, "isActive", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => PatientProfileCreateNestedOneWithoutUserInput_1.PatientProfileCreateNestedOneWithoutUserInput, {
         nullable: true
     }),

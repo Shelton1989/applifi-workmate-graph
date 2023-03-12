@@ -1,3 +1,4 @@
+import { BoolNullableWithAggregatesFilter } from "../inputs/BoolNullableWithAggregatesFilter";
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
 import { EnumDIETARY_RESTRICTIONSNullableListFilter } from "../inputs/EnumDIETARY_RESTRICTIONSNullableListFilter";
 import { EnumMEAL_KINDNullableListFilter } from "../inputs/EnumMEAL_KINDNullableListFilter";
@@ -14,6 +15,7 @@ export declare class PatientProfileScalarWhereWithAggregatesInput {
     identityType?: StringNullableWithAggregatesFilter | undefined;
     bedNumber?: StringNullableWithAggregatesFilter | undefined;
     wardNumber?: StringNullableWithAggregatesFilter | undefined;
+    allServicesOpen?: BoolNullableWithAggregatesFilter | undefined;
     dietaryRestrictions?: EnumDIETARY_RESTRICTIONSNullableListFilter | undefined;
     allowedMealTypes?: EnumMEAL_TYPESNullableListFilter | undefined;
     allowedMealKinds?: EnumMEAL_KINDNullableListFilter | undefined;

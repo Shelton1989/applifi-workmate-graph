@@ -14,6 +14,7 @@ export declare class UserMinAggregate {
     hasAcceptedTerms: boolean | null;
     isFirstTimeUser: boolean | null;
     isVerified: boolean | null;
+    isActive: boolean | null;
     createdAt: Date | null;
     updatedAt: Date | null;
     wardId: string | null;

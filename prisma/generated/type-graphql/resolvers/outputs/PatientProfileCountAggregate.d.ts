@@ -4,6 +4,7 @@ export declare class PatientProfileCountAggregate {
     identityType: number;
     bedNumber: number;
     wardNumber: number;
+    allServicesOpen: number;
     dietaryRestrictions: number;
     allowedMealTypes: number;
     allowedMealKinds: number;

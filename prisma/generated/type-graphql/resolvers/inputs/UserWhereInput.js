@@ -146,6 +146,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
 ], UserWhereInput.prototype, "isVerified", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], UserWhereInput.prototype, "isActive", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => NotificationSettingsRelationFilter_1.NotificationSettingsRelationFilter, {
         nullable: true
     }),

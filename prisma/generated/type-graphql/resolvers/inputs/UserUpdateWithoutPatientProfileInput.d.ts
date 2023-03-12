@@ -33,6 +33,7 @@ export declare class UserUpdateWithoutPatientProfileInput {
     hasAcceptedTerms?: NullableBoolFieldUpdateOperationsInput | undefined;
     isFirstTimeUser?: NullableBoolFieldUpdateOperationsInput | undefined;
     isVerified?: NullableBoolFieldUpdateOperationsInput | undefined;
+    isActive?: NullableBoolFieldUpdateOperationsInput | undefined;
     NotificationSettings?: NotificationSettingsUpdateOneWithoutUserInput | undefined;
     Notifications?: NotificationUpdateManyWithoutUserInput | undefined;
     Activity?: NotificationUpdateManyWithoutActorInput | undefined;

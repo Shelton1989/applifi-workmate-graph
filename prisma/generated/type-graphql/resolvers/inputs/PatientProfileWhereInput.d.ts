@@ -1,3 +1,4 @@
+import { BoolNullableFilter } from "../inputs/BoolNullableFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumDIETARY_RESTRICTIONSNullableListFilter } from "../inputs/EnumDIETARY_RESTRICTIONSNullableListFilter";
 import { EnumMEAL_KINDNullableListFilter } from "../inputs/EnumMEAL_KINDNullableListFilter";
@@ -15,6 +16,7 @@ export declare class PatientProfileWhereInput {
     identityType?: StringNullableFilter | undefined;
     bedNumber?: StringNullableFilter | undefined;
     wardNumber?: StringNullableFilter | undefined;
+    allServicesOpen?: BoolNullableFilter | undefined;
     dietaryRestrictions?: EnumDIETARY_RESTRICTIONSNullableListFilter | undefined;
     allowedMealTypes?: EnumMEAL_TYPESNullableListFilter | undefined;
     allowedMealKinds?: EnumMEAL_KINDNullableListFilter | undefined;

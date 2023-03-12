@@ -15,6 +15,7 @@ export declare class UserCountAggregate {
     hasAcceptedTerms: number;
     isFirstTimeUser: number;
     isVerified: number;
+    isActive: number;
     mealIds: number;
     createdAt: number;
     updatedAt: number;

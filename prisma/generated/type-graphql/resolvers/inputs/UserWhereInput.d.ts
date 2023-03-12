@@ -38,6 +38,7 @@ export declare class UserWhereInput {
     hasAcceptedTerms?: BoolNullableFilter | undefined;
     isFirstTimeUser?: BoolNullableFilter | undefined;
     isVerified?: BoolNullableFilter | undefined;
+    isActive?: BoolNullableFilter | undefined;
     NotificationSettings?: NotificationSettingsRelationFilter | undefined;
     PatientProfile?: PatientProfileRelationFilter | undefined;
     Notifications?: NotificationListRelationFilter | undefined;

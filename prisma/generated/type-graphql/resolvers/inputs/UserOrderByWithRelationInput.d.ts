@@ -28,6 +28,7 @@ export declare class UserOrderByWithRelationInput {
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
     isVerified?: "asc" | "desc" | undefined;
+    isActive?: "asc" | "desc" | undefined;
     NotificationSettings?: NotificationSettingsOrderByWithRelationInput | undefined;
     PatientProfile?: PatientProfileOrderByWithRelationInput | undefined;
     Notifications?: NotificationOrderByRelationAggregateInput | undefined;

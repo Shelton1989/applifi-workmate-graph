@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.PatientProfileWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const BoolNullableFilter_1 = require("../inputs/BoolNullableFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumDIETARY_RESTRICTIONSNullableListFilter_1 = require("../inputs/EnumDIETARY_RESTRICTIONSNullableListFilter");
 const EnumMEAL_KINDNullableListFilter_1 = require("../inputs/EnumMEAL_KINDNullableListFilter");
@@ -62,6 +63,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], PatientProfileWhereInput.prototype, "wardNumber", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], PatientProfileWhereInput.prototype, "allServicesOpen", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumDIETARY_RESTRICTIONSNullableListFilter_1.EnumDIETARY_RESTRICTIONSNullableListFilter, {
         nullable: true

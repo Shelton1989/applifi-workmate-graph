@@ -4,6 +4,7 @@ exports.PatientProfileUpdateWithoutUserInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
+const NullableBoolFieldUpdateOperationsInput_1 = require("../inputs/NullableBoolFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const PatientProfileUpdateallowedMealKindsInput_1 = require("../inputs/PatientProfileUpdateallowedMealKindsInput");
 const PatientProfileUpdateallowedMealTypesInput_1 = require("../inputs/PatientProfileUpdateallowedMealTypesInput");
@@ -36,6 +37,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], PatientProfileUpdateWithoutUserInput.prototype, "wardNumber", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", NullableBoolFieldUpdateOperationsInput_1.NullableBoolFieldUpdateOperationsInput)
+], PatientProfileUpdateWithoutUserInput.prototype, "allServicesOpen", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => PatientProfileUpdatedietaryRestrictionsInput_1.PatientProfileUpdatedietaryRestrictionsInput, {
         nullable: true

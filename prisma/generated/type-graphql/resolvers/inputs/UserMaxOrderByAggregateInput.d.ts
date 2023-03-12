@@ -14,6 +14,7 @@ export declare class UserMaxOrderByAggregateInput {
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
     isVerified?: "asc" | "desc" | undefined;
+    isActive?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
     wardId?: "asc" | "desc" | undefined;

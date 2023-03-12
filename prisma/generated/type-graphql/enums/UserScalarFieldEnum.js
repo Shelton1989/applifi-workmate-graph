@@ -21,6 +21,7 @@ var UserScalarFieldEnum;
     UserScalarFieldEnum["hasAcceptedTerms"] = "hasAcceptedTerms";
     UserScalarFieldEnum["isFirstTimeUser"] = "isFirstTimeUser";
     UserScalarFieldEnum["isVerified"] = "isVerified";
+    UserScalarFieldEnum["isActive"] = "isActive";
     UserScalarFieldEnum["mealIds"] = "mealIds";
     UserScalarFieldEnum["createdAt"] = "createdAt";
     UserScalarFieldEnum["updatedAt"] = "updatedAt";

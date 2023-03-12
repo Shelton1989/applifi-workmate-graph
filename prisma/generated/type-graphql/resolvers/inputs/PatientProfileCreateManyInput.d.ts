@@ -9,6 +9,7 @@ export declare class PatientProfileCreateManyInput {
     identityType?: string | undefined;
     bedNumber?: string | undefined;
     wardNumber?: string | undefined;
+    allServicesOpen?: boolean | undefined;
     dietaryRestrictions?: PatientProfileCreatedietaryRestrictionsInput | undefined;
     allowedMealTypes?: PatientProfileCreateallowedMealTypesInput | undefined;
     allowedMealKinds?: PatientProfileCreateallowedMealKindsInput | undefined;

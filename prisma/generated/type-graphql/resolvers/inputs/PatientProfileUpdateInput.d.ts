@@ -1,4 +1,5 @@
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
+import { NullableBoolFieldUpdateOperationsInput } from "../inputs/NullableBoolFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { PatientProfileUpdateallowedMealKindsInput } from "../inputs/PatientProfileUpdateallowedMealKindsInput";
 import { PatientProfileUpdateallowedMealTypesInput } from "../inputs/PatientProfileUpdateallowedMealTypesInput";
@@ -11,6 +12,7 @@ export declare class PatientProfileUpdateInput {
     identityType?: NullableStringFieldUpdateOperationsInput | undefined;
     bedNumber?: NullableStringFieldUpdateOperationsInput | undefined;
     wardNumber?: NullableStringFieldUpdateOperationsInput | undefined;
+    allServicesOpen?: NullableBoolFieldUpdateOperationsInput | undefined;
     dietaryRestrictions?: PatientProfileUpdatedietaryRestrictionsInput | undefined;
     allowedMealTypes?: PatientProfileUpdateallowedMealTypesInput | undefined;
     allowedMealKinds?: PatientProfileUpdateallowedMealKindsInput | undefined;

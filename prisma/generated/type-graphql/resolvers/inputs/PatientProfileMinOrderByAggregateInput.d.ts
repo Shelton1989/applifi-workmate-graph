@@ -4,6 +4,7 @@ export declare class PatientProfileMinOrderByAggregateInput {
     identityType?: "asc" | "desc" | undefined;
     bedNumber?: "asc" | "desc" | undefined;
     wardNumber?: "asc" | "desc" | undefined;
+    allServicesOpen?: "asc" | "desc" | undefined;
     userId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

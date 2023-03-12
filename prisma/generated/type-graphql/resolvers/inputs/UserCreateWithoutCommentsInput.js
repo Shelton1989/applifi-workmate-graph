@@ -116,6 +116,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Boolean)
 ], UserCreateWithoutCommentsInput.prototype, "isVerified", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], UserCreateWithoutCommentsInput.prototype, "isActive", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => NotificationSettingsCreateNestedOneWithoutUserInput_1.NotificationSettingsCreateNestedOneWithoutUserInput, {
         nullable: true
     }),

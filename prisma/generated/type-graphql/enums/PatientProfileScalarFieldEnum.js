@@ -10,6 +10,7 @@ var PatientProfileScalarFieldEnum;
     PatientProfileScalarFieldEnum["identityType"] = "identityType";
     PatientProfileScalarFieldEnum["bedNumber"] = "bedNumber";
     PatientProfileScalarFieldEnum["wardNumber"] = "wardNumber";
+    PatientProfileScalarFieldEnum["allServicesOpen"] = "allServicesOpen";
     PatientProfileScalarFieldEnum["dietaryRestrictions"] = "dietaryRestrictions";
     PatientProfileScalarFieldEnum["allowedMealTypes"] = "allowedMealTypes";
     PatientProfileScalarFieldEnum["allowedMealKinds"] = "allowedMealKinds";

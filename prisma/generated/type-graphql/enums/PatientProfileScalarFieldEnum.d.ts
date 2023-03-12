@@ -4,6 +4,7 @@ export declare enum PatientProfileScalarFieldEnum {
     identityType = "identityType",
     bedNumber = "bedNumber",
     wardNumber = "wardNumber",
+    allServicesOpen = "allServicesOpen",
     dietaryRestrictions = "dietaryRestrictions",
     allowedMealTypes = "allowedMealTypes",
     allowedMealKinds = "allowedMealKinds",

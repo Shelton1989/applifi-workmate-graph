@@ -4,6 +4,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.PatientProfileScalarWhereWithAggregatesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const BoolNullableWithAggregatesFilter_1 = require("../inputs/BoolNullableWithAggregatesFilter");
 const DateTimeWithAggregatesFilter_1 = require("../inputs/DateTimeWithAggregatesFilter");
 const EnumDIETARY_RESTRICTIONSNullableListFilter_1 = require("../inputs/EnumDIETARY_RESTRICTIONSNullableListFilter");
 const EnumMEAL_KINDNullableListFilter_1 = require("../inputs/EnumMEAL_KINDNullableListFilter");
@@ -61,6 +62,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], PatientProfileScalarWhereWithAggregatesInput.prototype, "wardNumber", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BoolNullableWithAggregatesFilter_1.BoolNullableWithAggregatesFilter)
+], PatientProfileScalarWhereWithAggregatesInput.prototype, "allServicesOpen", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumDIETARY_RESTRICTIONSNullableListFilter_1.EnumDIETARY_RESTRICTIONSNullableListFilter, {
         nullable: true

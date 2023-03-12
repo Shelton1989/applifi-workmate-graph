@@ -128,6 +128,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
 ], UserScalarWhereInput.prototype, "isVerified", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
+], UserScalarWhereInput.prototype, "isActive", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
         nullable: true
     }),

@@ -5,6 +5,7 @@ export declare class PatientProfile {
     identityType?: string | null;
     bedNumber?: string | null;
     wardNumber?: string | null;
+    allServicesOpen?: boolean | null;
     dietaryRestrictions: Array<"NONE" | "VEGETARIAN" | "VEGAN" | "GLUTEN_FREE" | "DAIRY_FREE" | "NUT_FREE" | "EGG_FREE" | "PORK_FREE" | "HALAL" | "KOSHER" | "PALEO" | "OTHER">;
     allowedMealTypes: Array<"BREAKFAST" | "LUNCH" | "DINNER" | "SNACK">;
     allowedMealKinds: Array<"FLUID" | "LIGHT" | "FULL">;

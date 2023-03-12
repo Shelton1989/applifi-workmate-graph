@@ -29,6 +29,7 @@ export declare class User {
     hasAcceptedTerms?: boolean | null;
     isFirstTimeUser?: boolean | null;
     isVerified?: boolean | null;
+    isActive?: boolean | null;
     NotificationSettings?: NotificationSettings | null;
     PatientProfile?: PatientProfile | null;
     Notifications?: Notification[];

@@ -4,6 +4,7 @@ export declare class PatientProfileCountOrderByAggregateInput {
     identityType?: "asc" | "desc" | undefined;
     bedNumber?: "asc" | "desc" | undefined;
     wardNumber?: "asc" | "desc" | undefined;
+    allServicesOpen?: "asc" | "desc" | undefined;
     dietaryRestrictions?: "asc" | "desc" | undefined;
     allowedMealTypes?: "asc" | "desc" | undefined;
     allowedMealKinds?: "asc" | "desc" | undefined;

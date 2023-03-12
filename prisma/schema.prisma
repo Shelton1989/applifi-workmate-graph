@@ -56,6 +56,7 @@ model User {
   hasAcceptedTerms Boolean? @default(false)
   isFirstTimeUser  Boolean? @default(true)
   isVerified       Boolean? @default(false)
+  isActive         Boolean? @default(true)
 
   NotificationSettings NotificationSettings?
   PatientProfile       PatientProfile?
@@ -123,6 +124,8 @@ model PatientProfile {
 
   bedNumber  String?
   wardNumber String?
+
+  allServicesOpen Boolean? @default(false)
 
   dietaryRestrictions DIETARY_RESTRICTIONS[]
   allowedMealTypes    MEAL_TYPES[]

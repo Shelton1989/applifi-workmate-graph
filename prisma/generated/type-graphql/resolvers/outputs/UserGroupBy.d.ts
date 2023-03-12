@@ -18,6 +18,7 @@ export declare class UserGroupBy {
     hasAcceptedTerms: boolean | null;
     isFirstTimeUser: boolean | null;
     isVerified: boolean | null;
+    isActive: boolean | null;
     mealIds: string[] | null;
     createdAt: Date;
     updatedAt: Date;

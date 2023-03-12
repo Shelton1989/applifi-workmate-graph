@@ -98,6 +98,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Boolean)
 ], UserCreateManyTenantInput.prototype, "isVerified", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], UserCreateManyTenantInput.prototype, "isActive", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserCreatemealIdsInput_1.UserCreatemealIdsInput, {
         nullable: true
     }),

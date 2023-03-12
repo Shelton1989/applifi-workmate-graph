@@ -7,5 +7,5 @@ export declare class FindFirstPatientProfileArgs {
     cursor?: PatientProfileWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "identityNumber" | "identityType" | "bedNumber" | "wardNumber" | "dietaryRestrictions" | "allowedMealTypes" | "allowedMealKinds" | "doctorSpecificDiets" | "specialDiets" | "userId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "identityNumber" | "identityType" | "bedNumber" | "wardNumber" | "allServicesOpen" | "dietaryRestrictions" | "allowedMealTypes" | "allowedMealKinds" | "doctorSpecificDiets" | "specialDiets" | "userId" | "createdAt" | "updatedAt"> | undefined;
 }

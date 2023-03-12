@@ -15,6 +15,7 @@ export declare class UserCountOrderByAggregateInput {
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
     isVerified?: "asc" | "desc" | undefined;
+    isActive?: "asc" | "desc" | undefined;
     mealIds?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

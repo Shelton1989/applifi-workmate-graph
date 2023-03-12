@@ -16,6 +16,7 @@ export declare class UserCreateManyTenantInput {
     hasAcceptedTerms?: boolean | undefined;
     isFirstTimeUser?: boolean | undefined;
     isVerified?: boolean | undefined;
+    isActive?: boolean | undefined;
     mealIds?: UserCreatemealIdsInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

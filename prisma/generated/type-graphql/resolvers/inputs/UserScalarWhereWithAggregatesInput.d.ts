@@ -25,6 +25,7 @@ export declare class UserScalarWhereWithAggregatesInput {
     hasAcceptedTerms?: BoolNullableWithAggregatesFilter | undefined;
     isFirstTimeUser?: BoolNullableWithAggregatesFilter | undefined;
     isVerified?: BoolNullableWithAggregatesFilter | undefined;
+    isActive?: BoolNullableWithAggregatesFilter | undefined;
     mealIds?: StringNullableListFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;

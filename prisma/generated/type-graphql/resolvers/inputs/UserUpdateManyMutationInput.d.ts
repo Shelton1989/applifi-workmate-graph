@@ -20,6 +20,7 @@ export declare class UserUpdateManyMutationInput {
     hasAcceptedTerms?: NullableBoolFieldUpdateOperationsInput | undefined;
     isFirstTimeUser?: NullableBoolFieldUpdateOperationsInput | undefined;
     isVerified?: NullableBoolFieldUpdateOperationsInput | undefined;
+    isActive?: NullableBoolFieldUpdateOperationsInput | undefined;
     mealIds?: UserUpdatemealIdsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;

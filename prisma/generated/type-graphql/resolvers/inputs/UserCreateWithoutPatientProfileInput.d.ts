@@ -29,6 +29,7 @@ export declare class UserCreateWithoutPatientProfileInput {
     hasAcceptedTerms?: boolean | undefined;
     isFirstTimeUser?: boolean | undefined;
     isVerified?: boolean | undefined;
+    isActive?: boolean | undefined;
     NotificationSettings?: NotificationSettingsCreateNestedOneWithoutUserInput | undefined;
     Notifications?: NotificationCreateNestedManyWithoutUserInput | undefined;
     Activity?: NotificationCreateNestedManyWithoutActorInput | undefined;

@@ -4,7 +4,7 @@ import { PatientProfileWhereInput } from "../../../inputs/PatientProfileWhereInp
 export declare class GroupByPatientProfileArgs {
     where?: PatientProfileWhereInput | undefined;
     orderBy?: PatientProfileOrderByWithAggregationInput[] | undefined;
-    by: Array<"id" | "identityNumber" | "identityType" | "bedNumber" | "wardNumber" | "dietaryRestrictions" | "allowedMealTypes" | "allowedMealKinds" | "doctorSpecificDiets" | "specialDiets" | "userId" | "createdAt" | "updatedAt">;
+    by: Array<"id" | "identityNumber" | "identityType" | "bedNumber" | "wardNumber" | "allServicesOpen" | "dietaryRestrictions" | "allowedMealTypes" | "allowedMealKinds" | "doctorSpecificDiets" | "specialDiets" | "userId" | "createdAt" | "updatedAt">;
     having?: PatientProfileScalarWhereWithAggregatesInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;

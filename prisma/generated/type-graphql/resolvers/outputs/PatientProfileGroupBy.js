@@ -43,6 +43,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], PatientProfileGroupBy.prototype, "wardNumber", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => Boolean, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", Boolean)
+], PatientProfileGroupBy.prototype, "allServicesOpen", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => [DIETARY_RESTRICTIONS_1.DIETARY_RESTRICTIONS], {
         nullable: true
     }),
