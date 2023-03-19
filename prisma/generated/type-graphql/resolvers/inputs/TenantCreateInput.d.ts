@@ -1,8 +1,8 @@
 import { LocationCreateNestedManyWithoutTenantInput } from "../inputs/LocationCreateNestedManyWithoutTenantInput";
 import { MealCreateNestedManyWithoutTenantInput } from "../inputs/MealCreateNestedManyWithoutTenantInput";
 import { OrderCreateNestedManyWithoutTenantInput } from "../inputs/OrderCreateNestedManyWithoutTenantInput";
-import { TenantCreateMealImagesInput } from "../inputs/TenantCreateMealImagesInput";
 import { TenantCreateacceptedUserEmailDomainsInput } from "../inputs/TenantCreateacceptedUserEmailDomainsInput";
+import { TenantCreateexperienceImagesInput } from "../inputs/TenantCreateexperienceImagesInput";
 import { UserCreateNestedManyWithoutTenantInput } from "../inputs/UserCreateNestedManyWithoutTenantInput";
 export declare class TenantCreateInput {
     id?: string | undefined;
@@ -12,7 +12,7 @@ export declare class TenantCreateInput {
     logoImage?: string | undefined;
     avatar?: string | undefined;
     coverImage?: string | undefined;
-    MealImages?: TenantCreateMealImagesInput | undefined;
+    experienceImages?: TenantCreateexperienceImagesInput | undefined;
     Users?: UserCreateNestedManyWithoutTenantInput | undefined;
     Meals?: MealCreateNestedManyWithoutTenantInput | undefined;
     Orders?: OrderCreateNestedManyWithoutTenantInput | undefined;

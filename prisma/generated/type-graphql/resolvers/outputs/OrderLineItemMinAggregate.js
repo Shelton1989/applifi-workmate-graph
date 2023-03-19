@@ -40,7 +40,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], OrderLineItemMinAggregate.prototype, "bookingId", void 0);
+], OrderLineItemMinAggregate.prototype, "orderId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

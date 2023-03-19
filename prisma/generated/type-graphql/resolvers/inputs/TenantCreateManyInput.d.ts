@@ -1,5 +1,5 @@
-import { TenantCreateMealImagesInput } from "../inputs/TenantCreateMealImagesInput";
 import { TenantCreateacceptedUserEmailDomainsInput } from "../inputs/TenantCreateacceptedUserEmailDomainsInput";
+import { TenantCreateexperienceImagesInput } from "../inputs/TenantCreateexperienceImagesInput";
 export declare class TenantCreateManyInput {
     id?: string | undefined;
     name: string;
@@ -8,7 +8,7 @@ export declare class TenantCreateManyInput {
     logoImage?: string | undefined;
     avatar?: string | undefined;
     coverImage?: string | undefined;
-    MealImages?: TenantCreateMealImagesInput | undefined;
+    experienceImages?: TenantCreateexperienceImagesInput | undefined;
     acceptedUserEmailDomains?: TenantCreateacceptedUserEmailDomainsInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

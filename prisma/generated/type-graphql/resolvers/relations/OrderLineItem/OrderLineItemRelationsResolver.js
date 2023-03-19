@@ -23,12 +23,12 @@ let OrderLineItemRelationsResolver = class OrderLineItemRelationsResolver {
             },
         }).selectedMealItemOption({});
     }
-    async Booking(orderLineItem, ctx) {
+    async Order(orderLineItem, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).orderLineItem.findUnique({
             where: {
                 id: orderLineItem.id,
             },
-        }).Booking({});
+        }).Order({});
     }
 };
 tslib_1.__decorate([
@@ -60,7 +60,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Function),
     tslib_1.__metadata("design:paramtypes", [OrderLineItem_1.OrderLineItem, Object]),
     tslib_1.__metadata("design:returntype", Promise)
-], OrderLineItemRelationsResolver.prototype, "Booking", null);
+], OrderLineItemRelationsResolver.prototype, "Order", null);
 OrderLineItemRelationsResolver = tslib_1.__decorate([
     TypeGraphQL.Resolver(_of => OrderLineItem_1.OrderLineItem)
 ], OrderLineItemRelationsResolver);

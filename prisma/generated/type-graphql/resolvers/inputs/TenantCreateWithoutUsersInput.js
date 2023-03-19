@@ -6,8 +6,8 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const LocationCreateNestedManyWithoutTenantInput_1 = require("../inputs/LocationCreateNestedManyWithoutTenantInput");
 const MealCreateNestedManyWithoutTenantInput_1 = require("../inputs/MealCreateNestedManyWithoutTenantInput");
 const OrderCreateNestedManyWithoutTenantInput_1 = require("../inputs/OrderCreateNestedManyWithoutTenantInput");
-const TenantCreateMealImagesInput_1 = require("../inputs/TenantCreateMealImagesInput");
 const TenantCreateacceptedUserEmailDomainsInput_1 = require("../inputs/TenantCreateacceptedUserEmailDomainsInput");
+const TenantCreateexperienceImagesInput_1 = require("../inputs/TenantCreateexperienceImagesInput");
 let TenantCreateWithoutUsersInput = class TenantCreateWithoutUsersInput {
 };
 tslib_1.__decorate([
@@ -53,11 +53,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], TenantCreateWithoutUsersInput.prototype, "coverImage", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TenantCreateMealImagesInput_1.TenantCreateMealImagesInput, {
+    TypeGraphQL.Field(_type => TenantCreateexperienceImagesInput_1.TenantCreateexperienceImagesInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", TenantCreateMealImagesInput_1.TenantCreateMealImagesInput)
-], TenantCreateWithoutUsersInput.prototype, "MealImages", void 0);
+    tslib_1.__metadata("design:type", TenantCreateexperienceImagesInput_1.TenantCreateexperienceImagesInput)
+], TenantCreateWithoutUsersInput.prototype, "experienceImages", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => MealCreateNestedManyWithoutTenantInput_1.MealCreateNestedManyWithoutTenantInput, {
         nullable: true

@@ -8,13 +8,13 @@ const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpd
 const EnumPUBLISH_STATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumPUBLISH_STATUSFieldUpdateOperationsInput");
 const MealAvailabilityUpdateManyWithoutMealInput_1 = require("../inputs/MealAvailabilityUpdateManyWithoutMealInput");
 const MealItemUpdateManyWithoutMealsInput_1 = require("../inputs/MealItemUpdateManyWithoutMealsInput");
-const MealUpdateallowedMealKindsInput_1 = require("../inputs/MealUpdateallowedMealKindsInput");
-const MealUpdateallowedMealTypesInput_1 = require("../inputs/MealUpdateallowedMealTypesInput");
 const MealUpdatedietaryRestrictionsInput_1 = require("../inputs/MealUpdatedietaryRestrictionsInput");
 const MealUpdatedoctorSpecificDietsInput_1 = require("../inputs/MealUpdatedoctorSpecificDietsInput");
 const MealUpdategalleryInput_1 = require("../inputs/MealUpdategalleryInput");
 const MealUpdateitemIdsInput_1 = require("../inputs/MealUpdateitemIdsInput");
 const MealUpdatelikedByIdsInput_1 = require("../inputs/MealUpdatelikedByIdsInput");
+const MealUpdatemealKindsInput_1 = require("../inputs/MealUpdatemealKindsInput");
+const MealUpdatemealTypesInput_1 = require("../inputs/MealUpdatemealTypesInput");
 const MealUpdatespecialDietsInput_1 = require("../inputs/MealUpdatespecialDietsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const OrderUpdateManyWithoutMealInput_1 = require("../inputs/OrderUpdateManyWithoutMealInput");
@@ -55,17 +55,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", MealUpdatedietaryRestrictionsInput_1.MealUpdatedietaryRestrictionsInput)
 ], MealUpdateWithoutFeaturesInput.prototype, "dietaryRestrictions", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => MealUpdateallowedMealTypesInput_1.MealUpdateallowedMealTypesInput, {
+    TypeGraphQL.Field(_type => MealUpdatemealTypesInput_1.MealUpdatemealTypesInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", MealUpdateallowedMealTypesInput_1.MealUpdateallowedMealTypesInput)
-], MealUpdateWithoutFeaturesInput.prototype, "allowedMealTypes", void 0);
+    tslib_1.__metadata("design:type", MealUpdatemealTypesInput_1.MealUpdatemealTypesInput)
+], MealUpdateWithoutFeaturesInput.prototype, "mealTypes", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => MealUpdateallowedMealKindsInput_1.MealUpdateallowedMealKindsInput, {
+    TypeGraphQL.Field(_type => MealUpdatemealKindsInput_1.MealUpdatemealKindsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", MealUpdateallowedMealKindsInput_1.MealUpdateallowedMealKindsInput)
-], MealUpdateWithoutFeaturesInput.prototype, "allowedMealKinds", void 0);
+    tslib_1.__metadata("design:type", MealUpdatemealKindsInput_1.MealUpdatemealKindsInput)
+], MealUpdateWithoutFeaturesInput.prototype, "mealKinds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => MealUpdatedoctorSpecificDietsInput_1.MealUpdatedoctorSpecificDietsInput, {
         nullable: true

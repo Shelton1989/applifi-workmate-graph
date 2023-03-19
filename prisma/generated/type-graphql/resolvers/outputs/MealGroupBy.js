@@ -54,13 +54,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Array)
-], MealGroupBy.prototype, "allowedMealTypes", void 0);
+], MealGroupBy.prototype, "mealTypes", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => [MEAL_KIND_1.MEAL_KIND], {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Array)
-], MealGroupBy.prototype, "allowedMealKinds", void 0);
+], MealGroupBy.prototype, "mealKinds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => [DIETARY_RESTRICTIONS_1.DIETARY_RESTRICTIONS], {
         nullable: true

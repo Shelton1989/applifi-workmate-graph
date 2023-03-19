@@ -8,8 +8,8 @@ const LocationUpdateManyWithoutTenantInput_1 = require("../inputs/LocationUpdate
 const MealUpdateManyWithoutTenantInput_1 = require("../inputs/MealUpdateManyWithoutTenantInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
-const TenantUpdateMealImagesInput_1 = require("../inputs/TenantUpdateMealImagesInput");
 const TenantUpdateacceptedUserEmailDomainsInput_1 = require("../inputs/TenantUpdateacceptedUserEmailDomainsInput");
+const TenantUpdateexperienceImagesInput_1 = require("../inputs/TenantUpdateexperienceImagesInput");
 const UserUpdateManyWithoutTenantInput_1 = require("../inputs/UserUpdateManyWithoutTenantInput");
 let TenantUpdateWithoutOrdersInput = class TenantUpdateWithoutOrdersInput {
 };
@@ -50,11 +50,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], TenantUpdateWithoutOrdersInput.prototype, "coverImage", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TenantUpdateMealImagesInput_1.TenantUpdateMealImagesInput, {
+    TypeGraphQL.Field(_type => TenantUpdateexperienceImagesInput_1.TenantUpdateexperienceImagesInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", TenantUpdateMealImagesInput_1.TenantUpdateMealImagesInput)
-], TenantUpdateWithoutOrdersInput.prototype, "MealImages", void 0);
+    tslib_1.__metadata("design:type", TenantUpdateexperienceImagesInput_1.TenantUpdateexperienceImagesInput)
+], TenantUpdateWithoutOrdersInput.prototype, "experienceImages", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserUpdateManyWithoutTenantInput_1.UserUpdateManyWithoutTenantInput, {
         nullable: true

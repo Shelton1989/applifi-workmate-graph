@@ -4,7 +4,7 @@ export declare enum OrderLineItemScalarFieldEnum {
     comments = "comments",
     mealItemId = "mealItemId",
     mealItemOptionId = "mealItemOptionId",
-    bookingId = "bookingId",
+    orderId = "orderId",
     createdAt = "createdAt",
     updatedAt = "updatedAt"
 }

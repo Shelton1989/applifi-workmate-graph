@@ -62,7 +62,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringWithAggregatesFilter_1.StringWithAggregatesFilter)
-], OrderLineItemScalarWhereWithAggregatesInput.prototype, "bookingId", void 0);
+], OrderLineItemScalarWhereWithAggregatesInput.prototype, "orderId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeWithAggregatesFilter_1.DateTimeWithAggregatesFilter, {
         nullable: true

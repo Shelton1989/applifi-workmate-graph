@@ -6,13 +6,13 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const AggregateRatingCreateNestedOneWithoutMealInput_1 = require("../inputs/AggregateRatingCreateNestedOneWithoutMealInput");
 const FeaturesCreateNestedManyWithoutMealInput_1 = require("../inputs/FeaturesCreateNestedManyWithoutMealInput");
 const MealAvailabilityCreateNestedManyWithoutMealInput_1 = require("../inputs/MealAvailabilityCreateNestedManyWithoutMealInput");
-const MealCreateallowedMealKindsInput_1 = require("../inputs/MealCreateallowedMealKindsInput");
-const MealCreateallowedMealTypesInput_1 = require("../inputs/MealCreateallowedMealTypesInput");
 const MealCreatedietaryRestrictionsInput_1 = require("../inputs/MealCreatedietaryRestrictionsInput");
 const MealCreatedoctorSpecificDietsInput_1 = require("../inputs/MealCreatedoctorSpecificDietsInput");
 const MealCreategalleryInput_1 = require("../inputs/MealCreategalleryInput");
 const MealCreateitemIdsInput_1 = require("../inputs/MealCreateitemIdsInput");
 const MealCreatelikedByIdsInput_1 = require("../inputs/MealCreatelikedByIdsInput");
+const MealCreatemealKindsInput_1 = require("../inputs/MealCreatemealKindsInput");
+const MealCreatemealTypesInput_1 = require("../inputs/MealCreatemealTypesInput");
 const MealCreatespecialDietsInput_1 = require("../inputs/MealCreatespecialDietsInput");
 const MealItemCreateNestedManyWithoutMealsInput_1 = require("../inputs/MealItemCreateNestedManyWithoutMealsInput");
 const OrderCreateNestedManyWithoutMealInput_1 = require("../inputs/OrderCreateNestedManyWithoutMealInput");
@@ -59,17 +59,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", MealCreatedietaryRestrictionsInput_1.MealCreatedietaryRestrictionsInput)
 ], MealCreateWithoutPostsInput.prototype, "dietaryRestrictions", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => MealCreateallowedMealTypesInput_1.MealCreateallowedMealTypesInput, {
+    TypeGraphQL.Field(_type => MealCreatemealTypesInput_1.MealCreatemealTypesInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", MealCreateallowedMealTypesInput_1.MealCreateallowedMealTypesInput)
-], MealCreateWithoutPostsInput.prototype, "allowedMealTypes", void 0);
+    tslib_1.__metadata("design:type", MealCreatemealTypesInput_1.MealCreatemealTypesInput)
+], MealCreateWithoutPostsInput.prototype, "mealTypes", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => MealCreateallowedMealKindsInput_1.MealCreateallowedMealKindsInput, {
+    TypeGraphQL.Field(_type => MealCreatemealKindsInput_1.MealCreatemealKindsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", MealCreateallowedMealKindsInput_1.MealCreateallowedMealKindsInput)
-], MealCreateWithoutPostsInput.prototype, "allowedMealKinds", void 0);
+    tslib_1.__metadata("design:type", MealCreatemealKindsInput_1.MealCreatemealKindsInput)
+], MealCreateWithoutPostsInput.prototype, "mealKinds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => MealCreatedoctorSpecificDietsInput_1.MealCreatedoctorSpecificDietsInput, {
         nullable: true

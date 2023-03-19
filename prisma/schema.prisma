@@ -96,6 +96,7 @@ enum MEAL_TYPES {
 }
 
 enum SPECIAL_DIETS {
+  NONE
   MIXED_FLUID
   CLEAR_FLUID
   PUREED
@@ -168,7 +169,7 @@ model Tenant {
   logoImage  String?
   avatar     String?
   coverImage String?
-  MealImages String[]
+  experienceImages String[]
 
   Users User[]
   Meals Meal[]
@@ -394,8 +395,8 @@ model Meal {
   description String?
 
   dietaryRestrictions DIETARY_RESTRICTIONS[]
-  allowedMealTypes    MEAL_TYPES[]
-  allowedMealKinds    MEAL_KIND[]
+  mealTypes    MEAL_TYPES[]
+  mealKinds    MEAL_KIND[]
   doctorSpecificDiets DIETARY_RESTRICTIONS[]
   specialDiets        SPECIAL_DIETS[]
 
@@ -503,8 +504,8 @@ model OrderLineItem {
   selectedMealItemOption MealItemOption? @relation(fields: [mealItemOptionId], references: [id])
   mealItemOptionId       String?
 
-  Booking   Order  @relation(fields: [bookingId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  bookingId String
+  Order   Order  @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  orderId String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

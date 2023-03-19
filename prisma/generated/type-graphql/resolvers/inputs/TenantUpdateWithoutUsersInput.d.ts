@@ -4,8 +4,8 @@ import { MealUpdateManyWithoutTenantInput } from "../inputs/MealUpdateManyWithou
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { OrderUpdateManyWithoutTenantInput } from "../inputs/OrderUpdateManyWithoutTenantInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
-import { TenantUpdateMealImagesInput } from "../inputs/TenantUpdateMealImagesInput";
 import { TenantUpdateacceptedUserEmailDomainsInput } from "../inputs/TenantUpdateacceptedUserEmailDomainsInput";
+import { TenantUpdateexperienceImagesInput } from "../inputs/TenantUpdateexperienceImagesInput";
 export declare class TenantUpdateWithoutUsersInput {
     name?: StringFieldUpdateOperationsInput | undefined;
     slug?: StringFieldUpdateOperationsInput | undefined;
@@ -13,7 +13,7 @@ export declare class TenantUpdateWithoutUsersInput {
     logoImage?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;
     coverImage?: NullableStringFieldUpdateOperationsInput | undefined;
-    MealImages?: TenantUpdateMealImagesInput | undefined;
+    experienceImages?: TenantUpdateexperienceImagesInput | undefined;
     Meals?: MealUpdateManyWithoutTenantInput | undefined;
     Orders?: OrderUpdateManyWithoutTenantInput | undefined;
     Locations?: LocationUpdateManyWithoutTenantInput | undefined;

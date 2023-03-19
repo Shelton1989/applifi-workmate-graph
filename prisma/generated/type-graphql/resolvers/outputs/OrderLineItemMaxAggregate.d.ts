@@ -4,7 +4,7 @@ export declare class OrderLineItemMaxAggregate {
     comments: string | null;
     mealItemId: string | null;
     mealItemOptionId: string | null;
-    bookingId: string | null;
+    orderId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }

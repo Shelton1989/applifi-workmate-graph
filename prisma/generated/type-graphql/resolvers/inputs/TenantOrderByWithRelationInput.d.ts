@@ -10,7 +10,7 @@ export declare class TenantOrderByWithRelationInput {
     logoImage?: "asc" | "desc" | undefined;
     avatar?: "asc" | "desc" | undefined;
     coverImage?: "asc" | "desc" | undefined;
-    MealImages?: "asc" | "desc" | undefined;
+    experienceImages?: "asc" | "desc" | undefined;
     Users?: UserOrderByRelationAggregateInput | undefined;
     Meals?: MealOrderByRelationAggregateInput | undefined;
     Orders?: OrderOrderByRelationAggregateInput | undefined;

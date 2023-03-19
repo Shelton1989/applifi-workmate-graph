@@ -7,5 +7,5 @@ export declare class FindManyMealArgs {
     cursor?: MealWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "tenantId" | "productLink" | "title" | "description" | "dietaryRestrictions" | "allowedMealTypes" | "allowedMealKinds" | "doctorSpecificDiets" | "specialDiets" | "itemIds" | "photo" | "gallery" | "publishStatus" | "likedByIds" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "tenantId" | "productLink" | "title" | "description" | "dietaryRestrictions" | "mealTypes" | "mealKinds" | "doctorSpecificDiets" | "specialDiets" | "itemIds" | "photo" | "gallery" | "publishStatus" | "likedByIds" | "createdAt" | "updatedAt"> | undefined;
 }

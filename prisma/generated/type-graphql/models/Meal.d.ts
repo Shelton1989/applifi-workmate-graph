@@ -16,10 +16,10 @@ export declare class Meal {
     title?: string | null;
     description?: string | null;
     dietaryRestrictions: Array<"NONE" | "VEGETARIAN" | "VEGAN" | "GLUTEN_FREE" | "DAIRY_FREE" | "NUT_FREE" | "EGG_FREE" | "PORK_FREE" | "HALAL" | "KOSHER" | "PALEO" | "OTHER">;
-    allowedMealTypes: Array<"BREAKFAST" | "LUNCH" | "DINNER" | "SNACK">;
-    allowedMealKinds: Array<"FLUID" | "LIGHT" | "FULL">;
+    mealTypes: Array<"BREAKFAST" | "LUNCH" | "DINNER" | "SNACK">;
+    mealKinds: Array<"FLUID" | "LIGHT" | "FULL">;
     doctorSpecificDiets: Array<"NONE" | "VEGETARIAN" | "VEGAN" | "GLUTEN_FREE" | "DAIRY_FREE" | "NUT_FREE" | "EGG_FREE" | "PORK_FREE" | "HALAL" | "KOSHER" | "PALEO" | "OTHER">;
-    specialDiets: Array<"MIXED_FLUID" | "CLEAR_FLUID" | "PUREED">;
+    specialDiets: Array<"NONE" | "MIXED_FLUID" | "CLEAR_FLUID" | "PUREED">;
     Items?: MealItem[];
     itemIds: string[];
     Availability?: MealAvailability[];

@@ -12,7 +12,7 @@ var TenantScalarFieldEnum;
     TenantScalarFieldEnum["logoImage"] = "logoImage";
     TenantScalarFieldEnum["avatar"] = "avatar";
     TenantScalarFieldEnum["coverImage"] = "coverImage";
-    TenantScalarFieldEnum["MealImages"] = "MealImages";
+    TenantScalarFieldEnum["experienceImages"] = "experienceImages";
     TenantScalarFieldEnum["acceptedUserEmailDomains"] = "acceptedUserEmailDomains";
     TenantScalarFieldEnum["createdAt"] = "createdAt";
     TenantScalarFieldEnum["updatedAt"] = "updatedAt";

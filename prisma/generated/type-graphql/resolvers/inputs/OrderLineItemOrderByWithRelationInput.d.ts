@@ -9,8 +9,8 @@ export declare class OrderLineItemOrderByWithRelationInput {
     mealItemId?: "asc" | "desc" | undefined;
     selectedMealItemOption?: MealItemOptionOrderByWithRelationInput | undefined;
     mealItemOptionId?: "asc" | "desc" | undefined;
-    Booking?: OrderOrderByWithRelationInput | undefined;
-    bookingId?: "asc" | "desc" | undefined;
+    Order?: OrderOrderByWithRelationInput | undefined;
+    orderId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

@@ -4,7 +4,7 @@ export declare class OrderLineItemCountAggregate {
     comments: number;
     mealItemId: number;
     mealItemOptionId: number;
-    bookingId: number;
+    orderId: number;
     createdAt: number;
     updatedAt: number;
     _all: number;

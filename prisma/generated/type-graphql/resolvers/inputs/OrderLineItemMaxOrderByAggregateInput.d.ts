@@ -4,7 +4,7 @@ export declare class OrderLineItemMaxOrderByAggregateInput {
     comments?: "asc" | "desc" | undefined;
     mealItemId?: "asc" | "desc" | undefined;
     mealItemOptionId?: "asc" | "desc" | undefined;
-    bookingId?: "asc" | "desc" | undefined;
+    orderId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

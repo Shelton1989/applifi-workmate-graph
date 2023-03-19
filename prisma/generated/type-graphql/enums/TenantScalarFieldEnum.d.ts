@@ -6,7 +6,7 @@ export declare enum TenantScalarFieldEnum {
     logoImage = "logoImage",
     avatar = "avatar",
     coverImage = "coverImage",
-    MealImages = "MealImages",
+    experienceImages = "experienceImages",
     acceptedUserEmailDomains = "acceptedUserEmailDomains",
     createdAt = "createdAt",
     updatedAt = "updatedAt"

@@ -3,13 +3,13 @@ import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdat
 import { EnumPUBLISH_STATUSFieldUpdateOperationsInput } from "../inputs/EnumPUBLISH_STATUSFieldUpdateOperationsInput";
 import { FeaturesUpdateManyWithoutMealInput } from "../inputs/FeaturesUpdateManyWithoutMealInput";
 import { MealItemUpdateManyWithoutMealsInput } from "../inputs/MealItemUpdateManyWithoutMealsInput";
-import { MealUpdateallowedMealKindsInput } from "../inputs/MealUpdateallowedMealKindsInput";
-import { MealUpdateallowedMealTypesInput } from "../inputs/MealUpdateallowedMealTypesInput";
 import { MealUpdatedietaryRestrictionsInput } from "../inputs/MealUpdatedietaryRestrictionsInput";
 import { MealUpdatedoctorSpecificDietsInput } from "../inputs/MealUpdatedoctorSpecificDietsInput";
 import { MealUpdategalleryInput } from "../inputs/MealUpdategalleryInput";
 import { MealUpdateitemIdsInput } from "../inputs/MealUpdateitemIdsInput";
 import { MealUpdatelikedByIdsInput } from "../inputs/MealUpdatelikedByIdsInput";
+import { MealUpdatemealKindsInput } from "../inputs/MealUpdatemealKindsInput";
+import { MealUpdatemealTypesInput } from "../inputs/MealUpdatemealTypesInput";
 import { MealUpdatespecialDietsInput } from "../inputs/MealUpdatespecialDietsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { OrderUpdateManyWithoutMealInput } from "../inputs/OrderUpdateManyWithoutMealInput";
@@ -23,8 +23,8 @@ export declare class MealUpdateWithoutAvailabilityInput {
     title?: NullableStringFieldUpdateOperationsInput | undefined;
     description?: NullableStringFieldUpdateOperationsInput | undefined;
     dietaryRestrictions?: MealUpdatedietaryRestrictionsInput | undefined;
-    allowedMealTypes?: MealUpdateallowedMealTypesInput | undefined;
-    allowedMealKinds?: MealUpdateallowedMealKindsInput | undefined;
+    mealTypes?: MealUpdatemealTypesInput | undefined;
+    mealKinds?: MealUpdatemealKindsInput | undefined;
     doctorSpecificDiets?: MealUpdatedoctorSpecificDietsInput | undefined;
     specialDiets?: MealUpdatespecialDietsInput | undefined;
     Items?: MealItemUpdateManyWithoutMealsInput | undefined;

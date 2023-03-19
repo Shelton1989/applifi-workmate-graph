@@ -8,7 +8,7 @@ export declare class OrderLineItemUpdateInput {
     comments?: NullableStringFieldUpdateOperationsInput | undefined;
     selectedMealItem?: MealItemUpdateOneWithoutOrderLineItemsInput | undefined;
     selectedMealItemOption?: MealItemOptionUpdateOneWithoutOrderLineItemsInput | undefined;
-    Booking?: OrderUpdateOneRequiredWithoutItemsInput | undefined;
+    Order?: OrderUpdateOneRequiredWithoutItemsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

@@ -17,7 +17,7 @@ export declare class TenantWhereInput {
     logoImage?: StringNullableFilter | undefined;
     avatar?: StringNullableFilter | undefined;
     coverImage?: StringNullableFilter | undefined;
-    MealImages?: StringNullableListFilter | undefined;
+    experienceImages?: StringNullableListFilter | undefined;
     Users?: UserListRelationFilter | undefined;
     Meals?: MealListRelationFilter | undefined;
     Orders?: OrderListRelationFilter | undefined;

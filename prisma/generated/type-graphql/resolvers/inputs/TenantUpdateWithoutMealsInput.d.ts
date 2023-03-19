@@ -3,8 +3,8 @@ import { LocationUpdateManyWithoutTenantInput } from "../inputs/LocationUpdateMa
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { OrderUpdateManyWithoutTenantInput } from "../inputs/OrderUpdateManyWithoutTenantInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
-import { TenantUpdateMealImagesInput } from "../inputs/TenantUpdateMealImagesInput";
 import { TenantUpdateacceptedUserEmailDomainsInput } from "../inputs/TenantUpdateacceptedUserEmailDomainsInput";
+import { TenantUpdateexperienceImagesInput } from "../inputs/TenantUpdateexperienceImagesInput";
 import { UserUpdateManyWithoutTenantInput } from "../inputs/UserUpdateManyWithoutTenantInput";
 export declare class TenantUpdateWithoutMealsInput {
     name?: StringFieldUpdateOperationsInput | undefined;
@@ -13,7 +13,7 @@ export declare class TenantUpdateWithoutMealsInput {
     logoImage?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;
     coverImage?: NullableStringFieldUpdateOperationsInput | undefined;
-    MealImages?: TenantUpdateMealImagesInput | undefined;
+    experienceImages?: TenantUpdateexperienceImagesInput | undefined;
     Users?: UserUpdateManyWithoutTenantInput | undefined;
     Orders?: OrderUpdateManyWithoutTenantInput | undefined;
     Locations?: LocationUpdateManyWithoutTenantInput | undefined;

@@ -34,7 +34,7 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)
-], OrderLineItemCreateManySelectedMealItemOptionInput.prototype, "bookingId", void 0);
+], OrderLineItemCreateManySelectedMealItemOptionInput.prototype, "orderId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

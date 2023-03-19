@@ -6,7 +6,7 @@ export declare class OrderLineItemUpdateWithoutSelectedMealItemOptionInput {
     details?: NullableStringFieldUpdateOperationsInput | undefined;
     comments?: NullableStringFieldUpdateOperationsInput | undefined;
     selectedMealItem?: MealItemUpdateOneWithoutOrderLineItemsInput | undefined;
-    Booking?: OrderUpdateOneRequiredWithoutItemsInput | undefined;
+    Order?: OrderUpdateOneRequiredWithoutItemsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

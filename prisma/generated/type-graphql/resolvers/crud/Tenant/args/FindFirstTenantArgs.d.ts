@@ -7,5 +7,5 @@ export declare class FindFirstTenantArgs {
     cursor?: TenantWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "name" | "slug" | "description" | "logoImage" | "avatar" | "coverImage" | "MealImages" | "acceptedUserEmailDomains" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "name" | "slug" | "description" | "logoImage" | "avatar" | "coverImage" | "experienceImages" | "acceptedUserEmailDomains" | "createdAt" | "updatedAt"> | undefined;
 }

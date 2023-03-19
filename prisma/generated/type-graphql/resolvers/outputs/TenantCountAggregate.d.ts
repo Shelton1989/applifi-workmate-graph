@@ -6,7 +6,7 @@ export declare class TenantCountAggregate {
     logoImage: number;
     avatar: number;
     coverImage: number;
-    MealImages: number;
+    experienceImages: number;
     acceptedUserEmailDomains: number;
     createdAt: number;
     updatedAt: number;

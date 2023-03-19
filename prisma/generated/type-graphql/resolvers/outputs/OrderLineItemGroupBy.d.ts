@@ -7,7 +7,7 @@ export declare class OrderLineItemGroupBy {
     comments: string | null;
     mealItemId: string | null;
     mealItemOptionId: string | null;
-    bookingId: string;
+    orderId: string;
     createdAt: Date;
     updatedAt: Date;
     _count: OrderLineItemCountAggregate | null;

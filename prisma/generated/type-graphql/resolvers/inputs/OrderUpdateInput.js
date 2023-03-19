@@ -6,7 +6,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const EnumORDER_STATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumORDER_STATUSFieldUpdateOperationsInput");
 const MealUpdateOneRequiredWithoutOrdersInput_1 = require("../inputs/MealUpdateOneRequiredWithoutOrdersInput");
-const OrderLineItemUpdateManyWithoutBookingInput_1 = require("../inputs/OrderLineItemUpdateManyWithoutBookingInput");
+const OrderLineItemUpdateManyWithoutOrderInput_1 = require("../inputs/OrderLineItemUpdateManyWithoutOrderInput");
 const TenantUpdateOneRequiredWithoutOrdersInput_1 = require("../inputs/TenantUpdateOneRequiredWithoutOrdersInput");
 const UserUpdateOneRequiredWithoutBookingsInput_1 = require("../inputs/UserUpdateOneRequiredWithoutBookingsInput");
 let OrderUpdateInput = class OrderUpdateInput {
@@ -36,10 +36,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", TenantUpdateOneRequiredWithoutOrdersInput_1.TenantUpdateOneRequiredWithoutOrdersInput)
 ], OrderUpdateInput.prototype, "Tenant", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderLineItemUpdateManyWithoutBookingInput_1.OrderLineItemUpdateManyWithoutBookingInput, {
+    TypeGraphQL.Field(_type => OrderLineItemUpdateManyWithoutOrderInput_1.OrderLineItemUpdateManyWithoutOrderInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", OrderLineItemUpdateManyWithoutBookingInput_1.OrderLineItemUpdateManyWithoutBookingInput)
+    tslib_1.__metadata("design:type", OrderLineItemUpdateManyWithoutOrderInput_1.OrderLineItemUpdateManyWithoutOrderInput)
 ], OrderUpdateInput.prototype, "Items", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {

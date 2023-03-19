@@ -17,8 +17,8 @@ export declare class MealScalarWhereInput {
     title?: StringNullableFilter | undefined;
     description?: StringNullableFilter | undefined;
     dietaryRestrictions?: EnumDIETARY_RESTRICTIONSNullableListFilter | undefined;
-    allowedMealTypes?: EnumMEAL_TYPESNullableListFilter | undefined;
-    allowedMealKinds?: EnumMEAL_KINDNullableListFilter | undefined;
+    mealTypes?: EnumMEAL_TYPESNullableListFilter | undefined;
+    mealKinds?: EnumMEAL_KINDNullableListFilter | undefined;
     doctorSpecificDiets?: EnumDIETARY_RESTRICTIONSNullableListFilter | undefined;
     specialDiets?: EnumSPECIAL_DIETSNullableListFilter | undefined;
     itemIds?: StringNullableListFilter | undefined;

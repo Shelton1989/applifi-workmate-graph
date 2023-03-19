@@ -15,8 +15,8 @@ export declare class OrderLineItemWhereInput {
     mealItemId?: StringNullableFilter | undefined;
     selectedMealItemOption?: MealItemOptionRelationFilter | undefined;
     mealItemOptionId?: StringNullableFilter | undefined;
-    Booking?: OrderRelationFilter | undefined;
-    bookingId?: StringFilter | undefined;
+    Order?: OrderRelationFilter | undefined;
+    orderId?: StringFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

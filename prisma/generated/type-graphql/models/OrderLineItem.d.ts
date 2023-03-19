@@ -9,8 +9,8 @@ export declare class OrderLineItem {
     mealItemId?: string | null;
     selectedMealItemOption?: MealItemOption | null;
     mealItemOptionId?: string | null;
-    Booking?: Order;
-    bookingId: string;
+    Order?: Order;
+    orderId: string;
     createdAt: Date;
     updatedAt: Date;
 }

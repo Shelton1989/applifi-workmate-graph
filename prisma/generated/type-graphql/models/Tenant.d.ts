@@ -11,7 +11,7 @@ export declare class Tenant {
     logoImage?: string | null;
     avatar?: string | null;
     coverImage?: string | null;
-    MealImages: string[];
+    experienceImages: string[];
     Users?: User[];
     Meals?: Meal[];
     Orders?: Order[];

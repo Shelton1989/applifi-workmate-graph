@@ -39,7 +39,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", OrderUpdateOneRequiredWithoutItemsInput_1.OrderUpdateOneRequiredWithoutItemsInput)
-], OrderLineItemUpdateInput.prototype, "Booking", void 0);
+], OrderLineItemUpdateInput.prototype, "Order", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

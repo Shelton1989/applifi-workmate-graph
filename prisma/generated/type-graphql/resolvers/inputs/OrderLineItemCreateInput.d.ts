@@ -7,7 +7,7 @@ export declare class OrderLineItemCreateInput {
     comments?: string | undefined;
     selectedMealItem?: MealItemCreateNestedOneWithoutOrderLineItemsInput | undefined;
     selectedMealItemOption?: MealItemOptionCreateNestedOneWithoutOrderLineItemsInput | undefined;
-    Booking: OrderCreateNestedOneWithoutItemsInput;
+    Order: OrderCreateNestedOneWithoutItemsInput;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

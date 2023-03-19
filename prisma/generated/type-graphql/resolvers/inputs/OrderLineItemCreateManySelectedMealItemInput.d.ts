@@ -3,7 +3,7 @@ export declare class OrderLineItemCreateManySelectedMealItemInput {
     details?: string | undefined;
     comments?: string | undefined;
     mealItemOptionId?: string | undefined;
-    bookingId: string;
+    orderId: string;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

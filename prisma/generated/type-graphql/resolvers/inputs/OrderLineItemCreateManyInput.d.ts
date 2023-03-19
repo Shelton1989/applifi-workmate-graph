@@ -4,7 +4,7 @@ export declare class OrderLineItemCreateManyInput {
     comments?: string | undefined;
     mealItemId?: string | undefined;
     mealItemOptionId?: string | undefined;
-    bookingId: string;
+    orderId: string;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

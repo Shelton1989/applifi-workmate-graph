@@ -79,7 +79,7 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
-], TenantWhereInput.prototype, "MealImages", void 0);
+], TenantWhereInput.prototype, "experienceImages", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserListRelationFilter_1.UserListRelationFilter, {
         nullable: true

@@ -1,13 +1,13 @@
 import { AggregateRatingCreateNestedOneWithoutMealInput } from "../inputs/AggregateRatingCreateNestedOneWithoutMealInput";
 import { FeaturesCreateNestedManyWithoutMealInput } from "../inputs/FeaturesCreateNestedManyWithoutMealInput";
 import { MealAvailabilityCreateNestedManyWithoutMealInput } from "../inputs/MealAvailabilityCreateNestedManyWithoutMealInput";
-import { MealCreateallowedMealKindsInput } from "../inputs/MealCreateallowedMealKindsInput";
-import { MealCreateallowedMealTypesInput } from "../inputs/MealCreateallowedMealTypesInput";
 import { MealCreatedietaryRestrictionsInput } from "../inputs/MealCreatedietaryRestrictionsInput";
 import { MealCreatedoctorSpecificDietsInput } from "../inputs/MealCreatedoctorSpecificDietsInput";
 import { MealCreategalleryInput } from "../inputs/MealCreategalleryInput";
 import { MealCreateitemIdsInput } from "../inputs/MealCreateitemIdsInput";
 import { MealCreatelikedByIdsInput } from "../inputs/MealCreatelikedByIdsInput";
+import { MealCreatemealKindsInput } from "../inputs/MealCreatemealKindsInput";
+import { MealCreatemealTypesInput } from "../inputs/MealCreatemealTypesInput";
 import { MealCreatespecialDietsInput } from "../inputs/MealCreatespecialDietsInput";
 import { MealItemCreateNestedManyWithoutMealsInput } from "../inputs/MealItemCreateNestedManyWithoutMealsInput";
 import { OrderCreateNestedManyWithoutMealInput } from "../inputs/OrderCreateNestedManyWithoutMealInput";
@@ -20,8 +20,8 @@ export declare class MealCreateWithoutTenantInput {
     title?: string | undefined;
     description?: string | undefined;
     dietaryRestrictions?: MealCreatedietaryRestrictionsInput | undefined;
-    allowedMealTypes?: MealCreateallowedMealTypesInput | undefined;
-    allowedMealKinds?: MealCreateallowedMealKindsInput | undefined;
+    mealTypes?: MealCreatemealTypesInput | undefined;
+    mealKinds?: MealCreatemealKindsInput | undefined;
     doctorSpecificDiets?: MealCreatedoctorSpecificDietsInput | undefined;
     specialDiets?: MealCreatespecialDietsInput | undefined;
     Items?: MealItemCreateNestedManyWithoutMealsInput | undefined;

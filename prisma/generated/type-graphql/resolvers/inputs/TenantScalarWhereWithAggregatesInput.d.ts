@@ -13,7 +13,7 @@ export declare class TenantScalarWhereWithAggregatesInput {
     logoImage?: StringNullableWithAggregatesFilter | undefined;
     avatar?: StringNullableWithAggregatesFilter | undefined;
     coverImage?: StringNullableWithAggregatesFilter | undefined;
-    MealImages?: StringNullableListFilter | undefined;
+    experienceImages?: StringNullableListFilter | undefined;
     acceptedUserEmailDomains?: StringNullableListFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;

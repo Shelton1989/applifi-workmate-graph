@@ -74,13 +74,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", EnumMEAL_TYPESNullableListFilter_1.EnumMEAL_TYPESNullableListFilter)
-], MealScalarWhereInput.prototype, "allowedMealTypes", void 0);
+], MealScalarWhereInput.prototype, "mealTypes", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumMEAL_KINDNullableListFilter_1.EnumMEAL_KINDNullableListFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", EnumMEAL_KINDNullableListFilter_1.EnumMEAL_KINDNullableListFilter)
-], MealScalarWhereInput.prototype, "allowedMealKinds", void 0);
+], MealScalarWhereInput.prototype, "mealKinds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumDIETARY_RESTRICTIONSNullableListFilter_1.EnumDIETARY_RESTRICTIONSNullableListFilter, {
         nullable: true

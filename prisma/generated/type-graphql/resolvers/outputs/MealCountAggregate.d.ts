@@ -5,8 +5,8 @@ export declare class MealCountAggregate {
     title: number;
     description: number;
     dietaryRestrictions: number;
-    allowedMealTypes: number;
-    allowedMealKinds: number;
+    mealTypes: number;
+    mealKinds: number;
     doctorSpecificDiets: number;
     specialDiets: number;
     itemIds: number;

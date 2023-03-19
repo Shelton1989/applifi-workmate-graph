@@ -10,7 +10,7 @@ var OrderLineItemScalarFieldEnum;
     OrderLineItemScalarFieldEnum["comments"] = "comments";
     OrderLineItemScalarFieldEnum["mealItemId"] = "mealItemId";
     OrderLineItemScalarFieldEnum["mealItemOptionId"] = "mealItemOptionId";
-    OrderLineItemScalarFieldEnum["bookingId"] = "bookingId";
+    OrderLineItemScalarFieldEnum["orderId"] = "orderId";
     OrderLineItemScalarFieldEnum["createdAt"] = "createdAt";
     OrderLineItemScalarFieldEnum["updatedAt"] = "updatedAt";
 })(OrderLineItemScalarFieldEnum = exports.OrderLineItemScalarFieldEnum || (exports.OrderLineItemScalarFieldEnum = {}));

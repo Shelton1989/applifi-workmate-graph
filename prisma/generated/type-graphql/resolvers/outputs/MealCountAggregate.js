@@ -46,13 +46,13 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], MealCountAggregate.prototype, "allowedMealTypes", void 0);
+], MealCountAggregate.prototype, "mealTypes", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], MealCountAggregate.prototype, "allowedMealKinds", void 0);
+], MealCountAggregate.prototype, "mealKinds", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

@@ -7,5 +7,5 @@ export declare class OrderItemsArgs {
     cursor?: OrderLineItemWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "details" | "comments" | "mealItemId" | "mealItemOptionId" | "bookingId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "details" | "comments" | "mealItemId" | "mealItemOptionId" | "orderId" | "createdAt" | "updatedAt"> | undefined;
 }

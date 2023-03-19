@@ -10,7 +10,7 @@ export declare class OrderLineItemScalarWhereInput {
     comments?: StringNullableFilter | undefined;
     mealItemId?: StringNullableFilter | undefined;
     mealItemOptionId?: StringNullableFilter | undefined;
-    bookingId?: StringFilter | undefined;
+    orderId?: StringFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }
