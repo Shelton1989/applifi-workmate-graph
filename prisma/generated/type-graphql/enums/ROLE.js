@@ -14,6 +14,9 @@ var ROLE;
     ROLE["WARD_ADMIN"] = "WARD_ADMIN";
     ROLE["WARD_HOST_OR_HOSTESS"] = "WARD_HOST_OR_HOSTESS";
     ROLE["WARD_USER"] = "WARD_USER";
+    ROLE["KITCHEN_ADMIN"] = "KITCHEN_ADMIN";
+    ROLE["KITCHEN_USER"] = "KITCHEN_USER";
+    ROLE["NURSE"] = "NURSE";
 })(ROLE = exports.ROLE || (exports.ROLE = {}));
 TypeGraphQL.registerEnumType(ROLE, {
     name: "ROLE",
