@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserCreateManyTenantInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const UserCreatemealIdsInput_1 = require("../inputs/UserCreatemealIdsInput");
 const UserCreaterolesInput_1 = require("../inputs/UserCreaterolesInput");
 let UserCreateManyTenantInput = class UserCreateManyTenantInput {
 };
@@ -62,24 +61,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], UserCreateManyTenantInput.prototype, "avatar", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], UserCreateManyTenantInput.prototype, "coverImage", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Date, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Date)
-], UserCreateManyTenantInput.prototype, "dateOfBirth", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], UserCreateManyTenantInput.prototype, "biography", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
@@ -104,12 +85,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Boolean)
 ], UserCreateManyTenantInput.prototype, "isActive", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => UserCreatemealIdsInput_1.UserCreatemealIdsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", UserCreatemealIdsInput_1.UserCreatemealIdsInput)
-], UserCreateManyTenantInput.prototype, "mealIds", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true
     }),
@@ -121,12 +96,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Date)
 ], UserCreateManyTenantInput.prototype, "updatedAt", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], UserCreateManyTenantInput.prototype, "wardId", void 0);
 UserCreateManyTenantInput = tslib_1.__decorate([
     TypeGraphQL.InputType("UserCreateManyTenantInput", {
         isAbstract: true

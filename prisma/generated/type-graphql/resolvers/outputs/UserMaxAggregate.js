@@ -60,24 +60,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], UserMaxAggregate.prototype, "avatar", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], UserMaxAggregate.prototype, "coverImage", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => Date, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", Date)
-], UserMaxAggregate.prototype, "dateOfBirth", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], UserMaxAggregate.prototype, "biography", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
@@ -113,12 +95,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Date)
 ], UserMaxAggregate.prototype, "updatedAt", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], UserMaxAggregate.prototype, "wardId", void 0);
 UserMaxAggregate = tslib_1.__decorate([
     TypeGraphQL.ObjectType("UserMaxAggregate", {
         isAbstract: true

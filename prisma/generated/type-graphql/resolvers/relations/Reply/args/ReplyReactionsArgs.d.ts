@@ -7,5 +7,5 @@ export declare class ReplyReactionsArgs {
     cursor?: ReactionWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "type" | "mealId" | "postId" | "commentId" | "replyId" | "authorId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "type" | "commentId" | "replyId" | "authorId" | "createdAt" | "updatedAt"> | undefined;
 }

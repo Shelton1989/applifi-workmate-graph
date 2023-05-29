@@ -6,11 +6,9 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BoolNullableFilter_1 = require("../inputs/BoolNullableFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
-const DateTimeNullableFilter_1 = require("../inputs/DateTimeNullableFilter");
 const EnumROLENullableListFilter_1 = require("../inputs/EnumROLENullableListFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
-const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
 let UserScalarWhereInput = UserScalarWhereInput_1 = class UserScalarWhereInput {
 };
 tslib_1.__decorate([
@@ -92,24 +90,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], UserScalarWhereInput.prototype, "avatar", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], UserScalarWhereInput.prototype, "coverImage", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => DateTimeNullableFilter_1.DateTimeNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", DateTimeNullableFilter_1.DateTimeNullableFilter)
-], UserScalarWhereInput.prototype, "dateOfBirth", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], UserScalarWhereInput.prototype, "biography", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolNullableFilter_1.BoolNullableFilter, {
         nullable: true
     }),
@@ -134,12 +114,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", BoolNullableFilter_1.BoolNullableFilter)
 ], UserScalarWhereInput.prototype, "isActive", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
-], UserScalarWhereInput.prototype, "mealIds", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true
     }),
@@ -151,12 +125,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", DateTimeFilter_1.DateTimeFilter)
 ], UserScalarWhereInput.prototype, "updatedAt", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], UserScalarWhereInput.prototype, "wardId", void 0);
 UserScalarWhereInput = UserScalarWhereInput_1 = tslib_1.__decorate([
     TypeGraphQL.InputType("UserScalarWhereInput", {
         isAbstract: true

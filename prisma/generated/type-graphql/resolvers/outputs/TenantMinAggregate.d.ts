@@ -5,7 +5,6 @@ export declare class TenantMinAggregate {
     description: string | null;
     logoImage: string | null;
     avatar: string | null;
-    coverImage: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }

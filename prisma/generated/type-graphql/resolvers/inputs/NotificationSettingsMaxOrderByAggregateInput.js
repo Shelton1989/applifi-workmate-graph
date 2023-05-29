@@ -17,13 +17,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsMaxOrderByAggregateInput.prototype, "newMenuItems", void 0);
+], NotificationSettingsMaxOrderByAggregateInput.prototype, "newDocumentsIndexed", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], NotificationSettingsMaxOrderByAggregateInput.prototype, "orderUpdates", void 0);
+], NotificationSettingsMaxOrderByAggregateInput.prototype, "documentUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true

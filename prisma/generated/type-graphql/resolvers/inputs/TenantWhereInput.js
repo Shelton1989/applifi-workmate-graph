@@ -4,10 +4,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TenantWhereInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const BillingRelationFilter_1 = require("../inputs/BillingRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
-const LocationListRelationFilter_1 = require("../inputs/LocationListRelationFilter");
-const MealListRelationFilter_1 = require("../inputs/MealListRelationFilter");
-const OrderListRelationFilter_1 = require("../inputs/OrderListRelationFilter");
+const DocumentListRelationFilter_1 = require("../inputs/DocumentListRelationFilter");
+const QueryListRelationFilter_1 = require("../inputs/QueryListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
@@ -69,41 +69,29 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], TenantWhereInput.prototype, "avatar", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], TenantWhereInput.prototype, "coverImage", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
-], TenantWhereInput.prototype, "experienceImages", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserListRelationFilter_1.UserListRelationFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", UserListRelationFilter_1.UserListRelationFilter)
 ], TenantWhereInput.prototype, "Users", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => MealListRelationFilter_1.MealListRelationFilter, {
+    TypeGraphQL.Field(_type => QueryListRelationFilter_1.QueryListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", MealListRelationFilter_1.MealListRelationFilter)
-], TenantWhereInput.prototype, "Meals", void 0);
+    tslib_1.__metadata("design:type", QueryListRelationFilter_1.QueryListRelationFilter)
+], TenantWhereInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderListRelationFilter_1.OrderListRelationFilter, {
+    TypeGraphQL.Field(_type => DocumentListRelationFilter_1.DocumentListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", OrderListRelationFilter_1.OrderListRelationFilter)
-], TenantWhereInput.prototype, "Orders", void 0);
+    tslib_1.__metadata("design:type", DocumentListRelationFilter_1.DocumentListRelationFilter)
+], TenantWhereInput.prototype, "Documents", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => LocationListRelationFilter_1.LocationListRelationFilter, {
+    TypeGraphQL.Field(_type => BillingRelationFilter_1.BillingRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", LocationListRelationFilter_1.LocationListRelationFilter)
-], TenantWhereInput.prototype, "Locations", void 0);
+    tslib_1.__metadata("design:type", BillingRelationFilter_1.BillingRelationFilter)
+], TenantWhereInput.prototype, "Billing", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
         nullable: true

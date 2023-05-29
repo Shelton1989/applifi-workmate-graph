@@ -1,4 +1,3 @@
-export { TenantLocationsArgs } from "./TenantLocationsArgs";
-export { TenantMealsArgs } from "./TenantMealsArgs";
-export { TenantOrdersArgs } from "./TenantOrdersArgs";
+export { TenantDocumentsArgs } from "./TenantDocumentsArgs";
+export { TenantQueriesArgs } from "./TenantQueriesArgs";
 export { TenantUsersArgs } from "./TenantUsersArgs";

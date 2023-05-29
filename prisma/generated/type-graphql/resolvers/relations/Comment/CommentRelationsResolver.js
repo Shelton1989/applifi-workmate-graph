@@ -4,7 +4,7 @@ exports.CommentRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const Comment_1 = require("../../../models/Comment");
-const Post_1 = require("../../../models/Post");
+const Document_1 = require("../../../models/Document");
 const Reaction_1 = require("../../../models/Reaction");
 const Reply_1 = require("../../../models/Reply");
 const User_1 = require("../../../models/User");
@@ -12,12 +12,12 @@ const CommentReactionsArgs_1 = require("./args/CommentReactionsArgs");
 const CommentRepliesArgs_1 = require("./args/CommentRepliesArgs");
 const helpers_1 = require("../../../helpers");
 let CommentRelationsResolver = class CommentRelationsResolver {
-    async Post(comment, ctx) {
+    async Document(comment, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).comment.findUnique({
             where: {
                 id: comment.id,
             },
-        }).Post({});
+        }).Document({});
     }
     async Author(comment, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).comment.findUnique({
@@ -42,7 +42,7 @@ let CommentRelationsResolver = class CommentRelationsResolver {
     }
 };
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => Post_1.Post, {
+    TypeGraphQL.FieldResolver(_type => Document_1.Document, {
         nullable: false
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
@@ -50,7 +50,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Function),
     tslib_1.__metadata("design:paramtypes", [Comment_1.Comment, Object]),
     tslib_1.__metadata("design:returntype", Promise)
-], CommentRelationsResolver.prototype, "Post", null);
+], CommentRelationsResolver.prototype, "Document", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => User_1.User, {
         nullable: false

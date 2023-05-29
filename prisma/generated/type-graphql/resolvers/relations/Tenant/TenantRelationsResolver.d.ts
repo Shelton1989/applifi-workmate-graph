@@ -1,15 +1,14 @@
-import { Location } from "../../../models/Location";
-import { Meal } from "../../../models/Meal";
-import { Order } from "../../../models/Order";
+import { Billing } from "../../../models/Billing";
+import { Document } from "../../../models/Document";
+import { Query } from "../../../models/Query";
 import { Tenant } from "../../../models/Tenant";
 import { User } from "../../../models/User";
-import { TenantLocationsArgs } from "./args/TenantLocationsArgs";
-import { TenantMealsArgs } from "./args/TenantMealsArgs";
-import { TenantOrdersArgs } from "./args/TenantOrdersArgs";
+import { TenantDocumentsArgs } from "./args/TenantDocumentsArgs";
+import { TenantQueriesArgs } from "./args/TenantQueriesArgs";
 import { TenantUsersArgs } from "./args/TenantUsersArgs";
 export declare class TenantRelationsResolver {
     Users(tenant: Tenant, ctx: any, args: TenantUsersArgs): Promise<User[]>;
-    Meals(tenant: Tenant, ctx: any, args: TenantMealsArgs): Promise<Meal[]>;
-    Orders(tenant: Tenant, ctx: any, args: TenantOrdersArgs): Promise<Order[]>;
-    Locations(tenant: Tenant, ctx: any, args: TenantLocationsArgs): Promise<Location[]>;
+    Queries(tenant: Tenant, ctx: any, args: TenantQueriesArgs): Promise<Query[]>;
+    Documents(tenant: Tenant, ctx: any, args: TenantDocumentsArgs): Promise<Document[]>;
+    Billing(tenant: Tenant, ctx: any): Promise<Billing | null>;
 }

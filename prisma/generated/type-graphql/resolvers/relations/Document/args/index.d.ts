@@ -1,0 +1,1 @@
+export { DocumentCommentsArgs } from "./DocumentCommentsArgs";

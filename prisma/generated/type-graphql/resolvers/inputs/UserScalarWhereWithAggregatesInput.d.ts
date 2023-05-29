@@ -1,8 +1,6 @@
 import { BoolNullableWithAggregatesFilter } from "../inputs/BoolNullableWithAggregatesFilter";
-import { DateTimeNullableWithAggregatesFilter } from "../inputs/DateTimeNullableWithAggregatesFilter";
 import { DateTimeWithAggregatesFilter } from "../inputs/DateTimeWithAggregatesFilter";
 import { EnumROLENullableListFilter } from "../inputs/EnumROLENullableListFilter";
-import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
 import { StringNullableWithAggregatesFilter } from "../inputs/StringNullableWithAggregatesFilter";
 import { StringWithAggregatesFilter } from "../inputs/StringWithAggregatesFilter";
 export declare class UserScalarWhereWithAggregatesInput {
@@ -19,15 +17,10 @@ export declare class UserScalarWhereWithAggregatesInput {
     firstName?: StringNullableWithAggregatesFilter | undefined;
     lastName?: StringNullableWithAggregatesFilter | undefined;
     avatar?: StringNullableWithAggregatesFilter | undefined;
-    coverImage?: StringNullableWithAggregatesFilter | undefined;
-    dateOfBirth?: DateTimeNullableWithAggregatesFilter | undefined;
-    biography?: StringNullableWithAggregatesFilter | undefined;
     hasAcceptedTerms?: BoolNullableWithAggregatesFilter | undefined;
     isFirstTimeUser?: BoolNullableWithAggregatesFilter | undefined;
     isVerified?: BoolNullableWithAggregatesFilter | undefined;
     isActive?: BoolNullableWithAggregatesFilter | undefined;
-    mealIds?: StringNullableListFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
-    wardId?: StringNullableWithAggregatesFilter | undefined;
 }

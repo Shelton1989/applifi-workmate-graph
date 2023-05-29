@@ -8,8 +8,6 @@ export declare class TenantGroupBy {
     description: string | null;
     logoImage: string | null;
     avatar: string | null;
-    coverImage: string | null;
-    experienceImages: string[] | null;
     acceptedUserEmailDomains: string[] | null;
     createdAt: Date;
     updatedAt: Date;

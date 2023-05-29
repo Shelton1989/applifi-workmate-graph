@@ -1,4 +1,3 @@
-import { UserCreatemealIdsInput } from "../inputs/UserCreatemealIdsInput";
 import { UserCreaterolesInput } from "../inputs/UserCreaterolesInput";
 export declare class UserCreateManyTenantInput {
     uid: string;
@@ -10,15 +9,10 @@ export declare class UserCreateManyTenantInput {
     firstName?: string | undefined;
     lastName?: string | undefined;
     avatar?: string | undefined;
-    coverImage?: string | undefined;
-    dateOfBirth?: Date | undefined;
-    biography?: string | undefined;
     hasAcceptedTerms?: boolean | undefined;
     isFirstTimeUser?: boolean | undefined;
     isVerified?: boolean | undefined;
     isActive?: boolean | undefined;
-    mealIds?: UserCreatemealIdsInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
-    wardId?: string | undefined;
 }

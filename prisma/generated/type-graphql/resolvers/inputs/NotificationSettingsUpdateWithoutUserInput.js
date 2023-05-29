@@ -12,13 +12,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
-], NotificationSettingsUpdateWithoutUserInput.prototype, "newMenuItems", void 0);
+], NotificationSettingsUpdateWithoutUserInput.prototype, "newDocumentsIndexed", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput)
-], NotificationSettingsUpdateWithoutUserInput.prototype, "orderUpdates", void 0);
+], NotificationSettingsUpdateWithoutUserInput.prototype, "documentUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolFieldUpdateOperationsInput_1.BoolFieldUpdateOperationsInput, {
         nullable: true

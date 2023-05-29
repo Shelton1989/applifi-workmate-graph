@@ -3,11 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TenantCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const LocationCreateNestedManyWithoutTenantInput_1 = require("../inputs/LocationCreateNestedManyWithoutTenantInput");
-const MealCreateNestedManyWithoutTenantInput_1 = require("../inputs/MealCreateNestedManyWithoutTenantInput");
-const OrderCreateNestedManyWithoutTenantInput_1 = require("../inputs/OrderCreateNestedManyWithoutTenantInput");
+const BillingCreateNestedOneWithoutTenantInput_1 = require("../inputs/BillingCreateNestedOneWithoutTenantInput");
+const DocumentCreateNestedManyWithoutTenantInput_1 = require("../inputs/DocumentCreateNestedManyWithoutTenantInput");
+const QueryCreateNestedManyWithoutTenantInput_1 = require("../inputs/QueryCreateNestedManyWithoutTenantInput");
 const TenantCreateacceptedUserEmailDomainsInput_1 = require("../inputs/TenantCreateacceptedUserEmailDomainsInput");
-const TenantCreateexperienceImagesInput_1 = require("../inputs/TenantCreateexperienceImagesInput");
 const UserCreateNestedManyWithoutTenantInput_1 = require("../inputs/UserCreateNestedManyWithoutTenantInput");
 let TenantCreateInput = class TenantCreateInput {
 };
@@ -48,41 +47,29 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], TenantCreateInput.prototype, "avatar", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], TenantCreateInput.prototype, "coverImage", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TenantCreateexperienceImagesInput_1.TenantCreateexperienceImagesInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", TenantCreateexperienceImagesInput_1.TenantCreateexperienceImagesInput)
-], TenantCreateInput.prototype, "experienceImages", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserCreateNestedManyWithoutTenantInput_1.UserCreateNestedManyWithoutTenantInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", UserCreateNestedManyWithoutTenantInput_1.UserCreateNestedManyWithoutTenantInput)
 ], TenantCreateInput.prototype, "Users", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => MealCreateNestedManyWithoutTenantInput_1.MealCreateNestedManyWithoutTenantInput, {
+    TypeGraphQL.Field(_type => QueryCreateNestedManyWithoutTenantInput_1.QueryCreateNestedManyWithoutTenantInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", MealCreateNestedManyWithoutTenantInput_1.MealCreateNestedManyWithoutTenantInput)
-], TenantCreateInput.prototype, "Meals", void 0);
+    tslib_1.__metadata("design:type", QueryCreateNestedManyWithoutTenantInput_1.QueryCreateNestedManyWithoutTenantInput)
+], TenantCreateInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderCreateNestedManyWithoutTenantInput_1.OrderCreateNestedManyWithoutTenantInput, {
+    TypeGraphQL.Field(_type => DocumentCreateNestedManyWithoutTenantInput_1.DocumentCreateNestedManyWithoutTenantInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", OrderCreateNestedManyWithoutTenantInput_1.OrderCreateNestedManyWithoutTenantInput)
-], TenantCreateInput.prototype, "Orders", void 0);
+    tslib_1.__metadata("design:type", DocumentCreateNestedManyWithoutTenantInput_1.DocumentCreateNestedManyWithoutTenantInput)
+], TenantCreateInput.prototype, "Documents", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => LocationCreateNestedManyWithoutTenantInput_1.LocationCreateNestedManyWithoutTenantInput, {
+    TypeGraphQL.Field(_type => BillingCreateNestedOneWithoutTenantInput_1.BillingCreateNestedOneWithoutTenantInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", LocationCreateNestedManyWithoutTenantInput_1.LocationCreateNestedManyWithoutTenantInput)
-], TenantCreateInput.prototype, "Locations", void 0);
+    tslib_1.__metadata("design:type", BillingCreateNestedOneWithoutTenantInput_1.BillingCreateNestedOneWithoutTenantInput)
+], TenantCreateInput.prototype, "Billing", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TenantCreateacceptedUserEmailDomainsInput_1.TenantCreateacceptedUserEmailDomainsInput, {
         nullable: true

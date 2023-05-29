@@ -16,19 +16,13 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], TenantCount.prototype, "Meals", void 0);
+], TenantCount.prototype, "Queries", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], TenantCount.prototype, "Orders", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TypeGraphQL.Int, {
-        nullable: false
-    }),
-    tslib_1.__metadata("design:type", Number)
-], TenantCount.prototype, "Locations", void 0);
+], TenantCount.prototype, "Documents", void 0);
 TenantCount = tslib_1.__decorate([
     TypeGraphQL.ObjectType("TenantCount", {
         isAbstract: true

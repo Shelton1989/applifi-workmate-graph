@@ -45,18 +45,6 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], ReactionScalarWhereInput.prototype, "mealId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], ReactionScalarWhereInput.prototype, "postId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], ReactionScalarWhereInput.prototype, "commentId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {

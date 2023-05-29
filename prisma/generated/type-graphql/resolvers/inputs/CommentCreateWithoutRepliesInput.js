@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CommentCreateWithoutRepliesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const PostCreateNestedOneWithoutCommentsInput_1 = require("../inputs/PostCreateNestedOneWithoutCommentsInput");
+const DocumentCreateNestedOneWithoutCommentsInput_1 = require("../inputs/DocumentCreateNestedOneWithoutCommentsInput");
 const ReactionCreateNestedManyWithoutCommentInput_1 = require("../inputs/ReactionCreateNestedManyWithoutCommentInput");
 const UserCreateNestedOneWithoutCommentsInput_1 = require("../inputs/UserCreateNestedOneWithoutCommentsInput");
 let CommentCreateWithoutRepliesInput = class CommentCreateWithoutRepliesInput {
@@ -21,11 +21,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], CommentCreateWithoutRepliesInput.prototype, "text", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PostCreateNestedOneWithoutCommentsInput_1.PostCreateNestedOneWithoutCommentsInput, {
+    TypeGraphQL.Field(_type => DocumentCreateNestedOneWithoutCommentsInput_1.DocumentCreateNestedOneWithoutCommentsInput, {
         nullable: false
     }),
-    tslib_1.__metadata("design:type", PostCreateNestedOneWithoutCommentsInput_1.PostCreateNestedOneWithoutCommentsInput)
-], CommentCreateWithoutRepliesInput.prototype, "Post", void 0);
+    tslib_1.__metadata("design:type", DocumentCreateNestedOneWithoutCommentsInput_1.DocumentCreateNestedOneWithoutCommentsInput)
+], CommentCreateWithoutRepliesInput.prototype, "Document", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserCreateNestedOneWithoutCommentsInput_1.UserCreateNestedOneWithoutCommentsInput, {
         nullable: false

@@ -1,15 +1,9 @@
 import { CommentOrderByWithRelationInput } from "../inputs/CommentOrderByWithRelationInput";
-import { MealOrderByWithRelationInput } from "../inputs/MealOrderByWithRelationInput";
-import { PostOrderByWithRelationInput } from "../inputs/PostOrderByWithRelationInput";
 import { ReplyOrderByWithRelationInput } from "../inputs/ReplyOrderByWithRelationInput";
 import { UserOrderByWithRelationInput } from "../inputs/UserOrderByWithRelationInput";
 export declare class ReactionOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
-    Meal?: MealOrderByWithRelationInput | undefined;
-    mealId?: "asc" | "desc" | undefined;
-    Post?: PostOrderByWithRelationInput | undefined;
-    postId?: "asc" | "desc" | undefined;
     Comment?: CommentOrderByWithRelationInput | undefined;
     commentId?: "asc" | "desc" | undefined;
     Reply?: ReplyOrderByWithRelationInput | undefined;

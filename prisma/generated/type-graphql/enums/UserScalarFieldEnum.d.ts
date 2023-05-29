@@ -9,15 +9,10 @@ export declare enum UserScalarFieldEnum {
     firstName = "firstName",
     lastName = "lastName",
     avatar = "avatar",
-    coverImage = "coverImage",
-    dateOfBirth = "dateOfBirth",
-    biography = "biography",
     hasAcceptedTerms = "hasAcceptedTerms",
     isFirstTimeUser = "isFirstTimeUser",
     isVerified = "isVerified",
     isActive = "isActive",
-    mealIds = "mealIds",
     createdAt = "createdAt",
-    updatedAt = "updatedAt",
-    wardId = "wardId"
+    updatedAt = "updatedAt"
 }

@@ -1,8 +1,7 @@
-import { LocationCreateNestedManyWithoutTenantInput } from "../inputs/LocationCreateNestedManyWithoutTenantInput";
-import { MealCreateNestedManyWithoutTenantInput } from "../inputs/MealCreateNestedManyWithoutTenantInput";
-import { OrderCreateNestedManyWithoutTenantInput } from "../inputs/OrderCreateNestedManyWithoutTenantInput";
+import { BillingCreateNestedOneWithoutTenantInput } from "../inputs/BillingCreateNestedOneWithoutTenantInput";
+import { DocumentCreateNestedManyWithoutTenantInput } from "../inputs/DocumentCreateNestedManyWithoutTenantInput";
+import { QueryCreateNestedManyWithoutTenantInput } from "../inputs/QueryCreateNestedManyWithoutTenantInput";
 import { TenantCreateacceptedUserEmailDomainsInput } from "../inputs/TenantCreateacceptedUserEmailDomainsInput";
-import { TenantCreateexperienceImagesInput } from "../inputs/TenantCreateexperienceImagesInput";
 export declare class TenantCreateWithoutUsersInput {
     id?: string | undefined;
     name: string;
@@ -10,11 +9,9 @@ export declare class TenantCreateWithoutUsersInput {
     description?: string | undefined;
     logoImage?: string | undefined;
     avatar?: string | undefined;
-    coverImage?: string | undefined;
-    experienceImages?: TenantCreateexperienceImagesInput | undefined;
-    Meals?: MealCreateNestedManyWithoutTenantInput | undefined;
-    Orders?: OrderCreateNestedManyWithoutTenantInput | undefined;
-    Locations?: LocationCreateNestedManyWithoutTenantInput | undefined;
+    Queries?: QueryCreateNestedManyWithoutTenantInput | undefined;
+    Documents?: DocumentCreateNestedManyWithoutTenantInput | undefined;
+    Billing?: BillingCreateNestedOneWithoutTenantInput | undefined;
     acceptedUserEmailDomains?: TenantCreateacceptedUserEmailDomainsInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

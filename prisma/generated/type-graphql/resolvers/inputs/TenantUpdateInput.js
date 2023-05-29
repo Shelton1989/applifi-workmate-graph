@@ -3,14 +3,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TenantUpdateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const BillingUpdateOneWithoutTenantInput_1 = require("../inputs/BillingUpdateOneWithoutTenantInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
-const LocationUpdateManyWithoutTenantInput_1 = require("../inputs/LocationUpdateManyWithoutTenantInput");
-const MealUpdateManyWithoutTenantInput_1 = require("../inputs/MealUpdateManyWithoutTenantInput");
+const DocumentUpdateManyWithoutTenantInput_1 = require("../inputs/DocumentUpdateManyWithoutTenantInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const OrderUpdateManyWithoutTenantInput_1 = require("../inputs/OrderUpdateManyWithoutTenantInput");
+const QueryUpdateManyWithoutTenantInput_1 = require("../inputs/QueryUpdateManyWithoutTenantInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 const TenantUpdateacceptedUserEmailDomainsInput_1 = require("../inputs/TenantUpdateacceptedUserEmailDomainsInput");
-const TenantUpdateexperienceImagesInput_1 = require("../inputs/TenantUpdateexperienceImagesInput");
 const UserUpdateManyWithoutTenantInput_1 = require("../inputs/UserUpdateManyWithoutTenantInput");
 let TenantUpdateInput = class TenantUpdateInput {
 };
@@ -45,41 +44,29 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], TenantUpdateInput.prototype, "avatar", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
-], TenantUpdateInput.prototype, "coverImage", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TenantUpdateexperienceImagesInput_1.TenantUpdateexperienceImagesInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", TenantUpdateexperienceImagesInput_1.TenantUpdateexperienceImagesInput)
-], TenantUpdateInput.prototype, "experienceImages", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserUpdateManyWithoutTenantInput_1.UserUpdateManyWithoutTenantInput, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", UserUpdateManyWithoutTenantInput_1.UserUpdateManyWithoutTenantInput)
 ], TenantUpdateInput.prototype, "Users", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => MealUpdateManyWithoutTenantInput_1.MealUpdateManyWithoutTenantInput, {
+    TypeGraphQL.Field(_type => QueryUpdateManyWithoutTenantInput_1.QueryUpdateManyWithoutTenantInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", MealUpdateManyWithoutTenantInput_1.MealUpdateManyWithoutTenantInput)
-], TenantUpdateInput.prototype, "Meals", void 0);
+    tslib_1.__metadata("design:type", QueryUpdateManyWithoutTenantInput_1.QueryUpdateManyWithoutTenantInput)
+], TenantUpdateInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => OrderUpdateManyWithoutTenantInput_1.OrderUpdateManyWithoutTenantInput, {
+    TypeGraphQL.Field(_type => DocumentUpdateManyWithoutTenantInput_1.DocumentUpdateManyWithoutTenantInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", OrderUpdateManyWithoutTenantInput_1.OrderUpdateManyWithoutTenantInput)
-], TenantUpdateInput.prototype, "Orders", void 0);
+    tslib_1.__metadata("design:type", DocumentUpdateManyWithoutTenantInput_1.DocumentUpdateManyWithoutTenantInput)
+], TenantUpdateInput.prototype, "Documents", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => LocationUpdateManyWithoutTenantInput_1.LocationUpdateManyWithoutTenantInput, {
+    TypeGraphQL.Field(_type => BillingUpdateOneWithoutTenantInput_1.BillingUpdateOneWithoutTenantInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", LocationUpdateManyWithoutTenantInput_1.LocationUpdateManyWithoutTenantInput)
-], TenantUpdateInput.prototype, "Locations", void 0);
+    tslib_1.__metadata("design:type", BillingUpdateOneWithoutTenantInput_1.BillingUpdateOneWithoutTenantInput)
+], TenantUpdateInput.prototype, "Billing", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TenantUpdateacceptedUserEmailDomainsInput_1.TenantUpdateacceptedUserEmailDomainsInput, {
         nullable: true

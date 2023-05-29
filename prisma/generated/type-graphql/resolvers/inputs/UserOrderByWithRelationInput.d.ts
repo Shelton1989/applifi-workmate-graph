@@ -1,15 +1,11 @@
 import { CommentOrderByRelationAggregateInput } from "../inputs/CommentOrderByRelationAggregateInput";
-import { MealOrderByRelationAggregateInput } from "../inputs/MealOrderByRelationAggregateInput";
 import { NotificationOrderByRelationAggregateInput } from "../inputs/NotificationOrderByRelationAggregateInput";
 import { NotificationSettingsOrderByWithRelationInput } from "../inputs/NotificationSettingsOrderByWithRelationInput";
-import { OrderOrderByRelationAggregateInput } from "../inputs/OrderOrderByRelationAggregateInput";
-import { PatientProfileOrderByWithRelationInput } from "../inputs/PatientProfileOrderByWithRelationInput";
-import { PostOrderByRelationAggregateInput } from "../inputs/PostOrderByRelationAggregateInput";
+import { QueryOrderByRelationAggregateInput } from "../inputs/QueryOrderByRelationAggregateInput";
 import { ReactionOrderByRelationAggregateInput } from "../inputs/ReactionOrderByRelationAggregateInput";
 import { ReplyOrderByRelationAggregateInput } from "../inputs/ReplyOrderByRelationAggregateInput";
 import { RequestOrderByRelationAggregateInput } from "../inputs/RequestOrderByRelationAggregateInput";
 import { TenantOrderByWithRelationInput } from "../inputs/TenantOrderByWithRelationInput";
-import { WardOrderByWithRelationInput } from "../inputs/WardOrderByWithRelationInput";
 export declare class UserOrderByWithRelationInput {
     Tenant?: TenantOrderByWithRelationInput | undefined;
     tenantId?: "asc" | "desc" | undefined;
@@ -22,27 +18,18 @@ export declare class UserOrderByWithRelationInput {
     firstName?: "asc" | "desc" | undefined;
     lastName?: "asc" | "desc" | undefined;
     avatar?: "asc" | "desc" | undefined;
-    coverImage?: "asc" | "desc" | undefined;
-    dateOfBirth?: "asc" | "desc" | undefined;
-    biography?: "asc" | "desc" | undefined;
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
     isVerified?: "asc" | "desc" | undefined;
     isActive?: "asc" | "desc" | undefined;
     NotificationSettings?: NotificationSettingsOrderByWithRelationInput | undefined;
-    PatientProfile?: PatientProfileOrderByWithRelationInput | undefined;
     Notifications?: NotificationOrderByRelationAggregateInput | undefined;
     Activity?: NotificationOrderByRelationAggregateInput | undefined;
-    LikedMeals?: MealOrderByRelationAggregateInput | undefined;
-    mealIds?: "asc" | "desc" | undefined;
+    Queries?: QueryOrderByRelationAggregateInput | undefined;
     Requests?: RequestOrderByRelationAggregateInput | undefined;
-    Posts?: PostOrderByRelationAggregateInput | undefined;
     Comments?: CommentOrderByRelationAggregateInput | undefined;
     Replies?: ReplyOrderByRelationAggregateInput | undefined;
     Reactions?: ReactionOrderByRelationAggregateInput | undefined;
-    Bookings?: OrderOrderByRelationAggregateInput | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
-    Ward?: WardOrderByWithRelationInput | undefined;
-    wardId?: "asc" | "desc" | undefined;
 }

@@ -4,7 +4,7 @@ import { CommentMinAggregate } from "../outputs/CommentMinAggregate";
 export declare class CommentGroupBy {
     id: string;
     text: string;
-    postId: string;
+    documentId: string;
     authorId: string;
     createdAt: Date;
     updatedAt: Date;

@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateDocumentArgs } from "./args/AggregateDocumentArgs";
+import { CreateDocumentArgs } from "./args/CreateDocumentArgs";
+import { CreateManyDocumentArgs } from "./args/CreateManyDocumentArgs";
+import { DeleteDocumentArgs } from "./args/DeleteDocumentArgs";
+import { DeleteManyDocumentArgs } from "./args/DeleteManyDocumentArgs";
+import { FindFirstDocumentArgs } from "./args/FindFirstDocumentArgs";
+import { FindManyDocumentArgs } from "./args/FindManyDocumentArgs";
+import { FindUniqueDocumentArgs } from "./args/FindUniqueDocumentArgs";
+import { GroupByDocumentArgs } from "./args/GroupByDocumentArgs";
+import { UpdateDocumentArgs } from "./args/UpdateDocumentArgs";
+import { UpdateManyDocumentArgs } from "./args/UpdateManyDocumentArgs";
+import { UpsertDocumentArgs } from "./args/UpsertDocumentArgs";
+import { Document } from "../../../models/Document";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateDocument } from "../../outputs/AggregateDocument";
+import { DocumentGroupBy } from "../../outputs/DocumentGroupBy";
+export declare class DocumentCrudResolver {
+    document(ctx: any, info: GraphQLResolveInfo, args: FindUniqueDocumentArgs): Promise<Document | null>;
+    findFirstDocument(ctx: any, info: GraphQLResolveInfo, args: FindFirstDocumentArgs): Promise<Document | null>;
+    documents(ctx: any, info: GraphQLResolveInfo, args: FindManyDocumentArgs): Promise<Document[]>;
+    createDocument(ctx: any, info: GraphQLResolveInfo, args: CreateDocumentArgs): Promise<Document>;
+    createManyDocument(ctx: any, info: GraphQLResolveInfo, args: CreateManyDocumentArgs): Promise<AffectedRowsOutput>;
+    deleteDocument(ctx: any, info: GraphQLResolveInfo, args: DeleteDocumentArgs): Promise<Document | null>;
+    updateDocument(ctx: any, info: GraphQLResolveInfo, args: UpdateDocumentArgs): Promise<Document | null>;
+    deleteManyDocument(ctx: any, info: GraphQLResolveInfo, args: DeleteManyDocumentArgs): Promise<AffectedRowsOutput>;
+    updateManyDocument(ctx: any, info: GraphQLResolveInfo, args: UpdateManyDocumentArgs): Promise<AffectedRowsOutput>;
+    upsertDocument(ctx: any, info: GraphQLResolveInfo, args: UpsertDocumentArgs): Promise<Document>;
+    aggregateDocument(ctx: any, info: GraphQLResolveInfo, args: AggregateDocumentArgs): Promise<AggregateDocument>;
+    groupByDocument(ctx: any, info: GraphQLResolveInfo, args: GroupByDocumentArgs): Promise<DocumentGroupBy[]>;
+}

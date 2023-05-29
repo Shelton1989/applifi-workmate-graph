@@ -16,13 +16,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsMaxAggregate.prototype, "newMenuItems", void 0);
+], NotificationSettingsMaxAggregate.prototype, "newDocumentsIndexed", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsMaxAggregate.prototype, "orderUpdates", void 0);
+], NotificationSettingsMaxAggregate.prototype, "documentUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true

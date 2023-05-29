@@ -1,9 +1,7 @@
 export { UserActivityArgs } from "./UserActivityArgs";
-export { UserBookingsArgs } from "./UserBookingsArgs";
 export { UserCommentsArgs } from "./UserCommentsArgs";
-export { UserLikedMealsArgs } from "./UserLikedMealsArgs";
 export { UserNotificationsArgs } from "./UserNotificationsArgs";
-export { UserPostsArgs } from "./UserPostsArgs";
+export { UserQueriesArgs } from "./UserQueriesArgs";
 export { UserReactionsArgs } from "./UserReactionsArgs";
 export { UserRepliesArgs } from "./UserRepliesArgs";
 export { UserRequestsArgs } from "./UserRequestsArgs";

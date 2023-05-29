@@ -9,16 +9,11 @@ export declare class UserCountAggregate {
     firstName: number;
     lastName: number;
     avatar: number;
-    coverImage: number;
-    dateOfBirth: number;
-    biography: number;
     hasAcceptedTerms: number;
     isFirstTimeUser: number;
     isVerified: number;
     isActive: number;
-    mealIds: number;
     createdAt: number;
     updatedAt: number;
-    wardId: number;
     _all: number;
 }

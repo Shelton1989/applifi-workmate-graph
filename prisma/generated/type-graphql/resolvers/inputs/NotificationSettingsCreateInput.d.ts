@@ -1,8 +1,8 @@
 import { UserCreateNestedOneWithoutNotificationSettingsInput } from "../inputs/UserCreateNestedOneWithoutNotificationSettingsInput";
 export declare class NotificationSettingsCreateInput {
     id?: string | undefined;
-    newMenuItems?: boolean | undefined;
-    orderUpdates?: boolean | undefined;
+    newDocumentsIndexed?: boolean | undefined;
+    documentUpdates?: boolean | undefined;
     newRequests?: boolean | undefined;
     requestUpdates?: boolean | undefined;
     commentsOnMyReviews?: boolean | undefined;

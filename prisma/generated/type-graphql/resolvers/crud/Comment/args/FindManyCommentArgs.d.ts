@@ -7,5 +7,5 @@ export declare class FindManyCommentArgs {
     cursor?: CommentWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "text" | "postId" | "authorId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "text" | "documentId" | "authorId" | "createdAt" | "updatedAt"> | undefined;
 }

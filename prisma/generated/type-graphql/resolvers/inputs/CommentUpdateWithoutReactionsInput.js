@@ -4,7 +4,7 @@ exports.CommentUpdateWithoutReactionsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
-const PostUpdateOneRequiredWithoutCommentsInput_1 = require("../inputs/PostUpdateOneRequiredWithoutCommentsInput");
+const DocumentUpdateOneRequiredWithoutCommentsInput_1 = require("../inputs/DocumentUpdateOneRequiredWithoutCommentsInput");
 const ReplyUpdateManyWithoutCommentInput_1 = require("../inputs/ReplyUpdateManyWithoutCommentInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 const UserUpdateOneRequiredWithoutCommentsInput_1 = require("../inputs/UserUpdateOneRequiredWithoutCommentsInput");
@@ -17,11 +17,11 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringFieldUpdateOperationsInput_1.StringFieldUpdateOperationsInput)
 ], CommentUpdateWithoutReactionsInput.prototype, "text", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PostUpdateOneRequiredWithoutCommentsInput_1.PostUpdateOneRequiredWithoutCommentsInput, {
+    TypeGraphQL.Field(_type => DocumentUpdateOneRequiredWithoutCommentsInput_1.DocumentUpdateOneRequiredWithoutCommentsInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", PostUpdateOneRequiredWithoutCommentsInput_1.PostUpdateOneRequiredWithoutCommentsInput)
-], CommentUpdateWithoutReactionsInput.prototype, "Post", void 0);
+    tslib_1.__metadata("design:type", DocumentUpdateOneRequiredWithoutCommentsInput_1.DocumentUpdateOneRequiredWithoutCommentsInput)
+], CommentUpdateWithoutReactionsInput.prototype, "Document", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserUpdateOneRequiredWithoutCommentsInput_1.UserUpdateOneRequiredWithoutCommentsInput, {
         nullable: true

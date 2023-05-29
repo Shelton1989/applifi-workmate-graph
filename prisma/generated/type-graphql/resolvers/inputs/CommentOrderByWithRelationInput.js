@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CommentOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const PostOrderByWithRelationInput_1 = require("../inputs/PostOrderByWithRelationInput");
+const DocumentOrderByWithRelationInput_1 = require("../inputs/DocumentOrderByWithRelationInput");
 const ReactionOrderByRelationAggregateInput_1 = require("../inputs/ReactionOrderByRelationAggregateInput");
 const ReplyOrderByRelationAggregateInput_1 = require("../inputs/ReplyOrderByRelationAggregateInput");
 const UserOrderByWithRelationInput_1 = require("../inputs/UserOrderByWithRelationInput");
@@ -23,17 +23,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], CommentOrderByWithRelationInput.prototype, "text", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PostOrderByWithRelationInput_1.PostOrderByWithRelationInput, {
+    TypeGraphQL.Field(_type => DocumentOrderByWithRelationInput_1.DocumentOrderByWithRelationInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", PostOrderByWithRelationInput_1.PostOrderByWithRelationInput)
-], CommentOrderByWithRelationInput.prototype, "Post", void 0);
+    tslib_1.__metadata("design:type", DocumentOrderByWithRelationInput_1.DocumentOrderByWithRelationInput)
+], CommentOrderByWithRelationInput.prototype, "Document", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], CommentOrderByWithRelationInput.prototype, "postId", void 0);
+], CommentOrderByWithRelationInput.prototype, "documentId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => UserOrderByWithRelationInput_1.UserOrderByWithRelationInput, {
         nullable: true

@@ -15,17 +15,12 @@ var UserScalarFieldEnum;
     UserScalarFieldEnum["firstName"] = "firstName";
     UserScalarFieldEnum["lastName"] = "lastName";
     UserScalarFieldEnum["avatar"] = "avatar";
-    UserScalarFieldEnum["coverImage"] = "coverImage";
-    UserScalarFieldEnum["dateOfBirth"] = "dateOfBirth";
-    UserScalarFieldEnum["biography"] = "biography";
     UserScalarFieldEnum["hasAcceptedTerms"] = "hasAcceptedTerms";
     UserScalarFieldEnum["isFirstTimeUser"] = "isFirstTimeUser";
     UserScalarFieldEnum["isVerified"] = "isVerified";
     UserScalarFieldEnum["isActive"] = "isActive";
-    UserScalarFieldEnum["mealIds"] = "mealIds";
     UserScalarFieldEnum["createdAt"] = "createdAt";
     UserScalarFieldEnum["updatedAt"] = "updatedAt";
-    UserScalarFieldEnum["wardId"] = "wardId";
 })(UserScalarFieldEnum = exports.UserScalarFieldEnum || (exports.UserScalarFieldEnum = {}));
 TypeGraphQL.registerEnumType(UserScalarFieldEnum, {
     name: "UserScalarFieldEnum",

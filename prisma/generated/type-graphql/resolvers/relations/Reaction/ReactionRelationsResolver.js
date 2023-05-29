@@ -4,27 +4,11 @@ exports.ReactionRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const Comment_1 = require("../../../models/Comment");
-const Meal_1 = require("../../../models/Meal");
-const Post_1 = require("../../../models/Post");
 const Reaction_1 = require("../../../models/Reaction");
 const Reply_1 = require("../../../models/Reply");
 const User_1 = require("../../../models/User");
 const helpers_1 = require("../../../helpers");
 let ReactionRelationsResolver = class ReactionRelationsResolver {
-    async Meal(reaction, ctx) {
-        return (0, helpers_1.getPrismaFromContext)(ctx).reaction.findUnique({
-            where: {
-                id: reaction.id,
-            },
-        }).Meal({});
-    }
-    async Post(reaction, ctx) {
-        return (0, helpers_1.getPrismaFromContext)(ctx).reaction.findUnique({
-            where: {
-                id: reaction.id,
-            },
-        }).Post({});
-    }
     async Comment(reaction, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).reaction.findUnique({
             where: {
@@ -47,26 +31,6 @@ let ReactionRelationsResolver = class ReactionRelationsResolver {
         }).Author({});
     }
 };
-tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => Meal_1.Meal, {
-        nullable: true
-    }),
-    tslib_1.__param(0, TypeGraphQL.Root()),
-    tslib_1.__param(1, TypeGraphQL.Ctx()),
-    tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [Reaction_1.Reaction, Object]),
-    tslib_1.__metadata("design:returntype", Promise)
-], ReactionRelationsResolver.prototype, "Meal", null);
-tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => Post_1.Post, {
-        nullable: true
-    }),
-    tslib_1.__param(0, TypeGraphQL.Root()),
-    tslib_1.__param(1, TypeGraphQL.Ctx()),
-    tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [Reaction_1.Reaction, Object]),
-    tslib_1.__metadata("design:returntype", Promise)
-], ReactionRelationsResolver.prototype, "Post", null);
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => Comment_1.Comment, {
         nullable: true

@@ -1,8 +1,6 @@
 import { CommentRelationFilter } from "../inputs/CommentRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumREACTION_TYPEFilter } from "../inputs/EnumREACTION_TYPEFilter";
-import { MealRelationFilter } from "../inputs/MealRelationFilter";
-import { PostRelationFilter } from "../inputs/PostRelationFilter";
 import { ReplyRelationFilter } from "../inputs/ReplyRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
@@ -13,10 +11,6 @@ export declare class ReactionWhereInput {
     NOT?: ReactionWhereInput[] | undefined;
     id?: StringFilter | undefined;
     type?: EnumREACTION_TYPEFilter | undefined;
-    Meal?: MealRelationFilter | undefined;
-    mealId?: StringNullableFilter | undefined;
-    Post?: PostRelationFilter | undefined;
-    postId?: StringNullableFilter | undefined;
     Comment?: CommentRelationFilter | undefined;
     commentId?: StringNullableFilter | undefined;
     Reply?: ReplyRelationFilter | undefined;

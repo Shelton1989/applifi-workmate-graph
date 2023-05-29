@@ -1,7 +1,7 @@
 export declare class CommentCountAggregate {
     id: number;
     text: number;
-    postId: number;
+    documentId: number;
     authorId: number;
     createdAt: number;
     updatedAt: number;

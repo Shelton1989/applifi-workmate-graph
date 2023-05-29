@@ -8,8 +8,8 @@ export declare class NotificationSettingsWhereInput {
     OR?: NotificationSettingsWhereInput[] | undefined;
     NOT?: NotificationSettingsWhereInput[] | undefined;
     id?: StringFilter | undefined;
-    newMenuItems?: BoolFilter | undefined;
-    orderUpdates?: BoolFilter | undefined;
+    newDocumentsIndexed?: BoolFilter | undefined;
+    documentUpdates?: BoolFilter | undefined;
     newRequests?: BoolFilter | undefined;
     requestUpdates?: BoolFilter | undefined;
     commentsOnMyReviews?: BoolFilter | undefined;

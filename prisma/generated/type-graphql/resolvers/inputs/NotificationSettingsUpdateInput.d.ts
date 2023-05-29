@@ -2,8 +2,8 @@ import { BoolFieldUpdateOperationsInput } from "../inputs/BoolFieldUpdateOperati
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { UserUpdateOneWithoutNotificationSettingsInput } from "../inputs/UserUpdateOneWithoutNotificationSettingsInput";
 export declare class NotificationSettingsUpdateInput {
-    newMenuItems?: BoolFieldUpdateOperationsInput | undefined;
-    orderUpdates?: BoolFieldUpdateOperationsInput | undefined;
+    newDocumentsIndexed?: BoolFieldUpdateOperationsInput | undefined;
+    documentUpdates?: BoolFieldUpdateOperationsInput | undefined;
     newRequests?: BoolFieldUpdateOperationsInput | undefined;
     requestUpdates?: BoolFieldUpdateOperationsInput | undefined;
     commentsOnMyReviews?: BoolFieldUpdateOperationsInput | undefined;

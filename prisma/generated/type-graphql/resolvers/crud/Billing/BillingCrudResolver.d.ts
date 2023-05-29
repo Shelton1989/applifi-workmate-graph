@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateBillingArgs } from "./args/AggregateBillingArgs";
+import { CreateBillingArgs } from "./args/CreateBillingArgs";
+import { CreateManyBillingArgs } from "./args/CreateManyBillingArgs";
+import { DeleteBillingArgs } from "./args/DeleteBillingArgs";
+import { DeleteManyBillingArgs } from "./args/DeleteManyBillingArgs";
+import { FindFirstBillingArgs } from "./args/FindFirstBillingArgs";
+import { FindManyBillingArgs } from "./args/FindManyBillingArgs";
+import { FindUniqueBillingArgs } from "./args/FindUniqueBillingArgs";
+import { GroupByBillingArgs } from "./args/GroupByBillingArgs";
+import { UpdateBillingArgs } from "./args/UpdateBillingArgs";
+import { UpdateManyBillingArgs } from "./args/UpdateManyBillingArgs";
+import { UpsertBillingArgs } from "./args/UpsertBillingArgs";
+import { Billing } from "../../../models/Billing";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateBilling } from "../../outputs/AggregateBilling";
+import { BillingGroupBy } from "../../outputs/BillingGroupBy";
+export declare class BillingCrudResolver {
+    billing(ctx: any, info: GraphQLResolveInfo, args: FindUniqueBillingArgs): Promise<Billing | null>;
+    findFirstBilling(ctx: any, info: GraphQLResolveInfo, args: FindFirstBillingArgs): Promise<Billing | null>;
+    billings(ctx: any, info: GraphQLResolveInfo, args: FindManyBillingArgs): Promise<Billing[]>;
+    createBilling(ctx: any, info: GraphQLResolveInfo, args: CreateBillingArgs): Promise<Billing>;
+    createManyBilling(ctx: any, info: GraphQLResolveInfo, args: CreateManyBillingArgs): Promise<AffectedRowsOutput>;
+    deleteBilling(ctx: any, info: GraphQLResolveInfo, args: DeleteBillingArgs): Promise<Billing | null>;
+    updateBilling(ctx: any, info: GraphQLResolveInfo, args: UpdateBillingArgs): Promise<Billing | null>;
+    deleteManyBilling(ctx: any, info: GraphQLResolveInfo, args: DeleteManyBillingArgs): Promise<AffectedRowsOutput>;
+    updateManyBilling(ctx: any, info: GraphQLResolveInfo, args: UpdateManyBillingArgs): Promise<AffectedRowsOutput>;
+    upsertBilling(ctx: any, info: GraphQLResolveInfo, args: UpsertBillingArgs): Promise<Billing>;
+    aggregateBilling(ctx: any, info: GraphQLResolveInfo, args: AggregateBillingArgs): Promise<AggregateBilling>;
+    groupByBilling(ctx: any, info: GraphQLResolveInfo, args: GroupByBillingArgs): Promise<BillingGroupBy[]>;
+}

@@ -1,6 +1,6 @@
-import { Location } from "../models/Location";
-import { Meal } from "../models/Meal";
-import { Order } from "../models/Order";
+import { Billing } from "../models/Billing";
+import { Document } from "../models/Document";
+import { Query } from "../models/Query";
 import { User } from "../models/User";
 import { TenantCount } from "../resolvers/outputs/TenantCount";
 export declare class Tenant {
@@ -10,12 +10,10 @@ export declare class Tenant {
     description?: string | null;
     logoImage?: string | null;
     avatar?: string | null;
-    coverImage?: string | null;
-    experienceImages: string[];
     Users?: User[];
-    Meals?: Meal[];
-    Orders?: Order[];
-    Locations?: Location[];
+    Queries?: Query[];
+    Documents?: Document[];
+    Billing?: Billing | null;
     acceptedUserEmailDomains: string[];
     createdAt: Date;
     updatedAt: Date;

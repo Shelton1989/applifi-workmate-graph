@@ -1,7 +1,7 @@
 export declare enum NotificationSettingsScalarFieldEnum {
     id = "id",
-    newMenuItems = "newMenuItems",
-    orderUpdates = "orderUpdates",
+    newDocumentsIndexed = "newDocumentsIndexed",
+    documentUpdates = "documentUpdates",
     newRequests = "newRequests",
     requestUpdates = "requestUpdates",
     commentsOnMyReviews = "commentsOnMyReviews",

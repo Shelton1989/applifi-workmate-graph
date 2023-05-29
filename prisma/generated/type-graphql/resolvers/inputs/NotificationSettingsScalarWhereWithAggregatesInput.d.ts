@@ -7,8 +7,8 @@ export declare class NotificationSettingsScalarWhereWithAggregatesInput {
     OR?: NotificationSettingsScalarWhereWithAggregatesInput[] | undefined;
     NOT?: NotificationSettingsScalarWhereWithAggregatesInput[] | undefined;
     id?: StringWithAggregatesFilter | undefined;
-    newMenuItems?: BoolWithAggregatesFilter | undefined;
-    orderUpdates?: BoolWithAggregatesFilter | undefined;
+    newDocumentsIndexed?: BoolWithAggregatesFilter | undefined;
+    documentUpdates?: BoolWithAggregatesFilter | undefined;
     newRequests?: BoolWithAggregatesFilter | undefined;
     requestUpdates?: BoolWithAggregatesFilter | undefined;
     commentsOnMyReviews?: BoolWithAggregatesFilter | undefined;

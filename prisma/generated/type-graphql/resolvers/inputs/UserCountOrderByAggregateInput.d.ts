@@ -9,15 +9,10 @@ export declare class UserCountOrderByAggregateInput {
     firstName?: "asc" | "desc" | undefined;
     lastName?: "asc" | "desc" | undefined;
     avatar?: "asc" | "desc" | undefined;
-    coverImage?: "asc" | "desc" | undefined;
-    dateOfBirth?: "asc" | "desc" | undefined;
-    biography?: "asc" | "desc" | undefined;
     hasAcceptedTerms?: "asc" | "desc" | undefined;
     isFirstTimeUser?: "asc" | "desc" | undefined;
     isVerified?: "asc" | "desc" | undefined;
     isActive?: "asc" | "desc" | undefined;
-    mealIds?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
-    wardId?: "asc" | "desc" | undefined;
 }

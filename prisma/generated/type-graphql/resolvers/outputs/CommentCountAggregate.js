@@ -22,7 +22,7 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], CommentCountAggregate.prototype, "postId", void 0);
+], CommentCountAggregate.prototype, "documentId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

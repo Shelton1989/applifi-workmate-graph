@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateQueryArgs } from "./args/AggregateQueryArgs";
+import { CreateManyQueryArgs } from "./args/CreateManyQueryArgs";
+import { CreateQueryArgs } from "./args/CreateQueryArgs";
+import { DeleteManyQueryArgs } from "./args/DeleteManyQueryArgs";
+import { DeleteQueryArgs } from "./args/DeleteQueryArgs";
+import { FindFirstQueryArgs } from "./args/FindFirstQueryArgs";
+import { FindManyQueryArgs } from "./args/FindManyQueryArgs";
+import { FindUniqueQueryArgs } from "./args/FindUniqueQueryArgs";
+import { GroupByQueryArgs } from "./args/GroupByQueryArgs";
+import { UpdateManyQueryArgs } from "./args/UpdateManyQueryArgs";
+import { UpdateQueryArgs } from "./args/UpdateQueryArgs";
+import { UpsertQueryArgs } from "./args/UpsertQueryArgs";
+import { Query } from "../../../models/Query";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateQuery } from "../../outputs/AggregateQuery";
+import { QueryGroupBy } from "../../outputs/QueryGroupBy";
+export declare class QueryCrudResolver {
+    query(ctx: any, info: GraphQLResolveInfo, args: FindUniqueQueryArgs): Promise<Query | null>;
+    findFirstQuery(ctx: any, info: GraphQLResolveInfo, args: FindFirstQueryArgs): Promise<Query | null>;
+    queries(ctx: any, info: GraphQLResolveInfo, args: FindManyQueryArgs): Promise<Query[]>;
+    createQuery(ctx: any, info: GraphQLResolveInfo, args: CreateQueryArgs): Promise<Query>;
+    createManyQuery(ctx: any, info: GraphQLResolveInfo, args: CreateManyQueryArgs): Promise<AffectedRowsOutput>;
+    deleteQuery(ctx: any, info: GraphQLResolveInfo, args: DeleteQueryArgs): Promise<Query | null>;
+    updateQuery(ctx: any, info: GraphQLResolveInfo, args: UpdateQueryArgs): Promise<Query | null>;
+    deleteManyQuery(ctx: any, info: GraphQLResolveInfo, args: DeleteManyQueryArgs): Promise<AffectedRowsOutput>;
+    updateManyQuery(ctx: any, info: GraphQLResolveInfo, args: UpdateManyQueryArgs): Promise<AffectedRowsOutput>;
+    upsertQuery(ctx: any, info: GraphQLResolveInfo, args: UpsertQueryArgs): Promise<Query>;
+    aggregateQuery(ctx: any, info: GraphQLResolveInfo, args: AggregateQueryArgs): Promise<AggregateQuery>;
+    groupByQuery(ctx: any, info: GraphQLResolveInfo, args: GroupByQueryArgs): Promise<QueryGroupBy[]>;
+}

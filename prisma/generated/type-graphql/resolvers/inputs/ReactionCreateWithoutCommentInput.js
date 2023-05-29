@@ -3,8 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ReactionCreateWithoutCommentInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const MealCreateNestedOneWithoutReactionsInput_1 = require("../inputs/MealCreateNestedOneWithoutReactionsInput");
-const PostCreateNestedOneWithoutReactionsInput_1 = require("../inputs/PostCreateNestedOneWithoutReactionsInput");
 const ReplyCreateNestedOneWithoutReactionsInput_1 = require("../inputs/ReplyCreateNestedOneWithoutReactionsInput");
 const UserCreateNestedOneWithoutReactionsInput_1 = require("../inputs/UserCreateNestedOneWithoutReactionsInput");
 const REACTION_TYPE_1 = require("../../enums/REACTION_TYPE");
@@ -22,18 +20,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], ReactionCreateWithoutCommentInput.prototype, "type", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => MealCreateNestedOneWithoutReactionsInput_1.MealCreateNestedOneWithoutReactionsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", MealCreateNestedOneWithoutReactionsInput_1.MealCreateNestedOneWithoutReactionsInput)
-], ReactionCreateWithoutCommentInput.prototype, "Meal", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PostCreateNestedOneWithoutReactionsInput_1.PostCreateNestedOneWithoutReactionsInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", PostCreateNestedOneWithoutReactionsInput_1.PostCreateNestedOneWithoutReactionsInput)
-], ReactionCreateWithoutCommentInput.prototype, "Post", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => ReplyCreateNestedOneWithoutReactionsInput_1.ReplyCreateNestedOneWithoutReactionsInput, {
         nullable: true

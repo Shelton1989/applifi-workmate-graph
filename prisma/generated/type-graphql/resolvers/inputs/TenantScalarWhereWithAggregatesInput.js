@@ -65,18 +65,6 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
 ], TenantScalarWhereWithAggregatesInput.prototype, "avatar", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableWithAggregatesFilter_1.StringNullableWithAggregatesFilter)
-], TenantScalarWhereWithAggregatesInput.prototype, "coverImage", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableListFilter_1.StringNullableListFilter)
-], TenantScalarWhereWithAggregatesInput.prototype, "experienceImages", void 0);
-tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringNullableListFilter_1.StringNullableListFilter, {
         nullable: true
     }),

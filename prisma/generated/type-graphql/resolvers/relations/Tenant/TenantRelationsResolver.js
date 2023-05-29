@@ -3,14 +3,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TenantRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const Location_1 = require("../../../models/Location");
-const Meal_1 = require("../../../models/Meal");
-const Order_1 = require("../../../models/Order");
+const Billing_1 = require("../../../models/Billing");
+const Document_1 = require("../../../models/Document");
+const Query_1 = require("../../../models/Query");
 const Tenant_1 = require("../../../models/Tenant");
 const User_1 = require("../../../models/User");
-const TenantLocationsArgs_1 = require("./args/TenantLocationsArgs");
-const TenantMealsArgs_1 = require("./args/TenantMealsArgs");
-const TenantOrdersArgs_1 = require("./args/TenantOrdersArgs");
+const TenantDocumentsArgs_1 = require("./args/TenantDocumentsArgs");
+const TenantQueriesArgs_1 = require("./args/TenantQueriesArgs");
 const TenantUsersArgs_1 = require("./args/TenantUsersArgs");
 const helpers_1 = require("../../../helpers");
 let TenantRelationsResolver = class TenantRelationsResolver {
@@ -21,26 +20,26 @@ let TenantRelationsResolver = class TenantRelationsResolver {
             },
         }).Users(args);
     }
-    async Meals(tenant, ctx, args) {
+    async Queries(tenant, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).tenant.findUnique({
             where: {
                 id: tenant.id,
             },
-        }).Meals(args);
+        }).Queries(args);
     }
-    async Orders(tenant, ctx, args) {
+    async Documents(tenant, ctx, args) {
         return (0, helpers_1.getPrismaFromContext)(ctx).tenant.findUnique({
             where: {
                 id: tenant.id,
             },
-        }).Orders(args);
+        }).Documents(args);
     }
-    async Locations(tenant, ctx, args) {
+    async Billing(tenant, ctx) {
         return (0, helpers_1.getPrismaFromContext)(ctx).tenant.findUnique({
             where: {
                 id: tenant.id,
             },
-        }).Locations(args);
+        }).Billing({});
     }
 };
 tslib_1.__decorate([
@@ -55,38 +54,37 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:returntype", Promise)
 ], TenantRelationsResolver.prototype, "Users", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [Meal_1.Meal], {
+    TypeGraphQL.FieldResolver(_type => [Query_1.Query], {
         nullable: false
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
     tslib_1.__param(1, TypeGraphQL.Ctx()),
     tslib_1.__param(2, TypeGraphQL.Args()),
     tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [Tenant_1.Tenant, Object, TenantMealsArgs_1.TenantMealsArgs]),
+    tslib_1.__metadata("design:paramtypes", [Tenant_1.Tenant, Object, TenantQueriesArgs_1.TenantQueriesArgs]),
     tslib_1.__metadata("design:returntype", Promise)
-], TenantRelationsResolver.prototype, "Meals", null);
+], TenantRelationsResolver.prototype, "Queries", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [Order_1.Order], {
+    TypeGraphQL.FieldResolver(_type => [Document_1.Document], {
         nullable: false
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
     tslib_1.__param(1, TypeGraphQL.Ctx()),
     tslib_1.__param(2, TypeGraphQL.Args()),
     tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [Tenant_1.Tenant, Object, TenantOrdersArgs_1.TenantOrdersArgs]),
+    tslib_1.__metadata("design:paramtypes", [Tenant_1.Tenant, Object, TenantDocumentsArgs_1.TenantDocumentsArgs]),
     tslib_1.__metadata("design:returntype", Promise)
-], TenantRelationsResolver.prototype, "Orders", null);
+], TenantRelationsResolver.prototype, "Documents", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [Location_1.Location], {
-        nullable: false
+    TypeGraphQL.FieldResolver(_type => Billing_1.Billing, {
+        nullable: true
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
     tslib_1.__param(1, TypeGraphQL.Ctx()),
-    tslib_1.__param(2, TypeGraphQL.Args()),
     tslib_1.__metadata("design:type", Function),
-    tslib_1.__metadata("design:paramtypes", [Tenant_1.Tenant, Object, TenantLocationsArgs_1.TenantLocationsArgs]),
+    tslib_1.__metadata("design:paramtypes", [Tenant_1.Tenant, Object]),
     tslib_1.__metadata("design:returntype", Promise)
-], TenantRelationsResolver.prototype, "Locations", null);
+], TenantRelationsResolver.prototype, "Billing", null);
 TenantRelationsResolver = tslib_1.__decorate([
     TypeGraphQL.Resolver(_of => Tenant_1.Tenant)
 ], TenantRelationsResolver);

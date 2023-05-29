@@ -6,7 +6,7 @@ export declare class CommentScalarWhereWithAggregatesInput {
     NOT?: CommentScalarWhereWithAggregatesInput[] | undefined;
     id?: StringWithAggregatesFilter | undefined;
     text?: StringWithAggregatesFilter | undefined;
-    postId?: StringWithAggregatesFilter | undefined;
+    documentId?: StringWithAggregatesFilter | undefined;
     authorId?: StringWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;

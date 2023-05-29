@@ -1,7 +1,7 @@
 export declare class NotificationSettingsCountOrderByAggregateInput {
     id?: "asc" | "desc" | undefined;
-    newMenuItems?: "asc" | "desc" | undefined;
-    orderUpdates?: "asc" | "desc" | undefined;
+    newDocumentsIndexed?: "asc" | "desc" | undefined;
+    documentUpdates?: "asc" | "desc" | undefined;
     newRequests?: "asc" | "desc" | undefined;
     requestUpdates?: "asc" | "desc" | undefined;
     commentsOnMyReviews?: "asc" | "desc" | undefined;

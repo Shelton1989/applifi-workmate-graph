@@ -7,7 +7,7 @@ var CommentScalarFieldEnum;
 (function (CommentScalarFieldEnum) {
     CommentScalarFieldEnum["id"] = "id";
     CommentScalarFieldEnum["text"] = "text";
-    CommentScalarFieldEnum["postId"] = "postId";
+    CommentScalarFieldEnum["documentId"] = "documentId";
     CommentScalarFieldEnum["authorId"] = "authorId";
     CommentScalarFieldEnum["createdAt"] = "createdAt";
     CommentScalarFieldEnum["updatedAt"] = "updatedAt";

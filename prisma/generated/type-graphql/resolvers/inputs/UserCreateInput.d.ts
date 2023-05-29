@@ -1,18 +1,13 @@
 import { CommentCreateNestedManyWithoutAuthorInput } from "../inputs/CommentCreateNestedManyWithoutAuthorInput";
-import { MealCreateNestedManyWithoutLikedByInput } from "../inputs/MealCreateNestedManyWithoutLikedByInput";
 import { NotificationCreateNestedManyWithoutActorInput } from "../inputs/NotificationCreateNestedManyWithoutActorInput";
 import { NotificationCreateNestedManyWithoutUserInput } from "../inputs/NotificationCreateNestedManyWithoutUserInput";
 import { NotificationSettingsCreateNestedOneWithoutUserInput } from "../inputs/NotificationSettingsCreateNestedOneWithoutUserInput";
-import { OrderCreateNestedManyWithoutPatientInput } from "../inputs/OrderCreateNestedManyWithoutPatientInput";
-import { PatientProfileCreateNestedOneWithoutUserInput } from "../inputs/PatientProfileCreateNestedOneWithoutUserInput";
-import { PostCreateNestedManyWithoutAuthorInput } from "../inputs/PostCreateNestedManyWithoutAuthorInput";
+import { QueryCreateNestedManyWithoutUserInput } from "../inputs/QueryCreateNestedManyWithoutUserInput";
 import { ReactionCreateNestedManyWithoutAuthorInput } from "../inputs/ReactionCreateNestedManyWithoutAuthorInput";
 import { ReplyCreateNestedManyWithoutAuthorInput } from "../inputs/ReplyCreateNestedManyWithoutAuthorInput";
 import { RequestCreateNestedManyWithoutReporterInput } from "../inputs/RequestCreateNestedManyWithoutReporterInput";
 import { TenantCreateNestedOneWithoutUsersInput } from "../inputs/TenantCreateNestedOneWithoutUsersInput";
-import { UserCreatemealIdsInput } from "../inputs/UserCreatemealIdsInput";
 import { UserCreaterolesInput } from "../inputs/UserCreaterolesInput";
-import { WardCreateNestedOneWithoutUsersInput } from "../inputs/WardCreateNestedOneWithoutUsersInput";
 export declare class UserCreateInput {
     Tenant?: TenantCreateNestedOneWithoutUsersInput | undefined;
     uid: string;
@@ -24,26 +19,18 @@ export declare class UserCreateInput {
     firstName?: string | undefined;
     lastName?: string | undefined;
     avatar?: string | undefined;
-    coverImage?: string | undefined;
-    dateOfBirth?: Date | undefined;
-    biography?: string | undefined;
     hasAcceptedTerms?: boolean | undefined;
     isFirstTimeUser?: boolean | undefined;
     isVerified?: boolean | undefined;
     isActive?: boolean | undefined;
     NotificationSettings?: NotificationSettingsCreateNestedOneWithoutUserInput | undefined;
-    PatientProfile?: PatientProfileCreateNestedOneWithoutUserInput | undefined;
     Notifications?: NotificationCreateNestedManyWithoutUserInput | undefined;
     Activity?: NotificationCreateNestedManyWithoutActorInput | undefined;
-    LikedMeals?: MealCreateNestedManyWithoutLikedByInput | undefined;
-    mealIds?: UserCreatemealIdsInput | undefined;
+    Queries?: QueryCreateNestedManyWithoutUserInput | undefined;
     Requests?: RequestCreateNestedManyWithoutReporterInput | undefined;
-    Posts?: PostCreateNestedManyWithoutAuthorInput | undefined;
     Comments?: CommentCreateNestedManyWithoutAuthorInput | undefined;
     Replies?: ReplyCreateNestedManyWithoutAuthorInput | undefined;
     Reactions?: ReactionCreateNestedManyWithoutAuthorInput | undefined;
-    Bookings?: OrderCreateNestedManyWithoutPatientInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
-    Ward?: WardCreateNestedOneWithoutUsersInput | undefined;
 }

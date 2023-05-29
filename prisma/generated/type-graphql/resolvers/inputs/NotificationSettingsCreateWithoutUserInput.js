@@ -16,13 +16,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateWithoutUserInput.prototype, "newMenuItems", void 0);
+], NotificationSettingsCreateWithoutUserInput.prototype, "newDocumentsIndexed", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Boolean)
-], NotificationSettingsCreateWithoutUserInput.prototype, "orderUpdates", void 0);
+], NotificationSettingsCreateWithoutUserInput.prototype, "documentUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Boolean, {
         nullable: true

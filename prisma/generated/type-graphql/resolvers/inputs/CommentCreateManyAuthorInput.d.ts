@@ -1,7 +1,7 @@
 export declare class CommentCreateManyAuthorInput {
     id?: string | undefined;
     text: string;
-    postId: string;
+    documentId: string;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

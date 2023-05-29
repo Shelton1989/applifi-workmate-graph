@@ -25,12 +25,6 @@ enum ROLE {
   WORKSPACE_OWNER
   WORKSPACE_ADMIN
   WORKSPACE_USER
-  WARD_ADMIN
-  WARD_HOST_OR_HOSTESS
-  WARD_USER
-  KITCHEN_ADMIN
-  KITCHEN_USER
-  NURSE
 }
 
 // Models
@@ -48,13 +42,9 @@ model User {
 
   roles ROLE[]
 
-  firstName   String?
-  lastName    String?
-  avatar      String?
-  coverImage  String?
-  dateOfBirth DateTime?
-
-  biography String?
+  firstName String?
+  lastName  String?
+  avatar    String?
 
   hasAcceptedTerms Boolean? @default(false)
   isFirstTimeUser  Boolean? @default(true)
@@ -62,83 +52,17 @@ model User {
   isActive         Boolean? @default(true)
 
   NotificationSettings NotificationSettings?
-  PatientProfile       PatientProfile?
 
   Notifications Notification[] @relation("Subject")
   Activity      Notification[] @relation("Actor")
 
   // Market
-  LikedMeals Meal[]   @relation(fields: [mealIds], references: [id])
-  mealIds    String[]
+  Queries Query[]
 
   Requests  Request[]
-  Posts     Post[]
   Comments  Comment[]
   Replies   Reply[]
   Reactions Reaction[]
-
-  Bookings Order[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-  Ward      Ward?    @relation(fields: [wardId], references: [id])
-  wardId    String?
-}
-
-enum MEAL_KIND {
-  FLUID
-  LIGHT
-  FULL
-}
-
-enum MEAL_TYPES {
-  BREAKFAST
-  LUNCH
-  DINNER
-  SNACK
-}
-
-enum SPECIAL_DIETS {
-  NONE
-  MIXED_FLUID
-  CLEAR_FLUID
-  PUREED
-}
-
-enum DIETARY_RESTRICTIONS {
-  NONE
-  VEGETARIAN
-  VEGAN
-  GLUTEN_FREE
-  DAIRY_FREE
-  NUT_FREE
-  EGG_FREE
-  PORK_FREE
-  HALAL
-  KOSHER
-  PALEO
-  OTHER
-}
-
-model PatientProfile {
-  id String @id @default(uuid()) @map("_id")
-
-  identityNumber String?
-  identityType   String?
-
-  bedNumber  String?
-  wardNumber String?
-
-  allServicesOpen Boolean? @default(false)
-
-  dietaryRestrictions DIETARY_RESTRICTIONS[]
-  allowedMealTypes    MEAL_TYPES[]
-  allowedMealKinds    MEAL_KIND[]
-  doctorSpecificDiets DIETARY_RESTRICTIONS[]
-  specialDiets        SPECIAL_DIETS[]
-
-  User   User?   @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  userId String? @unique
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -147,8 +71,8 @@ model PatientProfile {
 model NotificationSettings {
   id String @id @default(uuid()) @map("_id")
 
-  newMenuItems        Boolean @default(false)
-  orderUpdates        Boolean @default(false)
+  newDocumentsIndexed Boolean @default(false)
+  documentUpdates     Boolean @default(false)
   newRequests         Boolean @default(false)
   requestUpdates      Boolean @default(false)
   commentsOnMyReviews Boolean @default(false)
@@ -169,17 +93,15 @@ model Tenant {
 
   description String?
 
-  logoImage  String?
-  avatar     String?
-  coverImage String?
-  experienceImages String[]
+  logoImage String?
+  avatar    String?
 
   Users User[]
-  Meals Meal[]
 
-  Orders Order[]
+  Queries   Query[]
+  Documents Document[]
 
-  Locations Location[]
+  Billing Billing?
 
   acceptedUserEmailDomains String[]
 
@@ -187,15 +109,33 @@ model Tenant {
   updatedAt DateTime @default(now()) @updatedAt
 }
 
-model Ward {
+enum PLAN {
+  FREE
+  STANDARD
+  PRO
+  ENTERPRISE
+}
+
+enum BILLING_STATUS {
+  ACTIVE
+  PAST_DUE
+  CANCELED
+  UNPAID
+  INCOMPLETE
+  INCOMPLETE_EXPIRED
+  TRIALING
+}
+
+model Billing {
   id String @id @default(uuid()) @map("_id")
 
-  number Int
-  name   String
+  Tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  tenantId String @unique
 
-  description String?
+  stripeCustomerId String?
 
-  Users User[]
+  plan   PLAN           @default(FREE)
+  status BILLING_STATUS @default(ACTIVE)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -208,63 +148,14 @@ enum REACTION_TYPE {
   DISLIKE
 }
 
-enum MEDIA_TYPE {
-  IMAGE
-  CAROUSEL
-  VIDEO
-}
-
-model AggregateRating {
-  id String @id @default(uuid()) @map("_id")
-
-  ratingValue Float
-
-  countedPosts Int? @default(0)
-  allPosts     Int? @default(0)
-  ratingCount  Int? @default(0)
-
-  Meal   Meal?   @relation(fields: [mealId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  mealId String? @unique
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Post {
-  id String @id @default(uuid()) @map("_id")
-
-  type     MEDIA_TYPE @default(IMAGE)
-  caption  String?
-  mediaUrl String[]
-
-  rating Float
-
-  isCommentsEnabled Boolean @default(true)
-  canBeCounted      Boolean @default(true)
-
-  Author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  authorId String
-
-  Meal   Meal?   @relation(fields: [mealId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  mealId String?
-
-  Comments  Comment[]
-  Reactions Reaction[]
-
-  postLink String?
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
 model Comment {
   id String @id @default(uuid()) @map("_id")
 
-  text     String
-  Post     Post   @relation(fields: [postId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  postId   String
-  Author   User   @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  authorId String
+  text       String
+  Document   Document @relation(fields: [documentId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  documentId String
+  Author     User     @relation(fields: [authorId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  authorId   String
 
   Replies   Reply[]
   Reactions Reaction[]
@@ -293,10 +184,6 @@ model Reaction {
 
   type REACTION_TYPE
 
-  Meal      Meal?    @relation(fields: [mealId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  mealId    String?
-  Post      Post?    @relation(fields: [postId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  postId    String?
   Comment   Comment? @relation(fields: [commentId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   commentId String?
   Reply     Reply?   @relation(fields: [replyId], references: [id], onDelete: Cascade, onUpdate: Cascade)
@@ -387,179 +274,33 @@ enum PUBLISH_STATUS {
   SOFT_BANNED
 }
 
-model Meal {
+model Query {
   id String @id @default(uuid()) @map("_id")
 
-  Tenant      Tenant  @relation(fields: [tenantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  tenantId    String
-  productLink String?
+  Tenant    Tenant  @relation(fields: [tenantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  tenantId  String
+  queryLink String?
 
-  title       String?
-  description String?
+  queryText String?
 
-  dietaryRestrictions DIETARY_RESTRICTIONS[]
-  mealTypes    MEAL_TYPES[]
-  mealKinds    MEAL_KIND[]
-  doctorSpecificDiets DIETARY_RESTRICTIONS[]
-  specialDiets        SPECIAL_DIETS[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+  User      User?    @relation(fields: [userId], references: [id])
+  userId    String?
+}
 
-  Items        MealItem[]         @relation(fields: [itemIds], references: [id])
-  itemIds      String[]
-  Availability MealAvailability[]
-  Orders       Order[]
-  photo        String?
-  gallery      String[]
-
-  AggregateRating AggregateRating?
+model Document {
+  id String @id @default(uuid()) @map("_id")
 
   publishStatus PUBLISH_STATUS @default(DRAFT)
 
-  LikedBy    User[]   @relation(fields: [likedByIds], references: [id])
-  likedByIds String[]
-
-  Posts Post[]
-
-  Features Features[]
-
-  Reactions Reaction[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model MealItem {
-  id String @id @default(uuid()) @map("_id")
-
-  Meals   Meal[]   @relation(fields: [mealIds], references: [id])
-  mealIds String[]
-
   title            String
   shortDescription String
 
-  Options MealItemOption[]
+  Tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  tenantId String
 
-  OrderLineItems OrderLineItem[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Features {
-  id String @id @default(uuid()) @map("_id")
-
-  Meal   Meal   @relation(fields: [mealId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  mealId String
-
-  title            String
-  shortDescription String
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model MealItemOption {
-  id String @id @default(uuid()) @map("_id")
-
-  MealItem   MealItem @relation(fields: [mealItemId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  mealItemId String
-
-  title            String
-  shortDescription String
-
-  OrderLineItems OrderLineItem[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model MealAvailability {
-  id String @id @default(uuid()) @map("_id")
-
-  Meal   Meal   @relation(fields: [mealId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  mealId String
-
-  startDate DateTime?
-  endDate   DateTime?
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-enum ORDER_STATUS {
-  OPEN
-  ORDERED
-  IN_PREPARATION
-  READY_FOR_COLLECTION
-  IN_TRANSIT
-  ARRIVED
-  COMPLETE
-  CANCELLED
-}
-
-model OrderLineItem {
-  id String @id @default(uuid()) @map("_id")
-
-  details  String?
-  comments String?
-
-  selectedMealItem       MealItem?       @relation(fields: [mealItemId], references: [id])
-  mealItemId             String?
-  selectedMealItemOption MealItemOption? @relation(fields: [mealItemOptionId], references: [id])
-  mealItemOptionId       String?
-
-  Order   Order  @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  orderId String
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-model Order {
-  id String @id @default(uuid()) @map("_id")
-
-  Meal   Meal   @relation(fields: [mealId], references: [id])
-  mealId String
-
-  status ORDER_STATUS @default(OPEN)
-
-  Patient   User   @relation(fields: [patientId], references: [id])
-  patientId String
-  Tenant    Tenant @relation(fields: [tenantId], references: [id])
-  tenantId  String
-
-  Items OrderLineItem[]
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @default(now()) @updatedAt
-}
-
-enum ADDRESS_TYPE {
-  PHYSICAL
-  POSTAL
-}
-
-model Location {
-  id String @id @default(uuid()) @map("_id")
-
-  description String?
-
-  longitude Float?
-  latitude  Float?
-
-  googleMapsUrl  String?
-  googlePlacesId String?
-
-  type      ADDRESS_TYPE?
-  line1     String?
-  line2     String?
-  city      String?
-  district  String?
-  country   String?
-  code      String?
-  isDefault Boolean       @default(false)
-
-  Tenant   Tenant? @relation(fields: [tenantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  tenantId String?
+  Comments Comment[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

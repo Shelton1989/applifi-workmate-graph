@@ -13,8 +13,6 @@ import { getAuth } from "firebase-admin/auth";
 import { Allow, Max, Min } from "class-validator";
 
 // Custom resolvers
-import { PostResolver } from './resolvers/posts.resolvers';
-// import { TopicResolver } from "./resolvers/search.resolvers";
 
 const userCreateOrUpdateOperations = [
   "createPostReview",
@@ -93,13 +91,13 @@ applyResolversEnhanceMap({
   NotificationSettings: {
     _all: [Authorized()]
   },
-  Post: {
-    createPost: [Authorized()],
-    updatePost: [Authorized()],
-    createManyPost: [Authorized(ROLE.ADMIN)],
-    updateManyPost: [Authorized(ROLE.ADMIN)],
-    deletePost: [Authorized()],
-    deleteManyPost: [Authorized(ROLE.ADMIN)],
+  Document: {
+    createDocument: [Authorized()],
+    updateDocument: [Authorized()],
+    createManyDocument: [Authorized(ROLE.ADMIN)],
+    updateManyDocument: [Authorized(ROLE.ADMIN)],
+    deleteDocument: [Authorized()],
+    deleteManyDocument: [Authorized(ROLE.ADMIN)],
   },
   Comment: {
     createComment: [Authorized()],
@@ -190,7 +188,7 @@ const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles)
 (async () => {
   const schema = await buildSchema({
     authChecker,
-    resolvers: [PostResolver, ...resolvers],
+    resolvers,
     validate: false,
   });
 

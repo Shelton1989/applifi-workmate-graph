@@ -4,8 +4,6 @@ import { ReactionMinAggregate } from "../outputs/ReactionMinAggregate";
 export declare class ReactionGroupBy {
     id: string;
     type: "LIKE" | "LOVE" | "DISLIKE";
-    mealId: string | null;
-    postId: string | null;
     commentId: string | null;
     replyId: string | null;
     authorId: string;

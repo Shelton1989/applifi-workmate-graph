@@ -4,8 +4,6 @@ import { ReactionMinOrderByAggregateInput } from "../inputs/ReactionMinOrderByAg
 export declare class ReactionOrderByWithAggregationInput {
     id?: "asc" | "desc" | undefined;
     type?: "asc" | "desc" | undefined;
-    mealId?: "asc" | "desc" | undefined;
-    postId?: "asc" | "desc" | undefined;
     commentId?: "asc" | "desc" | undefined;
     replyId?: "asc" | "desc" | undefined;
     authorId?: "asc" | "desc" | undefined;

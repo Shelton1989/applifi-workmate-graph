@@ -1,8 +1,8 @@
 import { User } from "../models/User";
 export declare class NotificationSettings {
     id: string;
-    newMenuItems: boolean;
-    orderUpdates: boolean;
+    newDocumentsIndexed: boolean;
+    documentUpdates: boolean;
     newRequests: boolean;
     requestUpdates: boolean;
     commentsOnMyReviews: boolean;

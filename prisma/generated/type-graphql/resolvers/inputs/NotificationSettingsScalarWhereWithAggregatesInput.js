@@ -39,13 +39,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
-], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "newMenuItems", void 0);
+], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "newDocumentsIndexed", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", BoolWithAggregatesFilter_1.BoolWithAggregatesFilter)
-], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "orderUpdates", void 0);
+], NotificationSettingsScalarWhereWithAggregatesInput.prototype, "documentUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BoolWithAggregatesFilter_1.BoolWithAggregatesFilter, {
         nullable: true

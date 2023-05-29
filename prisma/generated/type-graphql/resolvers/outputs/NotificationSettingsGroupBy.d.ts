@@ -3,8 +3,8 @@ import { NotificationSettingsMaxAggregate } from "../outputs/NotificationSetting
 import { NotificationSettingsMinAggregate } from "../outputs/NotificationSettingsMinAggregate";
 export declare class NotificationSettingsGroupBy {
     id: string;
-    newMenuItems: boolean;
-    orderUpdates: boolean;
+    newDocumentsIndexed: boolean;
+    documentUpdates: boolean;
     newRequests: boolean;
     requestUpdates: boolean;
     commentsOnMyReviews: boolean;

@@ -4,7 +4,6 @@ exports.TenantCreateManyInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const TenantCreateacceptedUserEmailDomainsInput_1 = require("../inputs/TenantCreateacceptedUserEmailDomainsInput");
-const TenantCreateexperienceImagesInput_1 = require("../inputs/TenantCreateexperienceImagesInput");
 let TenantCreateManyInput = class TenantCreateManyInput {
 };
 tslib_1.__decorate([
@@ -43,18 +42,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], TenantCreateManyInput.prototype, "avatar", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => String, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", String)
-], TenantCreateManyInput.prototype, "coverImage", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => TenantCreateexperienceImagesInput_1.TenantCreateexperienceImagesInput, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", TenantCreateexperienceImagesInput_1.TenantCreateexperienceImagesInput)
-], TenantCreateManyInput.prototype, "experienceImages", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TenantCreateacceptedUserEmailDomainsInput_1.TenantCreateacceptedUserEmailDomainsInput, {
         nullable: true

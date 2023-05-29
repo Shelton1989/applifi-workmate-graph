@@ -16,13 +16,13 @@ tslib_1.__decorate([
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], NotificationSettingsCountAggregate.prototype, "newMenuItems", void 0);
+], NotificationSettingsCountAggregate.prototype, "newDocumentsIndexed", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", Number)
-], NotificationSettingsCountAggregate.prototype, "orderUpdates", void 0);
+], NotificationSettingsCountAggregate.prototype, "documentUpdates", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
         nullable: false

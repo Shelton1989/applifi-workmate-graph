@@ -7,8 +7,6 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentRelationFilter_1 = require("../inputs/CommentRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumREACTION_TYPEFilter_1 = require("../inputs/EnumREACTION_TYPEFilter");
-const MealRelationFilter_1 = require("../inputs/MealRelationFilter");
-const PostRelationFilter_1 = require("../inputs/PostRelationFilter");
 const ReplyRelationFilter_1 = require("../inputs/ReplyRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
@@ -45,30 +43,6 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", EnumREACTION_TYPEFilter_1.EnumREACTION_TYPEFilter)
 ], ReactionWhereInput.prototype, "type", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => MealRelationFilter_1.MealRelationFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", MealRelationFilter_1.MealRelationFilter)
-], ReactionWhereInput.prototype, "Meal", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], ReactionWhereInput.prototype, "mealId", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => PostRelationFilter_1.PostRelationFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", PostRelationFilter_1.PostRelationFilter)
-], ReactionWhereInput.prototype, "Post", void 0);
-tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
-        nullable: true
-    }),
-    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], ReactionWhereInput.prototype, "postId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => CommentRelationFilter_1.CommentRelationFilter, {
         nullable: true

@@ -1,1 +1,0 @@
-export { WardUsersArgs } from "./WardUsersArgs";

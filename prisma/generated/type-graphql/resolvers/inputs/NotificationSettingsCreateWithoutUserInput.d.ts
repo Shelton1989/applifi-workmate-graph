@@ -1,7 +1,7 @@
 export declare class NotificationSettingsCreateWithoutUserInput {
     id?: string | undefined;
-    newMenuItems?: boolean | undefined;
-    orderUpdates?: boolean | undefined;
+    newDocumentsIndexed?: boolean | undefined;
+    documentUpdates?: boolean | undefined;
     newRequests?: boolean | undefined;
     requestUpdates?: boolean | undefined;
     commentsOnMyReviews?: boolean | undefined;

@@ -1,10 +1,8 @@
 import { BoolNullableFilter } from "../inputs/BoolNullableFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
-import { DateTimeNullableFilter } from "../inputs/DateTimeNullableFilter";
 import { EnumROLENullableListFilter } from "../inputs/EnumROLENullableListFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
-import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
 export declare class UserScalarWhereInput {
     AND?: UserScalarWhereInput[] | undefined;
     OR?: UserScalarWhereInput[] | undefined;
@@ -19,15 +17,10 @@ export declare class UserScalarWhereInput {
     firstName?: StringNullableFilter | undefined;
     lastName?: StringNullableFilter | undefined;
     avatar?: StringNullableFilter | undefined;
-    coverImage?: StringNullableFilter | undefined;
-    dateOfBirth?: DateTimeNullableFilter | undefined;
-    biography?: StringNullableFilter | undefined;
     hasAcceptedTerms?: BoolNullableFilter | undefined;
     isFirstTimeUser?: BoolNullableFilter | undefined;
     isVerified?: BoolNullableFilter | undefined;
     isActive?: BoolNullableFilter | undefined;
-    mealIds?: StringNullableListFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
-    wardId?: StringNullableFilter | undefined;
 }

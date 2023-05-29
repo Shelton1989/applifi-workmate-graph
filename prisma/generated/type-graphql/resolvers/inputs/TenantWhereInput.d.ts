@@ -1,7 +1,7 @@
+import { BillingRelationFilter } from "../inputs/BillingRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
-import { LocationListRelationFilter } from "../inputs/LocationListRelationFilter";
-import { MealListRelationFilter } from "../inputs/MealListRelationFilter";
-import { OrderListRelationFilter } from "../inputs/OrderListRelationFilter";
+import { DocumentListRelationFilter } from "../inputs/DocumentListRelationFilter";
+import { QueryListRelationFilter } from "../inputs/QueryListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { StringNullableListFilter } from "../inputs/StringNullableListFilter";
@@ -16,12 +16,10 @@ export declare class TenantWhereInput {
     description?: StringNullableFilter | undefined;
     logoImage?: StringNullableFilter | undefined;
     avatar?: StringNullableFilter | undefined;
-    coverImage?: StringNullableFilter | undefined;
-    experienceImages?: StringNullableListFilter | undefined;
     Users?: UserListRelationFilter | undefined;
-    Meals?: MealListRelationFilter | undefined;
-    Orders?: OrderListRelationFilter | undefined;
-    Locations?: LocationListRelationFilter | undefined;
+    Queries?: QueryListRelationFilter | undefined;
+    Documents?: DocumentListRelationFilter | undefined;
+    Billing?: BillingRelationFilter | undefined;
     acceptedUserEmailDomains?: StringNullableListFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;

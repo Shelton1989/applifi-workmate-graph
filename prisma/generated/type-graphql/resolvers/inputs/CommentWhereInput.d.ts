@@ -1,5 +1,5 @@
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
-import { PostRelationFilter } from "../inputs/PostRelationFilter";
+import { DocumentRelationFilter } from "../inputs/DocumentRelationFilter";
 import { ReactionListRelationFilter } from "../inputs/ReactionListRelationFilter";
 import { ReplyListRelationFilter } from "../inputs/ReplyListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
@@ -10,8 +10,8 @@ export declare class CommentWhereInput {
     NOT?: CommentWhereInput[] | undefined;
     id?: StringFilter | undefined;
     text?: StringFilter | undefined;
-    Post?: PostRelationFilter | undefined;
-    postId?: StringFilter | undefined;
+    Document?: DocumentRelationFilter | undefined;
+    documentId?: StringFilter | undefined;
     Author?: UserRelationFilter | undefined;
     authorId?: StringFilter | undefined;
     Replies?: ReplyListRelationFilter | undefined;
