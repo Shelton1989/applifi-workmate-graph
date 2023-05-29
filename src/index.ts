@@ -59,15 +59,6 @@ const getCorsConfig = () => {
   })
 };
 
-applyInputTypesEnhanceMap({
-  PostCreateInput: {
-    fields: {
-      _all: [Allow()],
-      rating: [Min(0), Max(10)],
-    }
-  },
-})
-
 applyResolversEnhanceMap({
   User: {
     upsertUser: [Authorized()],
@@ -76,9 +67,6 @@ applyResolversEnhanceMap({
     users: [Authorized()],
     deleteUser: [Authorized()],
     deleteManyUser: [Authorized()],
-  },
-  AggregateRating: {
-    _all: [Authorized(ROLE.ADMIN)]
   },
   Tenant: {
     createTenant: [Authorized()],
