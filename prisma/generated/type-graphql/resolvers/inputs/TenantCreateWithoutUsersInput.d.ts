@@ -1,6 +1,6 @@
 import { BillingCreateNestedOneWithoutTenantInput } from "../inputs/BillingCreateNestedOneWithoutTenantInput";
 import { DocumentCreateNestedManyWithoutTenantInput } from "../inputs/DocumentCreateNestedManyWithoutTenantInput";
-import { QueryCreateNestedManyWithoutTenantInput } from "../inputs/QueryCreateNestedManyWithoutTenantInput";
+import { LLMQueryCreateNestedManyWithoutTenantInput } from "../inputs/LLMQueryCreateNestedManyWithoutTenantInput";
 import { TenantCreateacceptedUserEmailDomainsInput } from "../inputs/TenantCreateacceptedUserEmailDomainsInput";
 export declare class TenantCreateWithoutUsersInput {
     id?: string | undefined;
@@ -9,7 +9,7 @@ export declare class TenantCreateWithoutUsersInput {
     description?: string | undefined;
     logoImage?: string | undefined;
     avatar?: string | undefined;
-    Queries?: QueryCreateNestedManyWithoutTenantInput | undefined;
+    Queries?: LLMQueryCreateNestedManyWithoutTenantInput | undefined;
     Documents?: DocumentCreateNestedManyWithoutTenantInput | undefined;
     Billing?: BillingCreateNestedOneWithoutTenantInput | undefined;
     acceptedUserEmailDomains?: TenantCreateacceptedUserEmailDomainsInput | undefined;

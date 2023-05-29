@@ -5,7 +5,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BillingOrderByWithRelationInput_1 = require("../inputs/BillingOrderByWithRelationInput");
 const DocumentOrderByRelationAggregateInput_1 = require("../inputs/DocumentOrderByRelationAggregateInput");
-const QueryOrderByRelationAggregateInput_1 = require("../inputs/QueryOrderByRelationAggregateInput");
+const LLMQueryOrderByRelationAggregateInput_1 = require("../inputs/LLMQueryOrderByRelationAggregateInput");
 const UserOrderByRelationAggregateInput_1 = require("../inputs/UserOrderByRelationAggregateInput");
 const SortOrder_1 = require("../../enums/SortOrder");
 let TenantOrderByWithRelationInput = class TenantOrderByWithRelationInput {
@@ -53,10 +53,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", UserOrderByRelationAggregateInput_1.UserOrderByRelationAggregateInput)
 ], TenantOrderByWithRelationInput.prototype, "Users", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryOrderByRelationAggregateInput_1.QueryOrderByRelationAggregateInput, {
+    TypeGraphQL.Field(_type => LLMQueryOrderByRelationAggregateInput_1.LLMQueryOrderByRelationAggregateInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryOrderByRelationAggregateInput_1.QueryOrderByRelationAggregateInput)
+    tslib_1.__metadata("design:type", LLMQueryOrderByRelationAggregateInput_1.LLMQueryOrderByRelationAggregateInput)
 ], TenantOrderByWithRelationInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DocumentOrderByRelationAggregateInput_1.DocumentOrderByRelationAggregateInput, {

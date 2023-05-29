@@ -1,7 +1,7 @@
 import { CommentOrderByRelationAggregateInput } from "../inputs/CommentOrderByRelationAggregateInput";
+import { LLMQueryOrderByRelationAggregateInput } from "../inputs/LLMQueryOrderByRelationAggregateInput";
 import { NotificationOrderByRelationAggregateInput } from "../inputs/NotificationOrderByRelationAggregateInput";
 import { NotificationSettingsOrderByWithRelationInput } from "../inputs/NotificationSettingsOrderByWithRelationInput";
-import { QueryOrderByRelationAggregateInput } from "../inputs/QueryOrderByRelationAggregateInput";
 import { ReactionOrderByRelationAggregateInput } from "../inputs/ReactionOrderByRelationAggregateInput";
 import { ReplyOrderByRelationAggregateInput } from "../inputs/ReplyOrderByRelationAggregateInput";
 import { RequestOrderByRelationAggregateInput } from "../inputs/RequestOrderByRelationAggregateInput";
@@ -25,7 +25,7 @@ export declare class UserOrderByWithRelationInput {
     NotificationSettings?: NotificationSettingsOrderByWithRelationInput | undefined;
     Notifications?: NotificationOrderByRelationAggregateInput | undefined;
     Activity?: NotificationOrderByRelationAggregateInput | undefined;
-    Queries?: QueryOrderByRelationAggregateInput | undefined;
+    Queries?: LLMQueryOrderByRelationAggregateInput | undefined;
     Requests?: RequestOrderByRelationAggregateInput | undefined;
     Comments?: CommentOrderByRelationAggregateInput | undefined;
     Replies?: ReplyOrderByRelationAggregateInput | undefined;

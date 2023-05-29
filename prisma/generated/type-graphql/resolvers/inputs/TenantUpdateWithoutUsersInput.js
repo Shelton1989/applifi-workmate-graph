@@ -6,8 +6,8 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BillingUpdateOneWithoutTenantInput_1 = require("../inputs/BillingUpdateOneWithoutTenantInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
 const DocumentUpdateManyWithoutTenantInput_1 = require("../inputs/DocumentUpdateManyWithoutTenantInput");
+const LLMQueryUpdateManyWithoutTenantInput_1 = require("../inputs/LLMQueryUpdateManyWithoutTenantInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const QueryUpdateManyWithoutTenantInput_1 = require("../inputs/QueryUpdateManyWithoutTenantInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
 const TenantUpdateacceptedUserEmailDomainsInput_1 = require("../inputs/TenantUpdateacceptedUserEmailDomainsInput");
 let TenantUpdateWithoutUsersInput = class TenantUpdateWithoutUsersInput {
@@ -43,10 +43,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NullableStringFieldUpdateOperationsInput_1.NullableStringFieldUpdateOperationsInput)
 ], TenantUpdateWithoutUsersInput.prototype, "avatar", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryUpdateManyWithoutTenantInput_1.QueryUpdateManyWithoutTenantInput, {
+    TypeGraphQL.Field(_type => LLMQueryUpdateManyWithoutTenantInput_1.LLMQueryUpdateManyWithoutTenantInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryUpdateManyWithoutTenantInput_1.QueryUpdateManyWithoutTenantInput)
+    tslib_1.__metadata("design:type", LLMQueryUpdateManyWithoutTenantInput_1.LLMQueryUpdateManyWithoutTenantInput)
 ], TenantUpdateWithoutUsersInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DocumentUpdateManyWithoutTenantInput_1.DocumentUpdateManyWithoutTenantInput, {

@@ -1,7 +1,7 @@
 import { Comment } from "../models/Comment";
+import { LLMQuery } from "../models/LLMQuery";
 import { Notification } from "../models/Notification";
 import { NotificationSettings } from "../models/NotificationSettings";
-import { Query } from "../models/Query";
 import { Reaction } from "../models/Reaction";
 import { Reply } from "../models/Reply";
 import { Request } from "../models/Request";
@@ -26,7 +26,7 @@ export declare class User {
     NotificationSettings?: NotificationSettings | null;
     Notifications?: Notification[];
     Activity?: Notification[];
-    Queries?: Query[];
+    Queries?: LLMQuery[];
     Requests?: Request[];
     Comments?: Comment[];
     Replies?: Reply[];

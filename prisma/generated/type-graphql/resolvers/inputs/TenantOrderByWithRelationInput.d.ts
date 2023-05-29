@@ -1,6 +1,6 @@
 import { BillingOrderByWithRelationInput } from "../inputs/BillingOrderByWithRelationInput";
 import { DocumentOrderByRelationAggregateInput } from "../inputs/DocumentOrderByRelationAggregateInput";
-import { QueryOrderByRelationAggregateInput } from "../inputs/QueryOrderByRelationAggregateInput";
+import { LLMQueryOrderByRelationAggregateInput } from "../inputs/LLMQueryOrderByRelationAggregateInput";
 import { UserOrderByRelationAggregateInput } from "../inputs/UserOrderByRelationAggregateInput";
 export declare class TenantOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
@@ -10,7 +10,7 @@ export declare class TenantOrderByWithRelationInput {
     logoImage?: "asc" | "desc" | undefined;
     avatar?: "asc" | "desc" | undefined;
     Users?: UserOrderByRelationAggregateInput | undefined;
-    Queries?: QueryOrderByRelationAggregateInput | undefined;
+    Queries?: LLMQueryOrderByRelationAggregateInput | undefined;
     Documents?: DocumentOrderByRelationAggregateInput | undefined;
     Billing?: BillingOrderByWithRelationInput | undefined;
     acceptedUserEmailDomains?: "asc" | "desc" | undefined;

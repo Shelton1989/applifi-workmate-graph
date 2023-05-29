@@ -5,11 +5,11 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentUpdateManyWithoutAuthorInput_1 = require("../inputs/CommentUpdateManyWithoutAuthorInput");
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
+const LLMQueryUpdateManyWithoutUserInput_1 = require("../inputs/LLMQueryUpdateManyWithoutUserInput");
 const NotificationUpdateManyWithoutActorInput_1 = require("../inputs/NotificationUpdateManyWithoutActorInput");
 const NotificationUpdateManyWithoutUserInput_1 = require("../inputs/NotificationUpdateManyWithoutUserInput");
 const NullableBoolFieldUpdateOperationsInput_1 = require("../inputs/NullableBoolFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
-const QueryUpdateManyWithoutUserInput_1 = require("../inputs/QueryUpdateManyWithoutUserInput");
 const ReactionUpdateManyWithoutAuthorInput_1 = require("../inputs/ReactionUpdateManyWithoutAuthorInput");
 const ReplyUpdateManyWithoutAuthorInput_1 = require("../inputs/ReplyUpdateManyWithoutAuthorInput");
 const RequestUpdateManyWithoutReporterInput_1 = require("../inputs/RequestUpdateManyWithoutReporterInput");
@@ -109,10 +109,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationUpdateManyWithoutActorInput_1.NotificationUpdateManyWithoutActorInput)
 ], UserUpdateWithoutNotificationSettingsInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryUpdateManyWithoutUserInput_1.QueryUpdateManyWithoutUserInput, {
+    TypeGraphQL.Field(_type => LLMQueryUpdateManyWithoutUserInput_1.LLMQueryUpdateManyWithoutUserInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryUpdateManyWithoutUserInput_1.QueryUpdateManyWithoutUserInput)
+    tslib_1.__metadata("design:type", LLMQueryUpdateManyWithoutUserInput_1.LLMQueryUpdateManyWithoutUserInput)
 ], UserUpdateWithoutNotificationSettingsInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => RequestUpdateManyWithoutReporterInput_1.RequestUpdateManyWithoutReporterInput, {

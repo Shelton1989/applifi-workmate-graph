@@ -4,9 +4,9 @@ exports.UserRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const Comment_1 = require("../../../models/Comment");
+const LLMQuery_1 = require("../../../models/LLMQuery");
 const Notification_1 = require("../../../models/Notification");
 const NotificationSettings_1 = require("../../../models/NotificationSettings");
-const Query_1 = require("../../../models/Query");
 const Reaction_1 = require("../../../models/Reaction");
 const Reply_1 = require("../../../models/Reply");
 const Request_1 = require("../../../models/Request");
@@ -128,7 +128,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:returntype", Promise)
 ], UserRelationsResolver.prototype, "Activity", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [Query_1.Query], {
+    TypeGraphQL.FieldResolver(_type => [LLMQuery_1.LLMQuery], {
         nullable: false
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),

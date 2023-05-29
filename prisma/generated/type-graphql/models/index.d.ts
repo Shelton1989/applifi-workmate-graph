@@ -1,9 +1,9 @@
 export { Billing } from "./Billing";
 export { Comment } from "./Comment";
 export { Document } from "./Document";
+export { LLMQuery } from "./LLMQuery";
 export { Notification } from "./Notification";
 export { NotificationSettings } from "./NotificationSettings";
-export { Query } from "./Query";
 export { Reaction } from "./Reaction";
 export { Reply } from "./Reply";
 export { Request } from "./Request";

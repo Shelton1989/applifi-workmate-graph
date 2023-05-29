@@ -1,12 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserRelationsResolver = exports.TenantRelationsResolver = exports.RequestRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.NotificationRelationsResolver = exports.DocumentRelationsResolver = exports.CommentRelationsResolver = exports.BillingRelationsResolver = void 0;
+exports.UserRelationsResolver = exports.TenantRelationsResolver = exports.RequestRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.NotificationRelationsResolver = exports.LLMQueryRelationsResolver = exports.DocumentRelationsResolver = exports.CommentRelationsResolver = exports.BillingRelationsResolver = void 0;
 var BillingRelationsResolver_1 = require("./Billing/BillingRelationsResolver");
 Object.defineProperty(exports, "BillingRelationsResolver", { enumerable: true, get: function () { return BillingRelationsResolver_1.BillingRelationsResolver; } });
 var CommentRelationsResolver_1 = require("./Comment/CommentRelationsResolver");
 Object.defineProperty(exports, "CommentRelationsResolver", { enumerable: true, get: function () { return CommentRelationsResolver_1.CommentRelationsResolver; } });
 var DocumentRelationsResolver_1 = require("./Document/DocumentRelationsResolver");
 Object.defineProperty(exports, "DocumentRelationsResolver", { enumerable: true, get: function () { return DocumentRelationsResolver_1.DocumentRelationsResolver; } });
+var LLMQueryRelationsResolver_1 = require("./LLMQuery/LLMQueryRelationsResolver");
+Object.defineProperty(exports, "LLMQueryRelationsResolver", { enumerable: true, get: function () { return LLMQueryRelationsResolver_1.LLMQueryRelationsResolver; } });
 var NotificationRelationsResolver_1 = require("./Notification/NotificationRelationsResolver");
 Object.defineProperty(exports, "NotificationRelationsResolver", { enumerable: true, get: function () { return NotificationRelationsResolver_1.NotificationRelationsResolver; } });
 var NotificationSettingsRelationsResolver_1 = require("./NotificationSettings/NotificationSettingsRelationsResolver");

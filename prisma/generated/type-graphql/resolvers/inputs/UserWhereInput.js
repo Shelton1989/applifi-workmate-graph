@@ -8,9 +8,9 @@ const BoolNullableFilter_1 = require("../inputs/BoolNullableFilter");
 const CommentListRelationFilter_1 = require("../inputs/CommentListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumROLENullableListFilter_1 = require("../inputs/EnumROLENullableListFilter");
+const LLMQueryListRelationFilter_1 = require("../inputs/LLMQueryListRelationFilter");
 const NotificationListRelationFilter_1 = require("../inputs/NotificationListRelationFilter");
 const NotificationSettingsRelationFilter_1 = require("../inputs/NotificationSettingsRelationFilter");
-const QueryListRelationFilter_1 = require("../inputs/QueryListRelationFilter");
 const ReactionListRelationFilter_1 = require("../inputs/ReactionListRelationFilter");
 const ReplyListRelationFilter_1 = require("../inputs/ReplyListRelationFilter");
 const RequestListRelationFilter_1 = require("../inputs/RequestListRelationFilter");
@@ -146,10 +146,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationListRelationFilter_1.NotificationListRelationFilter)
 ], UserWhereInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryListRelationFilter_1.QueryListRelationFilter, {
+    TypeGraphQL.Field(_type => LLMQueryListRelationFilter_1.LLMQueryListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryListRelationFilter_1.QueryListRelationFilter)
+    tslib_1.__metadata("design:type", LLMQueryListRelationFilter_1.LLMQueryListRelationFilter)
 ], UserWhereInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => RequestListRelationFilter_1.RequestListRelationFilter, {

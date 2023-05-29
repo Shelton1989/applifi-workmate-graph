@@ -3,29 +3,29 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserQueriesArgs = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
-const QueryOrderByWithRelationInput_1 = require("../../../inputs/QueryOrderByWithRelationInput");
-const QueryWhereInput_1 = require("../../../inputs/QueryWhereInput");
-const QueryWhereUniqueInput_1 = require("../../../inputs/QueryWhereUniqueInput");
-const QueryScalarFieldEnum_1 = require("../../../../enums/QueryScalarFieldEnum");
+const LLMQueryOrderByWithRelationInput_1 = require("../../../inputs/LLMQueryOrderByWithRelationInput");
+const LLMQueryWhereInput_1 = require("../../../inputs/LLMQueryWhereInput");
+const LLMQueryWhereUniqueInput_1 = require("../../../inputs/LLMQueryWhereUniqueInput");
+const LLMQueryScalarFieldEnum_1 = require("../../../../enums/LLMQueryScalarFieldEnum");
 let UserQueriesArgs = class UserQueriesArgs {
 };
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryWhereInput_1.QueryWhereInput, {
+    TypeGraphQL.Field(_type => LLMQueryWhereInput_1.LLMQueryWhereInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryWhereInput_1.QueryWhereInput)
+    tslib_1.__metadata("design:type", LLMQueryWhereInput_1.LLMQueryWhereInput)
 ], UserQueriesArgs.prototype, "where", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => [QueryOrderByWithRelationInput_1.QueryOrderByWithRelationInput], {
+    TypeGraphQL.Field(_type => [LLMQueryOrderByWithRelationInput_1.LLMQueryOrderByWithRelationInput], {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Array)
 ], UserQueriesArgs.prototype, "orderBy", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryWhereUniqueInput_1.QueryWhereUniqueInput, {
+    TypeGraphQL.Field(_type => LLMQueryWhereUniqueInput_1.LLMQueryWhereUniqueInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryWhereUniqueInput_1.QueryWhereUniqueInput)
+    tslib_1.__metadata("design:type", LLMQueryWhereUniqueInput_1.LLMQueryWhereUniqueInput)
 ], UserQueriesArgs.prototype, "cursor", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TypeGraphQL.Int, {
@@ -40,7 +40,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", Number)
 ], UserQueriesArgs.prototype, "skip", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => [QueryScalarFieldEnum_1.QueryScalarFieldEnum], {
+    TypeGraphQL.Field(_type => [LLMQueryScalarFieldEnum_1.LLMQueryScalarFieldEnum], {
         nullable: true
     }),
     tslib_1.__metadata("design:type", Array)

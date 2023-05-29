@@ -4,7 +4,7 @@ exports.TenantCreateWithoutDocumentsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BillingCreateNestedOneWithoutTenantInput_1 = require("../inputs/BillingCreateNestedOneWithoutTenantInput");
-const QueryCreateNestedManyWithoutTenantInput_1 = require("../inputs/QueryCreateNestedManyWithoutTenantInput");
+const LLMQueryCreateNestedManyWithoutTenantInput_1 = require("../inputs/LLMQueryCreateNestedManyWithoutTenantInput");
 const TenantCreateacceptedUserEmailDomainsInput_1 = require("../inputs/TenantCreateacceptedUserEmailDomainsInput");
 const UserCreateNestedManyWithoutTenantInput_1 = require("../inputs/UserCreateNestedManyWithoutTenantInput");
 let TenantCreateWithoutDocumentsInput = class TenantCreateWithoutDocumentsInput {
@@ -52,10 +52,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", UserCreateNestedManyWithoutTenantInput_1.UserCreateNestedManyWithoutTenantInput)
 ], TenantCreateWithoutDocumentsInput.prototype, "Users", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryCreateNestedManyWithoutTenantInput_1.QueryCreateNestedManyWithoutTenantInput, {
+    TypeGraphQL.Field(_type => LLMQueryCreateNestedManyWithoutTenantInput_1.LLMQueryCreateNestedManyWithoutTenantInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryCreateNestedManyWithoutTenantInput_1.QueryCreateNestedManyWithoutTenantInput)
+    tslib_1.__metadata("design:type", LLMQueryCreateNestedManyWithoutTenantInput_1.LLMQueryCreateNestedManyWithoutTenantInput)
 ], TenantCreateWithoutDocumentsInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => BillingCreateNestedOneWithoutTenantInput_1.BillingCreateNestedOneWithoutTenantInput, {

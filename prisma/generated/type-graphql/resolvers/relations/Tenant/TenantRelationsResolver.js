@@ -5,7 +5,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const Billing_1 = require("../../../models/Billing");
 const Document_1 = require("../../../models/Document");
-const Query_1 = require("../../../models/Query");
+const LLMQuery_1 = require("../../../models/LLMQuery");
 const Tenant_1 = require("../../../models/Tenant");
 const User_1 = require("../../../models/User");
 const TenantDocumentsArgs_1 = require("./args/TenantDocumentsArgs");
@@ -54,7 +54,7 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:returntype", Promise)
 ], TenantRelationsResolver.prototype, "Users", null);
 tslib_1.__decorate([
-    TypeGraphQL.FieldResolver(_type => [Query_1.Query], {
+    TypeGraphQL.FieldResolver(_type => [LLMQuery_1.LLMQuery], {
         nullable: false
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),

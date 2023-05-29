@@ -1,6 +1,6 @@
 import { Billing } from "../models/Billing";
 import { Document } from "../models/Document";
-import { Query } from "../models/Query";
+import { LLMQuery } from "../models/LLMQuery";
 import { User } from "../models/User";
 import { TenantCount } from "../resolvers/outputs/TenantCount";
 export declare class Tenant {
@@ -11,7 +11,7 @@ export declare class Tenant {
     logoImage?: string | null;
     avatar?: string | null;
     Users?: User[];
-    Queries?: Query[];
+    Queries?: LLMQuery[];
     Documents?: Document[];
     Billing?: Billing | null;
     acceptedUserEmailDomains: string[];

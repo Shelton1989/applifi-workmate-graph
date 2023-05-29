@@ -1,8 +1,8 @@
 import { CommentCreateNestedManyWithoutAuthorInput } from "../inputs/CommentCreateNestedManyWithoutAuthorInput";
+import { LLMQueryCreateNestedManyWithoutUserInput } from "../inputs/LLMQueryCreateNestedManyWithoutUserInput";
 import { NotificationCreateNestedManyWithoutActorInput } from "../inputs/NotificationCreateNestedManyWithoutActorInput";
 import { NotificationCreateNestedManyWithoutUserInput } from "../inputs/NotificationCreateNestedManyWithoutUserInput";
 import { NotificationSettingsCreateNestedOneWithoutUserInput } from "../inputs/NotificationSettingsCreateNestedOneWithoutUserInput";
-import { QueryCreateNestedManyWithoutUserInput } from "../inputs/QueryCreateNestedManyWithoutUserInput";
 import { ReplyCreateNestedManyWithoutAuthorInput } from "../inputs/ReplyCreateNestedManyWithoutAuthorInput";
 import { RequestCreateNestedManyWithoutReporterInput } from "../inputs/RequestCreateNestedManyWithoutReporterInput";
 import { TenantCreateNestedOneWithoutUsersInput } from "../inputs/TenantCreateNestedOneWithoutUsersInput";
@@ -25,7 +25,7 @@ export declare class UserCreateWithoutReactionsInput {
     NotificationSettings?: NotificationSettingsCreateNestedOneWithoutUserInput | undefined;
     Notifications?: NotificationCreateNestedManyWithoutUserInput | undefined;
     Activity?: NotificationCreateNestedManyWithoutActorInput | undefined;
-    Queries?: QueryCreateNestedManyWithoutUserInput | undefined;
+    Queries?: LLMQueryCreateNestedManyWithoutUserInput | undefined;
     Requests?: RequestCreateNestedManyWithoutReporterInput | undefined;
     Comments?: CommentCreateNestedManyWithoutAuthorInput | undefined;
     Replies?: ReplyCreateNestedManyWithoutAuthorInput | undefined;

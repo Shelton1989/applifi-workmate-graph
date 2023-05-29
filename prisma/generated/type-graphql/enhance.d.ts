@@ -14,7 +14,7 @@ declare const crudResolversMap: {
     Reaction: typeof crudResolvers.ReactionCrudResolver;
     Request: typeof crudResolvers.RequestCrudResolver;
     Notification: typeof crudResolvers.NotificationCrudResolver;
-    Query: typeof crudResolvers.QueryCrudResolver;
+    LLMQuery: typeof crudResolvers.LLMQueryCrudResolver;
     Document: typeof crudResolvers.DocumentCrudResolver;
 };
 declare type ResolverModelNames = keyof typeof crudResolversMap;
@@ -45,6 +45,7 @@ declare const relationResolversMap: {
     Reaction: typeof relationResolvers.ReactionRelationsResolver;
     Request: typeof relationResolvers.RequestRelationsResolver;
     Notification: typeof relationResolvers.NotificationRelationsResolver;
+    LLMQuery: typeof relationResolvers.LLMQueryRelationsResolver;
     Document: typeof relationResolvers.DocumentRelationsResolver;
 };
 declare type RelationResolverModelNames = keyof typeof relationResolversMap;

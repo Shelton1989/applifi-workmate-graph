@@ -7,7 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BillingRelationFilter_1 = require("../inputs/BillingRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const DocumentListRelationFilter_1 = require("../inputs/DocumentListRelationFilter");
-const QueryListRelationFilter_1 = require("../inputs/QueryListRelationFilter");
+const LLMQueryListRelationFilter_1 = require("../inputs/LLMQueryListRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const StringNullableListFilter_1 = require("../inputs/StringNullableListFilter");
@@ -75,10 +75,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", UserListRelationFilter_1.UserListRelationFilter)
 ], TenantWhereInput.prototype, "Users", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryListRelationFilter_1.QueryListRelationFilter, {
+    TypeGraphQL.Field(_type => LLMQueryListRelationFilter_1.LLMQueryListRelationFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryListRelationFilter_1.QueryListRelationFilter)
+    tslib_1.__metadata("design:type", LLMQueryListRelationFilter_1.LLMQueryListRelationFilter)
 ], TenantWhereInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DocumentListRelationFilter_1.DocumentListRelationFilter, {

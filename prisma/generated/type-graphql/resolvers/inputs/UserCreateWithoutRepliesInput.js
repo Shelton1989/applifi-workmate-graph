@@ -4,10 +4,10 @@ exports.UserCreateWithoutRepliesInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentCreateNestedManyWithoutAuthorInput_1 = require("../inputs/CommentCreateNestedManyWithoutAuthorInput");
+const LLMQueryCreateNestedManyWithoutUserInput_1 = require("../inputs/LLMQueryCreateNestedManyWithoutUserInput");
 const NotificationCreateNestedManyWithoutActorInput_1 = require("../inputs/NotificationCreateNestedManyWithoutActorInput");
 const NotificationCreateNestedManyWithoutUserInput_1 = require("../inputs/NotificationCreateNestedManyWithoutUserInput");
 const NotificationSettingsCreateNestedOneWithoutUserInput_1 = require("../inputs/NotificationSettingsCreateNestedOneWithoutUserInput");
-const QueryCreateNestedManyWithoutUserInput_1 = require("../inputs/QueryCreateNestedManyWithoutUserInput");
 const ReactionCreateNestedManyWithoutAuthorInput_1 = require("../inputs/ReactionCreateNestedManyWithoutAuthorInput");
 const RequestCreateNestedManyWithoutReporterInput_1 = require("../inputs/RequestCreateNestedManyWithoutReporterInput");
 const TenantCreateNestedOneWithoutUsersInput_1 = require("../inputs/TenantCreateNestedOneWithoutUsersInput");
@@ -117,10 +117,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationCreateNestedManyWithoutActorInput_1.NotificationCreateNestedManyWithoutActorInput)
 ], UserCreateWithoutRepliesInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryCreateNestedManyWithoutUserInput_1.QueryCreateNestedManyWithoutUserInput, {
+    TypeGraphQL.Field(_type => LLMQueryCreateNestedManyWithoutUserInput_1.LLMQueryCreateNestedManyWithoutUserInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryCreateNestedManyWithoutUserInput_1.QueryCreateNestedManyWithoutUserInput)
+    tslib_1.__metadata("design:type", LLMQueryCreateNestedManyWithoutUserInput_1.LLMQueryCreateNestedManyWithoutUserInput)
 ], UserCreateWithoutRepliesInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => RequestCreateNestedManyWithoutReporterInput_1.RequestCreateNestedManyWithoutReporterInput, {

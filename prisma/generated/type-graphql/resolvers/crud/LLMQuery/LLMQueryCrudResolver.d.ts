@@ -1,0 +1,31 @@
+import { GraphQLResolveInfo } from "graphql";
+import { AggregateLLMQueryArgs } from "./args/AggregateLLMQueryArgs";
+import { CreateLLMQueryArgs } from "./args/CreateLLMQueryArgs";
+import { CreateManyLLMQueryArgs } from "./args/CreateManyLLMQueryArgs";
+import { DeleteLLMQueryArgs } from "./args/DeleteLLMQueryArgs";
+import { DeleteManyLLMQueryArgs } from "./args/DeleteManyLLMQueryArgs";
+import { FindFirstLLMQueryArgs } from "./args/FindFirstLLMQueryArgs";
+import { FindManyLLMQueryArgs } from "./args/FindManyLLMQueryArgs";
+import { FindUniqueLLMQueryArgs } from "./args/FindUniqueLLMQueryArgs";
+import { GroupByLLMQueryArgs } from "./args/GroupByLLMQueryArgs";
+import { UpdateLLMQueryArgs } from "./args/UpdateLLMQueryArgs";
+import { UpdateManyLLMQueryArgs } from "./args/UpdateManyLLMQueryArgs";
+import { UpsertLLMQueryArgs } from "./args/UpsertLLMQueryArgs";
+import { LLMQuery } from "../../../models/LLMQuery";
+import { AffectedRowsOutput } from "../../outputs/AffectedRowsOutput";
+import { AggregateLLMQuery } from "../../outputs/AggregateLLMQuery";
+import { LLMQueryGroupBy } from "../../outputs/LLMQueryGroupBy";
+export declare class LLMQueryCrudResolver {
+    lLMQuery(ctx: any, info: GraphQLResolveInfo, args: FindUniqueLLMQueryArgs): Promise<LLMQuery | null>;
+    findFirstLLMQuery(ctx: any, info: GraphQLResolveInfo, args: FindFirstLLMQueryArgs): Promise<LLMQuery | null>;
+    lLMQueries(ctx: any, info: GraphQLResolveInfo, args: FindManyLLMQueryArgs): Promise<LLMQuery[]>;
+    createLLMQuery(ctx: any, info: GraphQLResolveInfo, args: CreateLLMQueryArgs): Promise<LLMQuery>;
+    createManyLLMQuery(ctx: any, info: GraphQLResolveInfo, args: CreateManyLLMQueryArgs): Promise<AffectedRowsOutput>;
+    deleteLLMQuery(ctx: any, info: GraphQLResolveInfo, args: DeleteLLMQueryArgs): Promise<LLMQuery | null>;
+    updateLLMQuery(ctx: any, info: GraphQLResolveInfo, args: UpdateLLMQueryArgs): Promise<LLMQuery | null>;
+    deleteManyLLMQuery(ctx: any, info: GraphQLResolveInfo, args: DeleteManyLLMQueryArgs): Promise<AffectedRowsOutput>;
+    updateManyLLMQuery(ctx: any, info: GraphQLResolveInfo, args: UpdateManyLLMQueryArgs): Promise<AffectedRowsOutput>;
+    upsertLLMQuery(ctx: any, info: GraphQLResolveInfo, args: UpsertLLMQueryArgs): Promise<LLMQuery>;
+    aggregateLLMQuery(ctx: any, info: GraphQLResolveInfo, args: AggregateLLMQueryArgs): Promise<AggregateLLMQuery>;
+    groupByLLMQuery(ctx: any, info: GraphQLResolveInfo, args: GroupByLLMQueryArgs): Promise<LLMQueryGroupBy[]>;
+}

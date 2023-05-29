@@ -1,10 +1,10 @@
-import { QueryOrderByWithRelationInput } from "../../../inputs/QueryOrderByWithRelationInput";
-import { QueryWhereInput } from "../../../inputs/QueryWhereInput";
-import { QueryWhereUniqueInput } from "../../../inputs/QueryWhereUniqueInput";
+import { LLMQueryOrderByWithRelationInput } from "../../../inputs/LLMQueryOrderByWithRelationInput";
+import { LLMQueryWhereInput } from "../../../inputs/LLMQueryWhereInput";
+import { LLMQueryWhereUniqueInput } from "../../../inputs/LLMQueryWhereUniqueInput";
 export declare class TenantQueriesArgs {
-    where?: QueryWhereInput | undefined;
-    orderBy?: QueryOrderByWithRelationInput[] | undefined;
-    cursor?: QueryWhereUniqueInput | undefined;
+    where?: LLMQueryWhereInput | undefined;
+    orderBy?: LLMQueryOrderByWithRelationInput[] | undefined;
+    cursor?: LLMQueryWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
     distinct?: Array<"id" | "tenantId" | "queryLink" | "queryText" | "createdAt" | "updatedAt" | "userId"> | undefined;

@@ -1,8 +1,8 @@
 import { BillingUpdateOneWithoutTenantInput } from "../inputs/BillingUpdateOneWithoutTenantInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
 import { DocumentUpdateManyWithoutTenantInput } from "../inputs/DocumentUpdateManyWithoutTenantInput";
+import { LLMQueryUpdateManyWithoutTenantInput } from "../inputs/LLMQueryUpdateManyWithoutTenantInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { QueryUpdateManyWithoutTenantInput } from "../inputs/QueryUpdateManyWithoutTenantInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 import { TenantUpdateacceptedUserEmailDomainsInput } from "../inputs/TenantUpdateacceptedUserEmailDomainsInput";
 export declare class TenantUpdateWithoutUsersInput {
@@ -11,7 +11,7 @@ export declare class TenantUpdateWithoutUsersInput {
     description?: NullableStringFieldUpdateOperationsInput | undefined;
     logoImage?: NullableStringFieldUpdateOperationsInput | undefined;
     avatar?: NullableStringFieldUpdateOperationsInput | undefined;
-    Queries?: QueryUpdateManyWithoutTenantInput | undefined;
+    Queries?: LLMQueryUpdateManyWithoutTenantInput | undefined;
     Documents?: DocumentUpdateManyWithoutTenantInput | undefined;
     Billing?: BillingUpdateOneWithoutTenantInput | undefined;
     acceptedUserEmailDomains?: TenantUpdateacceptedUserEmailDomainsInput | undefined;

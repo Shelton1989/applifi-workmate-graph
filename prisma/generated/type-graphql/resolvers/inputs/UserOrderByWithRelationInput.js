@@ -4,9 +4,9 @@ exports.UserOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentOrderByRelationAggregateInput_1 = require("../inputs/CommentOrderByRelationAggregateInput");
+const LLMQueryOrderByRelationAggregateInput_1 = require("../inputs/LLMQueryOrderByRelationAggregateInput");
 const NotificationOrderByRelationAggregateInput_1 = require("../inputs/NotificationOrderByRelationAggregateInput");
 const NotificationSettingsOrderByWithRelationInput_1 = require("../inputs/NotificationSettingsOrderByWithRelationInput");
-const QueryOrderByRelationAggregateInput_1 = require("../inputs/QueryOrderByRelationAggregateInput");
 const ReactionOrderByRelationAggregateInput_1 = require("../inputs/ReactionOrderByRelationAggregateInput");
 const ReplyOrderByRelationAggregateInput_1 = require("../inputs/ReplyOrderByRelationAggregateInput");
 const RequestOrderByRelationAggregateInput_1 = require("../inputs/RequestOrderByRelationAggregateInput");
@@ -123,10 +123,10 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", NotificationOrderByRelationAggregateInput_1.NotificationOrderByRelationAggregateInput)
 ], UserOrderByWithRelationInput.prototype, "Activity", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => QueryOrderByRelationAggregateInput_1.QueryOrderByRelationAggregateInput, {
+    TypeGraphQL.Field(_type => LLMQueryOrderByRelationAggregateInput_1.LLMQueryOrderByRelationAggregateInput, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", QueryOrderByRelationAggregateInput_1.QueryOrderByRelationAggregateInput)
+    tslib_1.__metadata("design:type", LLMQueryOrderByRelationAggregateInput_1.LLMQueryOrderByRelationAggregateInput)
 ], UserOrderByWithRelationInput.prototype, "Queries", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => RequestOrderByRelationAggregateInput_1.RequestOrderByRelationAggregateInput, {

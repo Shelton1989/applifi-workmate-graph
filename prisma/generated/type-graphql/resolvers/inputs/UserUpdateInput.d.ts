@@ -1,11 +1,11 @@
 import { CommentUpdateManyWithoutAuthorInput } from "../inputs/CommentUpdateManyWithoutAuthorInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
+import { LLMQueryUpdateManyWithoutUserInput } from "../inputs/LLMQueryUpdateManyWithoutUserInput";
 import { NotificationSettingsUpdateOneWithoutUserInput } from "../inputs/NotificationSettingsUpdateOneWithoutUserInput";
 import { NotificationUpdateManyWithoutActorInput } from "../inputs/NotificationUpdateManyWithoutActorInput";
 import { NotificationUpdateManyWithoutUserInput } from "../inputs/NotificationUpdateManyWithoutUserInput";
 import { NullableBoolFieldUpdateOperationsInput } from "../inputs/NullableBoolFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { QueryUpdateManyWithoutUserInput } from "../inputs/QueryUpdateManyWithoutUserInput";
 import { ReactionUpdateManyWithoutAuthorInput } from "../inputs/ReactionUpdateManyWithoutAuthorInput";
 import { ReplyUpdateManyWithoutAuthorInput } from "../inputs/ReplyUpdateManyWithoutAuthorInput";
 import { RequestUpdateManyWithoutReporterInput } from "../inputs/RequestUpdateManyWithoutReporterInput";
@@ -29,7 +29,7 @@ export declare class UserUpdateInput {
     NotificationSettings?: NotificationSettingsUpdateOneWithoutUserInput | undefined;
     Notifications?: NotificationUpdateManyWithoutUserInput | undefined;
     Activity?: NotificationUpdateManyWithoutActorInput | undefined;
-    Queries?: QueryUpdateManyWithoutUserInput | undefined;
+    Queries?: LLMQueryUpdateManyWithoutUserInput | undefined;
     Requests?: RequestUpdateManyWithoutReporterInput | undefined;
     Comments?: CommentUpdateManyWithoutAuthorInput | undefined;
     Replies?: ReplyUpdateManyWithoutAuthorInput | undefined;

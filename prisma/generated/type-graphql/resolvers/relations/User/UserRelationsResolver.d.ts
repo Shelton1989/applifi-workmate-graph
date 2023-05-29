@@ -1,7 +1,7 @@
 import { Comment } from "../../../models/Comment";
+import { LLMQuery } from "../../../models/LLMQuery";
 import { Notification } from "../../../models/Notification";
 import { NotificationSettings } from "../../../models/NotificationSettings";
-import { Query } from "../../../models/Query";
 import { Reaction } from "../../../models/Reaction";
 import { Reply } from "../../../models/Reply";
 import { Request } from "../../../models/Request";
@@ -19,7 +19,7 @@ export declare class UserRelationsResolver {
     NotificationSettings(user: User, ctx: any): Promise<NotificationSettings | null>;
     Notifications(user: User, ctx: any, args: UserNotificationsArgs): Promise<Notification[]>;
     Activity(user: User, ctx: any, args: UserActivityArgs): Promise<Notification[]>;
-    Queries(user: User, ctx: any, args: UserQueriesArgs): Promise<Query[]>;
+    Queries(user: User, ctx: any, args: UserQueriesArgs): Promise<LLMQuery[]>;
     Requests(user: User, ctx: any, args: UserRequestsArgs): Promise<Request[]>;
     Comments(user: User, ctx: any, args: UserCommentsArgs): Promise<Comment[]>;
     Replies(user: User, ctx: any, args: UserRepliesArgs): Promise<Reply[]>;
