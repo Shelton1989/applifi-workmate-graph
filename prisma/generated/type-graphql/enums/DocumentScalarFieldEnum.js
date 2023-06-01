@@ -7,7 +7,11 @@ var DocumentScalarFieldEnum;
 (function (DocumentScalarFieldEnum) {
     DocumentScalarFieldEnum["id"] = "id";
     DocumentScalarFieldEnum["publishStatus"] = "publishStatus";
+    DocumentScalarFieldEnum["indexStatus"] = "indexStatus";
     DocumentScalarFieldEnum["title"] = "title";
+    DocumentScalarFieldEnum["link"] = "link";
+    DocumentScalarFieldEnum["url"] = "url";
+    DocumentScalarFieldEnum["source"] = "source";
     DocumentScalarFieldEnum["shortDescription"] = "shortDescription";
     DocumentScalarFieldEnum["tenantId"] = "tenantId";
     DocumentScalarFieldEnum["createdAt"] = "createdAt";

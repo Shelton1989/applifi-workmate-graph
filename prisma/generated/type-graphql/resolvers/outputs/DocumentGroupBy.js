@@ -6,6 +6,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DocumentCountAggregate_1 = require("../outputs/DocumentCountAggregate");
 const DocumentMaxAggregate_1 = require("../outputs/DocumentMaxAggregate");
 const DocumentMinAggregate_1 = require("../outputs/DocumentMinAggregate");
+const DOCUMENT_INDEX_STATUS_1 = require("../../enums/DOCUMENT_INDEX_STATUS");
 const PUBLISH_STATUS_1 = require("../../enums/PUBLISH_STATUS");
 let DocumentGroupBy = class DocumentGroupBy {
 };
@@ -22,6 +23,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], DocumentGroupBy.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DOCUMENT_INDEX_STATUS_1.DOCUMENT_INDEX_STATUS, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentGroupBy.prototype, "indexStatus", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: false
     }),
@@ -29,7 +36,25 @@ tslib_1.__decorate([
 ], DocumentGroupBy.prototype, "title", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentGroupBy.prototype, "link", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentGroupBy.prototype, "url", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentGroupBy.prototype, "source", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], DocumentGroupBy.prototype, "shortDescription", void 0);

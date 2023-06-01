@@ -274,6 +274,13 @@ enum PUBLISH_STATUS {
   SOFT_BANNED
 }
 
+enum DOCUMENT_INDEX_STATUS {
+  INDEXED
+  NOT_INDEXED
+  INDEXING
+  INDEXING_FAILED
+}
+
 model LLMQuery {
   id String @id @default(uuid()) @map("_id")
 
@@ -295,9 +302,13 @@ model Document {
   id String @id @default(uuid()) @map("_id")
 
   publishStatus PUBLISH_STATUS @default(DRAFT)
+  indexStatus   DOCUMENT_INDEX_STATUS @default(NOT_INDEXED)
 
   title            String
-  shortDescription String
+  link             String?
+  url              String?
+  source           String?
+  shortDescription String?
 
   Tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   tenantId String

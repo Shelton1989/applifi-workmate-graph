@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.DocumentMaxAggregate = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const DOCUMENT_INDEX_STATUS_1 = require("../../enums/DOCUMENT_INDEX_STATUS");
 const PUBLISH_STATUS_1 = require("../../enums/PUBLISH_STATUS");
 let DocumentMaxAggregate = class DocumentMaxAggregate {
 };
@@ -19,11 +20,35 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], DocumentMaxAggregate.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DOCUMENT_INDEX_STATUS_1.DOCUMENT_INDEX_STATUS, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentMaxAggregate.prototype, "indexStatus", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], DocumentMaxAggregate.prototype, "title", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentMaxAggregate.prototype, "link", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentMaxAggregate.prototype, "url", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentMaxAggregate.prototype, "source", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: true

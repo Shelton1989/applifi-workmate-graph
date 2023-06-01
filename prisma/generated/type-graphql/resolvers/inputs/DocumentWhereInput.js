@@ -6,8 +6,10 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const CommentListRelationFilter_1 = require("../inputs/CommentListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
+const EnumDOCUMENT_INDEX_STATUSFilter_1 = require("../inputs/EnumDOCUMENT_INDEX_STATUSFilter");
 const EnumPUBLISH_STATUSFilter_1 = require("../inputs/EnumPUBLISH_STATUSFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
+const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const TenantRelationFilter_1 = require("../inputs/TenantRelationFilter");
 let DocumentWhereInput = DocumentWhereInput_1 = class DocumentWhereInput {
 };
@@ -42,16 +44,40 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", EnumPUBLISH_STATUSFilter_1.EnumPUBLISH_STATUSFilter)
 ], DocumentWhereInput.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => EnumDOCUMENT_INDEX_STATUSFilter_1.EnumDOCUMENT_INDEX_STATUSFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", EnumDOCUMENT_INDEX_STATUSFilter_1.EnumDOCUMENT_INDEX_STATUSFilter)
+], DocumentWhereInput.prototype, "indexStatus", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
 ], DocumentWhereInput.prototype, "title", void 0);
 tslib_1.__decorate([
-    TypeGraphQL.Field(_type => StringFilter_1.StringFilter, {
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
         nullable: true
     }),
-    tslib_1.__metadata("design:type", StringFilter_1.StringFilter)
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], DocumentWhereInput.prototype, "link", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], DocumentWhereInput.prototype, "url", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], DocumentWhereInput.prototype, "source", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], DocumentWhereInput.prototype, "shortDescription", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => TenantRelationFilter_1.TenantRelationFilter, {

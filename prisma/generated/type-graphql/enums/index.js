@@ -1,12 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserScalarFieldEnum = exports.TenantScalarFieldEnum = exports.SortOrder = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.PUBLISH_STATUS = exports.PLAN = exports.NotificationSettingsScalarFieldEnum = exports.NotificationScalarFieldEnum = exports.LLMQueryScalarFieldEnum = exports.DocumentScalarFieldEnum = exports.CommentScalarFieldEnum = exports.BillingScalarFieldEnum = exports.BILLING_STATUS = void 0;
+exports.UserScalarFieldEnum = exports.TenantScalarFieldEnum = exports.SortOrder = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.PUBLISH_STATUS = exports.PLAN = exports.NotificationSettingsScalarFieldEnum = exports.NotificationScalarFieldEnum = exports.LLMQueryScalarFieldEnum = exports.DocumentScalarFieldEnum = exports.DOCUMENT_INDEX_STATUS = exports.CommentScalarFieldEnum = exports.BillingScalarFieldEnum = exports.BILLING_STATUS = void 0;
 var BILLING_STATUS_1 = require("./BILLING_STATUS");
 Object.defineProperty(exports, "BILLING_STATUS", { enumerable: true, get: function () { return BILLING_STATUS_1.BILLING_STATUS; } });
 var BillingScalarFieldEnum_1 = require("./BillingScalarFieldEnum");
 Object.defineProperty(exports, "BillingScalarFieldEnum", { enumerable: true, get: function () { return BillingScalarFieldEnum_1.BillingScalarFieldEnum; } });
 var CommentScalarFieldEnum_1 = require("./CommentScalarFieldEnum");
 Object.defineProperty(exports, "CommentScalarFieldEnum", { enumerable: true, get: function () { return CommentScalarFieldEnum_1.CommentScalarFieldEnum; } });
+var DOCUMENT_INDEX_STATUS_1 = require("./DOCUMENT_INDEX_STATUS");
+Object.defineProperty(exports, "DOCUMENT_INDEX_STATUS", { enumerable: true, get: function () { return DOCUMENT_INDEX_STATUS_1.DOCUMENT_INDEX_STATUS; } });
 var DocumentScalarFieldEnum_1 = require("./DocumentScalarFieldEnum");
 Object.defineProperty(exports, "DocumentScalarFieldEnum", { enumerable: true, get: function () { return DocumentScalarFieldEnum_1.DocumentScalarFieldEnum; } });
 var LLMQueryScalarFieldEnum_1 = require("./LLMQueryScalarFieldEnum");

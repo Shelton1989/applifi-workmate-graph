@@ -1,6 +1,7 @@
 export { BILLING_STATUS } from "./BILLING_STATUS";
 export { BillingScalarFieldEnum } from "./BillingScalarFieldEnum";
 export { CommentScalarFieldEnum } from "./CommentScalarFieldEnum";
+export { DOCUMENT_INDEX_STATUS } from "./DOCUMENT_INDEX_STATUS";
 export { DocumentScalarFieldEnum } from "./DocumentScalarFieldEnum";
 export { LLMQueryScalarFieldEnum } from "./LLMQueryScalarFieldEnum";
 export { NotificationScalarFieldEnum } from "./NotificationScalarFieldEnum";

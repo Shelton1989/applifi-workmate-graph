@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Document = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const DOCUMENT_INDEX_STATUS_1 = require("../enums/DOCUMENT_INDEX_STATUS");
 const PUBLISH_STATUS_1 = require("../enums/PUBLISH_STATUS");
 const DocumentCount_1 = require("../resolvers/outputs/DocumentCount");
 let Document = class Document {
@@ -20,6 +21,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], Document.prototype, "publishStatus", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DOCUMENT_INDEX_STATUS_1.DOCUMENT_INDEX_STATUS, {
+        nullable: false
+    }),
+    tslib_1.__metadata("design:type", String)
+], Document.prototype, "indexStatus", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
         nullable: false
     }),
@@ -27,7 +34,25 @@ tslib_1.__decorate([
 ], Document.prototype, "title", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
-        nullable: false
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], Document.prototype, "link", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], Document.prototype, "url", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], Document.prototype, "source", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
     }),
     tslib_1.__metadata("design:type", String)
 ], Document.prototype, "shortDescription", void 0);
