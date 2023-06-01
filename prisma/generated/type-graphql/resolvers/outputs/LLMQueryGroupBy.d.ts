@@ -5,7 +5,8 @@ export declare class LLMQueryGroupBy {
     id: string;
     tenantId: string;
     queryLink: string | null;
-    queryText: string | null;
+    question: string | null;
+    response: string | null;
     createdAt: Date;
     updatedAt: Date;
     userId: string | null;

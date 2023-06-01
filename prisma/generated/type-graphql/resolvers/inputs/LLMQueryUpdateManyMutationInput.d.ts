@@ -2,7 +2,8 @@ import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdat
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 export declare class LLMQueryUpdateManyMutationInput {
     queryLink?: NullableStringFieldUpdateOperationsInput | undefined;
-    queryText?: NullableStringFieldUpdateOperationsInput | undefined;
+    question?: NullableStringFieldUpdateOperationsInput | undefined;
+    response?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

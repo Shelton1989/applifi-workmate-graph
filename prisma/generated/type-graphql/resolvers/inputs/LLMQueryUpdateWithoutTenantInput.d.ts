@@ -3,7 +3,8 @@ import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStri
 import { UserUpdateOneWithoutQueriesInput } from "../inputs/UserUpdateOneWithoutQueriesInput";
 export declare class LLMQueryUpdateWithoutTenantInput {
     queryLink?: NullableStringFieldUpdateOperationsInput | undefined;
-    queryText?: NullableStringFieldUpdateOperationsInput | undefined;
+    question?: NullableStringFieldUpdateOperationsInput | undefined;
+    response?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
     User?: UserUpdateOneWithoutQueriesInput | undefined;

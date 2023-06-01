@@ -8,7 +8,8 @@ export declare class LLMQueryScalarWhereWithAggregatesInput {
     id?: StringWithAggregatesFilter | undefined;
     tenantId?: StringWithAggregatesFilter | undefined;
     queryLink?: StringNullableWithAggregatesFilter | undefined;
-    queryText?: StringNullableWithAggregatesFilter | undefined;
+    question?: StringNullableWithAggregatesFilter | undefined;
+    response?: StringNullableWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;
     userId?: StringNullableWithAggregatesFilter | undefined;

@@ -30,7 +30,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", String)
-], LLMQueryCreateInput.prototype, "queryText", void 0);
+], LLMQueryCreateInput.prototype, "question", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], LLMQueryCreateInput.prototype, "response", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

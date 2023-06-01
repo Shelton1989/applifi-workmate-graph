@@ -7,5 +7,5 @@ export declare class UserQueriesArgs {
     cursor?: LLMQueryWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "tenantId" | "queryLink" | "queryText" | "createdAt" | "updatedAt" | "userId"> | undefined;
+    distinct?: Array<"id" | "tenantId" | "queryLink" | "question" | "response" | "createdAt" | "updatedAt" | "userId"> | undefined;
 }

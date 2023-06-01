@@ -44,7 +44,7 @@ const environment = process.env.ENVIRONMENT || "dev";
 const getCorsConfig = () => { 
   if (environment === "prod") {
     return ({
-      "origin": [/trottar\.com/, /a\.run\.app/],
+      "origin": [/applifi\.com/, /a\.run\.app/, /workmate\.ai/, /workmate\.ai\.appspot\.com/],
       "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
       "preflightContinue": false,
       "optionsSuccessStatus": 204

@@ -5,7 +5,8 @@ import { UserUpdateOneWithoutQueriesInput } from "../inputs/UserUpdateOneWithout
 export declare class LLMQueryUpdateInput {
     Tenant?: TenantUpdateOneRequiredWithoutQueriesInput | undefined;
     queryLink?: NullableStringFieldUpdateOperationsInput | undefined;
-    queryText?: NullableStringFieldUpdateOperationsInput | undefined;
+    question?: NullableStringFieldUpdateOperationsInput | undefined;
+    response?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
     User?: UserUpdateOneWithoutQueriesInput | undefined;

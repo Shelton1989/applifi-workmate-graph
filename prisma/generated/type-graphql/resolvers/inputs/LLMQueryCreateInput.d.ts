@@ -4,7 +4,8 @@ export declare class LLMQueryCreateInput {
     id?: string | undefined;
     Tenant: TenantCreateNestedOneWithoutQueriesInput;
     queryLink?: string | undefined;
-    queryText?: string | undefined;
+    question?: string | undefined;
+    response?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
     User?: UserCreateNestedOneWithoutQueriesInput | undefined;

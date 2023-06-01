@@ -8,7 +8,8 @@ export declare class LLMQueryScalarWhereInput {
     id?: StringFilter | undefined;
     tenantId?: StringFilter | undefined;
     queryLink?: StringNullableFilter | undefined;
-    queryText?: StringNullableFilter | undefined;
+    question?: StringNullableFilter | undefined;
+    response?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
     userId?: StringNullableFilter | undefined;

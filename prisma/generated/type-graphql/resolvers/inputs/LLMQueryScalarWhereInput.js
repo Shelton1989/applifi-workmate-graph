@@ -50,7 +50,13 @@ tslib_1.__decorate([
         nullable: true
     }),
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
-], LLMQueryScalarWhereInput.prototype, "queryText", void 0);
+], LLMQueryScalarWhereInput.prototype, "question", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], LLMQueryScalarWhereInput.prototype, "response", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

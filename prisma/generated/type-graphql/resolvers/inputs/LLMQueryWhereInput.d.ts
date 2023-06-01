@@ -11,7 +11,8 @@ export declare class LLMQueryWhereInput {
     Tenant?: TenantRelationFilter | undefined;
     tenantId?: StringFilter | undefined;
     queryLink?: StringNullableFilter | undefined;
-    queryText?: StringNullableFilter | undefined;
+    question?: StringNullableFilter | undefined;
+    response?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
     User?: UserRelationFilter | undefined;

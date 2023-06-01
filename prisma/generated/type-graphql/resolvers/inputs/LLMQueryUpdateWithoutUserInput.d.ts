@@ -4,7 +4,8 @@ import { TenantUpdateOneRequiredWithoutQueriesInput } from "../inputs/TenantUpda
 export declare class LLMQueryUpdateWithoutUserInput {
     Tenant?: TenantUpdateOneRequiredWithoutQueriesInput | undefined;
     queryLink?: NullableStringFieldUpdateOperationsInput | undefined;
-    queryText?: NullableStringFieldUpdateOperationsInput | undefined;
+    question?: NullableStringFieldUpdateOperationsInput | undefined;
+    response?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

@@ -2,7 +2,8 @@ export declare class LLMQueryCountAggregate {
     id: number;
     tenantId: number;
     queryLink: number;
-    queryText: number;
+    question: number;
+    response: number;
     createdAt: number;
     updatedAt: number;
     userId: number;
