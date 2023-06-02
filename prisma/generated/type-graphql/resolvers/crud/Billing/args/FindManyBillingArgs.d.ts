@@ -7,5 +7,5 @@ export declare class FindManyBillingArgs {
     cursor?: BillingWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "tenantId" | "stripeCustomerId" | "plan" | "status" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "tenantId" | "stripeCustomerId" | "stripeSubscriptionId" | "plan" | "status" | "createdAt" | "updatedAt"> | undefined;
 }

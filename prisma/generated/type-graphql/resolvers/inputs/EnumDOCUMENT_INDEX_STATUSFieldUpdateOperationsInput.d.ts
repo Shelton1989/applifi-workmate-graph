@@ -1,3 +1,3 @@
 export declare class EnumDOCUMENT_INDEX_STATUSFieldUpdateOperationsInput {
-    set?: "INDEXED" | "NOT_INDEXED" | "INDEXING" | "INDEXING_FAILED" | undefined;
+    set?: "INDEXED" | "NOT_INDEXED" | "INDEXING" | "INDEXING_FAILED" | "INDEXING_FAILED_LIMIT_REACHED" | "INDEXING_FAILED_DOCUMENT_INACCESSIBLE" | undefined;
 }

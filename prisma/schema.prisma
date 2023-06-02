@@ -133,6 +133,7 @@ model Billing {
   tenantId String @unique
 
   stripeCustomerId String?
+  stripeSubscriptionId String?
 
   plan   PLAN           @default(FREE)
   status BILLING_STATUS @default(ACTIVE)
@@ -279,6 +280,8 @@ enum DOCUMENT_INDEX_STATUS {
   NOT_INDEXED
   INDEXING
   INDEXING_FAILED
+  INDEXING_FAILED_LIMIT_REACHED
+  INDEXING_FAILED_DOCUMENT_INACCESSIBLE
 }
 
 model LLMQuery {

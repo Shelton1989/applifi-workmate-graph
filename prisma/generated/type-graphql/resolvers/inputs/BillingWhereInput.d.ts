@@ -12,6 +12,7 @@ export declare class BillingWhereInput {
     Tenant?: TenantRelationFilter | undefined;
     tenantId?: StringFilter | undefined;
     stripeCustomerId?: StringNullableFilter | undefined;
+    stripeSubscriptionId?: StringNullableFilter | undefined;
     plan?: EnumPLANFilter | undefined;
     status?: EnumBILLING_STATUSFilter | undefined;
     createdAt?: DateTimeFilter | undefined;

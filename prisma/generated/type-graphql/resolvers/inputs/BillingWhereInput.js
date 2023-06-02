@@ -55,6 +55,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
 ], BillingWhereInput.prototype, "stripeCustomerId", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], BillingWhereInput.prototype, "stripeSubscriptionId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => EnumPLANFilter_1.EnumPLANFilter, {
         nullable: true
     }),

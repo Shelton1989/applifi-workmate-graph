@@ -26,6 +26,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], BillingMinAggregate.prototype, "stripeCustomerId", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], BillingMinAggregate.prototype, "stripeSubscriptionId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => PLAN_1.PLAN, {
         nullable: true
     }),

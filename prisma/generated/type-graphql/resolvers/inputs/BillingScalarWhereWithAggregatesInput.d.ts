@@ -10,6 +10,7 @@ export declare class BillingScalarWhereWithAggregatesInput {
     id?: StringWithAggregatesFilter | undefined;
     tenantId?: StringWithAggregatesFilter | undefined;
     stripeCustomerId?: StringNullableWithAggregatesFilter | undefined;
+    stripeSubscriptionId?: StringNullableWithAggregatesFilter | undefined;
     plan?: EnumPLANWithAggregatesFilter | undefined;
     status?: EnumBILLING_STATUSWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;

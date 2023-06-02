@@ -4,6 +4,7 @@ import { EnumPLANFieldUpdateOperationsInput } from "../inputs/EnumPLANFieldUpdat
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 export declare class BillingUpdateWithoutTenantInput {
     stripeCustomerId?: NullableStringFieldUpdateOperationsInput | undefined;
+    stripeSubscriptionId?: NullableStringFieldUpdateOperationsInput | undefined;
     plan?: EnumPLANFieldUpdateOperationsInput | undefined;
     status?: EnumBILLING_STATUSFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;

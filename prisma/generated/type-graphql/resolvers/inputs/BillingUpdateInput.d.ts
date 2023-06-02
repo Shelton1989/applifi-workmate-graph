@@ -6,6 +6,7 @@ import { TenantUpdateOneRequiredWithoutBillingInput } from "../inputs/TenantUpda
 export declare class BillingUpdateInput {
     Tenant?: TenantUpdateOneRequiredWithoutBillingInput | undefined;
     stripeCustomerId?: NullableStringFieldUpdateOperationsInput | undefined;
+    stripeSubscriptionId?: NullableStringFieldUpdateOperationsInput | undefined;
     plan?: EnumPLANFieldUpdateOperationsInput | undefined;
     status?: EnumBILLING_STATUSFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;

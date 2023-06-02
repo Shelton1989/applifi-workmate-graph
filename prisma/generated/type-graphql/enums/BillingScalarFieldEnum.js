@@ -8,6 +8,7 @@ var BillingScalarFieldEnum;
     BillingScalarFieldEnum["id"] = "id";
     BillingScalarFieldEnum["tenantId"] = "tenantId";
     BillingScalarFieldEnum["stripeCustomerId"] = "stripeCustomerId";
+    BillingScalarFieldEnum["stripeSubscriptionId"] = "stripeSubscriptionId";
     BillingScalarFieldEnum["plan"] = "plan";
     BillingScalarFieldEnum["status"] = "status";
     BillingScalarFieldEnum["createdAt"] = "createdAt";

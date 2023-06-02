@@ -5,6 +5,7 @@ export declare class BillingGroupBy {
     id: string;
     tenantId: string;
     stripeCustomerId: string | null;
+    stripeSubscriptionId: string | null;
     plan: "FREE" | "STANDARD" | "PRO" | "ENTERPRISE";
     status: "ACTIVE" | "PAST_DUE" | "CANCELED" | "UNPAID" | "INCOMPLETE" | "INCOMPLETE_EXPIRED" | "TRIALING";
     createdAt: Date;

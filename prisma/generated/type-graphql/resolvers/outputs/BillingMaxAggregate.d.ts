@@ -2,6 +2,7 @@ export declare class BillingMaxAggregate {
     id: string | null;
     tenantId: string | null;
     stripeCustomerId: string | null;
+    stripeSubscriptionId: string | null;
     plan: "FREE" | "STANDARD" | "PRO" | "ENTERPRISE" | null;
     status: "ACTIVE" | "PAST_DUE" | "CANCELED" | "UNPAID" | "INCOMPLETE" | "INCOMPLETE_EXPIRED" | "TRIALING" | null;
     createdAt: Date | null;
