@@ -13,6 +13,7 @@ export declare class DocumentUpdateInput {
     url?: NullableStringFieldUpdateOperationsInput | undefined;
     source?: NullableStringFieldUpdateOperationsInput | undefined;
     shortDescription?: NullableStringFieldUpdateOperationsInput | undefined;
+    documentType?: NullableStringFieldUpdateOperationsInput | undefined;
     Tenant?: TenantUpdateOneRequiredWithoutDocumentsInput | undefined;
     Comments?: CommentUpdateManyWithoutDocumentInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;

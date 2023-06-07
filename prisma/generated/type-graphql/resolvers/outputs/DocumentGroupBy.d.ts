@@ -10,6 +10,7 @@ export declare class DocumentGroupBy {
     url: string | null;
     source: string | null;
     shortDescription: string | null;
+    documentType: string | null;
     tenantId: string;
     createdAt: Date;
     updatedAt: Date;

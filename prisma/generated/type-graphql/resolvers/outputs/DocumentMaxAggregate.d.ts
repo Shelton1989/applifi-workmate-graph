@@ -7,6 +7,7 @@ export declare class DocumentMaxAggregate {
     url: string | null;
     source: string | null;
     shortDescription: string | null;
+    documentType: string | null;
     tenantId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;

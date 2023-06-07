@@ -15,6 +15,7 @@ export declare class DocumentScalarWhereWithAggregatesInput {
     url?: StringNullableWithAggregatesFilter | undefined;
     source?: StringNullableWithAggregatesFilter | undefined;
     shortDescription?: StringNullableWithAggregatesFilter | undefined;
+    documentType?: StringNullableWithAggregatesFilter | undefined;
     tenantId?: StringWithAggregatesFilter | undefined;
     createdAt?: DateTimeWithAggregatesFilter | undefined;
     updatedAt?: DateTimeWithAggregatesFilter | undefined;

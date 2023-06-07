@@ -313,6 +313,8 @@ model Document {
   source           String?
   shortDescription String?
 
+  documentType String?
+
   Tenant   Tenant @relation(fields: [tenantId], references: [id], onDelete: Cascade, onUpdate: Cascade)
   tenantId String
 

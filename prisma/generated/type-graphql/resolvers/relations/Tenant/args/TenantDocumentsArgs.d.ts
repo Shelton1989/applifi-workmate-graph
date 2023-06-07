@@ -7,5 +7,5 @@ export declare class TenantDocumentsArgs {
     cursor?: DocumentWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "publishStatus" | "indexStatus" | "title" | "link" | "url" | "source" | "shortDescription" | "tenantId" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "publishStatus" | "indexStatus" | "title" | "link" | "url" | "source" | "shortDescription" | "documentType" | "tenantId" | "createdAt" | "updatedAt"> | undefined;
 }

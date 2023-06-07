@@ -13,6 +13,7 @@ var DocumentScalarFieldEnum;
     DocumentScalarFieldEnum["url"] = "url";
     DocumentScalarFieldEnum["source"] = "source";
     DocumentScalarFieldEnum["shortDescription"] = "shortDescription";
+    DocumentScalarFieldEnum["documentType"] = "documentType";
     DocumentScalarFieldEnum["tenantId"] = "tenantId";
     DocumentScalarFieldEnum["createdAt"] = "createdAt";
     DocumentScalarFieldEnum["updatedAt"] = "updatedAt";

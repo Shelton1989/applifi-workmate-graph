@@ -7,6 +7,7 @@ export declare class DocumentCountAggregate {
     url: number;
     source: number;
     shortDescription: number;
+    documentType: number;
     tenantId: number;
     createdAt: number;
     updatedAt: number;

@@ -57,6 +57,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], DocumentCreateWithoutCommentsInput.prototype, "shortDescription", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentCreateWithoutCommentsInput.prototype, "documentType", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => TenantCreateNestedOneWithoutDocumentsInput_1.TenantCreateNestedOneWithoutDocumentsInput, {
         nullable: false
     }),

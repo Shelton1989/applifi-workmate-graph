@@ -10,6 +10,7 @@ export declare class Document {
     url?: string | null;
     source?: string | null;
     shortDescription?: string | null;
+    documentType?: string | null;
     Tenant?: Tenant;
     tenantId: string;
     Comments?: Comment[];

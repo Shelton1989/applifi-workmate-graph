@@ -7,6 +7,7 @@ export declare class DocumentMaxOrderByAggregateInput {
     url?: "asc" | "desc" | undefined;
     source?: "asc" | "desc" | undefined;
     shortDescription?: "asc" | "desc" | undefined;
+    documentType?: "asc" | "desc" | undefined;
     tenantId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;

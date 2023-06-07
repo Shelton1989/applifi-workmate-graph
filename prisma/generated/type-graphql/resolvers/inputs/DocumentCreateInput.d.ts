@@ -9,6 +9,7 @@ export declare class DocumentCreateInput {
     url?: string | undefined;
     source?: string | undefined;
     shortDescription?: string | undefined;
+    documentType?: string | undefined;
     Tenant: TenantCreateNestedOneWithoutDocumentsInput;
     Comments?: CommentCreateNestedManyWithoutDocumentInput | undefined;
     createdAt?: Date | undefined;

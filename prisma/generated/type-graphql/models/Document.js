@@ -58,6 +58,12 @@ tslib_1.__decorate([
 ], Document.prototype, "shortDescription", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], Document.prototype, "documentType", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
         nullable: false
     }),
     tslib_1.__metadata("design:type", String)

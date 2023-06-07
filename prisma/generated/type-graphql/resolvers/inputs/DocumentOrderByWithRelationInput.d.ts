@@ -9,6 +9,7 @@ export declare class DocumentOrderByWithRelationInput {
     url?: "asc" | "desc" | undefined;
     source?: "asc" | "desc" | undefined;
     shortDescription?: "asc" | "desc" | undefined;
+    documentType?: "asc" | "desc" | undefined;
     Tenant?: TenantOrderByWithRelationInput | undefined;
     tenantId?: "asc" | "desc" | undefined;
     Comments?: CommentOrderByRelationAggregateInput | undefined;

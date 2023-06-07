@@ -17,6 +17,7 @@ export declare class DocumentWhereInput {
     url?: StringNullableFilter | undefined;
     source?: StringNullableFilter | undefined;
     shortDescription?: StringNullableFilter | undefined;
+    documentType?: StringNullableFilter | undefined;
     Tenant?: TenantRelationFilter | undefined;
     tenantId?: StringFilter | undefined;
     Comments?: CommentListRelationFilter | undefined;

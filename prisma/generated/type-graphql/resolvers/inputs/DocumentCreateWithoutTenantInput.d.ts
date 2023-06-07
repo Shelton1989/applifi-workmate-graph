@@ -8,6 +8,7 @@ export declare class DocumentCreateWithoutTenantInput {
     url?: string | undefined;
     source?: string | undefined;
     shortDescription?: string | undefined;
+    documentType?: string | undefined;
     Comments?: CommentCreateNestedManyWithoutDocumentInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

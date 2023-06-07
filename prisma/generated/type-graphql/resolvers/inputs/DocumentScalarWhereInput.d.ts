@@ -15,6 +15,7 @@ export declare class DocumentScalarWhereInput {
     url?: StringNullableFilter | undefined;
     source?: StringNullableFilter | undefined;
     shortDescription?: StringNullableFilter | undefined;
+    documentType?: StringNullableFilter | undefined;
     tenantId?: StringFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;

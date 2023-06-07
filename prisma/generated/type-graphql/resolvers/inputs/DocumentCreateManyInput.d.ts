@@ -7,6 +7,7 @@ export declare class DocumentCreateManyInput {
     url?: string | undefined;
     source?: string | undefined;
     shortDescription?: string | undefined;
+    documentType?: string | undefined;
     tenantId: string;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;

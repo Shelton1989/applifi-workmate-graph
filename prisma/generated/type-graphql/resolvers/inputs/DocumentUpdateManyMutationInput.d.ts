@@ -11,6 +11,7 @@ export declare class DocumentUpdateManyMutationInput {
     url?: NullableStringFieldUpdateOperationsInput | undefined;
     source?: NullableStringFieldUpdateOperationsInput | undefined;
     shortDescription?: NullableStringFieldUpdateOperationsInput | undefined;
+    documentType?: NullableStringFieldUpdateOperationsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }
