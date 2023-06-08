@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserCreateWithoutCommentsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const DocumentCreateNestedManyWithoutCreatedByInput_1 = require("../inputs/DocumentCreateNestedManyWithoutCreatedByInput");
 const LLMQueryCreateNestedManyWithoutUserInput_1 = require("../inputs/LLMQueryCreateNestedManyWithoutUserInput");
 const NotificationCreateNestedManyWithoutActorInput_1 = require("../inputs/NotificationCreateNestedManyWithoutActorInput");
 const NotificationCreateNestedManyWithoutUserInput_1 = require("../inputs/NotificationCreateNestedManyWithoutUserInput");
@@ -140,6 +141,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", ReactionCreateNestedManyWithoutAuthorInput_1.ReactionCreateNestedManyWithoutAuthorInput)
 ], UserCreateWithoutCommentsInput.prototype, "Reactions", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DocumentCreateNestedManyWithoutCreatedByInput_1.DocumentCreateNestedManyWithoutCreatedByInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DocumentCreateNestedManyWithoutCreatedByInput_1.DocumentCreateNestedManyWithoutCreatedByInput)
+], UserCreateWithoutCommentsInput.prototype, "CreatedDocuments", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

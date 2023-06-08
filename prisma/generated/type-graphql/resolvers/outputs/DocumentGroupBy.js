@@ -71,6 +71,12 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:type", String)
 ], DocumentGroupBy.prototype, "tenantId", void 0);
 tslib_1.__decorate([
+    TypeGraphQL.Field(_type => String, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", String)
+], DocumentGroupBy.prototype, "createdByUserId", void 0);
+tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: false
     }),

@@ -1,5 +1,6 @@
 import { CommentUpdateManyWithoutAuthorInput } from "../inputs/CommentUpdateManyWithoutAuthorInput";
 import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdateOperationsInput";
+import { DocumentUpdateManyWithoutCreatedByInput } from "../inputs/DocumentUpdateManyWithoutCreatedByInput";
 import { LLMQueryUpdateManyWithoutUserInput } from "../inputs/LLMQueryUpdateManyWithoutUserInput";
 import { NotificationUpdateManyWithoutActorInput } from "../inputs/NotificationUpdateManyWithoutActorInput";
 import { NotificationUpdateManyWithoutUserInput } from "../inputs/NotificationUpdateManyWithoutUserInput";
@@ -32,6 +33,7 @@ export declare class UserUpdateWithoutNotificationSettingsInput {
     Comments?: CommentUpdateManyWithoutAuthorInput | undefined;
     Replies?: ReplyUpdateManyWithoutAuthorInput | undefined;
     Reactions?: ReactionUpdateManyWithoutAuthorInput | undefined;
+    CreatedDocuments?: DocumentUpdateManyWithoutCreatedByInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

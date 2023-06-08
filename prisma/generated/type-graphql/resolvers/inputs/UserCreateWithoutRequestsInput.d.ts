@@ -1,4 +1,5 @@
 import { CommentCreateNestedManyWithoutAuthorInput } from "../inputs/CommentCreateNestedManyWithoutAuthorInput";
+import { DocumentCreateNestedManyWithoutCreatedByInput } from "../inputs/DocumentCreateNestedManyWithoutCreatedByInput";
 import { LLMQueryCreateNestedManyWithoutUserInput } from "../inputs/LLMQueryCreateNestedManyWithoutUserInput";
 import { NotificationCreateNestedManyWithoutActorInput } from "../inputs/NotificationCreateNestedManyWithoutActorInput";
 import { NotificationCreateNestedManyWithoutUserInput } from "../inputs/NotificationCreateNestedManyWithoutUserInput";
@@ -29,6 +30,7 @@ export declare class UserCreateWithoutRequestsInput {
     Comments?: CommentCreateNestedManyWithoutAuthorInput | undefined;
     Replies?: ReplyCreateNestedManyWithoutAuthorInput | undefined;
     Reactions?: ReactionCreateNestedManyWithoutAuthorInput | undefined;
+    CreatedDocuments?: DocumentCreateNestedManyWithoutCreatedByInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

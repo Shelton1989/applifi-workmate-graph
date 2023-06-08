@@ -1,5 +1,6 @@
 import { CommentOrderByRelationAggregateInput } from "../inputs/CommentOrderByRelationAggregateInput";
 import { TenantOrderByWithRelationInput } from "../inputs/TenantOrderByWithRelationInput";
+import { UserOrderByWithRelationInput } from "../inputs/UserOrderByWithRelationInput";
 export declare class DocumentOrderByWithRelationInput {
     id?: "asc" | "desc" | undefined;
     publishStatus?: "asc" | "desc" | undefined;
@@ -13,6 +14,8 @@ export declare class DocumentOrderByWithRelationInput {
     Tenant?: TenantOrderByWithRelationInput | undefined;
     tenantId?: "asc" | "desc" | undefined;
     Comments?: CommentOrderByRelationAggregateInput | undefined;
+    CreatedBy?: UserOrderByWithRelationInput | undefined;
+    createdByUserId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

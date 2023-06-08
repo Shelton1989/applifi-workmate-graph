@@ -1,4 +1,5 @@
 import { Comment } from "../models/Comment";
+import { Document } from "../models/Document";
 import { LLMQuery } from "../models/LLMQuery";
 import { Notification } from "../models/Notification";
 import { NotificationSettings } from "../models/NotificationSettings";
@@ -31,6 +32,7 @@ export declare class User {
     Comments?: Comment[];
     Replies?: Reply[];
     Reactions?: Reaction[];
+    CreatedDocuments?: Document[];
     createdAt: Date;
     updatedAt: Date;
     _count?: UserCount | null;

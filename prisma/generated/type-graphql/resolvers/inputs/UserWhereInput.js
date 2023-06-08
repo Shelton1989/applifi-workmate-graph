@@ -7,6 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BoolNullableFilter_1 = require("../inputs/BoolNullableFilter");
 const CommentListRelationFilter_1 = require("../inputs/CommentListRelationFilter");
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
+const DocumentListRelationFilter_1 = require("../inputs/DocumentListRelationFilter");
 const EnumROLENullableListFilter_1 = require("../inputs/EnumROLENullableListFilter");
 const LLMQueryListRelationFilter_1 = require("../inputs/LLMQueryListRelationFilter");
 const NotificationListRelationFilter_1 = require("../inputs/NotificationListRelationFilter");
@@ -175,6 +176,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", ReactionListRelationFilter_1.ReactionListRelationFilter)
 ], UserWhereInput.prototype, "Reactions", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DocumentListRelationFilter_1.DocumentListRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DocumentListRelationFilter_1.DocumentListRelationFilter)
+], UserWhereInput.prototype, "CreatedDocuments", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

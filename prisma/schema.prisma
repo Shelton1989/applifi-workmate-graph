@@ -63,6 +63,7 @@ model User {
   Comments  Comment[]
   Replies   Reply[]
   Reactions Reaction[]
+  CreatedDocuments Document[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
@@ -319,6 +320,9 @@ model Document {
   tenantId String
 
   Comments Comment[]
+
+  CreatedBy      User?    @relation(fields: [createdByUserId], references: [id])
+  createdByUserId    String?
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt

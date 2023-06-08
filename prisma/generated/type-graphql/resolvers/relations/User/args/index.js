@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserRequestsArgs = exports.UserRepliesArgs = exports.UserReactionsArgs = exports.UserQueriesArgs = exports.UserNotificationsArgs = exports.UserCommentsArgs = exports.UserActivityArgs = void 0;
+exports.UserRequestsArgs = exports.UserRepliesArgs = exports.UserReactionsArgs = exports.UserQueriesArgs = exports.UserNotificationsArgs = exports.UserCreatedDocumentsArgs = exports.UserCommentsArgs = exports.UserActivityArgs = void 0;
 var UserActivityArgs_1 = require("./UserActivityArgs");
 Object.defineProperty(exports, "UserActivityArgs", { enumerable: true, get: function () { return UserActivityArgs_1.UserActivityArgs; } });
 var UserCommentsArgs_1 = require("./UserCommentsArgs");
 Object.defineProperty(exports, "UserCommentsArgs", { enumerable: true, get: function () { return UserCommentsArgs_1.UserCommentsArgs; } });
+var UserCreatedDocumentsArgs_1 = require("./UserCreatedDocumentsArgs");
+Object.defineProperty(exports, "UserCreatedDocumentsArgs", { enumerable: true, get: function () { return UserCreatedDocumentsArgs_1.UserCreatedDocumentsArgs; } });
 var UserNotificationsArgs_1 = require("./UserNotificationsArgs");
 Object.defineProperty(exports, "UserNotificationsArgs", { enumerable: true, get: function () { return UserNotificationsArgs_1.UserNotificationsArgs; } });
 var UserQueriesArgs_1 = require("./UserQueriesArgs");

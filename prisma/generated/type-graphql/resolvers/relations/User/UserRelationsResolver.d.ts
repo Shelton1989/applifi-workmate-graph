@@ -1,4 +1,5 @@
 import { Comment } from "../../../models/Comment";
+import { Document } from "../../../models/Document";
 import { LLMQuery } from "../../../models/LLMQuery";
 import { Notification } from "../../../models/Notification";
 import { NotificationSettings } from "../../../models/NotificationSettings";
@@ -9,6 +10,7 @@ import { Tenant } from "../../../models/Tenant";
 import { User } from "../../../models/User";
 import { UserActivityArgs } from "./args/UserActivityArgs";
 import { UserCommentsArgs } from "./args/UserCommentsArgs";
+import { UserCreatedDocumentsArgs } from "./args/UserCreatedDocumentsArgs";
 import { UserNotificationsArgs } from "./args/UserNotificationsArgs";
 import { UserQueriesArgs } from "./args/UserQueriesArgs";
 import { UserReactionsArgs } from "./args/UserReactionsArgs";
@@ -24,4 +26,5 @@ export declare class UserRelationsResolver {
     Comments(user: User, ctx: any, args: UserCommentsArgs): Promise<Comment[]>;
     Replies(user: User, ctx: any, args: UserRepliesArgs): Promise<Reply[]>;
     Reactions(user: User, ctx: any, args: UserReactionsArgs): Promise<Reaction[]>;
+    CreatedDocuments(user: User, ctx: any, args: UserCreatedDocumentsArgs): Promise<Document[]>;
 }

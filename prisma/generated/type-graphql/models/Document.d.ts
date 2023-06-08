@@ -1,5 +1,6 @@
 import { Comment } from "../models/Comment";
 import { Tenant } from "../models/Tenant";
+import { User } from "../models/User";
 import { DocumentCount } from "../resolvers/outputs/DocumentCount";
 export declare class Document {
     id: string;
@@ -14,6 +15,8 @@ export declare class Document {
     Tenant?: Tenant;
     tenantId: string;
     Comments?: Comment[];
+    CreatedBy?: User | null;
+    createdByUserId?: string | null;
     createdAt: Date;
     updatedAt: Date;
     _count?: DocumentCount | null;

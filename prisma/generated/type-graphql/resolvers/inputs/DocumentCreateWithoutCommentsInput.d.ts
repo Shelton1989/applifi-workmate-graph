@@ -1,4 +1,5 @@
 import { TenantCreateNestedOneWithoutDocumentsInput } from "../inputs/TenantCreateNestedOneWithoutDocumentsInput";
+import { UserCreateNestedOneWithoutCreatedDocumentsInput } from "../inputs/UserCreateNestedOneWithoutCreatedDocumentsInput";
 export declare class DocumentCreateWithoutCommentsInput {
     id?: string | undefined;
     publishStatus?: "DRAFT" | "PUBLISHED" | "UNPUBLISHED" | "UNDER_REVIEW" | "PENDING_APPROVAL" | "IN_REVIEW" | "APPROVED" | "NO_ACTION_TAKEN" | "REJECTED_WITH_REASON" | "DECLINED" | "BANNED" | "SOFT_BANNED" | undefined;
@@ -10,6 +11,7 @@ export declare class DocumentCreateWithoutCommentsInput {
     shortDescription?: string | undefined;
     documentType?: string | undefined;
     Tenant: TenantCreateNestedOneWithoutDocumentsInput;
+    CreatedBy?: UserCreateNestedOneWithoutCreatedDocumentsInput | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

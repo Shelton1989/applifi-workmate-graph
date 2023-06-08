@@ -6,4 +6,5 @@ export declare class UserCount {
     Comments: number;
     Replies: number;
     Reactions: number;
+    CreatedDocuments: number;
 }

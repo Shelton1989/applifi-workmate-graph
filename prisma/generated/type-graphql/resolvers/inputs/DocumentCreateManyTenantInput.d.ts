@@ -8,6 +8,7 @@ export declare class DocumentCreateManyTenantInput {
     source?: string | undefined;
     shortDescription?: string | undefined;
     documentType?: string | undefined;
+    createdByUserId?: string | undefined;
     createdAt?: Date | undefined;
     updatedAt?: Date | undefined;
 }

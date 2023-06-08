@@ -12,6 +12,7 @@ export declare class DocumentGroupBy {
     shortDescription: string | null;
     documentType: string | null;
     tenantId: string;
+    createdByUserId: string | null;
     createdAt: Date;
     updatedAt: Date;
     _count: DocumentCountAggregate | null;

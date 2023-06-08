@@ -11,6 +11,7 @@ const EnumPUBLISH_STATUSFilter_1 = require("../inputs/EnumPUBLISH_STATUSFilter")
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const TenantRelationFilter_1 = require("../inputs/TenantRelationFilter");
+const UserRelationFilter_1 = require("../inputs/UserRelationFilter");
 let DocumentWhereInput = DocumentWhereInput_1 = class DocumentWhereInput {
 };
 tslib_1.__decorate([
@@ -103,6 +104,18 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", CommentListRelationFilter_1.CommentListRelationFilter)
 ], DocumentWhereInput.prototype, "Comments", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => UserRelationFilter_1.UserRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", UserRelationFilter_1.UserRelationFilter)
+], DocumentWhereInput.prototype, "CreatedBy", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => StringNullableFilter_1.StringNullableFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", StringNullableFilter_1.StringNullableFilter)
+], DocumentWhereInput.prototype, "createdByUserId", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

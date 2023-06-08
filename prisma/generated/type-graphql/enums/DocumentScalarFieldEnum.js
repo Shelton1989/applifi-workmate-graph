@@ -15,6 +15,7 @@ var DocumentScalarFieldEnum;
     DocumentScalarFieldEnum["shortDescription"] = "shortDescription";
     DocumentScalarFieldEnum["documentType"] = "documentType";
     DocumentScalarFieldEnum["tenantId"] = "tenantId";
+    DocumentScalarFieldEnum["createdByUserId"] = "createdByUserId";
     DocumentScalarFieldEnum["createdAt"] = "createdAt";
     DocumentScalarFieldEnum["updatedAt"] = "updatedAt";
 })(DocumentScalarFieldEnum = exports.DocumentScalarFieldEnum || (exports.DocumentScalarFieldEnum = {}));

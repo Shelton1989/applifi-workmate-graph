@@ -4,6 +4,7 @@ exports.DocumentCreateWithoutCommentsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const TenantCreateNestedOneWithoutDocumentsInput_1 = require("../inputs/TenantCreateNestedOneWithoutDocumentsInput");
+const UserCreateNestedOneWithoutCreatedDocumentsInput_1 = require("../inputs/UserCreateNestedOneWithoutCreatedDocumentsInput");
 const DOCUMENT_INDEX_STATUS_1 = require("../../enums/DOCUMENT_INDEX_STATUS");
 const PUBLISH_STATUS_1 = require("../../enums/PUBLISH_STATUS");
 let DocumentCreateWithoutCommentsInput = class DocumentCreateWithoutCommentsInput {
@@ -68,6 +69,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", TenantCreateNestedOneWithoutDocumentsInput_1.TenantCreateNestedOneWithoutDocumentsInput)
 ], DocumentCreateWithoutCommentsInput.prototype, "Tenant", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => UserCreateNestedOneWithoutCreatedDocumentsInput_1.UserCreateNestedOneWithoutCreatedDocumentsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", UserCreateNestedOneWithoutCreatedDocumentsInput_1.UserCreateNestedOneWithoutCreatedDocumentsInput)
+], DocumentCreateWithoutCommentsInput.prototype, "CreatedBy", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

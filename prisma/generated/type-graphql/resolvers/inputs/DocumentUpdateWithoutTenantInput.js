@@ -9,6 +9,7 @@ const EnumDOCUMENT_INDEX_STATUSFieldUpdateOperationsInput_1 = require("../inputs
 const EnumPUBLISH_STATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumPUBLISH_STATUSFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
 const StringFieldUpdateOperationsInput_1 = require("../inputs/StringFieldUpdateOperationsInput");
+const UserUpdateOneWithoutCreatedDocumentsInput_1 = require("../inputs/UserUpdateOneWithoutCreatedDocumentsInput");
 let DocumentUpdateWithoutTenantInput = class DocumentUpdateWithoutTenantInput {
 };
 tslib_1.__decorate([
@@ -65,6 +66,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", CommentUpdateManyWithoutDocumentInput_1.CommentUpdateManyWithoutDocumentInput)
 ], DocumentUpdateWithoutTenantInput.prototype, "Comments", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => UserUpdateOneWithoutCreatedDocumentsInput_1.UserUpdateOneWithoutCreatedDocumentsInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", UserUpdateOneWithoutCreatedDocumentsInput_1.UserUpdateOneWithoutCreatedDocumentsInput)
+], DocumentUpdateWithoutTenantInput.prototype, "CreatedBy", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

@@ -5,6 +5,7 @@ import { EnumPUBLISH_STATUSFilter } from "../inputs/EnumPUBLISH_STATUSFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { TenantRelationFilter } from "../inputs/TenantRelationFilter";
+import { UserRelationFilter } from "../inputs/UserRelationFilter";
 export declare class DocumentWhereInput {
     AND?: DocumentWhereInput[] | undefined;
     OR?: DocumentWhereInput[] | undefined;
@@ -21,6 +22,8 @@ export declare class DocumentWhereInput {
     Tenant?: TenantRelationFilter | undefined;
     tenantId?: StringFilter | undefined;
     Comments?: CommentListRelationFilter | undefined;
+    CreatedBy?: UserRelationFilter | undefined;
+    createdByUserId?: StringNullableFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

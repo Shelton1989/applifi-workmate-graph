@@ -9,6 +9,7 @@ export declare enum DocumentScalarFieldEnum {
     shortDescription = "shortDescription",
     documentType = "documentType",
     tenantId = "tenantId",
+    createdByUserId = "createdByUserId",
     createdAt = "createdAt",
     updatedAt = "updatedAt"
 }

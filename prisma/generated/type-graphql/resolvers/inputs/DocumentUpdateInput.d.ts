@@ -5,6 +5,7 @@ import { EnumPUBLISH_STATUSFieldUpdateOperationsInput } from "../inputs/EnumPUBL
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { StringFieldUpdateOperationsInput } from "../inputs/StringFieldUpdateOperationsInput";
 import { TenantUpdateOneRequiredWithoutDocumentsInput } from "../inputs/TenantUpdateOneRequiredWithoutDocumentsInput";
+import { UserUpdateOneWithoutCreatedDocumentsInput } from "../inputs/UserUpdateOneWithoutCreatedDocumentsInput";
 export declare class DocumentUpdateInput {
     publishStatus?: EnumPUBLISH_STATUSFieldUpdateOperationsInput | undefined;
     indexStatus?: EnumDOCUMENT_INDEX_STATUSFieldUpdateOperationsInput | undefined;
@@ -16,6 +17,7 @@ export declare class DocumentUpdateInput {
     documentType?: NullableStringFieldUpdateOperationsInput | undefined;
     Tenant?: TenantUpdateOneRequiredWithoutDocumentsInput | undefined;
     Comments?: CommentUpdateManyWithoutDocumentInput | undefined;
+    CreatedBy?: UserUpdateOneWithoutCreatedDocumentsInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

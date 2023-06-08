@@ -4,6 +4,7 @@ exports.UserUpdateWithoutCommentsInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpdateOperationsInput");
+const DocumentUpdateManyWithoutCreatedByInput_1 = require("../inputs/DocumentUpdateManyWithoutCreatedByInput");
 const LLMQueryUpdateManyWithoutUserInput_1 = require("../inputs/LLMQueryUpdateManyWithoutUserInput");
 const NotificationSettingsUpdateOneWithoutUserInput_1 = require("../inputs/NotificationSettingsUpdateOneWithoutUserInput");
 const NotificationUpdateManyWithoutActorInput_1 = require("../inputs/NotificationUpdateManyWithoutActorInput");
@@ -138,6 +139,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", ReactionUpdateManyWithoutAuthorInput_1.ReactionUpdateManyWithoutAuthorInput)
 ], UserUpdateWithoutCommentsInput.prototype, "Reactions", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => DocumentUpdateManyWithoutCreatedByInput_1.DocumentUpdateManyWithoutCreatedByInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", DocumentUpdateManyWithoutCreatedByInput_1.DocumentUpdateManyWithoutCreatedByInput)
+], UserUpdateWithoutCommentsInput.prototype, "CreatedDocuments", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true

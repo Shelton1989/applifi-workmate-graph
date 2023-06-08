@@ -4,6 +4,7 @@ exports.UserRelationsResolver = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const Comment_1 = require("../../../models/Comment");
+const Document_1 = require("../../../models/Document");
 const LLMQuery_1 = require("../../../models/LLMQuery");
 const Notification_1 = require("../../../models/Notification");
 const NotificationSettings_1 = require("../../../models/NotificationSettings");
@@ -14,6 +15,7 @@ const Tenant_1 = require("../../../models/Tenant");
 const User_1 = require("../../../models/User");
 const UserActivityArgs_1 = require("./args/UserActivityArgs");
 const UserCommentsArgs_1 = require("./args/UserCommentsArgs");
+const UserCreatedDocumentsArgs_1 = require("./args/UserCreatedDocumentsArgs");
 const UserNotificationsArgs_1 = require("./args/UserNotificationsArgs");
 const UserQueriesArgs_1 = require("./args/UserQueriesArgs");
 const UserReactionsArgs_1 = require("./args/UserReactionsArgs");
@@ -83,6 +85,13 @@ let UserRelationsResolver = class UserRelationsResolver {
                 id: user.id,
             },
         }).Reactions(args);
+    }
+    async CreatedDocuments(user, ctx, args) {
+        return (0, helpers_1.getPrismaFromContext)(ctx).user.findUnique({
+            where: {
+                id: user.id,
+            },
+        }).CreatedDocuments(args);
     }
 };
 tslib_1.__decorate([
@@ -182,6 +191,17 @@ tslib_1.__decorate([
     tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserReactionsArgs_1.UserReactionsArgs]),
     tslib_1.__metadata("design:returntype", Promise)
 ], UserRelationsResolver.prototype, "Reactions", null);
+tslib_1.__decorate([
+    TypeGraphQL.FieldResolver(_type => [Document_1.Document], {
+        nullable: false
+    }),
+    tslib_1.__param(0, TypeGraphQL.Root()),
+    tslib_1.__param(1, TypeGraphQL.Ctx()),
+    tslib_1.__param(2, TypeGraphQL.Args()),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [User_1.User, Object, UserCreatedDocumentsArgs_1.UserCreatedDocumentsArgs]),
+    tslib_1.__metadata("design:returntype", Promise)
+], UserRelationsResolver.prototype, "CreatedDocuments", null);
 UserRelationsResolver = tslib_1.__decorate([
     TypeGraphQL.Resolver(_of => User_1.User)
 ], UserRelationsResolver);

@@ -1,6 +1,7 @@
 import { BoolNullableFilter } from "../inputs/BoolNullableFilter";
 import { CommentListRelationFilter } from "../inputs/CommentListRelationFilter";
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
+import { DocumentListRelationFilter } from "../inputs/DocumentListRelationFilter";
 import { EnumROLENullableListFilter } from "../inputs/EnumROLENullableListFilter";
 import { LLMQueryListRelationFilter } from "../inputs/LLMQueryListRelationFilter";
 import { NotificationListRelationFilter } from "../inputs/NotificationListRelationFilter";
@@ -38,6 +39,7 @@ export declare class UserWhereInput {
     Comments?: CommentListRelationFilter | undefined;
     Replies?: ReplyListRelationFilter | undefined;
     Reactions?: ReactionListRelationFilter | undefined;
+    CreatedDocuments?: DocumentListRelationFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

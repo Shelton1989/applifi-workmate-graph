@@ -9,6 +9,7 @@ export declare class DocumentCountOrderByAggregateInput {
     shortDescription?: "asc" | "desc" | undefined;
     documentType?: "asc" | "desc" | undefined;
     tenantId?: "asc" | "desc" | undefined;
+    createdByUserId?: "asc" | "desc" | undefined;
     createdAt?: "asc" | "desc" | undefined;
     updatedAt?: "asc" | "desc" | undefined;
 }

@@ -9,6 +9,7 @@ export declare class DocumentMinAggregate {
     shortDescription: string | null;
     documentType: string | null;
     tenantId: string | null;
+    createdByUserId: string | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 }
