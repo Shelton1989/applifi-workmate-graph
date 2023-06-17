@@ -4,6 +4,7 @@ export { DocumentRelationsResolver } from "./Document/DocumentRelationsResolver"
 export { LLMQueryRelationsResolver } from "./LLMQuery/LLMQueryRelationsResolver";
 export { NotificationRelationsResolver } from "./Notification/NotificationRelationsResolver";
 export { NotificationSettingsRelationsResolver } from "./NotificationSettings/NotificationSettingsRelationsResolver";
+export { ProductKeyRelationsResolver } from "./ProductKey/ProductKeyRelationsResolver";
 export { ReactionRelationsResolver } from "./Reaction/ReactionRelationsResolver";
 export { ReplyRelationsResolver } from "./Reply/ReplyRelationsResolver";
 export { RequestRelationsResolver } from "./Request/RequestRelationsResolver";

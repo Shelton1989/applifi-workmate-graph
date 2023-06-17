@@ -5,6 +5,7 @@ export { AggregateDocument } from "./AggregateDocument";
 export { AggregateLLMQuery } from "./AggregateLLMQuery";
 export { AggregateNotification } from "./AggregateNotification";
 export { AggregateNotificationSettings } from "./AggregateNotificationSettings";
+export { AggregateProductKey } from "./AggregateProductKey";
 export { AggregateReaction } from "./AggregateReaction";
 export { AggregateReply } from "./AggregateReply";
 export { AggregateRequest } from "./AggregateRequest";
@@ -36,6 +37,10 @@ export { NotificationSettingsCountAggregate } from "./NotificationSettingsCountA
 export { NotificationSettingsGroupBy } from "./NotificationSettingsGroupBy";
 export { NotificationSettingsMaxAggregate } from "./NotificationSettingsMaxAggregate";
 export { NotificationSettingsMinAggregate } from "./NotificationSettingsMinAggregate";
+export { ProductKeyCountAggregate } from "./ProductKeyCountAggregate";
+export { ProductKeyGroupBy } from "./ProductKeyGroupBy";
+export { ProductKeyMaxAggregate } from "./ProductKeyMaxAggregate";
+export { ProductKeyMinAggregate } from "./ProductKeyMinAggregate";
 export { ReactionCountAggregate } from "./ReactionCountAggregate";
 export { ReactionGroupBy } from "./ReactionGroupBy";
 export { ReactionMaxAggregate } from "./ReactionMaxAggregate";

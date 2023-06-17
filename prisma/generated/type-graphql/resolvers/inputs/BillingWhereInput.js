@@ -7,6 +7,7 @@ const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const DateTimeFilter_1 = require("../inputs/DateTimeFilter");
 const EnumBILLING_STATUSFilter_1 = require("../inputs/EnumBILLING_STATUSFilter");
 const EnumPLANFilter_1 = require("../inputs/EnumPLANFilter");
+const ProductKeyRelationFilter_1 = require("../inputs/ProductKeyRelationFilter");
 const StringFilter_1 = require("../inputs/StringFilter");
 const StringNullableFilter_1 = require("../inputs/StringNullableFilter");
 const TenantRelationFilter_1 = require("../inputs/TenantRelationFilter");
@@ -72,6 +73,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", EnumBILLING_STATUSFilter_1.EnumBILLING_STATUSFilter)
 ], BillingWhereInput.prototype, "status", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ProductKeyRelationFilter_1.ProductKeyRelationFilter, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ProductKeyRelationFilter_1.ProductKeyRelationFilter)
+], BillingWhereInput.prototype, "ProductKey", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFilter_1.DateTimeFilter, {
         nullable: true

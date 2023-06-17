@@ -8,6 +8,7 @@ export { NotificationScalarFieldEnum } from "./NotificationScalarFieldEnum";
 export { NotificationSettingsScalarFieldEnum } from "./NotificationSettingsScalarFieldEnum";
 export { PLAN } from "./PLAN";
 export { PUBLISH_STATUS } from "./PUBLISH_STATUS";
+export { ProductKeyScalarFieldEnum } from "./ProductKeyScalarFieldEnum";
 export { QueryMode } from "./QueryMode";
 export { REACTION_TYPE } from "./REACTION_TYPE";
 export { REQUEST_STATUS } from "./REQUEST_STATUS";

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.BillingCreateInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const ProductKeyCreateNestedOneWithoutBillingInput_1 = require("../inputs/ProductKeyCreateNestedOneWithoutBillingInput");
 const TenantCreateNestedOneWithoutBillingInput_1 = require("../inputs/TenantCreateNestedOneWithoutBillingInput");
 const BILLING_STATUS_1 = require("../../enums/BILLING_STATUS");
 const PLAN_1 = require("../../enums/PLAN");
@@ -44,6 +45,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], BillingCreateInput.prototype, "status", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ProductKeyCreateNestedOneWithoutBillingInput_1.ProductKeyCreateNestedOneWithoutBillingInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ProductKeyCreateNestedOneWithoutBillingInput_1.ProductKeyCreateNestedOneWithoutBillingInput)
+], BillingCreateInput.prototype, "ProductKey", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => Date, {
         nullable: true

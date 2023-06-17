@@ -4,6 +4,7 @@ export { DocumentCrudResolver } from "./Document/DocumentCrudResolver";
 export { LLMQueryCrudResolver } from "./LLMQuery/LLMQueryCrudResolver";
 export { NotificationCrudResolver } from "./Notification/NotificationCrudResolver";
 export { NotificationSettingsCrudResolver } from "./NotificationSettings/NotificationSettingsCrudResolver";
+export { ProductKeyCrudResolver } from "./ProductKey/ProductKeyCrudResolver";
 export { ReactionCrudResolver } from "./Reaction/ReactionCrudResolver";
 export { ReplyCrudResolver } from "./Reply/ReplyCrudResolver";
 export { RequestCrudResolver } from "./Request/RequestCrudResolver";

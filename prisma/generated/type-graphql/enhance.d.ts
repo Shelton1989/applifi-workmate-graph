@@ -9,6 +9,7 @@ declare const crudResolversMap: {
     NotificationSettings: typeof crudResolvers.NotificationSettingsCrudResolver;
     Tenant: typeof crudResolvers.TenantCrudResolver;
     Billing: typeof crudResolvers.BillingCrudResolver;
+    ProductKey: typeof crudResolvers.ProductKeyCrudResolver;
     Comment: typeof crudResolvers.CommentCrudResolver;
     Reply: typeof crudResolvers.ReplyCrudResolver;
     Reaction: typeof crudResolvers.ReactionCrudResolver;
@@ -40,6 +41,7 @@ declare const relationResolversMap: {
     NotificationSettings: typeof relationResolvers.NotificationSettingsRelationsResolver;
     Tenant: typeof relationResolvers.TenantRelationsResolver;
     Billing: typeof relationResolvers.BillingRelationsResolver;
+    ProductKey: typeof relationResolvers.ProductKeyRelationsResolver;
     Comment: typeof relationResolvers.CommentRelationsResolver;
     Reply: typeof relationResolvers.ReplyRelationsResolver;
     Reaction: typeof relationResolvers.ReactionRelationsResolver;

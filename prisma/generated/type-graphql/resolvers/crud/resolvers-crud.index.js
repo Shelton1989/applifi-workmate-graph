@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserCrudResolver = exports.TenantCrudResolver = exports.RequestCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.NotificationSettingsCrudResolver = exports.NotificationCrudResolver = exports.LLMQueryCrudResolver = exports.DocumentCrudResolver = exports.CommentCrudResolver = exports.BillingCrudResolver = void 0;
+exports.UserCrudResolver = exports.TenantCrudResolver = exports.RequestCrudResolver = exports.ReplyCrudResolver = exports.ReactionCrudResolver = exports.ProductKeyCrudResolver = exports.NotificationSettingsCrudResolver = exports.NotificationCrudResolver = exports.LLMQueryCrudResolver = exports.DocumentCrudResolver = exports.CommentCrudResolver = exports.BillingCrudResolver = void 0;
 var BillingCrudResolver_1 = require("./Billing/BillingCrudResolver");
 Object.defineProperty(exports, "BillingCrudResolver", { enumerable: true, get: function () { return BillingCrudResolver_1.BillingCrudResolver; } });
 var CommentCrudResolver_1 = require("./Comment/CommentCrudResolver");
@@ -13,6 +13,8 @@ var NotificationCrudResolver_1 = require("./Notification/NotificationCrudResolve
 Object.defineProperty(exports, "NotificationCrudResolver", { enumerable: true, get: function () { return NotificationCrudResolver_1.NotificationCrudResolver; } });
 var NotificationSettingsCrudResolver_1 = require("./NotificationSettings/NotificationSettingsCrudResolver");
 Object.defineProperty(exports, "NotificationSettingsCrudResolver", { enumerable: true, get: function () { return NotificationSettingsCrudResolver_1.NotificationSettingsCrudResolver; } });
+var ProductKeyCrudResolver_1 = require("./ProductKey/ProductKeyCrudResolver");
+Object.defineProperty(exports, "ProductKeyCrudResolver", { enumerable: true, get: function () { return ProductKeyCrudResolver_1.ProductKeyCrudResolver; } });
 var ReactionCrudResolver_1 = require("./Reaction/ReactionCrudResolver");
 Object.defineProperty(exports, "ReactionCrudResolver", { enumerable: true, get: function () { return ReactionCrudResolver_1.ReactionCrudResolver; } });
 var ReplyCrudResolver_1 = require("./Reply/ReplyCrudResolver");

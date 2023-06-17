@@ -21,17 +21,6 @@ const userCreateOrUpdateOperations = [
   "createReply",
 ]
 
-const userDeleteOperations = [
-  "deleteComment",
-  "deletePost",
-  "deleteReply",
-]
-
-const userAccountOperations = [
-  "updateUser",
-  "deleteUser",
-]
-
 const firebaseApp = initializeApp({
   credential: applicationDefault(),
 })
@@ -44,7 +33,7 @@ const environment = process.env.ENVIRONMENT || "dev";
 const getCorsConfig = () => { 
   if (environment === "prod") {
     return ({
-      "origin": [/applifi\.com/, /a\.run\.app/, /workmate\.ai/, /workmate\.ai\.appspot\.com/],
+      "origin": [/applifi\.com/, /applifi\.io/, /workmate\.applifi\.io/, /a\.run\.app/, /workmate\.ai/, /workmate\.ai\.appspot\.com/],
       "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
       "preflightContinue": false,
       "optionsSuccessStatus": 204
@@ -121,10 +110,18 @@ applyResolversEnhanceMap({
     deleteNotification: [Authorized()],
     deleteManyNotification: [Authorized(ROLE.ADMIN)],
   },
+  ProductKey: {
+    createProductKey: [Authorized(ROLE.SUPER_ADMIN)],
+    updateProductKey: [Authorized(ROLE.SUPER_ADMIN)],
+    createManyProductKey: [Authorized(ROLE.SUPER_ADMIN)],
+    updateManyProductKey: [Authorized(ROLE.SUPER_ADMIN)],
+    deleteProductKey: [Authorized(ROLE.SUPER_ADMIN)],
+    deleteManyProductKey: [Authorized(ROLE.SUPER_ADMIN)],
+  },
 })
 
 const authChecker: AuthChecker<Context> = async ({ context, args, info }, roles) => {
-  return true
+  // return true
   const requestToken = (context.authHeader || '').replace('Bearer ', '');
 
   try {

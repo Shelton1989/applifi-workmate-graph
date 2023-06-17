@@ -1,0 +1,12 @@
+export { AggregateProductKeyArgs } from "./AggregateProductKeyArgs";
+export { CreateManyProductKeyArgs } from "./CreateManyProductKeyArgs";
+export { CreateProductKeyArgs } from "./CreateProductKeyArgs";
+export { DeleteManyProductKeyArgs } from "./DeleteManyProductKeyArgs";
+export { DeleteProductKeyArgs } from "./DeleteProductKeyArgs";
+export { FindFirstProductKeyArgs } from "./FindFirstProductKeyArgs";
+export { FindManyProductKeyArgs } from "./FindManyProductKeyArgs";
+export { FindUniqueProductKeyArgs } from "./FindUniqueProductKeyArgs";
+export { GroupByProductKeyArgs } from "./GroupByProductKeyArgs";
+export { UpdateManyProductKeyArgs } from "./UpdateManyProductKeyArgs";
+export { UpdateProductKeyArgs } from "./UpdateProductKeyArgs";
+export { UpsertProductKeyArgs } from "./UpsertProductKeyArgs";

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.BillingOrderByWithRelationInput = void 0;
 const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
+const ProductKeyOrderByWithRelationInput_1 = require("../inputs/ProductKeyOrderByWithRelationInput");
 const TenantOrderByWithRelationInput_1 = require("../inputs/TenantOrderByWithRelationInput");
 const SortOrder_1 = require("../../enums/SortOrder");
 let BillingOrderByWithRelationInput = class BillingOrderByWithRelationInput {
@@ -49,6 +50,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", String)
 ], BillingOrderByWithRelationInput.prototype, "status", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ProductKeyOrderByWithRelationInput_1.ProductKeyOrderByWithRelationInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ProductKeyOrderByWithRelationInput_1.ProductKeyOrderByWithRelationInput)
+], BillingOrderByWithRelationInput.prototype, "ProductKey", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => SortOrder_1.SortOrder, {
         nullable: true

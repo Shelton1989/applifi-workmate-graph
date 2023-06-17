@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.User = exports.Tenant = exports.Request = exports.Reply = exports.Reaction = exports.NotificationSettings = exports.Notification = exports.LLMQuery = exports.Document = exports.Comment = exports.Billing = void 0;
+exports.User = exports.Tenant = exports.Request = exports.Reply = exports.Reaction = exports.ProductKey = exports.NotificationSettings = exports.Notification = exports.LLMQuery = exports.Document = exports.Comment = exports.Billing = void 0;
 var Billing_1 = require("./Billing");
 Object.defineProperty(exports, "Billing", { enumerable: true, get: function () { return Billing_1.Billing; } });
 var Comment_1 = require("./Comment");
@@ -13,6 +13,8 @@ var Notification_1 = require("./Notification");
 Object.defineProperty(exports, "Notification", { enumerable: true, get: function () { return Notification_1.Notification; } });
 var NotificationSettings_1 = require("./NotificationSettings");
 Object.defineProperty(exports, "NotificationSettings", { enumerable: true, get: function () { return NotificationSettings_1.NotificationSettings; } });
+var ProductKey_1 = require("./ProductKey");
+Object.defineProperty(exports, "ProductKey", { enumerable: true, get: function () { return ProductKey_1.ProductKey; } });
 var Reaction_1 = require("./Reaction");
 Object.defineProperty(exports, "Reaction", { enumerable: true, get: function () { return Reaction_1.Reaction; } });
 var Reply_1 = require("./Reply");

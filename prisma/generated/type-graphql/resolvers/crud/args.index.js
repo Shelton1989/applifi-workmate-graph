@@ -7,6 +7,7 @@ tslib_1.__exportStar(require("./Document/args"), exports);
 tslib_1.__exportStar(require("./LLMQuery/args"), exports);
 tslib_1.__exportStar(require("./Notification/args"), exports);
 tslib_1.__exportStar(require("./NotificationSettings/args"), exports);
+tslib_1.__exportStar(require("./ProductKey/args"), exports);
 tslib_1.__exportStar(require("./Reaction/args"), exports);
 tslib_1.__exportStar(require("./Reply/args"), exports);
 tslib_1.__exportStar(require("./Request/args"), exports);

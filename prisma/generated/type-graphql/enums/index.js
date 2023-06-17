@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserScalarFieldEnum = exports.TenantScalarFieldEnum = exports.SortOrder = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.PUBLISH_STATUS = exports.PLAN = exports.NotificationSettingsScalarFieldEnum = exports.NotificationScalarFieldEnum = exports.LLMQueryScalarFieldEnum = exports.DocumentScalarFieldEnum = exports.DOCUMENT_INDEX_STATUS = exports.CommentScalarFieldEnum = exports.BillingScalarFieldEnum = exports.BILLING_STATUS = void 0;
+exports.UserScalarFieldEnum = exports.TenantScalarFieldEnum = exports.SortOrder = exports.RequestScalarFieldEnum = exports.ReplyScalarFieldEnum = exports.ReactionScalarFieldEnum = exports.ROLE = exports.REQUEST_TYPE = exports.REQUEST_STATUS = exports.REACTION_TYPE = exports.QueryMode = exports.ProductKeyScalarFieldEnum = exports.PUBLISH_STATUS = exports.PLAN = exports.NotificationSettingsScalarFieldEnum = exports.NotificationScalarFieldEnum = exports.LLMQueryScalarFieldEnum = exports.DocumentScalarFieldEnum = exports.DOCUMENT_INDEX_STATUS = exports.CommentScalarFieldEnum = exports.BillingScalarFieldEnum = exports.BILLING_STATUS = void 0;
 var BILLING_STATUS_1 = require("./BILLING_STATUS");
 Object.defineProperty(exports, "BILLING_STATUS", { enumerable: true, get: function () { return BILLING_STATUS_1.BILLING_STATUS; } });
 var BillingScalarFieldEnum_1 = require("./BillingScalarFieldEnum");
@@ -21,6 +21,8 @@ var PLAN_1 = require("./PLAN");
 Object.defineProperty(exports, "PLAN", { enumerable: true, get: function () { return PLAN_1.PLAN; } });
 var PUBLISH_STATUS_1 = require("./PUBLISH_STATUS");
 Object.defineProperty(exports, "PUBLISH_STATUS", { enumerable: true, get: function () { return PUBLISH_STATUS_1.PUBLISH_STATUS; } });
+var ProductKeyScalarFieldEnum_1 = require("./ProductKeyScalarFieldEnum");
+Object.defineProperty(exports, "ProductKeyScalarFieldEnum", { enumerable: true, get: function () { return ProductKeyScalarFieldEnum_1.ProductKeyScalarFieldEnum; } });
 var QueryMode_1 = require("./QueryMode");
 Object.defineProperty(exports, "QueryMode", { enumerable: true, get: function () { return QueryMode_1.QueryMode; } });
 var REACTION_TYPE_1 = require("./REACTION_TYPE");

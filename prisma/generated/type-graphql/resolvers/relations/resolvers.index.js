@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserRelationsResolver = exports.TenantRelationsResolver = exports.RequestRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.NotificationRelationsResolver = exports.LLMQueryRelationsResolver = exports.DocumentRelationsResolver = exports.CommentRelationsResolver = exports.BillingRelationsResolver = void 0;
+exports.UserRelationsResolver = exports.TenantRelationsResolver = exports.RequestRelationsResolver = exports.ReplyRelationsResolver = exports.ReactionRelationsResolver = exports.ProductKeyRelationsResolver = exports.NotificationSettingsRelationsResolver = exports.NotificationRelationsResolver = exports.LLMQueryRelationsResolver = exports.DocumentRelationsResolver = exports.CommentRelationsResolver = exports.BillingRelationsResolver = void 0;
 var BillingRelationsResolver_1 = require("./Billing/BillingRelationsResolver");
 Object.defineProperty(exports, "BillingRelationsResolver", { enumerable: true, get: function () { return BillingRelationsResolver_1.BillingRelationsResolver; } });
 var CommentRelationsResolver_1 = require("./Comment/CommentRelationsResolver");
@@ -13,6 +13,8 @@ var NotificationRelationsResolver_1 = require("./Notification/NotificationRelati
 Object.defineProperty(exports, "NotificationRelationsResolver", { enumerable: true, get: function () { return NotificationRelationsResolver_1.NotificationRelationsResolver; } });
 var NotificationSettingsRelationsResolver_1 = require("./NotificationSettings/NotificationSettingsRelationsResolver");
 Object.defineProperty(exports, "NotificationSettingsRelationsResolver", { enumerable: true, get: function () { return NotificationSettingsRelationsResolver_1.NotificationSettingsRelationsResolver; } });
+var ProductKeyRelationsResolver_1 = require("./ProductKey/ProductKeyRelationsResolver");
+Object.defineProperty(exports, "ProductKeyRelationsResolver", { enumerable: true, get: function () { return ProductKeyRelationsResolver_1.ProductKeyRelationsResolver; } });
 var ReactionRelationsResolver_1 = require("./Reaction/ReactionRelationsResolver");
 Object.defineProperty(exports, "ReactionRelationsResolver", { enumerable: true, get: function () { return ReactionRelationsResolver_1.ReactionRelationsResolver; } });
 var ReplyRelationsResolver_1 = require("./Reply/ReplyRelationsResolver");

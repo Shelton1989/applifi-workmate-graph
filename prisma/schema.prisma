@@ -139,6 +139,37 @@ model Billing {
   plan   PLAN           @default(FREE)
   status BILLING_STATUS @default(ACTIVE)
 
+  ProductKey ProductKey?
+  // PlanLimit  PlanLimit?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+// model PlanLimit {
+//   id String @id @default(uuid()) @map("_id")
+
+//   plan PLAN @unique
+
+//   maxDocumentsPerMonth Int
+//   maxUsers             Int
+//   maxRequestsPerDay  Int
+
+//   Billing Billing @relation(fields: [billingId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+//   billingId String @unique
+
+//   createdAt DateTime @default(now())
+//   updatedAt DateTime @default(now()) @updatedAt
+// }
+
+model ProductKey {
+  id String @id @default(uuid()) @map("_id")
+
+  Billing Billing @relation(fields: [billingId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  billingId String @unique
+
+  key String @unique @default(uuid())
+
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
 }

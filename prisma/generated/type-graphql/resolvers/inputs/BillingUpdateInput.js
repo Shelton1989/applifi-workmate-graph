@@ -7,6 +7,7 @@ const DateTimeFieldUpdateOperationsInput_1 = require("../inputs/DateTimeFieldUpd
 const EnumBILLING_STATUSFieldUpdateOperationsInput_1 = require("../inputs/EnumBILLING_STATUSFieldUpdateOperationsInput");
 const EnumPLANFieldUpdateOperationsInput_1 = require("../inputs/EnumPLANFieldUpdateOperationsInput");
 const NullableStringFieldUpdateOperationsInput_1 = require("../inputs/NullableStringFieldUpdateOperationsInput");
+const ProductKeyUpdateOneWithoutBillingInput_1 = require("../inputs/ProductKeyUpdateOneWithoutBillingInput");
 const TenantUpdateOneRequiredWithoutBillingInput_1 = require("../inputs/TenantUpdateOneRequiredWithoutBillingInput");
 let BillingUpdateInput = class BillingUpdateInput {
 };
@@ -40,6 +41,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", EnumBILLING_STATUSFieldUpdateOperationsInput_1.EnumBILLING_STATUSFieldUpdateOperationsInput)
 ], BillingUpdateInput.prototype, "status", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => ProductKeyUpdateOneWithoutBillingInput_1.ProductKeyUpdateOneWithoutBillingInput, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", ProductKeyUpdateOneWithoutBillingInput_1.ProductKeyUpdateOneWithoutBillingInput)
+], BillingUpdateInput.prototype, "ProductKey", void 0);
 tslib_1.__decorate([
     TypeGraphQL.Field(_type => DateTimeFieldUpdateOperationsInput_1.DateTimeFieldUpdateOperationsInput, {
         nullable: true
