@@ -11,6 +11,7 @@ export { AggregateReply } from "./AggregateReply";
 export { AggregateRequest } from "./AggregateRequest";
 export { AggregateTenant } from "./AggregateTenant";
 export { AggregateUser } from "./AggregateUser";
+export { BillingCount } from "./BillingCount";
 export { BillingCountAggregate } from "./BillingCountAggregate";
 export { BillingGroupBy } from "./BillingGroupBy";
 export { BillingMaxAggregate } from "./BillingMaxAggregate";

@@ -2,7 +2,7 @@ import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdat
 import { EnumBILLING_STATUSFieldUpdateOperationsInput } from "../inputs/EnumBILLING_STATUSFieldUpdateOperationsInput";
 import { EnumPLANFieldUpdateOperationsInput } from "../inputs/EnumPLANFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { ProductKeyUpdateOneWithoutBillingInput } from "../inputs/ProductKeyUpdateOneWithoutBillingInput";
+import { ProductKeyUpdateManyWithoutBillingInput } from "../inputs/ProductKeyUpdateManyWithoutBillingInput";
 import { TenantUpdateOneRequiredWithoutBillingInput } from "../inputs/TenantUpdateOneRequiredWithoutBillingInput";
 export declare class BillingUpdateInput {
     Tenant?: TenantUpdateOneRequiredWithoutBillingInput | undefined;
@@ -10,7 +10,7 @@ export declare class BillingUpdateInput {
     stripeSubscriptionId?: NullableStringFieldUpdateOperationsInput | undefined;
     plan?: EnumPLANFieldUpdateOperationsInput | undefined;
     status?: EnumBILLING_STATUSFieldUpdateOperationsInput | undefined;
-    ProductKey?: ProductKeyUpdateOneWithoutBillingInput | undefined;
+    ProductKeys?: ProductKeyUpdateManyWithoutBillingInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

@@ -2,13 +2,13 @@ import { DateTimeFieldUpdateOperationsInput } from "../inputs/DateTimeFieldUpdat
 import { EnumBILLING_STATUSFieldUpdateOperationsInput } from "../inputs/EnumBILLING_STATUSFieldUpdateOperationsInput";
 import { EnumPLANFieldUpdateOperationsInput } from "../inputs/EnumPLANFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
-import { ProductKeyUpdateOneWithoutBillingInput } from "../inputs/ProductKeyUpdateOneWithoutBillingInput";
+import { ProductKeyUpdateManyWithoutBillingInput } from "../inputs/ProductKeyUpdateManyWithoutBillingInput";
 export declare class BillingUpdateWithoutTenantInput {
     stripeCustomerId?: NullableStringFieldUpdateOperationsInput | undefined;
     stripeSubscriptionId?: NullableStringFieldUpdateOperationsInput | undefined;
     plan?: EnumPLANFieldUpdateOperationsInput | undefined;
     status?: EnumBILLING_STATUSFieldUpdateOperationsInput | undefined;
-    ProductKey?: ProductKeyUpdateOneWithoutBillingInput | undefined;
+    ProductKeys?: ProductKeyUpdateManyWithoutBillingInput | undefined;
     createdAt?: DateTimeFieldUpdateOperationsInput | undefined;
     updatedAt?: DateTimeFieldUpdateOperationsInput | undefined;
 }

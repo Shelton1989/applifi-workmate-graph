@@ -5,6 +5,7 @@ const tslib_1 = require("tslib");
 const TypeGraphQL = tslib_1.__importStar(require("type-graphql"));
 const BILLING_STATUS_1 = require("../enums/BILLING_STATUS");
 const PLAN_1 = require("../enums/PLAN");
+const BillingCount_1 = require("../resolvers/outputs/BillingCount");
 let Billing = class Billing {
 };
 tslib_1.__decorate([
@@ -55,6 +56,12 @@ tslib_1.__decorate([
     }),
     tslib_1.__metadata("design:type", Date)
 ], Billing.prototype, "updatedAt", void 0);
+tslib_1.__decorate([
+    TypeGraphQL.Field(_type => BillingCount_1.BillingCount, {
+        nullable: true
+    }),
+    tslib_1.__metadata("design:type", BillingCount_1.BillingCount)
+], Billing.prototype, "_count", void 0);
 Billing = tslib_1.__decorate([
     TypeGraphQL.ObjectType("Billing", {
         isAbstract: true

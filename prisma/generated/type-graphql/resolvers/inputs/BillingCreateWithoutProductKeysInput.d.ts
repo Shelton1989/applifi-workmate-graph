@@ -1,5 +1,5 @@
 import { TenantCreateNestedOneWithoutBillingInput } from "../inputs/TenantCreateNestedOneWithoutBillingInput";
-export declare class BillingCreateWithoutProductKeyInput {
+export declare class BillingCreateWithoutProductKeysInput {
     id?: string | undefined;
     Tenant: TenantCreateNestedOneWithoutBillingInput;
     stripeCustomerId?: string | undefined;

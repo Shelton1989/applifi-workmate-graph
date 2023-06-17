@@ -3,7 +3,8 @@ import { ProductKeyMaxAggregate } from "../outputs/ProductKeyMaxAggregate";
 import { ProductKeyMinAggregate } from "../outputs/ProductKeyMinAggregate";
 export declare class ProductKeyGroupBy {
     id: string;
-    billingId: string;
+    billingId: string | null;
+    createdBy: string | null;
     key: string;
     createdAt: Date;
     updatedAt: Date;

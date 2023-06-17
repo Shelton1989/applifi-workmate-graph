@@ -7,5 +7,5 @@ export declare class FindFirstProductKeyArgs {
     cursor?: ProductKeyWhereUniqueInput | undefined;
     take?: number | undefined;
     skip?: number | undefined;
-    distinct?: Array<"id" | "billingId" | "key" | "createdAt" | "updatedAt"> | undefined;
+    distinct?: Array<"id" | "billingId" | "createdBy" | "key" | "createdAt" | "updatedAt"> | undefined;
 }

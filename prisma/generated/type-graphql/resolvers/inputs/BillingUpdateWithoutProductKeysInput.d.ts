@@ -3,7 +3,7 @@ import { EnumBILLING_STATUSFieldUpdateOperationsInput } from "../inputs/EnumBILL
 import { EnumPLANFieldUpdateOperationsInput } from "../inputs/EnumPLANFieldUpdateOperationsInput";
 import { NullableStringFieldUpdateOperationsInput } from "../inputs/NullableStringFieldUpdateOperationsInput";
 import { TenantUpdateOneRequiredWithoutBillingInput } from "../inputs/TenantUpdateOneRequiredWithoutBillingInput";
-export declare class BillingUpdateWithoutProductKeyInput {
+export declare class BillingUpdateWithoutProductKeysInput {
     Tenant?: TenantUpdateOneRequiredWithoutBillingInput | undefined;
     stripeCustomerId?: NullableStringFieldUpdateOperationsInput | undefined;
     stripeSubscriptionId?: NullableStringFieldUpdateOperationsInput | undefined;

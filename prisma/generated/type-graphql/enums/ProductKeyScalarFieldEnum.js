@@ -7,6 +7,7 @@ var ProductKeyScalarFieldEnum;
 (function (ProductKeyScalarFieldEnum) {
     ProductKeyScalarFieldEnum["id"] = "id";
     ProductKeyScalarFieldEnum["billingId"] = "billingId";
+    ProductKeyScalarFieldEnum["createdBy"] = "createdBy";
     ProductKeyScalarFieldEnum["key"] = "key";
     ProductKeyScalarFieldEnum["createdAt"] = "createdAt";
     ProductKeyScalarFieldEnum["updatedAt"] = "updatedAt";

@@ -1,7 +1,7 @@
 import { DateTimeFilter } from "../inputs/DateTimeFilter";
 import { EnumBILLING_STATUSFilter } from "../inputs/EnumBILLING_STATUSFilter";
 import { EnumPLANFilter } from "../inputs/EnumPLANFilter";
-import { ProductKeyRelationFilter } from "../inputs/ProductKeyRelationFilter";
+import { ProductKeyListRelationFilter } from "../inputs/ProductKeyListRelationFilter";
 import { StringFilter } from "../inputs/StringFilter";
 import { StringNullableFilter } from "../inputs/StringNullableFilter";
 import { TenantRelationFilter } from "../inputs/TenantRelationFilter";
@@ -16,7 +16,7 @@ export declare class BillingWhereInput {
     stripeSubscriptionId?: StringNullableFilter | undefined;
     plan?: EnumPLANFilter | undefined;
     status?: EnumBILLING_STATUSFilter | undefined;
-    ProductKey?: ProductKeyRelationFilter | undefined;
+    ProductKeys?: ProductKeyListRelationFilter | undefined;
     createdAt?: DateTimeFilter | undefined;
     updatedAt?: DateTimeFilter | undefined;
 }

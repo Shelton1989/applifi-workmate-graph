@@ -17,7 +17,7 @@ let ProductKeyRelationsResolver = class ProductKeyRelationsResolver {
 };
 tslib_1.__decorate([
     TypeGraphQL.FieldResolver(_type => Billing_1.Billing, {
-        nullable: false
+        nullable: true
     }),
     tslib_1.__param(0, TypeGraphQL.Root()),
     tslib_1.__param(1, TypeGraphQL.Ctx()),
