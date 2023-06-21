@@ -71,10 +71,10 @@ applyResolversEnhanceMap({
   Document: {
     createDocument: [Authorized()],
     updateDocument: [Authorized()],
-    createManyDocument: [Authorized(ROLE.ADMIN)],
-    updateManyDocument: [Authorized(ROLE.ADMIN)],
-    deleteDocument: [Authorized()],
-    deleteManyDocument: [Authorized(ROLE.ADMIN)],
+    createManyDocument: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.ADMIN)],
+    updateManyDocument: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.ADMIN)],
+    deleteDocument: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.ADMIN)],
+    deleteManyDocument: [Authorized(ROLE.WORKSPACE_OWNER, ROLE.ADMIN)],
   },
   Comment: {
     createComment: [Authorized()],
